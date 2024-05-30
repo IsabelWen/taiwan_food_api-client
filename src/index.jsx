@@ -4,7 +4,7 @@ import MainView from './components/main-view/main-view';
 import "./index.scss";
 
 const App = () => {
- return <MainView />;
+    return <MainView />;
 };
 
 // Finds the root of your app
