@@ -12,22 +12,28 @@ const MainView = () => {
 
     // Fetch API
     useEffect(() => {
-        fetch("https://openlibrary.org/search.json?q=star+wars")
+        fetch("https://taiwan-food-api.onrender.com/foodlist")
             .then((response) => response.json())
-            .then((data) => {
-                const booksFromApi = data.docs.map((doc) => {
+            .then((foodData) => {
+                const foodlistFromApi = foodData.map((food) => {
+                    // Convert Buffer to a base64-encoded string
+                    const imageBuffer = Buffer.from(food.img);
+                    const imageBase64 = imageBuffer.toString("base64");
                     return {
-                        id: doc.key,
-                        title: doc.title,
-                        image:
-                            `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`,
-                        author: doc.author_name?.[0]
+                        id: food.id,
+                        chinese: food.chinese,
+                        english: food.english,
+                        zhuyin: food.zhuyin,
+                        pinyin: food.pinyin,
+                        details: food.details,
+                        image: `data:image/jpg;base64,${imageBase64}`,
                     };
                 });
-
-                setFoodlist(booksFromApi);
+                setFoodlist(foodlistFromApi);
             });
     }, []);
+
+    console.log("API response:", foodlist);
 
     // Function to show food on click
     if (selectedFood) {
