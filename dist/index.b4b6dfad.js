@@ -27482,30 +27482,27 @@ parcelHelpers.export(exports, "FoodCard", ()=>FoodCard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _antd = require("antd");
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 const FoodCard = ({ food, onFoodClick })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _antd.Card), {
         onClick: ()=>onFoodClick(food),
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: food.english
-            }, void 0, false, {
-                fileName: "src/components/food-card/food-card.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: food.chinese
-            }, void 0, false, {
-                fileName: "src/components/food-card/food-card.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+        title: food.chinese,
+        style: {
+            width: 400
+        },
+        cover: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: food.image,
+            alt: food.english,
+            style: {
+                maxHeight: "300px",
+                objectFit: "cover"
+            }
+        }, void 0, false, void 0, void 0)
+    }, void 0, false, {
         fileName: "src/components/food-card/food-card.jsx",
-        lineNumber: 7,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
@@ -27526,7 +27523,7 @@ $RefreshReg$(_c, "FoodCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","prop-types":"7wKI2"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","prop-types":"7wKI2","antd":"6C7kW"}],"7wKI2":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -28273,7 +28270,19721 @@ printWarning = function(text) {
 };
 module.exports = checkPropTypes;
 
-},{"24ba1e58d167a82c":"jZTZJ","898bc82f39d83f7c":"fqKuf"}],"ilHrj":[function(require,module,exports) {
+},{"24ba1e58d167a82c":"jZTZJ","898bc82f39d83f7c":"fqKuf"}],"6C7kW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Affix", ()=>(0, _affixDefault.default));
+parcelHelpers.export(exports, "Alert", ()=>(0, _alertDefault.default));
+parcelHelpers.export(exports, "Anchor", ()=>(0, _anchorDefault.default));
+parcelHelpers.export(exports, "App", ()=>(0, _appDefault.default));
+parcelHelpers.export(exports, "AutoComplete", ()=>(0, _autoCompleteDefault.default));
+parcelHelpers.export(exports, "Avatar", ()=>(0, _avatarDefault.default));
+parcelHelpers.export(exports, "BackTop", ()=>(0, _backTopDefault.default));
+parcelHelpers.export(exports, "Badge", ()=>(0, _badgeDefault.default));
+parcelHelpers.export(exports, "Breadcrumb", ()=>(0, _breadcrumbDefault.default));
+parcelHelpers.export(exports, "Button", ()=>(0, _buttonDefault.default));
+parcelHelpers.export(exports, "Calendar", ()=>(0, _calendarDefault.default));
+parcelHelpers.export(exports, "Card", ()=>(0, _cardDefault.default));
+parcelHelpers.export(exports, "Carousel", ()=>(0, _carouselDefault.default));
+parcelHelpers.export(exports, "Cascader", ()=>(0, _cascaderDefault.default));
+parcelHelpers.export(exports, "Checkbox", ()=>(0, _checkboxDefault.default));
+parcelHelpers.export(exports, "Col", ()=>(0, _colDefault.default));
+parcelHelpers.export(exports, "Collapse", ()=>(0, _collapseDefault.default));
+parcelHelpers.export(exports, "ColorPicker", ()=>(0, _colorPickerDefault.default));
+parcelHelpers.export(exports, "ConfigProvider", ()=>(0, _configProviderDefault.default));
+parcelHelpers.export(exports, "DatePicker", ()=>(0, _datePickerDefault.default));
+parcelHelpers.export(exports, "Descriptions", ()=>(0, _descriptionsDefault.default));
+parcelHelpers.export(exports, "Divider", ()=>(0, _dividerDefault.default));
+parcelHelpers.export(exports, "Drawer", ()=>(0, _drawerDefault.default));
+parcelHelpers.export(exports, "Dropdown", ()=>(0, _dropdownDefault.default));
+parcelHelpers.export(exports, "Empty", ()=>(0, _emptyDefault.default));
+parcelHelpers.export(exports, "Flex", ()=>(0, _flexDefault.default));
+parcelHelpers.export(exports, "FloatButton", ()=>(0, _floatButtonDefault.default));
+parcelHelpers.export(exports, "Form", ()=>(0, _formDefault.default));
+parcelHelpers.export(exports, "Grid", ()=>(0, _gridDefault.default));
+parcelHelpers.export(exports, "Image", ()=>(0, _imageDefault.default));
+parcelHelpers.export(exports, "Input", ()=>(0, _inputDefault.default));
+parcelHelpers.export(exports, "InputNumber", ()=>(0, _inputNumberDefault.default));
+parcelHelpers.export(exports, "Layout", ()=>(0, _layoutDefault.default));
+parcelHelpers.export(exports, "List", ()=>(0, _listDefault.default));
+parcelHelpers.export(exports, "Mentions", ()=>(0, _mentionsDefault.default));
+parcelHelpers.export(exports, "Menu", ()=>(0, _menuDefault.default));
+parcelHelpers.export(exports, "message", ()=>(0, _messageDefault.default));
+parcelHelpers.export(exports, "Modal", ()=>(0, _modalDefault.default));
+parcelHelpers.export(exports, "notification", ()=>(0, _notificationDefault.default));
+parcelHelpers.export(exports, "Pagination", ()=>(0, _paginationDefault.default));
+parcelHelpers.export(exports, "Popconfirm", ()=>(0, _popconfirmDefault.default));
+parcelHelpers.export(exports, "Popover", ()=>(0, _popoverDefault.default));
+parcelHelpers.export(exports, "Progress", ()=>(0, _progressDefault.default));
+parcelHelpers.export(exports, "QRCode", ()=>(0, _qrCodeDefault.default));
+parcelHelpers.export(exports, "Radio", ()=>(0, _radioDefault.default));
+parcelHelpers.export(exports, "Rate", ()=>(0, _rateDefault.default));
+parcelHelpers.export(exports, "Result", ()=>(0, _resultDefault.default));
+parcelHelpers.export(exports, "Row", ()=>(0, _rowDefault.default));
+parcelHelpers.export(exports, "Segmented", ()=>(0, _segmentedDefault.default));
+parcelHelpers.export(exports, "Select", ()=>(0, _selectDefault.default));
+parcelHelpers.export(exports, "Skeleton", ()=>(0, _skeletonDefault.default));
+parcelHelpers.export(exports, "Slider", ()=>(0, _sliderDefault.default));
+parcelHelpers.export(exports, "Space", ()=>(0, _spaceDefault.default));
+parcelHelpers.export(exports, "Spin", ()=>(0, _spinDefault.default));
+parcelHelpers.export(exports, "Statistic", ()=>(0, _statisticDefault.default));
+parcelHelpers.export(exports, "Steps", ()=>(0, _stepsDefault.default));
+parcelHelpers.export(exports, "Switch", ()=>(0, _switchDefault.default));
+parcelHelpers.export(exports, "Table", ()=>(0, _tableDefault.default));
+parcelHelpers.export(exports, "Tabs", ()=>(0, _tabsDefault.default));
+parcelHelpers.export(exports, "Tag", ()=>(0, _tagDefault.default));
+parcelHelpers.export(exports, "theme", ()=>(0, _themeDefault.default));
+parcelHelpers.export(exports, "TimePicker", ()=>(0, _timePickerDefault.default));
+parcelHelpers.export(exports, "Timeline", ()=>(0, _timelineDefault.default));
+parcelHelpers.export(exports, "Tooltip", ()=>(0, _tooltipDefault.default));
+parcelHelpers.export(exports, "Tour", ()=>(0, _tourDefault.default));
+parcelHelpers.export(exports, "Transfer", ()=>(0, _transferDefault.default));
+parcelHelpers.export(exports, "Tree", ()=>(0, _treeDefault.default));
+parcelHelpers.export(exports, "TreeSelect", ()=>(0, _treeSelectDefault.default));
+parcelHelpers.export(exports, "Typography", ()=>(0, _typographyDefault.default));
+parcelHelpers.export(exports, "Upload", ()=>(0, _uploadDefault.default));
+parcelHelpers.export(exports, "version", ()=>(0, _versionDefault.default));
+parcelHelpers.export(exports, "Watermark", ()=>(0, _watermarkDefault.default));
+var _affix = require("./affix");
+var _affixDefault = parcelHelpers.interopDefault(_affix);
+var _alert = require("./alert");
+var _alertDefault = parcelHelpers.interopDefault(_alert);
+var _anchor = require("./anchor");
+var _anchorDefault = parcelHelpers.interopDefault(_anchor);
+var _app = require("./app");
+var _appDefault = parcelHelpers.interopDefault(_app);
+var _autoComplete = require("./auto-complete");
+var _autoCompleteDefault = parcelHelpers.interopDefault(_autoComplete);
+var _avatar = require("./avatar");
+var _avatarDefault = parcelHelpers.interopDefault(_avatar);
+var _backTop = require("./back-top");
+var _backTopDefault = parcelHelpers.interopDefault(_backTop);
+var _badge = require("./badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _breadcrumb = require("./breadcrumb");
+var _breadcrumbDefault = parcelHelpers.interopDefault(_breadcrumb);
+var _button = require("./button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _calendar = require("./calendar");
+var _calendarDefault = parcelHelpers.interopDefault(_calendar);
+var _card = require("./card");
+var _cardDefault = parcelHelpers.interopDefault(_card);
+var _carousel = require("./carousel");
+var _carouselDefault = parcelHelpers.interopDefault(_carousel);
+var _cascader = require("./cascader");
+var _cascaderDefault = parcelHelpers.interopDefault(_cascader);
+var _checkbox = require("./checkbox");
+var _checkboxDefault = parcelHelpers.interopDefault(_checkbox);
+var _col = require("./col");
+var _colDefault = parcelHelpers.interopDefault(_col);
+var _collapse = require("./collapse");
+var _collapseDefault = parcelHelpers.interopDefault(_collapse);
+var _colorPicker = require("./color-picker");
+var _colorPickerDefault = parcelHelpers.interopDefault(_colorPicker);
+var _configProvider = require("./config-provider");
+var _configProviderDefault = parcelHelpers.interopDefault(_configProvider);
+var _datePicker = require("./date-picker");
+var _datePickerDefault = parcelHelpers.interopDefault(_datePicker);
+var _descriptions = require("./descriptions");
+var _descriptionsDefault = parcelHelpers.interopDefault(_descriptions);
+var _divider = require("./divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _drawer = require("./drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _dropdown = require("./dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+var _empty = require("./empty");
+var _emptyDefault = parcelHelpers.interopDefault(_empty);
+var _flex = require("./flex");
+var _flexDefault = parcelHelpers.interopDefault(_flex);
+var _floatButton = require("./float-button");
+var _floatButtonDefault = parcelHelpers.interopDefault(_floatButton);
+var _form = require("./form");
+var _formDefault = parcelHelpers.interopDefault(_form);
+var _grid = require("./grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _image = require("./image");
+var _imageDefault = parcelHelpers.interopDefault(_image);
+var _input = require("./input");
+var _inputDefault = parcelHelpers.interopDefault(_input);
+var _inputNumber = require("./input-number");
+var _inputNumberDefault = parcelHelpers.interopDefault(_inputNumber);
+var _layout = require("./layout");
+var _layoutDefault = parcelHelpers.interopDefault(_layout);
+var _list = require("./list");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _mentions = require("./mentions");
+var _mentionsDefault = parcelHelpers.interopDefault(_mentions);
+var _menu = require("./menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _message = require("./message");
+var _messageDefault = parcelHelpers.interopDefault(_message);
+var _modal = require("./modal");
+var _modalDefault = parcelHelpers.interopDefault(_modal);
+var _notification = require("./notification");
+var _notificationDefault = parcelHelpers.interopDefault(_notification);
+var _pagination = require("./pagination");
+var _paginationDefault = parcelHelpers.interopDefault(_pagination);
+var _popconfirm = require("./popconfirm");
+var _popconfirmDefault = parcelHelpers.interopDefault(_popconfirm);
+var _popover = require("./popover");
+var _popoverDefault = parcelHelpers.interopDefault(_popover);
+var _progress = require("./progress");
+var _progressDefault = parcelHelpers.interopDefault(_progress);
+var _qrCode = require("./qr-code");
+var _qrCodeDefault = parcelHelpers.interopDefault(_qrCode);
+var _radio = require("./radio");
+var _radioDefault = parcelHelpers.interopDefault(_radio);
+var _rate = require("./rate");
+var _rateDefault = parcelHelpers.interopDefault(_rate);
+var _result = require("./result");
+var _resultDefault = parcelHelpers.interopDefault(_result);
+var _row = require("./row");
+var _rowDefault = parcelHelpers.interopDefault(_row);
+var _segmented = require("./segmented");
+var _segmentedDefault = parcelHelpers.interopDefault(_segmented);
+var _select = require("./select");
+var _selectDefault = parcelHelpers.interopDefault(_select);
+var _skeleton = require("./skeleton");
+var _skeletonDefault = parcelHelpers.interopDefault(_skeleton);
+var _slider = require("./slider");
+var _sliderDefault = parcelHelpers.interopDefault(_slider);
+var _space = require("./space");
+var _spaceDefault = parcelHelpers.interopDefault(_space);
+var _spin = require("./spin");
+var _spinDefault = parcelHelpers.interopDefault(_spin);
+var _statistic = require("./statistic");
+var _statisticDefault = parcelHelpers.interopDefault(_statistic);
+var _steps = require("./steps");
+var _stepsDefault = parcelHelpers.interopDefault(_steps);
+var _switch = require("./switch");
+var _switchDefault = parcelHelpers.interopDefault(_switch);
+var _table = require("./table");
+var _tableDefault = parcelHelpers.interopDefault(_table);
+var _tabs = require("./tabs");
+var _tabsDefault = parcelHelpers.interopDefault(_tabs);
+var _tag = require("./tag");
+var _tagDefault = parcelHelpers.interopDefault(_tag);
+var _theme = require("./theme");
+var _themeDefault = parcelHelpers.interopDefault(_theme);
+var _timePicker = require("./time-picker");
+var _timePickerDefault = parcelHelpers.interopDefault(_timePicker);
+var _timeline = require("./timeline");
+var _timelineDefault = parcelHelpers.interopDefault(_timeline);
+var _tooltip = require("./tooltip");
+var _tooltipDefault = parcelHelpers.interopDefault(_tooltip);
+var _tour = require("./tour");
+var _tourDefault = parcelHelpers.interopDefault(_tour);
+var _transfer = require("./transfer");
+var _transferDefault = parcelHelpers.interopDefault(_transfer);
+var _tree = require("./tree");
+var _treeDefault = parcelHelpers.interopDefault(_tree);
+var _treeSelect = require("./tree-select");
+var _treeSelectDefault = parcelHelpers.interopDefault(_treeSelect);
+var _typography = require("./typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _upload = require("./upload");
+var _uploadDefault = parcelHelpers.interopDefault(_upload);
+var _version = require("./version");
+var _versionDefault = parcelHelpers.interopDefault(_version);
+var _watermark = require("./watermark");
+var _watermarkDefault = parcelHelpers.interopDefault(_watermark);
+"use client";
+
+},{"./affix":false,"./alert":false,"./anchor":false,"./app":false,"./auto-complete":false,"./avatar":false,"./back-top":false,"./badge":false,"./breadcrumb":false,"./button":false,"./calendar":false,"./card":"6brkx","./carousel":false,"./cascader":false,"./checkbox":false,"./col":false,"./collapse":false,"./color-picker":false,"./config-provider":false,"./date-picker":false,"./descriptions":false,"./divider":false,"./drawer":false,"./dropdown":false,"./empty":false,"./flex":false,"./float-button":false,"./form":false,"./grid":false,"./image":false,"./input":false,"./input-number":false,"./layout":false,"./list":false,"./mentions":false,"./menu":false,"./message":false,"./modal":false,"./notification":false,"./pagination":false,"./popconfirm":false,"./popover":false,"./progress":false,"./qr-code":false,"./radio":false,"./rate":false,"./result":false,"./row":false,"./segmented":false,"./select":false,"./skeleton":false,"./slider":false,"./space":false,"./spin":false,"./statistic":false,"./steps":false,"./switch":false,"./table":false,"./tabs":false,"./tag":false,"./theme":false,"./time-picker":false,"./timeline":false,"./tooltip":false,"./tour":false,"./transfer":false,"./tree":false,"./tree-select":false,"./typography":false,"./upload":false,"./version":false,"./watermark":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6brkx":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _card = require("./Card");
+var _cardDefault = parcelHelpers.interopDefault(_card);
+var _grid = require("./Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _meta = require("./Meta");
+var _metaDefault = parcelHelpers.interopDefault(_meta);
+"use client";
+const Card = (0, _cardDefault.default);
+Card.Grid = (0, _gridDefault.default);
+Card.Meta = (0, _metaDefault.default);
+Card.displayName = "Card";
+exports.default = Card;
+
+},{"./Card":"fMSzJ","./Grid":"jvl43","./Meta":"78Bb9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fMSzJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _warning = require("../_util/warning");
+var _configProvider = require("../config-provider");
+var _useSize = require("../config-provider/hooks/useSize");
+var _useSizeDefault = parcelHelpers.interopDefault(_useSize);
+var _skeleton = require("../skeleton");
+var _skeletonDefault = parcelHelpers.interopDefault(_skeleton);
+var _tabs = require("../tabs");
+var _tabsDefault = parcelHelpers.interopDefault(_tabs);
+var _grid = require("./Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const ActionNode = (props)=>{
+    const { actionClasses, actions = [], actionStyle } = props;
+    return /*#__PURE__*/ _react.createElement("ul", {
+        className: actionClasses,
+        style: actionStyle
+    }, actions.map((action, index)=>{
+        // Move this out since eslint not allow index key
+        // And eslint-disable makes conflict with rollup
+        // ref https://github.com/ant-design/ant-design/issues/46022
+        const key = `action-${index}`;
+        return /*#__PURE__*/ _react.createElement("li", {
+            style: {
+                width: `${100 / actions.length}%`
+            },
+            key: key
+        }, /*#__PURE__*/ _react.createElement("span", null, action));
+    }));
+};
+const Card = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, style, extra, headStyle = {}, bodyStyle = {}, title, loading, bordered = true, size: customizeSize, type, cover, actions, tabList, children, activeTabKey, defaultActiveTabKey, tabBarExtraContent, hoverable, tabProps = {}, classNames: customClassNames, styles: customStyles } = props, others = __rest(props, [
+        "prefixCls",
+        "className",
+        "rootClassName",
+        "style",
+        "extra",
+        "headStyle",
+        "bodyStyle",
+        "title",
+        "loading",
+        "bordered",
+        "size",
+        "type",
+        "cover",
+        "actions",
+        "tabList",
+        "children",
+        "activeTabKey",
+        "defaultActiveTabKey",
+        "tabBarExtraContent",
+        "hoverable",
+        "tabProps",
+        "classNames",
+        "styles"
+    ]);
+    const { getPrefixCls, direction, card } = _react.useContext((0, _configProvider.ConfigContext));
+    {
+        const warning = (0, _warning.devUseWarning)("Card");
+        [
+            [
+                "headStyle",
+                "styles.header"
+            ],
+            [
+                "bodyStyle",
+                "styles.body"
+            ]
+        ].forEach((_ref)=>{
+            let [deprecatedName, newName] = _ref;
+            warning.deprecated(!(deprecatedName in props), deprecatedName, newName);
+        });
+    }
+    const onTabChange = (key)=>{
+        var _a;
+        (_a = props.onTabChange) === null || _a === void 0 || _a.call(props, key);
+    };
+    const moduleClass = (moduleName)=>{
+        var _a;
+        return (0, _classnamesDefault.default)((_a = card === null || card === void 0 ? void 0 : card.classNames) === null || _a === void 0 ? void 0 : _a[moduleName], customClassNames === null || customClassNames === void 0 ? void 0 : customClassNames[moduleName]);
+    };
+    const moduleStyle = (moduleName)=>{
+        var _a;
+        return Object.assign(Object.assign({}, (_a = card === null || card === void 0 ? void 0 : card.styles) === null || _a === void 0 ? void 0 : _a[moduleName]), customStyles === null || customStyles === void 0 ? void 0 : customStyles[moduleName]);
+    };
+    const isContainGrid = _react.useMemo(()=>{
+        let containGrid = false;
+        _react.Children.forEach(children, (element)=>{
+            if (element && element.type && element.type === (0, _gridDefault.default)) containGrid = true;
+        });
+        return containGrid;
+    }, [
+        children
+    ]);
+    const prefixCls = getPrefixCls("card", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const loadingBlock = /*#__PURE__*/ _react.createElement((0, _skeletonDefault.default), {
+        loading: true,
+        active: true,
+        paragraph: {
+            rows: 4
+        },
+        title: false
+    }, children);
+    const hasActiveTabKey = activeTabKey !== undefined;
+    const extraProps = Object.assign(Object.assign({}, tabProps), {
+        [hasActiveTabKey ? "activeKey" : "defaultActiveKey"]: hasActiveTabKey ? activeTabKey : defaultActiveTabKey,
+        tabBarExtraContent
+    });
+    let head;
+    const mergedSize = (0, _useSizeDefault.default)(customizeSize);
+    const tabSize = !mergedSize || mergedSize === "default" ? "large" : mergedSize;
+    const tabs = tabList ? /*#__PURE__*/ _react.createElement((0, _tabsDefault.default), Object.assign({
+        size: tabSize
+    }, extraProps, {
+        className: `${prefixCls}-head-tabs`,
+        onChange: onTabChange,
+        items: tabList.map((_a)=>{
+            var { tab } = _a, item = __rest(_a, [
+                "tab"
+            ]);
+            return Object.assign({
+                label: tab
+            }, item);
+        })
+    })) : null;
+    if (title || extra || tabs) {
+        const headClasses = (0, _classnamesDefault.default)(`${prefixCls}-head`, moduleClass("header"));
+        const titleClasses = (0, _classnamesDefault.default)(`${prefixCls}-head-title`, moduleClass("title"));
+        const extraClasses = (0, _classnamesDefault.default)(`${prefixCls}-extra`, moduleClass("extra"));
+        const mergedHeadStyle = Object.assign(Object.assign({}, headStyle), moduleStyle("header"));
+        head = /*#__PURE__*/ _react.createElement("div", {
+            className: headClasses,
+            style: mergedHeadStyle
+        }, /*#__PURE__*/ _react.createElement("div", {
+            className: `${prefixCls}-head-wrapper`
+        }, title && /*#__PURE__*/ _react.createElement("div", {
+            className: titleClasses,
+            style: moduleStyle("title")
+        }, title), extra && /*#__PURE__*/ _react.createElement("div", {
+            className: extraClasses,
+            style: moduleStyle("extra")
+        }, extra)), tabs);
+    }
+    const coverClasses = (0, _classnamesDefault.default)(`${prefixCls}-cover`, moduleClass("cover"));
+    const coverDom = cover ? /*#__PURE__*/ _react.createElement("div", {
+        className: coverClasses,
+        style: moduleStyle("cover")
+    }, cover) : null;
+    const bodyClasses = (0, _classnamesDefault.default)(`${prefixCls}-body`, moduleClass("body"));
+    const mergedBodyStyle = Object.assign(Object.assign({}, bodyStyle), moduleStyle("body"));
+    const body = /*#__PURE__*/ _react.createElement("div", {
+        className: bodyClasses,
+        style: mergedBodyStyle
+    }, loading ? loadingBlock : children);
+    const actionClasses = (0, _classnamesDefault.default)(`${prefixCls}-actions`, moduleClass("actions"));
+    const actionDom = actions && actions.length ? /*#__PURE__*/ _react.createElement(ActionNode, {
+        actionClasses: actionClasses,
+        actionStyle: moduleStyle("actions"),
+        actions: actions
+    }) : null;
+    const divProps = (0, _omitDefault.default)(others, [
+        "onTabChange"
+    ]);
+    const classString = (0, _classnamesDefault.default)(prefixCls, card === null || card === void 0 ? void 0 : card.className, {
+        [`${prefixCls}-loading`]: loading,
+        [`${prefixCls}-bordered`]: bordered,
+        [`${prefixCls}-hoverable`]: hoverable,
+        [`${prefixCls}-contain-grid`]: isContainGrid,
+        [`${prefixCls}-contain-tabs`]: tabList && tabList.length,
+        [`${prefixCls}-${mergedSize}`]: mergedSize,
+        [`${prefixCls}-type-${type}`]: !!type,
+        [`${prefixCls}-rtl`]: direction === "rtl"
+    }, className, rootClassName, hashId, cssVarCls);
+    const mergedStyle = Object.assign(Object.assign({}, card === null || card === void 0 ? void 0 : card.style), style);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", Object.assign({
+        ref: ref
+    }, divProps, {
+        className: classString,
+        style: mergedStyle
+    }), head, coverDom, body, actionDom));
+});
+exports.default = Card;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","../_util/warning":"daUrm","../config-provider":"iMraF","../config-provider/hooks/useSize":"daQoa","../skeleton":"lppaB","../tabs":"likKM","./Grid":"jvl43","./style":"c2VDR","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jocGM":[function(require,module,exports) {
+/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/ /* global define */ (function() {
+    "use strict";
+    var hasOwn = {}.hasOwnProperty;
+    function classNames() {
+        var classes = "";
+        for(var i = 0; i < arguments.length; i++){
+            var arg = arguments[i];
+            if (arg) classes = appendClass(classes, parseValue(arg));
+        }
+        return classes;
+    }
+    function parseValue(arg) {
+        if (typeof arg === "string" || typeof arg === "number") return arg;
+        if (typeof arg !== "object") return "";
+        if (Array.isArray(arg)) return classNames.apply(null, arg);
+        if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) return arg.toString();
+        var classes = "";
+        for(var key in arg)if (hasOwn.call(arg, key) && arg[key]) classes = appendClass(classes, key);
+        return classes;
+    }
+    function appendClass(value, newClass) {
+        if (!newClass) return value;
+        if (value) return value + " " + newClass;
+        return value + newClass;
+    }
+    if (0, module.exports) {
+        classNames.default = classNames;
+        module.exports = classNames;
+    } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) // register as 'classnames', consistent with npm package name
+    define("classnames", [], function() {
+        return classNames;
+    });
+    else window.classNames = classNames;
+})();
+
+},{}],"e7Re6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>omit);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+function omit(obj, fields) {
+    var clone = (0, _objectSpread2Default.default)({}, obj);
+    if (Array.isArray(fields)) fields.forEach(function(key) {
+        delete clone[key];
+    });
+    return clone;
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bS0uk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_objectSpread2);
+var _definePropertyJs = require("./defineProperty.js");
+var _definePropertyJsDefault = parcelHelpers.interopDefault(_definePropertyJs);
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread2(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            (0, _definePropertyJsDefault.default)(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+
+},{"./defineProperty.js":"hbmCA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hbmCA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_defineProperty);
+var _toPropertyKeyJs = require("./toPropertyKey.js");
+var _toPropertyKeyJsDefault = parcelHelpers.interopDefault(_toPropertyKeyJs);
+function _defineProperty(e, r, t) {
+    return (r = (0, _toPropertyKeyJsDefault.default)(r)) in e ? Object.defineProperty(e, r, {
+        value: t,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[r] = t, e;
+}
+
+},{"./toPropertyKey.js":"cviYI","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cviYI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>toPropertyKey);
+var _typeofJs = require("./typeof.js");
+var _typeofJsDefault = parcelHelpers.interopDefault(_typeofJs);
+var _toPrimitiveJs = require("./toPrimitive.js");
+var _toPrimitiveJsDefault = parcelHelpers.interopDefault(_toPrimitiveJs);
+function toPropertyKey(t) {
+    var i = (0, _toPrimitiveJsDefault.default)(t, "string");
+    return "symbol" == (0, _typeofJsDefault.default)(i) ? i : i + "";
+}
+
+},{"./typeof.js":"i7HWY","./toPrimitive.js":"497Dv","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"i7HWY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_typeof);
+function _typeof(o) {
+    "@babel/helpers - typeof";
+    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
+        return typeof o;
+    } : function(o) {
+        return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+    }, _typeof(o);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"497Dv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>toPrimitive);
+var _typeofJs = require("./typeof.js");
+var _typeofJsDefault = parcelHelpers.interopDefault(_typeofJs);
+function toPrimitive(t, r) {
+    if ("object" != (0, _typeofJsDefault.default)(t) || !t) return t;
+    var e = t[Symbol.toPrimitive];
+    if (void 0 !== e) {
+        var i = e.call(t, r || "default");
+        if ("object" != (0, _typeofJsDefault.default)(i)) return i;
+        throw new TypeError("@@toPrimitive must return a primitive value.");
+    }
+    return ("string" === r ? String : Number)(t);
+}
+
+},{"./typeof.js":"i7HWY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"daUrm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "noop", ()=>noop);
+parcelHelpers.export(exports, "resetWarned", ()=>resetWarned);
+parcelHelpers.export(exports, "WarningContext", ()=>WarningContext);
+parcelHelpers.export(exports, "devUseWarning", ()=>devUseWarning);
+var _react = require("react");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+function noop() {}
+let deprecatedWarnList = null;
+function resetWarned() {
+    deprecatedWarnList = null;
+    (0, _warning.resetWarned)();
+}
+// eslint-disable-next-line import/no-mutable-exports
+let warning = noop;
+warning = (valid, component, message)=>{
+    (0, _warningDefault.default)(valid, `[antd: ${component}] ${message}`);
+};
+const WarningContext = /*#__PURE__*/ _react.createContext({});
+const devUseWarning = (component)=>{
+    const { strict } = _react.useContext(WarningContext);
+    const typeWarning = (valid, type, message)=>{
+        if (!valid) {
+            if (strict === false && type === "deprecated") {
+                const existWarning = deprecatedWarnList;
+                if (!deprecatedWarnList) deprecatedWarnList = {};
+                deprecatedWarnList[component] = deprecatedWarnList[component] || [];
+                if (!deprecatedWarnList[component].includes(message || "")) deprecatedWarnList[component].push(message || "");
+                // Warning for the first time
+                if (!existWarning) // eslint-disable-next-line no-console
+                console.warn("[antd] There exists deprecated usage in your code:", deprecatedWarnList);
+            } else warning(valid, component, message);
+        }
+    };
+    typeWarning.deprecated = (valid, oldProp, newProp, message)=>{
+        typeWarning(valid, "deprecated", `\`${oldProp}\` is deprecated. Please use \`${newProp}\` instead.${message ? ` ${message}` : ""}`);
+    };
+    return typeWarning;
+};
+exports.default = warning;
+
+},{"react":"21dqq","rc-util/es/warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"c7oua":[function(require,module,exports) {
+/* eslint-disable no-console */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "preMessage", ()=>preMessage);
+/**
+ * Warning if condition not match.
+ * @param valid Condition
+ * @param message Warning message
+ * @example
+ * ```js
+ * warning(false, 'some error'); // print some error
+ * warning(true, 'some error'); // print nothing
+ * warning(1 === 2, 'some error'); // print some error
+ * ```
+ */ parcelHelpers.export(exports, "warning", ()=>warning);
+/** @see Similar to {@link warning} */ parcelHelpers.export(exports, "note", ()=>note);
+parcelHelpers.export(exports, "resetWarned", ()=>resetWarned);
+parcelHelpers.export(exports, "call", ()=>call);
+/** @see Same as {@link warning}, but only warn once for the same message */ parcelHelpers.export(exports, "warningOnce", ()=>warningOnce);
+/** @see Same as {@link warning}, but only warn once for the same message */ parcelHelpers.export(exports, "noteOnce", ()=>noteOnce);
+var warned = {};
+var preWarningFns = [];
+var preMessage = function preMessage(fn) {
+    preWarningFns.push(fn);
+};
+function warning(valid, message) {
+    if (!valid && console !== undefined) {
+        var finalMessage = preWarningFns.reduce(function(msg, preMessageFn) {
+            return preMessageFn(msg !== null && msg !== void 0 ? msg : "", "warning");
+        }, message);
+        if (finalMessage) console.error("Warning: ".concat(finalMessage));
+    }
+}
+function note(valid, message) {
+    if (!valid && console !== undefined) {
+        var finalMessage = preWarningFns.reduce(function(msg, preMessageFn) {
+            return preMessageFn(msg !== null && msg !== void 0 ? msg : "", "note");
+        }, message);
+        if (finalMessage) console.warn("Note: ".concat(finalMessage));
+    }
+}
+function resetWarned() {
+    warned = {};
+}
+function call(method, valid, message) {
+    if (!valid && !warned[message]) {
+        method(false, message);
+        warned[message] = true;
+    }
+}
+function warningOnce(valid, message) {
+    call(warning, valid, message);
+}
+function noteOnce(valid, message) {
+    call(note, valid, message);
+}
+warningOnce.preMessage = preMessage;
+warningOnce.resetWarned = resetWarned;
+warningOnce.noteOnce = noteOnce;
+exports.default = warningOnce;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iMraF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "warnContext", ()=>warnContext);
+parcelHelpers.export(exports, "ConfigConsumer", ()=>(0, _context3.ConfigConsumer));
+parcelHelpers.export(exports, "ConfigContext", ()=>(0, _context3.ConfigContext));
+parcelHelpers.export(exports, "defaultIconPrefixCls", ()=>(0, _context3.defaultIconPrefixCls));
+parcelHelpers.export(exports, "configConsumerProps", ()=>configConsumerProps);
+parcelHelpers.export(exports, "defaultPrefixCls", ()=>defaultPrefixCls);
+parcelHelpers.export(exports, "globalConfig", ()=>globalConfig);
+var _react = require("react");
+var _cssinjs = require("@ant-design/cssinjs");
+var _context = require("@ant-design/icons/es/components/Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _useMemo = require("rc-util/es/hooks/useMemo");
+var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
+var _set = require("rc-util/es/utils/set");
+var _warning = require("../_util/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _validateMessagesContext = require("../form/validateMessagesContext");
+var _validateMessagesContextDefault = parcelHelpers.interopDefault(_validateMessagesContext);
+var _locale = require("../locale");
+var _localeDefault = parcelHelpers.interopDefault(_locale);
+var _context1 = require("../locale/context");
+var _contextDefault1 = parcelHelpers.interopDefault(_context1);
+var _enUS = require("../locale/en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+var _context2 = require("../theme/context");
+var _seed = require("../theme/themes/seed");
+var _seedDefault = parcelHelpers.interopDefault(_seed);
+var _context3 = require("./context");
+var _cssVariables = require("./cssVariables");
+var _disabledContext = require("./DisabledContext");
+var _useConfig = require("./hooks/useConfig");
+var _useConfigDefault = parcelHelpers.interopDefault(_useConfig);
+var _useTheme = require("./hooks/useTheme");
+var _useThemeDefault = parcelHelpers.interopDefault(_useTheme);
+var _motionWrapper = require("./MotionWrapper");
+var _motionWrapperDefault = parcelHelpers.interopDefault(_motionWrapper);
+var _propWarning = require("./PropWarning");
+var _propWarningDefault = parcelHelpers.interopDefault(_propWarning);
+var _sizeContext = require("./SizeContext");
+var _sizeContextDefault = parcelHelpers.interopDefault(_sizeContext);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+/**
+ * Since too many feedback using static method like `Modal.confirm` not getting theme, we record the
+ * theme register info here to help developer get warning info.
+ */ let existThemeConfig = false;
+const warnContext = (componentName)=>{
+    (0, _warningDefault.default)(!existThemeConfig, componentName, `Static function can not consume context like dynamic theme. Please use 'App' component instead.`);
+};
+const configConsumerProps = [
+    "getTargetContainer",
+    "getPopupContainer",
+    "rootPrefixCls",
+    "getPrefixCls",
+    "renderEmpty",
+    "csp",
+    "autoInsertSpaceInButton",
+    "locale"
+];
+// These props is used by `useContext` directly in sub component
+const PASSED_PROPS = [
+    "getTargetContainer",
+    "getPopupContainer",
+    "renderEmpty",
+    "input",
+    "pagination",
+    "form",
+    "select",
+    "button"
+];
+const defaultPrefixCls = "ant";
+let globalPrefixCls;
+let globalIconPrefixCls;
+let globalTheme;
+let globalHolderRender;
+function getGlobalPrefixCls() {
+    return globalPrefixCls || defaultPrefixCls;
+}
+function getGlobalIconPrefixCls() {
+    return globalIconPrefixCls || (0, _context3.defaultIconPrefixCls);
+}
+function isLegacyTheme(theme) {
+    return Object.keys(theme).some((key)=>key.endsWith("Color"));
+}
+const setGlobalConfig = (props)=>{
+    const { prefixCls, iconPrefixCls, theme, holderRender } = props;
+    if (prefixCls !== undefined) globalPrefixCls = prefixCls;
+    if (iconPrefixCls !== undefined) globalIconPrefixCls = iconPrefixCls;
+    if ("holderRender" in props) globalHolderRender = holderRender;
+    if (theme) {
+        if (isLegacyTheme(theme)) {
+            (0, _warningDefault.default)(false, "ConfigProvider", "`config` of css variable theme is not work in v5. Please use new `theme` config instead.");
+            (0, _cssVariables.registerTheme)(getGlobalPrefixCls(), theme);
+        } else globalTheme = theme;
+    }
+};
+const globalConfig = ()=>({
+        getPrefixCls: (suffixCls, customizePrefixCls)=>{
+            if (customizePrefixCls) return customizePrefixCls;
+            return suffixCls ? `${getGlobalPrefixCls()}-${suffixCls}` : getGlobalPrefixCls();
+        },
+        getIconPrefixCls: getGlobalIconPrefixCls,
+        getRootPrefixCls: ()=>{
+            // If Global prefixCls provided, use this
+            if (globalPrefixCls) return globalPrefixCls;
+            // Fallback to default prefixCls
+            return getGlobalPrefixCls();
+        },
+        getTheme: ()=>globalTheme,
+        holderRender: globalHolderRender
+    });
+const ProviderChildren = (props)=>{
+    const { children, csp: customCsp, autoInsertSpaceInButton, alert, anchor, form, locale, componentSize, direction, space, virtual, dropdownMatchSelectWidth, popupMatchSelectWidth, popupOverflow, legacyLocale, parentContext, iconPrefixCls: customIconPrefixCls, theme, componentDisabled, segmented, statistic, spin, calendar, carousel, cascader, collapse, typography, checkbox, descriptions, divider, drawer, skeleton, steps, image, layout, list, mentions, modal, progress, result, slider, breadcrumb, menu, pagination, input, textArea, empty, badge, radio, rate, switch: SWITCH, transfer, avatar, message, tag, table, card, tabs, timeline, timePicker, upload, notification, tree, colorPicker, datePicker, rangePicker, flex, wave, dropdown, warning: warningConfig, tour, floatButtonGroup } = props;
+    // =================================== Context ===================================
+    const getPrefixCls = _react.useCallback((suffixCls, customizePrefixCls)=>{
+        const { prefixCls } = props;
+        if (customizePrefixCls) return customizePrefixCls;
+        const mergedPrefixCls = prefixCls || parentContext.getPrefixCls("");
+        return suffixCls ? `${mergedPrefixCls}-${suffixCls}` : mergedPrefixCls;
+    }, [
+        parentContext.getPrefixCls,
+        props.prefixCls
+    ]);
+    const iconPrefixCls = customIconPrefixCls || parentContext.iconPrefixCls || (0, _context3.defaultIconPrefixCls);
+    const csp = customCsp || parentContext.csp;
+    (0, _styleDefault.default)(iconPrefixCls, csp);
+    const mergedTheme = (0, _useThemeDefault.default)(theme, parentContext.theme, {
+        prefixCls: getPrefixCls("")
+    });
+    existThemeConfig = existThemeConfig || !!mergedTheme;
+    const baseConfig = {
+        csp,
+        autoInsertSpaceInButton,
+        alert,
+        anchor,
+        locale: locale || legacyLocale,
+        direction,
+        space,
+        virtual,
+        popupMatchSelectWidth: popupMatchSelectWidth !== null && popupMatchSelectWidth !== void 0 ? popupMatchSelectWidth : dropdownMatchSelectWidth,
+        popupOverflow,
+        getPrefixCls,
+        iconPrefixCls,
+        theme: mergedTheme,
+        segmented,
+        statistic,
+        spin,
+        calendar,
+        carousel,
+        cascader,
+        collapse,
+        typography,
+        checkbox,
+        descriptions,
+        divider,
+        drawer,
+        skeleton,
+        steps,
+        image,
+        input,
+        textArea,
+        layout,
+        list,
+        mentions,
+        modal,
+        progress,
+        result,
+        slider,
+        breadcrumb,
+        menu,
+        pagination,
+        empty,
+        badge,
+        radio,
+        rate,
+        switch: SWITCH,
+        transfer,
+        avatar,
+        message,
+        tag,
+        table,
+        card,
+        tabs,
+        timeline,
+        timePicker,
+        upload,
+        notification,
+        tree,
+        colorPicker,
+        datePicker,
+        rangePicker,
+        flex,
+        wave,
+        dropdown,
+        warning: warningConfig,
+        tour,
+        floatButtonGroup
+    };
+    {
+        const warningFn = (0, _warning.devUseWarning)("ConfigProvider");
+        warningFn(!("autoInsertSpaceInButton" in props), "deprecated", "`autoInsertSpaceInButton` is deprecated. Please use `{ button: { autoInsertSpace: boolean }}` instead.");
+    }
+    const config = Object.assign({}, parentContext);
+    Object.keys(baseConfig).forEach((key)=>{
+        if (baseConfig[key] !== undefined) config[key] = baseConfig[key];
+    });
+    // Pass the props used by `useContext` directly with child component.
+    // These props should merged into `config`.
+    PASSED_PROPS.forEach((propName)=>{
+        const propValue = props[propName];
+        if (propValue) config[propName] = propValue;
+    });
+    if (typeof autoInsertSpaceInButton !== "undefined") // merge deprecated api
+    config.button = Object.assign({
+        autoInsertSpace: autoInsertSpaceInButton
+    }, config.button);
+    // https://github.com/ant-design/ant-design/issues/27617
+    const memoedConfig = (0, _useMemoDefault.default)(()=>config, config, (prevConfig, currentConfig)=>{
+        const prevKeys = Object.keys(prevConfig);
+        const currentKeys = Object.keys(currentConfig);
+        return prevKeys.length !== currentKeys.length || prevKeys.some((key)=>prevConfig[key] !== currentConfig[key]);
+    });
+    const memoIconContextValue = _react.useMemo(()=>({
+            prefixCls: iconPrefixCls,
+            csp
+        }), [
+        iconPrefixCls,
+        csp
+    ]);
+    let childNode = /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement((0, _propWarningDefault.default), {
+        dropdownMatchSelectWidth: dropdownMatchSelectWidth
+    }), children);
+    const validateMessages = _react.useMemo(()=>{
+        var _a, _b, _c, _d;
+        return (0, _set.merge)(((_a = (0, _enUSDefault.default).Form) === null || _a === void 0 ? void 0 : _a.defaultValidateMessages) || {}, ((_c = (_b = memoedConfig.locale) === null || _b === void 0 ? void 0 : _b.Form) === null || _c === void 0 ? void 0 : _c.defaultValidateMessages) || {}, ((_d = memoedConfig.form) === null || _d === void 0 ? void 0 : _d.validateMessages) || {}, (form === null || form === void 0 ? void 0 : form.validateMessages) || {});
+    }, [
+        memoedConfig,
+        form === null || form === void 0 ? void 0 : form.validateMessages
+    ]);
+    if (Object.keys(validateMessages).length > 0) childNode = /*#__PURE__*/ _react.createElement((0, _validateMessagesContextDefault.default).Provider, {
+        value: validateMessages
+    }, childNode);
+    if (locale) childNode = /*#__PURE__*/ _react.createElement((0, _localeDefault.default), {
+        locale: locale,
+        _ANT_MARK__: (0, _locale.ANT_MARK)
+    }, childNode);
+    if (iconPrefixCls || csp) childNode = /*#__PURE__*/ _react.createElement((0, _contextDefault.default).Provider, {
+        value: memoIconContextValue
+    }, childNode);
+    if (componentSize) childNode = /*#__PURE__*/ _react.createElement((0, _sizeContext.SizeContextProvider), {
+        size: componentSize
+    }, childNode);
+    // =================================== Motion ===================================
+    childNode = /*#__PURE__*/ _react.createElement((0, _motionWrapperDefault.default), null, childNode);
+    // ================================ Dynamic theme ================================
+    const memoTheme = _react.useMemo(()=>{
+        const _a = mergedTheme || {}, { algorithm, token, components, cssVar } = _a, rest = __rest(_a, [
+            "algorithm",
+            "token",
+            "components",
+            "cssVar"
+        ]);
+        const themeObj = algorithm && (!Array.isArray(algorithm) || algorithm.length > 0) ? (0, _cssinjs.createTheme)(algorithm) : (0, _context2.defaultTheme);
+        const parsedComponents = {};
+        Object.entries(components || {}).forEach((_ref)=>{
+            let [componentName, componentToken] = _ref;
+            const parsedToken = Object.assign({}, componentToken);
+            if ("algorithm" in parsedToken) {
+                if (parsedToken.algorithm === true) parsedToken.theme = themeObj;
+                else if (Array.isArray(parsedToken.algorithm) || typeof parsedToken.algorithm === "function") parsedToken.theme = (0, _cssinjs.createTheme)(parsedToken.algorithm);
+                delete parsedToken.algorithm;
+            }
+            parsedComponents[componentName] = parsedToken;
+        });
+        const mergedToken = Object.assign(Object.assign({}, (0, _seedDefault.default)), token);
+        return Object.assign(Object.assign({}, rest), {
+            theme: themeObj,
+            token: mergedToken,
+            components: parsedComponents,
+            override: Object.assign({
+                override: mergedToken
+            }, parsedComponents),
+            cssVar: cssVar
+        });
+    }, [
+        mergedTheme
+    ]);
+    if (theme) childNode = /*#__PURE__*/ _react.createElement((0, _context2.DesignTokenContext).Provider, {
+        value: memoTheme
+    }, childNode);
+    // ================================== Warning ===================================
+    if (memoedConfig.warning) childNode = /*#__PURE__*/ _react.createElement((0, _warning.WarningContext).Provider, {
+        value: memoedConfig.warning
+    }, childNode);
+    // =================================== Render ===================================
+    if (componentDisabled !== undefined) childNode = /*#__PURE__*/ _react.createElement((0, _disabledContext.DisabledContextProvider), {
+        disabled: componentDisabled
+    }, childNode);
+    return /*#__PURE__*/ _react.createElement((0, _context3.ConfigContext).Provider, {
+        value: memoedConfig
+    }, childNode);
+};
+const ConfigProvider = (props)=>{
+    const context = _react.useContext((0, _context3.ConfigContext));
+    const antLocale = _react.useContext((0, _contextDefault1.default));
+    return /*#__PURE__*/ _react.createElement(ProviderChildren, Object.assign({
+        parentContext: context,
+        legacyLocale: antLocale
+    }, props));
+};
+ConfigProvider.ConfigContext = (0, _context3.ConfigContext);
+ConfigProvider.SizeContext = (0, _sizeContextDefault.default);
+ConfigProvider.config = setGlobalConfig;
+ConfigProvider.useConfig = (0, _useConfigDefault.default);
+Object.defineProperty(ConfigProvider, "SizeContext", {
+    get: ()=>{
+        (0, _warningDefault.default)(false, "ConfigProvider", "ConfigProvider.SizeContext is deprecated. Please use `ConfigProvider.useConfig().componentSize` instead.");
+        return 0, _sizeContextDefault.default;
+    }
+});
+ConfigProvider.displayName = "ConfigProvider";
+exports.default = ConfigProvider;
+
+},{"react":"21dqq","@ant-design/cssinjs":"k46HC","@ant-design/icons/es/components/Context":"dIWfS","rc-util/es/hooks/useMemo":"cxcbY","rc-util/es/utils/set":"jx2yS","../_util/warning":"daUrm","../form/validateMessagesContext":"3EeHv","../locale":"dwvDt","../locale/context":"gK9Be","../locale/en_US":"3cTtE","../theme/context":"1kv1r","../theme/themes/seed":"khm8T","./context":"cWBoR","./cssVariables":"hbvCC","./DisabledContext":"kJAKR","./hooks/useConfig":"k9iSD","./hooks/useTheme":"dfLNY","./MotionWrapper":"hu14J","./PropWarning":"3Rd4d","./SizeContext":"kxcXW","./style":"gQ7sB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"k46HC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Theme", ()=>(0, _theme.Theme));
+parcelHelpers.export(exports, "createTheme", ()=>(0, _theme.createTheme));
+parcelHelpers.export(exports, "useStyleRegister", ()=>(0, _useStyleRegisterDefault.default));
+parcelHelpers.export(exports, "useCSSVarRegister", ()=>(0, _useCSSVarRegisterDefault.default));
+parcelHelpers.export(exports, "useCacheToken", ()=>(0, _useCacheTokenDefault.default));
+parcelHelpers.export(exports, "createCache", ()=>(0, _styleContext.createCache));
+parcelHelpers.export(exports, "StyleProvider", ()=>(0, _styleContext.StyleProvider));
+parcelHelpers.export(exports, "Keyframes", ()=>(0, _keyframesDefault.default));
+parcelHelpers.export(exports, "extractStyle", ()=>(0, _extractStyleDefault.default));
+parcelHelpers.export(exports, "getComputedToken", ()=>(0, _useCacheToken.getComputedToken));
+parcelHelpers.export(exports, "legacyLogicalPropertiesTransformer", ()=>// Transformer
+    (0, _legacyLogicalPropertiesDefault.default));
+parcelHelpers.export(exports, "px2remTransformer", ()=>(0, _px2RemDefault.default));
+parcelHelpers.export(exports, "logicalPropertiesLinter", ()=>// Linters
+    (0, _linters.logicalPropertiesLinter));
+parcelHelpers.export(exports, "legacyNotSelectorLinter", ()=>(0, _linters.legacyNotSelectorLinter));
+parcelHelpers.export(exports, "parentSelectorLinter", ()=>(0, _linters.parentSelectorLinter));
+parcelHelpers.export(exports, "NaNLinter", ()=>(0, _linters.NaNLinter));
+parcelHelpers.export(exports, "token2CSSVar", ()=>// util
+    (0, _cssVariables.token2CSSVar));
+parcelHelpers.export(exports, "unit", ()=>(0, _util.unit));
+parcelHelpers.export(exports, "_experimental", ()=>_experimental);
+var _extractStyle = require("./extractStyle");
+var _extractStyleDefault = parcelHelpers.interopDefault(_extractStyle);
+var _useCacheToken = require("./hooks/useCacheToken");
+var _useCacheTokenDefault = parcelHelpers.interopDefault(_useCacheToken);
+var _useCSSVarRegister = require("./hooks/useCSSVarRegister");
+var _useCSSVarRegisterDefault = parcelHelpers.interopDefault(_useCSSVarRegister);
+var _useStyleRegister = require("./hooks/useStyleRegister");
+var _useStyleRegisterDefault = parcelHelpers.interopDefault(_useStyleRegister);
+var _keyframes = require("./Keyframes");
+var _keyframesDefault = parcelHelpers.interopDefault(_keyframes);
+var _linters = require("./linters");
+var _styleContext = require("./StyleContext");
+var _theme = require("./theme");
+var _legacyLogicalProperties = require("./transformers/legacyLogicalProperties");
+var _legacyLogicalPropertiesDefault = parcelHelpers.interopDefault(_legacyLogicalProperties);
+var _px2Rem = require("./transformers/px2rem");
+var _px2RemDefault = parcelHelpers.interopDefault(_px2Rem);
+var _util = require("./util");
+var _cssVariables = require("./util/css-variables");
+var _experimental = {
+    supportModernCSS: function supportModernCSS() {
+        return (0, _util.supportWhere)() && (0, _util.supportLogicProps)();
+    }
+};
+
+},{"./extractStyle":"8Ful2","./hooks/useCacheToken":"eNPHQ","./hooks/useCSSVarRegister":"7So3S","./hooks/useStyleRegister":"g5CV6","./Keyframes":"db1D1","./linters":"kHX3o","./StyleContext":"4mOQg","./theme":"2PYot","./transformers/legacyLogicalProperties":"hjfTE","./transformers/px2rem":"1uFpw","./util":"71DwD","./util/css-variables":"i7Jvh","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8Ful2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>extractStyle);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _useCacheToken = require("./hooks/useCacheToken");
+var _useCSSVarRegister = require("./hooks/useCSSVarRegister");
+var _useStyleRegister = require("./hooks/useStyleRegister");
+var _util = require("./util");
+var _cacheMapUtil = require("./util/cacheMapUtil");
+var _ExtractStyleFns;
+var ExtractStyleFns = (_ExtractStyleFns = {}, (0, _definePropertyDefault.default)(_ExtractStyleFns, (0, _useStyleRegister.STYLE_PREFIX), (0, _useStyleRegister.extract)), (0, _definePropertyDefault.default)(_ExtractStyleFns, (0, _useCacheToken.TOKEN_PREFIX), (0, _useCacheToken.extract)), (0, _definePropertyDefault.default)(_ExtractStyleFns, (0, _useCSSVarRegister.CSS_VAR_PREFIX), (0, _useCSSVarRegister.extract)), _ExtractStyleFns);
+function isNotNull(value) {
+    return value !== null;
+}
+function extractStyle(cache, options) {
+    var _ref = typeof options === "boolean" ? {
+        plain: options
+    } : options || {}, _ref$plain = _ref.plain, plain = _ref$plain === void 0 ? false : _ref$plain, _ref$types = _ref.types, types = _ref$types === void 0 ? [
+        "style",
+        "token",
+        "cssVar"
+    ] : _ref$types;
+    var matchPrefixRegexp = new RegExp("^(".concat((typeof types === "string" ? [
+        types
+    ] : types).join("|"), ")%"));
+    // prefix with `style` is used for `useStyleRegister` to cache style context
+    var styleKeys = Array.from(cache.cache.keys()).filter(function(key) {
+        return matchPrefixRegexp.test(key);
+    });
+    // Common effect styles like animation
+    var effectStyles = {};
+    // Mapping of cachePath to style hash
+    var cachePathMap = {};
+    var styleText = "";
+    styleKeys.map(function(key) {
+        var cachePath = key.replace(matchPrefixRegexp, "").replace(/%/g, "|");
+        var _key$split = key.split("%"), _key$split2 = (0, _slicedToArrayDefault.default)(_key$split, 1), prefix = _key$split2[0];
+        var extractFn = ExtractStyleFns[prefix];
+        var extractedStyle = extractFn(cache.cache.get(key)[1], effectStyles, {
+            plain: plain
+        });
+        if (!extractedStyle) return null;
+        var _extractedStyle = (0, _slicedToArrayDefault.default)(extractedStyle, 3), order = _extractedStyle[0], styleId = _extractedStyle[1], styleStr = _extractedStyle[2];
+        if (key.startsWith("style")) cachePathMap[cachePath] = styleId;
+        return [
+            order,
+            styleStr
+        ];
+    }).filter(isNotNull).sort(function(_ref2, _ref3) {
+        var _ref4 = (0, _slicedToArrayDefault.default)(_ref2, 1), o1 = _ref4[0];
+        var _ref5 = (0, _slicedToArrayDefault.default)(_ref3, 1), o2 = _ref5[0];
+        return o1 - o2;
+    }).forEach(function(_ref6) {
+        var _ref7 = (0, _slicedToArrayDefault.default)(_ref6, 2), style = _ref7[1];
+        styleText += style;
+    });
+    // ==================== Fill Cache Path ====================
+    styleText += (0, _util.toStyleStr)(".".concat((0, _cacheMapUtil.ATTR_CACHE_MAP), '{content:"').concat((0, _cacheMapUtil.serialize)(cachePathMap), '";}'), undefined, undefined, (0, _definePropertyDefault.default)({}, (0, _cacheMapUtil.ATTR_CACHE_MAP), (0, _cacheMapUtil.ATTR_CACHE_MAP)), plain);
+    return styleText;
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/defineProperty":"hbmCA","./hooks/useCacheToken":"eNPHQ","./hooks/useCSSVarRegister":"7So3S","./hooks/useStyleRegister":"g5CV6","./util":"71DwD","./util/cacheMapUtil":"kQQja","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cBZWN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_slicedToArray);
+var _arrayWithHolesJs = require("./arrayWithHoles.js");
+var _arrayWithHolesJsDefault = parcelHelpers.interopDefault(_arrayWithHolesJs);
+var _iterableToArrayLimitJs = require("./iterableToArrayLimit.js");
+var _iterableToArrayLimitJsDefault = parcelHelpers.interopDefault(_iterableToArrayLimitJs);
+var _unsupportedIterableToArrayJs = require("./unsupportedIterableToArray.js");
+var _unsupportedIterableToArrayJsDefault = parcelHelpers.interopDefault(_unsupportedIterableToArrayJs);
+var _nonIterableRestJs = require("./nonIterableRest.js");
+var _nonIterableRestJsDefault = parcelHelpers.interopDefault(_nonIterableRestJs);
+function _slicedToArray(r, e) {
+    return (0, _arrayWithHolesJsDefault.default)(r) || (0, _iterableToArrayLimitJsDefault.default)(r, e) || (0, _unsupportedIterableToArrayJsDefault.default)(r, e) || (0, _nonIterableRestJsDefault.default)();
+}
+
+},{"./arrayWithHoles.js":"jY0ns","./iterableToArrayLimit.js":"5XRDs","./unsupportedIterableToArray.js":"1TZRB","./nonIterableRest.js":"cUFPt","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jY0ns":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_arrayWithHoles);
+function _arrayWithHoles(r) {
+    if (Array.isArray(r)) return r;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5XRDs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_iterableToArrayLimit);
+function _iterableToArrayLimit(r, l) {
+    var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (null != t) {
+        var e, n, i, u, a = [], f = !0, o = !1;
+        try {
+            if (i = (t = t.call(r)).next, 0 === l) {
+                if (Object(t) !== t) return;
+                f = !1;
+            } else for(; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0);
+        } catch (r) {
+            o = !0, n = r;
+        } finally{
+            try {
+                if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
+            } finally{
+                if (o) throw n;
+            }
+        }
+        return a;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1TZRB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_unsupportedIterableToArray);
+var _arrayLikeToArrayJs = require("./arrayLikeToArray.js");
+var _arrayLikeToArrayJsDefault = parcelHelpers.interopDefault(_arrayLikeToArrayJs);
+function _unsupportedIterableToArray(r, a) {
+    if (r) {
+        if ("string" == typeof r) return (0, _arrayLikeToArrayJsDefault.default)(r, a);
+        var t = ({}).toString.call(r).slice(8, -1);
+        return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? (0, _arrayLikeToArrayJsDefault.default)(r, a) : void 0;
+    }
+}
+
+},{"./arrayLikeToArray.js":"gvgr8","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gvgr8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_arrayLikeToArray);
+function _arrayLikeToArray(r, a) {
+    (null == a || a > r.length) && (a = r.length);
+    for(var e = 0, n = Array(a); e < a; e++)n[e] = r[e];
+    return n;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cUFPt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_nonIterableRest);
+function _nonIterableRest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eNPHQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getComputedToken", ()=>getComputedToken);
+parcelHelpers.export(exports, "TOKEN_PREFIX", ()=>TOKEN_PREFIX);
+parcelHelpers.export(exports, "default", ()=>useCacheToken);
+parcelHelpers.export(exports, "extract", ()=>extract);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _hash = require("@emotion/hash");
+var _hashDefault = parcelHelpers.interopDefault(_hash);
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _react = require("react");
+var _styleContext = require("../StyleContext");
+var _styleContextDefault = parcelHelpers.interopDefault(_styleContext);
+var _util = require("../util");
+var _cssVariables = require("../util/css-variables");
+var _useGlobalCache = require("./useGlobalCache");
+var _useGlobalCacheDefault = parcelHelpers.interopDefault(_useGlobalCache);
+var EMPTY_OVERRIDE = {};
+// Generate different prefix to make user selector break in production env.
+// This helps developer not to do style override directly on the hash id.
+var hashPrefix = "css-dev-only-do-not-override";
+var tokenKeys = new Map();
+function recordCleanToken(tokenKey) {
+    tokenKeys.set(tokenKey, (tokenKeys.get(tokenKey) || 0) + 1);
+}
+function removeStyleTags(key, instanceId) {
+    if (typeof document !== "undefined") {
+        var styles = document.querySelectorAll("style[".concat((0, _styleContext.ATTR_TOKEN), '="').concat(key, '"]'));
+        styles.forEach(function(style) {
+            if (style[0, _styleContext.CSS_IN_JS_INSTANCE] === instanceId) {
+                var _style$parentNode;
+                (_style$parentNode = style.parentNode) === null || _style$parentNode === void 0 || _style$parentNode.removeChild(style);
+            }
+        });
+    }
+}
+var TOKEN_THRESHOLD = 0;
+// Remove will check current keys first
+function cleanTokenStyle(tokenKey, instanceId) {
+    tokenKeys.set(tokenKey, (tokenKeys.get(tokenKey) || 0) - 1);
+    var tokenKeyList = Array.from(tokenKeys.keys());
+    var cleanableKeyList = tokenKeyList.filter(function(key) {
+        var count = tokenKeys.get(key) || 0;
+        return count <= 0;
+    });
+    // Should keep tokens under threshold for not to insert style too often
+    if (tokenKeyList.length - cleanableKeyList.length > TOKEN_THRESHOLD) cleanableKeyList.forEach(function(key) {
+        removeStyleTags(key, instanceId);
+        tokenKeys.delete(key);
+    });
+}
+var getComputedToken = function getComputedToken(originToken, overrideToken, theme, format) {
+    var derivativeToken = theme.getDerivativeToken(originToken);
+    // Merge with override
+    var mergedDerivativeToken = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, derivativeToken), overrideToken);
+    // Format if needed
+    if (format) mergedDerivativeToken = format(mergedDerivativeToken);
+    return mergedDerivativeToken;
+};
+var TOKEN_PREFIX = "token";
+function useCacheToken(theme, tokens) {
+    var option = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var _useContext = (0, _react.useContext)((0, _styleContextDefault.default)), instanceId = _useContext.cache.instanceId, container = _useContext.container;
+    var _option$salt = option.salt, salt = _option$salt === void 0 ? "" : _option$salt, _option$override = option.override, override = _option$override === void 0 ? EMPTY_OVERRIDE : _option$override, formatToken = option.formatToken, compute = option.getComputedToken, cssVar = option.cssVar;
+    // Basic - We do basic cache here
+    var mergedToken = (0, _util.memoResult)(function() {
+        return Object.assign.apply(Object, [
+            {}
+        ].concat((0, _toConsumableArrayDefault.default)(tokens)));
+    }, tokens);
+    var tokenStr = (0, _util.flattenToken)(mergedToken);
+    var overrideTokenStr = (0, _util.flattenToken)(override);
+    var cssVarStr = cssVar ? (0, _util.flattenToken)(cssVar) : "";
+    var cachedToken = (0, _useGlobalCacheDefault.default)(TOKEN_PREFIX, [
+        salt,
+        theme.id,
+        tokenStr,
+        overrideTokenStr,
+        cssVarStr
+    ], function() {
+        var _cssVar$key;
+        var mergedDerivativeToken = compute ? compute(mergedToken, override, theme) : getComputedToken(mergedToken, override, theme, formatToken);
+        // Replace token value with css variables
+        var actualToken = (0, _objectSpread2Default.default)({}, mergedDerivativeToken);
+        var cssVarsStr = "";
+        if (!!cssVar) {
+            var _transformToken = (0, _cssVariables.transformToken)(mergedDerivativeToken, cssVar.key, {
+                prefix: cssVar.prefix,
+                ignore: cssVar.ignore,
+                unitless: cssVar.unitless,
+                preserve: cssVar.preserve
+            });
+            var _transformToken2 = (0, _slicedToArrayDefault.default)(_transformToken, 2);
+            mergedDerivativeToken = _transformToken2[0];
+            cssVarsStr = _transformToken2[1];
+        }
+        // Optimize for `useStyleRegister` performance
+        var tokenKey = (0, _util.token2key)(mergedDerivativeToken, salt);
+        mergedDerivativeToken._tokenKey = tokenKey;
+        actualToken._tokenKey = (0, _util.token2key)(actualToken, salt);
+        var themeKey = (_cssVar$key = cssVar === null || cssVar === void 0 ? void 0 : cssVar.key) !== null && _cssVar$key !== void 0 ? _cssVar$key : tokenKey;
+        mergedDerivativeToken._themeKey = themeKey;
+        recordCleanToken(themeKey);
+        var hashId = "".concat(hashPrefix, "-").concat((0, _hashDefault.default)(tokenKey));
+        mergedDerivativeToken._hashId = hashId; // Not used
+        return [
+            mergedDerivativeToken,
+            hashId,
+            actualToken,
+            cssVarsStr,
+            (cssVar === null || cssVar === void 0 ? void 0 : cssVar.key) || ""
+        ];
+    }, function(cache) {
+        // Remove token will remove all related style
+        cleanTokenStyle(cache[0]._themeKey, instanceId);
+    }, function(_ref) {
+        var _ref2 = (0, _slicedToArrayDefault.default)(_ref, 4), token = _ref2[0], cssVarsStr = _ref2[3];
+        if (cssVar && cssVarsStr) {
+            var style = (0, _dynamicCSS.updateCSS)(cssVarsStr, (0, _hashDefault.default)("css-variables-".concat(token._themeKey)), {
+                mark: (0, _styleContext.ATTR_MARK),
+                prepend: "queue",
+                attachTo: container,
+                priority: -999
+            });
+            style[0, _styleContext.CSS_IN_JS_INSTANCE] = instanceId;
+            // Used for `useCacheToken` to remove on batch when token removed
+            style.setAttribute((0, _styleContext.ATTR_TOKEN), token._themeKey);
+        }
+    });
+    return cachedToken;
+}
+var extract = function extract(cache, effectStyles, options) {
+    var _cache = (0, _slicedToArrayDefault.default)(cache, 5), realToken = _cache[2], styleStr = _cache[3], cssVarKey = _cache[4];
+    var _ref3 = options || {}, plain = _ref3.plain;
+    if (!styleStr) return null;
+    var styleId = realToken._tokenKey;
+    var order = -999;
+    // ====================== Style ======================
+    // Used for rc-util
+    var sharedAttrs = {
+        "data-rc-order": "prependQueue",
+        "data-rc-priority": "".concat(order)
+    };
+    var styleText = (0, _util.toStyleStr)(styleStr, cssVarKey, styleId, sharedAttrs, plain);
+    return [
+        order,
+        styleId,
+        styleText
+    ];
+};
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@emotion/hash":"h4XqR","rc-util/es/Dom/dynamicCSS":"lfei6","react":"21dqq","../StyleContext":"4mOQg","../util":"71DwD","../util/css-variables":"i7Jvh","./useGlobalCache":"29wtY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bCmCj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_toConsumableArray);
+var _arrayWithoutHolesJs = require("./arrayWithoutHoles.js");
+var _arrayWithoutHolesJsDefault = parcelHelpers.interopDefault(_arrayWithoutHolesJs);
+var _iterableToArrayJs = require("./iterableToArray.js");
+var _iterableToArrayJsDefault = parcelHelpers.interopDefault(_iterableToArrayJs);
+var _unsupportedIterableToArrayJs = require("./unsupportedIterableToArray.js");
+var _unsupportedIterableToArrayJsDefault = parcelHelpers.interopDefault(_unsupportedIterableToArrayJs);
+var _nonIterableSpreadJs = require("./nonIterableSpread.js");
+var _nonIterableSpreadJsDefault = parcelHelpers.interopDefault(_nonIterableSpreadJs);
+function _toConsumableArray(r) {
+    return (0, _arrayWithoutHolesJsDefault.default)(r) || (0, _iterableToArrayJsDefault.default)(r) || (0, _unsupportedIterableToArrayJsDefault.default)(r) || (0, _nonIterableSpreadJsDefault.default)();
+}
+
+},{"./arrayWithoutHoles.js":"6kafd","./iterableToArray.js":"61qSr","./unsupportedIterableToArray.js":"1TZRB","./nonIterableSpread.js":"3qKv3","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6kafd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_arrayWithoutHoles);
+var _arrayLikeToArrayJs = require("./arrayLikeToArray.js");
+var _arrayLikeToArrayJsDefault = parcelHelpers.interopDefault(_arrayLikeToArrayJs);
+function _arrayWithoutHoles(r) {
+    if (Array.isArray(r)) return (0, _arrayLikeToArrayJsDefault.default)(r);
+}
+
+},{"./arrayLikeToArray.js":"gvgr8","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"61qSr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_iterableToArray);
+function _iterableToArray(r) {
+    if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3qKv3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_nonIterableSpread);
+function _nonIterableSpread() {
+    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"h4XqR":[function(require,module,exports) {
+/* eslint-disable */ // Inspired by https://github.com/garycourt/murmurhash-js
+// Ported from https://github.com/aappleby/smhasher/blob/61a0530f28277f2e850bfc39600ce61d02b518de/src/MurmurHash2.cpp#L37-L86
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function murmur2(str) {
+    // 'm' and 'r' are mixing constants generated offline.
+    // They're not really 'magic', they just happen to work well.
+    // const m = 0x5bd1e995;
+    // const r = 24;
+    // Initialize the hash
+    var h = 0; // Mix 4 bytes at a time into the hash
+    var k, i = 0, len = str.length;
+    for(; len >= 4; ++i, len -= 4){
+        k = str.charCodeAt(i) & 0xff | (str.charCodeAt(++i) & 0xff) << 8 | (str.charCodeAt(++i) & 0xff) << 16 | (str.charCodeAt(++i) & 0xff) << 24;
+        k = /* Math.imul(k, m): */ (k & 0xffff) * 0x5bd1e995 + ((k >>> 16) * 0xe995 << 16);
+        k ^= /* k >>> r: */ k >>> 24;
+        h = /* Math.imul(k, m): */ (k & 0xffff) * 0x5bd1e995 + ((k >>> 16) * 0xe995 << 16) ^ /* Math.imul(h, m): */ (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
+    } // Handle the last few bytes of the input array
+    switch(len){
+        case 3:
+            h ^= (str.charCodeAt(i + 2) & 0xff) << 16;
+        case 2:
+            h ^= (str.charCodeAt(i + 1) & 0xff) << 8;
+        case 1:
+            h ^= str.charCodeAt(i) & 0xff;
+            h = /* Math.imul(h, m): */ (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
+    } // Do a few final mixes of the hash to ensure the last few
+    // bytes are well-incorporated.
+    h ^= h >>> 13;
+    h = /* Math.imul(h, m): */ (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
+    return ((h ^ h >>> 15) >>> 0).toString(36);
+}
+exports.default = murmur2;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lfei6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "injectCSS", ()=>injectCSS);
+parcelHelpers.export(exports, "removeCSS", ()=>removeCSS);
+/**
+ * manually clear container cache to avoid global cache in unit testes
+ */ parcelHelpers.export(exports, "clearContainerCache", ()=>clearContainerCache);
+parcelHelpers.export(exports, "updateCSS", ()=>updateCSS);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _canUseDom = require("./canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _contains = require("./contains");
+var _containsDefault = parcelHelpers.interopDefault(_contains);
+var APPEND_ORDER = "data-rc-order";
+var APPEND_PRIORITY = "data-rc-priority";
+var MARK_KEY = "rc-util-key";
+var containerCache = new Map();
+function getMark() {
+    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {}, mark = _ref.mark;
+    if (mark) return mark.startsWith("data-") ? mark : "data-".concat(mark);
+    return MARK_KEY;
+}
+function getContainer(option) {
+    if (option.attachTo) return option.attachTo;
+    var head = document.querySelector("head");
+    return head || document.body;
+}
+function getOrder(prepend) {
+    if (prepend === "queue") return "prependQueue";
+    return prepend ? "prepend" : "append";
+}
+/**
+ * Find style which inject by rc-util
+ */ function findStyles(container) {
+    return Array.from((containerCache.get(container) || container).children).filter(function(node) {
+        return node.tagName === "STYLE";
+    });
+}
+function injectCSS(css) {
+    var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    if (!(0, _canUseDomDefault.default)()) return null;
+    var csp = option.csp, prepend = option.prepend, _option$priority = option.priority, priority = _option$priority === void 0 ? 0 : _option$priority;
+    var mergedOrder = getOrder(prepend);
+    var isPrependQueue = mergedOrder === "prependQueue";
+    var styleNode = document.createElement("style");
+    styleNode.setAttribute(APPEND_ORDER, mergedOrder);
+    if (isPrependQueue && priority) styleNode.setAttribute(APPEND_PRIORITY, "".concat(priority));
+    if (csp !== null && csp !== void 0 && csp.nonce) styleNode.nonce = csp === null || csp === void 0 ? void 0 : csp.nonce;
+    styleNode.innerHTML = css;
+    var container = getContainer(option);
+    var firstChild = container.firstChild;
+    if (prepend) {
+        // If is queue `prepend`, it will prepend first style and then append rest style
+        if (isPrependQueue) {
+            var existStyle = (option.styles || findStyles(container)).filter(function(node) {
+                // Ignore style which not injected by rc-util with prepend
+                if (![
+                    "prepend",
+                    "prependQueue"
+                ].includes(node.getAttribute(APPEND_ORDER))) return false;
+                // Ignore style which priority less then new style
+                var nodePriority = Number(node.getAttribute(APPEND_PRIORITY) || 0);
+                return priority >= nodePriority;
+            });
+            if (existStyle.length) {
+                container.insertBefore(styleNode, existStyle[existStyle.length - 1].nextSibling);
+                return styleNode;
+            }
+        }
+        // Use `insertBefore` as `prepend`
+        container.insertBefore(styleNode, firstChild);
+    } else container.appendChild(styleNode);
+    return styleNode;
+}
+function findExistNode(key) {
+    var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var container = getContainer(option);
+    return (option.styles || findStyles(container)).find(function(node) {
+        return node.getAttribute(getMark(option)) === key;
+    });
+}
+function removeCSS(key) {
+    var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var existNode = findExistNode(key, option);
+    if (existNode) {
+        var container = getContainer(option);
+        container.removeChild(existNode);
+    }
+}
+/**
+ * qiankun will inject `appendChild` to insert into other
+ */ function syncRealContainer(container, option) {
+    var cachedRealContainer = containerCache.get(container);
+    // Find real container when not cached or cached container removed
+    if (!cachedRealContainer || !(0, _containsDefault.default)(document, cachedRealContainer)) {
+        var placeholderStyle = injectCSS("", option);
+        var parentNode = placeholderStyle.parentNode;
+        containerCache.set(container, parentNode);
+        container.removeChild(placeholderStyle);
+    }
+}
+function clearContainerCache() {
+    containerCache.clear();
+}
+function updateCSS(css, key) {
+    var originOption = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var container = getContainer(originOption);
+    var styles = findStyles(container);
+    var option = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, originOption), {}, {
+        styles: styles
+    });
+    // Sync real parent
+    syncRealContainer(container, option);
+    var existNode = findExistNode(key, option);
+    if (existNode) {
+        var _option$csp, _option$csp2;
+        if ((_option$csp = option.csp) !== null && _option$csp !== void 0 && _option$csp.nonce && existNode.nonce !== ((_option$csp2 = option.csp) === null || _option$csp2 === void 0 ? void 0 : _option$csp2.nonce)) {
+            var _option$csp3;
+            existNode.nonce = (_option$csp3 = option.csp) === null || _option$csp3 === void 0 ? void 0 : _option$csp3.nonce;
+        }
+        if (existNode.innerHTML !== css) existNode.innerHTML = css;
+        return existNode;
+    }
+    var newNode = injectCSS(css, option);
+    newNode.setAttribute(getMark(option), key);
+    return newNode;
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","./canUseDom":"hGxAQ","./contains":"hm8Lm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hGxAQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>canUseDom);
+function canUseDom() {
+    return !!(typeof window !== "undefined" && window.document && window.document.createElement);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hm8Lm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>contains);
+function contains(root, n) {
+    if (!root) return false;
+    // Use native if support
+    if (root.contains) return root.contains(n);
+    // `document.contains` not support with IE11
+    var node = n;
+    while(node){
+        if (node === root) return true;
+        node = node.parentNode;
+    }
+    return false;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4mOQg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ATTR_TOKEN", ()=>ATTR_TOKEN);
+parcelHelpers.export(exports, "ATTR_MARK", ()=>ATTR_MARK);
+parcelHelpers.export(exports, "ATTR_CACHE_PATH", ()=>ATTR_CACHE_PATH);
+parcelHelpers.export(exports, "CSS_IN_JS_INSTANCE", ()=>CSS_IN_JS_INSTANCE);
+parcelHelpers.export(exports, "createCache", ()=>createCache);
+parcelHelpers.export(exports, "StyleProvider", ()=>StyleProvider);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _useMemo = require("rc-util/es/hooks/useMemo");
+var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
+var _isEqual = require("rc-util/es/isEqual");
+var _isEqualDefault = parcelHelpers.interopDefault(_isEqual);
+var _react = require("react");
+var _cache = require("./Cache");
+var _cacheDefault = parcelHelpers.interopDefault(_cache);
+var _excluded = [
+    "children"
+];
+var ATTR_TOKEN = "data-token-hash";
+var ATTR_MARK = "data-css-hash";
+var ATTR_CACHE_PATH = "data-cache-path";
+var CSS_IN_JS_INSTANCE = "__cssinjs_instance__";
+function createCache() {
+    var cssinjsInstanceId = Math.random().toString(12).slice(2);
+    // Tricky SSR: Move all inline style to the head.
+    // PS: We do not recommend tricky mode.
+    if (typeof document !== "undefined" && document.head && document.body) {
+        var styles = document.body.querySelectorAll("style[".concat(ATTR_MARK, "]")) || [];
+        var firstChild = document.head.firstChild;
+        Array.from(styles).forEach(function(style) {
+            style[CSS_IN_JS_INSTANCE] = style[CSS_IN_JS_INSTANCE] || cssinjsInstanceId;
+            // Not force move if no head
+            if (style[CSS_IN_JS_INSTANCE] === cssinjsInstanceId) document.head.insertBefore(style, firstChild);
+        });
+        // Deduplicate of moved styles
+        var styleHash = {};
+        Array.from(document.querySelectorAll("style[".concat(ATTR_MARK, "]"))).forEach(function(style) {
+            var hash = style.getAttribute(ATTR_MARK);
+            if (styleHash[hash]) {
+                if (style[CSS_IN_JS_INSTANCE] === cssinjsInstanceId) {
+                    var _style$parentNode;
+                    (_style$parentNode = style.parentNode) === null || _style$parentNode === void 0 || _style$parentNode.removeChild(style);
+                }
+            } else styleHash[hash] = true;
+        });
+    }
+    return new (0, _cacheDefault.default)(cssinjsInstanceId);
+}
+var StyleContext = /*#__PURE__*/ _react.createContext({
+    hashPriority: "low",
+    cache: createCache(),
+    defaultCache: true
+});
+var StyleProvider = function StyleProvider(props) {
+    var children = props.children, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var parentContext = _react.useContext(StyleContext);
+    var context = (0, _useMemoDefault.default)(function() {
+        var mergedContext = (0, _objectSpread2Default.default)({}, parentContext);
+        Object.keys(restProps).forEach(function(key) {
+            var value = restProps[key];
+            if (restProps[key] !== undefined) mergedContext[key] = value;
+        });
+        var cache = restProps.cache;
+        mergedContext.cache = mergedContext.cache || createCache();
+        mergedContext.defaultCache = !cache && parentContext.defaultCache;
+        return mergedContext;
+    }, [
+        parentContext,
+        restProps
+    ], function(prev, next) {
+        return !(0, _isEqualDefault.default)(prev[0], next[0], true) || !(0, _isEqualDefault.default)(prev[1], next[1], true);
+    });
+    return /*#__PURE__*/ _react.createElement(StyleContext.Provider, {
+        value: context
+    }, children);
+};
+exports.default = StyleContext;
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","rc-util/es/hooks/useMemo":"cxcbY","rc-util/es/isEqual":"eBVVK","react":"21dqq","./Cache":"i9stG","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"25tJ4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_objectWithoutProperties);
+var _objectWithoutPropertiesLooseJs = require("./objectWithoutPropertiesLoose.js");
+var _objectWithoutPropertiesLooseJsDefault = parcelHelpers.interopDefault(_objectWithoutPropertiesLooseJs);
+function _objectWithoutProperties(e, t) {
+    if (null == e) return {};
+    var o, r, i = (0, _objectWithoutPropertiesLooseJsDefault.default)(e, t);
+    if (Object.getOwnPropertySymbols) {
+        var n = Object.getOwnPropertySymbols(e);
+        for(r = 0; r < n.length; r++)o = n[r], t.indexOf(o) >= 0 || ({}).propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
+    }
+    return i;
+}
+
+},{"./objectWithoutPropertiesLoose.js":"adHgr","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"adHgr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_objectWithoutPropertiesLoose);
+function _objectWithoutPropertiesLoose(r, e) {
+    if (null == r) return {};
+    var t = {};
+    for(var n in r)if (({}).hasOwnProperty.call(r, n)) {
+        if (e.indexOf(n) >= 0) continue;
+        t[n] = r[n];
+    }
+    return t;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cxcbY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMemo);
+var _react = require("react");
+function useMemo(getValue, condition, shouldUpdate) {
+    var cacheRef = _react.useRef({});
+    if (!("value" in cacheRef.current) || shouldUpdate(cacheRef.current.condition, condition)) {
+        cacheRef.current.value = getValue();
+        cacheRef.current.condition = condition;
+    }
+    return cacheRef.current.value;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eBVVK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _warning = require("./warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+/**
+ * Deeply compares two object literals.
+ * @param obj1 object 1
+ * @param obj2 object 2
+ * @param shallow shallow compare
+ * @returns
+ */ function isEqual(obj1, obj2) {
+    var shallow = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    // https://github.com/mapbox/mapbox-gl-js/pull/5979/files#diff-fde7145050c47cc3a306856efd5f9c3016e86e859de9afbd02c879be5067e58f
+    var refSet = new Set();
+    function deepEqual(a, b) {
+        var level = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+        var circular = refSet.has(a);
+        (0, _warningDefault.default)(!circular, "Warning: There may be circular references");
+        if (circular) return false;
+        if (a === b) return true;
+        if (shallow && level > 1) return false;
+        refSet.add(a);
+        var newLevel = level + 1;
+        if (Array.isArray(a)) {
+            if (!Array.isArray(b) || a.length !== b.length) return false;
+            for(var i = 0; i < a.length; i++){
+                if (!deepEqual(a[i], b[i], newLevel)) return false;
+            }
+            return true;
+        }
+        if (a && b && (0, _typeofDefault.default)(a) === "object" && (0, _typeofDefault.default)(b) === "object") {
+            var keys = Object.keys(a);
+            if (keys.length !== Object.keys(b).length) return false;
+            return keys.every(function(key) {
+                return deepEqual(a[key], b[key], newLevel);
+            });
+        }
+        // other
+        return false;
+    }
+    return deepEqual(obj1, obj2);
+}
+exports.default = isEqual;
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","./warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"i9stG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/** Connect key with `SPLIT` */ parcelHelpers.export(exports, "pathKey", ()=>pathKey);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+// [times, realValue]
+var SPLIT = "%";
+function pathKey(keys) {
+    return keys.join(SPLIT);
+}
+var Entity = /*#__PURE__*/ function() {
+    function Entity(instanceId) {
+        (0, _classCallCheckDefault.default)(this, Entity);
+        (0, _definePropertyDefault.default)(this, "instanceId", void 0);
+        /** @private Internal cache map. Do not access this directly */ (0, _definePropertyDefault.default)(this, "cache", new Map());
+        this.instanceId = instanceId;
+    }
+    (0, _createClassDefault.default)(Entity, [
+        {
+            key: "get",
+            value: function get(keys) {
+                return this.opGet(pathKey(keys));
+            }
+        },
+        {
+            key: "opGet",
+            value: function opGet(keyPathStr) {
+                return this.cache.get(keyPathStr) || null;
+            }
+        },
+        {
+            key: "update",
+            value: function update(keys, valueFn) {
+                return this.opUpdate(pathKey(keys), valueFn);
+            }
+        },
+        {
+            key: "opUpdate",
+            value: function opUpdate(keyPathStr, valueFn) {
+                var prevValue = this.cache.get(keyPathStr);
+                var nextValue = valueFn(prevValue);
+                if (nextValue === null) this.cache.delete(keyPathStr);
+                else this.cache.set(keyPathStr, nextValue);
+            }
+        }
+    ]);
+    return Entity;
+}();
+exports.default = Entity;
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aNx1x":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_classCallCheck);
+function _classCallCheck(a, n) {
+    if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kZyth":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_createClass);
+var _toPropertyKeyJs = require("./toPropertyKey.js");
+var _toPropertyKeyJsDefault = parcelHelpers.interopDefault(_toPropertyKeyJs);
+function _defineProperties(e, r) {
+    for(var t = 0; t < r.length; t++){
+        var o = r[t];
+        o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, (0, _toPropertyKeyJsDefault.default)(o.key), o);
+    }
+}
+function _createClass(e, r, t) {
+    return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", {
+        writable: !1
+    }), e;
+}
+
+},{"./toPropertyKey.js":"cviYI","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"71DwD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "memoResult", ()=>memoResult);
+/**
+ * Flatten token to string, this will auto cache the result when token not change
+ */ parcelHelpers.export(exports, "flattenToken", ()=>flattenToken);
+/**
+ * Convert derivative token to key string
+ */ parcelHelpers.export(exports, "token2key", ()=>token2key);
+parcelHelpers.export(exports, "supportLayer", ()=>supportLayer);
+parcelHelpers.export(exports, "supportWhere", ()=>supportWhere);
+parcelHelpers.export(exports, "supportLogicProps", ()=>supportLogicProps);
+parcelHelpers.export(exports, "isClientSide", ()=>isClientSide);
+parcelHelpers.export(exports, "unit", ()=>unit);
+parcelHelpers.export(exports, "toStyleStr", ()=>toStyleStr);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _hash = require("@emotion/hash");
+var _hashDefault = parcelHelpers.interopDefault(_hash);
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _styleContext = require("../StyleContext");
+var _theme = require("../theme");
+// Create a cache for memo concat
+var resultCache = new WeakMap();
+var RESULT_VALUE = {};
+function memoResult(callback, deps) {
+    var current = resultCache;
+    for(var i = 0; i < deps.length; i += 1){
+        var dep = deps[i];
+        if (!current.has(dep)) current.set(dep, new WeakMap());
+        current = current.get(dep);
+    }
+    if (!current.has(RESULT_VALUE)) current.set(RESULT_VALUE, callback());
+    return current.get(RESULT_VALUE);
+}
+// Create a cache here to avoid always loop generate
+var flattenTokenCache = new WeakMap();
+function flattenToken(token) {
+    var hashed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var str = flattenTokenCache.get(token) || "";
+    if (!str) {
+        Object.keys(token).forEach(function(key) {
+            var value = token[key];
+            str += key;
+            if (value instanceof (0, _theme.Theme)) str += value.id;
+            else if (value && (0, _typeofDefault.default)(value) === "object") str += flattenToken(value, hashed);
+            else str += value;
+        });
+        // https://github.com/ant-design/ant-design/issues/48386
+        // Should hash the string to avoid style tag name too long
+        if (hashed) str = (0, _hashDefault.default)(str);
+        // Put in cache
+        flattenTokenCache.set(token, str);
+    }
+    return str;
+}
+function token2key(token, salt) {
+    return (0, _hashDefault.default)("".concat(salt, "_").concat(flattenToken(token, true)));
+}
+var randomSelectorKey = "random-".concat(Date.now(), "-").concat(Math.random()).replace(/\./g, "");
+// Magic `content` for detect selector support
+var checkContent = "_bAmBoO_";
+function supportSelector(styleStr, handleElement, supportCheck) {
+    if ((0, _canUseDomDefault.default)()) {
+        var _getComputedStyle$con, _ele$parentNode;
+        (0, _dynamicCSS.updateCSS)(styleStr, randomSelectorKey);
+        var _ele = document.createElement("div");
+        _ele.style.position = "fixed";
+        _ele.style.left = "0";
+        _ele.style.top = "0";
+        handleElement === null || handleElement === void 0 || handleElement(_ele);
+        document.body.appendChild(_ele);
+        _ele.innerHTML = "Test";
+        _ele.style.zIndex = "9999999";
+        var support = supportCheck ? supportCheck(_ele) : (_getComputedStyle$con = getComputedStyle(_ele).content) === null || _getComputedStyle$con === void 0 ? void 0 : _getComputedStyle$con.includes(checkContent);
+        (_ele$parentNode = _ele.parentNode) === null || _ele$parentNode === void 0 || _ele$parentNode.removeChild(_ele);
+        (0, _dynamicCSS.removeCSS)(randomSelectorKey);
+        return support;
+    }
+    return false;
+}
+var canLayer = undefined;
+function supportLayer() {
+    if (canLayer === undefined) canLayer = supportSelector("@layer ".concat(randomSelectorKey, " { .").concat(randomSelectorKey, ' { content: "').concat(checkContent, '"!important; } }'), function(ele) {
+        ele.className = randomSelectorKey;
+    });
+    return canLayer;
+}
+var canWhere = undefined;
+function supportWhere() {
+    if (canWhere === undefined) canWhere = supportSelector(":where(.".concat(randomSelectorKey, ') { content: "').concat(checkContent, '"!important; }'), function(ele) {
+        ele.className = randomSelectorKey;
+    });
+    return canWhere;
+}
+var canLogic = undefined;
+function supportLogicProps() {
+    if (canLogic === undefined) canLogic = supportSelector(".".concat(randomSelectorKey, " { inset-block: 93px !important; }"), function(ele) {
+        ele.className = randomSelectorKey;
+    }, function(ele) {
+        return getComputedStyle(ele).bottom === "93px";
+    });
+    return canLogic;
+}
+var isClientSide = (0, _canUseDomDefault.default)();
+function unit(num) {
+    if (typeof num === "number") return "".concat(num, "px");
+    return num;
+}
+function toStyleStr(style, tokenKey, styleId) {
+    var _objectSpread2;
+    var customizeAttrs = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var plain = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+    if (plain) return style;
+    var attrs = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, customizeAttrs), {}, (_objectSpread2 = {}, (0, _definePropertyDefault.default)(_objectSpread2, (0, _styleContext.ATTR_TOKEN), tokenKey), (0, _definePropertyDefault.default)(_objectSpread2, (0, _styleContext.ATTR_MARK), styleId), _objectSpread2));
+    var attrStr = Object.keys(attrs).map(function(attr) {
+        var val = attrs[attr];
+        return val ? "".concat(attr, '="').concat(val, '"') : null;
+    }).filter(function(v) {
+        return v;
+    }).join(" ");
+    return "<style ".concat(attrStr, ">").concat(style, "</style>");
+}
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","@emotion/hash":"h4XqR","rc-util/es/Dom/canUseDom":"hGxAQ","rc-util/es/Dom/dynamicCSS":"lfei6","../StyleContext":"4mOQg","../theme":"2PYot","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2PYot":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createTheme", ()=>(0, _createThemeDefault.default));
+parcelHelpers.export(exports, "Theme", ()=>(0, _themeDefault.default));
+parcelHelpers.export(exports, "ThemeCache", ()=>(0, _themeCacheDefault.default));
+var _createTheme = require("./createTheme");
+var _createThemeDefault = parcelHelpers.interopDefault(_createTheme);
+var _theme = require("./Theme");
+var _themeDefault = parcelHelpers.interopDefault(_theme);
+var _themeCache = require("./ThemeCache");
+var _themeCacheDefault = parcelHelpers.interopDefault(_themeCache);
+
+},{"./createTheme":"d1DjA","./Theme":"tCGY8","./ThemeCache":"bEZpG","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"d1DjA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>createTheme);
+var _themeCache = require("./ThemeCache");
+var _themeCacheDefault = parcelHelpers.interopDefault(_themeCache);
+var _theme = require("./Theme");
+var _themeDefault = parcelHelpers.interopDefault(_theme);
+var cacheThemes = new (0, _themeCacheDefault.default)();
+function createTheme(derivatives) {
+    var derivativeArr = Array.isArray(derivatives) ? derivatives : [
+        derivatives
+    ];
+    // Create new theme if not exist
+    if (!cacheThemes.has(derivativeArr)) cacheThemes.set(derivativeArr, new (0, _themeDefault.default)(derivativeArr));
+    // Get theme from cache and return
+    return cacheThemes.get(derivativeArr);
+}
+
+},{"./ThemeCache":"bEZpG","./Theme":"tCGY8","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bEZpG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+// ================================== Cache ==================================
+parcelHelpers.export(exports, "sameDerivativeOption", ()=>sameDerivativeOption);
+parcelHelpers.export(exports, "default", ()=>ThemeCache);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+function sameDerivativeOption(left, right) {
+    if (left.length !== right.length) return false;
+    for(var i = 0; i < left.length; i++){
+        if (left[i] !== right[i]) return false;
+    }
+    return true;
+}
+var ThemeCache = /*#__PURE__*/ function() {
+    function ThemeCache() {
+        (0, _classCallCheckDefault.default)(this, ThemeCache);
+        (0, _definePropertyDefault.default)(this, "cache", void 0);
+        (0, _definePropertyDefault.default)(this, "keys", void 0);
+        (0, _definePropertyDefault.default)(this, "cacheCallTimes", void 0);
+        this.cache = new Map();
+        this.keys = [];
+        this.cacheCallTimes = 0;
+    }
+    (0, _createClassDefault.default)(ThemeCache, [
+        {
+            key: "size",
+            value: function size() {
+                return this.keys.length;
+            }
+        },
+        {
+            key: "internalGet",
+            value: function internalGet(derivativeOption) {
+                var _cache2, _cache3;
+                var updateCallTimes = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+                var cache = {
+                    map: this.cache
+                };
+                derivativeOption.forEach(function(derivative) {
+                    if (!cache) cache = undefined;
+                    else {
+                        var _cache;
+                        cache = (_cache = cache) === null || _cache === void 0 || (_cache = _cache.map) === null || _cache === void 0 ? void 0 : _cache.get(derivative);
+                    }
+                });
+                if ((_cache2 = cache) !== null && _cache2 !== void 0 && _cache2.value && updateCallTimes) cache.value[1] = this.cacheCallTimes++;
+                return (_cache3 = cache) === null || _cache3 === void 0 ? void 0 : _cache3.value;
+            }
+        },
+        {
+            key: "get",
+            value: function get(derivativeOption) {
+                var _this$internalGet;
+                return (_this$internalGet = this.internalGet(derivativeOption, true)) === null || _this$internalGet === void 0 ? void 0 : _this$internalGet[0];
+            }
+        },
+        {
+            key: "has",
+            value: function has(derivativeOption) {
+                return !!this.internalGet(derivativeOption);
+            }
+        },
+        {
+            key: "set",
+            value: function set(derivativeOption, value) {
+                var _this = this;
+                // New cache
+                if (!this.has(derivativeOption)) {
+                    if (this.size() + 1 > ThemeCache.MAX_CACHE_SIZE + ThemeCache.MAX_CACHE_OFFSET) {
+                        var _this$keys$reduce = this.keys.reduce(function(result, key) {
+                            var _result = (0, _slicedToArrayDefault.default)(result, 2), callTimes = _result[1];
+                            if (_this.internalGet(key)[1] < callTimes) return [
+                                key,
+                                _this.internalGet(key)[1]
+                            ];
+                            return result;
+                        }, [
+                            this.keys[0],
+                            this.cacheCallTimes
+                        ]), _this$keys$reduce2 = (0, _slicedToArrayDefault.default)(_this$keys$reduce, 1), targetKey = _this$keys$reduce2[0];
+                        this.delete(targetKey);
+                    }
+                    this.keys.push(derivativeOption);
+                }
+                var cache = this.cache;
+                derivativeOption.forEach(function(derivative, index) {
+                    if (index === derivativeOption.length - 1) cache.set(derivative, {
+                        value: [
+                            value,
+                            _this.cacheCallTimes++
+                        ]
+                    });
+                    else {
+                        var cacheValue = cache.get(derivative);
+                        if (!cacheValue) cache.set(derivative, {
+                            map: new Map()
+                        });
+                        else if (!cacheValue.map) cacheValue.map = new Map();
+                        cache = cache.get(derivative).map;
+                    }
+                });
+            }
+        },
+        {
+            key: "deleteByPath",
+            value: function deleteByPath(currentCache, derivatives) {
+                var cache = currentCache.get(derivatives[0]);
+                if (derivatives.length === 1) {
+                    var _cache$value;
+                    if (!cache.map) currentCache.delete(derivatives[0]);
+                    else currentCache.set(derivatives[0], {
+                        map: cache.map
+                    });
+                    return (_cache$value = cache.value) === null || _cache$value === void 0 ? void 0 : _cache$value[0];
+                }
+                var result = this.deleteByPath(cache.map, derivatives.slice(1));
+                if ((!cache.map || cache.map.size === 0) && !cache.value) currentCache.delete(derivatives[0]);
+                return result;
+            }
+        },
+        {
+            key: "delete",
+            value: function _delete(derivativeOption) {
+                // If cache exists
+                if (this.has(derivativeOption)) {
+                    this.keys = this.keys.filter(function(item) {
+                        return !sameDerivativeOption(item, derivativeOption);
+                    });
+                    return this.deleteByPath(this.cache, derivativeOption);
+                }
+                return undefined;
+            }
+        }
+    ]);
+    return ThemeCache;
+}();
+(0, _definePropertyDefault.default)(ThemeCache, "MAX_CACHE_SIZE", 20);
+(0, _definePropertyDefault.default)(ThemeCache, "MAX_CACHE_OFFSET", 5);
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"tCGY8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Theme);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _warning = require("rc-util/es/warning");
+var uuid = 0;
+/**
+ * Theme with algorithms to derive tokens from design tokens.
+ * Use `createTheme` first which will help to manage the theme instance cache.
+ */ var Theme = /*#__PURE__*/ function() {
+    function Theme(derivatives) {
+        (0, _classCallCheckDefault.default)(this, Theme);
+        (0, _definePropertyDefault.default)(this, "derivatives", void 0);
+        (0, _definePropertyDefault.default)(this, "id", void 0);
+        this.derivatives = Array.isArray(derivatives) ? derivatives : [
+            derivatives
+        ];
+        this.id = uuid;
+        if (derivatives.length === 0) (0, _warning.warning)(derivatives.length > 0, "[Ant Design CSS-in-JS] Theme should have at least one derivative function.");
+        uuid += 1;
+    }
+    (0, _createClassDefault.default)(Theme, [
+        {
+            key: "getDerivativeToken",
+            value: function getDerivativeToken(token) {
+                return this.derivatives.reduce(function(result, derivative) {
+                    return derivative(token, result);
+                }, undefined);
+            }
+        }
+    ]);
+    return Theme;
+}();
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/defineProperty":"hbmCA","rc-util/es/warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"i7Jvh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "token2CSSVar", ()=>token2CSSVar);
+parcelHelpers.export(exports, "serializeCSSVar", ()=>serializeCSSVar);
+parcelHelpers.export(exports, "transformToken", ()=>transformToken);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var token2CSSVar = function token2CSSVar(token) {
+    var prefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
+    return "--".concat(prefix ? "".concat(prefix, "-") : "").concat(token).replace(/([a-z0-9])([A-Z])/g, "$1-$2").replace(/([A-Z]+)([A-Z][a-z0-9]+)/g, "$1-$2").replace(/([a-z])([A-Z0-9])/g, "$1-$2").toLowerCase();
+};
+var serializeCSSVar = function serializeCSSVar(cssVars, hashId, options) {
+    if (!Object.keys(cssVars).length) return "";
+    return ".".concat(hashId).concat(options !== null && options !== void 0 && options.scope ? ".".concat(options.scope) : "", "{").concat(Object.entries(cssVars).map(function(_ref) {
+        var _ref2 = (0, _slicedToArrayDefault.default)(_ref, 2), key = _ref2[0], value = _ref2[1];
+        return "".concat(key, ":").concat(value, ";");
+    }).join(""), "}");
+};
+var transformToken = function transformToken(token, themeKey, config) {
+    var cssVars = {};
+    var result = {};
+    Object.entries(token).forEach(function(_ref3) {
+        var _config$preserve, _config$ignore;
+        var _ref4 = (0, _slicedToArrayDefault.default)(_ref3, 2), key = _ref4[0], value = _ref4[1];
+        if (config !== null && config !== void 0 && (_config$preserve = config.preserve) !== null && _config$preserve !== void 0 && _config$preserve[key]) result[key] = value;
+        else if ((typeof value === "string" || typeof value === "number") && !(config !== null && config !== void 0 && (_config$ignore = config.ignore) !== null && _config$ignore !== void 0 && _config$ignore[key])) {
+            var _config$unitless;
+            var cssVar = token2CSSVar(key, config === null || config === void 0 ? void 0 : config.prefix);
+            cssVars[cssVar] = typeof value === "number" && !(config !== null && config !== void 0 && (_config$unitless = config.unitless) !== null && _config$unitless !== void 0 && _config$unitless[key]) ? "".concat(value, "px") : String(value);
+            result[key] = "var(".concat(cssVar, ")");
+        }
+    });
+    return [
+        result,
+        serializeCSSVar(cssVars, themeKey, {
+            scope: config === null || config === void 0 ? void 0 : config.scope
+        })
+    ];
+};
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"29wtY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useGlobalCache);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _cache = require("../Cache");
+var _styleContext = require("../StyleContext");
+var _styleContextDefault = parcelHelpers.interopDefault(_styleContext);
+var _useCompatibleInsertionEffect = require("./useCompatibleInsertionEffect");
+var _useCompatibleInsertionEffectDefault = parcelHelpers.interopDefault(_useCompatibleInsertionEffect);
+var _useEffectCleanupRegister = require("./useEffectCleanupRegister");
+var _useEffectCleanupRegisterDefault = parcelHelpers.interopDefault(_useEffectCleanupRegister);
+var _useHMR = require("./useHMR");
+var _useHMRDefault = parcelHelpers.interopDefault(_useHMR);
+function useGlobalCache(prefix, keyPath, cacheFn, onCacheRemove, // Add additional effect trigger by `useInsertionEffect`
+onCacheEffect) {
+    var _React$useContext = _react.useContext((0, _styleContextDefault.default)), globalCache = _React$useContext.cache;
+    var fullPath = [
+        prefix
+    ].concat((0, _toConsumableArrayDefault.default)(keyPath));
+    var fullPathStr = (0, _cache.pathKey)(fullPath);
+    var register = (0, _useEffectCleanupRegisterDefault.default)([
+        fullPathStr
+    ]);
+    var HMRUpdate = (0, _useHMRDefault.default)();
+    var buildCache = function buildCache(updater) {
+        globalCache.opUpdate(fullPathStr, function(prevCache) {
+            var _ref = prevCache || [
+                undefined,
+                undefined
+            ], _ref2 = (0, _slicedToArrayDefault.default)(_ref, 2), _ref2$ = _ref2[0], times = _ref2$ === void 0 ? 0 : _ref2$, cache = _ref2[1];
+            // HMR should always ignore cache since developer may change it
+            var tmpCache = cache;
+            if (cache && HMRUpdate) {
+                onCacheRemove === null || onCacheRemove === void 0 || onCacheRemove(tmpCache, HMRUpdate);
+                tmpCache = null;
+            }
+            var mergedCache = tmpCache || cacheFn();
+            var data = [
+                times,
+                mergedCache
+            ];
+            // Call updater if need additional logic
+            return updater ? updater(data) : data;
+        });
+    };
+    // Create cache
+    _react.useMemo(function() {
+        buildCache();
+    }, /* eslint-disable react-hooks/exhaustive-deps */ [
+        fullPathStr
+    ]);
+    var cacheEntity = globalCache.opGet(fullPathStr);
+    // HMR clean the cache but not trigger `useMemo` again
+    // Let's fallback of this
+    // ref https://github.com/ant-design/cssinjs/issues/127
+    if (!cacheEntity) {
+        buildCache();
+        cacheEntity = globalCache.opGet(fullPathStr);
+    }
+    var cacheContent = cacheEntity[1];
+    // Remove if no need anymore
+    (0, _useCompatibleInsertionEffectDefault.default)(function() {
+        onCacheEffect === null || onCacheEffect === void 0 || onCacheEffect(cacheContent);
+    }, function(polyfill) {
+        // It's bad to call build again in effect.
+        // But we have to do this since StrictMode will call effect twice
+        // which will clear cache on the first time.
+        buildCache(function(_ref3) {
+            var _ref4 = (0, _slicedToArrayDefault.default)(_ref3, 2), times = _ref4[0], cache = _ref4[1];
+            if (polyfill && times === 0) onCacheEffect === null || onCacheEffect === void 0 || onCacheEffect(cacheContent);
+            return [
+                times + 1,
+                cache
+            ];
+        });
+        return function() {
+            globalCache.opUpdate(fullPathStr, function(prevCache) {
+                var _ref5 = prevCache || [], _ref6 = (0, _slicedToArrayDefault.default)(_ref5, 2), _ref6$ = _ref6[0], times = _ref6$ === void 0 ? 0 : _ref6$, cache = _ref6[1];
+                var nextCount = times - 1;
+                if (nextCount === 0) {
+                    // Always remove styles in useEffect callback
+                    register(function() {
+                        // With polyfill, registered callback will always be called synchronously
+                        // But without polyfill, it will be called in effect clean up,
+                        // And by that time this cache is cleaned up.
+                        if (polyfill || !globalCache.opGet(fullPathStr)) onCacheRemove === null || onCacheRemove === void 0 || onCacheRemove(cache, false);
+                    });
+                    return null;
+                }
+                return [
+                    times - 1,
+                    cache
+                ];
+            });
+        };
+    }, [
+        fullPathStr
+    ]);
+    return cacheContent;
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","../Cache":"i9stG","../StyleContext":"4mOQg","./useCompatibleInsertionEffect":"buD3q","./useEffectCleanupRegister":"huZLl","./useHMR":"3TyTt","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"buD3q":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+// import canUseDom from 'rc-util/lib/Dom/canUseDom';
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _react = require("react");
+// We need fully clone React function here
+// to avoid webpack warning React 17 do not export `useId`
+var fullClone = (0, _objectSpread2Default.default)({}, _react);
+var useInsertionEffect = fullClone.useInsertionEffect;
+/**
+ * Polyfill `useInsertionEffect` for React < 18
+ * @param renderEffect will be executed in `useMemo`, and do not have callback
+ * @param effect will be executed in `useLayoutEffect`
+ * @param deps
+ */ var useInsertionEffectPolyfill = function useInsertionEffectPolyfill(renderEffect, effect, deps) {
+    _react.useMemo(renderEffect, deps);
+    (0, _useLayoutEffectDefault.default)(function() {
+        return effect(true);
+    }, deps);
+};
+/**
+ * Compatible `useInsertionEffect`
+ * will use `useInsertionEffect` if React version >= 18,
+ * otherwise use `useInsertionEffectPolyfill`.
+ */ var useCompatibleInsertionEffect = useInsertionEffect ? function(renderEffect, effect, deps) {
+    return useInsertionEffect(function() {
+        renderEffect();
+        return effect();
+    }, deps);
+} : useInsertionEffectPolyfill;
+exports.default = useCompatibleInsertionEffect;
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","rc-util/es/hooks/useLayoutEffect":"b6Tje","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"b6Tje":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useLayoutUpdateEffect", ()=>useLayoutUpdateEffect);
+var _react = require("react");
+var _canUseDom = require("../Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+/**
+ * Wrap `React.useLayoutEffect` which will not throw warning message in test env
+ */ var useInternalLayoutEffect = (0, _canUseDomDefault.default)() ? _react.useLayoutEffect : _react.useEffect;
+var useLayoutEffect = function useLayoutEffect(callback, deps) {
+    var firstMountRef = _react.useRef(true);
+    useInternalLayoutEffect(function() {
+        return callback(firstMountRef.current);
+    }, deps);
+    // We tell react that first mount has passed
+    useInternalLayoutEffect(function() {
+        firstMountRef.current = false;
+        return function() {
+            firstMountRef.current = true;
+        };
+    }, []);
+};
+var useLayoutUpdateEffect = function useLayoutUpdateEffect(callback, deps) {
+    useLayoutEffect(function(firstMount) {
+        if (!firstMount) return callback();
+    }, deps);
+};
+exports.default = useLayoutEffect;
+
+},{"react":"21dqq","../Dom/canUseDom":"hGxAQ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"huZLl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _warning = require("rc-util/es/warning");
+var _react = require("react");
+var fullClone = (0, _objectSpread2Default.default)({}, _react);
+var useInsertionEffect = fullClone.useInsertionEffect;
+// DO NOT register functions in useEffect cleanup function, or functions that registered will never be called.
+var useCleanupRegister = function useCleanupRegister(deps) {
+    var effectCleanups = [];
+    var cleanupFlag = false;
+    function register(fn) {
+        if (cleanupFlag) {
+            (0, _warning.warning)(false, "[Ant Design CSS-in-JS] You are registering a cleanup function after unmount, which will not have any effect.");
+            return;
+        }
+        effectCleanups.push(fn);
+    }
+    _react.useEffect(function() {
+        // Compatible with strict mode
+        cleanupFlag = false;
+        return function() {
+            cleanupFlag = true;
+            if (effectCleanups.length) effectCleanups.forEach(function(fn) {
+                return fn();
+            });
+        };
+    }, deps);
+    return register;
+};
+var useRun = function useRun() {
+    return function(fn) {
+        fn();
+    };
+};
+// Only enable register in React 18
+var useEffectCleanupRegister = typeof useInsertionEffect !== "undefined" ? useCleanupRegister : useRun;
+exports.default = useEffectCleanupRegister;
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","rc-util/es/warning":"c7oua","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3TyTt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function useProdHMR() {
+    return false;
+}
+var webpackHMR = false;
+function useDevHMR() {
+    return webpackHMR;
+}
+exports.default = useDevHMR;
+// Webpack `module.hot.accept` do not support any deps update trigger
+// We have to hack handler to force mark as HRM
+if (module && module.hot && typeof window !== "undefined") {
+    var win = window;
+    if (typeof win.webpackHotUpdate === "function") {
+        var originWebpackHotUpdate = win.webpackHotUpdate;
+        win.webpackHotUpdate = function() {
+            webpackHMR = true;
+            setTimeout(function() {
+                webpackHMR = false;
+            }, 0);
+            return originWebpackHotUpdate.apply(void 0, arguments);
+        };
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7So3S":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CSS_VAR_PREFIX", ()=>CSS_VAR_PREFIX);
+parcelHelpers.export(exports, "extract", ()=>extract);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _react = require("react");
+var _styleContext = require("../StyleContext");
+var _styleContextDefault = parcelHelpers.interopDefault(_styleContext);
+var _util = require("../util");
+var _cssVariables = require("../util/css-variables");
+var _useGlobalCache = require("./useGlobalCache");
+var _useGlobalCacheDefault = parcelHelpers.interopDefault(_useGlobalCache);
+var _useStyleRegister = require("./useStyleRegister");
+var CSS_VAR_PREFIX = "cssVar";
+var useCSSVarRegister = function useCSSVarRegister(config, fn) {
+    var key = config.key, prefix = config.prefix, unitless = config.unitless, ignore = config.ignore, token = config.token, _config$scope = config.scope, scope = _config$scope === void 0 ? "" : _config$scope;
+    var _useContext = (0, _react.useContext)((0, _styleContextDefault.default)), instanceId = _useContext.cache.instanceId, container = _useContext.container;
+    var tokenKey = token._tokenKey;
+    var stylePath = [].concat((0, _toConsumableArrayDefault.default)(config.path), [
+        key,
+        scope,
+        tokenKey
+    ]);
+    var cache = (0, _useGlobalCacheDefault.default)(CSS_VAR_PREFIX, stylePath, function() {
+        var originToken = fn();
+        var _transformToken = (0, _cssVariables.transformToken)(originToken, key, {
+            prefix: prefix,
+            unitless: unitless,
+            ignore: ignore,
+            scope: scope
+        }), _transformToken2 = (0, _slicedToArrayDefault.default)(_transformToken, 2), mergedToken = _transformToken2[0], cssVarsStr = _transformToken2[1];
+        var styleId = (0, _useStyleRegister.uniqueHash)(stylePath, cssVarsStr);
+        return [
+            mergedToken,
+            cssVarsStr,
+            styleId,
+            key
+        ];
+    }, function(_ref) {
+        var _ref2 = (0, _slicedToArrayDefault.default)(_ref, 3), styleId = _ref2[2];
+        if (0, _util.isClientSide) (0, _dynamicCSS.removeCSS)(styleId, {
+            mark: (0, _styleContext.ATTR_MARK)
+        });
+    }, function(_ref3) {
+        var _ref4 = (0, _slicedToArrayDefault.default)(_ref3, 3), cssVarsStr = _ref4[1], styleId = _ref4[2];
+        if (!cssVarsStr) return;
+        var style = (0, _dynamicCSS.updateCSS)(cssVarsStr, styleId, {
+            mark: (0, _styleContext.ATTR_MARK),
+            prepend: "queue",
+            attachTo: container,
+            priority: -999
+        });
+        style[0, _styleContext.CSS_IN_JS_INSTANCE] = instanceId;
+        // Used for `useCacheToken` to remove on batch when token removed
+        style.setAttribute((0, _styleContext.ATTR_TOKEN), key);
+    });
+    return cache;
+};
+var extract = function extract(cache, effectStyles, options) {
+    var _cache = (0, _slicedToArrayDefault.default)(cache, 4), styleStr = _cache[1], styleId = _cache[2], cssVarKey = _cache[3];
+    var _ref5 = options || {}, plain = _ref5.plain;
+    if (!styleStr) return null;
+    var order = -999;
+    // ====================== Style ======================
+    // Used for rc-util
+    var sharedAttrs = {
+        "data-rc-order": "prependQueue",
+        "data-rc-priority": "".concat(order)
+    };
+    var styleText = (0, _util.toStyleStr)(styleStr, cssVarKey, styleId, sharedAttrs, plain);
+    return [
+        order,
+        styleId,
+        styleText
+    ];
+};
+exports.default = useCSSVarRegister;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","rc-util/es/Dom/dynamicCSS":"lfei6","react":"21dqq","../StyleContext":"4mOQg","../util":"71DwD","../util/css-variables":"i7Jvh","./useGlobalCache":"29wtY","./useStyleRegister":"g5CV6","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g5CV6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+// ============================================================================
+// ==                                 Parser                                 ==
+// ============================================================================
+// Preprocessor style content to browser support one
+parcelHelpers.export(exports, "normalizeStyle", ()=>normalizeStyle);
+parcelHelpers.export(exports, "parseStyle", ()=>parseStyle);
+// ============================================================================
+// ==                                Register                                ==
+// ============================================================================
+parcelHelpers.export(exports, "uniqueHash", ()=>uniqueHash);
+parcelHelpers.export(exports, "STYLE_PREFIX", ()=>STYLE_PREFIX);
+parcelHelpers.export(exports, "default", ()=>useStyleRegister);
+parcelHelpers.export(exports, "extract", ()=>extract);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _hash = require("@emotion/hash");
+var _hashDefault = parcelHelpers.interopDefault(_hash);
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _react = require("react");
+// @ts-ignore
+var _unitless = require("@emotion/unitless");
+var _unitlessDefault = parcelHelpers.interopDefault(_unitless);
+var _stylis = require("stylis");
+var _linters = require("../linters");
+var _styleContext = require("../StyleContext");
+var _styleContextDefault = parcelHelpers.interopDefault(_styleContext);
+var _util = require("../util");
+var _cacheMapUtil = require("../util/cacheMapUtil");
+var _useGlobalCache = require("./useGlobalCache");
+var _useGlobalCacheDefault = parcelHelpers.interopDefault(_useGlobalCache);
+var SKIP_CHECK = "_skip_check_";
+var MULTI_VALUE = "_multi_value_";
+function normalizeStyle(styleStr) {
+    var serialized = (0, _stylis.serialize)((0, _stylis.compile)(styleStr), (0, _stylis.stringify));
+    return serialized.replace(/\{%%%\:[^;];}/g, ";");
+}
+function isCompoundCSSProperty(value) {
+    return (0, _typeofDefault.default)(value) === "object" && value && (SKIP_CHECK in value || MULTI_VALUE in value);
+}
+// 注入 hash 值
+function injectSelectorHash(key, hashId, hashPriority) {
+    if (!hashId) return key;
+    var hashClassName = ".".concat(hashId);
+    var hashSelector = hashPriority === "low" ? ":where(".concat(hashClassName, ")") : hashClassName;
+    // 注入 hashId
+    var keys = key.split(",").map(function(k) {
+        var _firstPath$match;
+        var fullPath = k.trim().split(/\s+/);
+        // 如果 Selector 第一个是 HTML Element，那我们就插到它的后面。反之，就插到最前面。
+        var firstPath = fullPath[0] || "";
+        var htmlElement = ((_firstPath$match = firstPath.match(/^\w+/)) === null || _firstPath$match === void 0 ? void 0 : _firstPath$match[0]) || "";
+        firstPath = "".concat(htmlElement).concat(hashSelector).concat(firstPath.slice(htmlElement.length));
+        return [
+            firstPath
+        ].concat((0, _toConsumableArrayDefault.default)(fullPath.slice(1))).join(" ");
+    });
+    return keys.join(",");
+}
+var parseStyle = function parseStyle(interpolation) {
+    var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var _ref = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {
+        root: true,
+        parentSelectors: []
+    }, root = _ref.root, injectHash = _ref.injectHash, parentSelectors = _ref.parentSelectors;
+    var hashId = config.hashId, layer = config.layer, path = config.path, hashPriority = config.hashPriority, _config$transformers = config.transformers, transformers = _config$transformers === void 0 ? [] : _config$transformers, _config$linters = config.linters, linters = _config$linters === void 0 ? [] : _config$linters;
+    var styleStr = "";
+    var effectStyle = {};
+    function parseKeyframes(keyframes) {
+        var animationName = keyframes.getName(hashId);
+        if (!effectStyle[animationName]) {
+            var _parseStyle = parseStyle(keyframes.style, config, {
+                root: false,
+                parentSelectors: parentSelectors
+            }), _parseStyle2 = (0, _slicedToArrayDefault.default)(_parseStyle, 1), _parsedStr = _parseStyle2[0];
+            effectStyle[animationName] = "@keyframes ".concat(keyframes.getName(hashId)).concat(_parsedStr);
+        }
+    }
+    function flattenList(list) {
+        var fullList = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+        list.forEach(function(item) {
+            if (Array.isArray(item)) flattenList(item, fullList);
+            else if (item) fullList.push(item);
+        });
+        return fullList;
+    }
+    var flattenStyleList = flattenList(Array.isArray(interpolation) ? interpolation : [
+        interpolation
+    ]);
+    flattenStyleList.forEach(function(originStyle) {
+        // Only root level can use raw string
+        var style = typeof originStyle === "string" && !root ? {} : originStyle;
+        if (typeof style === "string") styleStr += "".concat(style, "\n");
+        else if (style._keyframe) // Keyframe
+        parseKeyframes(style);
+        else {
+            var mergedStyle = transformers.reduce(function(prev, trans) {
+                var _trans$visit;
+                return (trans === null || trans === void 0 || (_trans$visit = trans.visit) === null || _trans$visit === void 0 ? void 0 : _trans$visit.call(trans, prev)) || prev;
+            }, style);
+            // Normal CSSObject
+            Object.keys(mergedStyle).forEach(function(key) {
+                var value = mergedStyle[key];
+                if ((0, _typeofDefault.default)(value) === "object" && value && (key !== "animationName" || !value._keyframe) && !isCompoundCSSProperty(value)) {
+                    var subInjectHash = false;
+                    // 当成嵌套对象来处理
+                    var mergedKey = key.trim();
+                    // Whether treat child as root. In most case it is false.
+                    var nextRoot = false;
+                    // 拆分多个选择器
+                    if ((root || injectHash) && hashId) {
+                        if (mergedKey.startsWith("@")) // 略过媒体查询，交给子节点继续插入 hashId
+                        subInjectHash = true;
+                        else // 注入 hashId
+                        mergedKey = injectSelectorHash(key, hashId, hashPriority);
+                    } else if (root && !hashId && (mergedKey === "&" || mergedKey === "")) {
+                        // In case of `{ '&': { a: { color: 'red' } } }` or `{ '': { a: { color: 'red' } } }` without hashId,
+                        // we will get `&{a:{color:red;}}` or `{a:{color:red;}}` string for stylis to compile.
+                        // But it does not conform to stylis syntax,
+                        // and finally we will get `{color:red;}` as css, which is wrong.
+                        // So we need to remove key in root, and treat child `{ a: { color: 'red' } }` as root.
+                        mergedKey = "";
+                        nextRoot = true;
+                    }
+                    var _parseStyle3 = parseStyle(value, config, {
+                        root: nextRoot,
+                        injectHash: subInjectHash,
+                        parentSelectors: [].concat((0, _toConsumableArrayDefault.default)(parentSelectors), [
+                            mergedKey
+                        ])
+                    }), _parseStyle4 = (0, _slicedToArrayDefault.default)(_parseStyle3, 2), _parsedStr2 = _parseStyle4[0], childEffectStyle = _parseStyle4[1];
+                    effectStyle = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, effectStyle), childEffectStyle);
+                    styleStr += "".concat(mergedKey).concat(_parsedStr2);
+                } else {
+                    var _value;
+                    function appendStyle(cssKey, cssValue) {
+                        if ((0, _typeofDefault.default)(value) !== "object" || !(value !== null && value !== void 0 && value[SKIP_CHECK])) [
+                            (0, _linters.contentQuotesLinter),
+                            (0, _linters.hashedAnimationLinter)
+                        ].concat((0, _toConsumableArrayDefault.default)(linters)).forEach(function(linter) {
+                            return linter(cssKey, cssValue, {
+                                path: path,
+                                hashId: hashId,
+                                parentSelectors: parentSelectors
+                            });
+                        });
+                        // 如果是样式则直接插入
+                        var styleName = cssKey.replace(/[A-Z]/g, function(match) {
+                            return "-".concat(match.toLowerCase());
+                        });
+                        // Auto suffix with px
+                        var formatValue = cssValue;
+                        if (!(0, _unitlessDefault.default)[cssKey] && typeof formatValue === "number" && formatValue !== 0) formatValue = "".concat(formatValue, "px");
+                        // handle animationName & Keyframe value
+                        if (cssKey === "animationName" && cssValue !== null && cssValue !== void 0 && cssValue._keyframe) {
+                            parseKeyframes(cssValue);
+                            formatValue = cssValue.getName(hashId);
+                        }
+                        styleStr += "".concat(styleName, ":").concat(formatValue, ";");
+                    }
+                    var actualValue = (_value = value === null || value === void 0 ? void 0 : value.value) !== null && _value !== void 0 ? _value : value;
+                    if ((0, _typeofDefault.default)(value) === "object" && value !== null && value !== void 0 && value[MULTI_VALUE] && Array.isArray(actualValue)) actualValue.forEach(function(item) {
+                        appendStyle(key, item);
+                    });
+                    else appendStyle(key, actualValue);
+                }
+            });
+        }
+    });
+    if (!root) styleStr = "{".concat(styleStr, "}");
+    else if (layer) {
+        styleStr = "@layer ".concat(layer.name, " {").concat(styleStr, "}");
+        if (layer.dependencies) effectStyle["@layer ".concat(layer.name)] = layer.dependencies.map(function(deps) {
+            return "@layer ".concat(deps, ", ").concat(layer.name, ";");
+        }).join("\n");
+    }
+    return [
+        styleStr,
+        effectStyle
+    ];
+};
+function uniqueHash(path, styleStr) {
+    return (0, _hashDefault.default)("".concat(path.join("%")).concat(styleStr));
+}
+function Empty() {
+    return null;
+}
+var STYLE_PREFIX = "style";
+function useStyleRegister(info, styleFn) {
+    var token = info.token, path = info.path, hashId = info.hashId, layer = info.layer, nonce = info.nonce, clientOnly = info.clientOnly, _info$order = info.order, order = _info$order === void 0 ? 0 : _info$order;
+    var _React$useContext = _react.useContext((0, _styleContextDefault.default)), autoClear = _React$useContext.autoClear, mock = _React$useContext.mock, defaultCache = _React$useContext.defaultCache, hashPriority = _React$useContext.hashPriority, container = _React$useContext.container, ssrInline = _React$useContext.ssrInline, transformers = _React$useContext.transformers, linters = _React$useContext.linters, cache = _React$useContext.cache, enableLayer = _React$useContext.layer;
+    var tokenKey = token._tokenKey;
+    var fullPath = [
+        tokenKey
+    ];
+    if (enableLayer) fullPath.push("layer");
+    fullPath.push.apply(fullPath, (0, _toConsumableArrayDefault.default)(path));
+    // Check if need insert style
+    var isMergedClientSide = (0, _util.isClientSide);
+    if (mock !== undefined) isMergedClientSide = mock === "client";
+    var _useGlobalCache = (0, _useGlobalCacheDefault.default)(STYLE_PREFIX, fullPath, // Create cache if needed
+    function() {
+        var cachePath = fullPath.join("|");
+        // Get style from SSR inline style directly
+        if ((0, _cacheMapUtil.existPath)(cachePath)) {
+            var _getStyleAndHash = (0, _cacheMapUtil.getStyleAndHash)(cachePath), _getStyleAndHash2 = (0, _slicedToArrayDefault.default)(_getStyleAndHash, 2), inlineCacheStyleStr = _getStyleAndHash2[0], styleHash = _getStyleAndHash2[1];
+            if (inlineCacheStyleStr) return [
+                inlineCacheStyleStr,
+                tokenKey,
+                styleHash,
+                {},
+                clientOnly,
+                order
+            ];
+        }
+        // Generate style
+        var styleObj = styleFn();
+        var _parseStyle5 = parseStyle(styleObj, {
+            hashId: hashId,
+            hashPriority: hashPriority,
+            layer: enableLayer ? layer : undefined,
+            path: path.join("-"),
+            transformers: transformers,
+            linters: linters
+        }), _parseStyle6 = (0, _slicedToArrayDefault.default)(_parseStyle5, 2), parsedStyle = _parseStyle6[0], effectStyle = _parseStyle6[1];
+        var styleStr = normalizeStyle(parsedStyle);
+        var styleId = uniqueHash(fullPath, styleStr);
+        return [
+            styleStr,
+            tokenKey,
+            styleId,
+            effectStyle,
+            clientOnly,
+            order
+        ];
+    }, // Remove cache if no need
+    function(_ref2, fromHMR) {
+        var _ref3 = (0, _slicedToArrayDefault.default)(_ref2, 3), styleId = _ref3[2];
+        if ((fromHMR || autoClear) && (0, _util.isClientSide)) (0, _dynamicCSS.removeCSS)(styleId, {
+            mark: (0, _styleContext.ATTR_MARK)
+        });
+    }, // Effect: Inject style here
+    function(_ref4) {
+        var _ref5 = (0, _slicedToArrayDefault.default)(_ref4, 4), styleStr = _ref5[0], _ = _ref5[1], styleId = _ref5[2], effectStyle = _ref5[3];
+        if (isMergedClientSide && styleStr !== (0, _cacheMapUtil.CSS_FILE_STYLE)) {
+            var mergedCSSConfig = {
+                mark: (0, _styleContext.ATTR_MARK),
+                prepend: enableLayer ? false : "queue",
+                attachTo: container,
+                priority: order
+            };
+            var nonceStr = typeof nonce === "function" ? nonce() : nonce;
+            if (nonceStr) mergedCSSConfig.csp = {
+                nonce: nonceStr
+            };
+            // ================= Split Effect Style =================
+            // We will split effectStyle here since @layer should be at the top level
+            var effectLayerKeys = [];
+            var effectRestKeys = [];
+            Object.keys(effectStyle).forEach(function(key) {
+                if (key.startsWith("@layer")) effectLayerKeys.push(key);
+                else effectRestKeys.push(key);
+            });
+            // ================= Inject Layer Style =================
+            // Inject layer style
+            effectLayerKeys.forEach(function(effectKey) {
+                (0, _dynamicCSS.updateCSS)(normalizeStyle(effectStyle[effectKey]), "_layer-".concat(effectKey), (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, mergedCSSConfig), {}, {
+                    prepend: true
+                }));
+            });
+            // ==================== Inject Style ====================
+            // Inject style
+            var style = (0, _dynamicCSS.updateCSS)(styleStr, styleId, mergedCSSConfig);
+            style[0, _styleContext.CSS_IN_JS_INSTANCE] = cache.instanceId;
+            // Used for `useCacheToken` to remove on batch when token removed
+            style.setAttribute((0, _styleContext.ATTR_TOKEN), tokenKey);
+            style.setAttribute((0, _styleContext.ATTR_CACHE_PATH), fullPath.join("|"));
+            // ================ Inject Effect Style =================
+            // Inject client side effect style
+            effectRestKeys.forEach(function(effectKey) {
+                (0, _dynamicCSS.updateCSS)(normalizeStyle(effectStyle[effectKey]), "_effect-".concat(effectKey), mergedCSSConfig);
+            });
+        }
+    }), _useGlobalCache2 = (0, _slicedToArrayDefault.default)(_useGlobalCache, 3), cachedStyleStr = _useGlobalCache2[0], cachedTokenKey = _useGlobalCache2[1], cachedStyleId = _useGlobalCache2[2];
+    return function(node) {
+        var styleNode;
+        if (!ssrInline || isMergedClientSide || !defaultCache) styleNode = /*#__PURE__*/ _react.createElement(Empty, null);
+        else {
+            var _ref6;
+            styleNode = /*#__PURE__*/ _react.createElement("style", (0, _extendsDefault.default)({}, (_ref6 = {}, (0, _definePropertyDefault.default)(_ref6, (0, _styleContext.ATTR_TOKEN), cachedTokenKey), (0, _definePropertyDefault.default)(_ref6, (0, _styleContext.ATTR_MARK), cachedStyleId), _ref6), {
+                dangerouslySetInnerHTML: {
+                    __html: cachedStyleStr
+                }
+            }));
+        }
+        return /*#__PURE__*/ _react.createElement(_react.Fragment, null, styleNode, node);
+    };
+}
+var extract = function extract(cache, effectStyles, options) {
+    var _cache = (0, _slicedToArrayDefault.default)(cache, 6), styleStr = _cache[0], tokenKey = _cache[1], styleId = _cache[2], effectStyle = _cache[3], clientOnly = _cache[4], order = _cache[5];
+    var _ref7 = options || {}, plain = _ref7.plain;
+    // Skip client only style
+    if (clientOnly) return null;
+    var keyStyleText = styleStr;
+    // ====================== Share ======================
+    // Used for rc-util
+    var sharedAttrs = {
+        "data-rc-order": "prependQueue",
+        "data-rc-priority": "".concat(order)
+    };
+    // ====================== Style ======================
+    keyStyleText = (0, _util.toStyleStr)(styleStr, tokenKey, styleId, sharedAttrs, plain);
+    // =============== Create effect style ===============
+    if (effectStyle) Object.keys(effectStyle).forEach(function(effectKey) {
+        // Effect style can be reused
+        if (!effectStyles[effectKey]) {
+            effectStyles[effectKey] = true;
+            var effectStyleStr = normalizeStyle(effectStyle[effectKey]);
+            var effectStyleHTML = (0, _util.toStyleStr)(effectStyleStr, tokenKey, "_effect-".concat(effectKey), sharedAttrs, plain);
+            if (effectKey.startsWith("@layer")) keyStyleText = effectStyleHTML + keyStyleText;
+            else keyStyleText += effectStyleHTML;
+        }
+    });
+    return [
+        order,
+        styleId,
+        keyStyleText
+    ];
+};
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/typeof":"i7HWY","@emotion/hash":"h4XqR","rc-util/es/Dom/dynamicCSS":"lfei6","react":"21dqq","@emotion/unitless":"pVndT","stylis":"bMCXt","../linters":"kHX3o","../StyleContext":"4mOQg","../util":"71DwD","../util/cacheMapUtil":"kQQja","./useGlobalCache":"29wtY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fTBFS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_extends);
+function _extends() {
+    return _extends = Object.assign ? Object.assign.bind() : function(n) {
+        for(var e = 1; e < arguments.length; e++){
+            var t = arguments[e];
+            for(var r in t)({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
+        }
+        return n;
+    }, _extends.apply(null, arguments);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"pVndT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var unitlessKeys = {
+    animationIterationCount: 1,
+    borderImageOutset: 1,
+    borderImageSlice: 1,
+    borderImageWidth: 1,
+    boxFlex: 1,
+    boxFlexGroup: 1,
+    boxOrdinalGroup: 1,
+    columnCount: 1,
+    columns: 1,
+    flex: 1,
+    flexGrow: 1,
+    flexPositive: 1,
+    flexShrink: 1,
+    flexNegative: 1,
+    flexOrder: 1,
+    gridRow: 1,
+    gridRowEnd: 1,
+    gridRowSpan: 1,
+    gridRowStart: 1,
+    gridColumn: 1,
+    gridColumnEnd: 1,
+    gridColumnSpan: 1,
+    gridColumnStart: 1,
+    msGridRow: 1,
+    msGridRowSpan: 1,
+    msGridColumn: 1,
+    msGridColumnSpan: 1,
+    fontWeight: 1,
+    lineHeight: 1,
+    opacity: 1,
+    order: 1,
+    orphans: 1,
+    tabSize: 1,
+    widows: 1,
+    zIndex: 1,
+    zoom: 1,
+    WebkitLineClamp: 1,
+    // SVG-related properties
+    fillOpacity: 1,
+    floodOpacity: 1,
+    stopOpacity: 1,
+    strokeDasharray: 1,
+    strokeDashoffset: 1,
+    strokeMiterlimit: 1,
+    strokeOpacity: 1,
+    strokeWidth: 1
+};
+exports.default = unitlessKeys;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bMCXt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CHARSET", ()=>f);
+parcelHelpers.export(exports, "COMMENT", ()=>n);
+parcelHelpers.export(exports, "COUNTER_STYLE", ()=>w);
+parcelHelpers.export(exports, "DECLARATION", ()=>s);
+parcelHelpers.export(exports, "DOCUMENT", ()=>v);
+parcelHelpers.export(exports, "FONT_FACE", ()=>b);
+parcelHelpers.export(exports, "FONT_FEATURE_VALUES", ()=>d);
+parcelHelpers.export(exports, "IMPORT", ()=>i);
+parcelHelpers.export(exports, "KEYFRAMES", ()=>h);
+parcelHelpers.export(exports, "LAYER", ()=>g);
+parcelHelpers.export(exports, "MEDIA", ()=>u);
+parcelHelpers.export(exports, "MOZ", ()=>r);
+parcelHelpers.export(exports, "MS", ()=>e);
+parcelHelpers.export(exports, "NAMESPACE", ()=>p);
+parcelHelpers.export(exports, "PAGE", ()=>t);
+parcelHelpers.export(exports, "RULESET", ()=>c);
+parcelHelpers.export(exports, "SCOPE", ()=>k);
+parcelHelpers.export(exports, "SUPPORTS", ()=>l);
+parcelHelpers.export(exports, "VIEWPORT", ()=>o);
+parcelHelpers.export(exports, "WEBKIT", ()=>a);
+parcelHelpers.export(exports, "abs", ()=>$);
+parcelHelpers.export(exports, "alloc", ()=>Y);
+parcelHelpers.export(exports, "append", ()=>B);
+parcelHelpers.export(exports, "assign", ()=>x);
+parcelHelpers.export(exports, "caret", ()=>V);
+parcelHelpers.export(exports, "char", ()=>Q);
+parcelHelpers.export(exports, "character", ()=>J);
+parcelHelpers.export(exports, "characters", ()=>K);
+parcelHelpers.export(exports, "charat", ()=>A);
+parcelHelpers.export(exports, "column", ()=>G);
+parcelHelpers.export(exports, "combine", ()=>D);
+parcelHelpers.export(exports, "comment", ()=>oe);
+parcelHelpers.export(exports, "commenter", ()=>se);
+parcelHelpers.export(exports, "compile", ()=>ue);
+parcelHelpers.export(exports, "copy", ()=>N);
+parcelHelpers.export(exports, "dealloc", ()=>Z);
+parcelHelpers.export(exports, "declaration", ()=>le);
+parcelHelpers.export(exports, "delimit", ()=>_);
+parcelHelpers.export(exports, "delimiter", ()=>ce);
+parcelHelpers.export(exports, "escaping", ()=>ne);
+parcelHelpers.export(exports, "filter", ()=>E);
+parcelHelpers.export(exports, "from", ()=>m);
+parcelHelpers.export(exports, "hash", ()=>y);
+parcelHelpers.export(exports, "identifier", ()=>te);
+parcelHelpers.export(exports, "indexof", ()=>O);
+parcelHelpers.export(exports, "length", ()=>H);
+parcelHelpers.export(exports, "lift", ()=>P);
+parcelHelpers.export(exports, "line", ()=>F);
+parcelHelpers.export(exports, "match", ()=>z);
+parcelHelpers.export(exports, "middleware", ()=>be);
+parcelHelpers.export(exports, "namespace", ()=>ge);
+parcelHelpers.export(exports, "next", ()=>T);
+parcelHelpers.export(exports, "node", ()=>L);
+parcelHelpers.export(exports, "parse", ()=>ie);
+parcelHelpers.export(exports, "peek", ()=>U);
+parcelHelpers.export(exports, "position", ()=>I);
+parcelHelpers.export(exports, "prefix", ()=>ve);
+parcelHelpers.export(exports, "prefixer", ()=>de);
+parcelHelpers.export(exports, "prev", ()=>R);
+parcelHelpers.export(exports, "replace", ()=>C);
+parcelHelpers.export(exports, "ruleset", ()=>fe);
+parcelHelpers.export(exports, "rulesheet", ()=>we);
+parcelHelpers.export(exports, "serialize", ()=>pe);
+parcelHelpers.export(exports, "sizeof", ()=>q);
+parcelHelpers.export(exports, "slice", ()=>W);
+parcelHelpers.export(exports, "stringify", ()=>he);
+parcelHelpers.export(exports, "strlen", ()=>S);
+parcelHelpers.export(exports, "substr", ()=>M);
+parcelHelpers.export(exports, "token", ()=>X);
+parcelHelpers.export(exports, "tokenize", ()=>ee);
+parcelHelpers.export(exports, "tokenizer", ()=>ae);
+parcelHelpers.export(exports, "trim", ()=>j);
+parcelHelpers.export(exports, "whitespace", ()=>re);
+var e = "-ms-";
+var r = "-moz-";
+var a = "-webkit-";
+var n = "comm";
+var c = "rule";
+var s = "decl";
+var t = "@page";
+var u = "@media";
+var i = "@import";
+var f = "@charset";
+var o = "@viewport";
+var l = "@supports";
+var v = "@document";
+var p = "@namespace";
+var h = "@keyframes";
+var b = "@font-face";
+var w = "@counter-style";
+var d = "@font-feature-values";
+var g = "@layer";
+var k = "@scope";
+var $ = Math.abs;
+var m = String.fromCharCode;
+var x = Object.assign;
+function y(e, r) {
+    return A(e, 0) ^ 45 ? (((r << 2 ^ A(e, 0)) << 2 ^ A(e, 1)) << 2 ^ A(e, 2)) << 2 ^ A(e, 3) : 0;
+}
+function j(e) {
+    return e.trim();
+}
+function z(e, r) {
+    return (e = r.exec(e)) ? e[0] : e;
+}
+function C(e, r, a) {
+    return e.replace(r, a);
+}
+function O(e, r, a) {
+    return e.indexOf(r, a);
+}
+function A(e, r) {
+    return e.charCodeAt(r) | 0;
+}
+function M(e, r, a) {
+    return e.slice(r, a);
+}
+function S(e) {
+    return e.length;
+}
+function q(e) {
+    return e.length;
+}
+function B(e, r) {
+    return r.push(e), e;
+}
+function D(e, r) {
+    return e.map(r).join("");
+}
+function E(e, r) {
+    return e.filter(function(e) {
+        return !z(e, r);
+    });
+}
+var F = 1;
+var G = 1;
+var H = 0;
+var I = 0;
+var J = 0;
+var K = "";
+function L(e, r, a, n, c, s, t, u) {
+    return {
+        value: e,
+        root: r,
+        parent: a,
+        type: n,
+        props: c,
+        children: s,
+        line: F,
+        column: G,
+        length: t,
+        return: "",
+        siblings: u
+    };
+}
+function N(e, r) {
+    return x(L("", null, null, "", null, null, 0, e.siblings), e, {
+        length: -e.length
+    }, r);
+}
+function P(e) {
+    while(e.root)e = N(e.root, {
+        children: [
+            e
+        ]
+    });
+    B(e, e.siblings);
+}
+function Q() {
+    return J;
+}
+function R() {
+    J = I > 0 ? A(K, --I) : 0;
+    if (G--, J === 10) G = 1, F--;
+    return J;
+}
+function T() {
+    J = I < H ? A(K, I++) : 0;
+    if (G++, J === 10) G = 1, F++;
+    return J;
+}
+function U() {
+    return A(K, I);
+}
+function V() {
+    return I;
+}
+function W(e, r) {
+    return M(K, e, r);
+}
+function X(e) {
+    switch(e){
+        case 0:
+        case 9:
+        case 10:
+        case 13:
+        case 32:
+            return 5;
+        case 33:
+        case 43:
+        case 44:
+        case 47:
+        case 62:
+        case 64:
+        case 126:
+        case 59:
+        case 123:
+        case 125:
+            return 4;
+        case 58:
+            return 3;
+        case 34:
+        case 39:
+        case 40:
+        case 91:
+            return 2;
+        case 41:
+        case 93:
+            return 1;
+    }
+    return 0;
+}
+function Y(e) {
+    return F = G = 1, H = S(K = e), I = 0, [];
+}
+function Z(e) {
+    return K = "", e;
+}
+function _(e) {
+    return j(W(I - 1, ce(e === 91 ? e + 2 : e === 40 ? e + 1 : e)));
+}
+function ee(e) {
+    return Z(ae(Y(e)));
+}
+function re(e) {
+    while(J = U())if (J < 33) T();
+    else break;
+    return X(e) > 2 || X(J) > 3 ? "" : " ";
+}
+function ae(e) {
+    while(T())switch(X(J)){
+        case 0:
+            B(te(I - 1), e);
+            break;
+        case 2:
+            B(_(J), e);
+            break;
+        default:
+            B(m(J), e);
+    }
+    return e;
+}
+function ne(e, r) {
+    while(--r && T())if (J < 48 || J > 102 || J > 57 && J < 65 || J > 70 && J < 97) break;
+    return W(e, V() + (r < 6 && U() == 32 && T() == 32));
+}
+function ce(e) {
+    while(T())switch(J){
+        case e:
+            return I;
+        case 34:
+        case 39:
+            if (e !== 34 && e !== 39) ce(J);
+            break;
+        case 40:
+            if (e === 41) ce(e);
+            break;
+        case 92:
+            T();
+            break;
+    }
+    return I;
+}
+function se(e, r) {
+    while(T())if (e + J === 57) break;
+    else if (e + J === 84 && U() === 47) break;
+    return "/*" + W(r, I - 1) + "*" + m(e === 47 ? e : T());
+}
+function te(e) {
+    while(!X(U()))T();
+    return W(e, I);
+}
+function ue(e) {
+    return Z(ie("", null, null, null, [
+        ""
+    ], e = Y(e), 0, [
+        0
+    ], e));
+}
+function ie(e, r, a, n, c, s, t, u, i) {
+    var f = 0;
+    var o = 0;
+    var l = t;
+    var v = 0;
+    var p = 0;
+    var h = 0;
+    var b = 1;
+    var w = 1;
+    var d = 1;
+    var g = 0;
+    var k = "";
+    var x = c;
+    var y = s;
+    var j = n;
+    var z = k;
+    while(w)switch(h = g, g = T()){
+        case 40:
+            if (h != 108 && A(z, l - 1) == 58) {
+                if (O(z += C(_(g), "&", "&\f"), "&\f", $(f ? u[f - 1] : 0)) != -1) d = -1;
+                break;
+            }
+        case 34:
+        case 39:
+        case 91:
+            z += _(g);
+            break;
+        case 9:
+        case 10:
+        case 13:
+        case 32:
+            z += re(h);
+            break;
+        case 92:
+            z += ne(V() - 1, 7);
+            continue;
+        case 47:
+            switch(U()){
+                case 42:
+                case 47:
+                    B(oe(se(T(), V()), r, a, i), i);
+                    break;
+                default:
+                    z += "/";
+            }
+            break;
+        case 123 * b:
+            u[f++] = S(z) * d;
+        case 125 * b:
+        case 59:
+        case 0:
+            switch(g){
+                case 0:
+                case 125:
+                    w = 0;
+                case 59 + o:
+                    if (d == -1) z = C(z, /\f/g, "");
+                    if (p > 0 && S(z) - l) B(p > 32 ? le(z + ";", n, a, l - 1, i) : le(C(z, " ", "") + ";", n, a, l - 2, i), i);
+                    break;
+                case 59:
+                    z += ";";
+                default:
+                    B(j = fe(z, r, a, f, o, c, u, k, x = [], y = [], l, s), s);
+                    if (g === 123) {
+                        if (o === 0) ie(z, r, j, j, x, s, l, u, y);
+                        else switch(v === 99 && A(z, 3) === 110 ? 100 : v){
+                            case 100:
+                            case 108:
+                            case 109:
+                            case 115:
+                                ie(e, j, j, n && B(fe(e, j, j, 0, 0, c, u, k, c, x = [], l, y), y), c, y, l, u, n ? x : y);
+                                break;
+                            default:
+                                ie(z, j, j, j, [
+                                    ""
+                                ], y, 0, u, y);
+                        }
+                    }
+            }
+            f = o = p = 0, b = d = 1, k = z = "", l = t;
+            break;
+        case 58:
+            l = 1 + S(z), p = h;
+        default:
+            if (b < 1) {
+                if (g == 123) --b;
+                else if (g == 125 && b++ == 0 && R() == 125) continue;
+            }
+            switch(z += m(g), g * b){
+                case 38:
+                    d = o > 0 ? 1 : (z += "\f", -1);
+                    break;
+                case 44:
+                    u[f++] = (S(z) - 1) * d, d = 1;
+                    break;
+                case 64:
+                    if (U() === 45) z += _(T());
+                    v = U(), o = l = S(k = z += te(V())), g++;
+                    break;
+                case 45:
+                    if (h === 45 && S(z) == 2) b = 0;
+            }
+    }
+    return s;
+}
+function fe(e, r, a, n, s, t, u, i, f, o, l, v) {
+    var p = s - 1;
+    var h = s === 0 ? t : [
+        ""
+    ];
+    var b = q(h);
+    for(var w = 0, d = 0, g = 0; w < n; ++w)for(var k = 0, m = M(e, p + 1, p = $(d = u[w])), x = e; k < b; ++k)if (x = j(d > 0 ? h[k] + " " + m : C(m, /&\f/g, h[k]))) f[g++] = x;
+    return L(e, r, a, s === 0 ? c : i, f, o, l, v);
+}
+function oe(e, r, a, c) {
+    return L(e, r, a, n, m(Q()), M(e, 2, -2), 0, c);
+}
+function le(e, r, a, n, c) {
+    return L(e, r, a, s, M(e, 0, n), M(e, n + 1, -1), n, c);
+}
+function ve(n, c, s) {
+    switch(y(n, c)){
+        case 5103:
+            return a + "print-" + n + n;
+        case 5737:
+        case 4201:
+        case 3177:
+        case 3433:
+        case 1641:
+        case 4457:
+        case 2921:
+        case 5572:
+        case 6356:
+        case 5844:
+        case 3191:
+        case 6645:
+        case 3005:
+        case 6391:
+        case 5879:
+        case 5623:
+        case 6135:
+        case 4599:
+        case 4855:
+        case 4215:
+        case 6389:
+        case 5109:
+        case 5365:
+        case 5621:
+        case 3829:
+            return a + n + n;
+        case 4789:
+            return r + n + n;
+        case 5349:
+        case 4246:
+        case 4810:
+        case 6968:
+        case 2756:
+            return a + n + r + n + e + n + n;
+        case 5936:
+            switch(A(n, c + 11)){
+                case 114:
+                    return a + n + e + C(n, /[svh]\w+-[tblr]{2}/, "tb") + n;
+                case 108:
+                    return a + n + e + C(n, /[svh]\w+-[tblr]{2}/, "tb-rl") + n;
+                case 45:
+                    return a + n + e + C(n, /[svh]\w+-[tblr]{2}/, "lr") + n;
+            }
+        case 6828:
+        case 4268:
+        case 2903:
+            return a + n + e + n + n;
+        case 6165:
+            return a + n + e + "flex-" + n + n;
+        case 5187:
+            return a + n + C(n, /(\w+).+(:[^]+)/, a + "box-$1$2" + e + "flex-$1$2") + n;
+        case 5443:
+            return a + n + e + "flex-item-" + C(n, /flex-|-self/g, "") + (!z(n, /flex-|baseline/) ? e + "grid-row-" + C(n, /flex-|-self/g, "") : "") + n;
+        case 4675:
+            return a + n + e + "flex-line-pack" + C(n, /align-content|flex-|-self/g, "") + n;
+        case 5548:
+            return a + n + e + C(n, "shrink", "negative") + n;
+        case 5292:
+            return a + n + e + C(n, "basis", "preferred-size") + n;
+        case 6060:
+            return a + "box-" + C(n, "-grow", "") + a + n + e + C(n, "grow", "positive") + n;
+        case 4554:
+            return a + C(n, /([^-])(transform)/g, "$1" + a + "$2") + n;
+        case 6187:
+            return C(C(C(n, /(zoom-|grab)/, a + "$1"), /(image-set)/, a + "$1"), n, "") + n;
+        case 5495:
+        case 3959:
+            return C(n, /(image-set\([^]*)/, a + "$1" + "$`$1");
+        case 4968:
+            return C(C(n, /(.+:)(flex-)?(.*)/, a + "box-pack:$3" + e + "flex-pack:$3"), /s.+-b[^;]+/, "justify") + a + n + n;
+        case 4200:
+            if (!z(n, /flex-|baseline/)) return e + "grid-column-align" + M(n, c) + n;
+            break;
+        case 2592:
+        case 3360:
+            return e + C(n, "template-", "") + n;
+        case 4384:
+        case 3616:
+            if (s && s.some(function(e, r) {
+                return c = r, z(e.props, /grid-\w+-end/);
+            })) return ~O(n + (s = s[c].value), "span", 0) ? n : e + C(n, "-start", "") + n + e + "grid-row-span:" + (~O(s, "span", 0) ? z(s, /\d+/) : +z(s, /\d+/) - +z(n, /\d+/)) + ";";
+            return e + C(n, "-start", "") + n;
+        case 4896:
+        case 4128:
+            return s && s.some(function(e) {
+                return z(e.props, /grid-\w+-start/);
+            }) ? n : e + C(C(n, "-end", "-span"), "span ", "") + n;
+        case 4095:
+        case 3583:
+        case 4068:
+        case 2532:
+            return C(n, /(.+)-inline(.+)/, a + "$1$2") + n;
+        case 8116:
+        case 7059:
+        case 5753:
+        case 5535:
+        case 5445:
+        case 5701:
+        case 4933:
+        case 4677:
+        case 5533:
+        case 5789:
+        case 5021:
+        case 4765:
+            if (S(n) - 1 - c > 6) switch(A(n, c + 1)){
+                case 109:
+                    if (A(n, c + 4) !== 45) break;
+                case 102:
+                    return C(n, /(.+:)(.+)-([^]+)/, "$1" + a + "$2-$3" + "$1" + r + (A(n, c + 3) == 108 ? "$3" : "$2-$3")) + n;
+                case 115:
+                    return ~O(n, "stretch", 0) ? ve(C(n, "stretch", "fill-available"), c, s) + n : n;
+            }
+            break;
+        case 5152:
+        case 5920:
+            return C(n, /(.+?):(\d+)(\s*\/\s*(span)?\s*(\d+))?(.*)/, function(r, a, c, s, t, u, i) {
+                return e + a + ":" + c + i + (s ? e + a + "-span:" + (t ? u : +u - +c) + i : "") + n;
+            });
+        case 4949:
+            if (A(n, c + 6) === 121) return C(n, ":", ":" + a) + n;
+            break;
+        case 6444:
+            switch(A(n, A(n, 14) === 45 ? 18 : 11)){
+                case 120:
+                    return C(n, /(.+:)([^;\s!]+)(;|(\s+)?!.+)?/, "$1" + a + (A(n, 14) === 45 ? "inline-" : "") + "box$3" + "$1" + a + "$2$3" + "$1" + e + "$2box$3") + n;
+                case 100:
+                    return C(n, ":", ":" + e) + n;
+            }
+            break;
+        case 5719:
+        case 2647:
+        case 2135:
+        case 3927:
+        case 2391:
+            return C(n, "scroll-", "scroll-snap-") + n;
+    }
+    return n;
+}
+function pe(e, r) {
+    var a = "";
+    for(var n = 0; n < e.length; n++)a += r(e[n], n, e, r) || "";
+    return a;
+}
+function he(e, r, a, t) {
+    switch(e.type){
+        case g:
+            if (e.children.length) break;
+        case i:
+        case s:
+            return e.return = e.return || e.value;
+        case n:
+            return "";
+        case h:
+            return e.return = e.value + "{" + pe(e.children, t) + "}";
+        case c:
+            if (!S(e.value = e.props.join(","))) return "";
+    }
+    return S(a = pe(e.children, t)) ? e.return = e.value + "{" + a + "}" : "";
+}
+function be(e) {
+    var r = q(e);
+    return function(a, n, c, s) {
+        var t = "";
+        for(var u = 0; u < r; u++)t += e[u](a, n, c, s) || "";
+        return t;
+    };
+}
+function we(e) {
+    return function(r) {
+        if (!r.root) {
+            if (r = r.return) e(r);
+        }
+    };
+}
+function de(n, t, u, i) {
+    if (n.length > -1) {
+        if (!n.return) switch(n.type){
+            case s:
+                n.return = ve(n.value, n.length, u);
+                return;
+            case h:
+                return pe([
+                    N(n, {
+                        value: C(n.value, "@", "@" + a)
+                    })
+                ], i);
+            case c:
+                if (n.length) return D(u = n.props, function(c) {
+                    switch(z(c, i = /(::plac\w+|:read-\w+)/)){
+                        case ":read-only":
+                        case ":read-write":
+                            P(N(n, {
+                                props: [
+                                    C(c, /:(read-\w+)/, ":" + r + "$1")
+                                ]
+                            }));
+                            P(N(n, {
+                                props: [
+                                    c
+                                ]
+                            }));
+                            x(n, {
+                                props: E(u, i)
+                            });
+                            break;
+                        case "::placeholder":
+                            P(N(n, {
+                                props: [
+                                    C(c, /:(plac\w+)/, ":" + a + "input-$1")
+                                ]
+                            }));
+                            P(N(n, {
+                                props: [
+                                    C(c, /:(plac\w+)/, ":" + r + "$1")
+                                ]
+                            }));
+                            P(N(n, {
+                                props: [
+                                    C(c, /:(plac\w+)/, e + "input-$1")
+                                ]
+                            }));
+                            P(N(n, {
+                                props: [
+                                    c
+                                ]
+                            }));
+                            x(n, {
+                                props: E(u, i)
+                            });
+                            break;
+                    }
+                    return "";
+                });
+        }
+    }
+}
+function ge(e) {
+    switch(e.type){
+        case c:
+            e.props = e.props.map(function(r) {
+                return D(ee(r), function(r, a, n) {
+                    switch(A(r, 0)){
+                        case 12:
+                            return M(r, 1, S(r));
+                        case 0:
+                        case 40:
+                        case 43:
+                        case 62:
+                        case 126:
+                            return r;
+                        case 58:
+                            if (n[++a] === "global") n[a] = "", n[++a] = "\f" + M(n[a], a = 1, -1);
+                        case 32:
+                            return a === 1 ? "" : r;
+                        default:
+                            switch(a){
+                                case 0:
+                                    e = r;
+                                    return q(n) > 1 ? "" : r;
+                                case a = q(n) - 1:
+                                case 2:
+                                    return a === 2 ? r + e + e : r + e;
+                                default:
+                                    return r;
+                            }
+                    }
+                });
+            });
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kHX3o":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "contentQuotesLinter", ()=>(0, _contentQuotesLinterDefault.default));
+parcelHelpers.export(exports, "hashedAnimationLinter", ()=>(0, _hashedAnimationLinterDefault.default));
+parcelHelpers.export(exports, "legacyNotSelectorLinter", ()=>(0, _legacyNotSelectorLinterDefault.default));
+parcelHelpers.export(exports, "logicalPropertiesLinter", ()=>(0, _logicalPropertiesLinterDefault.default));
+parcelHelpers.export(exports, "NaNLinter", ()=>(0, _naNLinterDefault.default));
+parcelHelpers.export(exports, "parentSelectorLinter", ()=>(0, _parentSelectorLinterDefault.default));
+var _contentQuotesLinter = require("./contentQuotesLinter");
+var _contentQuotesLinterDefault = parcelHelpers.interopDefault(_contentQuotesLinter);
+var _hashedAnimationLinter = require("./hashedAnimationLinter");
+var _hashedAnimationLinterDefault = parcelHelpers.interopDefault(_hashedAnimationLinter);
+var _legacyNotSelectorLinter = require("./legacyNotSelectorLinter");
+var _legacyNotSelectorLinterDefault = parcelHelpers.interopDefault(_legacyNotSelectorLinter);
+var _logicalPropertiesLinter = require("./logicalPropertiesLinter");
+var _logicalPropertiesLinterDefault = parcelHelpers.interopDefault(_logicalPropertiesLinter);
+var _naNLinter = require("./NaNLinter");
+var _naNLinterDefault = parcelHelpers.interopDefault(_naNLinter);
+var _parentSelectorLinter = require("./parentSelectorLinter");
+var _parentSelectorLinterDefault = parcelHelpers.interopDefault(_parentSelectorLinter);
+
+},{"./contentQuotesLinter":"2khUd","./hashedAnimationLinter":"6ARAS","./legacyNotSelectorLinter":"ck8ju","./logicalPropertiesLinter":"5C2ON","./NaNLinter":"jpGvA","./parentSelectorLinter":"72vs5","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2khUd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utils = require("./utils");
+var linter = function linter(key, value, info) {
+    if (key === "content") {
+        // From emotion: https://github.com/emotion-js/emotion/blob/main/packages/serialize/src/index.js#L63
+        var contentValuePattern = /(attr|counters?|url|(((repeating-)?(linear|radial))|conic)-gradient)\(|(no-)?(open|close)-quote/;
+        var contentValues = [
+            "normal",
+            "none",
+            "initial",
+            "inherit",
+            "unset"
+        ];
+        if (typeof value !== "string" || contentValues.indexOf(value) === -1 && !contentValuePattern.test(value) && (value.charAt(0) !== value.charAt(value.length - 1) || value.charAt(0) !== '"' && value.charAt(0) !== "'")) (0, _utils.lintWarning)("You seem to be using a value for 'content' without quotes, try replacing it with `content: '\"".concat(value, "\"'`."), info);
+    }
+};
+exports.default = linter;
+
+},{"./utils":"7Ogrn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7Ogrn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "lintWarning", ()=>lintWarning);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+function lintWarning(message, info) {
+    var path = info.path, parentSelectors = info.parentSelectors;
+    (0, _warningDefault.default)(false, "[Ant Design CSS-in-JS] ".concat(path ? "Error in ".concat(path, ": ") : "").concat(message).concat(parentSelectors.length ? " Selector: ".concat(parentSelectors.join(" | ")) : ""));
+}
+
+},{"rc-util/es/warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6ARAS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utils = require("./utils");
+var linter = function linter(key, value, info) {
+    if (key === "animation") {
+        if (info.hashId && value !== "none") (0, _utils.lintWarning)("You seem to be using hashed animation '".concat(value, "', in which case 'animationName' with Keyframe as value is recommended."), info);
+    }
+};
+exports.default = linter;
+
+},{"./utils":"7Ogrn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ck8ju":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utils = require("./utils");
+function isConcatSelector(selector) {
+    var _selector$match;
+    var notContent = ((_selector$match = selector.match(/:not\(([^)]*)\)/)) === null || _selector$match === void 0 ? void 0 : _selector$match[1]) || "";
+    // split selector. e.g.
+    // `h1#a.b` => ['h1', #a', '.b']
+    var splitCells = notContent.split(/(\[[^[]*])|(?=[.#])/).filter(function(str) {
+        return str;
+    });
+    return splitCells.length > 1;
+}
+function parsePath(info) {
+    return info.parentSelectors.reduce(function(prev, cur) {
+        if (!prev) return cur;
+        return cur.includes("&") ? cur.replace(/&/g, prev) : "".concat(prev, " ").concat(cur);
+    }, "");
+}
+var linter = function linter(key, value, info) {
+    var parentSelectorPath = parsePath(info);
+    var notList = parentSelectorPath.match(/:not\([^)]*\)/g) || [];
+    if (notList.length > 0 && notList.some(isConcatSelector)) (0, _utils.lintWarning)("Concat ':not' selector not support in legacy browsers.", info);
+};
+exports.default = linter;
+
+},{"./utils":"7Ogrn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5C2ON":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utils = require("./utils");
+var linter = function linter(key, value, info) {
+    switch(key){
+        case "marginLeft":
+        case "marginRight":
+        case "paddingLeft":
+        case "paddingRight":
+        case "left":
+        case "right":
+        case "borderLeft":
+        case "borderLeftWidth":
+        case "borderLeftStyle":
+        case "borderLeftColor":
+        case "borderRight":
+        case "borderRightWidth":
+        case "borderRightStyle":
+        case "borderRightColor":
+        case "borderTopLeftRadius":
+        case "borderTopRightRadius":
+        case "borderBottomLeftRadius":
+        case "borderBottomRightRadius":
+            (0, _utils.lintWarning)("You seem to be using non-logical property '".concat(key, "' which is not compatible with RTL mode. Please use logical properties and values instead. For more information: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties."), info);
+            return;
+        case "margin":
+        case "padding":
+        case "borderWidth":
+        case "borderStyle":
+            // case 'borderColor':
+            if (typeof value === "string") {
+                var valueArr = value.split(" ").map(function(item) {
+                    return item.trim();
+                });
+                if (valueArr.length === 4 && valueArr[1] !== valueArr[3]) (0, _utils.lintWarning)("You seem to be using '".concat(key, "' property with different left ").concat(key, " and right ").concat(key, ", which is not compatible with RTL mode. Please use logical properties and values instead. For more information: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties."), info);
+            }
+            return;
+        case "clear":
+        case "textAlign":
+            if (value === "left" || value === "right") (0, _utils.lintWarning)("You seem to be using non-logical value '".concat(value, "' of ").concat(key, ", which is not compatible with RTL mode. Please use logical properties and values instead. For more information: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties."), info);
+            return;
+        case "borderRadius":
+            if (typeof value === "string") {
+                var radiusGroups = value.split("/").map(function(item) {
+                    return item.trim();
+                });
+                var invalid = radiusGroups.reduce(function(result, group) {
+                    if (result) return result;
+                    var radiusArr = group.split(" ").map(function(item) {
+                        return item.trim();
+                    });
+                    // borderRadius: '2px 4px'
+                    if (radiusArr.length >= 2 && radiusArr[0] !== radiusArr[1]) return true;
+                    // borderRadius: '4px 4px 2px'
+                    if (radiusArr.length === 3 && radiusArr[1] !== radiusArr[2]) return true;
+                    // borderRadius: '4px 4px 2px 4px'
+                    if (radiusArr.length === 4 && radiusArr[2] !== radiusArr[3]) return true;
+                    return result;
+                }, false);
+                if (invalid) (0, _utils.lintWarning)("You seem to be using non-logical value '".concat(value, "' of ").concat(key, ", which is not compatible with RTL mode. Please use logical properties and values instead. For more information: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties."), info);
+            }
+            return;
+        default:
+    }
+};
+exports.default = linter;
+
+},{"./utils":"7Ogrn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jpGvA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utils = require("./utils");
+var linter = function linter(key, value, info) {
+    if (typeof value === "string" && /NaN/g.test(value) || Number.isNaN(value)) (0, _utils.lintWarning)("Unexpected 'NaN' in property '".concat(key, ": ").concat(value, "'."), info);
+};
+exports.default = linter;
+
+},{"./utils":"7Ogrn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"72vs5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utils = require("./utils");
+var linter = function linter(key, value, info) {
+    if (info.parentSelectors.some(function(selector) {
+        var selectors = selector.split(",");
+        return selectors.some(function(item) {
+            return item.split("&").length > 2;
+        });
+    })) (0, _utils.lintWarning)("Should not use more than one `&` in a selector.", info);
+};
+exports.default = linter;
+
+},{"./utils":"7Ogrn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kQQja":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ATTR_CACHE_MAP", ()=>ATTR_CACHE_MAP);
+parcelHelpers.export(exports, "CSS_FILE_STYLE", ()=>CSS_FILE_STYLE);
+parcelHelpers.export(exports, "serialize", ()=>serialize);
+/**
+ * @private Test usage only. Can save remove if no need.
+ */ parcelHelpers.export(exports, "reset", ()=>reset);
+parcelHelpers.export(exports, "prepare", ()=>prepare);
+parcelHelpers.export(exports, "existPath", ()=>existPath);
+parcelHelpers.export(exports, "getStyleAndHash", ()=>getStyleAndHash);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _styleContext = require("../StyleContext");
+var ATTR_CACHE_MAP = "data-ant-cssinjs-cache-path";
+var CSS_FILE_STYLE = "_FILE_STYLE__";
+function serialize(cachePathMap) {
+    return Object.keys(cachePathMap).map(function(path) {
+        var hash = cachePathMap[path];
+        return "".concat(path, ":").concat(hash);
+    }).join(";");
+}
+var cachePathMap;
+var fromCSSFile = true;
+function reset(mockCache) {
+    var fromFile = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    cachePathMap = mockCache;
+    fromCSSFile = fromFile;
+}
+function prepare() {
+    if (!cachePathMap) {
+        cachePathMap = {};
+        if ((0, _canUseDomDefault.default)()) {
+            var div = document.createElement("div");
+            div.className = ATTR_CACHE_MAP;
+            div.style.position = "fixed";
+            div.style.visibility = "hidden";
+            div.style.top = "-9999px";
+            document.body.appendChild(div);
+            var content = getComputedStyle(div).content || "";
+            content = content.replace(/^"/, "").replace(/"$/, "");
+            // Fill data
+            content.split(";").forEach(function(item) {
+                var _item$split = item.split(":"), _item$split2 = (0, _slicedToArrayDefault.default)(_item$split, 2), path = _item$split2[0], hash = _item$split2[1];
+                cachePathMap[path] = hash;
+            });
+            // Remove inline record style
+            var inlineMapStyle = document.querySelector("style[".concat(ATTR_CACHE_MAP, "]"));
+            if (inlineMapStyle) {
+                var _inlineMapStyle$paren;
+                fromCSSFile = false;
+                (_inlineMapStyle$paren = inlineMapStyle.parentNode) === null || _inlineMapStyle$paren === void 0 || _inlineMapStyle$paren.removeChild(inlineMapStyle);
+            }
+            document.body.removeChild(div);
+        }
+    }
+}
+function existPath(path) {
+    prepare();
+    return !!cachePathMap[path];
+}
+function getStyleAndHash(path) {
+    var hash = cachePathMap[path];
+    var styleStr = null;
+    if (hash && (0, _canUseDomDefault.default)()) {
+        if (fromCSSFile) styleStr = CSS_FILE_STYLE;
+        else {
+            var _style = document.querySelector("style[".concat((0, _styleContext.ATTR_MARK), '="').concat(cachePathMap[path], '"]'));
+            if (_style) styleStr = _style.innerHTML;
+            else // Clean up since not exist anymore
+            delete cachePathMap[path];
+        }
+    }
+    return [
+        styleStr,
+        hash
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/Dom/canUseDom":"hGxAQ","../StyleContext":"4mOQg","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"db1D1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var Keyframe = /*#__PURE__*/ function() {
+    function Keyframe(name, style) {
+        (0, _classCallCheckDefault.default)(this, Keyframe);
+        (0, _definePropertyDefault.default)(this, "name", void 0);
+        (0, _definePropertyDefault.default)(this, "style", void 0);
+        (0, _definePropertyDefault.default)(this, "_keyframe", true);
+        this.name = name;
+        this.style = style;
+    }
+    (0, _createClassDefault.default)(Keyframe, [
+        {
+            key: "getName",
+            value: function getName() {
+                var hashId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+                return hashId ? "".concat(hashId, "-").concat(this.name) : this.name;
+            }
+        }
+    ]);
+    return Keyframe;
+}();
+exports.default = Keyframe;
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hjfTE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+function splitValues(value) {
+    if (typeof value === "number") return [
+        [
+            value
+        ],
+        false
+    ];
+    var rawStyle = String(value).trim();
+    var importantCells = rawStyle.match(/(.*)(!important)/);
+    var splitStyle = (importantCells ? importantCells[1] : rawStyle).trim().split(/\s+/);
+    // Combine styles split in brackets, like `calc(1px + 2px)`
+    var temp = [];
+    var brackets = 0;
+    return [
+        splitStyle.reduce(function(list, item) {
+            if (item.includes("(") || item.includes(")")) {
+                var left = item.split("(").length - 1;
+                var right = item.split(")").length - 1;
+                brackets += left - right;
+            }
+            if (brackets >= 0) temp.push(item);
+            if (brackets === 0) {
+                list.push(temp.join(" "));
+                temp = [];
+            }
+            return list;
+        }, []),
+        !!importantCells
+    ];
+}
+function noSplit(list) {
+    list.notSplit = true;
+    return list;
+}
+var keyMap = {
+    // Inset
+    inset: [
+        "top",
+        "right",
+        "bottom",
+        "left"
+    ],
+    insetBlock: [
+        "top",
+        "bottom"
+    ],
+    insetBlockStart: [
+        "top"
+    ],
+    insetBlockEnd: [
+        "bottom"
+    ],
+    insetInline: [
+        "left",
+        "right"
+    ],
+    insetInlineStart: [
+        "left"
+    ],
+    insetInlineEnd: [
+        "right"
+    ],
+    // Margin
+    marginBlock: [
+        "marginTop",
+        "marginBottom"
+    ],
+    marginBlockStart: [
+        "marginTop"
+    ],
+    marginBlockEnd: [
+        "marginBottom"
+    ],
+    marginInline: [
+        "marginLeft",
+        "marginRight"
+    ],
+    marginInlineStart: [
+        "marginLeft"
+    ],
+    marginInlineEnd: [
+        "marginRight"
+    ],
+    // Padding
+    paddingBlock: [
+        "paddingTop",
+        "paddingBottom"
+    ],
+    paddingBlockStart: [
+        "paddingTop"
+    ],
+    paddingBlockEnd: [
+        "paddingBottom"
+    ],
+    paddingInline: [
+        "paddingLeft",
+        "paddingRight"
+    ],
+    paddingInlineStart: [
+        "paddingLeft"
+    ],
+    paddingInlineEnd: [
+        "paddingRight"
+    ],
+    // Border
+    borderBlock: noSplit([
+        "borderTop",
+        "borderBottom"
+    ]),
+    borderBlockStart: noSplit([
+        "borderTop"
+    ]),
+    borderBlockEnd: noSplit([
+        "borderBottom"
+    ]),
+    borderInline: noSplit([
+        "borderLeft",
+        "borderRight"
+    ]),
+    borderInlineStart: noSplit([
+        "borderLeft"
+    ]),
+    borderInlineEnd: noSplit([
+        "borderRight"
+    ]),
+    // Border width
+    borderBlockWidth: [
+        "borderTopWidth",
+        "borderBottomWidth"
+    ],
+    borderBlockStartWidth: [
+        "borderTopWidth"
+    ],
+    borderBlockEndWidth: [
+        "borderBottomWidth"
+    ],
+    borderInlineWidth: [
+        "borderLeftWidth",
+        "borderRightWidth"
+    ],
+    borderInlineStartWidth: [
+        "borderLeftWidth"
+    ],
+    borderInlineEndWidth: [
+        "borderRightWidth"
+    ],
+    // Border style
+    borderBlockStyle: [
+        "borderTopStyle",
+        "borderBottomStyle"
+    ],
+    borderBlockStartStyle: [
+        "borderTopStyle"
+    ],
+    borderBlockEndStyle: [
+        "borderBottomStyle"
+    ],
+    borderInlineStyle: [
+        "borderLeftStyle",
+        "borderRightStyle"
+    ],
+    borderInlineStartStyle: [
+        "borderLeftStyle"
+    ],
+    borderInlineEndStyle: [
+        "borderRightStyle"
+    ],
+    // Border color
+    borderBlockColor: [
+        "borderTopColor",
+        "borderBottomColor"
+    ],
+    borderBlockStartColor: [
+        "borderTopColor"
+    ],
+    borderBlockEndColor: [
+        "borderBottomColor"
+    ],
+    borderInlineColor: [
+        "borderLeftColor",
+        "borderRightColor"
+    ],
+    borderInlineStartColor: [
+        "borderLeftColor"
+    ],
+    borderInlineEndColor: [
+        "borderRightColor"
+    ],
+    // Border radius
+    borderStartStartRadius: [
+        "borderTopLeftRadius"
+    ],
+    borderStartEndRadius: [
+        "borderTopRightRadius"
+    ],
+    borderEndStartRadius: [
+        "borderBottomLeftRadius"
+    ],
+    borderEndEndRadius: [
+        "borderBottomRightRadius"
+    ]
+};
+function wrapImportantAndSkipCheck(value, important) {
+    var parsedValue = value;
+    if (important) parsedValue = "".concat(parsedValue, " !important");
+    return {
+        _skip_check_: true,
+        value: parsedValue
+    };
+}
+/**
+ * Convert css logical properties to legacy properties.
+ * Such as: `margin-block-start` to `margin-top`.
+ * Transform list:
+ * - inset
+ * - margin
+ * - padding
+ * - border
+ */ var transform = {
+    visit: function visit(cssObj) {
+        var clone = {};
+        Object.keys(cssObj).forEach(function(key) {
+            var value = cssObj[key];
+            var matchValue = keyMap[key];
+            if (matchValue && (typeof value === "number" || typeof value === "string")) {
+                var _splitValues = splitValues(value), _splitValues2 = (0, _slicedToArrayDefault.default)(_splitValues, 2), _values = _splitValues2[0], _important = _splitValues2[1];
+                if (matchValue.length && matchValue.notSplit) // not split means always give same value like border
+                matchValue.forEach(function(matchKey) {
+                    clone[matchKey] = wrapImportantAndSkipCheck(value, _important);
+                });
+                else if (matchValue.length === 1) // Handle like `marginBlockStart` => `marginTop`
+                clone[matchValue[0]] = wrapImportantAndSkipCheck(_values[0], _important);
+                else if (matchValue.length === 2) // Handle like `marginBlock` => `marginTop` & `marginBottom`
+                matchValue.forEach(function(matchKey, index) {
+                    var _values$index;
+                    clone[matchKey] = wrapImportantAndSkipCheck((_values$index = _values[index]) !== null && _values$index !== void 0 ? _values$index : _values[0], _important);
+                });
+                else if (matchValue.length === 4) // Handle like `inset` => `top` & `right` & `bottom` & `left`
+                matchValue.forEach(function(matchKey, index) {
+                    var _ref, _values$index2;
+                    clone[matchKey] = wrapImportantAndSkipCheck((_ref = (_values$index2 = _values[index]) !== null && _values$index2 !== void 0 ? _values$index2 : _values[index - 2]) !== null && _ref !== void 0 ? _ref : _values[0], _important);
+                });
+                else clone[key] = value;
+            } else clone[key] = value;
+        });
+        return clone;
+    }
+};
+exports.default = transform;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1uFpw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+/**
+ * respect https://github.com/cuth/postcss-pxtorem
+ */ // @ts-ignore
+var _unitless = require("@emotion/unitless");
+var _unitlessDefault = parcelHelpers.interopDefault(_unitless);
+var pxRegex = /url\([^)]+\)|var\([^)]+\)|(\d*\.?\d+)px/g;
+function toFixed(number, precision) {
+    var multiplier = Math.pow(10, precision + 1), wholeNumber = Math.floor(number * multiplier);
+    return Math.round(wholeNumber / 10) * 10 / multiplier;
+}
+var transform = function transform() {
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var _options$rootValue = options.rootValue, rootValue = _options$rootValue === void 0 ? 16 : _options$rootValue, _options$precision = options.precision, precision = _options$precision === void 0 ? 5 : _options$precision, _options$mediaQuery = options.mediaQuery, mediaQuery = _options$mediaQuery === void 0 ? false : _options$mediaQuery;
+    var pxReplace = function pxReplace(m, $1) {
+        if (!$1) return m;
+        var pixels = parseFloat($1);
+        // covenant: pixels <= 1, not transform to rem @zombieJ
+        if (pixels <= 1) return m;
+        var fixedVal = toFixed(pixels / rootValue, precision);
+        return "".concat(fixedVal, "rem");
+    };
+    var visit = function visit(cssObj) {
+        var clone = (0, _objectSpread2Default.default)({}, cssObj);
+        Object.entries(cssObj).forEach(function(_ref) {
+            var _ref2 = (0, _slicedToArrayDefault.default)(_ref, 2), key = _ref2[0], value = _ref2[1];
+            if (typeof value === "string" && value.includes("px")) {
+                var newValue = value.replace(pxRegex, pxReplace);
+                clone[key] = newValue;
+            }
+            // no unit
+            if (!(0, _unitlessDefault.default)[key] && typeof value === "number" && value !== 0) clone[key] = "".concat(value, "px").replace(pxRegex, pxReplace);
+            // Media queries
+            var mergedKey = key.trim();
+            if (mergedKey.startsWith("@") && mergedKey.includes("px") && mediaQuery) {
+                var newKey = key.replace(pxRegex, pxReplace);
+                clone[newKey] = clone[key];
+                delete clone[key];
+            }
+        });
+        return clone;
+    };
+    return {
+        visit: visit
+    };
+};
+exports.default = transform;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@emotion/unitless":"pVndT","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dIWfS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var IconContext = /*#__PURE__*/ (0, _react.createContext)({});
+exports.default = IconContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jx2yS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>set);
+/**
+ * Merge objects which will create
+ */ parcelHelpers.export(exports, "merge", ()=>merge);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _toArray = require("@babel/runtime/helpers/esm/toArray");
+var _toArrayDefault = parcelHelpers.interopDefault(_toArray);
+var _get = require("./get");
+var _getDefault = parcelHelpers.interopDefault(_get);
+function internalSet(entity, paths, value, removeIfUndefined) {
+    if (!paths.length) return value;
+    var _paths = (0, _toArrayDefault.default)(paths), path = _paths[0], restPath = _paths.slice(1);
+    var clone;
+    if (!entity && typeof path === "number") clone = [];
+    else if (Array.isArray(entity)) clone = (0, _toConsumableArrayDefault.default)(entity);
+    else clone = (0, _objectSpread2Default.default)({}, entity);
+    // Delete prop if `removeIfUndefined` and value is undefined
+    if (removeIfUndefined && value === undefined && restPath.length === 1) delete clone[path][restPath[0]];
+    else clone[path] = internalSet(clone[path], restPath, value, removeIfUndefined);
+    return clone;
+}
+function set(entity, paths, value) {
+    var removeIfUndefined = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    // Do nothing if `removeIfUndefined` and parent object not exist
+    if (paths.length && removeIfUndefined && value === undefined && !(0, _getDefault.default)(entity, paths.slice(0, -1))) return entity;
+    return internalSet(entity, paths, value, removeIfUndefined);
+}
+function isObject(obj) {
+    return (0, _typeofDefault.default)(obj) === "object" && obj !== null && Object.getPrototypeOf(obj) === Object.prototype;
+}
+function createEmpty(source) {
+    return Array.isArray(source) ? [] : {};
+}
+var keys = typeof Reflect === "undefined" ? Object.keys : Reflect.ownKeys;
+function merge() {
+    for(var _len = arguments.length, sources = new Array(_len), _key = 0; _key < _len; _key++)sources[_key] = arguments[_key];
+    var clone = createEmpty(sources[0]);
+    sources.forEach(function(src) {
+        function internalMerge(path, parentLoopSet) {
+            var loopSet = new Set(parentLoopSet);
+            var value = (0, _getDefault.default)(src, path);
+            var isArr = Array.isArray(value);
+            if (isArr || isObject(value)) // Only add not loop obj
+            {
+                if (!loopSet.has(value)) {
+                    loopSet.add(value);
+                    var originValue = (0, _getDefault.default)(clone, path);
+                    if (isArr) // Array will always be override
+                    clone = set(clone, path, []);
+                    else if (!originValue || (0, _typeofDefault.default)(originValue) !== "object") // Init container if not exist
+                    clone = set(clone, path, createEmpty(value));
+                    keys(value).forEach(function(key) {
+                        internalMerge([].concat((0, _toConsumableArrayDefault.default)(path), [
+                            key
+                        ]), loopSet);
+                    });
+                }
+            } else clone = set(clone, path, value);
+        }
+        internalMerge([]);
+    });
+    return clone;
+}
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/toArray":"cbR4G","./get":"b4y5F","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cbR4G":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_toArray);
+var _arrayWithHolesJs = require("./arrayWithHoles.js");
+var _arrayWithHolesJsDefault = parcelHelpers.interopDefault(_arrayWithHolesJs);
+var _iterableToArrayJs = require("./iterableToArray.js");
+var _iterableToArrayJsDefault = parcelHelpers.interopDefault(_iterableToArrayJs);
+var _unsupportedIterableToArrayJs = require("./unsupportedIterableToArray.js");
+var _unsupportedIterableToArrayJsDefault = parcelHelpers.interopDefault(_unsupportedIterableToArrayJs);
+var _nonIterableRestJs = require("./nonIterableRest.js");
+var _nonIterableRestJsDefault = parcelHelpers.interopDefault(_nonIterableRestJs);
+function _toArray(r) {
+    return (0, _arrayWithHolesJsDefault.default)(r) || (0, _iterableToArrayJsDefault.default)(r) || (0, _unsupportedIterableToArrayJsDefault.default)(r) || (0, _nonIterableRestJsDefault.default)();
+}
+
+},{"./arrayWithHoles.js":"jY0ns","./iterableToArray.js":"61qSr","./unsupportedIterableToArray.js":"1TZRB","./nonIterableRest.js":"cUFPt","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"b4y5F":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>get);
+function get(entity, path) {
+    var current = entity;
+    for(var i = 0; i < path.length; i += 1){
+        if (current === null || current === undefined) return undefined;
+        current = current[path[i]];
+    }
+    return current;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3EeHv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+"use client";
+// ZombieJ: We export single file here since
+// ConfigProvider use this which will make loop deps
+// to import whole `rc-field-form`
+exports.default = /*#__PURE__*/ (0, _react.createContext)(undefined);
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dwvDt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useLocale", ()=>(0, _useLocaleDefault.default));
+parcelHelpers.export(exports, "ANT_MARK", ()=>ANT_MARK);
+var _react = require("react");
+var _warning = require("../_util/warning");
+var _locale = require("../modal/locale");
+var _context = require("./context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _useLocale = require("./useLocale");
+var _useLocaleDefault = parcelHelpers.interopDefault(_useLocale);
+"use client";
+const ANT_MARK = "internalMark";
+const LocaleProvider = (props)=>{
+    const { locale = {}, children, _ANT_MARK__ } = props;
+    {
+        const warning = (0, _warning.devUseWarning)("LocaleProvider");
+        warning(_ANT_MARK__ === ANT_MARK, "deprecated", "`LocaleProvider` is deprecated. Please use `locale` with `ConfigProvider` instead: http://u.ant.design/locale");
+    }
+    _react.useEffect(()=>{
+        const clearLocale = (0, _locale.changeConfirmLocale)(locale && locale.Modal);
+        return clearLocale;
+    }, [
+        locale
+    ]);
+    const getMemoizedContextValue = _react.useMemo(()=>Object.assign(Object.assign({}, locale), {
+            exist: true
+        }), [
+        locale
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _contextDefault.default).Provider, {
+        value: getMemoizedContextValue
+    }, children);
+};
+LocaleProvider.displayName = "LocaleProvider";
+exports.default = LocaleProvider;
+
+},{"react":"21dqq","../_util/warning":"daUrm","../modal/locale":"cgYI5","./context":"gK9Be","./useLocale":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cgYI5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "changeConfirmLocale", ()=>changeConfirmLocale);
+parcelHelpers.export(exports, "getConfirmLocale", ()=>getConfirmLocale);
+var _enUS = require("../locale/en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+let runtimeLocale = Object.assign({}, (0, _enUSDefault.default).Modal);
+let localeList = [];
+const generateLocale = ()=>localeList.reduce((merged, locale)=>Object.assign(Object.assign({}, merged), locale), (0, _enUSDefault.default).Modal);
+function changeConfirmLocale(newLocale) {
+    if (newLocale) {
+        const cloneLocale = Object.assign({}, newLocale);
+        localeList.push(cloneLocale);
+        runtimeLocale = generateLocale();
+        return ()=>{
+            localeList = localeList.filter((locale)=>locale !== cloneLocale);
+            runtimeLocale = generateLocale();
+        };
+    }
+    runtimeLocale = Object.assign({}, (0, _enUSDefault.default).Modal);
+}
+function getConfirmLocale() {
+    return runtimeLocale;
+}
+
+},{"../locale/en_US":"3cTtE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3cTtE":[function(require,module,exports) {
+/* eslint-disable no-template-curly-in-string */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _enUS = require("rc-pagination/es/locale/en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+var _enUS1 = require("../calendar/locale/en_US");
+var _enUSDefault1 = parcelHelpers.interopDefault(_enUS1);
+var _enUS2 = require("../date-picker/locale/en_US");
+var _enUSDefault2 = parcelHelpers.interopDefault(_enUS2);
+var _enUS3 = require("../time-picker/locale/en_US");
+var _enUSDefault3 = parcelHelpers.interopDefault(_enUS3);
+const typeTemplate = "${label} is not a valid ${type}";
+const localeValues = {
+    locale: "en",
+    Pagination: (0, _enUSDefault.default),
+    DatePicker: (0, _enUSDefault2.default),
+    TimePicker: (0, _enUSDefault3.default),
+    Calendar: (0, _enUSDefault1.default),
+    global: {
+        placeholder: "Please select"
+    },
+    Table: {
+        filterTitle: "Filter menu",
+        filterConfirm: "OK",
+        filterReset: "Reset",
+        filterEmptyText: "No filters",
+        filterCheckall: "Select all items",
+        filterSearchPlaceholder: "Search in filters",
+        emptyText: "No data",
+        selectAll: "Select current page",
+        selectInvert: "Invert current page",
+        selectNone: "Clear all data",
+        selectionAll: "Select all data",
+        sortTitle: "Sort",
+        expand: "Expand row",
+        collapse: "Collapse row",
+        triggerDesc: "Click to sort descending",
+        triggerAsc: "Click to sort ascending",
+        cancelSort: "Click to cancel sorting"
+    },
+    Tour: {
+        Next: "Next",
+        Previous: "Previous",
+        Finish: "Finish"
+    },
+    Modal: {
+        okText: "OK",
+        cancelText: "Cancel",
+        justOkText: "OK"
+    },
+    Popconfirm: {
+        okText: "OK",
+        cancelText: "Cancel"
+    },
+    Transfer: {
+        titles: [
+            "",
+            ""
+        ],
+        searchPlaceholder: "Search here",
+        itemUnit: "item",
+        itemsUnit: "items",
+        remove: "Remove",
+        selectCurrent: "Select current page",
+        removeCurrent: "Remove current page",
+        selectAll: "Select all data",
+        deselectAll: "Deselect all data",
+        removeAll: "Remove all data",
+        selectInvert: "Invert current page"
+    },
+    Upload: {
+        uploading: "Uploading...",
+        removeFile: "Remove file",
+        uploadError: "Upload error",
+        previewFile: "Preview file",
+        downloadFile: "Download file"
+    },
+    Empty: {
+        description: "No data"
+    },
+    Icon: {
+        icon: "icon"
+    },
+    Text: {
+        edit: "Edit",
+        copy: "Copy",
+        copied: "Copied",
+        expand: "Expand",
+        collapse: "Collapse"
+    },
+    Form: {
+        optional: "(optional)",
+        defaultValidateMessages: {
+            default: "Field validation error for ${label}",
+            required: "Please enter ${label}",
+            enum: "${label} must be one of [${enum}]",
+            whitespace: "${label} cannot be a blank character",
+            date: {
+                format: "${label} date format is invalid",
+                parse: "${label} cannot be converted to a date",
+                invalid: "${label} is an invalid date"
+            },
+            types: {
+                string: typeTemplate,
+                method: typeTemplate,
+                array: typeTemplate,
+                object: typeTemplate,
+                number: typeTemplate,
+                date: typeTemplate,
+                boolean: typeTemplate,
+                integer: typeTemplate,
+                float: typeTemplate,
+                regexp: typeTemplate,
+                email: typeTemplate,
+                url: typeTemplate,
+                hex: typeTemplate
+            },
+            string: {
+                len: "${label} must be ${len} characters",
+                min: "${label} must be at least ${min} characters",
+                max: "${label} must be up to ${max} characters",
+                range: "${label} must be between ${min}-${max} characters"
+            },
+            number: {
+                len: "${label} must be equal to ${len}",
+                min: "${label} must be minimum ${min}",
+                max: "${label} must be maximum ${max}",
+                range: "${label} must be between ${min}-${max}"
+            },
+            array: {
+                len: "Must be ${len} ${label}",
+                min: "At least ${min} ${label}",
+                max: "At most ${max} ${label}",
+                range: "The amount of ${label} must be between ${min}-${max}"
+            },
+            pattern: {
+                mismatch: "${label} does not match the pattern ${pattern}"
+            }
+        }
+    },
+    Image: {
+        preview: "Preview"
+    },
+    QRCode: {
+        expired: "QR code expired",
+        refresh: "Refresh",
+        scanned: "Scanned"
+    },
+    ColorPicker: {
+        presetEmpty: "Empty"
+    }
+};
+exports.default = localeValues;
+
+},{"rc-pagination/es/locale/en_US":"1OIC9","../calendar/locale/en_US":"2mydw","../date-picker/locale/en_US":"bWLfZ","../time-picker/locale/en_US":"7H9w0","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1OIC9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var locale = {
+    // Options
+    items_per_page: "/ page",
+    jump_to: "Go to",
+    jump_to_confirm: "confirm",
+    page: "Page",
+    // Pagination
+    prev_page: "Previous Page",
+    next_page: "Next Page",
+    prev_5: "Previous 5 Pages",
+    next_5: "Next 5 Pages",
+    prev_3: "Previous 3 Pages",
+    next_3: "Next 3 Pages",
+    page_size: "Page Size"
+};
+exports.default = locale;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2mydw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _enUS = require("../../date-picker/locale/en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+exports.default = (0, _enUSDefault.default);
+
+},{"../../date-picker/locale/en_US":"bWLfZ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bWLfZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _enUS = require("rc-picker/es/locale/en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+var _enUS1 = require("../../time-picker/locale/en_US");
+var _enUSDefault1 = parcelHelpers.interopDefault(_enUS1);
+// Merge into a locale object
+const locale = {
+    lang: Object.assign({
+        placeholder: "Select date",
+        yearPlaceholder: "Select year",
+        quarterPlaceholder: "Select quarter",
+        monthPlaceholder: "Select month",
+        weekPlaceholder: "Select week",
+        rangePlaceholder: [
+            "Start date",
+            "End date"
+        ],
+        rangeYearPlaceholder: [
+            "Start year",
+            "End year"
+        ],
+        rangeQuarterPlaceholder: [
+            "Start quarter",
+            "End quarter"
+        ],
+        rangeMonthPlaceholder: [
+            "Start month",
+            "End month"
+        ],
+        rangeWeekPlaceholder: [
+            "Start week",
+            "End week"
+        ]
+    }, (0, _enUSDefault.default)),
+    timePickerLocale: Object.assign({}, (0, _enUSDefault1.default))
+};
+// All settings at:
+// https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json
+exports.default = locale;
+
+},{"rc-picker/es/locale/en_US":"jU8Gg","../../time-picker/locale/en_US":"7H9w0","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jU8Gg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var locale = {
+    locale: "en_US",
+    today: "Today",
+    now: "Now",
+    backToToday: "Back to today",
+    ok: "OK",
+    clear: "Clear",
+    month: "Month",
+    year: "Year",
+    timeSelect: "select time",
+    dateSelect: "select date",
+    weekSelect: "Choose a week",
+    monthSelect: "Choose a month",
+    yearSelect: "Choose a year",
+    decadeSelect: "Choose a decade",
+    yearFormat: "YYYY",
+    dateFormat: "M/D/YYYY",
+    dayFormat: "D",
+    dateTimeFormat: "M/D/YYYY HH:mm:ss",
+    monthBeforeYear: true,
+    previousMonth: "Previous month (PageUp)",
+    nextMonth: "Next month (PageDown)",
+    previousYear: "Last year (Control + left)",
+    nextYear: "Next year (Control + right)",
+    previousDecade: "Last decade",
+    nextDecade: "Next decade",
+    previousCentury: "Last century",
+    nextCentury: "Next century"
+};
+exports.default = locale;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7H9w0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const locale = {
+    placeholder: "Select time",
+    rangePlaceholder: [
+        "Start time",
+        "End time"
+    ]
+};
+exports.default = locale;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gK9Be":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const LocaleContext = /*#__PURE__*/ (0, _react.createContext)(undefined);
+exports.default = LocaleContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1kv1r":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultTheme", ()=>defaultTheme);
+parcelHelpers.export(exports, "defaultConfig", ()=>defaultConfig);
+parcelHelpers.export(exports, "DesignTokenContext", ()=>DesignTokenContext);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _cssinjs = require("@ant-design/cssinjs");
+var _default = require("./themes/default");
+var _defaultDefault = parcelHelpers.interopDefault(_default);
+var _seed = require("./themes/seed");
+var _seedDefault = parcelHelpers.interopDefault(_seed);
+const defaultTheme = (0, _cssinjs.createTheme)((0, _defaultDefault.default));
+const defaultConfig = {
+    token: (0, _seedDefault.default),
+    override: {
+        override: (0, _seedDefault.default)
+    },
+    hashed: true
+};
+const DesignTokenContext = /*#__PURE__*/ (0, _reactDefault.default).createContext(defaultConfig);
+
+},{"react":"21dqq","@ant-design/cssinjs":"k46HC","./themes/default":"cgEp6","./themes/seed":"khm8T","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cgEp6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>derivative);
+var _colors = require("@ant-design/colors");
+var _seed = require("../seed");
+var _genColorMapToken = require("../shared/genColorMapToken");
+var _genColorMapTokenDefault = parcelHelpers.interopDefault(_genColorMapToken);
+var _genCommonMapToken = require("../shared/genCommonMapToken");
+var _genCommonMapTokenDefault = parcelHelpers.interopDefault(_genCommonMapToken);
+var _genControlHeight = require("../shared/genControlHeight");
+var _genControlHeightDefault = parcelHelpers.interopDefault(_genControlHeight);
+var _genFontMapToken = require("../shared/genFontMapToken");
+var _genFontMapTokenDefault = parcelHelpers.interopDefault(_genFontMapToken);
+var _genSizeMapToken = require("../shared/genSizeMapToken");
+var _genSizeMapTokenDefault = parcelHelpers.interopDefault(_genSizeMapToken);
+var _colors1 = require("./colors");
+function derivative(token) {
+    const colorPalettes = Object.keys((0, _seed.defaultPresetColors)).map((colorKey)=>{
+        const colors = (0, _colors.generate)(token[colorKey]);
+        return new Array(10).fill(1).reduce((prev, _, i)=>{
+            prev[`${colorKey}-${i + 1}`] = colors[i];
+            prev[`${colorKey}${i + 1}`] = colors[i];
+            return prev;
+        }, {});
+    }).reduce((prev, cur)=>{
+        prev = Object.assign(Object.assign({}, prev), cur);
+        return prev;
+    }, {});
+    return Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, token), colorPalettes), (0, _genColorMapTokenDefault.default)(token, {
+        generateColorPalettes: (0, _colors1.generateColorPalettes),
+        generateNeutralColorPalettes: (0, _colors1.generateNeutralColorPalettes)
+    })), (0, _genFontMapTokenDefault.default)(token.fontSize)), (0, _genSizeMapTokenDefault.default)(token)), (0, _genControlHeightDefault.default)(token)), (0, _genCommonMapTokenDefault.default)(token));
+}
+
+},{"@ant-design/colors":"7O27E","../seed":"khm8T","../shared/genColorMapToken":"2eJjt","../shared/genCommonMapToken":"ex843","../shared/genControlHeight":"45UNz","../shared/genFontMapToken":"1VZ6R","../shared/genSizeMapToken":"9oACj","./colors":"7eyB9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7O27E":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "generate", ()=>(0, _generateDefault.default));
+parcelHelpers.export(exports, "presetPalettes", ()=>presetPalettes);
+parcelHelpers.export(exports, "presetDarkPalettes", ()=>presetDarkPalettes);
+parcelHelpers.export(exports, "presetPrimaryColors", ()=>presetPrimaryColors);
+parcelHelpers.export(exports, "red", ()=>red);
+parcelHelpers.export(exports, "volcano", ()=>volcano);
+parcelHelpers.export(exports, "orange", ()=>orange);
+parcelHelpers.export(exports, "gold", ()=>gold);
+parcelHelpers.export(exports, "yellow", ()=>yellow);
+parcelHelpers.export(exports, "lime", ()=>lime);
+parcelHelpers.export(exports, "green", ()=>green);
+parcelHelpers.export(exports, "cyan", ()=>cyan);
+parcelHelpers.export(exports, "blue", ()=>blue);
+parcelHelpers.export(exports, "geekblue", ()=>geekblue);
+parcelHelpers.export(exports, "purple", ()=>purple);
+parcelHelpers.export(exports, "magenta", ()=>magenta);
+parcelHelpers.export(exports, "grey", ()=>grey);
+parcelHelpers.export(exports, "gray", ()=>gray);
+var _generate = require("./generate");
+var _generateDefault = parcelHelpers.interopDefault(_generate);
+var presetPrimaryColors = {
+    red: "#F5222D",
+    volcano: "#FA541C",
+    orange: "#FA8C16",
+    gold: "#FAAD14",
+    yellow: "#FADB14",
+    lime: "#A0D911",
+    green: "#52C41A",
+    cyan: "#13C2C2",
+    blue: "#1677FF",
+    geekblue: "#2F54EB",
+    purple: "#722ED1",
+    magenta: "#EB2F96",
+    grey: "#666666"
+};
+var presetPalettes = {};
+var presetDarkPalettes = {};
+Object.keys(presetPrimaryColors).forEach(function(key) {
+    presetPalettes[key] = (0, _generateDefault.default)(presetPrimaryColors[key]);
+    presetPalettes[key].primary = presetPalettes[key][5];
+    // dark presetPalettes
+    presetDarkPalettes[key] = (0, _generateDefault.default)(presetPrimaryColors[key], {
+        theme: "dark",
+        backgroundColor: "#141414"
+    });
+    presetDarkPalettes[key].primary = presetDarkPalettes[key][5];
+});
+var red = presetPalettes.red;
+var volcano = presetPalettes.volcano;
+var gold = presetPalettes.gold;
+var orange = presetPalettes.orange;
+var yellow = presetPalettes.yellow;
+var lime = presetPalettes.lime;
+var green = presetPalettes.green;
+var cyan = presetPalettes.cyan;
+var blue = presetPalettes.blue;
+var geekblue = presetPalettes.geekblue;
+var purple = presetPalettes.purple;
+var magenta = presetPalettes.magenta;
+var grey = presetPalettes.grey;
+var gray = presetPalettes.grey;
+
+},{"./generate":"2ohM4","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2ohM4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>generate);
+var _tinycolor = require("@ctrl/tinycolor");
+var hueStep = 2; // 色相阶梯
+var saturationStep = 0.16; // 饱和度阶梯，浅色部分
+var saturationStep2 = 0.05; // 饱和度阶梯，深色部分
+var brightnessStep1 = 0.05; // 亮度阶梯，浅色部分
+var brightnessStep2 = 0.15; // 亮度阶梯，深色部分
+var lightColorCount = 5; // 浅色数量，主色上
+var darkColorCount = 4; // 深色数量，主色下
+// 暗色主题颜色映射关系表
+var darkColorMap = [
+    {
+        index: 7,
+        opacity: 0.15
+    },
+    {
+        index: 6,
+        opacity: 0.25
+    },
+    {
+        index: 5,
+        opacity: 0.3
+    },
+    {
+        index: 5,
+        opacity: 0.45
+    },
+    {
+        index: 5,
+        opacity: 0.65
+    },
+    {
+        index: 5,
+        opacity: 0.85
+    },
+    {
+        index: 4,
+        opacity: 0.9
+    },
+    {
+        index: 3,
+        opacity: 0.95
+    },
+    {
+        index: 2,
+        opacity: 0.97
+    },
+    {
+        index: 1,
+        opacity: 0.98
+    }
+];
+// Wrapper function ported from TinyColor.prototype.toHsv
+// Keep it here because of `hsv.h * 360`
+function toHsv(_ref) {
+    var r = _ref.r, g = _ref.g, b = _ref.b;
+    var hsv = (0, _tinycolor.rgbToHsv)(r, g, b);
+    return {
+        h: hsv.h * 360,
+        s: hsv.s,
+        v: hsv.v
+    };
+}
+// Wrapper function ported from TinyColor.prototype.toHexString
+// Keep it here because of the prefix `#`
+function toHex(_ref2) {
+    var r = _ref2.r, g = _ref2.g, b = _ref2.b;
+    return "#".concat((0, _tinycolor.rgbToHex)(r, g, b, false));
+}
+// Wrapper function ported from TinyColor.prototype.mix, not treeshakable.
+// Amount in range [0, 1]
+// Assume color1 & color2 has no alpha, since the following src code did so.
+function mix(rgb1, rgb2, amount) {
+    var p = amount / 100;
+    var rgb = {
+        r: (rgb2.r - rgb1.r) * p + rgb1.r,
+        g: (rgb2.g - rgb1.g) * p + rgb1.g,
+        b: (rgb2.b - rgb1.b) * p + rgb1.b
+    };
+    return rgb;
+}
+function getHue(hsv, i, light) {
+    var hue;
+    // 根据色相不同，色相转向不同
+    if (Math.round(hsv.h) >= 60 && Math.round(hsv.h) <= 240) hue = light ? Math.round(hsv.h) - hueStep * i : Math.round(hsv.h) + hueStep * i;
+    else hue = light ? Math.round(hsv.h) + hueStep * i : Math.round(hsv.h) - hueStep * i;
+    if (hue < 0) hue += 360;
+    else if (hue >= 360) hue -= 360;
+    return hue;
+}
+function getSaturation(hsv, i, light) {
+    // grey color don't change saturation
+    if (hsv.h === 0 && hsv.s === 0) return hsv.s;
+    var saturation;
+    if (light) saturation = hsv.s - saturationStep * i;
+    else if (i === darkColorCount) saturation = hsv.s + saturationStep;
+    else saturation = hsv.s + saturationStep2 * i;
+    // 边界值修正
+    if (saturation > 1) saturation = 1;
+    // 第一格的 s 限制在 0.06-0.1 之间
+    if (light && i === lightColorCount && saturation > 0.1) saturation = 0.1;
+    if (saturation < 0.06) saturation = 0.06;
+    return Number(saturation.toFixed(2));
+}
+function getValue(hsv, i, light) {
+    var value;
+    if (light) value = hsv.v + brightnessStep1 * i;
+    else value = hsv.v - brightnessStep2 * i;
+    if (value > 1) value = 1;
+    return Number(value.toFixed(2));
+}
+function generate(color) {
+    var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var patterns = [];
+    var pColor = (0, _tinycolor.inputToRGB)(color);
+    for(var i = lightColorCount; i > 0; i -= 1){
+        var hsv = toHsv(pColor);
+        var colorString = toHex((0, _tinycolor.inputToRGB)({
+            h: getHue(hsv, i, true),
+            s: getSaturation(hsv, i, true),
+            v: getValue(hsv, i, true)
+        }));
+        patterns.push(colorString);
+    }
+    patterns.push(toHex(pColor));
+    for(var _i = 1; _i <= darkColorCount; _i += 1){
+        var _hsv = toHsv(pColor);
+        var _colorString = toHex((0, _tinycolor.inputToRGB)({
+            h: getHue(_hsv, _i),
+            s: getSaturation(_hsv, _i),
+            v: getValue(_hsv, _i)
+        }));
+        patterns.push(_colorString);
+    }
+    // dark theme patterns
+    if (opts.theme === "dark") return darkColorMap.map(function(_ref3) {
+        var index = _ref3.index, opacity = _ref3.opacity;
+        var darkColorString = toHex(mix((0, _tinycolor.inputToRGB)(opts.backgroundColor || "#141414"), (0, _tinycolor.inputToRGB)(patterns[index]), opacity * 100));
+        return darkColorString;
+    });
+    return patterns;
+}
+
+},{"@ctrl/tinycolor":"e1DHG","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"e1DHG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _indexJs = require("./index.js");
+parcelHelpers.exportAll(_indexJs, exports);
+var _cssColorNamesJs = require("./css-color-names.js");
+parcelHelpers.exportAll(_cssColorNamesJs, exports);
+var _readabilityJs = require("./readability.js");
+parcelHelpers.exportAll(_readabilityJs, exports);
+var _toMsFilterJs = require("./to-ms-filter.js");
+parcelHelpers.exportAll(_toMsFilterJs, exports);
+var _fromRatioJs = require("./from-ratio.js");
+parcelHelpers.exportAll(_fromRatioJs, exports);
+var _formatInputJs = require("./format-input.js");
+parcelHelpers.exportAll(_formatInputJs, exports);
+var _randomJs = require("./random.js");
+parcelHelpers.exportAll(_randomJs, exports);
+var _interfacesJs = require("./interfaces.js");
+parcelHelpers.exportAll(_interfacesJs, exports);
+var _conversionJs = require("./conversion.js");
+parcelHelpers.exportAll(_conversionJs, exports);
+// kept for backwards compatability with v1
+exports.default = (0, _indexJs.tinycolor);
+
+},{"./index.js":"lKbZq","./css-color-names.js":false,"./readability.js":false,"./to-ms-filter.js":false,"./from-ratio.js":false,"./format-input.js":"2EZlz","./random.js":false,"./interfaces.js":false,"./conversion.js":"lEGR9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lKbZq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "TinyColor", ()=>TinyColor);
+// kept for backwards compatability with v1
+parcelHelpers.export(exports, "tinycolor", ()=>tinycolor);
+var _conversionJs = require("./conversion.js");
+var _cssColorNamesJs = require("./css-color-names.js");
+var _formatInput = require("./format-input");
+var _utilJs = require("./util.js");
+var TinyColor = /** @class */ function() {
+    function TinyColor(color, opts) {
+        if (color === void 0) color = "";
+        if (opts === void 0) opts = {};
+        var _a;
+        // If input is already a tinycolor, return itself
+        if (color instanceof TinyColor) // eslint-disable-next-line no-constructor-return
+        return color;
+        if (typeof color === "number") color = (0, _conversionJs.numberInputToObject)(color);
+        this.originalInput = color;
+        var rgb = (0, _formatInput.inputToRGB)(color);
+        this.originalInput = color;
+        this.r = rgb.r;
+        this.g = rgb.g;
+        this.b = rgb.b;
+        this.a = rgb.a;
+        this.roundA = Math.round(100 * this.a) / 100;
+        this.format = (_a = opts.format) !== null && _a !== void 0 ? _a : rgb.format;
+        this.gradientType = opts.gradientType;
+        // Don't let the range of [0,255] come back in [0,1].
+        // Potentially lose a little bit of precision here, but will fix issues where
+        // .5 gets interpreted as half of the total, instead of half of 1
+        // If it was supposed to be 128, this was already taken care of by `inputToRgb`
+        if (this.r < 1) this.r = Math.round(this.r);
+        if (this.g < 1) this.g = Math.round(this.g);
+        if (this.b < 1) this.b = Math.round(this.b);
+        this.isValid = rgb.ok;
+    }
+    TinyColor.prototype.isDark = function() {
+        return this.getBrightness() < 128;
+    };
+    TinyColor.prototype.isLight = function() {
+        return !this.isDark();
+    };
+    /**
+     * Returns the perceived brightness of the color, from 0-255.
+     */ TinyColor.prototype.getBrightness = function() {
+        // http://www.w3.org/TR/AERT#color-contrast
+        var rgb = this.toRgb();
+        return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
+    };
+    /**
+     * Returns the perceived luminance of a color, from 0-1.
+     */ TinyColor.prototype.getLuminance = function() {
+        // http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
+        var rgb = this.toRgb();
+        var R;
+        var G;
+        var B;
+        var RsRGB = rgb.r / 255;
+        var GsRGB = rgb.g / 255;
+        var BsRGB = rgb.b / 255;
+        if (RsRGB <= 0.03928) R = RsRGB / 12.92;
+        else // eslint-disable-next-line prefer-exponentiation-operator
+        R = Math.pow((RsRGB + 0.055) / 1.055, 2.4);
+        if (GsRGB <= 0.03928) G = GsRGB / 12.92;
+        else // eslint-disable-next-line prefer-exponentiation-operator
+        G = Math.pow((GsRGB + 0.055) / 1.055, 2.4);
+        if (BsRGB <= 0.03928) B = BsRGB / 12.92;
+        else // eslint-disable-next-line prefer-exponentiation-operator
+        B = Math.pow((BsRGB + 0.055) / 1.055, 2.4);
+        return 0.2126 * R + 0.7152 * G + 0.0722 * B;
+    };
+    /**
+     * Returns the alpha value of a color, from 0-1.
+     */ TinyColor.prototype.getAlpha = function() {
+        return this.a;
+    };
+    /**
+     * Sets the alpha value on the current color.
+     *
+     * @param alpha - The new alpha value. The accepted range is 0-1.
+     */ TinyColor.prototype.setAlpha = function(alpha) {
+        this.a = (0, _utilJs.boundAlpha)(alpha);
+        this.roundA = Math.round(100 * this.a) / 100;
+        return this;
+    };
+    /**
+     * Returns whether the color is monochrome.
+     */ TinyColor.prototype.isMonochrome = function() {
+        var s = this.toHsl().s;
+        return s === 0;
+    };
+    /**
+     * Returns the object as a HSVA object.
+     */ TinyColor.prototype.toHsv = function() {
+        var hsv = (0, _conversionJs.rgbToHsv)(this.r, this.g, this.b);
+        return {
+            h: hsv.h * 360,
+            s: hsv.s,
+            v: hsv.v,
+            a: this.a
+        };
+    };
+    /**
+     * Returns the hsva values interpolated into a string with the following format:
+     * "hsva(xxx, xxx, xxx, xx)".
+     */ TinyColor.prototype.toHsvString = function() {
+        var hsv = (0, _conversionJs.rgbToHsv)(this.r, this.g, this.b);
+        var h = Math.round(hsv.h * 360);
+        var s = Math.round(hsv.s * 100);
+        var v = Math.round(hsv.v * 100);
+        return this.a === 1 ? "hsv(".concat(h, ", ").concat(s, "%, ").concat(v, "%)") : "hsva(".concat(h, ", ").concat(s, "%, ").concat(v, "%, ").concat(this.roundA, ")");
+    };
+    /**
+     * Returns the object as a HSLA object.
+     */ TinyColor.prototype.toHsl = function() {
+        var hsl = (0, _conversionJs.rgbToHsl)(this.r, this.g, this.b);
+        return {
+            h: hsl.h * 360,
+            s: hsl.s,
+            l: hsl.l,
+            a: this.a
+        };
+    };
+    /**
+     * Returns the hsla values interpolated into a string with the following format:
+     * "hsla(xxx, xxx, xxx, xx)".
+     */ TinyColor.prototype.toHslString = function() {
+        var hsl = (0, _conversionJs.rgbToHsl)(this.r, this.g, this.b);
+        var h = Math.round(hsl.h * 360);
+        var s = Math.round(hsl.s * 100);
+        var l = Math.round(hsl.l * 100);
+        return this.a === 1 ? "hsl(".concat(h, ", ").concat(s, "%, ").concat(l, "%)") : "hsla(".concat(h, ", ").concat(s, "%, ").concat(l, "%, ").concat(this.roundA, ")");
+    };
+    /**
+     * Returns the hex value of the color.
+     * @param allow3Char will shorten hex value to 3 char if possible
+     */ TinyColor.prototype.toHex = function(allow3Char) {
+        if (allow3Char === void 0) allow3Char = false;
+        return (0, _conversionJs.rgbToHex)(this.r, this.g, this.b, allow3Char);
+    };
+    /**
+     * Returns the hex value of the color -with a # prefixed.
+     * @param allow3Char will shorten hex value to 3 char if possible
+     */ TinyColor.prototype.toHexString = function(allow3Char) {
+        if (allow3Char === void 0) allow3Char = false;
+        return "#" + this.toHex(allow3Char);
+    };
+    /**
+     * Returns the hex 8 value of the color.
+     * @param allow4Char will shorten hex value to 4 char if possible
+     */ TinyColor.prototype.toHex8 = function(allow4Char) {
+        if (allow4Char === void 0) allow4Char = false;
+        return (0, _conversionJs.rgbaToHex)(this.r, this.g, this.b, this.a, allow4Char);
+    };
+    /**
+     * Returns the hex 8 value of the color -with a # prefixed.
+     * @param allow4Char will shorten hex value to 4 char if possible
+     */ TinyColor.prototype.toHex8String = function(allow4Char) {
+        if (allow4Char === void 0) allow4Char = false;
+        return "#" + this.toHex8(allow4Char);
+    };
+    /**
+     * Returns the shorter hex value of the color depends on its alpha -with a # prefixed.
+     * @param allowShortChar will shorten hex value to 3 or 4 char if possible
+     */ TinyColor.prototype.toHexShortString = function(allowShortChar) {
+        if (allowShortChar === void 0) allowShortChar = false;
+        return this.a === 1 ? this.toHexString(allowShortChar) : this.toHex8String(allowShortChar);
+    };
+    /**
+     * Returns the object as a RGBA object.
+     */ TinyColor.prototype.toRgb = function() {
+        return {
+            r: Math.round(this.r),
+            g: Math.round(this.g),
+            b: Math.round(this.b),
+            a: this.a
+        };
+    };
+    /**
+     * Returns the RGBA values interpolated into a string with the following format:
+     * "RGBA(xxx, xxx, xxx, xx)".
+     */ TinyColor.prototype.toRgbString = function() {
+        var r = Math.round(this.r);
+        var g = Math.round(this.g);
+        var b = Math.round(this.b);
+        return this.a === 1 ? "rgb(".concat(r, ", ").concat(g, ", ").concat(b, ")") : "rgba(".concat(r, ", ").concat(g, ", ").concat(b, ", ").concat(this.roundA, ")");
+    };
+    /**
+     * Returns the object as a RGBA object.
+     */ TinyColor.prototype.toPercentageRgb = function() {
+        var fmt = function(x) {
+            return "".concat(Math.round((0, _utilJs.bound01)(x, 255) * 100), "%");
+        };
+        return {
+            r: fmt(this.r),
+            g: fmt(this.g),
+            b: fmt(this.b),
+            a: this.a
+        };
+    };
+    /**
+     * Returns the RGBA relative values interpolated into a string
+     */ TinyColor.prototype.toPercentageRgbString = function() {
+        var rnd = function(x) {
+            return Math.round((0, _utilJs.bound01)(x, 255) * 100);
+        };
+        return this.a === 1 ? "rgb(".concat(rnd(this.r), "%, ").concat(rnd(this.g), "%, ").concat(rnd(this.b), "%)") : "rgba(".concat(rnd(this.r), "%, ").concat(rnd(this.g), "%, ").concat(rnd(this.b), "%, ").concat(this.roundA, ")");
+    };
+    /**
+     * The 'real' name of the color -if there is one.
+     */ TinyColor.prototype.toName = function() {
+        if (this.a === 0) return "transparent";
+        if (this.a < 1) return false;
+        var hex = "#" + (0, _conversionJs.rgbToHex)(this.r, this.g, this.b, false);
+        for(var _i = 0, _a = Object.entries((0, _cssColorNamesJs.names)); _i < _a.length; _i++){
+            var _b = _a[_i], key = _b[0], value = _b[1];
+            if (hex === value) return key;
+        }
+        return false;
+    };
+    TinyColor.prototype.toString = function(format) {
+        var formatSet = Boolean(format);
+        format = format !== null && format !== void 0 ? format : this.format;
+        var formattedString = false;
+        var hasAlpha = this.a < 1 && this.a >= 0;
+        var needsAlphaFormat = !formatSet && hasAlpha && (format.startsWith("hex") || format === "name");
+        if (needsAlphaFormat) {
+            // Special case for "transparent", all other non-alpha formats
+            // will return rgba when there is transparency.
+            if (format === "name" && this.a === 0) return this.toName();
+            return this.toRgbString();
+        }
+        if (format === "rgb") formattedString = this.toRgbString();
+        if (format === "prgb") formattedString = this.toPercentageRgbString();
+        if (format === "hex" || format === "hex6") formattedString = this.toHexString();
+        if (format === "hex3") formattedString = this.toHexString(true);
+        if (format === "hex4") formattedString = this.toHex8String(true);
+        if (format === "hex8") formattedString = this.toHex8String();
+        if (format === "name") formattedString = this.toName();
+        if (format === "hsl") formattedString = this.toHslString();
+        if (format === "hsv") formattedString = this.toHsvString();
+        return formattedString || this.toHexString();
+    };
+    TinyColor.prototype.toNumber = function() {
+        return (Math.round(this.r) << 16) + (Math.round(this.g) << 8) + Math.round(this.b);
+    };
+    TinyColor.prototype.clone = function() {
+        return new TinyColor(this.toString());
+    };
+    /**
+     * Lighten the color a given amount. Providing 100 will always return white.
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.lighten = function(amount) {
+        if (amount === void 0) amount = 10;
+        var hsl = this.toHsl();
+        hsl.l += amount / 100;
+        hsl.l = (0, _utilJs.clamp01)(hsl.l);
+        return new TinyColor(hsl);
+    };
+    /**
+     * Brighten the color a given amount, from 0 to 100.
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.brighten = function(amount) {
+        if (amount === void 0) amount = 10;
+        var rgb = this.toRgb();
+        rgb.r = Math.max(0, Math.min(255, rgb.r - Math.round(255 * -(amount / 100))));
+        rgb.g = Math.max(0, Math.min(255, rgb.g - Math.round(255 * -(amount / 100))));
+        rgb.b = Math.max(0, Math.min(255, rgb.b - Math.round(255 * -(amount / 100))));
+        return new TinyColor(rgb);
+    };
+    /**
+     * Darken the color a given amount, from 0 to 100.
+     * Providing 100 will always return black.
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.darken = function(amount) {
+        if (amount === void 0) amount = 10;
+        var hsl = this.toHsl();
+        hsl.l -= amount / 100;
+        hsl.l = (0, _utilJs.clamp01)(hsl.l);
+        return new TinyColor(hsl);
+    };
+    /**
+     * Mix the color with pure white, from 0 to 100.
+     * Providing 0 will do nothing, providing 100 will always return white.
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.tint = function(amount) {
+        if (amount === void 0) amount = 10;
+        return this.mix("white", amount);
+    };
+    /**
+     * Mix the color with pure black, from 0 to 100.
+     * Providing 0 will do nothing, providing 100 will always return black.
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.shade = function(amount) {
+        if (amount === void 0) amount = 10;
+        return this.mix("black", amount);
+    };
+    /**
+     * Desaturate the color a given amount, from 0 to 100.
+     * Providing 100 will is the same as calling greyscale
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.desaturate = function(amount) {
+        if (amount === void 0) amount = 10;
+        var hsl = this.toHsl();
+        hsl.s -= amount / 100;
+        hsl.s = (0, _utilJs.clamp01)(hsl.s);
+        return new TinyColor(hsl);
+    };
+    /**
+     * Saturate the color a given amount, from 0 to 100.
+     * @param amount - valid between 1-100
+     */ TinyColor.prototype.saturate = function(amount) {
+        if (amount === void 0) amount = 10;
+        var hsl = this.toHsl();
+        hsl.s += amount / 100;
+        hsl.s = (0, _utilJs.clamp01)(hsl.s);
+        return new TinyColor(hsl);
+    };
+    /**
+     * Completely desaturates a color into greyscale.
+     * Same as calling `desaturate(100)`
+     */ TinyColor.prototype.greyscale = function() {
+        return this.desaturate(100);
+    };
+    /**
+     * Spin takes a positive or negative amount within [-360, 360] indicating the change of hue.
+     * Values outside of this range will be wrapped into this range.
+     */ TinyColor.prototype.spin = function(amount) {
+        var hsl = this.toHsl();
+        var hue = (hsl.h + amount) % 360;
+        hsl.h = hue < 0 ? 360 + hue : hue;
+        return new TinyColor(hsl);
+    };
+    /**
+     * Mix the current color a given amount with another color, from 0 to 100.
+     * 0 means no mixing (return current color).
+     */ TinyColor.prototype.mix = function(color, amount) {
+        if (amount === void 0) amount = 50;
+        var rgb1 = this.toRgb();
+        var rgb2 = new TinyColor(color).toRgb();
+        var p = amount / 100;
+        var rgba = {
+            r: (rgb2.r - rgb1.r) * p + rgb1.r,
+            g: (rgb2.g - rgb1.g) * p + rgb1.g,
+            b: (rgb2.b - rgb1.b) * p + rgb1.b,
+            a: (rgb2.a - rgb1.a) * p + rgb1.a
+        };
+        return new TinyColor(rgba);
+    };
+    TinyColor.prototype.analogous = function(results, slices) {
+        if (results === void 0) results = 6;
+        if (slices === void 0) slices = 30;
+        var hsl = this.toHsl();
+        var part = 360 / slices;
+        var ret = [
+            this
+        ];
+        for(hsl.h = (hsl.h - (part * results >> 1) + 720) % 360; --results;){
+            hsl.h = (hsl.h + part) % 360;
+            ret.push(new TinyColor(hsl));
+        }
+        return ret;
+    };
+    /**
+     * taken from https://github.com/infusion/jQuery-xcolor/blob/master/jquery.xcolor.js
+     */ TinyColor.prototype.complement = function() {
+        var hsl = this.toHsl();
+        hsl.h = (hsl.h + 180) % 360;
+        return new TinyColor(hsl);
+    };
+    TinyColor.prototype.monochromatic = function(results) {
+        if (results === void 0) results = 6;
+        var hsv = this.toHsv();
+        var h = hsv.h;
+        var s = hsv.s;
+        var v = hsv.v;
+        var res = [];
+        var modification = 1 / results;
+        while(results--){
+            res.push(new TinyColor({
+                h: h,
+                s: s,
+                v: v
+            }));
+            v = (v + modification) % 1;
+        }
+        return res;
+    };
+    TinyColor.prototype.splitcomplement = function() {
+        var hsl = this.toHsl();
+        var h = hsl.h;
+        return [
+            this,
+            new TinyColor({
+                h: (h + 72) % 360,
+                s: hsl.s,
+                l: hsl.l
+            }),
+            new TinyColor({
+                h: (h + 216) % 360,
+                s: hsl.s,
+                l: hsl.l
+            })
+        ];
+    };
+    /**
+     * Compute how the color would appear on a background
+     */ TinyColor.prototype.onBackground = function(background) {
+        var fg = this.toRgb();
+        var bg = new TinyColor(background).toRgb();
+        var alpha = fg.a + bg.a * (1 - fg.a);
+        return new TinyColor({
+            r: (fg.r * fg.a + bg.r * bg.a * (1 - fg.a)) / alpha,
+            g: (fg.g * fg.a + bg.g * bg.a * (1 - fg.a)) / alpha,
+            b: (fg.b * fg.a + bg.b * bg.a * (1 - fg.a)) / alpha,
+            a: alpha
+        });
+    };
+    /**
+     * Alias for `polyad(3)`
+     */ TinyColor.prototype.triad = function() {
+        return this.polyad(3);
+    };
+    /**
+     * Alias for `polyad(4)`
+     */ TinyColor.prototype.tetrad = function() {
+        return this.polyad(4);
+    };
+    /**
+     * Get polyad colors, like (for 1, 2, 3, 4, 5, 6, 7, 8, etc...)
+     * monad, dyad, triad, tetrad, pentad, hexad, heptad, octad, etc...
+     */ TinyColor.prototype.polyad = function(n) {
+        var hsl = this.toHsl();
+        var h = hsl.h;
+        var result = [
+            this
+        ];
+        var increment = 360 / n;
+        for(var i = 1; i < n; i++)result.push(new TinyColor({
+            h: (h + i * increment) % 360,
+            s: hsl.s,
+            l: hsl.l
+        }));
+        return result;
+    };
+    /**
+     * compare color vs current color
+     */ TinyColor.prototype.equals = function(color) {
+        return this.toRgbString() === new TinyColor(color).toRgbString();
+    };
+    return TinyColor;
+}();
+function tinycolor(color, opts) {
+    if (color === void 0) color = "";
+    if (opts === void 0) opts = {};
+    return new TinyColor(color, opts);
+}
+
+},{"./conversion.js":"lEGR9","./css-color-names.js":"b5HZM","./format-input":"2EZlz","./util.js":"83iaU","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lEGR9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+// `rgbToHsl`, `rgbToHsv`, `hslToRgb`, `hsvToRgb` modified from:
+// <http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript>
+/**
+ * Handle bounds / percentage checking to conform to CSS color spec
+ * <http://www.w3.org/TR/css3-color/>
+ * *Assumes:* r, g, b in [0, 255] or [0, 1]
+ * *Returns:* { r, g, b } in [0, 255]
+ */ parcelHelpers.export(exports, "rgbToRgb", ()=>rgbToRgb);
+/**
+ * Converts an RGB color value to HSL.
+ * *Assumes:* r, g, and b are contained in [0, 255] or [0, 1]
+ * *Returns:* { h, s, l } in [0,1]
+ */ parcelHelpers.export(exports, "rgbToHsl", ()=>rgbToHsl);
+/**
+ * Converts an HSL color value to RGB.
+ *
+ * *Assumes:* h is contained in [0, 1] or [0, 360] and s and l are contained [0, 1] or [0, 100]
+ * *Returns:* { r, g, b } in the set [0, 255]
+ */ parcelHelpers.export(exports, "hslToRgb", ()=>hslToRgb);
+/**
+ * Converts an RGB color value to HSV
+ *
+ * *Assumes:* r, g, and b are contained in the set [0, 255] or [0, 1]
+ * *Returns:* { h, s, v } in [0,1]
+ */ parcelHelpers.export(exports, "rgbToHsv", ()=>rgbToHsv);
+/**
+ * Converts an HSV color value to RGB.
+ *
+ * *Assumes:* h is contained in [0, 1] or [0, 360] and s and v are contained in [0, 1] or [0, 100]
+ * *Returns:* { r, g, b } in the set [0, 255]
+ */ parcelHelpers.export(exports, "hsvToRgb", ()=>hsvToRgb);
+/**
+ * Converts an RGB color to hex
+ *
+ * Assumes r, g, and b are contained in the set [0, 255]
+ * Returns a 3 or 6 character hex
+ */ parcelHelpers.export(exports, "rgbToHex", ()=>rgbToHex);
+/**
+ * Converts an RGBA color plus alpha transparency to hex
+ *
+ * Assumes r, g, b are contained in the set [0, 255] and
+ * a in [0, 1]. Returns a 4 or 8 character rgba hex
+ */ // eslint-disable-next-line max-params
+parcelHelpers.export(exports, "rgbaToHex", ()=>rgbaToHex);
+/**
+ * Converts an RGBA color to an ARGB Hex8 string
+ * Rarely used, but required for "toFilter()"
+ */ parcelHelpers.export(exports, "rgbaToArgbHex", ()=>rgbaToArgbHex);
+/** Converts a decimal to a hex value */ parcelHelpers.export(exports, "convertDecimalToHex", ()=>convertDecimalToHex);
+/** Converts a hex value to a decimal */ parcelHelpers.export(exports, "convertHexToDecimal", ()=>convertHexToDecimal);
+/** Parse a base-16 hex value into a base-10 integer */ parcelHelpers.export(exports, "parseIntFromHex", ()=>parseIntFromHex);
+parcelHelpers.export(exports, "numberInputToObject", ()=>numberInputToObject);
+var _utilJs = require("./util.js");
+function rgbToRgb(r, g, b) {
+    return {
+        r: (0, _utilJs.bound01)(r, 255) * 255,
+        g: (0, _utilJs.bound01)(g, 255) * 255,
+        b: (0, _utilJs.bound01)(b, 255) * 255
+    };
+}
+function rgbToHsl(r, g, b) {
+    r = (0, _utilJs.bound01)(r, 255);
+    g = (0, _utilJs.bound01)(g, 255);
+    b = (0, _utilJs.bound01)(b, 255);
+    var max = Math.max(r, g, b);
+    var min = Math.min(r, g, b);
+    var h = 0;
+    var s = 0;
+    var l = (max + min) / 2;
+    if (max === min) {
+        s = 0;
+        h = 0; // achromatic
+    } else {
+        var d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch(max){
+            case r:
+                h = (g - b) / d + (g < b ? 6 : 0);
+                break;
+            case g:
+                h = (b - r) / d + 2;
+                break;
+            case b:
+                h = (r - g) / d + 4;
+                break;
+            default:
+                break;
+        }
+        h /= 6;
+    }
+    return {
+        h: h,
+        s: s,
+        l: l
+    };
+}
+function hue2rgb(p, q, t) {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * (6 * t);
+    if (t < 0.5) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+}
+function hslToRgb(h, s, l) {
+    var r;
+    var g;
+    var b;
+    h = (0, _utilJs.bound01)(h, 360);
+    s = (0, _utilJs.bound01)(s, 100);
+    l = (0, _utilJs.bound01)(l, 100);
+    if (s === 0) {
+        // achromatic
+        g = l;
+        b = l;
+        r = l;
+    } else {
+        var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        var p = 2 * l - q;
+        r = hue2rgb(p, q, h + 1 / 3);
+        g = hue2rgb(p, q, h);
+        b = hue2rgb(p, q, h - 1 / 3);
+    }
+    return {
+        r: r * 255,
+        g: g * 255,
+        b: b * 255
+    };
+}
+function rgbToHsv(r, g, b) {
+    r = (0, _utilJs.bound01)(r, 255);
+    g = (0, _utilJs.bound01)(g, 255);
+    b = (0, _utilJs.bound01)(b, 255);
+    var max = Math.max(r, g, b);
+    var min = Math.min(r, g, b);
+    var h = 0;
+    var v = max;
+    var d = max - min;
+    var s = max === 0 ? 0 : d / max;
+    if (max === min) h = 0; // achromatic
+    else {
+        switch(max){
+            case r:
+                h = (g - b) / d + (g < b ? 6 : 0);
+                break;
+            case g:
+                h = (b - r) / d + 2;
+                break;
+            case b:
+                h = (r - g) / d + 4;
+                break;
+            default:
+                break;
+        }
+        h /= 6;
+    }
+    return {
+        h: h,
+        s: s,
+        v: v
+    };
+}
+function hsvToRgb(h, s, v) {
+    h = (0, _utilJs.bound01)(h, 360) * 6;
+    s = (0, _utilJs.bound01)(s, 100);
+    v = (0, _utilJs.bound01)(v, 100);
+    var i = Math.floor(h);
+    var f = h - i;
+    var p = v * (1 - s);
+    var q = v * (1 - f * s);
+    var t = v * (1 - (1 - f) * s);
+    var mod = i % 6;
+    var r = [
+        v,
+        q,
+        p,
+        p,
+        t,
+        v
+    ][mod];
+    var g = [
+        t,
+        v,
+        v,
+        q,
+        p,
+        p
+    ][mod];
+    var b = [
+        p,
+        p,
+        t,
+        v,
+        v,
+        q
+    ][mod];
+    return {
+        r: r * 255,
+        g: g * 255,
+        b: b * 255
+    };
+}
+function rgbToHex(r, g, b, allow3Char) {
+    var hex = [
+        (0, _utilJs.pad2)(Math.round(r).toString(16)),
+        (0, _utilJs.pad2)(Math.round(g).toString(16)),
+        (0, _utilJs.pad2)(Math.round(b).toString(16))
+    ];
+    // Return a 3 character hex if possible
+    if (allow3Char && hex[0].startsWith(hex[0].charAt(1)) && hex[1].startsWith(hex[1].charAt(1)) && hex[2].startsWith(hex[2].charAt(1))) return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0);
+    return hex.join("");
+}
+function rgbaToHex(r, g, b, a, allow4Char) {
+    var hex = [
+        (0, _utilJs.pad2)(Math.round(r).toString(16)),
+        (0, _utilJs.pad2)(Math.round(g).toString(16)),
+        (0, _utilJs.pad2)(Math.round(b).toString(16)),
+        (0, _utilJs.pad2)(convertDecimalToHex(a))
+    ];
+    // Return a 4 character hex if possible
+    if (allow4Char && hex[0].startsWith(hex[0].charAt(1)) && hex[1].startsWith(hex[1].charAt(1)) && hex[2].startsWith(hex[2].charAt(1)) && hex[3].startsWith(hex[3].charAt(1))) return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0) + hex[3].charAt(0);
+    return hex.join("");
+}
+function rgbaToArgbHex(r, g, b, a) {
+    var hex = [
+        (0, _utilJs.pad2)(convertDecimalToHex(a)),
+        (0, _utilJs.pad2)(Math.round(r).toString(16)),
+        (0, _utilJs.pad2)(Math.round(g).toString(16)),
+        (0, _utilJs.pad2)(Math.round(b).toString(16))
+    ];
+    return hex.join("");
+}
+function convertDecimalToHex(d) {
+    return Math.round(parseFloat(d) * 255).toString(16);
+}
+function convertHexToDecimal(h) {
+    return parseIntFromHex(h) / 255;
+}
+function parseIntFromHex(val) {
+    return parseInt(val, 16);
+}
+function numberInputToObject(color) {
+    return {
+        r: color >> 16,
+        g: (color & 0xff00) >> 8,
+        b: color & 0xff
+    };
+}
+
+},{"./util.js":"83iaU","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"83iaU":[function(require,module,exports) {
+/**
+ * Take input from [0, n] and return it as [0, 1]
+ * @hidden
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "bound01", ()=>bound01);
+/**
+ * Force a number between 0 and 1
+ * @hidden
+ */ parcelHelpers.export(exports, "clamp01", ()=>clamp01);
+/**
+ * Need to handle 1.0 as 100%, since once it is a number, there is no difference between it and 1
+ * <http://stackoverflow.com/questions/7422072/javascript-how-to-detect-number-as-a-decimal-including-1-0>
+ * @hidden
+ */ parcelHelpers.export(exports, "isOnePointZero", ()=>isOnePointZero);
+/**
+ * Check to see if string passed in is a percentage
+ * @hidden
+ */ parcelHelpers.export(exports, "isPercentage", ()=>isPercentage);
+/**
+ * Return a valid alpha value [0,1] with all invalid values being set to 1
+ * @hidden
+ */ parcelHelpers.export(exports, "boundAlpha", ()=>boundAlpha);
+/**
+ * Replace a decimal with it's percentage value
+ * @hidden
+ */ parcelHelpers.export(exports, "convertToPercentage", ()=>convertToPercentage);
+/**
+ * Force a hex value to have 2 characters
+ * @hidden
+ */ parcelHelpers.export(exports, "pad2", ()=>pad2);
+function bound01(n, max) {
+    if (isOnePointZero(n)) n = "100%";
+    var isPercent = isPercentage(n);
+    n = max === 360 ? n : Math.min(max, Math.max(0, parseFloat(n)));
+    // Automatically convert percentage into number
+    if (isPercent) n = parseInt(String(n * max), 10) / 100;
+    // Handle floating point rounding errors
+    if (Math.abs(n - max) < 0.000001) return 1;
+    // Convert into [0, 1] range if it isn't already
+    if (max === 360) // If n is a hue given in degrees,
+    // wrap around out-of-range values into [0, 360] range
+    // then convert into [0, 1].
+    n = (n < 0 ? n % max + max : n % max) / parseFloat(String(max));
+    else // If n not a hue given in degrees
+    // Convert into [0, 1] range if it isn't already.
+    n = n % max / parseFloat(String(max));
+    return n;
+}
+function clamp01(val) {
+    return Math.min(1, Math.max(0, val));
+}
+function isOnePointZero(n) {
+    return typeof n === "string" && n.indexOf(".") !== -1 && parseFloat(n) === 1;
+}
+function isPercentage(n) {
+    return typeof n === "string" && n.indexOf("%") !== -1;
+}
+function boundAlpha(a) {
+    a = parseFloat(a);
+    if (isNaN(a) || a < 0 || a > 1) a = 1;
+    return a;
+}
+function convertToPercentage(n) {
+    if (n <= 1) return "".concat(Number(n) * 100, "%");
+    return n;
+}
+function pad2(c) {
+    return c.length === 1 ? "0" + c : String(c);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"b5HZM":[function(require,module,exports) {
+// https://github.com/bahamas10/css-color-names/blob/master/css-color-names.json
+/**
+ * @hidden
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "names", ()=>names);
+var names = {
+    aliceblue: "#f0f8ff",
+    antiquewhite: "#faebd7",
+    aqua: "#00ffff",
+    aquamarine: "#7fffd4",
+    azure: "#f0ffff",
+    beige: "#f5f5dc",
+    bisque: "#ffe4c4",
+    black: "#000000",
+    blanchedalmond: "#ffebcd",
+    blue: "#0000ff",
+    blueviolet: "#8a2be2",
+    brown: "#a52a2a",
+    burlywood: "#deb887",
+    cadetblue: "#5f9ea0",
+    chartreuse: "#7fff00",
+    chocolate: "#d2691e",
+    coral: "#ff7f50",
+    cornflowerblue: "#6495ed",
+    cornsilk: "#fff8dc",
+    crimson: "#dc143c",
+    cyan: "#00ffff",
+    darkblue: "#00008b",
+    darkcyan: "#008b8b",
+    darkgoldenrod: "#b8860b",
+    darkgray: "#a9a9a9",
+    darkgreen: "#006400",
+    darkgrey: "#a9a9a9",
+    darkkhaki: "#bdb76b",
+    darkmagenta: "#8b008b",
+    darkolivegreen: "#556b2f",
+    darkorange: "#ff8c00",
+    darkorchid: "#9932cc",
+    darkred: "#8b0000",
+    darksalmon: "#e9967a",
+    darkseagreen: "#8fbc8f",
+    darkslateblue: "#483d8b",
+    darkslategray: "#2f4f4f",
+    darkslategrey: "#2f4f4f",
+    darkturquoise: "#00ced1",
+    darkviolet: "#9400d3",
+    deeppink: "#ff1493",
+    deepskyblue: "#00bfff",
+    dimgray: "#696969",
+    dimgrey: "#696969",
+    dodgerblue: "#1e90ff",
+    firebrick: "#b22222",
+    floralwhite: "#fffaf0",
+    forestgreen: "#228b22",
+    fuchsia: "#ff00ff",
+    gainsboro: "#dcdcdc",
+    ghostwhite: "#f8f8ff",
+    goldenrod: "#daa520",
+    gold: "#ffd700",
+    gray: "#808080",
+    green: "#008000",
+    greenyellow: "#adff2f",
+    grey: "#808080",
+    honeydew: "#f0fff0",
+    hotpink: "#ff69b4",
+    indianred: "#cd5c5c",
+    indigo: "#4b0082",
+    ivory: "#fffff0",
+    khaki: "#f0e68c",
+    lavenderblush: "#fff0f5",
+    lavender: "#e6e6fa",
+    lawngreen: "#7cfc00",
+    lemonchiffon: "#fffacd",
+    lightblue: "#add8e6",
+    lightcoral: "#f08080",
+    lightcyan: "#e0ffff",
+    lightgoldenrodyellow: "#fafad2",
+    lightgray: "#d3d3d3",
+    lightgreen: "#90ee90",
+    lightgrey: "#d3d3d3",
+    lightpink: "#ffb6c1",
+    lightsalmon: "#ffa07a",
+    lightseagreen: "#20b2aa",
+    lightskyblue: "#87cefa",
+    lightslategray: "#778899",
+    lightslategrey: "#778899",
+    lightsteelblue: "#b0c4de",
+    lightyellow: "#ffffe0",
+    lime: "#00ff00",
+    limegreen: "#32cd32",
+    linen: "#faf0e6",
+    magenta: "#ff00ff",
+    maroon: "#800000",
+    mediumaquamarine: "#66cdaa",
+    mediumblue: "#0000cd",
+    mediumorchid: "#ba55d3",
+    mediumpurple: "#9370db",
+    mediumseagreen: "#3cb371",
+    mediumslateblue: "#7b68ee",
+    mediumspringgreen: "#00fa9a",
+    mediumturquoise: "#48d1cc",
+    mediumvioletred: "#c71585",
+    midnightblue: "#191970",
+    mintcream: "#f5fffa",
+    mistyrose: "#ffe4e1",
+    moccasin: "#ffe4b5",
+    navajowhite: "#ffdead",
+    navy: "#000080",
+    oldlace: "#fdf5e6",
+    olive: "#808000",
+    olivedrab: "#6b8e23",
+    orange: "#ffa500",
+    orangered: "#ff4500",
+    orchid: "#da70d6",
+    palegoldenrod: "#eee8aa",
+    palegreen: "#98fb98",
+    paleturquoise: "#afeeee",
+    palevioletred: "#db7093",
+    papayawhip: "#ffefd5",
+    peachpuff: "#ffdab9",
+    peru: "#cd853f",
+    pink: "#ffc0cb",
+    plum: "#dda0dd",
+    powderblue: "#b0e0e6",
+    purple: "#800080",
+    rebeccapurple: "#663399",
+    red: "#ff0000",
+    rosybrown: "#bc8f8f",
+    royalblue: "#4169e1",
+    saddlebrown: "#8b4513",
+    salmon: "#fa8072",
+    sandybrown: "#f4a460",
+    seagreen: "#2e8b57",
+    seashell: "#fff5ee",
+    sienna: "#a0522d",
+    silver: "#c0c0c0",
+    skyblue: "#87ceeb",
+    slateblue: "#6a5acd",
+    slategray: "#708090",
+    slategrey: "#708090",
+    snow: "#fffafa",
+    springgreen: "#00ff7f",
+    steelblue: "#4682b4",
+    tan: "#d2b48c",
+    teal: "#008080",
+    thistle: "#d8bfd8",
+    tomato: "#ff6347",
+    turquoise: "#40e0d0",
+    violet: "#ee82ee",
+    wheat: "#f5deb3",
+    white: "#ffffff",
+    whitesmoke: "#f5f5f5",
+    yellow: "#ffff00",
+    yellowgreen: "#9acd32"
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2EZlz":[function(require,module,exports) {
+/* eslint-disable @typescript-eslint/no-redundant-type-constituents */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Given a string or object, convert that input to RGB
+ *
+ * Possible string inputs:
+ * ```
+ * "red"
+ * "#f00" or "f00"
+ * "#ff0000" or "ff0000"
+ * "#ff000000" or "ff000000"
+ * "rgb 255 0 0" or "rgb (255, 0, 0)"
+ * "rgb 1.0 0 0" or "rgb (1, 0, 0)"
+ * "rgba (255, 0, 0, 1)" or "rgba 255, 0, 0, 1"
+ * "rgba (1.0, 0, 0, 1)" or "rgba 1.0, 0, 0, 1"
+ * "hsl(0, 100%, 50%)" or "hsl 0 100% 50%"
+ * "hsla(0, 100%, 50%, 1)" or "hsla 0 100% 50%, 1"
+ * "hsv(0, 100%, 100%)" or "hsv 0 100% 100%"
+ * ```
+ */ parcelHelpers.export(exports, "inputToRGB", ()=>inputToRGB);
+/**
+ * Permissive string parsing.  Take in a number of formats, and output an object
+ * based on detected format.  Returns `{ r, g, b }` or `{ h, s, l }` or `{ h, s, v}`
+ */ parcelHelpers.export(exports, "stringInputToObject", ()=>stringInputToObject);
+/**
+ * Check to see if it looks like a CSS unit
+ * (see `matchers` above for definition).
+ */ parcelHelpers.export(exports, "isValidCSSUnit", ()=>isValidCSSUnit);
+var _conversionJs = require("./conversion.js");
+var _cssColorNamesJs = require("./css-color-names.js");
+var _utilJs = require("./util.js");
+function inputToRGB(color) {
+    var rgb = {
+        r: 0,
+        g: 0,
+        b: 0
+    };
+    var a = 1;
+    var s = null;
+    var v = null;
+    var l = null;
+    var ok = false;
+    var format = false;
+    if (typeof color === "string") color = stringInputToObject(color);
+    if (typeof color === "object") {
+        if (isValidCSSUnit(color.r) && isValidCSSUnit(color.g) && isValidCSSUnit(color.b)) {
+            rgb = (0, _conversionJs.rgbToRgb)(color.r, color.g, color.b);
+            ok = true;
+            format = String(color.r).substr(-1) === "%" ? "prgb" : "rgb";
+        } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.v)) {
+            s = (0, _utilJs.convertToPercentage)(color.s);
+            v = (0, _utilJs.convertToPercentage)(color.v);
+            rgb = (0, _conversionJs.hsvToRgb)(color.h, s, v);
+            ok = true;
+            format = "hsv";
+        } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.l)) {
+            s = (0, _utilJs.convertToPercentage)(color.s);
+            l = (0, _utilJs.convertToPercentage)(color.l);
+            rgb = (0, _conversionJs.hslToRgb)(color.h, s, l);
+            ok = true;
+            format = "hsl";
+        }
+        if (Object.prototype.hasOwnProperty.call(color, "a")) a = color.a;
+    }
+    a = (0, _utilJs.boundAlpha)(a);
+    return {
+        ok: ok,
+        format: color.format || format,
+        r: Math.min(255, Math.max(rgb.r, 0)),
+        g: Math.min(255, Math.max(rgb.g, 0)),
+        b: Math.min(255, Math.max(rgb.b, 0)),
+        a: a
+    };
+}
+// <http://www.w3.org/TR/css3-values/#integers>
+var CSS_INTEGER = "[-\\+]?\\d+%?";
+// <http://www.w3.org/TR/css3-values/#number-value>
+var CSS_NUMBER = "[-\\+]?\\d*\\.\\d+%?";
+// Allow positive/negative integer/number.  Don't capture the either/or, just the entire outcome.
+var CSS_UNIT = "(?:".concat(CSS_NUMBER, ")|(?:").concat(CSS_INTEGER, ")");
+// Actual matching.
+// Parentheses and commas are optional, but not required.
+// Whitespace can take the place of commas or opening paren
+var PERMISSIVE_MATCH3 = "[\\s|\\(]+(".concat(CSS_UNIT, ")[,|\\s]+(").concat(CSS_UNIT, ")[,|\\s]+(").concat(CSS_UNIT, ")\\s*\\)?");
+var PERMISSIVE_MATCH4 = "[\\s|\\(]+(".concat(CSS_UNIT, ")[,|\\s]+(").concat(CSS_UNIT, ")[,|\\s]+(").concat(CSS_UNIT, ")[,|\\s]+(").concat(CSS_UNIT, ")\\s*\\)?");
+var matchers = {
+    CSS_UNIT: new RegExp(CSS_UNIT),
+    rgb: new RegExp("rgb" + PERMISSIVE_MATCH3),
+    rgba: new RegExp("rgba" + PERMISSIVE_MATCH4),
+    hsl: new RegExp("hsl" + PERMISSIVE_MATCH3),
+    hsla: new RegExp("hsla" + PERMISSIVE_MATCH4),
+    hsv: new RegExp("hsv" + PERMISSIVE_MATCH3),
+    hsva: new RegExp("hsva" + PERMISSIVE_MATCH4),
+    hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
+    hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
+    hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
+    hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
+};
+function stringInputToObject(color) {
+    color = color.trim().toLowerCase();
+    if (color.length === 0) return false;
+    var named = false;
+    if ((0, _cssColorNamesJs.names)[color]) {
+        color = (0, _cssColorNamesJs.names)[color];
+        named = true;
+    } else if (color === "transparent") return {
+        r: 0,
+        g: 0,
+        b: 0,
+        a: 0,
+        format: "name"
+    };
+    // Try to match string input using regular expressions.
+    // Keep most of the number bounding out of this function - don't worry about [0,1] or [0,100] or [0,360]
+    // Just return an object and let the conversion functions handle that.
+    // This way the result will be the same whether the tinycolor is initialized with string or object.
+    var match = matchers.rgb.exec(color);
+    if (match) return {
+        r: match[1],
+        g: match[2],
+        b: match[3]
+    };
+    match = matchers.rgba.exec(color);
+    if (match) return {
+        r: match[1],
+        g: match[2],
+        b: match[3],
+        a: match[4]
+    };
+    match = matchers.hsl.exec(color);
+    if (match) return {
+        h: match[1],
+        s: match[2],
+        l: match[3]
+    };
+    match = matchers.hsla.exec(color);
+    if (match) return {
+        h: match[1],
+        s: match[2],
+        l: match[3],
+        a: match[4]
+    };
+    match = matchers.hsv.exec(color);
+    if (match) return {
+        h: match[1],
+        s: match[2],
+        v: match[3]
+    };
+    match = matchers.hsva.exec(color);
+    if (match) return {
+        h: match[1],
+        s: match[2],
+        v: match[3],
+        a: match[4]
+    };
+    match = matchers.hex8.exec(color);
+    if (match) return {
+        r: (0, _conversionJs.parseIntFromHex)(match[1]),
+        g: (0, _conversionJs.parseIntFromHex)(match[2]),
+        b: (0, _conversionJs.parseIntFromHex)(match[3]),
+        a: (0, _conversionJs.convertHexToDecimal)(match[4]),
+        format: named ? "name" : "hex8"
+    };
+    match = matchers.hex6.exec(color);
+    if (match) return {
+        r: (0, _conversionJs.parseIntFromHex)(match[1]),
+        g: (0, _conversionJs.parseIntFromHex)(match[2]),
+        b: (0, _conversionJs.parseIntFromHex)(match[3]),
+        format: named ? "name" : "hex"
+    };
+    match = matchers.hex4.exec(color);
+    if (match) return {
+        r: (0, _conversionJs.parseIntFromHex)(match[1] + match[1]),
+        g: (0, _conversionJs.parseIntFromHex)(match[2] + match[2]),
+        b: (0, _conversionJs.parseIntFromHex)(match[3] + match[3]),
+        a: (0, _conversionJs.convertHexToDecimal)(match[4] + match[4]),
+        format: named ? "name" : "hex8"
+    };
+    match = matchers.hex3.exec(color);
+    if (match) return {
+        r: (0, _conversionJs.parseIntFromHex)(match[1] + match[1]),
+        g: (0, _conversionJs.parseIntFromHex)(match[2] + match[2]),
+        b: (0, _conversionJs.parseIntFromHex)(match[3] + match[3]),
+        format: named ? "name" : "hex"
+    };
+    return false;
+}
+function isValidCSSUnit(color) {
+    return Boolean(matchers.CSS_UNIT.exec(String(color)));
+}
+
+},{"./conversion.js":"lEGR9","./css-color-names.js":"b5HZM","./util.js":"83iaU","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"khm8T":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultPresetColors", ()=>defaultPresetColors);
+const defaultPresetColors = {
+    blue: "#1677ff",
+    purple: "#722ED1",
+    cyan: "#13C2C2",
+    green: "#52C41A",
+    magenta: "#EB2F96",
+    pink: "#eb2f96",
+    red: "#F5222D",
+    orange: "#FA8C16",
+    yellow: "#FADB14",
+    volcano: "#FA541C",
+    geekblue: "#2F54EB",
+    gold: "#FAAD14",
+    lime: "#A0D911"
+};
+const seedToken = Object.assign(Object.assign({}, defaultPresetColors), {
+    // Color
+    colorPrimary: "#1677ff",
+    colorSuccess: "#52c41a",
+    colorWarning: "#faad14",
+    colorError: "#ff4d4f",
+    colorInfo: "#1677ff",
+    colorLink: "",
+    colorTextBase: "",
+    colorBgBase: "",
+    // Font
+    fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+'Noto Color Emoji'`,
+    fontFamilyCode: `'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace`,
+    fontSize: 14,
+    // Line
+    lineWidth: 1,
+    lineType: "solid",
+    // Motion
+    motionUnit: 0.1,
+    motionBase: 0,
+    motionEaseOutCirc: "cubic-bezier(0.08, 0.82, 0.17, 1)",
+    motionEaseInOutCirc: "cubic-bezier(0.78, 0.14, 0.15, 0.86)",
+    motionEaseOut: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    motionEaseInOut: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+    motionEaseOutBack: "cubic-bezier(0.12, 0.4, 0.29, 1.46)",
+    motionEaseInBack: "cubic-bezier(0.71, -0.46, 0.88, 0.6)",
+    motionEaseInQuint: "cubic-bezier(0.755, 0.05, 0.855, 0.06)",
+    motionEaseOutQuint: "cubic-bezier(0.23, 1, 0.32, 1)",
+    // Radius
+    borderRadius: 6,
+    // Size
+    sizeUnit: 4,
+    sizeStep: 4,
+    sizePopupArrow: 16,
+    // Control Base
+    controlHeight: 32,
+    // zIndex
+    zIndexBase: 0,
+    zIndexPopupBase: 1000,
+    // Image
+    opacityImage: 1,
+    // Wireframe
+    wireframe: false,
+    // Motion
+    motion: true
+});
+exports.default = seedToken;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2eJjt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>genColorMapToken);
+var _tinycolor = require("@ctrl/tinycolor");
+function genColorMapToken(seed, _ref) {
+    let { generateColorPalettes, generateNeutralColorPalettes } = _ref;
+    const { colorSuccess: colorSuccessBase, colorWarning: colorWarningBase, colorError: colorErrorBase, colorInfo: colorInfoBase, colorPrimary: colorPrimaryBase, colorBgBase, colorTextBase } = seed;
+    const primaryColors = generateColorPalettes(colorPrimaryBase);
+    const successColors = generateColorPalettes(colorSuccessBase);
+    const warningColors = generateColorPalettes(colorWarningBase);
+    const errorColors = generateColorPalettes(colorErrorBase);
+    const infoColors = generateColorPalettes(colorInfoBase);
+    const neutralColors = generateNeutralColorPalettes(colorBgBase, colorTextBase);
+    // Color Link
+    const colorLink = seed.colorLink || seed.colorInfo;
+    const linkColors = generateColorPalettes(colorLink);
+    return Object.assign(Object.assign({}, neutralColors), {
+        colorPrimaryBg: primaryColors[1],
+        colorPrimaryBgHover: primaryColors[2],
+        colorPrimaryBorder: primaryColors[3],
+        colorPrimaryBorderHover: primaryColors[4],
+        colorPrimaryHover: primaryColors[5],
+        colorPrimary: primaryColors[6],
+        colorPrimaryActive: primaryColors[7],
+        colorPrimaryTextHover: primaryColors[8],
+        colorPrimaryText: primaryColors[9],
+        colorPrimaryTextActive: primaryColors[10],
+        colorSuccessBg: successColors[1],
+        colorSuccessBgHover: successColors[2],
+        colorSuccessBorder: successColors[3],
+        colorSuccessBorderHover: successColors[4],
+        colorSuccessHover: successColors[4],
+        colorSuccess: successColors[6],
+        colorSuccessActive: successColors[7],
+        colorSuccessTextHover: successColors[8],
+        colorSuccessText: successColors[9],
+        colorSuccessTextActive: successColors[10],
+        colorErrorBg: errorColors[1],
+        colorErrorBgHover: errorColors[2],
+        colorErrorBgActive: errorColors[3],
+        colorErrorBorder: errorColors[3],
+        colorErrorBorderHover: errorColors[4],
+        colorErrorHover: errorColors[5],
+        colorError: errorColors[6],
+        colorErrorActive: errorColors[7],
+        colorErrorTextHover: errorColors[8],
+        colorErrorText: errorColors[9],
+        colorErrorTextActive: errorColors[10],
+        colorWarningBg: warningColors[1],
+        colorWarningBgHover: warningColors[2],
+        colorWarningBorder: warningColors[3],
+        colorWarningBorderHover: warningColors[4],
+        colorWarningHover: warningColors[4],
+        colorWarning: warningColors[6],
+        colorWarningActive: warningColors[7],
+        colorWarningTextHover: warningColors[8],
+        colorWarningText: warningColors[9],
+        colorWarningTextActive: warningColors[10],
+        colorInfoBg: infoColors[1],
+        colorInfoBgHover: infoColors[2],
+        colorInfoBorder: infoColors[3],
+        colorInfoBorderHover: infoColors[4],
+        colorInfoHover: infoColors[4],
+        colorInfo: infoColors[6],
+        colorInfoActive: infoColors[7],
+        colorInfoTextHover: infoColors[8],
+        colorInfoText: infoColors[9],
+        colorInfoTextActive: infoColors[10],
+        colorLinkHover: linkColors[4],
+        colorLink: linkColors[6],
+        colorLinkActive: linkColors[7],
+        colorBgMask: new (0, _tinycolor.TinyColor)("#000").setAlpha(0.45).toRgbString(),
+        colorWhite: "#fff"
+    });
+}
+
+},{"@ctrl/tinycolor":"e1DHG","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ex843":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>genCommonMapToken);
+var _genRadius = require("./genRadius");
+var _genRadiusDefault = parcelHelpers.interopDefault(_genRadius);
+function genCommonMapToken(token) {
+    const { motionUnit, motionBase, borderRadius, lineWidth } = token;
+    return Object.assign({
+        // motion
+        motionDurationFast: `${(motionBase + motionUnit).toFixed(1)}s`,
+        motionDurationMid: `${(motionBase + motionUnit * 2).toFixed(1)}s`,
+        motionDurationSlow: `${(motionBase + motionUnit * 3).toFixed(1)}s`,
+        // line
+        lineWidthBold: lineWidth + 1
+    }, (0, _genRadiusDefault.default)(borderRadius));
+}
+
+},{"./genRadius":"i9yVN","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"i9yVN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const genRadius = (radiusBase)=>{
+    let radiusLG = radiusBase;
+    let radiusSM = radiusBase;
+    let radiusXS = radiusBase;
+    let radiusOuter = radiusBase;
+    // radiusLG
+    if (radiusBase < 6 && radiusBase >= 5) radiusLG = radiusBase + 1;
+    else if (radiusBase < 16 && radiusBase >= 6) radiusLG = radiusBase + 2;
+    else if (radiusBase >= 16) radiusLG = 16;
+    // radiusSM
+    if (radiusBase < 7 && radiusBase >= 5) radiusSM = 4;
+    else if (radiusBase < 8 && radiusBase >= 7) radiusSM = 5;
+    else if (radiusBase < 14 && radiusBase >= 8) radiusSM = 6;
+    else if (radiusBase < 16 && radiusBase >= 14) radiusSM = 7;
+    else if (radiusBase >= 16) radiusSM = 8;
+    // radiusXS
+    if (radiusBase < 6 && radiusBase >= 2) radiusXS = 1;
+    else if (radiusBase >= 6) radiusXS = 2;
+    // radiusOuter
+    if (radiusBase > 4 && radiusBase < 8) radiusOuter = 4;
+    else if (radiusBase >= 8) radiusOuter = 6;
+    return {
+        borderRadius: radiusBase,
+        borderRadiusXS: radiusXS,
+        borderRadiusSM: radiusSM,
+        borderRadiusLG: radiusLG,
+        borderRadiusOuter: radiusOuter
+    };
+};
+exports.default = genRadius;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"45UNz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const genControlHeight = (token)=>{
+    const { controlHeight } = token;
+    return {
+        controlHeightSM: controlHeight * 0.75,
+        controlHeightXS: controlHeight * 0.5,
+        controlHeightLG: controlHeight * 1.25
+    };
+};
+exports.default = genControlHeight;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1VZ6R":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _genFontSizes = require("./genFontSizes");
+var _genFontSizesDefault = parcelHelpers.interopDefault(_genFontSizes);
+const genFontMapToken = (fontSize)=>{
+    const fontSizePairs = (0, _genFontSizesDefault.default)(fontSize);
+    const fontSizes = fontSizePairs.map((pair)=>pair.size);
+    const lineHeights = fontSizePairs.map((pair)=>pair.lineHeight);
+    const fontSizeMD = fontSizes[1];
+    const fontSizeSM = fontSizes[0];
+    const fontSizeLG = fontSizes[2];
+    const lineHeight = lineHeights[1];
+    const lineHeightSM = lineHeights[0];
+    const lineHeightLG = lineHeights[2];
+    return {
+        fontSizeSM,
+        fontSize: fontSizeMD,
+        fontSizeLG,
+        fontSizeXL: fontSizes[3],
+        fontSizeHeading1: fontSizes[6],
+        fontSizeHeading2: fontSizes[5],
+        fontSizeHeading3: fontSizes[4],
+        fontSizeHeading4: fontSizes[3],
+        fontSizeHeading5: fontSizes[2],
+        lineHeight,
+        lineHeightLG,
+        lineHeightSM,
+        fontHeight: Math.round(lineHeight * fontSizeMD),
+        fontHeightLG: Math.round(lineHeightLG * fontSizeLG),
+        fontHeightSM: Math.round(lineHeightSM * fontSizeSM),
+        lineHeightHeading1: lineHeights[6],
+        lineHeightHeading2: lineHeights[5],
+        lineHeightHeading3: lineHeights[4],
+        lineHeightHeading4: lineHeights[3],
+        lineHeightHeading5: lineHeights[2]
+    };
+};
+exports.default = genFontMapToken;
+
+},{"./genFontSizes":"4F5Xy","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4F5Xy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getLineHeight", ()=>getLineHeight);
+parcelHelpers.export(exports, "default", ()=>getFontSizes);
+function getLineHeight(fontSize) {
+    return (fontSize + 8) / fontSize;
+}
+function getFontSizes(base) {
+    const fontSizes = new Array(10).fill(null).map((_, index)=>{
+        const i = index - 1;
+        const baseSize = base * Math.pow(2.71828, i / 5);
+        const intSize = index > 1 ? Math.floor(baseSize) : Math.ceil(baseSize);
+        // Convert to even
+        return Math.floor(intSize / 2) * 2;
+    });
+    fontSizes[1] = base;
+    return fontSizes.map((size)=>({
+            size,
+            lineHeight: getLineHeight(size)
+        }));
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9oACj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>genSizeMapToken);
+function genSizeMapToken(token) {
+    const { sizeUnit, sizeStep } = token;
+    return {
+        sizeXXL: sizeUnit * (sizeStep + 8),
+        // 48
+        sizeXL: sizeUnit * (sizeStep + 4),
+        // 32
+        sizeLG: sizeUnit * (sizeStep + 2),
+        // 24
+        sizeMD: sizeUnit * (sizeStep + 1),
+        // 20
+        sizeMS: sizeUnit * sizeStep,
+        // 16
+        size: sizeUnit * sizeStep,
+        // 16
+        sizeSM: sizeUnit * (sizeStep - 1),
+        // 12
+        sizeXS: sizeUnit * (sizeStep - 2),
+        // 8
+        sizeXXS: sizeUnit * (sizeStep - 3 // 4
+        )
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7eyB9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "generateColorPalettes", ()=>generateColorPalettes);
+parcelHelpers.export(exports, "generateNeutralColorPalettes", ()=>generateNeutralColorPalettes);
+var _colors = require("@ant-design/colors");
+var _colorAlgorithm = require("./colorAlgorithm");
+const generateColorPalettes = (baseColor)=>{
+    const colors = (0, _colors.generate)(baseColor);
+    return {
+        1: colors[0],
+        2: colors[1],
+        3: colors[2],
+        4: colors[3],
+        5: colors[4],
+        6: colors[5],
+        7: colors[6],
+        8: colors[4],
+        9: colors[5],
+        10: colors[6]
+    };
+};
+const generateNeutralColorPalettes = (bgBaseColor, textBaseColor)=>{
+    const colorBgBase = bgBaseColor || "#fff";
+    const colorTextBase = textBaseColor || "#000";
+    return {
+        colorBgBase,
+        colorTextBase,
+        colorText: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.88),
+        colorTextSecondary: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.65),
+        colorTextTertiary: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.45),
+        colorTextQuaternary: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.25),
+        colorFill: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.15),
+        colorFillSecondary: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.06),
+        colorFillTertiary: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.04),
+        colorFillQuaternary: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.02),
+        colorBgLayout: (0, _colorAlgorithm.getSolidColor)(colorBgBase, 4),
+        colorBgContainer: (0, _colorAlgorithm.getSolidColor)(colorBgBase, 0),
+        colorBgElevated: (0, _colorAlgorithm.getSolidColor)(colorBgBase, 0),
+        colorBgSpotlight: (0, _colorAlgorithm.getAlphaColor)(colorTextBase, 0.85),
+        colorBgBlur: "transparent",
+        colorBorder: (0, _colorAlgorithm.getSolidColor)(colorBgBase, 15),
+        colorBorderSecondary: (0, _colorAlgorithm.getSolidColor)(colorBgBase, 6)
+    };
+};
+
+},{"@ant-design/colors":"7O27E","./colorAlgorithm":"es0P7","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"es0P7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getAlphaColor", ()=>getAlphaColor);
+parcelHelpers.export(exports, "getSolidColor", ()=>getSolidColor);
+var _tinycolor = require("@ctrl/tinycolor");
+const getAlphaColor = (baseColor, alpha)=>new (0, _tinycolor.TinyColor)(baseColor).setAlpha(alpha).toRgbString();
+const getSolidColor = (baseColor, brightness)=>{
+    const instance = new (0, _tinycolor.TinyColor)(baseColor);
+    return instance.darken(brightness).toHexString();
+};
+
+},{"@ctrl/tinycolor":"e1DHG","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cWBoR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultIconPrefixCls", ()=>defaultIconPrefixCls);
+parcelHelpers.export(exports, "ConfigContext", ()=>ConfigContext);
+parcelHelpers.export(exports, "ConfigConsumer", ()=>ConfigConsumer);
+var _react = require("react");
+const defaultIconPrefixCls = "anticon";
+const defaultGetPrefixCls = (suffixCls, customizePrefixCls)=>{
+    if (customizePrefixCls) return customizePrefixCls;
+    return suffixCls ? `ant-${suffixCls}` : "ant";
+};
+const ConfigContext = /*#__PURE__*/ _react.createContext({
+    // We provide a default function for Context without provider
+    getPrefixCls: defaultGetPrefixCls,
+    iconPrefixCls: defaultIconPrefixCls
+});
+const { Consumer: ConfigConsumer } = ConfigContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hbvCC":[function(require,module,exports) {
+/* eslint-disable import/prefer-default-export, prefer-destructuring */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getStyle", ()=>getStyle);
+parcelHelpers.export(exports, "registerTheme", ()=>registerTheme);
+var _colors = require("@ant-design/colors");
+var _tinycolor = require("@ctrl/tinycolor");
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _warning = require("../_util/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+const dynamicStyleMark = `-ant-${Date.now()}-${Math.random()}`;
+function getStyle(globalPrefixCls, theme) {
+    const variables = {};
+    const formatColor = (color, updater)=>{
+        let clone = color.clone();
+        clone = (updater === null || updater === void 0 ? void 0 : updater(clone)) || clone;
+        return clone.toRgbString();
+    };
+    const fillColor = (colorVal, type)=>{
+        const baseColor = new (0, _tinycolor.TinyColor)(colorVal);
+        const colorPalettes = (0, _colors.generate)(baseColor.toRgbString());
+        variables[`${type}-color`] = formatColor(baseColor);
+        variables[`${type}-color-disabled`] = colorPalettes[1];
+        variables[`${type}-color-hover`] = colorPalettes[4];
+        variables[`${type}-color-active`] = colorPalettes[6];
+        variables[`${type}-color-outline`] = baseColor.clone().setAlpha(0.2).toRgbString();
+        variables[`${type}-color-deprecated-bg`] = colorPalettes[0];
+        variables[`${type}-color-deprecated-border`] = colorPalettes[2];
+    };
+    // ================ Primary Color ================
+    if (theme.primaryColor) {
+        fillColor(theme.primaryColor, "primary");
+        const primaryColor = new (0, _tinycolor.TinyColor)(theme.primaryColor);
+        const primaryColors = (0, _colors.generate)(primaryColor.toRgbString());
+        // Legacy - We should use semantic naming standard
+        primaryColors.forEach((color, index)=>{
+            variables[`primary-${index + 1}`] = color;
+        });
+        // Deprecated
+        variables["primary-color-deprecated-l-35"] = formatColor(primaryColor, (c)=>c.lighten(35));
+        variables["primary-color-deprecated-l-20"] = formatColor(primaryColor, (c)=>c.lighten(20));
+        variables["primary-color-deprecated-t-20"] = formatColor(primaryColor, (c)=>c.tint(20));
+        variables["primary-color-deprecated-t-50"] = formatColor(primaryColor, (c)=>c.tint(50));
+        variables["primary-color-deprecated-f-12"] = formatColor(primaryColor, (c)=>c.setAlpha(c.getAlpha() * 0.12));
+        const primaryActiveColor = new (0, _tinycolor.TinyColor)(primaryColors[0]);
+        variables["primary-color-active-deprecated-f-30"] = formatColor(primaryActiveColor, (c)=>c.setAlpha(c.getAlpha() * 0.3));
+        variables["primary-color-active-deprecated-d-02"] = formatColor(primaryActiveColor, (c)=>c.darken(2));
+    }
+    // ================ Success Color ================
+    if (theme.successColor) fillColor(theme.successColor, "success");
+    // ================ Warning Color ================
+    if (theme.warningColor) fillColor(theme.warningColor, "warning");
+    // ================= Error Color =================
+    if (theme.errorColor) fillColor(theme.errorColor, "error");
+    // ================= Info Color ==================
+    if (theme.infoColor) fillColor(theme.infoColor, "info");
+    // Convert to css variables
+    const cssList = Object.keys(variables).map((key)=>`--${globalPrefixCls}-${key}: ${variables[key]};`);
+    return `
+  :root {
+    ${cssList.join("\n")}
+  }
+  `.trim();
+}
+function registerTheme(globalPrefixCls, theme) {
+    const style = getStyle(globalPrefixCls, theme);
+    if ((0, _canUseDomDefault.default)()) (0, _dynamicCSS.updateCSS)(style, `${dynamicStyleMark}-dynamic-theme`);
+    else (0, _warningDefault.default)(false, "ConfigProvider", "SSR do not support dynamic theme with css variables.");
+}
+
+},{"@ant-design/colors":"7O27E","@ctrl/tinycolor":"e1DHG","rc-util/es/Dom/canUseDom":"hGxAQ","rc-util/es/Dom/dynamicCSS":"lfei6","../_util/warning":"daUrm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kJAKR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DisabledContextProvider", ()=>DisabledContextProvider);
+var _react = require("react");
+"use client";
+const DisabledContext = /*#__PURE__*/ _react.createContext(false);
+const DisabledContextProvider = (_ref)=>{
+    let { children, disabled } = _ref;
+    const originDisabled = _react.useContext(DisabledContext);
+    return /*#__PURE__*/ _react.createElement(DisabledContext.Provider, {
+        value: disabled !== null && disabled !== void 0 ? disabled : originDisabled
+    }, children);
+};
+exports.default = DisabledContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"k9iSD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _disabledContext = require("../DisabledContext");
+var _disabledContextDefault = parcelHelpers.interopDefault(_disabledContext);
+var _sizeContext = require("../SizeContext");
+var _sizeContextDefault = parcelHelpers.interopDefault(_sizeContext);
+function useConfig() {
+    const componentDisabled = (0, _react.useContext)((0, _disabledContextDefault.default));
+    const componentSize = (0, _react.useContext)((0, _sizeContextDefault.default));
+    return {
+        componentDisabled,
+        componentSize
+    };
+}
+exports.default = useConfig;
+
+},{"react":"21dqq","../DisabledContext":"kJAKR","../SizeContext":"kxcXW","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kxcXW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SizeContextProvider", ()=>SizeContextProvider);
+var _react = require("react");
+"use client";
+const SizeContext = /*#__PURE__*/ _react.createContext(undefined);
+const SizeContextProvider = (_ref)=>{
+    let { children, size } = _ref;
+    const originSize = _react.useContext(SizeContext);
+    return /*#__PURE__*/ _react.createElement(SizeContext.Provider, {
+        value: size || originSize
+    }, children);
+};
+exports.default = SizeContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dfLNY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useTheme);
+var _useMemo = require("rc-util/es/hooks/useMemo");
+var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
+var _isEqual = require("rc-util/es/isEqual");
+var _isEqualDefault = parcelHelpers.interopDefault(_isEqual);
+var _warning = require("../../_util/warning");
+var _internal = require("../../theme/internal");
+var _useThemeKey = require("./useThemeKey");
+var _useThemeKeyDefault = parcelHelpers.interopDefault(_useThemeKey);
+function useTheme(theme, parentTheme, config) {
+    var _a, _b;
+    const warning = (0, _warning.devUseWarning)("ConfigProvider");
+    const themeConfig = theme || {};
+    const parentThemeConfig = themeConfig.inherit === false || !parentTheme ? Object.assign(Object.assign({}, (0, _internal.defaultConfig)), {
+        hashed: (_a = parentTheme === null || parentTheme === void 0 ? void 0 : parentTheme.hashed) !== null && _a !== void 0 ? _a : (0, _internal.defaultConfig).hashed,
+        cssVar: parentTheme === null || parentTheme === void 0 ? void 0 : parentTheme.cssVar
+    }) : parentTheme;
+    const themeKey = (0, _useThemeKeyDefault.default)();
+    {
+        const cssVarEnabled = themeConfig.cssVar || parentThemeConfig.cssVar;
+        const validKey = !!(typeof themeConfig.cssVar === "object" && ((_b = themeConfig.cssVar) === null || _b === void 0 ? void 0 : _b.key) || themeKey);
+        warning(!cssVarEnabled || validKey, "breaking", "Missing key in `cssVar` config. Please upgrade to React 18 or set `cssVar.key` manually in each ConfigProvider inside `cssVar` enabled ConfigProvider.");
+    }
+    return (0, _useMemoDefault.default)(()=>{
+        var _a, _b;
+        if (!theme) return parentTheme;
+        // Override
+        const mergedComponents = Object.assign({}, parentThemeConfig.components);
+        Object.keys(theme.components || {}).forEach((componentName)=>{
+            mergedComponents[componentName] = Object.assign(Object.assign({}, mergedComponents[componentName]), theme.components[componentName]);
+        });
+        const cssVarKey = `css-var-${themeKey.replace(/:/g, "")}`;
+        const mergedCssVar = ((_a = themeConfig.cssVar) !== null && _a !== void 0 ? _a : parentThemeConfig.cssVar) && Object.assign(Object.assign(Object.assign({
+            prefix: config === null || config === void 0 ? void 0 : config.prefixCls
+        }, typeof parentThemeConfig.cssVar === "object" ? parentThemeConfig.cssVar : {}), typeof themeConfig.cssVar === "object" ? themeConfig.cssVar : {}), {
+            key: typeof themeConfig.cssVar === "object" && ((_b = themeConfig.cssVar) === null || _b === void 0 ? void 0 : _b.key) || cssVarKey
+        });
+        // Base token
+        return Object.assign(Object.assign(Object.assign({}, parentThemeConfig), themeConfig), {
+            token: Object.assign(Object.assign({}, parentThemeConfig.token), themeConfig.token),
+            components: mergedComponents,
+            cssVar: mergedCssVar
+        });
+    }, [
+        themeConfig,
+        parentThemeConfig
+    ], (prev, next)=>prev.some((prevTheme, index)=>{
+            const nextTheme = next[index];
+            return !(0, _isEqualDefault.default)(prevTheme, nextTheme, true);
+        }));
+}
+
+},{"rc-util/es/hooks/useMemo":"cxcbY","rc-util/es/isEqual":"eBVVK","../../_util/warning":"daUrm","../../theme/internal":"7S7jp","./useThemeKey":"gMI9U","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7S7jp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "DesignTokenContext", ()=>(0, _context.DesignTokenContext));
+parcelHelpers.export(exports, "defaultConfig", ()=>(0, _context.defaultConfig));
+parcelHelpers.export(exports, "PresetColors", ()=>(0, _interface.PresetColors));
+parcelHelpers.export(exports, "genComponentStyleHook", ()=>(0, _genComponentStyleHookDefault.default));
+parcelHelpers.export(exports, "genSubStyleComponent", ()=>(0, _genComponentStyleHook.genSubStyleComponent));
+parcelHelpers.export(exports, "genPresetColor", ()=>(0, _genPresetColorDefault.default));
+parcelHelpers.export(exports, "genStyleHooks", ()=>(0, _genComponentStyleHook.genStyleHooks));
+parcelHelpers.export(exports, "mergeToken", ()=>(0, _statistic.merge));
+parcelHelpers.export(exports, "statisticToken", ()=>(0, _statisticDefault.default));
+parcelHelpers.export(exports, "calc", ()=>(0, _calcDefault.default));
+parcelHelpers.export(exports, "getLineHeight", ()=>(0, _genFontSizes.getLineHeight));
+parcelHelpers.export(exports, "useResetIconStyle", ()=>// hooks
+    (0, _useResetIconStyleDefault.default));
+parcelHelpers.export(exports, "useStyleRegister", ()=>(0, _cssinjs.useStyleRegister));
+parcelHelpers.export(exports, "useToken", ()=>(0, _useTokenDefault.default));
+var _cssinjs = require("@ant-design/cssinjs");
+var _interface = require("./interface");
+var _genFontSizes = require("./themes/shared/genFontSizes");
+var _useToken = require("./useToken");
+var _useTokenDefault = parcelHelpers.interopDefault(_useToken);
+var _calc = require("./util/calc");
+var _calcDefault = parcelHelpers.interopDefault(_calc);
+var _genComponentStyleHook = require("./util/genComponentStyleHook");
+var _genComponentStyleHookDefault = parcelHelpers.interopDefault(_genComponentStyleHook);
+var _genPresetColor = require("./util/genPresetColor");
+var _genPresetColorDefault = parcelHelpers.interopDefault(_genPresetColor);
+var _statistic = require("./util/statistic");
+var _statisticDefault = parcelHelpers.interopDefault(_statistic);
+var _useResetIconStyle = require("./util/useResetIconStyle");
+var _useResetIconStyleDefault = parcelHelpers.interopDefault(_useResetIconStyle);
+var _context = require("./context");
+
+},{"@ant-design/cssinjs":"k46HC","./interface":false,"./themes/shared/genFontSizes":false,"./useToken":"7Ig10","./util/calc":false,"./util/genComponentStyleHook":"afXFa","./util/genPresetColor":false,"./util/statistic":"j6cAt","./util/useResetIconStyle":"fSChB","./context":"1kv1r","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7Ig10":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "unitless", ()=>unitless);
+parcelHelpers.export(exports, "ignore", ()=>ignore);
+parcelHelpers.export(exports, "getComputedToken", ()=>getComputedToken);
+parcelHelpers.export(exports, "default", ()=>useToken);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _cssinjs = require("@ant-design/cssinjs");
+var _version = require("../version");
+var _versionDefault = parcelHelpers.interopDefault(_version);
+var _context = require("./context");
+var _seed = require("./themes/seed");
+var _seedDefault = parcelHelpers.interopDefault(_seed);
+var _alias = require("./util/alias");
+var _aliasDefault = parcelHelpers.interopDefault(_alias);
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const unitless = {
+    lineHeight: true,
+    lineHeightSM: true,
+    lineHeightLG: true,
+    lineHeightHeading1: true,
+    lineHeightHeading2: true,
+    lineHeightHeading3: true,
+    lineHeightHeading4: true,
+    lineHeightHeading5: true,
+    opacityLoading: true,
+    fontWeightStrong: true,
+    zIndexPopupBase: true,
+    zIndexBase: true
+};
+const ignore = {
+    size: true,
+    sizeSM: true,
+    sizeLG: true,
+    sizeMD: true,
+    sizeXS: true,
+    sizeXXS: true,
+    sizeMS: true,
+    sizeXL: true,
+    sizeXXL: true,
+    sizeUnit: true,
+    sizeStep: true,
+    motionBase: true,
+    motionUnit: true
+};
+const preserve = {
+    screenXS: true,
+    screenXSMin: true,
+    screenXSMax: true,
+    screenSM: true,
+    screenSMMin: true,
+    screenSMMax: true,
+    screenMD: true,
+    screenMDMin: true,
+    screenMDMax: true,
+    screenLG: true,
+    screenLGMin: true,
+    screenLGMax: true,
+    screenXL: true,
+    screenXLMin: true,
+    screenXLMax: true,
+    screenXXL: true,
+    screenXXLMin: true
+};
+const getComputedToken = (originToken, overrideToken, theme)=>{
+    const derivativeToken = theme.getDerivativeToken(originToken);
+    const { override } = overrideToken, components = __rest(overrideToken, [
+        "override"
+    ]);
+    // Merge with override
+    let mergedDerivativeToken = Object.assign(Object.assign({}, derivativeToken), {
+        override
+    });
+    // Format if needed
+    mergedDerivativeToken = (0, _aliasDefault.default)(mergedDerivativeToken);
+    if (components) Object.entries(components).forEach((_ref)=>{
+        let [key, value] = _ref;
+        const { theme: componentTheme } = value, componentTokens = __rest(value, [
+            "theme"
+        ]);
+        let mergedComponentToken = componentTokens;
+        if (componentTheme) mergedComponentToken = getComputedToken(Object.assign(Object.assign({}, mergedDerivativeToken), componentTokens), {
+            override: componentTokens
+        }, componentTheme);
+        mergedDerivativeToken[key] = mergedComponentToken;
+    });
+    return mergedDerivativeToken;
+};
+function useToken() {
+    const { token: rootDesignToken, hashed, theme, override, cssVar } = (0, _reactDefault.default).useContext((0, _context.DesignTokenContext));
+    const salt = `${(0, _versionDefault.default)}-${hashed || ""}`;
+    const mergedTheme = theme || (0, _context.defaultTheme);
+    const [token, hashId, realToken] = (0, _cssinjs.useCacheToken)(mergedTheme, [
+        (0, _seedDefault.default),
+        rootDesignToken
+    ], {
+        salt,
+        override,
+        getComputedToken,
+        formatToken: // formatToken will not be consumed after 1.15.0 with getComputedToken.
+        // But token will break if @ant-design/cssinjs is under 1.15.0 without it
+        (0, _aliasDefault.default),
+        cssVar: cssVar && {
+            prefix: cssVar.prefix,
+            key: cssVar.key,
+            unitless,
+            ignore,
+            preserve
+        }
+    });
+    return [
+        mergedTheme,
+        realToken,
+        hashed ? hashId : "",
+        token,
+        cssVar
+    ];
+}
+
+},{"react":"21dqq","@ant-design/cssinjs":"k46HC","../version":"k5ChJ","./context":"1kv1r","./themes/seed":"khm8T","./util/alias":"udQHS","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"k5ChJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/* eslint import/no-unresolved: 0 */ // @ts-ignore
+var _version = require("./version");
+var _versionDefault = parcelHelpers.interopDefault(_version);
+"use client";
+exports.default = (0, _versionDefault.default);
+
+},{"./version":"gNrcE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gNrcE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = "5.18.0";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"udQHS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>formatToken);
+var _tinycolor = require("@ctrl/tinycolor");
+var _seed = require("../themes/seed");
+var _seedDefault = parcelHelpers.interopDefault(_seed);
+var _getAlphaColor = require("./getAlphaColor");
+var _getAlphaColorDefault = parcelHelpers.interopDefault(_getAlphaColor);
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+function formatToken(derivativeToken) {
+    const { override } = derivativeToken, restToken = __rest(derivativeToken, [
+        "override"
+    ]);
+    const overrideTokens = Object.assign({}, override);
+    Object.keys((0, _seedDefault.default)).forEach((token)=>{
+        delete overrideTokens[token];
+    });
+    const mergedToken = Object.assign(Object.assign({}, restToken), overrideTokens);
+    const screenXS = 480;
+    const screenSM = 576;
+    const screenMD = 768;
+    const screenLG = 992;
+    const screenXL = 1200;
+    const screenXXL = 1600;
+    // Motion
+    if (mergedToken.motion === false) {
+        const fastDuration = "0s";
+        mergedToken.motionDurationFast = fastDuration;
+        mergedToken.motionDurationMid = fastDuration;
+        mergedToken.motionDurationSlow = fastDuration;
+    }
+    // Generate alias token
+    const aliasToken = Object.assign(Object.assign(Object.assign({}, mergedToken), {
+        // ============== Background ============== //
+        colorFillContent: mergedToken.colorFillSecondary,
+        colorFillContentHover: mergedToken.colorFill,
+        colorFillAlter: mergedToken.colorFillQuaternary,
+        colorBgContainerDisabled: mergedToken.colorFillTertiary,
+        // ============== Split ============== //
+        colorBorderBg: mergedToken.colorBgContainer,
+        colorSplit: (0, _getAlphaColorDefault.default)(mergedToken.colorBorderSecondary, mergedToken.colorBgContainer),
+        // ============== Text ============== //
+        colorTextPlaceholder: mergedToken.colorTextQuaternary,
+        colorTextDisabled: mergedToken.colorTextQuaternary,
+        colorTextHeading: mergedToken.colorText,
+        colorTextLabel: mergedToken.colorTextSecondary,
+        colorTextDescription: mergedToken.colorTextTertiary,
+        colorTextLightSolid: mergedToken.colorWhite,
+        colorHighlight: mergedToken.colorError,
+        colorBgTextHover: mergedToken.colorFillSecondary,
+        colorBgTextActive: mergedToken.colorFill,
+        colorIcon: mergedToken.colorTextTertiary,
+        colorIconHover: mergedToken.colorText,
+        colorErrorOutline: (0, _getAlphaColorDefault.default)(mergedToken.colorErrorBg, mergedToken.colorBgContainer),
+        colorWarningOutline: (0, _getAlphaColorDefault.default)(mergedToken.colorWarningBg, mergedToken.colorBgContainer),
+        // Font
+        fontSizeIcon: mergedToken.fontSizeSM,
+        // Line
+        lineWidthFocus: mergedToken.lineWidth * 4,
+        // Control
+        lineWidth: mergedToken.lineWidth,
+        controlOutlineWidth: mergedToken.lineWidth * 2,
+        // Checkbox size and expand icon size
+        controlInteractiveSize: mergedToken.controlHeight / 2,
+        controlItemBgHover: mergedToken.colorFillTertiary,
+        controlItemBgActive: mergedToken.colorPrimaryBg,
+        controlItemBgActiveHover: mergedToken.colorPrimaryBgHover,
+        controlItemBgActiveDisabled: mergedToken.colorFill,
+        controlTmpOutline: mergedToken.colorFillQuaternary,
+        controlOutline: (0, _getAlphaColorDefault.default)(mergedToken.colorPrimaryBg, mergedToken.colorBgContainer),
+        lineType: mergedToken.lineType,
+        borderRadius: mergedToken.borderRadius,
+        borderRadiusXS: mergedToken.borderRadiusXS,
+        borderRadiusSM: mergedToken.borderRadiusSM,
+        borderRadiusLG: mergedToken.borderRadiusLG,
+        fontWeightStrong: 600,
+        opacityLoading: 0.65,
+        linkDecoration: "none",
+        linkHoverDecoration: "none",
+        linkFocusDecoration: "none",
+        controlPaddingHorizontal: 12,
+        controlPaddingHorizontalSM: 8,
+        paddingXXS: mergedToken.sizeXXS,
+        paddingXS: mergedToken.sizeXS,
+        paddingSM: mergedToken.sizeSM,
+        padding: mergedToken.size,
+        paddingMD: mergedToken.sizeMD,
+        paddingLG: mergedToken.sizeLG,
+        paddingXL: mergedToken.sizeXL,
+        paddingContentHorizontalLG: mergedToken.sizeLG,
+        paddingContentVerticalLG: mergedToken.sizeMS,
+        paddingContentHorizontal: mergedToken.sizeMS,
+        paddingContentVertical: mergedToken.sizeSM,
+        paddingContentHorizontalSM: mergedToken.size,
+        paddingContentVerticalSM: mergedToken.sizeXS,
+        marginXXS: mergedToken.sizeXXS,
+        marginXS: mergedToken.sizeXS,
+        marginSM: mergedToken.sizeSM,
+        margin: mergedToken.size,
+        marginMD: mergedToken.sizeMD,
+        marginLG: mergedToken.sizeLG,
+        marginXL: mergedToken.sizeXL,
+        marginXXL: mergedToken.sizeXXL,
+        boxShadow: `
+      0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12),
+      0 9px 28px 8px rgba(0, 0, 0, 0.05)
+    `,
+        boxShadowSecondary: `
+      0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12),
+      0 9px 28px 8px rgba(0, 0, 0, 0.05)
+    `,
+        boxShadowTertiary: `
+      0 1px 2px 0 rgba(0, 0, 0, 0.03),
+      0 1px 6px -1px rgba(0, 0, 0, 0.02),
+      0 2px 4px 0 rgba(0, 0, 0, 0.02)
+    `,
+        screenXS,
+        screenXSMin: screenXS,
+        screenXSMax: screenSM - 1,
+        screenSM,
+        screenSMMin: screenSM,
+        screenSMMax: screenMD - 1,
+        screenMD,
+        screenMDMin: screenMD,
+        screenMDMax: screenLG - 1,
+        screenLG,
+        screenLGMin: screenLG,
+        screenLGMax: screenXL - 1,
+        screenXL,
+        screenXLMin: screenXL,
+        screenXLMax: screenXXL - 1,
+        screenXXL,
+        screenXXLMin: screenXXL,
+        boxShadowPopoverArrow: "2px 2px 5px rgba(0, 0, 0, 0.05)",
+        boxShadowCard: `
+      0 1px 2px -2px ${new (0, _tinycolor.TinyColor)("rgba(0, 0, 0, 0.16)").toRgbString()},
+      0 3px 6px 0 ${new (0, _tinycolor.TinyColor)("rgba(0, 0, 0, 0.12)").toRgbString()},
+      0 5px 12px 4px ${new (0, _tinycolor.TinyColor)("rgba(0, 0, 0, 0.09)").toRgbString()}
+    `,
+        boxShadowDrawerRight: `
+      -6px 0 16px 0 rgba(0, 0, 0, 0.08),
+      -3px 0 6px -4px rgba(0, 0, 0, 0.12),
+      -9px 0 28px 8px rgba(0, 0, 0, 0.05)
+    `,
+        boxShadowDrawerLeft: `
+      6px 0 16px 0 rgba(0, 0, 0, 0.08),
+      3px 0 6px -4px rgba(0, 0, 0, 0.12),
+      9px 0 28px 8px rgba(0, 0, 0, 0.05)
+    `,
+        boxShadowDrawerUp: `
+      0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12),
+      0 9px 28px 8px rgba(0, 0, 0, 0.05)
+    `,
+        boxShadowDrawerDown: `
+      0 -6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 -3px 6px -4px rgba(0, 0, 0, 0.12),
+      0 -9px 28px 8px rgba(0, 0, 0, 0.05)
+    `,
+        boxShadowTabsOverflowLeft: "inset 10px 0 8px -8px rgba(0, 0, 0, 0.08)",
+        boxShadowTabsOverflowRight: "inset -10px 0 8px -8px rgba(0, 0, 0, 0.08)",
+        boxShadowTabsOverflowTop: "inset 0 10px 8px -8px rgba(0, 0, 0, 0.08)",
+        boxShadowTabsOverflowBottom: "inset 0 -10px 8px -8px rgba(0, 0, 0, 0.08)"
+    }), overrideTokens);
+    return aliasToken;
+}
+
+},{"@ctrl/tinycolor":"e1DHG","../themes/seed":"khm8T","./getAlphaColor":"5c8ks","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5c8ks":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _tinycolor = require("@ctrl/tinycolor");
+function isStableColor(color) {
+    return color >= 0 && color <= 255;
+}
+function getAlphaColor(frontColor, backgroundColor) {
+    const { r: fR, g: fG, b: fB, a: originAlpha } = new (0, _tinycolor.TinyColor)(frontColor).toRgb();
+    if (originAlpha < 1) return frontColor;
+    const { r: bR, g: bG, b: bB } = new (0, _tinycolor.TinyColor)(backgroundColor).toRgb();
+    for(let fA = 0.01; fA <= 1; fA += 0.01){
+        const r = Math.round((fR - bR * (1 - fA)) / fA);
+        const g = Math.round((fG - bG * (1 - fA)) / fA);
+        const b = Math.round((fB - bB * (1 - fA)) / fA);
+        if (isStableColor(r) && isStableColor(g) && isStableColor(b)) return new (0, _tinycolor.TinyColor)({
+            r,
+            g,
+            b,
+            a: Math.round(fA * 100) / 100
+        }).toRgbString();
+    }
+    // fallback
+    /* istanbul ignore next */ return new (0, _tinycolor.TinyColor)({
+        r: fR,
+        g: fG,
+        b: fB,
+        a: 1
+    }).toRgbString();
+}
+exports.default = getAlphaColor;
+
+},{"@ctrl/tinycolor":"e1DHG","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9hzWL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _csscalculator = require("./CSSCalculator");
+var _csscalculatorDefault = parcelHelpers.interopDefault(_csscalculator);
+var _numCalculator = require("./NumCalculator");
+var _numCalculatorDefault = parcelHelpers.interopDefault(_numCalculator);
+const genCalc = (type)=>{
+    const Calculator = type === "css" ? (0, _csscalculatorDefault.default) : (0, _numCalculatorDefault.default);
+    return (num)=>new Calculator(num);
+};
+exports.default = genCalc;
+
+},{"./CSSCalculator":"du9Iv","./NumCalculator":"2Btic","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"du9Iv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>CSSCalculator);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _callSuper = require("@babel/runtime/helpers/esm/callSuper");
+var _callSuperDefault = parcelHelpers.interopDefault(_callSuper);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _calculator = require("./calculator");
+var _calculatorDefault = parcelHelpers.interopDefault(_calculator);
+const CALC_UNIT = "CALC_UNIT";
+const regexp = new RegExp(CALC_UNIT, "g");
+function unit(value) {
+    if (typeof value === "number") return `${value}${CALC_UNIT}`;
+    return value;
+}
+let CSSCalculator = /*#__PURE__*/ function(_AbstractCalculator) {
+    function CSSCalculator(num) {
+        var _this;
+        (0, _classCallCheckDefault.default)(this, CSSCalculator);
+        _this = (0, _callSuperDefault.default)(this, CSSCalculator);
+        _this.result = "";
+        if (num instanceof CSSCalculator) _this.result = `(${num.result})`;
+        else if (typeof num === "number") _this.result = unit(num);
+        else if (typeof num === "string") _this.result = num;
+        return _this;
+    }
+    (0, _inheritsDefault.default)(CSSCalculator, _AbstractCalculator);
+    return (0, _createClassDefault.default)(CSSCalculator, [
+        {
+            key: "add",
+            value: function add(num) {
+                if (num instanceof CSSCalculator) this.result = `${this.result} + ${num.getResult()}`;
+                else if (typeof num === "number" || typeof num === "string") this.result = `${this.result} + ${unit(num)}`;
+                this.lowPriority = true;
+                return this;
+            }
+        },
+        {
+            key: "sub",
+            value: function sub(num) {
+                if (num instanceof CSSCalculator) this.result = `${this.result} - ${num.getResult()}`;
+                else if (typeof num === "number" || typeof num === "string") this.result = `${this.result} - ${unit(num)}`;
+                this.lowPriority = true;
+                return this;
+            }
+        },
+        {
+            key: "mul",
+            value: function mul(num) {
+                if (this.lowPriority) this.result = `(${this.result})`;
+                if (num instanceof CSSCalculator) this.result = `${this.result} * ${num.getResult(true)}`;
+                else if (typeof num === "number" || typeof num === "string") this.result = `${this.result} * ${num}`;
+                this.lowPriority = false;
+                return this;
+            }
+        },
+        {
+            key: "div",
+            value: function div(num) {
+                if (this.lowPriority) this.result = `(${this.result})`;
+                if (num instanceof CSSCalculator) this.result = `${this.result} / ${num.getResult(true)}`;
+                else if (typeof num === "number" || typeof num === "string") this.result = `${this.result} / ${num}`;
+                this.lowPriority = false;
+                return this;
+            }
+        },
+        {
+            key: "getResult",
+            value: function getResult(force) {
+                return this.lowPriority || force ? `(${this.result})` : this.result;
+            }
+        },
+        {
+            key: "equal",
+            value: function equal(options) {
+                const { unit: cssUnit = true } = options || {};
+                this.result = this.result.replace(regexp, cssUnit ? "px" : "");
+                if (typeof this.lowPriority !== "undefined") return `calc(${this.result})`;
+                return this.result;
+            }
+        }
+    ]);
+}((0, _calculatorDefault.default));
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/callSuper":"4WKjl","@babel/runtime/helpers/esm/inherits":"drFw3","./calculator":"fu9V5","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4WKjl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_callSuper);
+var _getPrototypeOfJs = require("./getPrototypeOf.js");
+var _getPrototypeOfJsDefault = parcelHelpers.interopDefault(_getPrototypeOfJs);
+var _isNativeReflectConstructJs = require("./isNativeReflectConstruct.js");
+var _isNativeReflectConstructJsDefault = parcelHelpers.interopDefault(_isNativeReflectConstructJs);
+var _possibleConstructorReturnJs = require("./possibleConstructorReturn.js");
+var _possibleConstructorReturnJsDefault = parcelHelpers.interopDefault(_possibleConstructorReturnJs);
+function _callSuper(t, o, e) {
+    return o = (0, _getPrototypeOfJsDefault.default)(o), (0, _possibleConstructorReturnJsDefault.default)(t, (0, _isNativeReflectConstructJsDefault.default)() ? Reflect.construct(o, e || [], (0, _getPrototypeOfJsDefault.default)(t).constructor) : o.apply(t, e));
+}
+
+},{"./getPrototypeOf.js":"edBWC","./isNativeReflectConstruct.js":"6LwWg","./possibleConstructorReturn.js":"jIBiB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"edBWC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_getPrototypeOf);
+function _getPrototypeOf(t) {
+    return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t) {
+        return t.__proto__ || Object.getPrototypeOf(t);
+    }, _getPrototypeOf(t);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6LwWg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_isNativeReflectConstruct);
+function _isNativeReflectConstruct() {
+    try {
+        var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}));
+    } catch (t) {}
+    return (_isNativeReflectConstruct = function _isNativeReflectConstruct() {
+        return !!t;
+    })();
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jIBiB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_possibleConstructorReturn);
+var _typeofJs = require("./typeof.js");
+var _typeofJsDefault = parcelHelpers.interopDefault(_typeofJs);
+var _assertThisInitializedJs = require("./assertThisInitialized.js");
+var _assertThisInitializedJsDefault = parcelHelpers.interopDefault(_assertThisInitializedJs);
+function _possibleConstructorReturn(t, e) {
+    if (e && ("object" == (0, _typeofJsDefault.default)(e) || "function" == typeof e)) return e;
+    if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
+    return (0, _assertThisInitializedJsDefault.default)(t);
+}
+
+},{"./typeof.js":"i7HWY","./assertThisInitialized.js":"iy3su","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iy3su":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_assertThisInitialized);
+function _assertThisInitialized(e) {
+    if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return e;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"drFw3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_inherits);
+var _setPrototypeOfJs = require("./setPrototypeOf.js");
+var _setPrototypeOfJsDefault = parcelHelpers.interopDefault(_setPrototypeOfJs);
+function _inherits(t, e) {
+    if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
+    t.prototype = Object.create(e && e.prototype, {
+        constructor: {
+            value: t,
+            writable: !0,
+            configurable: !0
+        }
+    }), Object.defineProperty(t, "prototype", {
+        writable: !1
+    }), e && (0, _setPrototypeOfJsDefault.default)(t, e);
+}
+
+},{"./setPrototypeOf.js":"3XDFA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3XDFA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_setPrototypeOf);
+function _setPrototypeOf(t, e) {
+    return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t, e) {
+        return t.__proto__ = e, t;
+    }, _setPrototypeOf(t, e);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fu9V5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+let AbstractCalculator = /*#__PURE__*/ (0, _createClassDefault.default)(function AbstractCalculator() {
+    (0, _classCallCheckDefault.default)(this, AbstractCalculator);
+});
+exports.default = AbstractCalculator;
+
+},{"@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2Btic":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>NumCalculator);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _callSuper = require("@babel/runtime/helpers/esm/callSuper");
+var _callSuperDefault = parcelHelpers.interopDefault(_callSuper);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _calculator = require("./calculator");
+var _calculatorDefault = parcelHelpers.interopDefault(_calculator);
+let NumCalculator = /*#__PURE__*/ function(_AbstractCalculator) {
+    function NumCalculator(num) {
+        var _this;
+        (0, _classCallCheckDefault.default)(this, NumCalculator);
+        _this = (0, _callSuperDefault.default)(this, NumCalculator);
+        _this.result = 0;
+        if (num instanceof NumCalculator) _this.result = num.result;
+        else if (typeof num === "number") _this.result = num;
+        return _this;
+    }
+    (0, _inheritsDefault.default)(NumCalculator, _AbstractCalculator);
+    return (0, _createClassDefault.default)(NumCalculator, [
+        {
+            key: "add",
+            value: function add(num) {
+                if (num instanceof NumCalculator) this.result += num.result;
+                else if (typeof num === "number") this.result += num;
+                return this;
+            }
+        },
+        {
+            key: "sub",
+            value: function sub(num) {
+                if (num instanceof NumCalculator) this.result -= num.result;
+                else if (typeof num === "number") this.result -= num;
+                return this;
+            }
+        },
+        {
+            key: "mul",
+            value: function mul(num) {
+                if (num instanceof NumCalculator) this.result *= num.result;
+                else if (typeof num === "number") this.result *= num;
+                return this;
+            }
+        },
+        {
+            key: "div",
+            value: function div(num) {
+                if (num instanceof NumCalculator) this.result /= num.result;
+                else if (typeof num === "number") this.result /= num;
+                return this;
+            }
+        },
+        {
+            key: "equal",
+            value: function equal() {
+                return this.result;
+            }
+        }
+    ]);
+}((0, _calculatorDefault.default));
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/callSuper":"4WKjl","@babel/runtime/helpers/esm/inherits":"drFw3","./calculator":"fu9V5","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"afXFa":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>genComponentStyleHook);
+parcelHelpers.export(exports, "genSubStyleComponent", ()=>genSubStyleComponent);
+parcelHelpers.export(exports, "genStyleHooks", ()=>genStyleHooks);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _cssinjs = require("@ant-design/cssinjs");
+var _rcUtil = require("rc-util");
+var _context = require("../../config-provider/context");
+var _style = require("../../style");
+var _useToken = require("../useToken");
+var _useTokenDefault = parcelHelpers.interopDefault(_useToken);
+var _calc = require("./calc");
+var _calcDefault = parcelHelpers.interopDefault(_calc);
+var _maxmin = require("./maxmin");
+var _maxminDefault = parcelHelpers.interopDefault(_maxmin);
+var _statistic = require("./statistic");
+var _statisticDefault = parcelHelpers.interopDefault(_statistic);
+var _useResetIconStyle = require("./useResetIconStyle");
+var _useResetIconStyleDefault = parcelHelpers.interopDefault(_useResetIconStyle);
+"use client";
+const getDefaultComponentToken = (component, token, getDefaultToken)=>{
+    var _a;
+    if (typeof getDefaultToken === "function") return getDefaultToken((0, _statistic.merge)(token, (_a = token[component]) !== null && _a !== void 0 ? _a : {}));
+    return getDefaultToken !== null && getDefaultToken !== void 0 ? getDefaultToken : {};
+};
+const getComponentToken = (component, token, defaultToken, options)=>{
+    const customToken = Object.assign({}, token[component]);
+    if (options === null || options === void 0 ? void 0 : options.deprecatedTokens) {
+        const { deprecatedTokens } = options;
+        deprecatedTokens.forEach((_ref)=>{
+            let [oldTokenKey, newTokenKey] = _ref;
+            var _a;
+            (0, _rcUtil.warning)(!(customToken === null || customToken === void 0 ? void 0 : customToken[oldTokenKey]), `Component Token \`${String(oldTokenKey)}\` of ${component} is deprecated. Please use \`${String(newTokenKey)}\` instead.`);
+            // Should wrap with `if` clause, or there will be `undefined` in object.
+            if ((customToken === null || customToken === void 0 ? void 0 : customToken[oldTokenKey]) || (customToken === null || customToken === void 0 ? void 0 : customToken[newTokenKey])) (_a = customToken[newTokenKey]) !== null && _a !== void 0 ? _a : customToken[newTokenKey] = customToken === null || customToken === void 0 ? void 0 : customToken[oldTokenKey];
+        });
+    }
+    const mergedToken = Object.assign(Object.assign({}, defaultToken), customToken);
+    // Remove same value as global token to minimize size
+    Object.keys(mergedToken).forEach((key)=>{
+        if (mergedToken[key] === token[key]) delete mergedToken[key];
+    });
+    return mergedToken;
+};
+const getCompVarPrefix = (component, prefix)=>`${[
+        prefix,
+        component.replace(/([A-Z]+)([A-Z][a-z]+)/g, "$1-$2").replace(/([a-z])([A-Z])/g, "$1-$2")
+    ].filter(Boolean).join("-")}`;
+function genComponentStyleHook(componentName, styleFn, getDefaultToken) {
+    let options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    const cells = Array.isArray(componentName) ? componentName : [
+        componentName,
+        componentName
+    ];
+    const [component] = cells;
+    const concatComponent = cells.join("-");
+    return function(prefixCls) {
+        let rootCls = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : prefixCls;
+        const [theme, realToken, hashId, token, cssVar] = (0, _useTokenDefault.default)();
+        const { getPrefixCls, iconPrefixCls, csp } = (0, _react.useContext)((0, _context.ConfigContext));
+        const rootPrefixCls = getPrefixCls();
+        const type = cssVar ? "css" : "js";
+        const calc = (0, _calcDefault.default)(type);
+        const { max, min } = (0, _maxminDefault.default)(type);
+        // Shared config
+        const sharedConfig = {
+            theme,
+            token,
+            hashId,
+            nonce: ()=>csp === null || csp === void 0 ? void 0 : csp.nonce,
+            clientOnly: options.clientOnly,
+            layer: {
+                name: "antd"
+            },
+            // antd is always at top of styles
+            order: options.order || -999
+        };
+        // Generate style for all a tags in antd component.
+        (0, _cssinjs.useStyleRegister)(Object.assign(Object.assign({}, sharedConfig), {
+            clientOnly: false,
+            path: [
+                "Shared",
+                rootPrefixCls
+            ]
+        }), ()=>[
+                {
+                    // Link
+                    "&": (0, _style.genLinkStyle)(token)
+                }
+            ]);
+        // Generate style for icons
+        (0, _useResetIconStyleDefault.default)(iconPrefixCls, csp);
+        const wrapSSR = (0, _cssinjs.useStyleRegister)(Object.assign(Object.assign({}, sharedConfig), {
+            path: [
+                concatComponent,
+                prefixCls,
+                iconPrefixCls
+            ]
+        }), ()=>{
+            if (options.injectStyle === false) return [];
+            const { token: proxyToken, flush } = (0, _statisticDefault.default)(token);
+            const defaultComponentToken = getDefaultComponentToken(component, realToken, getDefaultToken);
+            const componentCls = `.${prefixCls}`;
+            const componentToken = getComponentToken(component, realToken, defaultComponentToken, {
+                deprecatedTokens: options.deprecatedTokens
+            });
+            if (cssVar) Object.keys(defaultComponentToken).forEach((key)=>{
+                defaultComponentToken[key] = `var(${(0, _cssinjs.token2CSSVar)(key, getCompVarPrefix(component, cssVar.prefix))})`;
+            });
+            const mergedToken = (0, _statistic.merge)(proxyToken, {
+                componentCls,
+                prefixCls,
+                iconCls: `.${iconPrefixCls}`,
+                antCls: `.${rootPrefixCls}`,
+                calc,
+                // @ts-ignore
+                max,
+                // @ts-ignore
+                min
+            }, cssVar ? defaultComponentToken : componentToken);
+            const styleInterpolation = styleFn(mergedToken, {
+                hashId,
+                prefixCls,
+                rootPrefixCls,
+                iconPrefixCls
+            });
+            flush(component, componentToken);
+            return [
+                options.resetStyle === false ? null : (0, _style.genCommonStyle)(mergedToken, prefixCls, rootCls, options.resetFont),
+                styleInterpolation
+            ];
+        });
+        return [
+            wrapSSR,
+            hashId
+        ];
+    };
+}
+const genSubStyleComponent = (componentName, styleFn, getDefaultToken, options)=>{
+    const useStyle = genComponentStyleHook(componentName, styleFn, getDefaultToken, Object.assign({
+        resetStyle: false,
+        // Sub Style should default after root one
+        order: -998
+    }, options));
+    const StyledComponent = (_ref2)=>{
+        let { prefixCls, rootCls = prefixCls } = _ref2;
+        useStyle(prefixCls, rootCls);
+        return null;
+    };
+    StyledComponent.displayName = `SubStyle_${Array.isArray(componentName) ? componentName.join(".") : componentName}`;
+    return StyledComponent;
+};
+const genCSSVarRegister = (component, getDefaultToken, options)=>{
+    function prefixToken(key) {
+        return `${component}${key.slice(0, 1).toUpperCase()}${key.slice(1)}`;
+    }
+    const { unitless: originUnitless = {}, injectStyle = true } = options !== null && options !== void 0 ? options : {};
+    const compUnitless = {
+        [prefixToken("zIndexPopup")]: true
+    };
+    Object.keys(originUnitless).forEach((key)=>{
+        compUnitless[prefixToken(key)] = originUnitless[key];
+    });
+    const CSSVarRegister = (_ref3)=>{
+        let { rootCls, cssVar } = _ref3;
+        const [, realToken] = (0, _useTokenDefault.default)();
+        (0, _cssinjs.useCSSVarRegister)({
+            path: [
+                component
+            ],
+            prefix: cssVar.prefix,
+            key: cssVar === null || cssVar === void 0 ? void 0 : cssVar.key,
+            unitless: Object.assign(Object.assign({}, (0, _useToken.unitless)), compUnitless),
+            ignore: (0, _useToken.ignore),
+            token: realToken,
+            scope: rootCls
+        }, ()=>{
+            const defaultToken = getDefaultComponentToken(component, realToken, getDefaultToken);
+            const componentToken = getComponentToken(component, realToken, defaultToken, {
+                deprecatedTokens: options === null || options === void 0 ? void 0 : options.deprecatedTokens
+            });
+            Object.keys(defaultToken).forEach((key)=>{
+                componentToken[prefixToken(key)] = componentToken[key];
+                delete componentToken[key];
+            });
+            return componentToken;
+        });
+        return null;
+    };
+    const useCSSVar = (rootCls)=>{
+        const [, , , , cssVar] = (0, _useTokenDefault.default)();
+        return [
+            (node)=>injectStyle && cssVar ? /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, /*#__PURE__*/ (0, _reactDefault.default).createElement(CSSVarRegister, {
+                    rootCls: rootCls,
+                    cssVar: cssVar,
+                    component: component
+                }), node) : node,
+            cssVar === null || cssVar === void 0 ? void 0 : cssVar.key
+        ];
+    };
+    return useCSSVar;
+};
+const genStyleHooks = (component, styleFn, getDefaultToken, options)=>{
+    const useStyle = genComponentStyleHook(component, styleFn, getDefaultToken, options);
+    const useCSSVar = genCSSVarRegister(Array.isArray(component) ? component[0] : component, getDefaultToken, options);
+    return function(prefixCls) {
+        let rootCls = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : prefixCls;
+        const [, hashId] = useStyle(prefixCls, rootCls);
+        const [wrapCSSVar, cssVarCls] = useCSSVar(rootCls);
+        return [
+            wrapCSSVar,
+            hashId,
+            cssVarCls
+        ];
+    };
+};
+
+},{"react":"21dqq","@ant-design/cssinjs":"k46HC","rc-util":"2CvWk","../../config-provider/context":"cWBoR","../../style":"b1Psq","../useToken":"7Ig10","./calc":"9hzWL","./maxmin":"9SPhj","./statistic":"j6cAt","./useResetIconStyle":"fSChB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2CvWk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useEvent", ()=>(0, _useEventDefault.default));
+parcelHelpers.export(exports, "useMergedState", ()=>(0, _useMergedStateDefault.default));
+parcelHelpers.export(exports, "supportNodeRef", ()=>(0, _ref.supportNodeRef));
+parcelHelpers.export(exports, "supportRef", ()=>(0, _ref.supportRef));
+parcelHelpers.export(exports, "useComposeRef", ()=>(0, _ref.useComposeRef));
+parcelHelpers.export(exports, "get", ()=>(0, _getDefault.default));
+parcelHelpers.export(exports, "set", ()=>(0, _setDefault.default));
+parcelHelpers.export(exports, "warning", ()=>(0, _warningDefault.default));
+var _useEvent = require("./hooks/useEvent");
+var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
+var _useMergedState = require("./hooks/useMergedState");
+var _useMergedStateDefault = parcelHelpers.interopDefault(_useMergedState);
+var _ref = require("./ref");
+var _get = require("./utils/get");
+var _getDefault = parcelHelpers.interopDefault(_get);
+var _set = require("./utils/set");
+var _setDefault = parcelHelpers.interopDefault(_set);
+var _warning = require("./warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+
+},{"./hooks/useEvent":"jv4C9","./hooks/useMergedState":"guGeI","./ref":"jS1Z6","./utils/get":"b4y5F","./utils/set":"jx2yS","./warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jv4C9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useEvent);
+var _react = require("react");
+function useEvent(callback) {
+    var fnRef = _react.useRef();
+    fnRef.current = callback;
+    var memoFn = _react.useCallback(function() {
+        var _fnRef$current;
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        return (_fnRef$current = fnRef.current) === null || _fnRef$current === void 0 ? void 0 : _fnRef$current.call.apply(_fnRef$current, [
+            fnRef
+        ].concat(args));
+    }, []);
+    return memoFn;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"guGeI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMergedState);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _useEvent = require("./useEvent");
+var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
+var _useLayoutEffect = require("./useLayoutEffect");
+var _useState = require("./useState");
+var _useStateDefault = parcelHelpers.interopDefault(_useState);
+/** We only think `undefined` is empty */ function hasValue(value) {
+    return value !== undefined;
+}
+function useMergedState(defaultStateValue, option) {
+    var _ref = option || {}, defaultValue = _ref.defaultValue, value = _ref.value, onChange = _ref.onChange, postState = _ref.postState;
+    // ======================= Init =======================
+    var _useState = (0, _useStateDefault.default)(function() {
+        if (hasValue(value)) return value;
+        else if (hasValue(defaultValue)) return typeof defaultValue === "function" ? defaultValue() : defaultValue;
+        else return typeof defaultStateValue === "function" ? defaultStateValue() : defaultStateValue;
+    }), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), innerValue = _useState2[0], setInnerValue = _useState2[1];
+    var mergedValue = value !== undefined ? value : innerValue;
+    var postMergedValue = postState ? postState(mergedValue) : mergedValue;
+    // ====================== Change ======================
+    var onChangeFn = (0, _useEventDefault.default)(onChange);
+    var _useState3 = (0, _useStateDefault.default)([
+        mergedValue
+    ]), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), prevValue = _useState4[0], setPrevValue = _useState4[1];
+    (0, _useLayoutEffect.useLayoutUpdateEffect)(function() {
+        var prev = prevValue[0];
+        if (innerValue !== prev) onChangeFn(innerValue, prev);
+    }, [
+        prevValue
+    ]);
+    // Sync value back to `undefined` when it from control to un-control
+    (0, _useLayoutEffect.useLayoutUpdateEffect)(function() {
+        if (!hasValue(value)) setInnerValue(value);
+    }, [
+        value
+    ]);
+    // ====================== Update ======================
+    var triggerChange = (0, _useEventDefault.default)(function(updater, ignoreDestroy) {
+        setInnerValue(updater, ignoreDestroy);
+        setPrevValue([
+            mergedValue
+        ], ignoreDestroy);
+    });
+    return [
+        postMergedValue,
+        triggerChange
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","./useEvent":"jv4C9","./useLayoutEffect":"b6Tje","./useState":"4KG3w","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4KG3w":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useSafeState);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+function useSafeState(defaultValue) {
+    var destroyRef = _react.useRef(false);
+    var _React$useState = _react.useState(defaultValue), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), value = _React$useState2[0], setValue = _React$useState2[1];
+    _react.useEffect(function() {
+        destroyRef.current = false;
+        return function() {
+            destroyRef.current = true;
+        };
+    }, []);
+    function safeSetState(updater, ignoreDestroy) {
+        if (ignoreDestroy && destroyRef.current) return;
+        setValue(updater);
+    }
+    return [
+        value,
+        safeSetState
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jS1Z6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "fillRef", ()=>fillRef);
+parcelHelpers.export(exports, "composeRef", ()=>composeRef);
+parcelHelpers.export(exports, "useComposeRef", ()=>useComposeRef);
+parcelHelpers.export(exports, "supportRef", ()=>supportRef);
+parcelHelpers.export(exports, "supportNodeRef", ()=>supportNodeRef);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _react = require("react");
+var _reactIs = require("react-is");
+var _useMemo = require("./hooks/useMemo");
+var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
+var fillRef = function fillRef(ref, node) {
+    if (typeof ref === "function") ref(node);
+    else if ((0, _typeofDefault.default)(ref) === "object" && ref && "current" in ref) ref.current = node;
+};
+var composeRef = function composeRef() {
+    for(var _len = arguments.length, refs = new Array(_len), _key = 0; _key < _len; _key++)refs[_key] = arguments[_key];
+    var refList = refs.filter(Boolean);
+    if (refList.length <= 1) return refList[0];
+    return function(node) {
+        refs.forEach(function(ref) {
+            fillRef(ref, node);
+        });
+    };
+};
+var useComposeRef = function useComposeRef() {
+    for(var _len2 = arguments.length, refs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)refs[_key2] = arguments[_key2];
+    return (0, _useMemoDefault.default)(function() {
+        return composeRef.apply(void 0, refs);
+    }, refs, function(prev, next) {
+        return prev.length !== next.length || prev.every(function(ref, i) {
+            return ref !== next[i];
+        });
+    });
+};
+var supportRef = function supportRef(nodeOrComponent) {
+    var _type$prototype, _nodeOrComponent$prot;
+    var type = (0, _reactIs.isMemo)(nodeOrComponent) ? nodeOrComponent.type.type : nodeOrComponent.type;
+    // Function component node
+    if (typeof type === "function" && !((_type$prototype = type.prototype) !== null && _type$prototype !== void 0 && _type$prototype.render) && type.$$typeof !== (0, _reactIs.ForwardRef)) return false;
+    // Class component
+    if (typeof nodeOrComponent === "function" && !((_nodeOrComponent$prot = nodeOrComponent.prototype) !== null && _nodeOrComponent$prot !== void 0 && _nodeOrComponent$prot.render) && nodeOrComponent.$$typeof !== (0, _reactIs.ForwardRef)) return false;
+    return true;
+};
+var supportNodeRef = function supportNodeRef(node) {
+    if (!/*#__PURE__*/ (0, _react.isValidElement)(node)) return false;
+    if ((0, _reactIs.isFragment)(node)) return false;
+    return supportRef(node);
+};
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","react":"21dqq","react-is":"g7MZm","./hooks/useMemo":"cxcbY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g7MZm":[function(require,module,exports) {
+"use strict";
+module.exports = require("da06c0f26f2b2d66");
+
+},{"da06c0f26f2b2d66":"7Os0P"}],"7Os0P":[function(require,module,exports) {
+/**
+ * @license React
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types.
+    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+    var REACT_SERVER_CONTEXT_TYPE = Symbol.for("react.server_context");
+    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+    var REACT_MEMO_TYPE = Symbol.for("react.memo");
+    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+    // -----------------------------------------------------------------------------
+    var enableScopeAPI = false; // Experimental Create Event Handle API.
+    var enableCacheElement = false;
+    var enableTransitionTracing = false; // No known bugs, but needs performance testing
+    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+    // stuff. Intended to enable React core members to more easily debug scheduling
+    // issues in DEV builds.
+    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+    var REACT_MODULE_REFERENCE;
+    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+    function isValidElementType(type) {
+        if (typeof type === "string" || typeof type === "function") return true;
+         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
+        if (typeof type === "object" && type !== null) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
+        }
+        return false;
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                        case REACT_SUSPENSE_LIST_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_SERVER_CONTEXT_TYPE:
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    }
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var SuspenseList = REACT_SUSPENSE_LIST_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false;
+    var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 18+.");
+        }
+        return false;
+    }
+    function isConcurrentMode(object) {
+        if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
+            hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isConcurrentMode() alias has been deprecated, and will be removed in React 18+.");
+        }
+        return false;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    function isSuspenseList(object) {
+        return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
+    }
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.SuspenseList = SuspenseList;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isSuspenseList = isSuspenseList;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"b1Psq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "operationUnit", ()=>(0, _operationUnit.operationUnit));
+parcelHelpers.export(exports, "textEllipsis", ()=>textEllipsis);
+parcelHelpers.export(exports, "resetComponent", ()=>resetComponent);
+parcelHelpers.export(exports, "resetIcon", ()=>resetIcon);
+parcelHelpers.export(exports, "clearFix", ()=>clearFix);
+parcelHelpers.export(exports, "genLinkStyle", ()=>genLinkStyle);
+parcelHelpers.export(exports, "genCommonStyle", ()=>genCommonStyle);
+parcelHelpers.export(exports, "genFocusOutline", ()=>genFocusOutline);
+parcelHelpers.export(exports, "genFocusStyle", ()=>genFocusStyle);
+/* eslint-disable import/prefer-default-export */ var _cssinjs = require("@ant-design/cssinjs");
+var _operationUnit = require("./operationUnit");
+"use client";
+const textEllipsis = {
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    textOverflow: "ellipsis"
+};
+const resetComponent = function(token) {
+    let needInheritFontFamily = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    return {
+        boxSizing: "border-box",
+        margin: 0,
+        padding: 0,
+        color: token.colorText,
+        fontSize: token.fontSize,
+        // font-variant: @font-variant-base;
+        lineHeight: token.lineHeight,
+        listStyle: "none",
+        // font-feature-settings: @font-feature-settings-base;
+        fontFamily: needInheritFontFamily ? "inherit" : token.fontFamily
+    };
+};
+const resetIcon = ()=>({
+        display: "inline-flex",
+        alignItems: "center",
+        color: "inherit",
+        fontStyle: "normal",
+        lineHeight: 0,
+        textAlign: "center",
+        textTransform: "none",
+        // for SVG icon, see https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4
+        verticalAlign: "-0.125em",
+        textRendering: "optimizeLegibility",
+        "-webkit-font-smoothing": "antialiased",
+        "-moz-osx-font-smoothing": "grayscale",
+        "> *": {
+            lineHeight: 1
+        },
+        svg: {
+            display: "inline-block"
+        }
+    });
+const clearFix = ()=>({
+        // https://github.com/ant-design/ant-design/issues/21301#issuecomment-583955229
+        "&::before": {
+            display: "table",
+            content: '""'
+        },
+        "&::after": {
+            // https://github.com/ant-design/ant-design/issues/21864
+            display: "table",
+            clear: "both",
+            content: '""'
+        }
+    });
+const genLinkStyle = (token)=>({
+        a: {
+            color: token.colorLink,
+            textDecoration: token.linkDecoration,
+            backgroundColor: "transparent",
+            // remove the gray background on active links in IE 10.
+            outline: "none",
+            cursor: "pointer",
+            transition: `color ${token.motionDurationSlow}`,
+            "-webkit-text-decoration-skip": "objects",
+            // remove gaps in links underline in iOS 8+ and Safari 8+.
+            "&:hover": {
+                color: token.colorLinkHover
+            },
+            "&:active": {
+                color: token.colorLinkActive
+            },
+            [`&:active,
+  &:hover`]: {
+                textDecoration: token.linkHoverDecoration,
+                outline: 0
+            },
+            // https://github.com/ant-design/ant-design/issues/22503
+            "&:focus": {
+                textDecoration: token.linkFocusDecoration,
+                outline: 0
+            },
+            "&[disabled]": {
+                color: token.colorTextDisabled,
+                cursor: "not-allowed"
+            }
+        }
+    });
+const genCommonStyle = (token, componentPrefixCls, rootCls, resetFont)=>{
+    const prefixSelector = `[class^="${componentPrefixCls}"], [class*=" ${componentPrefixCls}"]`;
+    const rootPrefixSelector = rootCls ? `.${rootCls}` : prefixSelector;
+    const resetStyle = {
+        boxSizing: "border-box",
+        "&::before, &::after": {
+            boxSizing: "border-box"
+        }
+    };
+    let resetFontStyle = {};
+    if (resetFont !== false) resetFontStyle = {
+        fontFamily: token.fontFamily,
+        fontSize: token.fontSize
+    };
+    return {
+        [rootPrefixSelector]: Object.assign(Object.assign(Object.assign({}, resetFontStyle), resetStyle), {
+            [prefixSelector]: resetStyle
+        })
+    };
+};
+const genFocusOutline = (token)=>({
+        outline: `${(0, _cssinjs.unit)(token.lineWidthFocus)} solid ${token.colorPrimaryBorder}`,
+        outlineOffset: 1,
+        transition: "outline-offset 0s, outline 0s"
+    });
+const genFocusStyle = (token)=>({
+        "&:focus-visible": Object.assign({}, genFocusOutline(token))
+    });
+
+},{"@ant-design/cssinjs":"k46HC","./operationUnit":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9SPhj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>genMaxMin);
+var _cssinjs = require("@ant-design/cssinjs");
+function genMaxMin(type) {
+    if (type === "js") return {
+        max: Math.max,
+        min: Math.min
+    };
+    return {
+        max: function() {
+            for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+            return `max(${args.map((value)=>(0, _cssinjs.unit)(value)).join(",")})`;
+        },
+        min: function() {
+            for(var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)args[_key2] = arguments[_key2];
+            return `min(${args.map((value)=>(0, _cssinjs.unit)(value)).join(",")})`;
+        }
+    };
+}
+
+},{"@ant-design/cssinjs":"k46HC","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"j6cAt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * This function will do as `Object.assign` in production. But will use Object.defineProperty:get to
+ * pass all value access in development. To support statistic field usage with alias token.
+ */ parcelHelpers.export(exports, "merge", ()=>merge);
+parcelHelpers.export(exports, "statistic", ()=>statistic);
+parcelHelpers.export(exports, "_statistic_build_", ()=>_statistic_build_);
+const enableStatistic = true;
+let recording = true;
+function merge() {
+    for(var _len = arguments.length, objs = new Array(_len), _key = 0; _key < _len; _key++)objs[_key] = arguments[_key];
+    /* istanbul ignore next */ if (!enableStatistic) return Object.assign.apply(Object, [
+        {}
+    ].concat(objs));
+    recording = false;
+    const ret = {};
+    objs.forEach((obj)=>{
+        const keys = Object.keys(obj);
+        keys.forEach((key)=>{
+            Object.defineProperty(ret, key, {
+                configurable: true,
+                enumerable: true,
+                get: ()=>obj[key]
+            });
+        });
+    });
+    recording = true;
+    return ret;
+}
+const statistic = {};
+const _statistic_build_ = {};
+/* istanbul ignore next */ function noop() {}
+/** Statistic token usage case. Should use `merge` function if you do not want spread record. */ const statisticToken = (token)=>{
+    let tokenKeys;
+    let proxy = token;
+    let flush = noop;
+    if (enableStatistic && typeof Proxy !== "undefined") {
+        tokenKeys = new Set();
+        proxy = new Proxy(token, {
+            get (obj, prop) {
+                if (recording) tokenKeys.add(prop);
+                return obj[prop];
+            }
+        });
+        flush = (componentName, componentToken)=>{
+            var _a;
+            statistic[componentName] = {
+                global: Array.from(tokenKeys),
+                component: Object.assign(Object.assign({}, (_a = statistic[componentName]) === null || _a === void 0 ? void 0 : _a.component), componentToken)
+            };
+        };
+    }
+    return {
+        token: proxy,
+        keys: tokenKeys,
+        flush
+    };
+};
+exports.default = statisticToken;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fSChB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cssinjs = require("@ant-design/cssinjs");
+var _style = require("../../style");
+var _useToken = require("../useToken");
+var _useTokenDefault = parcelHelpers.interopDefault(_useToken);
+const useResetIconStyle = (iconPrefixCls, csp)=>{
+    const [theme, token] = (0, _useTokenDefault.default)();
+    // Generate style for icons
+    return (0, _cssinjs.useStyleRegister)({
+        theme,
+        token,
+        hashId: "",
+        path: [
+            "ant-design-icons",
+            iconPrefixCls
+        ],
+        nonce: ()=>csp === null || csp === void 0 ? void 0 : csp.nonce,
+        layer: {
+            name: "antd"
+        }
+    }, ()=>[
+            {
+                [`.${iconPrefixCls}`]: Object.assign(Object.assign({}, (0, _style.resetIcon)()), {
+                    [`.${iconPrefixCls} .${iconPrefixCls}-icon`]: {
+                        display: "block"
+                    }
+                })
+            }
+        ]);
+};
+exports.default = useResetIconStyle;
+
+},{"@ant-design/cssinjs":"k46HC","../../style":"b1Psq","../useToken":"7Ig10","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gMI9U":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const fullClone = Object.assign({}, _react);
+const { useId } = fullClone;
+const useEmptyId = ()=>"";
+const useThemeKey = typeof useId === "undefined" ? useEmptyId : useId;
+exports.default = useThemeKey;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hu14J":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>MotionWrapper);
+var _react = require("react");
+var _rcMotion = require("rc-motion");
+var _internal = require("../theme/internal");
+"use client";
+function MotionWrapper(props) {
+    const { children } = props;
+    const [, token] = (0, _internal.useToken)();
+    const { motion } = token;
+    const needWrapMotionProviderRef = _react.useRef(false);
+    needWrapMotionProviderRef.current = needWrapMotionProviderRef.current || motion === false;
+    if (needWrapMotionProviderRef.current) return /*#__PURE__*/ _react.createElement((0, _rcMotion.Provider), {
+        motion: motion
+    }, children);
+    return children;
+}
+
+},{"react":"21dqq","rc-motion":"aaavi","../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aaavi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Provider", ()=>(0, _contextDefault.default));
+parcelHelpers.export(exports, "CSSMotionList", ()=>(0, _cssmotionListDefault.default));
+var _cssmotion = require("./CSSMotion");
+var _cssmotionDefault = parcelHelpers.interopDefault(_cssmotion);
+var _cssmotionList = require("./CSSMotionList");
+var _cssmotionListDefault = parcelHelpers.interopDefault(_cssmotionList);
+var _context = require("./context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+exports.default = (0, _cssmotionDefault.default);
+
+},{"./CSSMotion":"4OSHS","./CSSMotionList":"4mrHS","./context":"jwWqH","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4OSHS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * `transitionSupport` is used for none transition test case.
+ * Default we use browser transition event support check.
+ */ parcelHelpers.export(exports, "genCSSMotion", ()=>genCSSMotion);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+/* eslint-disable react/default-props-match-prop-types, react/no-multi-comp, react/prop-types */ var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _findDOMNode = require("rc-util/es/Dom/findDOMNode");
+var _findDOMNodeDefault = parcelHelpers.interopDefault(_findDOMNode);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var _context = require("./context");
+var _domWrapper = require("./DomWrapper");
+var _domWrapperDefault = parcelHelpers.interopDefault(_domWrapper);
+var _useStatus = require("./hooks/useStatus");
+var _useStatusDefault = parcelHelpers.interopDefault(_useStatus);
+var _useStepQueue = require("./hooks/useStepQueue");
+var _interface = require("./interface");
+var _motion = require("./util/motion");
+function genCSSMotion(config) {
+    var transitionSupport = config;
+    if ((0, _typeofDefault.default)(config) === "object") transitionSupport = config.transitionSupport;
+    function isSupportTransition(props, contextMotion) {
+        return !!(props.motionName && transitionSupport && contextMotion !== false);
+    }
+    var CSSMotion = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+        var _props$visible = props.visible, visible = _props$visible === void 0 ? true : _props$visible, _props$removeOnLeave = props.removeOnLeave, removeOnLeave = _props$removeOnLeave === void 0 ? true : _props$removeOnLeave, forceRender = props.forceRender, children = props.children, motionName = props.motionName, leavedClassName = props.leavedClassName, eventProps = props.eventProps;
+        var _React$useContext = _react.useContext((0, _context.Context)), contextMotion = _React$useContext.motion;
+        var supportMotion = isSupportTransition(props, contextMotion);
+        // Ref to the react node, it may be a HTMLElement
+        var nodeRef = (0, _react.useRef)();
+        // Ref to the dom wrapper in case ref can not pass to HTMLElement
+        var wrapperNodeRef = (0, _react.useRef)();
+        function getDomElement() {
+            try {
+                // Here we're avoiding call for findDOMNode since it's deprecated
+                // in strict mode. We're calling it only when node ref is not
+                // an instance of DOM HTMLElement. Otherwise use
+                // findDOMNode as a final resort
+                return nodeRef.current instanceof HTMLElement ? nodeRef.current : (0, _findDOMNodeDefault.default)(wrapperNodeRef.current);
+            } catch (e) {
+                // Only happen when `motionDeadline` trigger but element removed.
+                return null;
+            }
+        }
+        var _useStatus = (0, _useStatusDefault.default)(supportMotion, visible, getDomElement, props), _useStatus2 = (0, _slicedToArrayDefault.default)(_useStatus, 4), status = _useStatus2[0], statusStep = _useStatus2[1], statusStyle = _useStatus2[2], mergedVisible = _useStatus2[3];
+        // Record whether content has rendered
+        // Will return null for un-rendered even when `removeOnLeave={false}`
+        var renderedRef = _react.useRef(mergedVisible);
+        if (mergedVisible) renderedRef.current = true;
+        // ====================== Refs ======================
+        var setNodeRef = _react.useCallback(function(node) {
+            nodeRef.current = node;
+            (0, _ref.fillRef)(ref, node);
+        }, [
+            ref
+        ]);
+        // ===================== Render =====================
+        var motionChildren;
+        var mergedProps = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, eventProps), {}, {
+            visible: visible
+        });
+        if (!children) // No children
+        motionChildren = null;
+        else if (status === (0, _interface.STATUS_NONE)) {
+            // Stable children
+            if (mergedVisible) motionChildren = children((0, _objectSpread2Default.default)({}, mergedProps), setNodeRef);
+            else if (!removeOnLeave && renderedRef.current && leavedClassName) motionChildren = children((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, mergedProps), {}, {
+                className: leavedClassName
+            }), setNodeRef);
+            else if (forceRender || !removeOnLeave && !leavedClassName) motionChildren = children((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, mergedProps), {}, {
+                style: {
+                    display: "none"
+                }
+            }), setNodeRef);
+            else motionChildren = null;
+        } else {
+            // In motion
+            var statusSuffix;
+            if (statusStep === (0, _interface.STEP_PREPARE)) statusSuffix = "prepare";
+            else if ((0, _useStepQueue.isActive)(statusStep)) statusSuffix = "active";
+            else if (statusStep === (0, _interface.STEP_START)) statusSuffix = "start";
+            var motionCls = (0, _motion.getTransitionName)(motionName, "".concat(status, "-").concat(statusSuffix));
+            motionChildren = children((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, mergedProps), {}, {
+                className: (0, _classnamesDefault.default)((0, _motion.getTransitionName)(motionName, status), (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, motionCls, motionCls && statusSuffix), motionName, typeof motionName === "string")),
+                style: statusStyle
+            }), setNodeRef);
+        }
+        // Auto inject ref if child node not have `ref` props
+        if (/*#__PURE__*/ _react.isValidElement(motionChildren) && (0, _ref.supportRef)(motionChildren)) {
+            var _ref1 = motionChildren, originNodeRef = _ref1.ref;
+            if (!originNodeRef) motionChildren = /*#__PURE__*/ _react.cloneElement(motionChildren, {
+                ref: setNodeRef
+            });
+        }
+        return /*#__PURE__*/ _react.createElement((0, _domWrapperDefault.default), {
+            ref: wrapperNodeRef
+        }, motionChildren);
+    });
+    CSSMotion.displayName = "CSSMotion";
+    return CSSMotion;
+}
+exports.default = genCSSMotion((0, _motion.supportTransition));
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/typeof":"i7HWY","classnames":"jocGM","rc-util/es/Dom/findDOMNode":"3PTYf","rc-util/es/ref":"jS1Z6","react":"21dqq","./context":"jwWqH","./DomWrapper":"jASWk","./hooks/useStatus":"apd66","./hooks/useStepQueue":"rtL52","./interface":"kvRO0","./util/motion":"g9oPX","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3PTYf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isDOM", ()=>isDOM);
+/**
+ * Retrieves a DOM node via a ref, and does not invoke `findDOMNode`.
+ */ parcelHelpers.export(exports, "getDOM", ()=>getDOM);
+parcelHelpers.export(exports, "default", ()=>findDOMNode);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactDom = require("react-dom");
+var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+function isDOM(node) {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element
+    // Since XULElement is also subclass of Element, we only need HTMLElement and SVGElement
+    return node instanceof HTMLElement || node instanceof SVGElement;
+}
+function getDOM(node) {
+    if (node && (0, _typeofDefault.default)(node) === "object" && isDOM(node.nativeElement)) return node.nativeElement;
+    if (isDOM(node)) return node;
+    return null;
+}
+function findDOMNode(node) {
+    var domNode = getDOM(node);
+    if (domNode) return domNode;
+    if (node instanceof (0, _reactDefault.default).Component) {
+        var _ReactDOM$findDOMNode;
+        return (_ReactDOM$findDOMNode = (0, _reactDomDefault.default).findDOMNode) === null || _ReactDOM$findDOMNode === void 0 ? void 0 : _ReactDOM$findDOMNode.call((0, _reactDomDefault.default), node);
+    }
+    return null;
+}
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jwWqH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Context", ()=>Context);
+parcelHelpers.export(exports, "default", ()=>MotionProvider);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _excluded = [
+    "children"
+];
+var Context = /*#__PURE__*/ _react.createContext({});
+function MotionProvider(_ref) {
+    var children = _ref.children, props = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    return /*#__PURE__*/ _react.createElement(Context.Provider, {
+        value: props
+    }, children);
+}
+
+},{"@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jASWk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _createSuper = require("@babel/runtime/helpers/esm/createSuper");
+var _createSuperDefault = parcelHelpers.interopDefault(_createSuper);
+var _react = require("react");
+var DomWrapper = /*#__PURE__*/ function(_React$Component) {
+    (0, _inheritsDefault.default)(DomWrapper, _React$Component);
+    var _super = (0, _createSuperDefault.default)(DomWrapper);
+    function DomWrapper() {
+        (0, _classCallCheckDefault.default)(this, DomWrapper);
+        return _super.apply(this, arguments);
+    }
+    (0, _createClassDefault.default)(DomWrapper, [
+        {
+            key: "render",
+            value: function render() {
+                return this.props.children;
+            }
+        }
+    ]);
+    return DomWrapper;
+}(_react.Component);
+exports.default = DomWrapper;
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/inherits":"drFw3","@babel/runtime/helpers/esm/createSuper":"hp3mc","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hp3mc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_createSuper);
+var _getPrototypeOfJs = require("./getPrototypeOf.js");
+var _getPrototypeOfJsDefault = parcelHelpers.interopDefault(_getPrototypeOfJs);
+var _isNativeReflectConstructJs = require("./isNativeReflectConstruct.js");
+var _isNativeReflectConstructJsDefault = parcelHelpers.interopDefault(_isNativeReflectConstructJs);
+var _possibleConstructorReturnJs = require("./possibleConstructorReturn.js");
+var _possibleConstructorReturnJsDefault = parcelHelpers.interopDefault(_possibleConstructorReturnJs);
+function _createSuper(t) {
+    var r = (0, _isNativeReflectConstructJsDefault.default)();
+    return function() {
+        var e, o = (0, _getPrototypeOfJsDefault.default)(t);
+        if (r) {
+            var s = (0, _getPrototypeOfJsDefault.default)(this).constructor;
+            e = Reflect.construct(o, arguments, s);
+        } else e = o.apply(this, arguments);
+        return (0, _possibleConstructorReturnJsDefault.default)(this, e);
+    };
+}
+
+},{"./getPrototypeOf.js":"edBWC","./isNativeReflectConstruct.js":"6LwWg","./possibleConstructorReturn.js":"jIBiB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"apd66":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useStatus);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _rcUtil = require("rc-util");
+var _useState = require("rc-util/es/hooks/useState");
+var _useStateDefault = parcelHelpers.interopDefault(_useState);
+var _react = require("react");
+var _interface = require("../interface");
+var _useDomMotionEvents = require("./useDomMotionEvents");
+var _useDomMotionEventsDefault = parcelHelpers.interopDefault(_useDomMotionEvents);
+var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
+var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
+var _useStepQueue = require("./useStepQueue");
+var _useStepQueueDefault = parcelHelpers.interopDefault(_useStepQueue);
+function useStatus(supportMotion, visible, getElement, _ref) {
+    var _ref$motionEnter = _ref.motionEnter, motionEnter = _ref$motionEnter === void 0 ? true : _ref$motionEnter, _ref$motionAppear = _ref.motionAppear, motionAppear = _ref$motionAppear === void 0 ? true : _ref$motionAppear, _ref$motionLeave = _ref.motionLeave, motionLeave = _ref$motionLeave === void 0 ? true : _ref$motionLeave, motionDeadline = _ref.motionDeadline, motionLeaveImmediately = _ref.motionLeaveImmediately, onAppearPrepare = _ref.onAppearPrepare, onEnterPrepare = _ref.onEnterPrepare, onLeavePrepare = _ref.onLeavePrepare, onAppearStart = _ref.onAppearStart, onEnterStart = _ref.onEnterStart, onLeaveStart = _ref.onLeaveStart, onAppearActive = _ref.onAppearActive, onEnterActive = _ref.onEnterActive, onLeaveActive = _ref.onLeaveActive, onAppearEnd = _ref.onAppearEnd, onEnterEnd = _ref.onEnterEnd, onLeaveEnd = _ref.onLeaveEnd, onVisibleChanged = _ref.onVisibleChanged;
+    // Used for outer render usage to avoid `visible: false & status: none` to render nothing
+    var _useState = (0, _useStateDefault.default)(), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), asyncVisible = _useState2[0], setAsyncVisible = _useState2[1];
+    var _useState3 = (0, _useStateDefault.default)((0, _interface.STATUS_NONE)), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), status = _useState4[0], setStatus = _useState4[1];
+    var _useState5 = (0, _useStateDefault.default)(null), _useState6 = (0, _slicedToArrayDefault.default)(_useState5, 2), style = _useState6[0], setStyle = _useState6[1];
+    var mountedRef = (0, _react.useRef)(false);
+    var deadlineRef = (0, _react.useRef)(null);
+    // =========================== Dom Node ===========================
+    function getDomElement() {
+        return getElement();
+    }
+    // ========================== Motion End ==========================
+    var activeRef = (0, _react.useRef)(false);
+    /**
+   * Clean up status & style
+   */ function updateMotionEndStatus() {
+        setStatus((0, _interface.STATUS_NONE), true);
+        setStyle(null, true);
+    }
+    var onInternalMotionEnd = (0, _rcUtil.useEvent)(function(event) {
+        // Do nothing since not in any transition status.
+        // This may happen when `motionDeadline` trigger.
+        if (status === (0, _interface.STATUS_NONE)) return;
+        var element = getDomElement();
+        if (event && !event.deadline && event.target !== element) // event exists
+        // not initiated by deadline
+        // transitionEnd not fired by inner elements
+        return;
+        var currentActive = activeRef.current;
+        var canEnd;
+        if (status === (0, _interface.STATUS_APPEAR) && currentActive) canEnd = onAppearEnd === null || onAppearEnd === void 0 ? void 0 : onAppearEnd(element, event);
+        else if (status === (0, _interface.STATUS_ENTER) && currentActive) canEnd = onEnterEnd === null || onEnterEnd === void 0 ? void 0 : onEnterEnd(element, event);
+        else if (status === (0, _interface.STATUS_LEAVE) && currentActive) canEnd = onLeaveEnd === null || onLeaveEnd === void 0 ? void 0 : onLeaveEnd(element, event);
+        // Only update status when `canEnd` and not destroyed
+        if (currentActive && canEnd !== false) updateMotionEndStatus();
+    });
+    var _useDomMotionEvents = (0, _useDomMotionEventsDefault.default)(onInternalMotionEnd), _useDomMotionEvents2 = (0, _slicedToArrayDefault.default)(_useDomMotionEvents, 1), patchMotionEvents = _useDomMotionEvents2[0];
+    // ============================= Step =============================
+    var getEventHandlers = function getEventHandlers(targetStatus) {
+        switch(targetStatus){
+            case 0, _interface.STATUS_APPEAR:
+                return (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, (0, _interface.STEP_PREPARE), onAppearPrepare), (0, _interface.STEP_START), onAppearStart), (0, _interface.STEP_ACTIVE), onAppearActive);
+            case 0, _interface.STATUS_ENTER:
+                return (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, (0, _interface.STEP_PREPARE), onEnterPrepare), (0, _interface.STEP_START), onEnterStart), (0, _interface.STEP_ACTIVE), onEnterActive);
+            case 0, _interface.STATUS_LEAVE:
+                return (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, (0, _interface.STEP_PREPARE), onLeavePrepare), (0, _interface.STEP_START), onLeaveStart), (0, _interface.STEP_ACTIVE), onLeaveActive);
+            default:
+                return {};
+        }
+    };
+    var eventHandlers = _react.useMemo(function() {
+        return getEventHandlers(status);
+    }, [
+        status
+    ]);
+    var _useStepQueue1 = (0, _useStepQueueDefault.default)(status, !supportMotion, function(newStep) {
+        // Only prepare step can be skip
+        if (newStep === (0, _interface.STEP_PREPARE)) {
+            var onPrepare = eventHandlers[0, _interface.STEP_PREPARE];
+            if (!onPrepare) return 0, _useStepQueue.SkipStep;
+            return onPrepare(getDomElement());
+        }
+        // Rest step is sync update
+        if (step in eventHandlers) {
+            var _eventHandlers$step;
+            setStyle(((_eventHandlers$step = eventHandlers[step]) === null || _eventHandlers$step === void 0 ? void 0 : _eventHandlers$step.call(eventHandlers, getDomElement(), null)) || null);
+        }
+        if (step === (0, _interface.STEP_ACTIVE) && status !== (0, _interface.STATUS_NONE)) {
+            // Patch events when motion needed
+            patchMotionEvents(getDomElement());
+            if (motionDeadline > 0) {
+                clearTimeout(deadlineRef.current);
+                deadlineRef.current = setTimeout(function() {
+                    onInternalMotionEnd({
+                        deadline: true
+                    });
+                }, motionDeadline);
+            }
+        }
+        if (step === (0, _interface.STEP_PREPARED)) updateMotionEndStatus();
+        return 0, _useStepQueue.DoStep;
+    }), _useStepQueue2 = (0, _slicedToArrayDefault.default)(_useStepQueue1, 2), startStep = _useStepQueue2[0], step = _useStepQueue2[1];
+    var active = (0, _useStepQueue.isActive)(step);
+    activeRef.current = active;
+    // ============================ Status ============================
+    // Update with new status
+    (0, _useIsomorphicLayoutEffectDefault.default)(function() {
+        setAsyncVisible(visible);
+        var isMounted = mountedRef.current;
+        mountedRef.current = true;
+        // if (!supportMotion) {
+        //   return;
+        // }
+        var nextStatus;
+        // Appear
+        if (!isMounted && visible && motionAppear) nextStatus = (0, _interface.STATUS_APPEAR);
+        // Enter
+        if (isMounted && visible && motionEnter) nextStatus = (0, _interface.STATUS_ENTER);
+        // Leave
+        if (isMounted && !visible && motionLeave || !isMounted && motionLeaveImmediately && !visible && motionLeave) nextStatus = (0, _interface.STATUS_LEAVE);
+        var nextEventHandlers = getEventHandlers(nextStatus);
+        // Update to next status
+        if (nextStatus && (supportMotion || nextEventHandlers[0, _interface.STEP_PREPARE])) {
+            setStatus(nextStatus);
+            startStep();
+        } else // Set back in case no motion but prev status has prepare step
+        setStatus((0, _interface.STATUS_NONE));
+    }, [
+        visible
+    ]);
+    // ============================ Effect ============================
+    // Reset when motion changed
+    (0, _react.useEffect)(function() {
+        if (// Cancel appear
+        status === (0, _interface.STATUS_APPEAR) && !motionAppear || // Cancel enter
+        status === (0, _interface.STATUS_ENTER) && !motionEnter || // Cancel leave
+        status === (0, _interface.STATUS_LEAVE) && !motionLeave) setStatus((0, _interface.STATUS_NONE));
+    }, [
+        motionAppear,
+        motionEnter,
+        motionLeave
+    ]);
+    (0, _react.useEffect)(function() {
+        return function() {
+            mountedRef.current = false;
+            clearTimeout(deadlineRef.current);
+        };
+    }, []);
+    // Trigger `onVisibleChanged`
+    var firstMountChangeRef = _react.useRef(false);
+    (0, _react.useEffect)(function() {
+        // [visible & motion not end] => [!visible & motion end] still need trigger onVisibleChanged
+        if (asyncVisible) firstMountChangeRef.current = true;
+        if (asyncVisible !== undefined && status === (0, _interface.STATUS_NONE)) {
+            // Skip first render is invisible since it's nothing changed
+            if (firstMountChangeRef.current || asyncVisible) onVisibleChanged === null || onVisibleChanged === void 0 || onVisibleChanged(asyncVisible);
+            firstMountChangeRef.current = true;
+        }
+    }, [
+        asyncVisible,
+        status
+    ]);
+    // ============================ Styles ============================
+    var mergedStyle = style;
+    if (eventHandlers[0, _interface.STEP_PREPARE] && step === (0, _interface.STEP_START)) mergedStyle = (0, _objectSpread2Default.default)({
+        transition: "none"
+    }, mergedStyle);
+    return [
+        status,
+        step,
+        mergedStyle,
+        asyncVisible !== null && asyncVisible !== void 0 ? asyncVisible : visible
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util":"2CvWk","rc-util/es/hooks/useState":"4KG3w","react":"21dqq","../interface":"kvRO0","./useDomMotionEvents":"6wGqw","./useIsomorphicLayoutEffect":"9BsoX","./useStepQueue":"rtL52","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kvRO0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "STATUS_NONE", ()=>STATUS_NONE);
+parcelHelpers.export(exports, "STATUS_APPEAR", ()=>STATUS_APPEAR);
+parcelHelpers.export(exports, "STATUS_ENTER", ()=>STATUS_ENTER);
+parcelHelpers.export(exports, "STATUS_LEAVE", ()=>STATUS_LEAVE);
+parcelHelpers.export(exports, "STEP_NONE", ()=>STEP_NONE);
+parcelHelpers.export(exports, "STEP_PREPARE", ()=>STEP_PREPARE);
+parcelHelpers.export(exports, "STEP_START", ()=>STEP_START);
+parcelHelpers.export(exports, "STEP_ACTIVE", ()=>STEP_ACTIVE);
+parcelHelpers.export(exports, "STEP_ACTIVATED", ()=>STEP_ACTIVATED);
+parcelHelpers.export(exports, "STEP_PREPARED", ()=>STEP_PREPARED);
+var STATUS_NONE = "none";
+var STATUS_APPEAR = "appear";
+var STATUS_ENTER = "enter";
+var STATUS_LEAVE = "leave";
+var STEP_NONE = "none";
+var STEP_PREPARE = "prepare";
+var STEP_START = "start";
+var STEP_ACTIVE = "active";
+var STEP_ACTIVATED = "end";
+var STEP_PREPARED = "prepared";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6wGqw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _motion = require("../util/motion");
+exports.default = function(onInternalMotionEnd) {
+    var cacheElementRef = (0, _react.useRef)();
+    // Remove events
+    function removeMotionEvents(element) {
+        if (element) {
+            element.removeEventListener((0, _motion.transitionEndName), onInternalMotionEnd);
+            element.removeEventListener((0, _motion.animationEndName), onInternalMotionEnd);
+        }
+    }
+    // Patch events
+    function patchMotionEvents(element) {
+        if (cacheElementRef.current && cacheElementRef.current !== element) removeMotionEvents(cacheElementRef.current);
+        if (element && element !== cacheElementRef.current) {
+            element.addEventListener((0, _motion.transitionEndName), onInternalMotionEnd);
+            element.addEventListener((0, _motion.animationEndName), onInternalMotionEnd);
+            // Save as cache in case dom removed trigger by `motionDeadline`
+            cacheElementRef.current = element;
+        }
+    }
+    // Clean up when removed
+    _react.useEffect(function() {
+        return function() {
+            removeMotionEvents(cacheElementRef.current);
+        };
+    }, []);
+    return [
+        patchMotionEvents,
+        removeMotionEvents
+    ];
+};
+
+},{"react":"21dqq","../util/motion":"g9oPX","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g9oPX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getVendorPrefixes", ()=>getVendorPrefixes);
+parcelHelpers.export(exports, "getVendorPrefixedEventName", ()=>getVendorPrefixedEventName);
+parcelHelpers.export(exports, "supportTransition", ()=>supportTransition);
+parcelHelpers.export(exports, "animationEndName", ()=>animationEndName);
+parcelHelpers.export(exports, "transitionEndName", ()=>transitionEndName);
+parcelHelpers.export(exports, "getTransitionName", ()=>getTransitionName);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+// ================= Transition =================
+// Event wrapper. Copy from react source code
+function makePrefixMap(styleProp, eventName) {
+    var prefixes = {};
+    prefixes[styleProp.toLowerCase()] = eventName.toLowerCase();
+    prefixes["Webkit".concat(styleProp)] = "webkit".concat(eventName);
+    prefixes["Moz".concat(styleProp)] = "moz".concat(eventName);
+    prefixes["ms".concat(styleProp)] = "MS".concat(eventName);
+    prefixes["O".concat(styleProp)] = "o".concat(eventName.toLowerCase());
+    return prefixes;
+}
+function getVendorPrefixes(domSupport, win) {
+    var prefixes = {
+        animationend: makePrefixMap("Animation", "AnimationEnd"),
+        transitionend: makePrefixMap("Transition", "TransitionEnd")
+    };
+    if (domSupport) {
+        if (!("AnimationEvent" in win)) delete prefixes.animationend.animation;
+        if (!("TransitionEvent" in win)) delete prefixes.transitionend.transition;
+    }
+    return prefixes;
+}
+var vendorPrefixes = getVendorPrefixes((0, _canUseDomDefault.default)(), typeof window !== "undefined" ? window : {});
+var style = {};
+if ((0, _canUseDomDefault.default)()) {
+    var _document$createEleme = document.createElement("div");
+    style = _document$createEleme.style;
+}
+var prefixedEventNames = {};
+function getVendorPrefixedEventName(eventName) {
+    if (prefixedEventNames[eventName]) return prefixedEventNames[eventName];
+    var prefixMap = vendorPrefixes[eventName];
+    if (prefixMap) {
+        var stylePropList = Object.keys(prefixMap);
+        var len = stylePropList.length;
+        for(var i = 0; i < len; i += 1){
+            var styleProp = stylePropList[i];
+            if (Object.prototype.hasOwnProperty.call(prefixMap, styleProp) && styleProp in style) {
+                prefixedEventNames[eventName] = prefixMap[styleProp];
+                return prefixedEventNames[eventName];
+            }
+        }
+    }
+    return "";
+}
+var internalAnimationEndName = getVendorPrefixedEventName("animationend");
+var internalTransitionEndName = getVendorPrefixedEventName("transitionend");
+var supportTransition = !!(internalAnimationEndName && internalTransitionEndName);
+var animationEndName = internalAnimationEndName || "animationend";
+var transitionEndName = internalTransitionEndName || "transitionend";
+function getTransitionName(transitionName, transitionType) {
+    if (!transitionName) return null;
+    if ((0, _typeofDefault.default)(transitionName) === "object") {
+        var type = transitionType.replace(/-\w/g, function(match) {
+            return match[1].toUpperCase();
+        });
+        return transitionName[type];
+    }
+    return "".concat(transitionName, "-").concat(transitionType);
+}
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","rc-util/es/Dom/canUseDom":"hGxAQ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9BsoX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _react = require("react");
+// It's safe to use `useLayoutEffect` but the warning is annoying
+var useIsomorphicLayoutEffect = (0, _canUseDomDefault.default)() ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
+exports.default = useIsomorphicLayoutEffect;
+
+},{"rc-util/es/Dom/canUseDom":"hGxAQ","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"rtL52":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SkipStep", ()=>SkipStep);
+parcelHelpers.export(exports, "DoStep", ()=>DoStep);
+parcelHelpers.export(exports, "isActive", ()=>isActive);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _useState = require("rc-util/es/hooks/useState");
+var _useStateDefault = parcelHelpers.interopDefault(_useState);
+var _react = require("react");
+var _interface = require("../interface");
+var _useIsomorphicLayoutEffect = require("./useIsomorphicLayoutEffect");
+var _useIsomorphicLayoutEffectDefault = parcelHelpers.interopDefault(_useIsomorphicLayoutEffect);
+var _useNextFrame = require("./useNextFrame");
+var _useNextFrameDefault = parcelHelpers.interopDefault(_useNextFrame);
+var FULL_STEP_QUEUE = [
+    (0, _interface.STEP_PREPARE),
+    (0, _interface.STEP_START),
+    (0, _interface.STEP_ACTIVE),
+    (0, _interface.STEP_ACTIVATED)
+];
+var SIMPLE_STEP_QUEUE = [
+    (0, _interface.STEP_PREPARE),
+    (0, _interface.STEP_PREPARED)
+];
+var SkipStep = false;
+var DoStep = true;
+function isActive(step) {
+    return step === (0, _interface.STEP_ACTIVE) || step === (0, _interface.STEP_ACTIVATED);
+}
+exports.default = function(status, prepareOnly, callback) {
+    var _useState = (0, _useStateDefault.default)((0, _interface.STEP_NONE)), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), step = _useState2[0], setStep = _useState2[1];
+    var _useNextFrame = (0, _useNextFrameDefault.default)(), _useNextFrame2 = (0, _slicedToArrayDefault.default)(_useNextFrame, 2), nextFrame = _useNextFrame2[0], cancelNextFrame = _useNextFrame2[1];
+    function startQueue() {
+        setStep((0, _interface.STEP_PREPARE), true);
+    }
+    var STEP_QUEUE = prepareOnly ? SIMPLE_STEP_QUEUE : FULL_STEP_QUEUE;
+    (0, _useIsomorphicLayoutEffectDefault.default)(function() {
+        if (step !== (0, _interface.STEP_NONE) && step !== (0, _interface.STEP_ACTIVATED)) {
+            var index = STEP_QUEUE.indexOf(step);
+            var nextStep = STEP_QUEUE[index + 1];
+            var result = callback(step);
+            if (result === SkipStep) // Skip when no needed
+            setStep(nextStep, true);
+            else if (nextStep) // Do as frame for step update
+            nextFrame(function(info) {
+                function doNext() {
+                    // Skip since current queue is ood
+                    if (info.isCanceled()) return;
+                    setStep(nextStep, true);
+                }
+                if (result === true) doNext();
+                else // Only promise should be async
+                Promise.resolve(result).then(doNext);
+            });
+        }
+    }, [
+        status,
+        step
+    ]);
+    _react.useEffect(function() {
+        return function() {
+            cancelNextFrame();
+        };
+    }, []);
+    return [
+        startQueue,
+        step
+    ];
+};
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/hooks/useState":"4KG3w","react":"21dqq","../interface":"kvRO0","./useIsomorphicLayoutEffect":"9BsoX","./useNextFrame":"7ceka","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7ceka":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _react = require("react");
+exports.default = function() {
+    var nextFrameRef = _react.useRef(null);
+    function cancelNextFrame() {
+        (0, _rafDefault.default).cancel(nextFrameRef.current);
+    }
+    function nextFrame(callback) {
+        var delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
+        cancelNextFrame();
+        var nextFrameId = (0, _rafDefault.default)(function() {
+            if (delay <= 1) callback({
+                isCanceled: function isCanceled() {
+                    return nextFrameId !== nextFrameRef.current;
+                }
+            });
+            else nextFrame(callback, delay - 1);
+        });
+        nextFrameRef.current = nextFrameId;
+    }
+    _react.useEffect(function() {
+        return function() {
+            cancelNextFrame();
+        };
+    }, []);
+    return [
+        nextFrame,
+        cancelNextFrame
+    ];
+};
+
+},{"rc-util/es/raf":"7OvWw","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7OvWw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var raf = function raf(callback) {
+    return +setTimeout(callback, 16);
+};
+var caf = function caf(num) {
+    return clearTimeout(num);
+};
+if (typeof window !== "undefined" && "requestAnimationFrame" in window) {
+    raf = function raf(callback) {
+        return window.requestAnimationFrame(callback);
+    };
+    caf = function caf(handle) {
+        return window.cancelAnimationFrame(handle);
+    };
+}
+var rafUUID = 0;
+var rafIds = new Map();
+function cleanup(id) {
+    rafIds.delete(id);
+}
+var wrapperRaf = function wrapperRaf(callback) {
+    var times = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+    rafUUID += 1;
+    var id = rafUUID;
+    function callRef(leftTimes) {
+        if (leftTimes === 0) {
+            // Clean up
+            cleanup(id);
+            // Trigger
+            callback();
+        } else {
+            // Next raf
+            var realId = raf(function() {
+                callRef(leftTimes - 1);
+            });
+            // Bind real raf id
+            rafIds.set(id, realId);
+        }
+    }
+    callRef(times);
+    return id;
+};
+wrapperRaf.cancel = function(id) {
+    var realId = rafIds.get(id);
+    cleanup(id);
+    return caf(realId);
+};
+wrapperRaf.ids = function() {
+    return rafIds;
+};
+exports.default = wrapperRaf;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4mrHS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Generate a CSSMotionList component with config
+ * @param transitionSupport No need since CSSMotionList no longer depends on transition support
+ * @param CSSMotion CSSMotion component
+ */ parcelHelpers.export(exports, "genCSSMotionList", ()=>genCSSMotionList);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _assertThisInitialized = require("@babel/runtime/helpers/esm/assertThisInitialized");
+var _assertThisInitializedDefault = parcelHelpers.interopDefault(_assertThisInitialized);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _createSuper = require("@babel/runtime/helpers/esm/createSuper");
+var _createSuperDefault = parcelHelpers.interopDefault(_createSuper);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+/* eslint react/prop-types: 0 */ var _react = require("react");
+var _cssmotion = require("./CSSMotion");
+var _cssmotionDefault = parcelHelpers.interopDefault(_cssmotion);
+var _diff = require("./util/diff");
+var _motion = require("./util/motion");
+var _excluded = [
+    "component",
+    "children",
+    "onVisibleChanged",
+    "onAllRemoved"
+], _excluded2 = [
+    "status"
+];
+var MOTION_PROP_NAMES = [
+    "eventProps",
+    "visible",
+    "children",
+    "motionName",
+    "motionAppear",
+    "motionEnter",
+    "motionLeave",
+    "motionLeaveImmediately",
+    "motionDeadline",
+    "removeOnLeave",
+    "leavedClassName",
+    "onAppearPrepare",
+    "onAppearStart",
+    "onAppearActive",
+    "onAppearEnd",
+    "onEnterStart",
+    "onEnterActive",
+    "onEnterEnd",
+    "onLeaveStart",
+    "onLeaveActive",
+    "onLeaveEnd"
+];
+function genCSSMotionList(transitionSupport) {
+    var CSSMotion = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : (0, _cssmotionDefault.default);
+    var CSSMotionList = /*#__PURE__*/ function(_React$Component) {
+        (0, _inheritsDefault.default)(CSSMotionList, _React$Component);
+        var _super = (0, _createSuperDefault.default)(CSSMotionList);
+        function CSSMotionList() {
+            var _this;
+            (0, _classCallCheckDefault.default)(this, CSSMotionList);
+            for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+            _this = _super.call.apply(_super, [
+                this
+            ].concat(args));
+            (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "state", {
+                keyEntities: []
+            });
+            // ZombieJ: Return the count of rest keys. It's safe to refactor if need more info.
+            (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "removeKey", function(removeKey) {
+                var keyEntities = _this.state.keyEntities;
+                var nextKeyEntities = keyEntities.map(function(entity) {
+                    if (entity.key !== removeKey) return entity;
+                    return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, entity), {}, {
+                        status: (0, _diff.STATUS_REMOVED)
+                    });
+                });
+                _this.setState({
+                    keyEntities: nextKeyEntities
+                });
+                return nextKeyEntities.filter(function(_ref) {
+                    var status = _ref.status;
+                    return status !== (0, _diff.STATUS_REMOVED);
+                }).length;
+            });
+            return _this;
+        }
+        (0, _createClassDefault.default)(CSSMotionList, [
+            {
+                key: "render",
+                value: function render() {
+                    var _this2 = this;
+                    var keyEntities = this.state.keyEntities;
+                    var _this$props = this.props, component = _this$props.component, children = _this$props.children, _onVisibleChanged = _this$props.onVisibleChanged, onAllRemoved = _this$props.onAllRemoved, restProps = (0, _objectWithoutPropertiesDefault.default)(_this$props, _excluded);
+                    var Component = component || _react.Fragment;
+                    var motionProps = {};
+                    MOTION_PROP_NAMES.forEach(function(prop) {
+                        motionProps[prop] = restProps[prop];
+                        delete restProps[prop];
+                    });
+                    delete restProps.keys;
+                    return /*#__PURE__*/ _react.createElement(Component, restProps, keyEntities.map(function(_ref2, index) {
+                        var status = _ref2.status, eventProps = (0, _objectWithoutPropertiesDefault.default)(_ref2, _excluded2);
+                        var visible = status === (0, _diff.STATUS_ADD) || status === (0, _diff.STATUS_KEEP);
+                        return /*#__PURE__*/ _react.createElement(CSSMotion, (0, _extendsDefault.default)({}, motionProps, {
+                            key: eventProps.key,
+                            visible: visible,
+                            eventProps: eventProps,
+                            onVisibleChanged: function onVisibleChanged(changedVisible) {
+                                _onVisibleChanged === null || _onVisibleChanged === void 0 || _onVisibleChanged(changedVisible, {
+                                    key: eventProps.key
+                                });
+                                if (!changedVisible) {
+                                    var restKeysCount = _this2.removeKey(eventProps.key);
+                                    if (restKeysCount === 0 && onAllRemoved) onAllRemoved();
+                                }
+                            }
+                        }), function(props, ref) {
+                            return children((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, props), {}, {
+                                index: index
+                            }), ref);
+                        });
+                    }));
+                }
+            }
+        ], [
+            {
+                key: "getDerivedStateFromProps",
+                value: function getDerivedStateFromProps(_ref3, _ref4) {
+                    var keys = _ref3.keys;
+                    var keyEntities = _ref4.keyEntities;
+                    var parsedKeyObjects = (0, _diff.parseKeys)(keys);
+                    var mixedKeyEntities = (0, _diff.diffKeys)(keyEntities, parsedKeyObjects);
+                    return {
+                        keyEntities: mixedKeyEntities.filter(function(entity) {
+                            var prevEntity = keyEntities.find(function(_ref5) {
+                                var key = _ref5.key;
+                                return entity.key === key;
+                            });
+                            // Remove if already mark as removed
+                            if (prevEntity && prevEntity.status === (0, _diff.STATUS_REMOVED) && entity.status === (0, _diff.STATUS_REMOVE)) return false;
+                            return true;
+                        })
+                    };
+                }
+            }
+        ]);
+        return CSSMotionList;
+    }(_react.Component);
+    (0, _definePropertyDefault.default)(CSSMotionList, "defaultProps", {
+        component: "div"
+    });
+    return CSSMotionList;
+}
+exports.default = genCSSMotionList((0, _motion.supportTransition));
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/assertThisInitialized":"iy3su","@babel/runtime/helpers/esm/inherits":"drFw3","@babel/runtime/helpers/esm/createSuper":"hp3mc","@babel/runtime/helpers/esm/defineProperty":"hbmCA","react":"21dqq","./CSSMotion":"4OSHS","./util/diff":"3KXPu","./util/motion":"g9oPX","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3KXPu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "STATUS_ADD", ()=>STATUS_ADD);
+parcelHelpers.export(exports, "STATUS_KEEP", ()=>STATUS_KEEP);
+parcelHelpers.export(exports, "STATUS_REMOVE", ()=>STATUS_REMOVE);
+parcelHelpers.export(exports, "STATUS_REMOVED", ()=>STATUS_REMOVED);
+parcelHelpers.export(exports, "wrapKeyToObject", ()=>wrapKeyToObject);
+parcelHelpers.export(exports, "parseKeys", ()=>parseKeys);
+parcelHelpers.export(exports, "diffKeys", ()=>diffKeys);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var STATUS_ADD = "add";
+var STATUS_KEEP = "keep";
+var STATUS_REMOVE = "remove";
+var STATUS_REMOVED = "removed";
+function wrapKeyToObject(key) {
+    var keyObj;
+    if (key && (0, _typeofDefault.default)(key) === "object" && "key" in key) keyObj = key;
+    else keyObj = {
+        key: key
+    };
+    return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, keyObj), {}, {
+        key: String(keyObj.key)
+    });
+}
+function parseKeys() {
+    var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    return keys.map(wrapKeyToObject);
+}
+function diffKeys() {
+    var prevKeys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var currentKeys = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var list = [];
+    var currentIndex = 0;
+    var currentLen = currentKeys.length;
+    var prevKeyObjects = parseKeys(prevKeys);
+    var currentKeyObjects = parseKeys(currentKeys);
+    // Check prev keys to insert or keep
+    prevKeyObjects.forEach(function(keyObj) {
+        var hit = false;
+        for(var i = currentIndex; i < currentLen; i += 1){
+            var currentKeyObj = currentKeyObjects[i];
+            if (currentKeyObj.key === keyObj.key) {
+                // New added keys should add before current key
+                if (currentIndex < i) {
+                    list = list.concat(currentKeyObjects.slice(currentIndex, i).map(function(obj) {
+                        return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, obj), {}, {
+                            status: STATUS_ADD
+                        });
+                    }));
+                    currentIndex = i;
+                }
+                list.push((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, currentKeyObj), {}, {
+                    status: STATUS_KEEP
+                }));
+                currentIndex += 1;
+                hit = true;
+                break;
+            }
+        }
+        // If not hit, it means key is removed
+        if (!hit) list.push((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, keyObj), {}, {
+            status: STATUS_REMOVE
+        }));
+    });
+    // Add rest to the list
+    if (currentIndex < currentLen) list = list.concat(currentKeyObjects.slice(currentIndex).map(function(obj) {
+        return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, obj), {}, {
+            status: STATUS_ADD
+        });
+    }));
+    /**
+   * Merge same key when it remove and add again:
+   *    [1 - add, 2 - keep, 1 - remove] -> [1 - keep, 2 - keep]
+   */ var keys = {};
+    list.forEach(function(_ref) {
+        var key = _ref.key;
+        keys[key] = (keys[key] || 0) + 1;
+    });
+    var duplicatedKeys = Object.keys(keys).filter(function(key) {
+        return keys[key] > 1;
+    });
+    duplicatedKeys.forEach(function(matchKey) {
+        // Remove `STATUS_REMOVE` node.
+        list = list.filter(function(_ref2) {
+            var key = _ref2.key, status = _ref2.status;
+            return key !== matchKey || status !== STATUS_REMOVE;
+        });
+        // Update `STATUS_ADD` to `STATUS_KEEP`
+        list.forEach(function(node) {
+            if (node.key === matchKey) // eslint-disable-next-line no-param-reassign
+            node.status = STATUS_KEEP;
+        });
+    });
+    return list;
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3Rd4d":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _warning = require("../_util/warning");
+"use client";
+/**
+ * Warning for ConfigProviderProps.
+ * This will be empty function in production.
+ */ const PropWarning = /*#__PURE__*/ _react.memo((_ref)=>{
+    let { dropdownMatchSelectWidth } = _ref;
+    const warning = (0, _warning.devUseWarning)("ConfigProvider");
+    warning.deprecated(dropdownMatchSelectWidth === undefined, "dropdownMatchSelectWidth", "popupMatchSelectWidth");
+    return null;
+});
+PropWarning.displayName = "PropWarning";
+exports.default = PropWarning;
+
+},{"react":"21dqq","../_util/warning":"daUrm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gQ7sB":[function(require,module,exports) {
+// eslint-disable-next-line no-restricted-exports
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>(0, _internal.useResetIconStyle));
+var _internal = require("../../theme/internal");
+
+},{"../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"daQoa":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sizeContext = require("../SizeContext");
+var _sizeContextDefault = parcelHelpers.interopDefault(_sizeContext);
+const useSize = (customSize)=>{
+    const size = (0, _reactDefault.default).useContext((0, _sizeContextDefault.default));
+    const mergedSize = (0, _reactDefault.default).useMemo(()=>{
+        if (!customSize) return size;
+        if (typeof customSize === "string") return customSize !== null && customSize !== void 0 ? customSize : size;
+        if (customSize instanceof Function) return customSize(size);
+        return size;
+    }, [
+        customSize,
+        size
+    ]);
+    return mergedSize;
+};
+exports.default = useSize;
+
+},{"react":"21dqq","../SizeContext":"kxcXW","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lppaB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _skeleton = require("./Skeleton");
+var _skeletonDefault = parcelHelpers.interopDefault(_skeleton);
+"use client";
+exports.default = (0, _skeletonDefault.default);
+
+},{"./Skeleton":"1Cq0R","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1Cq0R":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _configProvider = require("../config-provider");
+var _avatar = require("./Avatar");
+var _avatarDefault = parcelHelpers.interopDefault(_avatar);
+var _button = require("./Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _element = require("./Element");
+var _elementDefault = parcelHelpers.interopDefault(_element);
+var _image = require("./Image");
+var _imageDefault = parcelHelpers.interopDefault(_image);
+var _input = require("./Input");
+var _inputDefault = parcelHelpers.interopDefault(_input);
+var _node = require("./Node");
+var _nodeDefault = parcelHelpers.interopDefault(_node);
+var _paragraph = require("./Paragraph");
+var _paragraphDefault = parcelHelpers.interopDefault(_paragraph);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+var _title = require("./Title");
+var _titleDefault = parcelHelpers.interopDefault(_title);
+"use client";
+function getComponentProps(prop) {
+    if (prop && typeof prop === "object") return prop;
+    return {};
+}
+function getAvatarBasicProps(hasTitle, hasParagraph) {
+    if (hasTitle && !hasParagraph) // Square avatar
+    return {
+        size: "large",
+        shape: "square"
+    };
+    return {
+        size: "large",
+        shape: "circle"
+    };
+}
+function getTitleBasicProps(hasAvatar, hasParagraph) {
+    if (!hasAvatar && hasParagraph) return {
+        width: "38%"
+    };
+    if (hasAvatar && hasParagraph) return {
+        width: "50%"
+    };
+    return {};
+}
+function getParagraphBasicProps(hasAvatar, hasTitle) {
+    const basicProps = {};
+    // Width
+    if (!hasAvatar || !hasTitle) basicProps.width = "61%";
+    // Rows
+    if (!hasAvatar && hasTitle) basicProps.rows = 3;
+    else basicProps.rows = 2;
+    return basicProps;
+}
+const Skeleton = (props)=>{
+    const { prefixCls: customizePrefixCls, loading, className, rootClassName, style, children, avatar = false, title = true, paragraph = true, active, round } = props;
+    const { getPrefixCls, direction, skeleton } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("skeleton", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    if (loading || !("loading" in props)) {
+        const hasAvatar = !!avatar;
+        const hasTitle = !!title;
+        const hasParagraph = !!paragraph;
+        // Avatar
+        let avatarNode;
+        if (hasAvatar) {
+            const avatarProps = Object.assign(Object.assign({
+                prefixCls: `${prefixCls}-avatar`
+            }, getAvatarBasicProps(hasTitle, hasParagraph)), getComponentProps(avatar));
+            // We direct use SkeletonElement as avatar in skeleton internal.
+            avatarNode = /*#__PURE__*/ _react.createElement("div", {
+                className: `${prefixCls}-header`
+            }, /*#__PURE__*/ _react.createElement((0, _elementDefault.default), Object.assign({}, avatarProps)));
+        }
+        let contentNode;
+        if (hasTitle || hasParagraph) {
+            // Title
+            let $title;
+            if (hasTitle) {
+                const titleProps = Object.assign(Object.assign({
+                    prefixCls: `${prefixCls}-title`
+                }, getTitleBasicProps(hasAvatar, hasParagraph)), getComponentProps(title));
+                $title = /*#__PURE__*/ _react.createElement((0, _titleDefault.default), Object.assign({}, titleProps));
+            }
+            // Paragraph
+            let paragraphNode;
+            if (hasParagraph) {
+                const paragraphProps = Object.assign(Object.assign({
+                    prefixCls: `${prefixCls}-paragraph`
+                }, getParagraphBasicProps(hasAvatar, hasTitle)), getComponentProps(paragraph));
+                paragraphNode = /*#__PURE__*/ _react.createElement((0, _paragraphDefault.default), Object.assign({}, paragraphProps));
+            }
+            contentNode = /*#__PURE__*/ _react.createElement("div", {
+                className: `${prefixCls}-content`
+            }, $title, paragraphNode);
+        }
+        const cls = (0, _classnamesDefault.default)(prefixCls, {
+            [`${prefixCls}-with-avatar`]: hasAvatar,
+            [`${prefixCls}-active`]: active,
+            [`${prefixCls}-rtl`]: direction === "rtl",
+            [`${prefixCls}-round`]: round
+        }, skeleton === null || skeleton === void 0 ? void 0 : skeleton.className, className, rootClassName, hashId, cssVarCls);
+        return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", {
+            className: cls,
+            style: Object.assign(Object.assign({}, skeleton === null || skeleton === void 0 ? void 0 : skeleton.style), style)
+        }, avatarNode, contentNode));
+    }
+    return children !== null && children !== void 0 ? children : null;
+};
+Skeleton.Button = (0, _buttonDefault.default);
+Skeleton.Avatar = (0, _avatarDefault.default);
+Skeleton.Input = (0, _inputDefault.default);
+Skeleton.Image = (0, _imageDefault.default);
+Skeleton.Node = (0, _nodeDefault.default);
+Skeleton.displayName = "Skeleton";
+exports.default = Skeleton;
+
+},{"react":"21dqq","classnames":"jocGM","../config-provider":"iMraF","./Avatar":"hq2V2","./Button":"g7Wcl","./Element":"9TJ3B","./Image":"cTHeH","./Input":"gcg0E","./Node":"fHbku","./Paragraph":"jW3zS","./style":"5YZ32","./Title":"fK4dH","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hq2V2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _configProvider = require("../config-provider");
+var _element = require("./Element");
+var _elementDefault = parcelHelpers.interopDefault(_element);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+const SkeletonAvatar = (props)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, active, shape = "circle", size = "default" } = props;
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("skeleton", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const otherProps = (0, _omitDefault.default)(props, [
+        "prefixCls",
+        "className"
+    ]);
+    const cls = (0, _classnamesDefault.default)(prefixCls, `${prefixCls}-element`, {
+        [`${prefixCls}-active`]: active
+    }, className, rootClassName, hashId, cssVarCls);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", {
+        className: cls
+    }, /*#__PURE__*/ _react.createElement((0, _elementDefault.default), Object.assign({
+        prefixCls: `${prefixCls}-avatar`,
+        shape: shape,
+        size: size
+    }, otherProps))));
+};
+exports.default = SkeletonAvatar;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","../config-provider":"iMraF","./Element":"9TJ3B","./style":"5YZ32","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9TJ3B":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+"use client";
+const Element = (props)=>{
+    const { prefixCls, className, style, size, shape } = props;
+    const sizeCls = (0, _classnamesDefault.default)({
+        [`${prefixCls}-lg`]: size === "large",
+        [`${prefixCls}-sm`]: size === "small"
+    });
+    const shapeCls = (0, _classnamesDefault.default)({
+        [`${prefixCls}-circle`]: shape === "circle",
+        [`${prefixCls}-square`]: shape === "square",
+        [`${prefixCls}-round`]: shape === "round"
+    });
+    const sizeStyle = _react.useMemo(()=>typeof size === "number" ? {
+            width: size,
+            height: size,
+            lineHeight: `${size}px`
+        } : {}, [
+        size
+    ]);
+    return /*#__PURE__*/ _react.createElement("span", {
+        className: (0, _classnamesDefault.default)(prefixCls, sizeCls, shapeCls, className),
+        style: Object.assign(Object.assign({}, sizeStyle), style)
+    });
+};
+exports.default = Element;
+
+},{"react":"21dqq","classnames":"jocGM","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5YZ32":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "prepareComponentToken", ()=>prepareComponentToken);
+var _cssinjs = require("@ant-design/cssinjs");
+var _internal = require("../../theme/internal");
+const skeletonClsLoading = new (0, _cssinjs.Keyframes)(`ant-skeleton-loading`, {
+    "0%": {
+        backgroundPosition: "100% 50%"
+    },
+    "100%": {
+        backgroundPosition: "0 50%"
+    }
+});
+const genSkeletonElementCommonSize = (size)=>({
+        height: size,
+        lineHeight: (0, _cssinjs.unit)(size)
+    });
+const genSkeletonElementAvatarSize = (size)=>Object.assign({
+        width: size
+    }, genSkeletonElementCommonSize(size));
+const genSkeletonColor = (token)=>({
+        background: token.skeletonLoadingBackground,
+        backgroundSize: "400% 100%",
+        animationName: skeletonClsLoading,
+        animationDuration: token.skeletonLoadingMotionDuration,
+        animationTimingFunction: "ease",
+        animationIterationCount: "infinite"
+    });
+const genSkeletonElementInputSize = (size, calc)=>Object.assign({
+        width: calc(size).mul(5).equal(),
+        minWidth: calc(size).mul(5).equal()
+    }, genSkeletonElementCommonSize(size));
+const genSkeletonElementAvatar = (token)=>{
+    const { skeletonAvatarCls, gradientFromColor, controlHeight, controlHeightLG, controlHeightSM } = token;
+    return {
+        [`${skeletonAvatarCls}`]: Object.assign({
+            display: "inline-block",
+            verticalAlign: "top",
+            background: gradientFromColor
+        }, genSkeletonElementAvatarSize(controlHeight)),
+        [`${skeletonAvatarCls}${skeletonAvatarCls}-circle`]: {
+            borderRadius: "50%"
+        },
+        [`${skeletonAvatarCls}${skeletonAvatarCls}-lg`]: Object.assign({}, genSkeletonElementAvatarSize(controlHeightLG)),
+        [`${skeletonAvatarCls}${skeletonAvatarCls}-sm`]: Object.assign({}, genSkeletonElementAvatarSize(controlHeightSM))
+    };
+};
+const genSkeletonElementInput = (token)=>{
+    const { controlHeight, borderRadiusSM, skeletonInputCls, controlHeightLG, controlHeightSM, gradientFromColor, calc } = token;
+    return {
+        [`${skeletonInputCls}`]: Object.assign({
+            display: "inline-block",
+            verticalAlign: "top",
+            background: gradientFromColor,
+            borderRadius: borderRadiusSM
+        }, genSkeletonElementInputSize(controlHeight, calc)),
+        [`${skeletonInputCls}-lg`]: Object.assign({}, genSkeletonElementInputSize(controlHeightLG, calc)),
+        [`${skeletonInputCls}-sm`]: Object.assign({}, genSkeletonElementInputSize(controlHeightSM, calc))
+    };
+};
+const genSkeletonElementImageSize = (size)=>Object.assign({
+        width: size
+    }, genSkeletonElementCommonSize(size));
+const genSkeletonElementImage = (token)=>{
+    const { skeletonImageCls, imageSizeBase, gradientFromColor, borderRadiusSM, calc } = token;
+    return {
+        [`${skeletonImageCls}`]: Object.assign(Object.assign({
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            verticalAlign: "top",
+            background: gradientFromColor,
+            borderRadius: borderRadiusSM
+        }, genSkeletonElementImageSize(calc(imageSizeBase).mul(2).equal())), {
+            [`${skeletonImageCls}-path`]: {
+                fill: "#bfbfbf"
+            },
+            [`${skeletonImageCls}-svg`]: Object.assign(Object.assign({}, genSkeletonElementImageSize(imageSizeBase)), {
+                maxWidth: calc(imageSizeBase).mul(4).equal(),
+                maxHeight: calc(imageSizeBase).mul(4).equal()
+            }),
+            [`${skeletonImageCls}-svg${skeletonImageCls}-svg-circle`]: {
+                borderRadius: "50%"
+            }
+        }),
+        [`${skeletonImageCls}${skeletonImageCls}-circle`]: {
+            borderRadius: "50%"
+        }
+    };
+};
+const genSkeletonElementButtonShape = (token, size, buttonCls)=>{
+    const { skeletonButtonCls } = token;
+    return {
+        [`${buttonCls}${skeletonButtonCls}-circle`]: {
+            width: size,
+            minWidth: size,
+            borderRadius: "50%"
+        },
+        [`${buttonCls}${skeletonButtonCls}-round`]: {
+            borderRadius: size
+        }
+    };
+};
+const genSkeletonElementButtonSize = (size, calc)=>Object.assign({
+        width: calc(size).mul(2).equal(),
+        minWidth: calc(size).mul(2).equal()
+    }, genSkeletonElementCommonSize(size));
+const genSkeletonElementButton = (token)=>{
+    const { borderRadiusSM, skeletonButtonCls, controlHeight, controlHeightLG, controlHeightSM, gradientFromColor, calc } = token;
+    return Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({
+        [`${skeletonButtonCls}`]: Object.assign({
+            display: "inline-block",
+            verticalAlign: "top",
+            background: gradientFromColor,
+            borderRadius: borderRadiusSM,
+            width: calc(controlHeight).mul(2).equal(),
+            minWidth: calc(controlHeight).mul(2).equal()
+        }, genSkeletonElementButtonSize(controlHeight, calc))
+    }, genSkeletonElementButtonShape(token, controlHeight, skeletonButtonCls)), {
+        [`${skeletonButtonCls}-lg`]: Object.assign({}, genSkeletonElementButtonSize(controlHeightLG, calc))
+    }), genSkeletonElementButtonShape(token, controlHeightLG, `${skeletonButtonCls}-lg`)), {
+        [`${skeletonButtonCls}-sm`]: Object.assign({}, genSkeletonElementButtonSize(controlHeightSM, calc))
+    }), genSkeletonElementButtonShape(token, controlHeightSM, `${skeletonButtonCls}-sm`));
+};
+// =============================== Base ===============================
+const genBaseStyle = (token)=>{
+    const { componentCls, skeletonAvatarCls, skeletonTitleCls, skeletonParagraphCls, skeletonButtonCls, skeletonInputCls, skeletonImageCls, controlHeight, controlHeightLG, controlHeightSM, gradientFromColor, padding, marginSM, borderRadius, titleHeight, blockRadius, paragraphLiHeight, controlHeightXS, paragraphMarginTop } = token;
+    return {
+        [`${componentCls}`]: {
+            display: "table",
+            width: "100%",
+            [`${componentCls}-header`]: {
+                display: "table-cell",
+                paddingInlineEnd: padding,
+                verticalAlign: "top",
+                // Avatar
+                [`${skeletonAvatarCls}`]: Object.assign({
+                    display: "inline-block",
+                    verticalAlign: "top",
+                    background: gradientFromColor
+                }, genSkeletonElementAvatarSize(controlHeight)),
+                [`${skeletonAvatarCls}-circle`]: {
+                    borderRadius: "50%"
+                },
+                [`${skeletonAvatarCls}-lg`]: Object.assign({}, genSkeletonElementAvatarSize(controlHeightLG)),
+                [`${skeletonAvatarCls}-sm`]: Object.assign({}, genSkeletonElementAvatarSize(controlHeightSM))
+            },
+            [`${componentCls}-content`]: {
+                display: "table-cell",
+                width: "100%",
+                verticalAlign: "top",
+                // Title
+                [`${skeletonTitleCls}`]: {
+                    width: "100%",
+                    height: titleHeight,
+                    background: gradientFromColor,
+                    borderRadius: blockRadius,
+                    [`+ ${skeletonParagraphCls}`]: {
+                        marginBlockStart: controlHeightSM
+                    }
+                },
+                // paragraph
+                [`${skeletonParagraphCls}`]: {
+                    padding: 0,
+                    "> li": {
+                        width: "100%",
+                        height: paragraphLiHeight,
+                        listStyle: "none",
+                        background: gradientFromColor,
+                        borderRadius: blockRadius,
+                        "+ li": {
+                            marginBlockStart: controlHeightXS
+                        }
+                    }
+                },
+                [`${skeletonParagraphCls}> li:last-child:not(:first-child):not(:nth-child(2))`]: {
+                    width: "61%"
+                }
+            },
+            [`&-round ${componentCls}-content`]: {
+                [`${skeletonTitleCls}, ${skeletonParagraphCls} > li`]: {
+                    borderRadius
+                }
+            }
+        },
+        [`${componentCls}-with-avatar ${componentCls}-content`]: {
+            // Title
+            [`${skeletonTitleCls}`]: {
+                marginBlockStart: marginSM,
+                [`+ ${skeletonParagraphCls}`]: {
+                    marginBlockStart: paragraphMarginTop
+                }
+            }
+        },
+        // Skeleton element
+        [`${componentCls}${componentCls}-element`]: Object.assign(Object.assign(Object.assign(Object.assign({
+            display: "inline-block",
+            width: "auto"
+        }, genSkeletonElementButton(token)), genSkeletonElementAvatar(token)), genSkeletonElementInput(token)), genSkeletonElementImage(token)),
+        // Skeleton Block Button, Input
+        [`${componentCls}${componentCls}-block`]: {
+            width: "100%",
+            [`${skeletonButtonCls}`]: {
+                width: "100%"
+            },
+            [`${skeletonInputCls}`]: {
+                width: "100%"
+            }
+        },
+        // With active animation
+        [`${componentCls}${componentCls}-active`]: {
+            [`
+        ${skeletonTitleCls},
+        ${skeletonParagraphCls} > li,
+        ${skeletonAvatarCls},
+        ${skeletonButtonCls},
+        ${skeletonInputCls},
+        ${skeletonImageCls}
+      `]: Object.assign({}, genSkeletonColor(token))
+        }
+    };
+};
+const prepareComponentToken = (token)=>{
+    const { colorFillContent, colorFill } = token;
+    const gradientFromColor = colorFillContent;
+    const gradientToColor = colorFill;
+    return {
+        color: gradientFromColor,
+        colorGradientEnd: gradientToColor,
+        gradientFromColor,
+        gradientToColor,
+        titleHeight: token.controlHeight / 2,
+        blockRadius: token.borderRadiusSM,
+        paragraphMarginTop: token.marginLG + token.marginXXS,
+        paragraphLiHeight: token.controlHeight / 2
+    };
+};
+exports.default = (0, _internal.genStyleHooks)("Skeleton", (token)=>{
+    const { componentCls, calc } = token;
+    const skeletonToken = (0, _internal.mergeToken)(token, {
+        skeletonAvatarCls: `${componentCls}-avatar`,
+        skeletonTitleCls: `${componentCls}-title`,
+        skeletonParagraphCls: `${componentCls}-paragraph`,
+        skeletonButtonCls: `${componentCls}-button`,
+        skeletonInputCls: `${componentCls}-input`,
+        skeletonImageCls: `${componentCls}-image`,
+        imageSizeBase: calc(token.controlHeight).mul(1.5).equal(),
+        borderRadius: 100,
+        // Large number to make capsule shape
+        skeletonLoadingBackground: `linear-gradient(90deg, ${token.gradientFromColor} 25%, ${token.gradientToColor} 37%, ${token.gradientFromColor} 63%)`,
+        skeletonLoadingMotionDuration: "1.4s"
+    });
+    return [
+        genBaseStyle(skeletonToken)
+    ];
+}, prepareComponentToken, {
+    deprecatedTokens: [
+        [
+            "color",
+            "gradientFromColor"
+        ],
+        [
+            "colorGradientEnd",
+            "gradientToColor"
+        ]
+    ]
+});
+
+},{"@ant-design/cssinjs":"k46HC","../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g7Wcl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _configProvider = require("../config-provider");
+var _element = require("./Element");
+var _elementDefault = parcelHelpers.interopDefault(_element);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+const SkeletonButton = (props)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, active, block = false, size = "default" } = props;
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("skeleton", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const otherProps = (0, _omitDefault.default)(props, [
+        "prefixCls"
+    ]);
+    const cls = (0, _classnamesDefault.default)(prefixCls, `${prefixCls}-element`, {
+        [`${prefixCls}-active`]: active,
+        [`${prefixCls}-block`]: block
+    }, className, rootClassName, hashId, cssVarCls);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", {
+        className: cls
+    }, /*#__PURE__*/ _react.createElement((0, _elementDefault.default), Object.assign({
+        prefixCls: `${prefixCls}-button`,
+        size: size
+    }, otherProps))));
+};
+exports.default = SkeletonButton;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","../config-provider":"iMraF","./Element":"9TJ3B","./style":"5YZ32","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cTHeH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _configProvider = require("../config-provider");
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+const path = "M365.714286 329.142857q0 45.714286-32.036571 77.677714t-77.677714 32.036571-77.677714-32.036571-32.036571-77.677714 32.036571-77.677714 77.677714-32.036571 77.677714 32.036571 32.036571 77.677714zM950.857143 548.571429l0 256-804.571429 0 0-109.714286 182.857143-182.857143 91.428571 91.428571 292.571429-292.571429zM1005.714286 146.285714l-914.285714 0q-7.460571 0-12.873143 5.412571t-5.412571 12.873143l0 694.857143q0 7.460571 5.412571 12.873143t12.873143 5.412571l914.285714 0q7.460571 0 12.873143-5.412571t5.412571-12.873143l0-694.857143q0-7.460571-5.412571-12.873143t-12.873143-5.412571zM1097.142857 164.571429l0 694.857143q0 37.741714-26.843429 64.585143t-64.585143 26.843429l-914.285714 0q-37.741714 0-64.585143-26.843429t-26.843429-64.585143l0-694.857143q0-37.741714 26.843429-64.585143t64.585143-26.843429l914.285714 0q37.741714 0 64.585143 26.843429t26.843429 64.585143z";
+const SkeletonImage = (props)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, style, active } = props;
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("skeleton", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const cls = (0, _classnamesDefault.default)(prefixCls, `${prefixCls}-element`, {
+        [`${prefixCls}-active`]: active
+    }, className, rootClassName, hashId, cssVarCls);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", {
+        className: cls
+    }, /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)(`${prefixCls}-image`, className),
+        style: style
+    }, /*#__PURE__*/ _react.createElement("svg", {
+        viewBox: "0 0 1098 1024",
+        xmlns: "http://www.w3.org/2000/svg",
+        className: `${prefixCls}-image-svg`
+    }, /*#__PURE__*/ _react.createElement("path", {
+        d: path,
+        className: `${prefixCls}-image-path`
+    })))));
+};
+exports.default = SkeletonImage;
+
+},{"react":"21dqq","classnames":"jocGM","../config-provider":"iMraF","./style":"5YZ32","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gcg0E":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _configProvider = require("../config-provider");
+var _element = require("./Element");
+var _elementDefault = parcelHelpers.interopDefault(_element);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+const SkeletonInput = (props)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, active, block, size = "default" } = props;
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("skeleton", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const otherProps = (0, _omitDefault.default)(props, [
+        "prefixCls"
+    ]);
+    const cls = (0, _classnamesDefault.default)(prefixCls, `${prefixCls}-element`, {
+        [`${prefixCls}-active`]: active,
+        [`${prefixCls}-block`]: block
+    }, className, rootClassName, hashId, cssVarCls);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", {
+        className: cls
+    }, /*#__PURE__*/ _react.createElement((0, _elementDefault.default), Object.assign({
+        prefixCls: `${prefixCls}-input`,
+        size: size
+    }, otherProps))));
+};
+exports.default = SkeletonInput;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","../config-provider":"iMraF","./Element":"9TJ3B","./style":"5YZ32","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fHbku":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _dotChartOutlined = require("@ant-design/icons/es/icons/DotChartOutlined");
+var _dotChartOutlinedDefault = parcelHelpers.interopDefault(_dotChartOutlined);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _configProvider = require("../config-provider");
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+const SkeletonNode = (props)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, style, active, children } = props;
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("skeleton", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const cls = (0, _classnamesDefault.default)(prefixCls, `${prefixCls}-element`, {
+        [`${prefixCls}-active`]: active
+    }, hashId, className, rootClassName, cssVarCls);
+    const content = children !== null && children !== void 0 ? children : /*#__PURE__*/ _react.createElement((0, _dotChartOutlinedDefault.default), null);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", {
+        className: cls
+    }, /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)(`${prefixCls}-image`, className),
+        style: style
+    }, content)));
+};
+exports.default = SkeletonNode;
+
+},{"react":"21dqq","@ant-design/icons/es/icons/DotChartOutlined":"g4aSP","classnames":"jocGM","../config-provider":"iMraF","./style":"5YZ32","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g4aSP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _dotChartOutlined = require("@ant-design/icons-svg/es/asn/DotChartOutlined");
+var _dotChartOutlinedDefault = parcelHelpers.interopDefault(_dotChartOutlined);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var DotChartOutlined = function DotChartOutlined(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _dotChartOutlinedDefault.default)
+    }));
+};
+/**![dot-chart](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjY0IDY0IDg5NiA4OTYiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTg4OCA3OTJIMjAwVjE2OGMwLTQuNC0zLjYtOC04LThoLTU2Yy00LjQgMC04IDMuNi04IDh2Njg4YzAgNC40IDMuNiA4IDggOGg3NTJjNC40IDAgOC0zLjYgOC04di01NmMwLTQuNC0zLjYtOC04LTh6TTI4OCA2MDRhNjQgNjQgMCAxMDEyOCAwIDY0IDY0IDAgMTAtMTI4IDB6bTExOC0yMjRhNDggNDggMCAxMDk2IDAgNDggNDggMCAxMC05NiAwem0xNTggMjI4YTk2IDk2IDAgMTAxOTIgMCA5NiA5NiAwIDEwLTE5MiAwem0xNDgtMzE0YTU2IDU2IDAgMTAxMTIgMCA1NiA1NiAwIDEwLTExMiAweiIgLz48L3N2Zz4=) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(DotChartOutlined);
+RefIcon.displayName = "DotChartOutlined";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/DotChartOutlined":"3S4vI","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3S4vI":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var DotChartOutlined = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM288 604a64 64 0 10128 0 64 64 0 10-128 0zm118-224a48 48 0 1096 0 48 48 0 10-96 0zm158 228a96 96 0 10192 0 96 96 0 10-192 0zm148-314a56 56 0 10112 0 56 56 0 10-112 0z"
+                }
+            }
+        ]
+    },
+    "name": "dot-chart",
+    "theme": "outlined"
+};
+exports.default = DotChartOutlined;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kkong":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _colors = require("@ant-design/colors");
+var _context = require("./Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _iconBase = require("./IconBase");
+var _iconBaseDefault = parcelHelpers.interopDefault(_iconBase);
+var _twoTonePrimaryColor = require("./twoTonePrimaryColor");
+var _utils = require("../utils");
+"use client";
+var _excluded = [
+    "className",
+    "icon",
+    "spin",
+    "rotate",
+    "tabIndex",
+    "onClick",
+    "twoToneColor"
+];
+// Initial setting
+// should move it to antd main repo?
+(0, _twoTonePrimaryColor.setTwoToneColor)((0, _colors.blue).primary);
+// https://github.com/DefinitelyTyped/DefinitelyTyped/issues/34757#issuecomment-488848720
+var Icon = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var className = props.className, icon = props.icon, spin = props.spin, rotate = props.rotate, tabIndex = props.tabIndex, onClick = props.onClick, twoToneColor = props.twoToneColor, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var _React$useContext = _react.useContext((0, _contextDefault.default)), _React$useContext$pre = _React$useContext.prefixCls, prefixCls = _React$useContext$pre === void 0 ? "anticon" : _React$useContext$pre, rootClassName = _React$useContext.rootClassName;
+    var classString = (0, _classnamesDefault.default)(rootClassName, prefixCls, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-").concat(icon.name), !!icon.name), "".concat(prefixCls, "-spin"), !!spin || icon.name === "loading"), className);
+    var iconTabIndex = tabIndex;
+    if (iconTabIndex === undefined && onClick) iconTabIndex = -1;
+    var svgStyle = rotate ? {
+        msTransform: "rotate(".concat(rotate, "deg)"),
+        transform: "rotate(".concat(rotate, "deg)")
+    } : undefined;
+    var _normalizeTwoToneColo = (0, _utils.normalizeTwoToneColors)(twoToneColor), _normalizeTwoToneColo2 = (0, _slicedToArrayDefault.default)(_normalizeTwoToneColo, 2), primaryColor = _normalizeTwoToneColo2[0], secondaryColor = _normalizeTwoToneColo2[1];
+    return /*#__PURE__*/ _react.createElement("span", (0, _extendsDefault.default)({
+        role: "img",
+        "aria-label": icon.name
+    }, restProps, {
+        ref: ref,
+        tabIndex: iconTabIndex,
+        onClick: onClick,
+        className: classString
+    }), /*#__PURE__*/ _react.createElement((0, _iconBaseDefault.default), {
+        icon: icon,
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor,
+        style: svgStyle
+    }));
+});
+Icon.displayName = "AntdIcon";
+Icon.getTwoToneColor = (0, _twoTonePrimaryColor.getTwoToneColor);
+Icon.setTwoToneColor = (0, _twoTonePrimaryColor.setTwoToneColor);
+exports.default = Icon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","@ant-design/colors":"7O27E","./Context":"dIWfS","./IconBase":"beKS9","./twoTonePrimaryColor":"cs45k","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"beKS9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+var _utils = require("../utils");
+var _excluded = [
+    "icon",
+    "className",
+    "onClick",
+    "style",
+    "primaryColor",
+    "secondaryColor"
+];
+var twoToneColorPalette = {
+    primaryColor: "#333",
+    secondaryColor: "#E6E6E6",
+    calculated: false
+};
+function setTwoToneColors(_ref) {
+    var primaryColor = _ref.primaryColor, secondaryColor = _ref.secondaryColor;
+    twoToneColorPalette.primaryColor = primaryColor;
+    twoToneColorPalette.secondaryColor = secondaryColor || (0, _utils.getSecondaryColor)(primaryColor);
+    twoToneColorPalette.calculated = !!secondaryColor;
+}
+function getTwoToneColors() {
+    return (0, _objectSpread2Default.default)({}, twoToneColorPalette);
+}
+var IconBase = function IconBase(props) {
+    var icon = props.icon, className = props.className, onClick = props.onClick, style = props.style, primaryColor = props.primaryColor, secondaryColor = props.secondaryColor, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var svgRef = _react.useRef();
+    var colors = twoToneColorPalette;
+    if (primaryColor) colors = {
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor || (0, _utils.getSecondaryColor)(primaryColor)
+    };
+    (0, _utils.useInsertStyles)(svgRef);
+    (0, _utils.warning)((0, _utils.isIconDefinition)(icon), "icon should be icon definiton, but got ".concat(icon));
+    if (!(0, _utils.isIconDefinition)(icon)) return null;
+    var target = icon;
+    if (target && typeof target.icon === "function") target = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, target), {}, {
+        icon: target.icon(colors.primaryColor, colors.secondaryColor)
+    });
+    return (0, _utils.generate)(target.icon, "svg-".concat(target.name), (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+        className: className,
+        onClick: onClick,
+        style: style,
+        "data-icon": target.name,
+        width: "1em",
+        height: "1em",
+        fill: "currentColor",
+        "aria-hidden": "true"
+    }, restProps), {}, {
+        ref: svgRef
+    }));
+};
+IconBase.displayName = "IconReact";
+IconBase.getTwoToneColors = getTwoToneColors;
+IconBase.setTwoToneColors = setTwoToneColors;
+exports.default = IconBase;
+
+},{"@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aP1dF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "warning", ()=>warning);
+parcelHelpers.export(exports, "isIconDefinition", ()=>isIconDefinition);
+parcelHelpers.export(exports, "normalizeAttrs", ()=>normalizeAttrs);
+parcelHelpers.export(exports, "generate", ()=>generate);
+parcelHelpers.export(exports, "getSecondaryColor", ()=>getSecondaryColor);
+parcelHelpers.export(exports, "normalizeTwoToneColors", ()=>normalizeTwoToneColors);
+parcelHelpers.export(exports, "svgBaseProps", ()=>svgBaseProps);
+parcelHelpers.export(exports, "iconStyles", ()=>iconStyles);
+parcelHelpers.export(exports, "useInsertStyles", ()=>useInsertStyles);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _colors = require("@ant-design/colors");
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _shadow = require("rc-util/es/Dom/shadow");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _context = require("./components/Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+function camelCase(input) {
+    return input.replace(/-(.)/g, function(match, g) {
+        return g.toUpperCase();
+    });
+}
+function warning(valid, message) {
+    (0, _warningDefault.default)(valid, "[@ant-design/icons] ".concat(message));
+}
+function isIconDefinition(target) {
+    return (0, _typeofDefault.default)(target) === "object" && typeof target.name === "string" && typeof target.theme === "string" && ((0, _typeofDefault.default)(target.icon) === "object" || typeof target.icon === "function");
+}
+function normalizeAttrs() {
+    var attrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    return Object.keys(attrs).reduce(function(acc, key) {
+        var val = attrs[key];
+        switch(key){
+            case "class":
+                acc.className = val;
+                delete acc.class;
+                break;
+            default:
+                delete acc[key];
+                acc[camelCase(key)] = val;
+        }
+        return acc;
+    }, {});
+}
+function generate(node, key, rootProps) {
+    if (!rootProps) return /*#__PURE__*/ (0, _reactDefault.default).createElement(node.tag, (0, _objectSpread2Default.default)({
+        key: key
+    }, normalizeAttrs(node.attrs)), (node.children || []).map(function(child, index) {
+        return generate(child, "".concat(key, "-").concat(node.tag, "-").concat(index));
+    }));
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement(node.tag, (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+        key: key
+    }, normalizeAttrs(node.attrs)), rootProps), (node.children || []).map(function(child, index) {
+        return generate(child, "".concat(key, "-").concat(node.tag, "-").concat(index));
+    }));
+}
+function getSecondaryColor(primaryColor) {
+    // choose the second color
+    return (0, _colors.generate)(primaryColor)[0];
+}
+function normalizeTwoToneColors(twoToneColor) {
+    if (!twoToneColor) return [];
+    return Array.isArray(twoToneColor) ? twoToneColor : [
+        twoToneColor
+    ];
+}
+var svgBaseProps = {
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    focusable: "false"
+};
+var iconStyles = "\n.anticon {\n  display: inline-flex;\n  align-items: center;\n  color: inherit;\n  font-style: normal;\n  line-height: 0;\n  text-align: center;\n  text-transform: none;\n  vertical-align: -0.125em;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.anticon > * {\n  line-height: 1;\n}\n\n.anticon svg {\n  display: inline-block;\n}\n\n.anticon::before {\n  display: none;\n}\n\n.anticon .anticon-icon {\n  display: block;\n}\n\n.anticon[tabindex] {\n  cursor: pointer;\n}\n\n.anticon-spin::before,\n.anticon-spin {\n  display: inline-block;\n  -webkit-animation: loadingCircle 1s infinite linear;\n  animation: loadingCircle 1s infinite linear;\n}\n\n@-webkit-keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n";
+var useInsertStyles = function useInsertStyles(eleRef) {
+    var _useContext = (0, _react.useContext)((0, _contextDefault.default)), csp = _useContext.csp, prefixCls = _useContext.prefixCls;
+    var mergedStyleStr = iconStyles;
+    if (prefixCls) mergedStyleStr = mergedStyleStr.replace(/anticon/g, prefixCls);
+    (0, _react.useEffect)(function() {
+        var ele = eleRef.current;
+        var shadowRoot = (0, _shadow.getShadowRoot)(ele);
+        (0, _dynamicCSS.updateCSS)(mergedStyleStr, "@ant-design-icons", {
+            prepend: true,
+            csp: csp,
+            attachTo: shadowRoot
+        });
+    }, []);
+};
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","@ant-design/colors":"7O27E","rc-util/es/Dom/dynamicCSS":"lfei6","rc-util/es/Dom/shadow":"5SLLq","rc-util/es/warning":"c7oua","react":"21dqq","./components/Context":"dIWfS","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5SLLq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Check if is in shadowRoot
+ */ parcelHelpers.export(exports, "inShadow", ()=>inShadow);
+/**
+ * Return shadowRoot if possible
+ */ parcelHelpers.export(exports, "getShadowRoot", ()=>getShadowRoot);
+function getRoot(ele) {
+    var _ele$getRootNode;
+    return ele === null || ele === void 0 || (_ele$getRootNode = ele.getRootNode) === null || _ele$getRootNode === void 0 ? void 0 : _ele$getRootNode.call(ele);
+}
+function inShadow(ele) {
+    return getRoot(ele) instanceof ShadowRoot;
+}
+function getShadowRoot(ele) {
+    return inShadow(ele) ? getRoot(ele) : null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cs45k":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "setTwoToneColor", ()=>setTwoToneColor);
+parcelHelpers.export(exports, "getTwoToneColor", ()=>getTwoToneColor);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _iconBase = require("./IconBase");
+var _iconBaseDefault = parcelHelpers.interopDefault(_iconBase);
+var _utils = require("../utils");
+function setTwoToneColor(twoToneColor) {
+    var _normalizeTwoToneColo = (0, _utils.normalizeTwoToneColors)(twoToneColor), _normalizeTwoToneColo2 = (0, _slicedToArrayDefault.default)(_normalizeTwoToneColo, 2), primaryColor = _normalizeTwoToneColo2[0], secondaryColor = _normalizeTwoToneColo2[1];
+    return (0, _iconBaseDefault.default).setTwoToneColors({
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor
+    });
+}
+function getTwoToneColor() {
+    var colors = (0, _iconBaseDefault.default).getTwoToneColors();
+    if (!colors.calculated) return colors.primaryColor;
+    return [
+        colors.primaryColor,
+        colors.secondaryColor
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","./IconBase":"beKS9","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jW3zS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+"use client";
+const getWidth = (index, props)=>{
+    const { width, rows = 2 } = props;
+    if (Array.isArray(width)) return width[index];
+    // last paragraph
+    if (rows - 1 === index) return width;
+    return undefined;
+};
+const Paragraph = (props)=>{
+    const { prefixCls, className, style, rows } = props;
+    const rowList = (0, _toConsumableArrayDefault.default)(Array(rows)).map((_, index)=>/*#__PURE__*/ // eslint-disable-next-line react/no-array-index-key
+        _react.createElement("li", {
+            key: index,
+            style: {
+                width: getWidth(index, props)
+            }
+        }));
+    return /*#__PURE__*/ _react.createElement("ul", {
+        className: (0, _classnamesDefault.default)(prefixCls, className),
+        style: style
+    }, rowList);
+};
+exports.default = Paragraph;
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","classnames":"jocGM","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fK4dH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/* eslint-disable jsx-a11y/heading-has-content */ var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+"use client";
+const Title = (_ref)=>{
+    let { prefixCls, className, width, style } = _ref;
+    return /*#__PURE__*/ _react.createElement("h3", {
+        className: (0, _classnamesDefault.default)(prefixCls, className),
+        style: Object.assign({
+            width
+        }, style)
+    });
+};
+exports.default = Title;
+
+},{"react":"21dqq","classnames":"jocGM","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"likKM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _closeOutlined = require("@ant-design/icons/es/icons/CloseOutlined");
+var _closeOutlinedDefault = parcelHelpers.interopDefault(_closeOutlined);
+var _ellipsisOutlined = require("@ant-design/icons/es/icons/EllipsisOutlined");
+var _ellipsisOutlinedDefault = parcelHelpers.interopDefault(_ellipsisOutlined);
+var _plusOutlined = require("@ant-design/icons/es/icons/PlusOutlined");
+var _plusOutlinedDefault = parcelHelpers.interopDefault(_plusOutlined);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcTabs = require("rc-tabs");
+var _rcTabsDefault = parcelHelpers.interopDefault(_rcTabs);
+var _warning = require("../_util/warning");
+var _configProvider = require("../config-provider");
+var _useCSSVarCls = require("../config-provider/hooks/useCSSVarCls");
+var _useCSSVarClsDefault = parcelHelpers.interopDefault(_useCSSVarCls);
+var _useSize = require("../config-provider/hooks/useSize");
+var _useSizeDefault = parcelHelpers.interopDefault(_useSize);
+var _useAnimateConfig = require("./hooks/useAnimateConfig");
+var _useAnimateConfigDefault = parcelHelpers.interopDefault(_useAnimateConfig);
+var _useLegacyItems = require("./hooks/useLegacyItems");
+var _useLegacyItemsDefault = parcelHelpers.interopDefault(_useLegacyItems);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+var _tabPane = require("./TabPane");
+var _tabPaneDefault = parcelHelpers.interopDefault(_tabPane);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const Tabs = (props)=>{
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
+    const { type, className, rootClassName, size: customSize, onEdit, hideAdd, centered, addIcon, removeIcon, moreIcon, more, popupClassName, children, items, animated, style, indicatorSize, indicator } = props, otherProps = __rest(props, [
+        "type",
+        "className",
+        "rootClassName",
+        "size",
+        "onEdit",
+        "hideAdd",
+        "centered",
+        "addIcon",
+        "removeIcon",
+        "moreIcon",
+        "more",
+        "popupClassName",
+        "children",
+        "items",
+        "animated",
+        "style",
+        "indicatorSize",
+        "indicator"
+    ]);
+    const { prefixCls: customizePrefixCls } = otherProps;
+    const { direction, tabs, getPrefixCls, getPopupContainer } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("tabs", customizePrefixCls);
+    const rootCls = (0, _useCSSVarClsDefault.default)(prefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls, rootCls);
+    let editable;
+    if (type === "editable-card") editable = {
+        onEdit: (editType, _ref)=>{
+            let { key, event } = _ref;
+            onEdit === null || onEdit === void 0 || onEdit(editType === "add" ? event : key, editType);
+        },
+        removeIcon: (_a = removeIcon !== null && removeIcon !== void 0 ? removeIcon : tabs === null || tabs === void 0 ? void 0 : tabs.removeIcon) !== null && _a !== void 0 ? _a : /*#__PURE__*/ _react.createElement((0, _closeOutlinedDefault.default), null),
+        addIcon: (addIcon !== null && addIcon !== void 0 ? addIcon : tabs === null || tabs === void 0 ? void 0 : tabs.addIcon) || /*#__PURE__*/ _react.createElement((0, _plusOutlinedDefault.default), null),
+        showAdd: hideAdd !== true
+    };
+    const rootPrefixCls = getPrefixCls();
+    {
+        const warning = (0, _warning.devUseWarning)("Tabs");
+        warning(!("onPrevClick" in props) && !("onNextClick" in props), "breaking", "`onPrevClick` and `onNextClick` has been removed. Please use `onTabScroll` instead.");
+        warning(!(indicatorSize || (tabs === null || tabs === void 0 ? void 0 : tabs.indicatorSize)), "deprecated", "`indicatorSize` has been deprecated. Please use `indicator={{ size: ... }}` instead.");
+    }
+    const size = (0, _useSizeDefault.default)(customSize);
+    const mergedItems = (0, _useLegacyItemsDefault.default)(items, children);
+    const mergedAnimated = (0, _useAnimateConfigDefault.default)(prefixCls, animated);
+    const mergedStyle = Object.assign(Object.assign({}, tabs === null || tabs === void 0 ? void 0 : tabs.style), style);
+    const mergedIndicator = {
+        align: (_b = indicator === null || indicator === void 0 ? void 0 : indicator.align) !== null && _b !== void 0 ? _b : (_c = tabs === null || tabs === void 0 ? void 0 : tabs.indicator) === null || _c === void 0 ? void 0 : _c.align,
+        size: (_g = (_e = (_d = indicator === null || indicator === void 0 ? void 0 : indicator.size) !== null && _d !== void 0 ? _d : indicatorSize) !== null && _e !== void 0 ? _e : (_f = tabs === null || tabs === void 0 ? void 0 : tabs.indicator) === null || _f === void 0 ? void 0 : _f.size) !== null && _g !== void 0 ? _g : tabs === null || tabs === void 0 ? void 0 : tabs.indicatorSize
+    };
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement((0, _rcTabsDefault.default), Object.assign({
+        direction: direction,
+        getPopupContainer: getPopupContainer
+    }, otherProps, {
+        items: mergedItems,
+        className: (0, _classnamesDefault.default)({
+            [`${prefixCls}-${size}`]: size,
+            [`${prefixCls}-card`]: [
+                "card",
+                "editable-card"
+            ].includes(type),
+            [`${prefixCls}-editable-card`]: type === "editable-card",
+            [`${prefixCls}-centered`]: centered
+        }, tabs === null || tabs === void 0 ? void 0 : tabs.className, className, rootClassName, hashId, cssVarCls, rootCls),
+        popupClassName: (0, _classnamesDefault.default)(popupClassName, hashId, cssVarCls, rootCls),
+        style: mergedStyle,
+        editable: editable,
+        more: Object.assign({
+            icon: (_l = (_k = (_j = (_h = tabs === null || tabs === void 0 ? void 0 : tabs.more) === null || _h === void 0 ? void 0 : _h.icon) !== null && _j !== void 0 ? _j : tabs === null || tabs === void 0 ? void 0 : tabs.moreIcon) !== null && _k !== void 0 ? _k : moreIcon) !== null && _l !== void 0 ? _l : /*#__PURE__*/ _react.createElement((0, _ellipsisOutlinedDefault.default), null),
+            transitionName: `${rootPrefixCls}-slide-up`
+        }, more),
+        prefixCls: prefixCls,
+        animated: mergedAnimated,
+        indicator: mergedIndicator
+    })));
+};
+Tabs.TabPane = (0, _tabPaneDefault.default);
+Tabs.displayName = "Tabs";
+exports.default = Tabs;
+
+},{"react":"21dqq","@ant-design/icons/es/icons/CloseOutlined":"a9P1C","@ant-design/icons/es/icons/EllipsisOutlined":"dL2S7","@ant-design/icons/es/icons/PlusOutlined":"8zP7i","classnames":"jocGM","rc-tabs":"96uyO","../_util/warning":"daUrm","../config-provider":"iMraF","../config-provider/hooks/useCSSVarCls":"eY64b","../config-provider/hooks/useSize":"daQoa","./hooks/useAnimateConfig":"k5dlJ","./hooks/useLegacyItems":"k3KR1","./style":"2ykvH","./TabPane":"2eqcT","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"a9P1C":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _closeOutlined = require("@ant-design/icons-svg/es/asn/CloseOutlined");
+var _closeOutlinedDefault = parcelHelpers.interopDefault(_closeOutlined);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var CloseOutlined = function CloseOutlined(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _closeOutlinedDefault.default)
+    }));
+};
+/**![close](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdmlld0JveD0iNjQgNjQgODk2IDg5NiIgZm9jdXNhYmxlPSJmYWxzZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNzk5Ljg2IDE2Ni4zMWMuMDIgMCAuMDQuMDIuMDguMDZsNTcuNjkgNTcuN2MuMDQuMDMuMDUuMDUuMDYuMDhhLjEyLjEyIDAgMDEwIC4wNmMwIC4wMy0uMDIuMDUtLjA2LjA5TDU2OS45MyA1MTJsMjg3LjcgMjg3LjdjLjA0LjA0LjA1LjA2LjA2LjA5YS4xMi4xMiAwIDAxMCAuMDdjMCAuMDItLjAyLjA0LS4wNi4wOGwtNTcuNyA1Ny42OWMtLjAzLjA0LS4wNS4wNS0uMDcuMDZhLjEyLjEyIDAgMDEtLjA3IDBjLS4wMyAwLS4wNS0uMDItLjA5LS4wNkw1MTIgNTY5LjkzbC0yODcuNyAyODcuN2MtLjA0LjA0LS4wNi4wNS0uMDkuMDZhLjEyLjEyIDAgMDEtLjA3IDBjLS4wMiAwLS4wNC0uMDItLjA4LS4wNmwtNTcuNjktNTcuN2MtLjA0LS4wMy0uMDUtLjA1LS4wNi0uMDdhLjEyLjEyIDAgMDEwLS4wN2MwLS4wMy4wMi0uMDUuMDYtLjA5TDQ1NC4wNyA1MTJsLTI4Ny43LTI4Ny43Yy0uMDQtLjA0LS4wNS0uMDYtLjA2LS4wOWEuMTIuMTIgMCAwMTAtLjA3YzAtLjAyLjAyLS4wNC4wNi0uMDhsNTcuNy01Ny42OWMuMDMtLjA0LjA1LS4wNS4wNy0uMDZhLjEyLjEyIDAgMDEuMDcgMGMuMDMgMCAuMDUuMDIuMDkuMDZMNTEyIDQ1NC4wN2wyODcuNy0yODcuN2MuMDQtLjA0LjA2LS4wNS4wOS0uMDZhLjEyLjEyIDAgMDEuMDcgMHoiIC8+PC9zdmc+) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(CloseOutlined);
+RefIcon.displayName = "CloseOutlined";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/CloseOutlined":"krP7I","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"krP7I":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var CloseOutlined = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "fill-rule": "evenodd",
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z"
+                }
+            }
+        ]
+    },
+    "name": "close",
+    "theme": "outlined"
+};
+exports.default = CloseOutlined;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dL2S7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _ellipsisOutlined = require("@ant-design/icons-svg/es/asn/EllipsisOutlined");
+var _ellipsisOutlinedDefault = parcelHelpers.interopDefault(_ellipsisOutlined);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var EllipsisOutlined = function EllipsisOutlined(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _ellipsisOutlinedDefault.default)
+    }));
+};
+/**![ellipsis](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjY0IDY0IDg5NiA4OTYiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3NiA1MTFhNTYgNTYgMCAxMDExMiAwIDU2IDU2IDAgMTAtMTEyIDB6bTI4MCAwYTU2IDU2IDAgMTAxMTIgMCA1NiA1NiAwIDEwLTExMiAwem0yODAgMGE1NiA1NiAwIDEwMTEyIDAgNTYgNTYgMCAxMC0xMTIgMHoiIC8+PC9zdmc+) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(EllipsisOutlined);
+RefIcon.displayName = "EllipsisOutlined";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/EllipsisOutlined":"fsoqm","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fsoqm":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var EllipsisOutlined = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"
+                }
+            }
+        ]
+    },
+    "name": "ellipsis",
+    "theme": "outlined"
+};
+exports.default = EllipsisOutlined;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8zP7i":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _plusOutlined = require("@ant-design/icons-svg/es/asn/PlusOutlined");
+var _plusOutlinedDefault = parcelHelpers.interopDefault(_plusOutlined);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var PlusOutlined = function PlusOutlined(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _plusOutlinedDefault.default)
+    }));
+};
+/**![plus](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjY0IDY0IDg5NiA4OTYiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQ4MiAxNTJoNjBxOCAwIDggOHY3MDRxMCA4LTggOGgtNjBxLTggMC04LThWMTYwcTAtOCA4LTh6IiAvPjxwYXRoIGQ9Ik0xOTIgNDc0aDY3MnE4IDAgOCA4djYwcTAgOC04IDhIMTYwcS04IDAtOC04di02MHEwLTggOC04eiIgLz48L3N2Zz4=) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(PlusOutlined);
+RefIcon.displayName = "PlusOutlined";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/PlusOutlined":"N7zhD","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"N7zhD":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var PlusOutlined = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+                }
+            },
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
+                }
+            }
+        ]
+    },
+    "name": "plus",
+    "theme": "outlined"
+};
+exports.default = PlusOutlined;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"96uyO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _tabs = require("./Tabs");
+var _tabsDefault = parcelHelpers.interopDefault(_tabs);
+exports.default = (0, _tabsDefault.default);
+
+},{"./Tabs":"bfb7U","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bfb7U":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+// Accessibility https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _useMergedState = require("rc-util/es/hooks/useMergedState");
+var _useMergedStateDefault = parcelHelpers.interopDefault(_useMergedState);
+var _isMobile = require("rc-util/es/isMobile");
+var _isMobileDefault = parcelHelpers.interopDefault(_isMobile);
+var _react = require("react");
+var _tabContext = require("./TabContext");
+var _tabContextDefault = parcelHelpers.interopDefault(_tabContext);
+var _wrapper = require("./TabNavList/Wrapper");
+var _wrapperDefault = parcelHelpers.interopDefault(_wrapper);
+var _tabPanelList = require("./TabPanelList");
+var _tabPanelListDefault = parcelHelpers.interopDefault(_tabPanelList);
+var _useAnimateConfig = require("./hooks/useAnimateConfig");
+var _useAnimateConfigDefault = parcelHelpers.interopDefault(_useAnimateConfig);
+var _excluded = [
+    "id",
+    "prefixCls",
+    "className",
+    "items",
+    "direction",
+    "activeKey",
+    "defaultActiveKey",
+    "editable",
+    "animated",
+    "tabPosition",
+    "tabBarGutter",
+    "tabBarStyle",
+    "tabBarExtraContent",
+    "locale",
+    "more",
+    "destroyInactiveTabPane",
+    "renderTabBar",
+    "onChange",
+    "onTabClick",
+    "onTabScroll",
+    "getPopupContainer",
+    "popupClassName",
+    "indicator"
+];
+/**
+ * Should added antd:
+ * - type
+ *
+ * Removed:
+ * - onNextClick
+ * - onPrevClick
+ * - keyboard
+ */ // Used for accessibility
+var uuid = 0;
+var Tabs = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var id = props.id, _props$prefixCls = props.prefixCls, prefixCls = _props$prefixCls === void 0 ? "rc-tabs" : _props$prefixCls, className = props.className, items = props.items, direction = props.direction, activeKey = props.activeKey, defaultActiveKey = props.defaultActiveKey, editable = props.editable, animated = props.animated, _props$tabPosition = props.tabPosition, tabPosition = _props$tabPosition === void 0 ? "top" : _props$tabPosition, tabBarGutter = props.tabBarGutter, tabBarStyle = props.tabBarStyle, tabBarExtraContent = props.tabBarExtraContent, locale = props.locale, more = props.more, destroyInactiveTabPane = props.destroyInactiveTabPane, renderTabBar = props.renderTabBar, onChange = props.onChange, onTabClick = props.onTabClick, onTabScroll = props.onTabScroll, getPopupContainer = props.getPopupContainer, popupClassName = props.popupClassName, indicator = props.indicator, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var tabs = _react.useMemo(function() {
+        return (items || []).filter(function(item) {
+            return item && (0, _typeofDefault.default)(item) === "object" && "key" in item;
+        });
+    }, [
+        items
+    ]);
+    var rtl = direction === "rtl";
+    var mergedAnimated = (0, _useAnimateConfigDefault.default)(animated);
+    // ======================== Mobile ========================
+    var _useState = (0, _react.useState)(false), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), mobile = _useState2[0], setMobile = _useState2[1];
+    (0, _react.useEffect)(function() {
+        // Only update on the client side
+        setMobile((0, _isMobileDefault.default)());
+    }, []);
+    // ====================== Active Key ======================
+    var _useMergedState = (0, _useMergedStateDefault.default)(function() {
+        var _tabs$;
+        return (_tabs$ = tabs[0]) === null || _tabs$ === void 0 ? void 0 : _tabs$.key;
+    }, {
+        value: activeKey,
+        defaultValue: defaultActiveKey
+    }), _useMergedState2 = (0, _slicedToArrayDefault.default)(_useMergedState, 2), mergedActiveKey = _useMergedState2[0], setMergedActiveKey = _useMergedState2[1];
+    var _useState3 = (0, _react.useState)(function() {
+        return tabs.findIndex(function(tab) {
+            return tab.key === mergedActiveKey;
+        });
+    }), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), activeIndex = _useState4[0], setActiveIndex = _useState4[1];
+    // Reset active key if not exist anymore
+    (0, _react.useEffect)(function() {
+        var newActiveIndex = tabs.findIndex(function(tab) {
+            return tab.key === mergedActiveKey;
+        });
+        if (newActiveIndex === -1) {
+            var _tabs$newActiveIndex;
+            newActiveIndex = Math.max(0, Math.min(activeIndex, tabs.length - 1));
+            setMergedActiveKey((_tabs$newActiveIndex = tabs[newActiveIndex]) === null || _tabs$newActiveIndex === void 0 ? void 0 : _tabs$newActiveIndex.key);
+        }
+        setActiveIndex(newActiveIndex);
+    }, [
+        tabs.map(function(tab) {
+            return tab.key;
+        }).join("_"),
+        mergedActiveKey,
+        activeIndex
+    ]);
+    // ===================== Accessibility ====================
+    var _useMergedState3 = (0, _useMergedStateDefault.default)(null, {
+        value: id
+    }), _useMergedState4 = (0, _slicedToArrayDefault.default)(_useMergedState3, 2), mergedId = _useMergedState4[0], setMergedId = _useMergedState4[1];
+    // Async generate id to avoid ssr mapping failed
+    (0, _react.useEffect)(function() {
+        if (!id) {
+            setMergedId("rc-tabs-".concat(uuid));
+            uuid += 1;
+        }
+    }, []);
+    // ======================== Events ========================
+    function onInternalTabClick(key, e) {
+        onTabClick === null || onTabClick === void 0 || onTabClick(key, e);
+        var isActiveChanged = key !== mergedActiveKey;
+        setMergedActiveKey(key);
+        if (isActiveChanged) onChange === null || onChange === void 0 || onChange(key);
+    }
+    // ======================== Render ========================
+    var sharedProps = {
+        id: mergedId,
+        activeKey: mergedActiveKey,
+        animated: mergedAnimated,
+        tabPosition: tabPosition,
+        rtl: rtl,
+        mobile: mobile
+    };
+    var tabNavBarProps = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, sharedProps), {}, {
+        editable: editable,
+        locale: locale,
+        more: more,
+        tabBarGutter: tabBarGutter,
+        onTabClick: onInternalTabClick,
+        onTabScroll: onTabScroll,
+        extra: tabBarExtraContent,
+        style: tabBarStyle,
+        panes: null,
+        getPopupContainer: getPopupContainer,
+        popupClassName: popupClassName,
+        indicator: indicator
+    });
+    return /*#__PURE__*/ _react.createElement((0, _tabContextDefault.default).Provider, {
+        value: {
+            tabs: tabs,
+            prefixCls: prefixCls
+        }
+    }, /*#__PURE__*/ _react.createElement("div", (0, _extendsDefault.default)({
+        ref: ref,
+        id: id,
+        className: (0, _classnamesDefault.default)(prefixCls, "".concat(prefixCls, "-").concat(tabPosition), (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-mobile"), mobile), "".concat(prefixCls, "-editable"), editable), "".concat(prefixCls, "-rtl"), rtl), className)
+    }, restProps), /*#__PURE__*/ _react.createElement((0, _wrapperDefault.default), (0, _extendsDefault.default)({}, tabNavBarProps, {
+        renderTabBar: renderTabBar
+    })), /*#__PURE__*/ _react.createElement((0, _tabPanelListDefault.default), (0, _extendsDefault.default)({
+        destroyInactiveTabPane: destroyInactiveTabPane
+    }, sharedProps, {
+        animated: mergedAnimated
+    }))));
+});
+Tabs.displayName = "Tabs";
+exports.default = Tabs;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","classnames":"jocGM","rc-util/es/hooks/useMergedState":"guGeI","rc-util/es/isMobile":"bpFMM","react":"21dqq","./TabContext":"dK0F9","./TabNavList/Wrapper":"18Ss6","./TabPanelList":"9cnT9","./hooks/useAnimateConfig":"2m4Re","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bpFMM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = function() {
+    if (typeof navigator === "undefined" || typeof window === "undefined") return false;
+    var agent = navigator.userAgent || navigator.vendor || window.opera;
+    return /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(agent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw-(n|u)|c55\/|capi|ccwa|cdm-|cell|chtm|cldc|cmd-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc-s|devi|dica|dmob|do(c|p)o|ds(12|-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(-|_)|g1 u|g560|gene|gf-5|g-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd-(m|p|t)|hei-|hi(pt|ta)|hp( i|ip)|hs-c|ht(c(-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i-(20|go|ma)|i230|iac( |-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|-[a-w])|libw|lynx|m1-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|-([1-8]|c))|phil|pire|pl(ay|uc)|pn-2|po(ck|rt|se)|prox|psio|pt-g|qa-a|qc(07|12|21|32|60|-[2-7]|i-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h-|oo|p-)|sdk\/|se(c(-|0|1)|47|mc|nd|ri)|sgh-|shar|sie(-|m)|sk-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h-|v-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl-|tdg-|tel(i|m)|tim-|t-mo|to(pl|sh)|ts(70|m-|m3|m5)|tx-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas-|your|zeto|zte-/i.test(agent === null || agent === void 0 ? void 0 : agent.substr(0, 4));
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dK0F9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+exports.default = /*#__PURE__*/ (0, _react.createContext)(null);
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"18Ss6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+// zombieJ: To compatible with `renderTabBar` usage.
+var _react = require("react");
+var _ = require(".");
+var _Default = parcelHelpers.interopDefault(_);
+var _tabContext = require("../TabContext");
+var _tabContextDefault = parcelHelpers.interopDefault(_tabContext);
+var _tabPane = require("../TabPanelList/TabPane");
+var _tabPaneDefault = parcelHelpers.interopDefault(_tabPane);
+var _excluded = [
+    "renderTabBar"
+], _excluded2 = [
+    "label",
+    "key"
+];
+// We have to create a TabNavList components.
+var TabNavListWrapper = function TabNavListWrapper(_ref) {
+    var renderTabBar = _ref.renderTabBar, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    var _React$useContext = _react.useContext((0, _tabContextDefault.default)), tabs = _React$useContext.tabs;
+    if (renderTabBar) {
+        var tabNavBarProps = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, restProps), {}, {
+            // Legacy support. We do not use this actually
+            panes: tabs.map(function(_ref2) {
+                var label = _ref2.label, key = _ref2.key, restTabProps = (0, _objectWithoutPropertiesDefault.default)(_ref2, _excluded2);
+                return /*#__PURE__*/ _react.createElement((0, _tabPaneDefault.default), (0, _extendsDefault.default)({
+                    tab: label,
+                    key: key,
+                    tabKey: key
+                }, restTabProps));
+            })
+        });
+        return renderTabBar(tabNavBarProps, (0, _Default.default));
+    }
+    return /*#__PURE__*/ _react.createElement((0, _Default.default), restProps);
+};
+TabNavListWrapper.displayName = "TabNavListWrapper";
+exports.default = TabNavListWrapper;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq",".":"ghXJg","../TabContext":"dK0F9","../TabPanelList/TabPane":"ehzqL","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ghXJg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+/* eslint-disable react-hooks/exhaustive-deps */ var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcResizeObserver = require("rc-resize-observer");
+var _rcResizeObserverDefault = parcelHelpers.interopDefault(_rcResizeObserver);
+var _useEvent = require("rc-util/es/hooks/useEvent");
+var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var _tabContext = require("../TabContext");
+var _tabContextDefault = parcelHelpers.interopDefault(_tabContext);
+var _useIndicator = require("../hooks/useIndicator");
+var _useIndicatorDefault = parcelHelpers.interopDefault(_useIndicator);
+var _useOffsets = require("../hooks/useOffsets");
+var _useOffsetsDefault = parcelHelpers.interopDefault(_useOffsets);
+var _useSyncState = require("../hooks/useSyncState");
+var _useSyncStateDefault = parcelHelpers.interopDefault(_useSyncState);
+var _useTouchMove = require("../hooks/useTouchMove");
+var _useTouchMoveDefault = parcelHelpers.interopDefault(_useTouchMove);
+var _useUpdate = require("../hooks/useUpdate");
+var _useUpdateDefault = parcelHelpers.interopDefault(_useUpdate);
+var _useVisibleRange = require("../hooks/useVisibleRange");
+var _useVisibleRangeDefault = parcelHelpers.interopDefault(_useVisibleRange);
+var _util = require("../util");
+var _addButton = require("./AddButton");
+var _addButtonDefault = parcelHelpers.interopDefault(_addButton);
+var _extraContent = require("./ExtraContent");
+var _extraContentDefault = parcelHelpers.interopDefault(_extraContent);
+var _operationNode = require("./OperationNode");
+var _operationNodeDefault = parcelHelpers.interopDefault(_operationNode);
+var _tabNode = require("./TabNode");
+var _tabNodeDefault = parcelHelpers.interopDefault(_tabNode);
+var getTabSize = function getTabSize(tab, containerRect) {
+    // tabListRef
+    var offsetWidth = tab.offsetWidth, offsetHeight = tab.offsetHeight, offsetTop = tab.offsetTop, offsetLeft = tab.offsetLeft;
+    var _tab$getBoundingClien = tab.getBoundingClientRect(), width = _tab$getBoundingClien.width, height = _tab$getBoundingClien.height, x = _tab$getBoundingClien.x, y = _tab$getBoundingClien.y;
+    // Use getBoundingClientRect to avoid decimal inaccuracy
+    if (Math.abs(width - offsetWidth) < 1) return [
+        width,
+        height,
+        x - containerRect.x,
+        y - containerRect.y
+    ];
+    return [
+        offsetWidth,
+        offsetHeight,
+        offsetLeft,
+        offsetTop
+    ];
+};
+var getSize = function getSize(refObj) {
+    var _ref = refObj.current || {}, _ref$offsetWidth = _ref.offsetWidth, offsetWidth = _ref$offsetWidth === void 0 ? 0 : _ref$offsetWidth, _ref$offsetHeight = _ref.offsetHeight, offsetHeight = _ref$offsetHeight === void 0 ? 0 : _ref$offsetHeight;
+    // Use getBoundingClientRect to avoid decimal inaccuracy
+    if (refObj.current) {
+        var _refObj$current$getBo = refObj.current.getBoundingClientRect(), width = _refObj$current$getBo.width, height = _refObj$current$getBo.height;
+        if (Math.abs(width - offsetWidth) < 1) return [
+            width,
+            height
+        ];
+    }
+    return [
+        offsetWidth,
+        offsetHeight
+    ];
+};
+/**
+ * Convert `SizeInfo` to unit value. Such as [123, 456] with `top` position get `123`
+ */ var getUnitValue = function getUnitValue(size, tabPositionTopOrBottom) {
+    return size[tabPositionTopOrBottom ? 0 : 1];
+};
+var TabNavList = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var className = props.className, style = props.style, id = props.id, animated = props.animated, activeKey = props.activeKey, rtl = props.rtl, extra = props.extra, editable = props.editable, locale = props.locale, tabPosition = props.tabPosition, tabBarGutter = props.tabBarGutter, children = props.children, onTabClick = props.onTabClick, onTabScroll = props.onTabScroll, indicator = props.indicator;
+    var _React$useContext = _react.useContext((0, _tabContextDefault.default)), prefixCls = _React$useContext.prefixCls, tabs = _React$useContext.tabs;
+    var containerRef = (0, _react.useRef)(null);
+    var extraLeftRef = (0, _react.useRef)(null);
+    var extraRightRef = (0, _react.useRef)(null);
+    var tabsWrapperRef = (0, _react.useRef)(null);
+    var tabListRef = (0, _react.useRef)(null);
+    var operationsRef = (0, _react.useRef)(null);
+    var innerAddButtonRef = (0, _react.useRef)(null);
+    var tabPositionTopOrBottom = tabPosition === "top" || tabPosition === "bottom";
+    var _useSyncState = (0, _useSyncStateDefault.default)(0, function(next, prev) {
+        if (tabPositionTopOrBottom && onTabScroll) onTabScroll({
+            direction: next > prev ? "left" : "right"
+        });
+    }), _useSyncState2 = (0, _slicedToArrayDefault.default)(_useSyncState, 2), transformLeft = _useSyncState2[0], setTransformLeft = _useSyncState2[1];
+    var _useSyncState3 = (0, _useSyncStateDefault.default)(0, function(next, prev) {
+        if (!tabPositionTopOrBottom && onTabScroll) onTabScroll({
+            direction: next > prev ? "top" : "bottom"
+        });
+    }), _useSyncState4 = (0, _slicedToArrayDefault.default)(_useSyncState3, 2), transformTop = _useSyncState4[0], setTransformTop = _useSyncState4[1];
+    var _useState = (0, _react.useState)([
+        0,
+        0
+    ]), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), containerExcludeExtraSize = _useState2[0], setContainerExcludeExtraSize = _useState2[1];
+    var _useState3 = (0, _react.useState)([
+        0,
+        0
+    ]), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), tabContentSize = _useState4[0], setTabContentSize = _useState4[1];
+    var _useState5 = (0, _react.useState)([
+        0,
+        0
+    ]), _useState6 = (0, _slicedToArrayDefault.default)(_useState5, 2), addSize = _useState6[0], setAddSize = _useState6[1];
+    var _useState7 = (0, _react.useState)([
+        0,
+        0
+    ]), _useState8 = (0, _slicedToArrayDefault.default)(_useState7, 2), operationSize = _useState8[0], setOperationSize = _useState8[1];
+    var _useUpdateState = (0, _useUpdate.useUpdateState)(new Map()), _useUpdateState2 = (0, _slicedToArrayDefault.default)(_useUpdateState, 2), tabSizes = _useUpdateState2[0], setTabSizes = _useUpdateState2[1];
+    var tabOffsets = (0, _useOffsetsDefault.default)(tabs, tabSizes, tabContentSize[0]);
+    // ========================== Unit =========================
+    var containerExcludeExtraSizeValue = getUnitValue(containerExcludeExtraSize, tabPositionTopOrBottom);
+    var tabContentSizeValue = getUnitValue(tabContentSize, tabPositionTopOrBottom);
+    var addSizeValue = getUnitValue(addSize, tabPositionTopOrBottom);
+    var operationSizeValue = getUnitValue(operationSize, tabPositionTopOrBottom);
+    var needScroll = containerExcludeExtraSizeValue < tabContentSizeValue + addSizeValue;
+    var visibleTabContentValue = needScroll ? containerExcludeExtraSizeValue - operationSizeValue : containerExcludeExtraSizeValue - addSizeValue;
+    // ========================== Util =========================
+    var operationsHiddenClassName = "".concat(prefixCls, "-nav-operations-hidden");
+    var transformMin = 0;
+    var transformMax = 0;
+    if (!tabPositionTopOrBottom) {
+        transformMin = Math.min(0, visibleTabContentValue - tabContentSizeValue);
+        transformMax = 0;
+    } else if (rtl) {
+        transformMin = 0;
+        transformMax = Math.max(0, tabContentSizeValue - visibleTabContentValue);
+    } else {
+        transformMin = Math.min(0, visibleTabContentValue - tabContentSizeValue);
+        transformMax = 0;
+    }
+    function alignInRange(value) {
+        if (value < transformMin) return transformMin;
+        if (value > transformMax) return transformMax;
+        return value;
+    }
+    // ========================= Mobile ========================
+    var touchMovingRef = (0, _react.useRef)(null);
+    var _useState9 = (0, _react.useState)(), _useState10 = (0, _slicedToArrayDefault.default)(_useState9, 2), lockAnimation = _useState10[0], setLockAnimation = _useState10[1];
+    function doLockAnimation() {
+        setLockAnimation(Date.now());
+    }
+    function clearTouchMoving() {
+        if (touchMovingRef.current) clearTimeout(touchMovingRef.current);
+    }
+    (0, _useTouchMoveDefault.default)(tabsWrapperRef, function(offsetX, offsetY) {
+        function doMove(setState, offset) {
+            setState(function(value) {
+                var newValue = alignInRange(value + offset);
+                return newValue;
+            });
+        }
+        // Skip scroll if place is enough
+        if (!needScroll) return false;
+        if (tabPositionTopOrBottom) doMove(setTransformLeft, offsetX);
+        else doMove(setTransformTop, offsetY);
+        clearTouchMoving();
+        doLockAnimation();
+        return true;
+    });
+    (0, _react.useEffect)(function() {
+        clearTouchMoving();
+        if (lockAnimation) touchMovingRef.current = setTimeout(function() {
+            setLockAnimation(0);
+        }, 100);
+        return clearTouchMoving;
+    }, [
+        lockAnimation
+    ]);
+    // ===================== Visible Range =====================
+    // Render tab node & collect tab offset
+    var _useVisibleRange = (0, _useVisibleRangeDefault.default)(tabOffsets, // Container
+    visibleTabContentValue, // Transform
+    tabPositionTopOrBottom ? transformLeft : transformTop, // Tabs
+    tabContentSizeValue, // Add
+    addSizeValue, // Operation
+    operationSizeValue, (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, props), {}, {
+        tabs: tabs
+    })), _useVisibleRange2 = (0, _slicedToArrayDefault.default)(_useVisibleRange, 2), visibleStart = _useVisibleRange2[0], visibleEnd = _useVisibleRange2[1];
+    // ========================= Scroll ========================
+    var scrollToTab = (0, _useEventDefault.default)(function() {
+        var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : activeKey;
+        var tabOffset = tabOffsets.get(key) || {
+            width: 0,
+            height: 0,
+            left: 0,
+            right: 0,
+            top: 0
+        };
+        if (tabPositionTopOrBottom) {
+            // ============ Align with top & bottom ============
+            var newTransform = transformLeft;
+            // RTL
+            if (rtl) {
+                if (tabOffset.right < transformLeft) newTransform = tabOffset.right;
+                else if (tabOffset.right + tabOffset.width > transformLeft + visibleTabContentValue) newTransform = tabOffset.right + tabOffset.width - visibleTabContentValue;
+            } else if (tabOffset.left < -transformLeft) newTransform = -tabOffset.left;
+            else if (tabOffset.left + tabOffset.width > -transformLeft + visibleTabContentValue) newTransform = -(tabOffset.left + tabOffset.width - visibleTabContentValue);
+            setTransformTop(0);
+            setTransformLeft(alignInRange(newTransform));
+        } else {
+            // ============ Align with left & right ============
+            var _newTransform = transformTop;
+            if (tabOffset.top < -transformTop) _newTransform = -tabOffset.top;
+            else if (tabOffset.top + tabOffset.height > -transformTop + visibleTabContentValue) _newTransform = -(tabOffset.top + tabOffset.height - visibleTabContentValue);
+            setTransformLeft(0);
+            setTransformTop(alignInRange(_newTransform));
+        }
+    });
+    // ========================== Tab ==========================
+    var tabNodeStyle = {};
+    if (tabPosition === "top" || tabPosition === "bottom") tabNodeStyle[rtl ? "marginRight" : "marginLeft"] = tabBarGutter;
+    else tabNodeStyle.marginTop = tabBarGutter;
+    var tabNodes = tabs.map(function(tab, i) {
+        var key = tab.key;
+        return /*#__PURE__*/ _react.createElement((0, _tabNodeDefault.default), {
+            id: id,
+            prefixCls: prefixCls,
+            key: key,
+            tab: tab,
+            style: i === 0 ? undefined : tabNodeStyle,
+            closable: tab.closable,
+            editable: editable,
+            active: key === activeKey,
+            renderWrapper: children,
+            removeAriaLabel: locale === null || locale === void 0 ? void 0 : locale.removeAriaLabel,
+            onClick: function onClick(e) {
+                onTabClick(key, e);
+            },
+            onFocus: function onFocus() {
+                scrollToTab(key);
+                doLockAnimation();
+                if (!tabsWrapperRef.current) return;
+                // Focus element will make scrollLeft change which we should reset back
+                if (!rtl) tabsWrapperRef.current.scrollLeft = 0;
+                tabsWrapperRef.current.scrollTop = 0;
+            }
+        });
+    });
+    // Update buttons records
+    var updateTabSizes = function updateTabSizes() {
+        return setTabSizes(function() {
+            var _tabListRef$current;
+            var newSizes = new Map();
+            var listRect = (_tabListRef$current = tabListRef.current) === null || _tabListRef$current === void 0 ? void 0 : _tabListRef$current.getBoundingClientRect();
+            tabs.forEach(function(_ref2) {
+                var _tabListRef$current2;
+                var key = _ref2.key;
+                var btnNode = (_tabListRef$current2 = tabListRef.current) === null || _tabListRef$current2 === void 0 ? void 0 : _tabListRef$current2.querySelector('[data-node-key="'.concat((0, _util.genDataNodeKey)(key), '"]'));
+                if (btnNode) {
+                    var _getTabSize = getTabSize(btnNode, listRect), _getTabSize2 = (0, _slicedToArrayDefault.default)(_getTabSize, 4), width = _getTabSize2[0], height = _getTabSize2[1], left = _getTabSize2[2], top = _getTabSize2[3];
+                    newSizes.set(key, {
+                        width: width,
+                        height: height,
+                        left: left,
+                        top: top
+                    });
+                }
+            });
+            return newSizes;
+        });
+    };
+    (0, _react.useEffect)(function() {
+        updateTabSizes();
+    }, [
+        tabs.map(function(tab) {
+            return tab.key;
+        }).join("_")
+    ]);
+    var onListHolderResize = (0, _useUpdateDefault.default)(function() {
+        // Update wrapper records
+        var containerSize = getSize(containerRef);
+        var extraLeftSize = getSize(extraLeftRef);
+        var extraRightSize = getSize(extraRightRef);
+        setContainerExcludeExtraSize([
+            containerSize[0] - extraLeftSize[0] - extraRightSize[0],
+            containerSize[1] - extraLeftSize[1] - extraRightSize[1]
+        ]);
+        var newAddSize = getSize(innerAddButtonRef);
+        setAddSize(newAddSize);
+        var newOperationSize = getSize(operationsRef);
+        setOperationSize(newOperationSize);
+        // Which includes add button size
+        var tabContentFullSize = getSize(tabListRef);
+        setTabContentSize([
+            tabContentFullSize[0] - newAddSize[0],
+            tabContentFullSize[1] - newAddSize[1]
+        ]);
+        // Update buttons records
+        updateTabSizes();
+    });
+    // ======================== Dropdown =======================
+    var startHiddenTabs = tabs.slice(0, visibleStart);
+    var endHiddenTabs = tabs.slice(visibleEnd + 1);
+    var hiddenTabs = [].concat((0, _toConsumableArrayDefault.default)(startHiddenTabs), (0, _toConsumableArrayDefault.default)(endHiddenTabs));
+    // =================== Link & Operations ===================
+    var activeTabOffset = tabOffsets.get(activeKey);
+    var _useIndicator = (0, _useIndicatorDefault.default)({
+        activeTabOffset: activeTabOffset,
+        horizontal: tabPositionTopOrBottom,
+        indicator: indicator,
+        rtl: rtl
+    }), indicatorStyle = _useIndicator.style;
+    // ========================= Effect ========================
+    (0, _react.useEffect)(function() {
+        scrollToTab();
+    }, [
+        activeKey,
+        transformMin,
+        transformMax,
+        (0, _util.stringify)(activeTabOffset),
+        (0, _util.stringify)(tabOffsets),
+        tabPositionTopOrBottom
+    ]);
+    // Should recalculate when rtl changed
+    (0, _react.useEffect)(function() {
+        onListHolderResize();
+    // eslint-disable-next-line
+    }, [
+        rtl
+    ]);
+    // ========================= Render ========================
+    var hasDropdown = !!hiddenTabs.length;
+    var wrapPrefix = "".concat(prefixCls, "-nav-wrap");
+    var pingLeft;
+    var pingRight;
+    var pingTop;
+    var pingBottom;
+    if (tabPositionTopOrBottom) {
+        if (rtl) {
+            pingRight = transformLeft > 0;
+            pingLeft = transformLeft !== transformMax;
+        } else {
+            pingLeft = transformLeft < 0;
+            pingRight = transformLeft !== transformMin;
+        }
+    } else {
+        pingTop = transformTop < 0;
+        pingBottom = transformTop !== transformMin;
+    }
+    return /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+        onResize: onListHolderResize
+    }, /*#__PURE__*/ _react.createElement("div", {
+        ref: (0, _ref.useComposeRef)(ref, containerRef),
+        role: "tablist",
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-nav"), className),
+        style: style,
+        onKeyDown: function onKeyDown() {
+            // No need animation when use keyboard
+            doLockAnimation();
+        }
+    }, /*#__PURE__*/ _react.createElement((0, _extraContentDefault.default), {
+        ref: extraLeftRef,
+        position: "left",
+        extra: extra,
+        prefixCls: prefixCls
+    }), /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+        onResize: onListHolderResize
+    }, /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)(wrapPrefix, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(wrapPrefix, "-ping-left"), pingLeft), "".concat(wrapPrefix, "-ping-right"), pingRight), "".concat(wrapPrefix, "-ping-top"), pingTop), "".concat(wrapPrefix, "-ping-bottom"), pingBottom)),
+        ref: tabsWrapperRef
+    }, /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+        onResize: onListHolderResize
+    }, /*#__PURE__*/ _react.createElement("div", {
+        ref: tabListRef,
+        className: "".concat(prefixCls, "-nav-list"),
+        style: {
+            transform: "translate(".concat(transformLeft, "px, ").concat(transformTop, "px)"),
+            transition: lockAnimation ? "none" : undefined
+        }
+    }, tabNodes, /*#__PURE__*/ _react.createElement((0, _addButtonDefault.default), {
+        ref: innerAddButtonRef,
+        prefixCls: prefixCls,
+        locale: locale,
+        editable: editable,
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, tabNodes.length === 0 ? undefined : tabNodeStyle), {}, {
+            visibility: hasDropdown ? "hidden" : null
+        })
+    }), /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-ink-bar"), (0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-ink-bar-animated"), animated.inkBar)),
+        style: indicatorStyle
+    }))))), /*#__PURE__*/ _react.createElement((0, _operationNodeDefault.default), (0, _extendsDefault.default)({}, props, {
+        removeAriaLabel: locale === null || locale === void 0 ? void 0 : locale.removeAriaLabel,
+        ref: operationsRef,
+        prefixCls: prefixCls,
+        tabs: hiddenTabs,
+        className: !hasDropdown && operationsHiddenClassName,
+        tabMoving: !!lockAnimation
+    })), /*#__PURE__*/ _react.createElement((0, _extraContentDefault.default), {
+        ref: extraRightRef,
+        position: "right",
+        extra: extra,
+        prefixCls: prefixCls
+    })));
+/* eslint-enable */ });
+exports.default = TabNavList;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","classnames":"jocGM","rc-resize-observer":"gxwi9","rc-util/es/hooks/useEvent":"jv4C9","rc-util/es/ref":"jS1Z6","react":"21dqq","../TabContext":"dK0F9","../hooks/useIndicator":"cviZ5","../hooks/useOffsets":"bk0nY","../hooks/useSyncState":"7LEaE","../hooks/useTouchMove":"dKIrK","../hooks/useUpdate":"5ugHw","../hooks/useVisibleRange":"2gcm4","../util":"fU1oe","./AddButton":"bif2L","./ExtraContent":"e4qMJ","./OperationNode":"lie2c","./TabNode":"2zSO6","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gxwi9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "_rs", ()=>(0, _observerUtil._rs));
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _react = require("react");
+var _toArray = require("rc-util/es/Children/toArray");
+var _toArrayDefault = parcelHelpers.interopDefault(_toArray);
+var _warning = require("rc-util/es/warning");
+var _singleObserver = require("./SingleObserver");
+var _singleObserverDefault = parcelHelpers.interopDefault(_singleObserver);
+var _collection = require("./Collection");
+var _observerUtil = require("./utils/observerUtil");
+var INTERNAL_PREFIX_KEY = "rc-observer-key";
+function ResizeObserver(props, ref) {
+    var children = props.children;
+    var childNodes = typeof children === "function" ? [
+        children
+    ] : (0, _toArrayDefault.default)(children);
+    if (childNodes.length > 1) (0, _warning.warning)(false, "Find more than one child node with `children` in ResizeObserver. Please use ResizeObserver.Collection instead.");
+    else if (childNodes.length === 0) (0, _warning.warning)(false, "`children` of ResizeObserver is empty. Nothing is in observe.");
+    return childNodes.map(function(child, index) {
+        var key = (child === null || child === void 0 ? void 0 : child.key) || "".concat(INTERNAL_PREFIX_KEY, "-").concat(index);
+        return /*#__PURE__*/ _react.createElement((0, _singleObserverDefault.default), (0, _extendsDefault.default)({}, props, {
+            key: key,
+            ref: index === 0 ? ref : undefined
+        }), child);
+    });
+}
+var RefResizeObserver = /*#__PURE__*/ _react.forwardRef(ResizeObserver);
+RefResizeObserver.displayName = "ResizeObserver";
+RefResizeObserver.Collection = (0, _collection.Collection);
+exports.default = RefResizeObserver;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","rc-util/es/Children/toArray":"itYV7","rc-util/es/warning":"c7oua","./SingleObserver":"hB21e","./Collection":"imrLy","./utils/observerUtil":"auQdi","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"itYV7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>toArray);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactIs = require("react-is");
+function toArray(children) {
+    var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var ret = [];
+    (0, _reactDefault.default).Children.forEach(children, function(child) {
+        if ((child === undefined || child === null) && !option.keepEmpty) return;
+        if (Array.isArray(child)) ret = ret.concat(toArray(child));
+        else if ((0, _reactIs.isFragment)(child) && child.props) ret = ret.concat(toArray(child.props.children, option));
+        else ret.push(child);
+    });
+    return ret;
+}
+
+},{"react":"21dqq","react-is":"g7MZm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hB21e":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _findDOMNode = require("rc-util/es/Dom/findDOMNode");
+var _findDOMNodeDefault = parcelHelpers.interopDefault(_findDOMNode);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var _collection = require("../Collection");
+var _observerUtil = require("../utils/observerUtil");
+var _domWrapper = require("./DomWrapper");
+var _domWrapperDefault = parcelHelpers.interopDefault(_domWrapper);
+function SingleObserver(props, ref) {
+    var children = props.children, disabled = props.disabled;
+    var elementRef = _react.useRef(null);
+    var wrapperRef = _react.useRef(null);
+    var onCollectionResize = _react.useContext((0, _collection.CollectionContext));
+    // =========================== Children ===========================
+    var isRenderProps = typeof children === "function";
+    var mergedChildren = isRenderProps ? children(elementRef) : children;
+    // ============================= Size =============================
+    var sizeRef = _react.useRef({
+        width: -1,
+        height: -1,
+        offsetWidth: -1,
+        offsetHeight: -1
+    });
+    // ============================= Ref ==============================
+    var canRef = !isRenderProps && /*#__PURE__*/ _react.isValidElement(mergedChildren) && (0, _ref.supportRef)(mergedChildren);
+    var originRef = canRef ? mergedChildren.ref : null;
+    var mergedRef = (0, _ref.useComposeRef)(originRef, elementRef);
+    var getDom = function getDom() {
+        var _elementRef$current;
+        return (0, _findDOMNodeDefault.default)(elementRef.current) || // Support `nativeElement` format
+        (elementRef.current && (0, _typeofDefault.default)(elementRef.current) === "object" ? (0, _findDOMNodeDefault.default)((_elementRef$current = elementRef.current) === null || _elementRef$current === void 0 ? void 0 : _elementRef$current.nativeElement) : null) || (0, _findDOMNodeDefault.default)(wrapperRef.current);
+    };
+    _react.useImperativeHandle(ref, function() {
+        return getDom();
+    });
+    // =========================== Observe ============================
+    var propsRef = _react.useRef(props);
+    propsRef.current = props;
+    // Handler
+    var onInternalResize = _react.useCallback(function(target) {
+        var _propsRef$current = propsRef.current, onResize = _propsRef$current.onResize, data = _propsRef$current.data;
+        var _target$getBoundingCl = target.getBoundingClientRect(), width = _target$getBoundingCl.width, height = _target$getBoundingCl.height;
+        var offsetWidth = target.offsetWidth, offsetHeight = target.offsetHeight;
+        /**
+     * Resize observer trigger when content size changed.
+     * In most case we just care about element size,
+     * let's use `boundary` instead of `contentRect` here to avoid shaking.
+     */ var fixedWidth = Math.floor(width);
+        var fixedHeight = Math.floor(height);
+        if (sizeRef.current.width !== fixedWidth || sizeRef.current.height !== fixedHeight || sizeRef.current.offsetWidth !== offsetWidth || sizeRef.current.offsetHeight !== offsetHeight) {
+            var size = {
+                width: fixedWidth,
+                height: fixedHeight,
+                offsetWidth: offsetWidth,
+                offsetHeight: offsetHeight
+            };
+            sizeRef.current = size;
+            // IE is strange, right?
+            var mergedOffsetWidth = offsetWidth === Math.round(width) ? width : offsetWidth;
+            var mergedOffsetHeight = offsetHeight === Math.round(height) ? height : offsetHeight;
+            var sizeInfo = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, size), {}, {
+                offsetWidth: mergedOffsetWidth,
+                offsetHeight: mergedOffsetHeight
+            });
+            // Let collection know what happened
+            onCollectionResize === null || onCollectionResize === void 0 || onCollectionResize(sizeInfo, target, data);
+            if (onResize) // defer the callback but not defer to next frame
+            Promise.resolve().then(function() {
+                onResize(sizeInfo, target);
+            });
+        }
+    }, []);
+    // Dynamic observe
+    _react.useEffect(function() {
+        var currentElement = getDom();
+        if (currentElement && !disabled) (0, _observerUtil.observe)(currentElement, onInternalResize);
+        return function() {
+            return (0, _observerUtil.unobserve)(currentElement, onInternalResize);
+        };
+    }, [
+        elementRef.current,
+        disabled
+    ]);
+    // ============================ Render ============================
+    return /*#__PURE__*/ _react.createElement((0, _domWrapperDefault.default), {
+        ref: wrapperRef
+    }, canRef ? /*#__PURE__*/ _react.cloneElement(mergedChildren, {
+        ref: mergedRef
+    }) : mergedChildren);
+}
+var RefSingleObserver = /*#__PURE__*/ _react.forwardRef(SingleObserver);
+RefSingleObserver.displayName = "SingleObserver";
+exports.default = RefSingleObserver;
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","rc-util/es/Dom/findDOMNode":"3PTYf","rc-util/es/ref":"jS1Z6","react":"21dqq","../Collection":"imrLy","../utils/observerUtil":"auQdi","./DomWrapper":"1eGyB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"imrLy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CollectionContext", ()=>CollectionContext);
+/**
+ * Collect all the resize event from children ResizeObserver
+ */ parcelHelpers.export(exports, "Collection", ()=>Collection);
+var _react = require("react");
+var CollectionContext = /*#__PURE__*/ _react.createContext(null);
+function Collection(_ref) {
+    var children = _ref.children, onBatchResize = _ref.onBatchResize;
+    var resizeIdRef = _react.useRef(0);
+    var resizeInfosRef = _react.useRef([]);
+    var onCollectionResize = _react.useContext(CollectionContext);
+    var onResize = _react.useCallback(function(size, element, data) {
+        resizeIdRef.current += 1;
+        var currentId = resizeIdRef.current;
+        resizeInfosRef.current.push({
+            size: size,
+            element: element,
+            data: data
+        });
+        Promise.resolve().then(function() {
+            if (currentId === resizeIdRef.current) {
+                onBatchResize === null || onBatchResize === void 0 || onBatchResize(resizeInfosRef.current);
+                resizeInfosRef.current = [];
+            }
+        });
+        // Continue bubbling if parent exist
+        onCollectionResize === null || onCollectionResize === void 0 || onCollectionResize(size, element, data);
+    }, [
+        onBatchResize,
+        onCollectionResize
+    ]);
+    return /*#__PURE__*/ _react.createElement(CollectionContext.Provider, {
+        value: onResize
+    }, children);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"auQdi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "_el", ()=>_el);
+parcelHelpers.export(exports, "_rs", ()=>_rs);
+// ============================== Observe ==============================
+parcelHelpers.export(exports, "observe", ()=>observe);
+parcelHelpers.export(exports, "unobserve", ()=>unobserve);
+var _resizeObserverPolyfill = require("resize-observer-polyfill");
+var _resizeObserverPolyfillDefault = parcelHelpers.interopDefault(_resizeObserverPolyfill);
+// =============================== Const ===============================
+var elementListeners = new Map();
+function onResize(entities) {
+    entities.forEach(function(entity) {
+        var _elementListeners$get;
+        var target = entity.target;
+        (_elementListeners$get = elementListeners.get(target)) === null || _elementListeners$get === void 0 || _elementListeners$get.forEach(function(listener) {
+            return listener(target);
+        });
+    });
+}
+// Note: ResizeObserver polyfill not support option to measure border-box resize
+var resizeObserver = new (0, _resizeObserverPolyfillDefault.default)(onResize);
+var _el = elementListeners; // eslint-disable-line
+var _rs = onResize; // eslint-disable-line
+function observe(element, callback) {
+    if (!elementListeners.has(element)) {
+        elementListeners.set(element, new Set());
+        resizeObserver.observe(element);
+    }
+    elementListeners.get(element).add(callback);
+}
+function unobserve(element, callback) {
+    if (elementListeners.has(element)) {
+        elementListeners.get(element).delete(callback);
+        if (!elementListeners.get(element).size) {
+            resizeObserver.unobserve(element);
+            elementListeners.delete(element);
+        }
+    }
+}
+
+},{"resize-observer-polyfill":"6kpvB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6kpvB":[function(require,module,exports) {
+/**
+ * A collection of shims that provide minimal functionality of the ES6 collections.
+ *
+ * These implementations are not meant to be used outside of the ResizeObserver
+ * modules as they cover only a limited range of use cases.
+ */ /* eslint-disable require-jsdoc, valid-jsdoc */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var global = arguments[3];
+var MapShim = function() {
+    if (typeof Map !== "undefined") return Map;
+    /**
+     * Returns index in provided array that matches the specified key.
+     *
+     * @param {Array<Array>} arr
+     * @param {*} key
+     * @returns {number}
+     */ function getIndex(arr, key) {
+        var result = -1;
+        arr.some(function(entry, index) {
+            if (entry[0] === key) {
+                result = index;
+                return true;
+            }
+            return false;
+        });
+        return result;
+    }
+    return /** @class */ function() {
+        function class_1() {
+            this.__entries__ = [];
+        }
+        Object.defineProperty(class_1.prototype, "size", {
+            /**
+             * @returns {boolean}
+             */ get: function() {
+                return this.__entries__.length;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        /**
+         * @param {*} key
+         * @returns {*}
+         */ class_1.prototype.get = function(key) {
+            var index = getIndex(this.__entries__, key);
+            var entry = this.__entries__[index];
+            return entry && entry[1];
+        };
+        /**
+         * @param {*} key
+         * @param {*} value
+         * @returns {void}
+         */ class_1.prototype.set = function(key, value) {
+            var index = getIndex(this.__entries__, key);
+            if (~index) this.__entries__[index][1] = value;
+            else this.__entries__.push([
+                key,
+                value
+            ]);
+        };
+        /**
+         * @param {*} key
+         * @returns {void}
+         */ class_1.prototype.delete = function(key) {
+            var entries = this.__entries__;
+            var index = getIndex(entries, key);
+            if (~index) entries.splice(index, 1);
+        };
+        /**
+         * @param {*} key
+         * @returns {void}
+         */ class_1.prototype.has = function(key) {
+            return !!~getIndex(this.__entries__, key);
+        };
+        /**
+         * @returns {void}
+         */ class_1.prototype.clear = function() {
+            this.__entries__.splice(0);
+        };
+        /**
+         * @param {Function} callback
+         * @param {*} [ctx=null]
+         * @returns {void}
+         */ class_1.prototype.forEach = function(callback, ctx) {
+            if (ctx === void 0) ctx = null;
+            for(var _i = 0, _a = this.__entries__; _i < _a.length; _i++){
+                var entry = _a[_i];
+                callback.call(ctx, entry[1], entry[0]);
+            }
+        };
+        return class_1;
+    }();
+}();
+/**
+ * Detects whether window and document objects are available in current environment.
+ */ var isBrowser = typeof window !== "undefined" && typeof document !== "undefined" && window.document === document;
+// Returns global object of a current environment.
+var global$1 = function() {
+    if (typeof global !== "undefined" && global.Math === Math) return global;
+    if (typeof self !== "undefined" && self.Math === Math) return self;
+    if (typeof window !== "undefined" && window.Math === Math) return window;
+    // eslint-disable-next-line no-new-func
+    return Function("return this")();
+}();
+/**
+ * A shim for the requestAnimationFrame which falls back to the setTimeout if
+ * first one is not supported.
+ *
+ * @returns {number} Requests' identifier.
+ */ var requestAnimationFrame$1 = function() {
+    if (typeof requestAnimationFrame === "function") // It's required to use a bounded function because IE sometimes throws
+    // an "Invalid calling object" error if rAF is invoked without the global
+    // object on the left hand side.
+    return requestAnimationFrame.bind(global$1);
+    return function(callback) {
+        return setTimeout(function() {
+            return callback(Date.now());
+        }, 1000 / 60);
+    };
+}();
+// Defines minimum timeout before adding a trailing call.
+var trailingTimeout = 2;
+/**
+ * Creates a wrapper function which ensures that provided callback will be
+ * invoked only once during the specified delay period.
+ *
+ * @param {Function} callback - Function to be invoked after the delay period.
+ * @param {number} delay - Delay after which to invoke callback.
+ * @returns {Function}
+ */ function throttle(callback, delay) {
+    var leadingCall = false, trailingCall = false, lastCallTime = 0;
+    /**
+     * Invokes the original callback function and schedules new invocation if
+     * the "proxy" was called during current request.
+     *
+     * @returns {void}
+     */ function resolvePending() {
+        if (leadingCall) {
+            leadingCall = false;
+            callback();
+        }
+        if (trailingCall) proxy();
+    }
+    /**
+     * Callback invoked after the specified delay. It will further postpone
+     * invocation of the original function delegating it to the
+     * requestAnimationFrame.
+     *
+     * @returns {void}
+     */ function timeoutCallback() {
+        requestAnimationFrame$1(resolvePending);
+    }
+    /**
+     * Schedules invocation of the original function.
+     *
+     * @returns {void}
+     */ function proxy() {
+        var timeStamp = Date.now();
+        if (leadingCall) {
+            // Reject immediately following calls.
+            if (timeStamp - lastCallTime < trailingTimeout) return;
+            // Schedule new call to be in invoked when the pending one is resolved.
+            // This is important for "transitions" which never actually start
+            // immediately so there is a chance that we might miss one if change
+            // happens amids the pending invocation.
+            trailingCall = true;
+        } else {
+            leadingCall = true;
+            trailingCall = false;
+            setTimeout(timeoutCallback, delay);
+        }
+        lastCallTime = timeStamp;
+    }
+    return proxy;
+}
+// Minimum delay before invoking the update of observers.
+var REFRESH_DELAY = 20;
+// A list of substrings of CSS properties used to find transition events that
+// might affect dimensions of observed elements.
+var transitionKeys = [
+    "top",
+    "right",
+    "bottom",
+    "left",
+    "width",
+    "height",
+    "size",
+    "weight"
+];
+// Check if MutationObserver is available.
+var mutationObserverSupported = typeof MutationObserver !== "undefined";
+/**
+ * Singleton controller class which handles updates of ResizeObserver instances.
+ */ var ResizeObserverController = /** @class */ function() {
+    /**
+     * Creates a new instance of ResizeObserverController.
+     *
+     * @private
+     */ function ResizeObserverController() {
+        /**
+         * Indicates whether DOM listeners have been added.
+         *
+         * @private {boolean}
+         */ this.connected_ = false;
+        /**
+         * Tells that controller has subscribed for Mutation Events.
+         *
+         * @private {boolean}
+         */ this.mutationEventsAdded_ = false;
+        /**
+         * Keeps reference to the instance of MutationObserver.
+         *
+         * @private {MutationObserver}
+         */ this.mutationsObserver_ = null;
+        /**
+         * A list of connected observers.
+         *
+         * @private {Array<ResizeObserverSPI>}
+         */ this.observers_ = [];
+        this.onTransitionEnd_ = this.onTransitionEnd_.bind(this);
+        this.refresh = throttle(this.refresh.bind(this), REFRESH_DELAY);
+    }
+    /**
+     * Adds observer to observers list.
+     *
+     * @param {ResizeObserverSPI} observer - Observer to be added.
+     * @returns {void}
+     */ ResizeObserverController.prototype.addObserver = function(observer) {
+        if (!~this.observers_.indexOf(observer)) this.observers_.push(observer);
+        // Add listeners if they haven't been added yet.
+        if (!this.connected_) this.connect_();
+    };
+    /**
+     * Removes observer from observers list.
+     *
+     * @param {ResizeObserverSPI} observer - Observer to be removed.
+     * @returns {void}
+     */ ResizeObserverController.prototype.removeObserver = function(observer) {
+        var observers = this.observers_;
+        var index = observers.indexOf(observer);
+        // Remove observer if it's present in registry.
+        if (~index) observers.splice(index, 1);
+        // Remove listeners if controller has no connected observers.
+        if (!observers.length && this.connected_) this.disconnect_();
+    };
+    /**
+     * Invokes the update of observers. It will continue running updates insofar
+     * it detects changes.
+     *
+     * @returns {void}
+     */ ResizeObserverController.prototype.refresh = function() {
+        var changesDetected = this.updateObservers_();
+        // Continue running updates if changes have been detected as there might
+        // be future ones caused by CSS transitions.
+        if (changesDetected) this.refresh();
+    };
+    /**
+     * Updates every observer from observers list and notifies them of queued
+     * entries.
+     *
+     * @private
+     * @returns {boolean} Returns "true" if any observer has detected changes in
+     *      dimensions of it's elements.
+     */ ResizeObserverController.prototype.updateObservers_ = function() {
+        // Collect observers that have active observations.
+        var activeObservers = this.observers_.filter(function(observer) {
+            return observer.gatherActive(), observer.hasActive();
+        });
+        // Deliver notifications in a separate cycle in order to avoid any
+        // collisions between observers, e.g. when multiple instances of
+        // ResizeObserver are tracking the same element and the callback of one
+        // of them changes content dimensions of the observed target. Sometimes
+        // this may result in notifications being blocked for the rest of observers.
+        activeObservers.forEach(function(observer) {
+            return observer.broadcastActive();
+        });
+        return activeObservers.length > 0;
+    };
+    /**
+     * Initializes DOM listeners.
+     *
+     * @private
+     * @returns {void}
+     */ ResizeObserverController.prototype.connect_ = function() {
+        // Do nothing if running in a non-browser environment or if listeners
+        // have been already added.
+        if (!isBrowser || this.connected_) return;
+        // Subscription to the "Transitionend" event is used as a workaround for
+        // delayed transitions. This way it's possible to capture at least the
+        // final state of an element.
+        document.addEventListener("transitionend", this.onTransitionEnd_);
+        window.addEventListener("resize", this.refresh);
+        if (mutationObserverSupported) {
+            this.mutationsObserver_ = new MutationObserver(this.refresh);
+            this.mutationsObserver_.observe(document, {
+                attributes: true,
+                childList: true,
+                characterData: true,
+                subtree: true
+            });
+        } else {
+            document.addEventListener("DOMSubtreeModified", this.refresh);
+            this.mutationEventsAdded_ = true;
+        }
+        this.connected_ = true;
+    };
+    /**
+     * Removes DOM listeners.
+     *
+     * @private
+     * @returns {void}
+     */ ResizeObserverController.prototype.disconnect_ = function() {
+        // Do nothing if running in a non-browser environment or if listeners
+        // have been already removed.
+        if (!isBrowser || !this.connected_) return;
+        document.removeEventListener("transitionend", this.onTransitionEnd_);
+        window.removeEventListener("resize", this.refresh);
+        if (this.mutationsObserver_) this.mutationsObserver_.disconnect();
+        if (this.mutationEventsAdded_) document.removeEventListener("DOMSubtreeModified", this.refresh);
+        this.mutationsObserver_ = null;
+        this.mutationEventsAdded_ = false;
+        this.connected_ = false;
+    };
+    /**
+     * "Transitionend" event handler.
+     *
+     * @private
+     * @param {TransitionEvent} event
+     * @returns {void}
+     */ ResizeObserverController.prototype.onTransitionEnd_ = function(_a) {
+        var _b = _a.propertyName, propertyName = _b === void 0 ? "" : _b;
+        // Detect whether transition may affect dimensions of an element.
+        var isReflowProperty = transitionKeys.some(function(key) {
+            return !!~propertyName.indexOf(key);
+        });
+        if (isReflowProperty) this.refresh();
+    };
+    /**
+     * Returns instance of the ResizeObserverController.
+     *
+     * @returns {ResizeObserverController}
+     */ ResizeObserverController.getInstance = function() {
+        if (!this.instance_) this.instance_ = new ResizeObserverController();
+        return this.instance_;
+    };
+    /**
+     * Holds reference to the controller's instance.
+     *
+     * @private {ResizeObserverController}
+     */ ResizeObserverController.instance_ = null;
+    return ResizeObserverController;
+}();
+/**
+ * Defines non-writable/enumerable properties of the provided target object.
+ *
+ * @param {Object} target - Object for which to define properties.
+ * @param {Object} props - Properties to be defined.
+ * @returns {Object} Target object.
+ */ var defineConfigurable = function(target, props) {
+    for(var _i = 0, _a = Object.keys(props); _i < _a.length; _i++){
+        var key = _a[_i];
+        Object.defineProperty(target, key, {
+            value: props[key],
+            enumerable: false,
+            writable: false,
+            configurable: true
+        });
+    }
+    return target;
+};
+/**
+ * Returns the global object associated with provided element.
+ *
+ * @param {Object} target
+ * @returns {Object}
+ */ var getWindowOf = function(target) {
+    // Assume that the element is an instance of Node, which means that it
+    // has the "ownerDocument" property from which we can retrieve a
+    // corresponding global object.
+    var ownerGlobal = target && target.ownerDocument && target.ownerDocument.defaultView;
+    // Return the local global object if it's not possible extract one from
+    // provided element.
+    return ownerGlobal || global$1;
+};
+// Placeholder of an empty content rectangle.
+var emptyRect = createRectInit(0, 0, 0, 0);
+/**
+ * Converts provided string to a number.
+ *
+ * @param {number|string} value
+ * @returns {number}
+ */ function toFloat(value) {
+    return parseFloat(value) || 0;
+}
+/**
+ * Extracts borders size from provided styles.
+ *
+ * @param {CSSStyleDeclaration} styles
+ * @param {...string} positions - Borders positions (top, right, ...)
+ * @returns {number}
+ */ function getBordersSize(styles) {
+    var positions = [];
+    for(var _i = 1; _i < arguments.length; _i++)positions[_i - 1] = arguments[_i];
+    return positions.reduce(function(size, position) {
+        var value = styles["border-" + position + "-width"];
+        return size + toFloat(value);
+    }, 0);
+}
+/**
+ * Extracts paddings sizes from provided styles.
+ *
+ * @param {CSSStyleDeclaration} styles
+ * @returns {Object} Paddings box.
+ */ function getPaddings(styles) {
+    var positions = [
+        "top",
+        "right",
+        "bottom",
+        "left"
+    ];
+    var paddings = {};
+    for(var _i = 0, positions_1 = positions; _i < positions_1.length; _i++){
+        var position = positions_1[_i];
+        var value = styles["padding-" + position];
+        paddings[position] = toFloat(value);
+    }
+    return paddings;
+}
+/**
+ * Calculates content rectangle of provided SVG element.
+ *
+ * @param {SVGGraphicsElement} target - Element content rectangle of which needs
+ *      to be calculated.
+ * @returns {DOMRectInit}
+ */ function getSVGContentRect(target) {
+    var bbox = target.getBBox();
+    return createRectInit(0, 0, bbox.width, bbox.height);
+}
+/**
+ * Calculates content rectangle of provided HTMLElement.
+ *
+ * @param {HTMLElement} target - Element for which to calculate the content rectangle.
+ * @returns {DOMRectInit}
+ */ function getHTMLElementContentRect(target) {
+    // Client width & height properties can't be
+    // used exclusively as they provide rounded values.
+    var clientWidth = target.clientWidth, clientHeight = target.clientHeight;
+    // By this condition we can catch all non-replaced inline, hidden and
+    // detached elements. Though elements with width & height properties less
+    // than 0.5 will be discarded as well.
+    //
+    // Without it we would need to implement separate methods for each of
+    // those cases and it's not possible to perform a precise and performance
+    // effective test for hidden elements. E.g. even jQuery's ':visible' filter
+    // gives wrong results for elements with width & height less than 0.5.
+    if (!clientWidth && !clientHeight) return emptyRect;
+    var styles = getWindowOf(target).getComputedStyle(target);
+    var paddings = getPaddings(styles);
+    var horizPad = paddings.left + paddings.right;
+    var vertPad = paddings.top + paddings.bottom;
+    // Computed styles of width & height are being used because they are the
+    // only dimensions available to JS that contain non-rounded values. It could
+    // be possible to utilize the getBoundingClientRect if only it's data wasn't
+    // affected by CSS transformations let alone paddings, borders and scroll bars.
+    var width = toFloat(styles.width), height = toFloat(styles.height);
+    // Width & height include paddings and borders when the 'border-box' box
+    // model is applied (except for IE).
+    if (styles.boxSizing === "border-box") {
+        // Following conditions are required to handle Internet Explorer which
+        // doesn't include paddings and borders to computed CSS dimensions.
+        //
+        // We can say that if CSS dimensions + paddings are equal to the "client"
+        // properties then it's either IE, and thus we don't need to subtract
+        // anything, or an element merely doesn't have paddings/borders styles.
+        if (Math.round(width + horizPad) !== clientWidth) width -= getBordersSize(styles, "left", "right") + horizPad;
+        if (Math.round(height + vertPad) !== clientHeight) height -= getBordersSize(styles, "top", "bottom") + vertPad;
+    }
+    // Following steps can't be applied to the document's root element as its
+    // client[Width/Height] properties represent viewport area of the window.
+    // Besides, it's as well not necessary as the <html> itself neither has
+    // rendered scroll bars nor it can be clipped.
+    if (!isDocumentElement(target)) {
+        // In some browsers (only in Firefox, actually) CSS width & height
+        // include scroll bars size which can be removed at this step as scroll
+        // bars are the only difference between rounded dimensions + paddings
+        // and "client" properties, though that is not always true in Chrome.
+        var vertScrollbar = Math.round(width + horizPad) - clientWidth;
+        var horizScrollbar = Math.round(height + vertPad) - clientHeight;
+        // Chrome has a rather weird rounding of "client" properties.
+        // E.g. for an element with content width of 314.2px it sometimes gives
+        // the client width of 315px and for the width of 314.7px it may give
+        // 314px. And it doesn't happen all the time. So just ignore this delta
+        // as a non-relevant.
+        if (Math.abs(vertScrollbar) !== 1) width -= vertScrollbar;
+        if (Math.abs(horizScrollbar) !== 1) height -= horizScrollbar;
+    }
+    return createRectInit(paddings.left, paddings.top, width, height);
+}
+/**
+ * Checks whether provided element is an instance of the SVGGraphicsElement.
+ *
+ * @param {Element} target - Element to be checked.
+ * @returns {boolean}
+ */ var isSVGGraphicsElement = function() {
+    // Some browsers, namely IE and Edge, don't have the SVGGraphicsElement
+    // interface.
+    if (typeof SVGGraphicsElement !== "undefined") return function(target) {
+        return target instanceof getWindowOf(target).SVGGraphicsElement;
+    };
+    // If it's so, then check that element is at least an instance of the
+    // SVGElement and that it has the "getBBox" method.
+    // eslint-disable-next-line no-extra-parens
+    return function(target) {
+        return target instanceof getWindowOf(target).SVGElement && typeof target.getBBox === "function";
+    };
+}();
+/**
+ * Checks whether provided element is a document element (<html>).
+ *
+ * @param {Element} target - Element to be checked.
+ * @returns {boolean}
+ */ function isDocumentElement(target) {
+    return target === getWindowOf(target).document.documentElement;
+}
+/**
+ * Calculates an appropriate content rectangle for provided html or svg element.
+ *
+ * @param {Element} target - Element content rectangle of which needs to be calculated.
+ * @returns {DOMRectInit}
+ */ function getContentRect(target) {
+    if (!isBrowser) return emptyRect;
+    if (isSVGGraphicsElement(target)) return getSVGContentRect(target);
+    return getHTMLElementContentRect(target);
+}
+/**
+ * Creates rectangle with an interface of the DOMRectReadOnly.
+ * Spec: https://drafts.fxtf.org/geometry/#domrectreadonly
+ *
+ * @param {DOMRectInit} rectInit - Object with rectangle's x/y coordinates and dimensions.
+ * @returns {DOMRectReadOnly}
+ */ function createReadOnlyRect(_a) {
+    var x = _a.x, y = _a.y, width = _a.width, height = _a.height;
+    // If DOMRectReadOnly is available use it as a prototype for the rectangle.
+    var Constr = typeof DOMRectReadOnly !== "undefined" ? DOMRectReadOnly : Object;
+    var rect = Object.create(Constr.prototype);
+    // Rectangle's properties are not writable and non-enumerable.
+    defineConfigurable(rect, {
+        x: x,
+        y: y,
+        width: width,
+        height: height,
+        top: y,
+        right: x + width,
+        bottom: height + y,
+        left: x
+    });
+    return rect;
+}
+/**
+ * Creates DOMRectInit object based on the provided dimensions and the x/y coordinates.
+ * Spec: https://drafts.fxtf.org/geometry/#dictdef-domrectinit
+ *
+ * @param {number} x - X coordinate.
+ * @param {number} y - Y coordinate.
+ * @param {number} width - Rectangle's width.
+ * @param {number} height - Rectangle's height.
+ * @returns {DOMRectInit}
+ */ function createRectInit(x, y, width, height) {
+    return {
+        x: x,
+        y: y,
+        width: width,
+        height: height
+    };
+}
+/**
+ * Class that is responsible for computations of the content rectangle of
+ * provided DOM element and for keeping track of it's changes.
+ */ var ResizeObservation = /** @class */ function() {
+    /**
+     * Creates an instance of ResizeObservation.
+     *
+     * @param {Element} target - Element to be observed.
+     */ function ResizeObservation(target) {
+        /**
+         * Broadcasted width of content rectangle.
+         *
+         * @type {number}
+         */ this.broadcastWidth = 0;
+        /**
+         * Broadcasted height of content rectangle.
+         *
+         * @type {number}
+         */ this.broadcastHeight = 0;
+        /**
+         * Reference to the last observed content rectangle.
+         *
+         * @private {DOMRectInit}
+         */ this.contentRect_ = createRectInit(0, 0, 0, 0);
+        this.target = target;
+    }
+    /**
+     * Updates content rectangle and tells whether it's width or height properties
+     * have changed since the last broadcast.
+     *
+     * @returns {boolean}
+     */ ResizeObservation.prototype.isActive = function() {
+        var rect = getContentRect(this.target);
+        this.contentRect_ = rect;
+        return rect.width !== this.broadcastWidth || rect.height !== this.broadcastHeight;
+    };
+    /**
+     * Updates 'broadcastWidth' and 'broadcastHeight' properties with a data
+     * from the corresponding properties of the last observed content rectangle.
+     *
+     * @returns {DOMRectInit} Last observed content rectangle.
+     */ ResizeObservation.prototype.broadcastRect = function() {
+        var rect = this.contentRect_;
+        this.broadcastWidth = rect.width;
+        this.broadcastHeight = rect.height;
+        return rect;
+    };
+    return ResizeObservation;
+}();
+var ResizeObserverEntry = /** @class */ function() {
+    /**
+     * Creates an instance of ResizeObserverEntry.
+     *
+     * @param {Element} target - Element that is being observed.
+     * @param {DOMRectInit} rectInit - Data of the element's content rectangle.
+     */ function ResizeObserverEntry(target, rectInit) {
+        var contentRect = createReadOnlyRect(rectInit);
+        // According to the specification following properties are not writable
+        // and are also not enumerable in the native implementation.
+        //
+        // Property accessors are not being used as they'd require to define a
+        // private WeakMap storage which may cause memory leaks in browsers that
+        // don't support this type of collections.
+        defineConfigurable(this, {
+            target: target,
+            contentRect: contentRect
+        });
+    }
+    return ResizeObserverEntry;
+}();
+var ResizeObserverSPI = /** @class */ function() {
+    /**
+     * Creates a new instance of ResizeObserver.
+     *
+     * @param {ResizeObserverCallback} callback - Callback function that is invoked
+     *      when one of the observed elements changes it's content dimensions.
+     * @param {ResizeObserverController} controller - Controller instance which
+     *      is responsible for the updates of observer.
+     * @param {ResizeObserver} callbackCtx - Reference to the public
+     *      ResizeObserver instance which will be passed to callback function.
+     */ function ResizeObserverSPI(callback, controller, callbackCtx) {
+        /**
+         * Collection of resize observations that have detected changes in dimensions
+         * of elements.
+         *
+         * @private {Array<ResizeObservation>}
+         */ this.activeObservations_ = [];
+        /**
+         * Registry of the ResizeObservation instances.
+         *
+         * @private {Map<Element, ResizeObservation>}
+         */ this.observations_ = new MapShim();
+        if (typeof callback !== "function") throw new TypeError("The callback provided as parameter 1 is not a function.");
+        this.callback_ = callback;
+        this.controller_ = controller;
+        this.callbackCtx_ = callbackCtx;
+    }
+    /**
+     * Starts observing provided element.
+     *
+     * @param {Element} target - Element to be observed.
+     * @returns {void}
+     */ ResizeObserverSPI.prototype.observe = function(target) {
+        if (!arguments.length) throw new TypeError("1 argument required, but only 0 present.");
+        // Do nothing if current environment doesn't have the Element interface.
+        if (typeof Element === "undefined" || !(Element instanceof Object)) return;
+        if (!(target instanceof getWindowOf(target).Element)) throw new TypeError('parameter 1 is not of type "Element".');
+        var observations = this.observations_;
+        // Do nothing if element is already being observed.
+        if (observations.has(target)) return;
+        observations.set(target, new ResizeObservation(target));
+        this.controller_.addObserver(this);
+        // Force the update of observations.
+        this.controller_.refresh();
+    };
+    /**
+     * Stops observing provided element.
+     *
+     * @param {Element} target - Element to stop observing.
+     * @returns {void}
+     */ ResizeObserverSPI.prototype.unobserve = function(target) {
+        if (!arguments.length) throw new TypeError("1 argument required, but only 0 present.");
+        // Do nothing if current environment doesn't have the Element interface.
+        if (typeof Element === "undefined" || !(Element instanceof Object)) return;
+        if (!(target instanceof getWindowOf(target).Element)) throw new TypeError('parameter 1 is not of type "Element".');
+        var observations = this.observations_;
+        // Do nothing if element is not being observed.
+        if (!observations.has(target)) return;
+        observations.delete(target);
+        if (!observations.size) this.controller_.removeObserver(this);
+    };
+    /**
+     * Stops observing all elements.
+     *
+     * @returns {void}
+     */ ResizeObserverSPI.prototype.disconnect = function() {
+        this.clearActive();
+        this.observations_.clear();
+        this.controller_.removeObserver(this);
+    };
+    /**
+     * Collects observation instances the associated element of which has changed
+     * it's content rectangle.
+     *
+     * @returns {void}
+     */ ResizeObserverSPI.prototype.gatherActive = function() {
+        var _this = this;
+        this.clearActive();
+        this.observations_.forEach(function(observation) {
+            if (observation.isActive()) _this.activeObservations_.push(observation);
+        });
+    };
+    /**
+     * Invokes initial callback function with a list of ResizeObserverEntry
+     * instances collected from active resize observations.
+     *
+     * @returns {void}
+     */ ResizeObserverSPI.prototype.broadcastActive = function() {
+        // Do nothing if observer doesn't have active observations.
+        if (!this.hasActive()) return;
+        var ctx = this.callbackCtx_;
+        // Create ResizeObserverEntry instance for every active observation.
+        var entries = this.activeObservations_.map(function(observation) {
+            return new ResizeObserverEntry(observation.target, observation.broadcastRect());
+        });
+        this.callback_.call(ctx, entries, ctx);
+        this.clearActive();
+    };
+    /**
+     * Clears the collection of active observations.
+     *
+     * @returns {void}
+     */ ResizeObserverSPI.prototype.clearActive = function() {
+        this.activeObservations_.splice(0);
+    };
+    /**
+     * Tells whether observer has active observations.
+     *
+     * @returns {boolean}
+     */ ResizeObserverSPI.prototype.hasActive = function() {
+        return this.activeObservations_.length > 0;
+    };
+    return ResizeObserverSPI;
+}();
+// Registry of internal observers. If WeakMap is not available use current shim
+// for the Map collection as it has all required methods and because WeakMap
+// can't be fully polyfilled anyway.
+var observers = typeof WeakMap !== "undefined" ? new WeakMap() : new MapShim();
+/**
+ * ResizeObserver API. Encapsulates the ResizeObserver SPI implementation
+ * exposing only those methods and properties that are defined in the spec.
+ */ var ResizeObserver = /** @class */ function() {
+    /**
+     * Creates a new instance of ResizeObserver.
+     *
+     * @param {ResizeObserverCallback} callback - Callback that is invoked when
+     *      dimensions of the observed elements change.
+     */ function ResizeObserver(callback) {
+        if (!(this instanceof ResizeObserver)) throw new TypeError("Cannot call a class as a function.");
+        if (!arguments.length) throw new TypeError("1 argument required, but only 0 present.");
+        var controller = ResizeObserverController.getInstance();
+        var observer = new ResizeObserverSPI(callback, controller, this);
+        observers.set(this, observer);
+    }
+    return ResizeObserver;
+}();
+// Expose public methods of ResizeObserver.
+[
+    "observe",
+    "unobserve",
+    "disconnect"
+].forEach(function(method) {
+    ResizeObserver.prototype[method] = function() {
+        var _a;
+        return (_a = observers.get(this))[method].apply(_a, arguments);
+    };
+});
+var index = function() {
+    // Export existing implementation if available.
+    if (typeof global$1.ResizeObserver !== "undefined") return global$1.ResizeObserver;
+    return ResizeObserver;
+}();
+exports.default = index;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1eGyB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>DomWrapper);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _createSuper = require("@babel/runtime/helpers/esm/createSuper");
+var _createSuperDefault = parcelHelpers.interopDefault(_createSuper);
+var _react = require("react");
+/**
+ * Fallback to findDOMNode if origin ref do not provide any dom element
+ */ var DomWrapper = /*#__PURE__*/ function(_React$Component) {
+    (0, _inheritsDefault.default)(DomWrapper, _React$Component);
+    var _super = (0, _createSuperDefault.default)(DomWrapper);
+    function DomWrapper() {
+        (0, _classCallCheckDefault.default)(this, DomWrapper);
+        return _super.apply(this, arguments);
+    }
+    (0, _createClassDefault.default)(DomWrapper, [
+        {
+            key: "render",
+            value: function render() {
+                return this.props.children;
+            }
+        }
+    ]);
+    return DomWrapper;
+}(_react.Component);
+
+},{"@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/inherits":"drFw3","@babel/runtime/helpers/esm/createSuper":"hp3mc","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cviZ5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var useIndicator = function useIndicator(options) {
+    var activeTabOffset = options.activeTabOffset, horizontal = options.horizontal, rtl = options.rtl, _options$indicator = options.indicator, indicator = _options$indicator === void 0 ? {} : _options$indicator;
+    var size = indicator.size, _indicator$align = indicator.align, align = _indicator$align === void 0 ? "center" : _indicator$align;
+    var _useState = (0, _react.useState)(), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), inkStyle = _useState2[0], setInkStyle = _useState2[1];
+    var inkBarRafRef = (0, _react.useRef)();
+    var getLength = (0, _reactDefault.default).useCallback(function(origin) {
+        if (typeof size === "function") return size(origin);
+        if (typeof size === "number") return size;
+        return origin;
+    }, [
+        size
+    ]);
+    // Delay set ink style to avoid remove tab blink
+    function cleanInkBarRaf() {
+        (0, _rafDefault.default).cancel(inkBarRafRef.current);
+    }
+    (0, _react.useEffect)(function() {
+        var newInkStyle = {};
+        if (activeTabOffset) {
+            if (horizontal) {
+                newInkStyle.width = getLength(activeTabOffset.width);
+                var key = rtl ? "right" : "left";
+                if (align === "start") newInkStyle[key] = activeTabOffset[key];
+                if (align === "center") {
+                    newInkStyle[key] = activeTabOffset[key] + activeTabOffset.width / 2;
+                    newInkStyle.transform = rtl ? "translateX(50%)" : "translateX(-50%)";
+                }
+                if (align === "end") {
+                    newInkStyle[key] = activeTabOffset[key] + activeTabOffset.width;
+                    newInkStyle.transform = "translateX(-100%)";
+                }
+            } else {
+                newInkStyle.height = getLength(activeTabOffset.height);
+                if (align === "start") newInkStyle.top = activeTabOffset.top;
+                if (align === "center") {
+                    newInkStyle.top = activeTabOffset.top + activeTabOffset.height / 2;
+                    newInkStyle.transform = "translateY(-50%)";
+                }
+                if (align === "end") {
+                    newInkStyle.top = activeTabOffset.top + activeTabOffset.height;
+                    newInkStyle.transform = "translateY(-100%)";
+                }
+            }
+        }
+        cleanInkBarRaf();
+        inkBarRafRef.current = (0, _rafDefault.default)(function() {
+            setInkStyle(newInkStyle);
+        });
+        return cleanInkBarRaf;
+    }, [
+        activeTabOffset,
+        horizontal,
+        rtl,
+        align,
+        getLength
+    ]);
+    return {
+        style: inkStyle
+    };
+};
+exports.default = useIndicator;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/raf":"7OvWw","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bk0nY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useOffsets);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+var DEFAULT_SIZE = {
+    width: 0,
+    height: 0,
+    left: 0,
+    top: 0
+};
+function useOffsets(tabs, tabSizes, holderScrollWidth) {
+    return (0, _react.useMemo)(function() {
+        var _tabs$;
+        var map = new Map();
+        var lastOffset = tabSizes.get((_tabs$ = tabs[0]) === null || _tabs$ === void 0 ? void 0 : _tabs$.key) || DEFAULT_SIZE;
+        var rightOffset = lastOffset.left + lastOffset.width;
+        for(var i = 0; i < tabs.length; i += 1){
+            var key = tabs[i].key;
+            var data = tabSizes.get(key);
+            // Reuse last one when not exist yet
+            if (!data) {
+                var _tabs;
+                data = tabSizes.get((_tabs = tabs[i - 1]) === null || _tabs === void 0 ? void 0 : _tabs.key) || DEFAULT_SIZE;
+            }
+            var entity = map.get(key) || (0, _objectSpread2Default.default)({}, data);
+            // Right
+            entity.right = rightOffset - entity.left - entity.width;
+            // Update entity
+            map.set(key, entity);
+        }
+        return map;
+    }, [
+        tabs.map(function(tab) {
+            return tab.key;
+        }).join("_"),
+        tabSizes,
+        holderScrollWidth
+    ]);
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7LEaE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useSyncState);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+function useSyncState(defaultState, onChange) {
+    var stateRef = _react.useRef(defaultState);
+    var _React$useState = _react.useState({}), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), forceUpdate = _React$useState2[1];
+    function setState(updater) {
+        var newValue = typeof updater === "function" ? updater(stateRef.current) : updater;
+        if (newValue !== stateRef.current) onChange(newValue, stateRef.current);
+        stateRef.current = newValue;
+        forceUpdate({});
+    }
+    return [
+        stateRef.current,
+        setState
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dKIrK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useTouchMove);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var MIN_SWIPE_DISTANCE = 0.1;
+var STOP_SWIPE_DISTANCE = 0.01;
+var REFRESH_INTERVAL = 20;
+var SPEED_OFF_MULTIPLE = Math.pow(0.995, REFRESH_INTERVAL);
+function useTouchMove(ref, onOffset) {
+    var _useState = (0, _react.useState)(), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), touchPosition = _useState2[0], setTouchPosition = _useState2[1];
+    var _useState3 = (0, _react.useState)(0), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), lastTimestamp = _useState4[0], setLastTimestamp = _useState4[1];
+    var _useState5 = (0, _react.useState)(0), _useState6 = (0, _slicedToArrayDefault.default)(_useState5, 2), lastTimeDiff = _useState6[0], setLastTimeDiff = _useState6[1];
+    var _useState7 = (0, _react.useState)(), _useState8 = (0, _slicedToArrayDefault.default)(_useState7, 2), lastOffset = _useState8[0], setLastOffset = _useState8[1];
+    var motionRef = (0, _react.useRef)();
+    // ========================= Events =========================
+    // >>> Touch events
+    function onTouchStart(e) {
+        var _e$touches$ = e.touches[0], screenX = _e$touches$.screenX, screenY = _e$touches$.screenY;
+        setTouchPosition({
+            x: screenX,
+            y: screenY
+        });
+        window.clearInterval(motionRef.current);
+    }
+    function onTouchMove(e) {
+        if (!touchPosition) return;
+        e.preventDefault();
+        var _e$touches$2 = e.touches[0], screenX = _e$touches$2.screenX, screenY = _e$touches$2.screenY;
+        setTouchPosition({
+            x: screenX,
+            y: screenY
+        });
+        var offsetX = screenX - touchPosition.x;
+        var offsetY = screenY - touchPosition.y;
+        onOffset(offsetX, offsetY);
+        var now = Date.now();
+        setLastTimestamp(now);
+        setLastTimeDiff(now - lastTimestamp);
+        setLastOffset({
+            x: offsetX,
+            y: offsetY
+        });
+    }
+    function onTouchEnd() {
+        if (!touchPosition) return;
+        setTouchPosition(null);
+        setLastOffset(null);
+        // Swipe if needed
+        if (lastOffset) {
+            var distanceX = lastOffset.x / lastTimeDiff;
+            var distanceY = lastOffset.y / lastTimeDiff;
+            var absX = Math.abs(distanceX);
+            var absY = Math.abs(distanceY);
+            // Skip swipe if low distance
+            if (Math.max(absX, absY) < MIN_SWIPE_DISTANCE) return;
+            var currentX = distanceX;
+            var currentY = distanceY;
+            motionRef.current = window.setInterval(function() {
+                if (Math.abs(currentX) < STOP_SWIPE_DISTANCE && Math.abs(currentY) < STOP_SWIPE_DISTANCE) {
+                    window.clearInterval(motionRef.current);
+                    return;
+                }
+                currentX *= SPEED_OFF_MULTIPLE;
+                currentY *= SPEED_OFF_MULTIPLE;
+                onOffset(currentX * REFRESH_INTERVAL, currentY * REFRESH_INTERVAL);
+            }, REFRESH_INTERVAL);
+        }
+    }
+    // >>> Wheel event
+    var lastWheelDirectionRef = (0, _react.useRef)();
+    function onWheel(e) {
+        var deltaX = e.deltaX, deltaY = e.deltaY;
+        // Convert both to x & y since wheel only happened on PC
+        var mixed = 0;
+        var absX = Math.abs(deltaX);
+        var absY = Math.abs(deltaY);
+        if (absX === absY) mixed = lastWheelDirectionRef.current === "x" ? deltaX : deltaY;
+        else if (absX > absY) {
+            mixed = deltaX;
+            lastWheelDirectionRef.current = "x";
+        } else {
+            mixed = deltaY;
+            lastWheelDirectionRef.current = "y";
+        }
+        if (onOffset(-mixed, -mixed)) e.preventDefault();
+    }
+    // ========================= Effect =========================
+    var touchEventsRef = (0, _react.useRef)(null);
+    touchEventsRef.current = {
+        onTouchStart: onTouchStart,
+        onTouchMove: onTouchMove,
+        onTouchEnd: onTouchEnd,
+        onWheel: onWheel
+    };
+    _react.useEffect(function() {
+        function onProxyTouchStart(e) {
+            touchEventsRef.current.onTouchStart(e);
+        }
+        function onProxyTouchMove(e) {
+            touchEventsRef.current.onTouchMove(e);
+        }
+        function onProxyTouchEnd(e) {
+            touchEventsRef.current.onTouchEnd(e);
+        }
+        function onProxyWheel(e) {
+            touchEventsRef.current.onWheel(e);
+        }
+        document.addEventListener("touchmove", onProxyTouchMove, {
+            passive: false
+        });
+        document.addEventListener("touchend", onProxyTouchEnd, {
+            passive: false
+        });
+        // No need to clean up since element removed
+        ref.current.addEventListener("touchstart", onProxyTouchStart, {
+            passive: false
+        });
+        ref.current.addEventListener("wheel", onProxyWheel);
+        return function() {
+            document.removeEventListener("touchmove", onProxyTouchMove);
+            document.removeEventListener("touchend", onProxyTouchEnd);
+        };
+    }, []);
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5ugHw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useUpdate);
+parcelHelpers.export(exports, "useUpdateState", ()=>useUpdateState);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _react = require("react");
+function useUpdate(callback) {
+    var _useState = (0, _react.useState)(0), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), count = _useState2[0], setCount = _useState2[1];
+    var effectRef = (0, _react.useRef)(0);
+    var callbackRef = (0, _react.useRef)();
+    callbackRef.current = callback;
+    // Trigger on `useLayoutEffect`
+    (0, _useLayoutEffect.useLayoutUpdateEffect)(function() {
+        var _callbackRef$current;
+        (_callbackRef$current = callbackRef.current) === null || _callbackRef$current === void 0 || _callbackRef$current.call(callbackRef);
+    }, [
+        count
+    ]);
+    // Trigger to update count
+    return function() {
+        if (effectRef.current !== count) return;
+        effectRef.current += 1;
+        setCount(effectRef.current);
+    };
+}
+function useUpdateState(defaultState) {
+    var batchRef = (0, _react.useRef)([]);
+    var _useState3 = (0, _react.useState)({}), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), forceUpdate = _useState4[1];
+    var state = (0, _react.useRef)(typeof defaultState === "function" ? defaultState() : defaultState);
+    var flushUpdate = useUpdate(function() {
+        var current = state.current;
+        batchRef.current.forEach(function(callback) {
+            current = callback(current);
+        });
+        batchRef.current = [];
+        state.current = current;
+        forceUpdate({});
+    });
+    function updater(callback) {
+        batchRef.current.push(callback);
+        flushUpdate();
+    }
+    return [
+        state.current,
+        updater
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/hooks/useLayoutEffect":"b6Tje","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2gcm4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useVisibleRange);
+var _react = require("react");
+var DEFAULT_SIZE = {
+    width: 0,
+    height: 0,
+    left: 0,
+    top: 0,
+    right: 0
+};
+function useVisibleRange(tabOffsets, visibleTabContentValue, transform, tabContentSizeValue, addNodeSizeValue, operationNodeSizeValue, _ref) {
+    var tabs = _ref.tabs, tabPosition = _ref.tabPosition, rtl = _ref.rtl;
+    var charUnit;
+    var position;
+    var transformSize;
+    if ([
+        "top",
+        "bottom"
+    ].includes(tabPosition)) {
+        charUnit = "width";
+        position = rtl ? "right" : "left";
+        transformSize = Math.abs(transform);
+    } else {
+        charUnit = "height";
+        position = "top";
+        transformSize = -transform;
+    }
+    return (0, _react.useMemo)(function() {
+        if (!tabs.length) return [
+            0,
+            0
+        ];
+        var len = tabs.length;
+        var endIndex = len;
+        for(var i = 0; i < len; i += 1){
+            var offset = tabOffsets.get(tabs[i].key) || DEFAULT_SIZE;
+            if (offset[position] + offset[charUnit] > transformSize + visibleTabContentValue) {
+                endIndex = i - 1;
+                break;
+            }
+        }
+        var startIndex = 0;
+        for(var _i = len - 1; _i >= 0; _i -= 1){
+            var _offset = tabOffsets.get(tabs[_i].key) || DEFAULT_SIZE;
+            if (_offset[position] < transformSize) {
+                startIndex = _i + 1;
+                break;
+            }
+        }
+        return startIndex >= endIndex ? [
+            0,
+            0
+        ] : [
+            startIndex,
+            endIndex
+        ];
+    }, [
+        tabOffsets,
+        visibleTabContentValue,
+        tabContentSizeValue,
+        addNodeSizeValue,
+        operationNodeSizeValue,
+        transformSize,
+        tabPosition,
+        tabs.map(function(tab) {
+            return tab.key;
+        }).join("_"),
+        rtl
+    ]);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fU1oe":[function(require,module,exports) {
+/**
+ * We trade Map as deps which may change with same value but different ref object.
+ * We should make it as hash for deps
+ * */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "stringify", ()=>stringify);
+parcelHelpers.export(exports, "genDataNodeKey", ()=>genDataNodeKey);
+parcelHelpers.export(exports, "getRemovable", ()=>getRemovable);
+function stringify(obj) {
+    var tgt;
+    if (obj instanceof Map) {
+        tgt = {};
+        obj.forEach(function(v, k) {
+            tgt[k] = v;
+        });
+    } else tgt = obj;
+    return JSON.stringify(tgt);
+}
+var RC_TABS_DOUBLE_QUOTE = "TABS_DQ";
+function genDataNodeKey(key) {
+    return String(key).replace(/"/g, RC_TABS_DOUBLE_QUOTE);
+}
+function getRemovable(closable, closeIcon, editable, disabled) {
+    if (// Only editable tabs can be removed
+    !editable || // Tabs cannot be removed when disabled
+    disabled || // closable is false
+    closable === false || // If closable is undefined, the remove button should be hidden when closeIcon is null or false
+    closable === undefined && (closeIcon === false || closeIcon === null)) return false;
+    return true;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bif2L":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var AddButton = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var prefixCls = props.prefixCls, editable = props.editable, locale = props.locale, style = props.style;
+    if (!editable || editable.showAdd === false) return null;
+    return /*#__PURE__*/ _react.createElement("button", {
+        ref: ref,
+        type: "button",
+        className: "".concat(prefixCls, "-nav-add"),
+        style: style,
+        "aria-label": (locale === null || locale === void 0 ? void 0 : locale.addAriaLabel) || "Add tab",
+        onClick: function onClick(event) {
+            editable.onEdit("add", {
+                event: event
+            });
+        }
+    }, editable.addIcon || "+");
+});
+exports.default = AddButton;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"e4qMJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _react = require("react");
+var ExtraContent = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var position = props.position, prefixCls = props.prefixCls, extra = props.extra;
+    if (!extra) return null;
+    var content;
+    // Parse extra
+    var assertExtra = {};
+    if ((0, _typeofDefault.default)(extra) === "object" && !/*#__PURE__*/ _react.isValidElement(extra)) assertExtra = extra;
+    else assertExtra.right = extra;
+    if (position === "right") content = assertExtra.right;
+    if (position === "left") content = assertExtra.left;
+    return content ? /*#__PURE__*/ _react.createElement("div", {
+        className: "".concat(prefixCls, "-extra-content"),
+        ref: ref
+    }, content) : null;
+});
+ExtraContent.displayName = "ExtraContent";
+exports.default = ExtraContent;
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lie2c":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcDropdown = require("rc-dropdown");
+var _rcDropdownDefault = parcelHelpers.interopDefault(_rcDropdown);
+var _rcMenu = require("rc-menu");
+var _rcMenuDefault = parcelHelpers.interopDefault(_rcMenu);
+var _keyCode = require("rc-util/es/KeyCode");
+var _keyCodeDefault = parcelHelpers.interopDefault(_keyCode);
+var _react = require("react");
+var _util = require("../util");
+var _addButton = require("./AddButton");
+var _addButtonDefault = parcelHelpers.interopDefault(_addButton);
+var OperationNode = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var prefixCls = props.prefixCls, id = props.id, tabs = props.tabs, locale = props.locale, mobile = props.mobile, _props$more = props.more, moreProps = _props$more === void 0 ? {} : _props$more, style = props.style, className = props.className, editable = props.editable, tabBarGutter = props.tabBarGutter, rtl = props.rtl, removeAriaLabel = props.removeAriaLabel, onTabClick = props.onTabClick, getPopupContainer = props.getPopupContainer, popupClassName = props.popupClassName;
+    // ======================== Dropdown ========================
+    var _useState = (0, _react.useState)(false), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), open = _useState2[0], setOpen = _useState2[1];
+    var _useState3 = (0, _react.useState)(null), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), selectedKey = _useState4[0], setSelectedKey = _useState4[1];
+    var _moreProps$icon = moreProps.icon, moreIcon = _moreProps$icon === void 0 ? "More" : _moreProps$icon;
+    var popupId = "".concat(id, "-more-popup");
+    var dropdownPrefix = "".concat(prefixCls, "-dropdown");
+    var selectedItemId = selectedKey !== null ? "".concat(popupId, "-").concat(selectedKey) : null;
+    var dropdownAriaLabel = locale === null || locale === void 0 ? void 0 : locale.dropdownAriaLabel;
+    function onRemoveTab(event, key) {
+        event.preventDefault();
+        event.stopPropagation();
+        editable.onEdit("remove", {
+            key: key,
+            event: event
+        });
+    }
+    var menu = /*#__PURE__*/ _react.createElement((0, _rcMenuDefault.default), {
+        onClick: function onClick(_ref) {
+            var key = _ref.key, domEvent = _ref.domEvent;
+            onTabClick(key, domEvent);
+            setOpen(false);
+        },
+        prefixCls: "".concat(dropdownPrefix, "-menu"),
+        id: popupId,
+        tabIndex: -1,
+        role: "listbox",
+        "aria-activedescendant": selectedItemId,
+        selectedKeys: [
+            selectedKey
+        ],
+        "aria-label": dropdownAriaLabel !== undefined ? dropdownAriaLabel : "expanded dropdown"
+    }, tabs.map(function(tab) {
+        var closable = tab.closable, disabled = tab.disabled, closeIcon = tab.closeIcon, key = tab.key, label = tab.label;
+        var removable = (0, _util.getRemovable)(closable, closeIcon, editable, disabled);
+        return /*#__PURE__*/ _react.createElement((0, _rcMenu.MenuItem), {
+            key: key,
+            id: "".concat(popupId, "-").concat(key),
+            role: "option",
+            "aria-controls": id && "".concat(id, "-panel-").concat(key),
+            disabled: disabled
+        }, /*#__PURE__*/ _react.createElement("span", null, label), removable && /*#__PURE__*/ _react.createElement("button", {
+            type: "button",
+            "aria-label": removeAriaLabel || "remove",
+            tabIndex: 0,
+            className: "".concat(dropdownPrefix, "-menu-item-remove"),
+            onClick: function onClick(e) {
+                e.stopPropagation();
+                onRemoveTab(e, key);
+            }
+        }, closeIcon || editable.removeIcon || "\xd7"));
+    }));
+    function selectOffset(offset) {
+        var enabledTabs = tabs.filter(function(tab) {
+            return !tab.disabled;
+        });
+        var selectedIndex = enabledTabs.findIndex(function(tab) {
+            return tab.key === selectedKey;
+        }) || 0;
+        var len = enabledTabs.length;
+        for(var i = 0; i < len; i += 1){
+            selectedIndex = (selectedIndex + offset + len) % len;
+            var tab = enabledTabs[selectedIndex];
+            if (!tab.disabled) {
+                setSelectedKey(tab.key);
+                return;
+            }
+        }
+    }
+    function onKeyDown(e) {
+        var which = e.which;
+        if (!open) {
+            if ([
+                (0, _keyCodeDefault.default).DOWN,
+                (0, _keyCodeDefault.default).SPACE,
+                (0, _keyCodeDefault.default).ENTER
+            ].includes(which)) {
+                setOpen(true);
+                e.preventDefault();
+            }
+            return;
+        }
+        switch(which){
+            case (0, _keyCodeDefault.default).UP:
+                selectOffset(-1);
+                e.preventDefault();
+                break;
+            case (0, _keyCodeDefault.default).DOWN:
+                selectOffset(1);
+                e.preventDefault();
+                break;
+            case (0, _keyCodeDefault.default).ESC:
+                setOpen(false);
+                break;
+            case (0, _keyCodeDefault.default).SPACE:
+            case (0, _keyCodeDefault.default).ENTER:
+                if (selectedKey !== null) onTabClick(selectedKey, e);
+                break;
+        }
+    }
+    // ========================= Effect =========================
+    (0, _react.useEffect)(function() {
+        // We use query element here to avoid React strict warning
+        var ele = document.getElementById(selectedItemId);
+        if (ele && ele.scrollIntoView) ele.scrollIntoView(false);
+    }, [
+        selectedKey
+    ]);
+    (0, _react.useEffect)(function() {
+        if (!open) setSelectedKey(null);
+    }, [
+        open
+    ]);
+    // ========================= Render =========================
+    var moreStyle = (0, _definePropertyDefault.default)({}, rtl ? "marginRight" : "marginLeft", tabBarGutter);
+    if (!tabs.length) {
+        moreStyle.visibility = "hidden";
+        moreStyle.order = 1;
+    }
+    var overlayClassName = (0, _classnamesDefault.default)((0, _definePropertyDefault.default)({}, "".concat(dropdownPrefix, "-rtl"), rtl));
+    var moreNode = mobile ? null : /*#__PURE__*/ _react.createElement((0, _rcDropdownDefault.default), (0, _extendsDefault.default)({
+        prefixCls: dropdownPrefix,
+        overlay: menu,
+        visible: tabs.length ? open : false,
+        onVisibleChange: setOpen,
+        overlayClassName: (0, _classnamesDefault.default)(overlayClassName, popupClassName),
+        mouseEnterDelay: 0.1,
+        mouseLeaveDelay: 0.1,
+        getPopupContainer: getPopupContainer
+    }, moreProps), /*#__PURE__*/ _react.createElement("button", {
+        type: "button",
+        className: "".concat(prefixCls, "-nav-more"),
+        style: moreStyle,
+        tabIndex: -1,
+        "aria-hidden": "true",
+        "aria-haspopup": "listbox",
+        "aria-controls": popupId,
+        id: "".concat(id, "-more"),
+        "aria-expanded": open,
+        onKeyDown: onKeyDown
+    }, moreIcon));
+    return /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-nav-operations"), className),
+        style: style,
+        ref: ref
+    }, moreNode, /*#__PURE__*/ _react.createElement((0, _addButtonDefault.default), {
+        prefixCls: prefixCls,
+        locale: locale,
+        editable: editable
+    }));
+});
+exports.default = /*#__PURE__*/ _react.memo(OperationNode, function(_, next) {
+    return(// https://github.com/ant-design/ant-design/issues/32544
+    // We'd better remove syntactic sugar in `rc-menu` since this has perf issue
+    next.tabMoving);
+});
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","classnames":"jocGM","rc-dropdown":"24fwH","rc-menu":"ebQRf","rc-util/es/KeyCode":"77Hyb","react":"21dqq","../util":"fU1oe","./AddButton":"bif2L","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"24fwH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _dropdown = require("./Dropdown");
+var _dropdownDefault = parcelHelpers.interopDefault(_dropdown);
+exports.default = (0, _dropdownDefault.default);
+
+},{"./Dropdown":"enrRK","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"enrRK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _trigger = require("@rc-component/trigger");
+var _triggerDefault = parcelHelpers.interopDefault(_trigger);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _useAccessibility = require("./hooks/useAccessibility");
+var _useAccessibilityDefault = parcelHelpers.interopDefault(_useAccessibility);
+var _overlay = require("./Overlay");
+var _overlayDefault = parcelHelpers.interopDefault(_overlay);
+var _placements = require("./placements");
+var _placementsDefault = parcelHelpers.interopDefault(_placements);
+var _excluded = [
+    "arrow",
+    "prefixCls",
+    "transitionName",
+    "animation",
+    "align",
+    "placement",
+    "placements",
+    "getPopupContainer",
+    "showAction",
+    "hideAction",
+    "overlayClassName",
+    "overlayStyle",
+    "visible",
+    "trigger",
+    "autoFocus",
+    "overlay",
+    "children",
+    "onVisibleChange"
+];
+function Dropdown(props, ref) {
+    var _children$props;
+    var _props$arrow = props.arrow, arrow = _props$arrow === void 0 ? false : _props$arrow, _props$prefixCls = props.prefixCls, prefixCls = _props$prefixCls === void 0 ? "rc-dropdown" : _props$prefixCls, transitionName = props.transitionName, animation = props.animation, align = props.align, _props$placement = props.placement, placement = _props$placement === void 0 ? "bottomLeft" : _props$placement, _props$placements = props.placements, placements = _props$placements === void 0 ? (0, _placementsDefault.default) : _props$placements, getPopupContainer = props.getPopupContainer, showAction = props.showAction, hideAction = props.hideAction, overlayClassName = props.overlayClassName, overlayStyle = props.overlayStyle, visible = props.visible, _props$trigger = props.trigger, trigger = _props$trigger === void 0 ? [
+        "hover"
+    ] : _props$trigger, autoFocus = props.autoFocus, overlay = props.overlay, children = props.children, onVisibleChange = props.onVisibleChange, otherProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var _React$useState = (0, _reactDefault.default).useState(), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), triggerVisible = _React$useState2[0], setTriggerVisible = _React$useState2[1];
+    var mergedVisible = "visible" in props ? visible : triggerVisible;
+    var triggerRef = (0, _reactDefault.default).useRef(null);
+    var overlayRef = (0, _reactDefault.default).useRef(null);
+    var childRef = (0, _reactDefault.default).useRef(null);
+    (0, _reactDefault.default).useImperativeHandle(ref, function() {
+        return triggerRef.current;
+    });
+    var handleVisibleChange = function handleVisibleChange(newVisible) {
+        setTriggerVisible(newVisible);
+        onVisibleChange === null || onVisibleChange === void 0 || onVisibleChange(newVisible);
+    };
+    (0, _useAccessibilityDefault.default)({
+        visible: mergedVisible,
+        triggerRef: childRef,
+        onVisibleChange: handleVisibleChange,
+        autoFocus: autoFocus,
+        overlayRef: overlayRef
+    });
+    var onClick = function onClick(e) {
+        var onOverlayClick = props.onOverlayClick;
+        setTriggerVisible(false);
+        if (onOverlayClick) onOverlayClick(e);
+    };
+    var getMenuElement = function getMenuElement() {
+        return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _overlayDefault.default), {
+            ref: overlayRef,
+            overlay: overlay,
+            prefixCls: prefixCls,
+            arrow: arrow
+        });
+    };
+    var getMenuElementOrLambda = function getMenuElementOrLambda() {
+        if (typeof overlay === "function") return getMenuElement;
+        return getMenuElement();
+    };
+    var getMinOverlayWidthMatchTrigger = function getMinOverlayWidthMatchTrigger() {
+        var minOverlayWidthMatchTrigger = props.minOverlayWidthMatchTrigger, alignPoint = props.alignPoint;
+        if ("minOverlayWidthMatchTrigger" in props) return minOverlayWidthMatchTrigger;
+        return !alignPoint;
+    };
+    var getOpenClassName = function getOpenClassName() {
+        var openClassName = props.openClassName;
+        if (openClassName !== undefined) return openClassName;
+        return "".concat(prefixCls, "-open");
+    };
+    var childrenNode = /*#__PURE__*/ (0, _reactDefault.default).cloneElement(children, {
+        className: (0, _classnamesDefault.default)((_children$props = children.props) === null || _children$props === void 0 ? void 0 : _children$props.className, mergedVisible && getOpenClassName()),
+        ref: (0, _ref.supportRef)(children) ? (0, _ref.composeRef)(childRef, children.ref) : undefined
+    });
+    var triggerHideAction = hideAction;
+    if (!triggerHideAction && trigger.indexOf("contextMenu") !== -1) triggerHideAction = [
+        "click"
+    ];
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _triggerDefault.default), (0, _extendsDefault.default)({
+        builtinPlacements: placements
+    }, otherProps, {
+        prefixCls: prefixCls,
+        ref: triggerRef,
+        popupClassName: (0, _classnamesDefault.default)(overlayClassName, (0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-show-arrow"), arrow)),
+        popupStyle: overlayStyle,
+        action: trigger,
+        showAction: showAction,
+        hideAction: triggerHideAction,
+        popupPlacement: placement,
+        popupAlign: align,
+        popupTransitionName: transitionName,
+        popupAnimation: animation,
+        popupVisible: mergedVisible,
+        stretch: getMinOverlayWidthMatchTrigger() ? "minWidth" : "",
+        popup: getMenuElementOrLambda(),
+        onPopupVisibleChange: handleVisibleChange,
+        onPopupClick: onClick,
+        getPopupContainer: getPopupContainer
+    }), childrenNode);
+}
+exports.default = /*#__PURE__*/ (0, _reactDefault.default).forwardRef(Dropdown);
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@rc-component/trigger":"45Hz4","classnames":"jocGM","rc-util/es/ref":"jS1Z6","react":"21dqq","./hooks/useAccessibility":"5e5KV","./Overlay":"6vFdg","./placements":"cDi7B","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"45Hz4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+// Removed Props List
+// Seems this can be auto
+// getDocument?: (element?: HTMLElement) => Document;
+// New version will not wrap popup with `rc-trigger-popup-content` when multiple children
+parcelHelpers.export(exports, "generateTrigger", ()=>generateTrigger);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _portal = require("@rc-component/portal");
+var _portalDefault = parcelHelpers.interopDefault(_portal);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcResizeObserver = require("rc-resize-observer");
+var _rcResizeObserverDefault = parcelHelpers.interopDefault(_rcResizeObserver);
+var _findDOMNode = require("rc-util/es/Dom/findDOMNode");
+var _shadow = require("rc-util/es/Dom/shadow");
+var _useEvent = require("rc-util/es/hooks/useEvent");
+var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
+var _useId = require("rc-util/es/hooks/useId");
+var _useIdDefault = parcelHelpers.interopDefault(_useId);
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _isMobile = require("rc-util/es/isMobile");
+var _isMobileDefault = parcelHelpers.interopDefault(_isMobile);
+var _react = require("react");
+var _popup = require("./Popup");
+var _popupDefault = parcelHelpers.interopDefault(_popup);
+var _triggerWrapper = require("./TriggerWrapper");
+var _triggerWrapperDefault = parcelHelpers.interopDefault(_triggerWrapper);
+var _context = require("./context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _useAction = require("./hooks/useAction");
+var _useActionDefault = parcelHelpers.interopDefault(_useAction);
+var _useAlign = require("./hooks/useAlign");
+var _useAlignDefault = parcelHelpers.interopDefault(_useAlign);
+var _useWatch = require("./hooks/useWatch");
+var _useWatchDefault = parcelHelpers.interopDefault(_useWatch);
+var _useWinClick = require("./hooks/useWinClick");
+var _useWinClickDefault = parcelHelpers.interopDefault(_useWinClick);
+var _util = require("./util");
+var _excluded = [
+    "prefixCls",
+    "children",
+    "action",
+    "showAction",
+    "hideAction",
+    "popupVisible",
+    "defaultPopupVisible",
+    "onPopupVisibleChange",
+    "afterPopupVisibleChange",
+    "mouseEnterDelay",
+    "mouseLeaveDelay",
+    "focusDelay",
+    "blurDelay",
+    "mask",
+    "maskClosable",
+    "getPopupContainer",
+    "forceRender",
+    "autoDestroy",
+    "destroyPopupOnHide",
+    "popup",
+    "popupClassName",
+    "popupStyle",
+    "popupPlacement",
+    "builtinPlacements",
+    "popupAlign",
+    "zIndex",
+    "stretch",
+    "getPopupClassNameFromAlign",
+    "fresh",
+    "alignPoint",
+    "onPopupClick",
+    "onPopupAlign",
+    "arrow",
+    "popupMotion",
+    "maskMotion",
+    "popupTransitionName",
+    "popupAnimation",
+    "maskTransitionName",
+    "maskAnimation",
+    "className",
+    "getTriggerDOMNode"
+];
+function generateTrigger() {
+    var PortalComponent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : (0, _portalDefault.default);
+    var Trigger = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+        var _props$prefixCls = props.prefixCls, prefixCls = _props$prefixCls === void 0 ? "rc-trigger-popup" : _props$prefixCls, children = props.children, _props$action = props.action, action = _props$action === void 0 ? "hover" : _props$action, showAction = props.showAction, hideAction = props.hideAction, popupVisible = props.popupVisible, defaultPopupVisible = props.defaultPopupVisible, onPopupVisibleChange = props.onPopupVisibleChange, afterPopupVisibleChange = props.afterPopupVisibleChange, mouseEnterDelay = props.mouseEnterDelay, _props$mouseLeaveDela = props.mouseLeaveDelay, mouseLeaveDelay = _props$mouseLeaveDela === void 0 ? 0.1 : _props$mouseLeaveDela, focusDelay = props.focusDelay, blurDelay = props.blurDelay, mask = props.mask, _props$maskClosable = props.maskClosable, maskClosable = _props$maskClosable === void 0 ? true : _props$maskClosable, getPopupContainer = props.getPopupContainer, forceRender = props.forceRender, autoDestroy = props.autoDestroy, destroyPopupOnHide = props.destroyPopupOnHide, popup = props.popup, popupClassName = props.popupClassName, popupStyle = props.popupStyle, popupPlacement = props.popupPlacement, _props$builtinPlaceme = props.builtinPlacements, builtinPlacements = _props$builtinPlaceme === void 0 ? {} : _props$builtinPlaceme, popupAlign = props.popupAlign, zIndex = props.zIndex, stretch = props.stretch, getPopupClassNameFromAlign = props.getPopupClassNameFromAlign, fresh = props.fresh, alignPoint = props.alignPoint, onPopupClick = props.onPopupClick, onPopupAlign = props.onPopupAlign, arrow = props.arrow, popupMotion = props.popupMotion, maskMotion = props.maskMotion, popupTransitionName = props.popupTransitionName, popupAnimation = props.popupAnimation, maskTransitionName = props.maskTransitionName, maskAnimation = props.maskAnimation, className = props.className, getTriggerDOMNode = props.getTriggerDOMNode, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+        var mergedAutoDestroy = autoDestroy || destroyPopupOnHide || false;
+        // =========================== Mobile ===========================
+        var _React$useState = _react.useState(false), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), mobile = _React$useState2[0], setMobile = _React$useState2[1];
+        (0, _useLayoutEffectDefault.default)(function() {
+            setMobile((0, _isMobileDefault.default)());
+        }, []);
+        // ========================== Context ===========================
+        var subPopupElements = _react.useRef({});
+        var parentContext = _react.useContext((0, _contextDefault.default));
+        var context = _react.useMemo(function() {
+            return {
+                registerSubPopup: function registerSubPopup(id, subPopupEle) {
+                    subPopupElements.current[id] = subPopupEle;
+                    parentContext === null || parentContext === void 0 || parentContext.registerSubPopup(id, subPopupEle);
+                }
+            };
+        }, [
+            parentContext
+        ]);
+        // =========================== Popup ============================
+        var id = (0, _useIdDefault.default)();
+        var _React$useState3 = _react.useState(null), _React$useState4 = (0, _slicedToArrayDefault.default)(_React$useState3, 2), popupEle = _React$useState4[0], setPopupEle = _React$useState4[1];
+        // Used for forwardRef popup. Not use internal
+        var externalPopupRef = _react.useRef(null);
+        var setPopupRef = (0, _useEventDefault.default)(function(node) {
+            externalPopupRef.current = node;
+            if ((0, _findDOMNode.isDOM)(node) && popupEle !== node) setPopupEle(node);
+            parentContext === null || parentContext === void 0 || parentContext.registerSubPopup(id, node);
+        });
+        // =========================== Target ===========================
+        // Use state to control here since `useRef` update not trigger render
+        var _React$useState5 = _react.useState(null), _React$useState6 = (0, _slicedToArrayDefault.default)(_React$useState5, 2), targetEle = _React$useState6[0], setTargetEle = _React$useState6[1];
+        // Used for forwardRef target. Not use internal
+        var externalForwardRef = _react.useRef(null);
+        var setTargetRef = (0, _useEventDefault.default)(function(node) {
+            if ((0, _findDOMNode.isDOM)(node) && targetEle !== node) {
+                setTargetEle(node);
+                externalForwardRef.current = node;
+            }
+        });
+        // ========================== Children ==========================
+        var child = _react.Children.only(children);
+        var originChildProps = (child === null || child === void 0 ? void 0 : child.props) || {};
+        var cloneProps = {};
+        var inPopupOrChild = (0, _useEventDefault.default)(function(ele) {
+            var _getShadowRoot, _getShadowRoot2;
+            var childDOM = targetEle;
+            return (childDOM === null || childDOM === void 0 ? void 0 : childDOM.contains(ele)) || ((_getShadowRoot = (0, _shadow.getShadowRoot)(childDOM)) === null || _getShadowRoot === void 0 ? void 0 : _getShadowRoot.host) === ele || ele === childDOM || (popupEle === null || popupEle === void 0 ? void 0 : popupEle.contains(ele)) || ((_getShadowRoot2 = (0, _shadow.getShadowRoot)(popupEle)) === null || _getShadowRoot2 === void 0 ? void 0 : _getShadowRoot2.host) === ele || ele === popupEle || Object.values(subPopupElements.current).some(function(subPopupEle) {
+                return (subPopupEle === null || subPopupEle === void 0 ? void 0 : subPopupEle.contains(ele)) || ele === subPopupEle;
+            });
+        });
+        // =========================== Motion ===========================
+        var mergePopupMotion = (0, _util.getMotion)(prefixCls, popupMotion, popupAnimation, popupTransitionName);
+        var mergeMaskMotion = (0, _util.getMotion)(prefixCls, maskMotion, maskAnimation, maskTransitionName);
+        // ============================ Open ============================
+        var _React$useState7 = _react.useState(defaultPopupVisible || false), _React$useState8 = (0, _slicedToArrayDefault.default)(_React$useState7, 2), internalOpen = _React$useState8[0], setInternalOpen = _React$useState8[1];
+        // Render still use props as first priority
+        var mergedOpen = popupVisible !== null && popupVisible !== void 0 ? popupVisible : internalOpen;
+        // We use effect sync here in case `popupVisible` back to `undefined`
+        var setMergedOpen = (0, _useEventDefault.default)(function(nextOpen) {
+            if (popupVisible === undefined) setInternalOpen(nextOpen);
+        });
+        (0, _useLayoutEffectDefault.default)(function() {
+            setInternalOpen(popupVisible || false);
+        }, [
+            popupVisible
+        ]);
+        var openRef = _react.useRef(mergedOpen);
+        openRef.current = mergedOpen;
+        var lastTriggerRef = _react.useRef([]);
+        lastTriggerRef.current = [];
+        var internalTriggerOpen = (0, _useEventDefault.default)(function(nextOpen) {
+            var _lastTriggerRef$curre;
+            setMergedOpen(nextOpen);
+            // Enter or Pointer will both trigger open state change
+            // We only need take one to avoid duplicated change event trigger
+            // Use `lastTriggerRef` to record last open type
+            if (((_lastTriggerRef$curre = lastTriggerRef.current[lastTriggerRef.current.length - 1]) !== null && _lastTriggerRef$curre !== void 0 ? _lastTriggerRef$curre : mergedOpen) !== nextOpen) {
+                lastTriggerRef.current.push(nextOpen);
+                onPopupVisibleChange === null || onPopupVisibleChange === void 0 || onPopupVisibleChange(nextOpen);
+            }
+        });
+        // Trigger for delay
+        var delayRef = _react.useRef();
+        var clearDelay = function clearDelay() {
+            clearTimeout(delayRef.current);
+        };
+        var triggerOpen = function triggerOpen(nextOpen) {
+            var delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+            clearDelay();
+            if (delay === 0) internalTriggerOpen(nextOpen);
+            else delayRef.current = setTimeout(function() {
+                internalTriggerOpen(nextOpen);
+            }, delay * 1000);
+        };
+        _react.useEffect(function() {
+            return clearDelay;
+        }, []);
+        // ========================== Motion ============================
+        var _React$useState9 = _react.useState(false), _React$useState10 = (0, _slicedToArrayDefault.default)(_React$useState9, 2), inMotion = _React$useState10[0], setInMotion = _React$useState10[1];
+        (0, _useLayoutEffectDefault.default)(function(firstMount) {
+            if (!firstMount || mergedOpen) setInMotion(true);
+        }, [
+            mergedOpen
+        ]);
+        var _React$useState11 = _react.useState(null), _React$useState12 = (0, _slicedToArrayDefault.default)(_React$useState11, 2), motionPrepareResolve = _React$useState12[0], setMotionPrepareResolve = _React$useState12[1];
+        // =========================== Align ============================
+        var _React$useState13 = _react.useState([
+            0,
+            0
+        ]), _React$useState14 = (0, _slicedToArrayDefault.default)(_React$useState13, 2), mousePos = _React$useState14[0], setMousePos = _React$useState14[1];
+        var setMousePosByEvent = function setMousePosByEvent(event) {
+            setMousePos([
+                event.clientX,
+                event.clientY
+            ]);
+        };
+        var _useAlign = (0, _useAlignDefault.default)(mergedOpen, popupEle, alignPoint ? mousePos : targetEle, popupPlacement, builtinPlacements, popupAlign, onPopupAlign), _useAlign2 = (0, _slicedToArrayDefault.default)(_useAlign, 11), ready = _useAlign2[0], offsetX = _useAlign2[1], offsetY = _useAlign2[2], offsetR = _useAlign2[3], offsetB = _useAlign2[4], arrowX = _useAlign2[5], arrowY = _useAlign2[6], scaleX = _useAlign2[7], scaleY = _useAlign2[8], alignInfo = _useAlign2[9], onAlign = _useAlign2[10];
+        var _useAction = (0, _useActionDefault.default)(mobile, action, showAction, hideAction), _useAction2 = (0, _slicedToArrayDefault.default)(_useAction, 2), showActions = _useAction2[0], hideActions = _useAction2[1];
+        var clickToShow = showActions.has("click");
+        var clickToHide = hideActions.has("click") || hideActions.has("contextMenu");
+        var triggerAlign = (0, _useEventDefault.default)(function() {
+            if (!inMotion) onAlign();
+        });
+        var onScroll = function onScroll() {
+            if (openRef.current && alignPoint && clickToHide) triggerOpen(false);
+        };
+        (0, _useWatchDefault.default)(mergedOpen, targetEle, popupEle, triggerAlign, onScroll);
+        (0, _useLayoutEffectDefault.default)(function() {
+            triggerAlign();
+        }, [
+            mousePos,
+            popupPlacement
+        ]);
+        // When no builtinPlacements and popupAlign changed
+        (0, _useLayoutEffectDefault.default)(function() {
+            if (mergedOpen && !(builtinPlacements !== null && builtinPlacements !== void 0 && builtinPlacements[popupPlacement])) triggerAlign();
+        }, [
+            JSON.stringify(popupAlign)
+        ]);
+        var alignedClassName = _react.useMemo(function() {
+            var baseClassName = (0, _util.getAlignPopupClassName)(builtinPlacements, prefixCls, alignInfo, alignPoint);
+            return (0, _classnamesDefault.default)(baseClassName, getPopupClassNameFromAlign === null || getPopupClassNameFromAlign === void 0 ? void 0 : getPopupClassNameFromAlign(alignInfo));
+        }, [
+            alignInfo,
+            getPopupClassNameFromAlign,
+            builtinPlacements,
+            prefixCls,
+            alignPoint
+        ]);
+        // ============================ Refs ============================
+        _react.useImperativeHandle(ref, function() {
+            return {
+                nativeElement: externalForwardRef.current,
+                popupElement: externalPopupRef.current,
+                forceAlign: triggerAlign
+            };
+        });
+        // ========================== Stretch ===========================
+        var _React$useState15 = _react.useState(0), _React$useState16 = (0, _slicedToArrayDefault.default)(_React$useState15, 2), targetWidth = _React$useState16[0], setTargetWidth = _React$useState16[1];
+        var _React$useState17 = _react.useState(0), _React$useState18 = (0, _slicedToArrayDefault.default)(_React$useState17, 2), targetHeight = _React$useState18[0], setTargetHeight = _React$useState18[1];
+        var syncTargetSize = function syncTargetSize() {
+            if (stretch && targetEle) {
+                var rect = targetEle.getBoundingClientRect();
+                setTargetWidth(rect.width);
+                setTargetHeight(rect.height);
+            }
+        };
+        var onTargetResize = function onTargetResize() {
+            syncTargetSize();
+            triggerAlign();
+        };
+        // ========================== Motion ============================
+        var onVisibleChanged = function onVisibleChanged(visible) {
+            setInMotion(false);
+            onAlign();
+            afterPopupVisibleChange === null || afterPopupVisibleChange === void 0 || afterPopupVisibleChange(visible);
+        };
+        // We will trigger align when motion is in prepare
+        var onPrepare = function onPrepare() {
+            return new Promise(function(resolve) {
+                syncTargetSize();
+                setMotionPrepareResolve(function() {
+                    return resolve;
+                });
+            });
+        };
+        (0, _useLayoutEffectDefault.default)(function() {
+            if (motionPrepareResolve) {
+                onAlign();
+                motionPrepareResolve();
+                setMotionPrepareResolve(null);
+            }
+        }, [
+            motionPrepareResolve
+        ]);
+        // =========================== Action ===========================
+        /**
+     * Util wrapper for trigger action
+     */ function wrapperAction(eventName, nextOpen, delay, preEvent) {
+            cloneProps[eventName] = function(event) {
+                var _originChildProps$eve;
+                preEvent === null || preEvent === void 0 || preEvent(event);
+                triggerOpen(nextOpen, delay);
+                // Pass to origin
+                for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++)args[_key - 1] = arguments[_key];
+                (_originChildProps$eve = originChildProps[eventName]) === null || _originChildProps$eve === void 0 || _originChildProps$eve.call.apply(_originChildProps$eve, [
+                    originChildProps,
+                    event
+                ].concat(args));
+            };
+        }
+        // ======================= Action: Click ========================
+        if (clickToShow || clickToHide) cloneProps.onClick = function(event) {
+            var _originChildProps$onC;
+            if (openRef.current && clickToHide) triggerOpen(false);
+            else if (!openRef.current && clickToShow) {
+                setMousePosByEvent(event);
+                triggerOpen(true);
+            }
+            // Pass to origin
+            for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
+            (_originChildProps$onC = originChildProps.onClick) === null || _originChildProps$onC === void 0 || _originChildProps$onC.call.apply(_originChildProps$onC, [
+                originChildProps,
+                event
+            ].concat(args));
+        };
+        // Click to hide is special action since click popup element should not hide
+        (0, _useWinClickDefault.default)(mergedOpen, clickToHide, targetEle, popupEle, mask, maskClosable, inPopupOrChild, triggerOpen);
+        // ======================= Action: Hover ========================
+        var hoverToShow = showActions.has("hover");
+        var hoverToHide = hideActions.has("hover");
+        var onPopupMouseEnter;
+        var onPopupMouseLeave;
+        if (hoverToShow) {
+            // Compatible with old browser which not support pointer event
+            wrapperAction("onMouseEnter", true, mouseEnterDelay, function(event) {
+                setMousePosByEvent(event);
+            });
+            wrapperAction("onPointerEnter", true, mouseEnterDelay, function(event) {
+                setMousePosByEvent(event);
+            });
+            onPopupMouseEnter = function onPopupMouseEnter(event) {
+                // Only trigger re-open when popup is visible
+                if ((mergedOpen || inMotion) && popupEle !== null && popupEle !== void 0 && popupEle.contains(event.target)) triggerOpen(true, mouseEnterDelay);
+            };
+            // Align Point
+            if (alignPoint) cloneProps.onMouseMove = function(event) {
+                var _originChildProps$onM;
+                // setMousePosByEvent(event);
+                (_originChildProps$onM = originChildProps.onMouseMove) === null || _originChildProps$onM === void 0 || _originChildProps$onM.call(originChildProps, event);
+            };
+        }
+        if (hoverToHide) {
+            wrapperAction("onMouseLeave", false, mouseLeaveDelay);
+            wrapperAction("onPointerLeave", false, mouseLeaveDelay);
+            onPopupMouseLeave = function onPopupMouseLeave() {
+                triggerOpen(false, mouseLeaveDelay);
+            };
+        }
+        // ======================= Action: Focus ========================
+        if (showActions.has("focus")) wrapperAction("onFocus", true, focusDelay);
+        if (hideActions.has("focus")) wrapperAction("onBlur", false, blurDelay);
+        // ==================== Action: ContextMenu =====================
+        if (showActions.has("contextMenu")) cloneProps.onContextMenu = function(event) {
+            var _originChildProps$onC2;
+            if (openRef.current && hideActions.has("contextMenu")) triggerOpen(false);
+            else {
+                setMousePosByEvent(event);
+                triggerOpen(true);
+            }
+            event.preventDefault();
+            // Pass to origin
+            for(var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++)args[_key3 - 1] = arguments[_key3];
+            (_originChildProps$onC2 = originChildProps.onContextMenu) === null || _originChildProps$onC2 === void 0 || _originChildProps$onC2.call.apply(_originChildProps$onC2, [
+                originChildProps,
+                event
+            ].concat(args));
+        };
+        // ========================= ClassName ==========================
+        if (className) cloneProps.className = (0, _classnamesDefault.default)(originChildProps.className, className);
+        // =========================== Render ===========================
+        var mergedChildrenProps = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, originChildProps), cloneProps);
+        // Pass props into cloneProps for nest usage
+        var passedProps = {};
+        var passedEventList = [
+            "onContextMenu",
+            "onClick",
+            "onMouseDown",
+            "onTouchStart",
+            "onMouseEnter",
+            "onMouseLeave",
+            "onFocus",
+            "onBlur"
+        ];
+        passedEventList.forEach(function(eventName) {
+            if (restProps[eventName]) passedProps[eventName] = function() {
+                var _mergedChildrenProps$;
+                for(var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++)args[_key4] = arguments[_key4];
+                (_mergedChildrenProps$ = mergedChildrenProps[eventName]) === null || _mergedChildrenProps$ === void 0 || _mergedChildrenProps$.call.apply(_mergedChildrenProps$, [
+                    mergedChildrenProps
+                ].concat(args));
+                restProps[eventName].apply(restProps, args);
+            };
+        });
+        // Child Node
+        var triggerNode = /*#__PURE__*/ _react.cloneElement(child, (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, mergedChildrenProps), passedProps));
+        var arrowPos = {
+            x: arrowX,
+            y: arrowY
+        };
+        var innerArrow = arrow ? (0, _objectSpread2Default.default)({}, arrow !== true ? arrow : {}) : null;
+        // Render
+        return /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+            disabled: !mergedOpen,
+            ref: setTargetRef,
+            onResize: onTargetResize
+        }, /*#__PURE__*/ _react.createElement((0, _triggerWrapperDefault.default), {
+            getTriggerDOMNode: getTriggerDOMNode
+        }, triggerNode)), /*#__PURE__*/ _react.createElement((0, _contextDefault.default).Provider, {
+            value: context
+        }, /*#__PURE__*/ _react.createElement((0, _popupDefault.default), {
+            portal: PortalComponent,
+            ref: setPopupRef,
+            prefixCls: prefixCls,
+            popup: popup,
+            className: (0, _classnamesDefault.default)(popupClassName, alignedClassName),
+            style: popupStyle,
+            target: targetEle,
+            onMouseEnter: onPopupMouseEnter,
+            onMouseLeave: onPopupMouseLeave,
+            onPointerEnter: onPopupMouseEnter,
+            zIndex: zIndex,
+            open: mergedOpen,
+            keepDom: inMotion,
+            fresh: fresh,
+            onClick: onPopupClick,
+            mask: mask,
+            motion: mergePopupMotion,
+            maskMotion: mergeMaskMotion,
+            onVisibleChanged: onVisibleChanged,
+            onPrepare: onPrepare,
+            forceRender: forceRender,
+            autoDestroy: mergedAutoDestroy,
+            getPopupContainer: getPopupContainer,
+            align: alignInfo,
+            arrow: innerArrow,
+            arrowPos: arrowPos,
+            ready: ready,
+            offsetX: offsetX,
+            offsetY: offsetY,
+            offsetR: offsetR,
+            offsetB: offsetB,
+            onAlign: triggerAlign,
+            stretch: stretch,
+            targetWidth: targetWidth / scaleX,
+            targetHeight: targetHeight / scaleY
+        })));
+    });
+    Trigger.displayName = "Trigger";
+    return Trigger;
+}
+exports.default = generateTrigger((0, _portalDefault.default));
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@rc-component/portal":"aJNl8","classnames":"jocGM","rc-resize-observer":"gxwi9","rc-util/es/Dom/findDOMNode":"3PTYf","rc-util/es/Dom/shadow":"5SLLq","rc-util/es/hooks/useEvent":"jv4C9","rc-util/es/hooks/useId":"5lCgP","rc-util/es/hooks/useLayoutEffect":"b6Tje","rc-util/es/isMobile":"bpFMM","react":"21dqq","./Popup":"iD6NZ","./TriggerWrapper":"cOtps","./context":"XbhFq","./hooks/useAction":"i7hNb","./hooks/useAlign":"jBLVJ","./hooks/useWatch":"7t7L7","./hooks/useWinClick":"66zBi","./util":"7IoBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aJNl8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "inlineMock", ()=>(0, _mock.inlineMock));
+var _portal = require("./Portal");
+var _portalDefault = parcelHelpers.interopDefault(_portal);
+var _mock = require("./mock");
+exports.default = (0, _portalDefault.default);
+
+},{"./Portal":"eHoSL","./mock":"je0PD","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eHoSL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _ref = require("rc-util/es/ref");
+var _context = require("./Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _useDom = require("./useDom");
+var _useDomDefault = parcelHelpers.interopDefault(_useDom);
+var _useScrollLocker = require("./useScrollLocker");
+var _useScrollLockerDefault = parcelHelpers.interopDefault(_useScrollLocker);
+var _mock = require("./mock");
+var getPortalContainer = function getPortalContainer(getContainer) {
+    if (getContainer === false) return false;
+    if (!(0, _canUseDomDefault.default)() || !getContainer) return null;
+    if (typeof getContainer === "string") return document.querySelector(getContainer);
+    if (typeof getContainer === "function") return getContainer();
+    return getContainer;
+};
+var Portal = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var open = props.open, autoLock = props.autoLock, getContainer = props.getContainer, debug = props.debug, _props$autoDestroy = props.autoDestroy, autoDestroy = _props$autoDestroy === void 0 ? true : _props$autoDestroy, children = props.children;
+    var _React$useState = _react.useState(open), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), shouldRender = _React$useState2[0], setShouldRender = _React$useState2[1];
+    var mergedRender = shouldRender || open;
+    (0, _warningDefault.default)((0, _canUseDomDefault.default)() || !open, "Portal only work in client side. Please call 'useEffect' to show Portal instead default render in SSR.");
+    // ====================== Should Render ======================
+    _react.useEffect(function() {
+        if (autoDestroy || open) setShouldRender(open);
+    }, [
+        open,
+        autoDestroy
+    ]);
+    // ======================== Container ========================
+    var _React$useState3 = _react.useState(function() {
+        return getPortalContainer(getContainer);
+    }), _React$useState4 = (0, _slicedToArrayDefault.default)(_React$useState3, 2), innerContainer = _React$useState4[0], setInnerContainer = _React$useState4[1];
+    _react.useEffect(function() {
+        var customizeContainer = getPortalContainer(getContainer);
+        // Tell component that we check this in effect which is safe to be `null`
+        setInnerContainer(customizeContainer !== null && customizeContainer !== void 0 ? customizeContainer : null);
+    });
+    var _useDom = (0, _useDomDefault.default)(mergedRender && !innerContainer, debug), _useDom2 = (0, _slicedToArrayDefault.default)(_useDom, 2), defaultContainer = _useDom2[0], queueCreate = _useDom2[1];
+    var mergedContainer = innerContainer !== null && innerContainer !== void 0 ? innerContainer : defaultContainer;
+    // ========================= Locker ==========================
+    (0, _useScrollLockerDefault.default)(autoLock && open && (0, _canUseDomDefault.default)() && (mergedContainer === defaultContainer || mergedContainer === document.body));
+    // =========================== Ref ===========================
+    var childRef = null;
+    if (children && (0, _ref.supportRef)(children) && ref) {
+        var _ref1 = children;
+        childRef = _ref1.ref;
+    }
+    var mergedRef = (0, _ref.useComposeRef)(childRef, ref);
+    // ========================= Render ==========================
+    // Do not render when nothing need render
+    // When innerContainer is `undefined`, it may not ready since user use ref in the same render
+    if (!mergedRender || !(0, _canUseDomDefault.default)() || innerContainer === undefined) return null;
+    // Render inline
+    var renderInline = mergedContainer === false || (0, _mock.inlineMock)();
+    var reffedChildren = children;
+    if (ref) reffedChildren = /*#__PURE__*/ _react.cloneElement(children, {
+        ref: mergedRef
+    });
+    return /*#__PURE__*/ _react.createElement((0, _contextDefault.default).Provider, {
+        value: queueCreate
+    }, renderInline ? reffedChildren : /*#__PURE__*/ (0, _reactDom.createPortal)(reffedChildren, mergedContainer));
+});
+Portal.displayName = "Portal";
+exports.default = Portal;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","react-dom":"j6uA9","rc-util/es/Dom/canUseDom":"hGxAQ","rc-util/es/warning":"c7oua","rc-util/es/ref":"jS1Z6","./Context":"hZMe4","./useDom":"oCliT","./useScrollLocker":"3CXLX","./mock":"je0PD","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hZMe4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var OrderContext = /*#__PURE__*/ _react.createContext(null);
+exports.default = OrderContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"oCliT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useDom);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _context = require("./Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var EMPTY_LIST = [];
+function useDom(render, debug) {
+    var _React$useState = _react.useState(function() {
+        if (!(0, _canUseDomDefault.default)()) return null;
+        var defaultEle = document.createElement("div");
+        if (debug) defaultEle.setAttribute("data-debug", debug);
+        return defaultEle;
+    }), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 1), ele = _React$useState2[0];
+    // ========================== Order ==========================
+    var appendedRef = _react.useRef(false);
+    var queueCreate = _react.useContext((0, _contextDefault.default));
+    var _React$useState3 = _react.useState(EMPTY_LIST), _React$useState4 = (0, _slicedToArrayDefault.default)(_React$useState3, 2), queue = _React$useState4[0], setQueue = _React$useState4[1];
+    var mergedQueueCreate = queueCreate || (appendedRef.current ? undefined : function(appendFn) {
+        setQueue(function(origin) {
+            var newQueue = [
+                appendFn
+            ].concat((0, _toConsumableArrayDefault.default)(origin));
+            return newQueue;
+        });
+    });
+    // =========================== DOM ===========================
+    function append() {
+        if (!ele.parentElement) document.body.appendChild(ele);
+        appendedRef.current = true;
+    }
+    function cleanup() {
+        var _ele$parentElement;
+        (_ele$parentElement = ele.parentElement) === null || _ele$parentElement === void 0 || _ele$parentElement.removeChild(ele);
+        appendedRef.current = false;
+    }
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (render) {
+            if (queueCreate) queueCreate(append);
+            else append();
+        } else cleanup();
+        return cleanup;
+    }, [
+        render
+    ]);
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (queue.length) {
+            queue.forEach(function(appendFn) {
+                return appendFn();
+            });
+            setQueue(EMPTY_LIST);
+        }
+    }, [
+        queue
+    ]);
+    return [
+        ele,
+        mergedQueueCreate
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","rc-util/es/hooks/useLayoutEffect":"b6Tje","rc-util/es/Dom/canUseDom":"hGxAQ","./Context":"hZMe4","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3CXLX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useScrollLocker);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _getScrollBarSize = require("rc-util/es/getScrollBarSize");
+var _util = require("./util");
+var UNIQUE_ID = "rc-util-locker-".concat(Date.now());
+var uuid = 0;
+function useScrollLocker(lock) {
+    var mergedLock = !!lock;
+    var _React$useState = _react.useState(function() {
+        uuid += 1;
+        return "".concat(UNIQUE_ID, "_").concat(uuid);
+    }), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 1), id = _React$useState2[0];
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (mergedLock) {
+            var scrollbarSize = (0, _getScrollBarSize.getTargetScrollBarSize)(document.body).width;
+            var isOverflow = (0, _util.isBodyOverflowing)();
+            (0, _dynamicCSS.updateCSS)("\nhtml body {\n  overflow-y: hidden;\n  ".concat(isOverflow ? "width: calc(100% - ".concat(scrollbarSize, "px);") : "", "\n}"), id);
+        } else (0, _dynamicCSS.removeCSS)(id);
+        return function() {
+            (0, _dynamicCSS.removeCSS)(id);
+        };
+    }, [
+        mergedLock,
+        id
+    ]);
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","rc-util/es/Dom/dynamicCSS":"lfei6","rc-util/es/hooks/useLayoutEffect":"b6Tje","rc-util/es/getScrollBarSize":"giErF","./util":"gk8oe","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"giErF":[function(require,module,exports) {
+/* eslint-disable no-param-reassign */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>getScrollBarSize);
+parcelHelpers.export(exports, "getTargetScrollBarSize", ()=>getTargetScrollBarSize);
+var _dynamicCSS = require("./Dom/dynamicCSS");
+var cached;
+function measureScrollbarSize(ele) {
+    var randomId = "rc-scrollbar-measure-".concat(Math.random().toString(36).substring(7));
+    var measureEle = document.createElement("div");
+    measureEle.id = randomId;
+    // Create Style
+    var measureStyle = measureEle.style;
+    measureStyle.position = "absolute";
+    measureStyle.left = "0";
+    measureStyle.top = "0";
+    measureStyle.width = "100px";
+    measureStyle.height = "100px";
+    measureStyle.overflow = "scroll";
+    // Clone Style if needed
+    var fallbackWidth;
+    var fallbackHeight;
+    if (ele) {
+        var targetStyle = getComputedStyle(ele);
+        measureStyle.scrollbarColor = targetStyle.scrollbarColor;
+        measureStyle.scrollbarWidth = targetStyle.scrollbarWidth;
+        // Set Webkit style
+        var webkitScrollbarStyle = getComputedStyle(ele, "::-webkit-scrollbar");
+        var width = parseInt(webkitScrollbarStyle.width, 10);
+        var height = parseInt(webkitScrollbarStyle.height, 10);
+        // Try wrap to handle CSP case
+        try {
+            var widthStyle = width ? "width: ".concat(webkitScrollbarStyle.width, ";") : "";
+            var heightStyle = height ? "height: ".concat(webkitScrollbarStyle.height, ";") : "";
+            (0, _dynamicCSS.updateCSS)("\n#".concat(randomId, "::-webkit-scrollbar {\n").concat(widthStyle, "\n").concat(heightStyle, "\n}"), randomId);
+        } catch (e) {
+            // Can't wrap, just log error
+            console.error(e);
+            // Get from style directly
+            fallbackWidth = width;
+            fallbackHeight = height;
+        }
+    }
+    document.body.appendChild(measureEle);
+    // Measure. Get fallback style if provided
+    var scrollWidth = ele && fallbackWidth && !isNaN(fallbackWidth) ? fallbackWidth : measureEle.offsetWidth - measureEle.clientWidth;
+    var scrollHeight = ele && fallbackHeight && !isNaN(fallbackHeight) ? fallbackHeight : measureEle.offsetHeight - measureEle.clientHeight;
+    // Clean up
+    document.body.removeChild(measureEle);
+    (0, _dynamicCSS.removeCSS)(randomId);
+    return {
+        width: scrollWidth,
+        height: scrollHeight
+    };
+}
+function getScrollBarSize(fresh) {
+    if (typeof document === "undefined") return 0;
+    if (fresh || cached === undefined) cached = measureScrollbarSize();
+    return cached.width;
+}
+function getTargetScrollBarSize(target) {
+    if (typeof document === "undefined" || !target || !(target instanceof Element)) return {
+        width: 0,
+        height: 0
+    };
+    return measureScrollbarSize(target);
+}
+
+},{"./Dom/dynamicCSS":"lfei6","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gk8oe":[function(require,module,exports) {
+/**
+ * Test usage export. Do not use in your production
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isBodyOverflowing", ()=>isBodyOverflowing);
+function isBodyOverflowing() {
+    return document.body.scrollHeight > (window.innerHeight || document.documentElement.clientHeight) && window.innerWidth > document.body.offsetWidth;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"je0PD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "inline", ()=>inline);
+parcelHelpers.export(exports, "inlineMock", ()=>inlineMock);
+var inline = false;
+function inlineMock(nextInline) {
+    if (typeof nextInline === "boolean") inline = nextInline;
+    return inline;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5lCgP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/** @private Note only worked in develop env. Not work in production. */ parcelHelpers.export(exports, "resetUuid", ()=>resetUuid);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+function getUseId() {
+    // We need fully clone React function here to avoid webpack warning React 17 do not export `useId`
+    var fullClone = (0, _objectSpread2Default.default)({}, _react);
+    return fullClone.useId;
+}
+var uuid = 0;
+function resetUuid() {
+    uuid = 0;
+}
+var useOriginId = getUseId();
+exports.default = useOriginId ? // Use React `useId`
+function useId(id) {
+    var reactId = useOriginId();
+    // Developer passed id is single source of truth
+    if (id) return id;
+    return reactId;
+} : // Use compatible of `useId`
+function useCompatId(id) {
+    // Inner id for accessibility usage. Only work in client side
+    var _React$useState = _react.useState("ssr-id"), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), innerId = _React$useState2[0], setInnerId = _React$useState2[1];
+    _react.useEffect(function() {
+        var nextId = uuid;
+        uuid += 1;
+        setInnerId("rc_unique_".concat(nextId));
+    }, []);
+    // Developer passed id is single source of truth
+    if (id) return id;
+    // Return react native id or inner id
+    return innerId;
+};
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iD6NZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _rcResizeObserver = require("rc-resize-observer");
+var _rcResizeObserverDefault = parcelHelpers.interopDefault(_rcResizeObserver);
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var _arrow = require("./Arrow");
+var _arrowDefault = parcelHelpers.interopDefault(_arrow);
+var _mask = require("./Mask");
+var _maskDefault = parcelHelpers.interopDefault(_mask);
+var _popupContent = require("./PopupContent");
+var _popupContentDefault = parcelHelpers.interopDefault(_popupContent);
+var Popup = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var popup = props.popup, className = props.className, prefixCls = props.prefixCls, style = props.style, target = props.target, _onVisibleChanged = props.onVisibleChanged, open = props.open, keepDom = props.keepDom, fresh = props.fresh, onClick = props.onClick, mask = props.mask, arrow = props.arrow, arrowPos = props.arrowPos, align = props.align, motion = props.motion, maskMotion = props.maskMotion, forceRender = props.forceRender, getPopupContainer = props.getPopupContainer, autoDestroy = props.autoDestroy, Portal = props.portal, zIndex = props.zIndex, onMouseEnter = props.onMouseEnter, onMouseLeave = props.onMouseLeave, onPointerEnter = props.onPointerEnter, ready = props.ready, offsetX = props.offsetX, offsetY = props.offsetY, offsetR = props.offsetR, offsetB = props.offsetB, onAlign = props.onAlign, onPrepare = props.onPrepare, stretch = props.stretch, targetWidth = props.targetWidth, targetHeight = props.targetHeight;
+    var childNode = typeof popup === "function" ? popup() : popup;
+    // We can not remove holder only when motion finished.
+    var isNodeVisible = open || keepDom;
+    // ======================= Container ========================
+    var getPopupContainerNeedParams = (getPopupContainer === null || getPopupContainer === void 0 ? void 0 : getPopupContainer.length) > 0;
+    var _React$useState = _react.useState(!getPopupContainer || !getPopupContainerNeedParams), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), show = _React$useState2[0], setShow = _React$useState2[1];
+    // Delay to show since `getPopupContainer` need target element
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (!show && getPopupContainerNeedParams && target) setShow(true);
+    }, [
+        show,
+        getPopupContainerNeedParams,
+        target
+    ]);
+    // ========================= Render =========================
+    if (!show) return null;
+    // >>>>> Offset
+    var AUTO = "auto";
+    var offsetStyle = {
+        left: "-1000vw",
+        top: "-1000vh",
+        right: AUTO,
+        bottom: AUTO
+    };
+    // Set align style
+    if (ready || !open) {
+        var _experimental;
+        var points = align.points;
+        var dynamicInset = align.dynamicInset || ((_experimental = align._experimental) === null || _experimental === void 0 ? void 0 : _experimental.dynamicInset);
+        var alignRight = dynamicInset && points[0][1] === "r";
+        var alignBottom = dynamicInset && points[0][0] === "b";
+        if (alignRight) {
+            offsetStyle.right = offsetR;
+            offsetStyle.left = AUTO;
+        } else {
+            offsetStyle.left = offsetX;
+            offsetStyle.right = AUTO;
+        }
+        if (alignBottom) {
+            offsetStyle.bottom = offsetB;
+            offsetStyle.top = AUTO;
+        } else {
+            offsetStyle.top = offsetY;
+            offsetStyle.bottom = AUTO;
+        }
+    }
+    // >>>>> Misc
+    var miscStyle = {};
+    if (stretch) {
+        if (stretch.includes("height") && targetHeight) miscStyle.height = targetHeight;
+        else if (stretch.includes("minHeight") && targetHeight) miscStyle.minHeight = targetHeight;
+        if (stretch.includes("width") && targetWidth) miscStyle.width = targetWidth;
+        else if (stretch.includes("minWidth") && targetWidth) miscStyle.minWidth = targetWidth;
+    }
+    if (!open) miscStyle.pointerEvents = "none";
+    return /*#__PURE__*/ _react.createElement(Portal, {
+        open: forceRender || isNodeVisible,
+        getContainer: getPopupContainer && function() {
+            return getPopupContainer(target);
+        },
+        autoDestroy: autoDestroy
+    }, /*#__PURE__*/ _react.createElement((0, _maskDefault.default), {
+        prefixCls: prefixCls,
+        open: open,
+        zIndex: zIndex,
+        mask: mask,
+        motion: maskMotion
+    }), /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+        onResize: onAlign,
+        disabled: !open
+    }, function(resizeObserverRef) {
+        return /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), (0, _extendsDefault.default)({
+            motionAppear: true,
+            motionEnter: true,
+            motionLeave: true,
+            removeOnLeave: false,
+            forceRender: forceRender,
+            leavedClassName: "".concat(prefixCls, "-hidden")
+        }, motion, {
+            onAppearPrepare: onPrepare,
+            onEnterPrepare: onPrepare,
+            visible: open,
+            onVisibleChanged: function onVisibleChanged(nextVisible) {
+                var _motion$onVisibleChan;
+                motion === null || motion === void 0 || (_motion$onVisibleChan = motion.onVisibleChanged) === null || _motion$onVisibleChan === void 0 || _motion$onVisibleChan.call(motion, nextVisible);
+                _onVisibleChanged(nextVisible);
+            }
+        }), function(_ref1, motionRef) {
+            var motionClassName = _ref1.className, motionStyle = _ref1.style;
+            var cls = (0, _classnamesDefault.default)(prefixCls, motionClassName, className);
+            return /*#__PURE__*/ _react.createElement("div", {
+                ref: (0, _ref.composeRef)(resizeObserverRef, ref, motionRef),
+                className: cls,
+                style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+                    "--arrow-x": "".concat(arrowPos.x || 0, "px"),
+                    "--arrow-y": "".concat(arrowPos.y || 0, "px")
+                }, offsetStyle), miscStyle), motionStyle), {}, {
+                    boxSizing: "border-box",
+                    zIndex: zIndex
+                }, style),
+                onMouseEnter: onMouseEnter,
+                onMouseLeave: onMouseLeave,
+                onPointerEnter: onPointerEnter,
+                onClick: onClick
+            }, arrow && /*#__PURE__*/ _react.createElement((0, _arrowDefault.default), {
+                prefixCls: prefixCls,
+                arrow: arrow,
+                arrowPos: arrowPos,
+                align: align
+            }), /*#__PURE__*/ _react.createElement((0, _popupContentDefault.default), {
+                cache: !open && !fresh
+            }, childNode));
+        });
+    }));
+});
+Popup.displayName = "Popup";
+exports.default = Popup;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","classnames":"jocGM","rc-motion":"aaavi","rc-resize-observer":"gxwi9","rc-util/es/hooks/useLayoutEffect":"b6Tje","rc-util/es/ref":"jS1Z6","react":"21dqq","./Arrow":"lrUfN","./Mask":"gXvuh","./PopupContent":"bTRsn","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lrUfN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Arrow);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _react = require("react");
+function Arrow(props) {
+    var prefixCls = props.prefixCls, align = props.align, arrow = props.arrow, arrowPos = props.arrowPos;
+    var _ref = arrow || {}, className = _ref.className, content = _ref.content;
+    var _arrowPos$x = arrowPos.x, x = _arrowPos$x === void 0 ? 0 : _arrowPos$x, _arrowPos$y = arrowPos.y, y = _arrowPos$y === void 0 ? 0 : _arrowPos$y;
+    var arrowRef = _react.useRef();
+    // Skip if no align
+    if (!align || !align.points) return null;
+    var alignStyle = {
+        position: "absolute"
+    };
+    // Skip if no need to align
+    if (align.autoArrow !== false) {
+        var popupPoints = align.points[0];
+        var targetPoints = align.points[1];
+        var popupTB = popupPoints[0];
+        var popupLR = popupPoints[1];
+        var targetTB = targetPoints[0];
+        var targetLR = targetPoints[1];
+        // Top & Bottom
+        if (popupTB === targetTB || ![
+            "t",
+            "b"
+        ].includes(popupTB)) alignStyle.top = y;
+        else if (popupTB === "t") alignStyle.top = 0;
+        else alignStyle.bottom = 0;
+        // Left & Right
+        if (popupLR === targetLR || ![
+            "l",
+            "r"
+        ].includes(popupLR)) alignStyle.left = x;
+        else if (popupLR === "l") alignStyle.left = 0;
+        else alignStyle.right = 0;
+    }
+    return /*#__PURE__*/ _react.createElement("div", {
+        ref: arrowRef,
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-arrow"), className),
+        style: alignStyle
+    }, content);
+}
+
+},{"classnames":"jocGM","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gXvuh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Mask);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _react = require("react");
+function Mask(props) {
+    var prefixCls = props.prefixCls, open = props.open, zIndex = props.zIndex, mask = props.mask, motion = props.motion;
+    if (!mask) return null;
+    return /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), (0, _extendsDefault.default)({}, motion, {
+        motionAppear: true,
+        visible: open,
+        removeOnLeave: true
+    }), function(_ref) {
+        var className = _ref.className;
+        return /*#__PURE__*/ _react.createElement("div", {
+            style: {
+                zIndex: zIndex
+            },
+            className: (0, _classnamesDefault.default)("".concat(prefixCls, "-mask"), className)
+        });
+    });
+}
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","classnames":"jocGM","rc-motion":"aaavi","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bTRsn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var PopupContent = /*#__PURE__*/ _react.memo(function(_ref) {
+    var children = _ref.children;
+    return children;
+}, function(_, next) {
+    return next.cache;
+});
+PopupContent.displayName = "PopupContent";
+exports.default = PopupContent;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cOtps":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var TriggerWrapper = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var children = props.children, getTriggerDOMNode = props.getTriggerDOMNode;
+    var canUseRef = (0, _ref.supportRef)(children);
+    // When use `getTriggerDOMNode`, we should do additional work to get the real dom
+    var setRef = _react.useCallback(function(node) {
+        (0, _ref.fillRef)(ref, getTriggerDOMNode ? getTriggerDOMNode(node) : node);
+    }, [
+        getTriggerDOMNode
+    ]);
+    var mergedRef = (0, _ref.useComposeRef)(setRef, children.ref);
+    return canUseRef ? /*#__PURE__*/ _react.cloneElement(children, {
+        ref: mergedRef
+    }) : children;
+});
+TriggerWrapper.displayName = "TriggerWrapper";
+exports.default = TriggerWrapper;
+
+},{"rc-util/es/ref":"jS1Z6","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"XbhFq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var TriggerContext = /*#__PURE__*/ _react.createContext(null);
+exports.default = TriggerContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"i7hNb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useAction);
+var _react = require("react");
+function toArray(val) {
+    return val ? Array.isArray(val) ? val : [
+        val
+    ] : [];
+}
+function useAction(mobile, action, showAction, hideAction) {
+    return _react.useMemo(function() {
+        var mergedShowAction = toArray(showAction !== null && showAction !== void 0 ? showAction : action);
+        var mergedHideAction = toArray(hideAction !== null && hideAction !== void 0 ? hideAction : action);
+        var showActionSet = new Set(mergedShowAction);
+        var hideActionSet = new Set(mergedHideAction);
+        if (mobile) {
+            if (showActionSet.has("hover")) {
+                showActionSet.delete("hover");
+                showActionSet.add("click");
+            }
+            if (hideActionSet.has("hover")) {
+                hideActionSet.delete("hover");
+                hideActionSet.add("click");
+            }
+        }
+        return [
+            showActionSet,
+            hideActionSet
+        ];
+    }, [
+        mobile,
+        action,
+        showAction,
+        hideAction
+    ]);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jBLVJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useAlign);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _findDOMNode = require("rc-util/es/Dom/findDOMNode");
+var _isVisible = require("rc-util/es/Dom/isVisible");
+var _isVisibleDefault = parcelHelpers.interopDefault(_isVisible);
+var _useEvent = require("rc-util/es/hooks/useEvent");
+var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _react = require("react");
+var _util = require("../util");
+function getUnitOffset(size) {
+    var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    var offsetStr = "".concat(offset);
+    var cells = offsetStr.match(/^(.*)\%$/);
+    if (cells) return size * (parseFloat(cells[1]) / 100);
+    return parseFloat(offsetStr);
+}
+function getNumberOffset(rect, offset) {
+    var _ref = offset || [], _ref2 = (0, _slicedToArrayDefault.default)(_ref, 2), offsetX = _ref2[0], offsetY = _ref2[1];
+    return [
+        getUnitOffset(rect.width, offsetX),
+        getUnitOffset(rect.height, offsetY)
+    ];
+}
+function splitPoints() {
+    var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+    return [
+        points[0],
+        points[1]
+    ];
+}
+function getAlignPoint(rect, points) {
+    var topBottom = points[0];
+    var leftRight = points[1];
+    var x;
+    var y;
+    // Top & Bottom
+    if (topBottom === "t") y = rect.y;
+    else if (topBottom === "b") y = rect.y + rect.height;
+    else y = rect.y + rect.height / 2;
+    // Left & Right
+    if (leftRight === "l") x = rect.x;
+    else if (leftRight === "r") x = rect.x + rect.width;
+    else x = rect.x + rect.width / 2;
+    return {
+        x: x,
+        y: y
+    };
+}
+function reversePoints(points, index) {
+    var reverseMap = {
+        t: "b",
+        b: "t",
+        l: "r",
+        r: "l"
+    };
+    return points.map(function(point, i) {
+        if (i === index) return reverseMap[point] || "c";
+        return point;
+    }).join("");
+}
+function useAlign(open, popupEle, target, placement, builtinPlacements, popupAlign, onPopupAlign) {
+    var _React$useState = _react.useState({
+        ready: false,
+        offsetX: 0,
+        offsetY: 0,
+        offsetR: 0,
+        offsetB: 0,
+        arrowX: 0,
+        arrowY: 0,
+        scaleX: 1,
+        scaleY: 1,
+        align: builtinPlacements[placement] || {}
+    }), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), offsetInfo = _React$useState2[0], setOffsetInfo = _React$useState2[1];
+    var alignCountRef = _react.useRef(0);
+    var scrollerList = _react.useMemo(function() {
+        if (!popupEle) return [];
+        return (0, _util.collectScroller)(popupEle);
+    }, [
+        popupEle
+    ]);
+    // ========================= Flip ==========================
+    // We will memo flip info.
+    // If size change to make flip, it will memo the flip info and use it in next align.
+    var prevFlipRef = _react.useRef({});
+    var resetFlipCache = function resetFlipCache() {
+        prevFlipRef.current = {};
+    };
+    if (!open) resetFlipCache();
+    // ========================= Align =========================
+    var onAlign = (0, _useEventDefault.default)(function() {
+        if (popupEle && target && open) {
+            var _popupElement$parentE, _popupElement$parentE2;
+            var popupElement = popupEle;
+            var doc = popupElement.ownerDocument;
+            var win = (0, _util.getWin)(popupElement);
+            var _win$getComputedStyle = win.getComputedStyle(popupElement), width = _win$getComputedStyle.width, height = _win$getComputedStyle.height, popupPosition = _win$getComputedStyle.position;
+            var originLeft = popupElement.style.left;
+            var originTop = popupElement.style.top;
+            var originRight = popupElement.style.right;
+            var originBottom = popupElement.style.bottom;
+            var originOverflow = popupElement.style.overflow;
+            // Placement
+            var placementInfo = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, builtinPlacements[placement]), popupAlign);
+            // placeholder element
+            var placeholderElement = doc.createElement("div");
+            (_popupElement$parentE = popupElement.parentElement) === null || _popupElement$parentE === void 0 || _popupElement$parentE.appendChild(placeholderElement);
+            placeholderElement.style.left = "".concat(popupElement.offsetLeft, "px");
+            placeholderElement.style.top = "".concat(popupElement.offsetTop, "px");
+            placeholderElement.style.position = popupPosition;
+            placeholderElement.style.height = "".concat(popupElement.offsetHeight, "px");
+            placeholderElement.style.width = "".concat(popupElement.offsetWidth, "px");
+            // Reset first
+            popupElement.style.left = "0";
+            popupElement.style.top = "0";
+            popupElement.style.right = "auto";
+            popupElement.style.bottom = "auto";
+            popupElement.style.overflow = "hidden";
+            // Calculate align style, we should consider `transform` case
+            var targetRect;
+            if (Array.isArray(target)) targetRect = {
+                x: target[0],
+                y: target[1],
+                width: 0,
+                height: 0
+            };
+            else {
+                var rect = target.getBoundingClientRect();
+                targetRect = {
+                    x: rect.x,
+                    y: rect.y,
+                    width: rect.width,
+                    height: rect.height
+                };
+            }
+            var popupRect = popupElement.getBoundingClientRect();
+            var _doc$documentElement = doc.documentElement, clientWidth = _doc$documentElement.clientWidth, clientHeight = _doc$documentElement.clientHeight, scrollWidth = _doc$documentElement.scrollWidth, scrollHeight = _doc$documentElement.scrollHeight, scrollTop = _doc$documentElement.scrollTop, scrollLeft = _doc$documentElement.scrollLeft;
+            var popupHeight = popupRect.height;
+            var popupWidth = popupRect.width;
+            var targetHeight = targetRect.height;
+            var targetWidth = targetRect.width;
+            // Get bounding of visible area
+            var visibleRegion = {
+                left: 0,
+                top: 0,
+                right: clientWidth,
+                bottom: clientHeight
+            };
+            var scrollRegion = {
+                left: -scrollLeft,
+                top: -scrollTop,
+                right: scrollWidth - scrollLeft,
+                bottom: scrollHeight - scrollTop
+            };
+            var htmlRegion = placementInfo.htmlRegion;
+            var VISIBLE = "visible";
+            var VISIBLE_FIRST = "visibleFirst";
+            if (htmlRegion !== "scroll" && htmlRegion !== VISIBLE_FIRST) htmlRegion = VISIBLE;
+            var isVisibleFirst = htmlRegion === VISIBLE_FIRST;
+            var scrollRegionArea = (0, _util.getVisibleArea)(scrollRegion, scrollerList);
+            var visibleRegionArea = (0, _util.getVisibleArea)(visibleRegion, scrollerList);
+            var visibleArea = htmlRegion === VISIBLE ? visibleRegionArea : scrollRegionArea;
+            // When set to `visibleFirst`,
+            // the check `adjust` logic will use `visibleRegion` for check first.
+            var adjustCheckVisibleArea = isVisibleFirst ? visibleRegionArea : visibleArea;
+            // Record right & bottom align data
+            popupElement.style.left = "auto";
+            popupElement.style.top = "auto";
+            popupElement.style.right = "0";
+            popupElement.style.bottom = "0";
+            var popupMirrorRect = popupElement.getBoundingClientRect();
+            // Reset back
+            popupElement.style.left = originLeft;
+            popupElement.style.top = originTop;
+            popupElement.style.right = originRight;
+            popupElement.style.bottom = originBottom;
+            popupElement.style.overflow = originOverflow;
+            (_popupElement$parentE2 = popupElement.parentElement) === null || _popupElement$parentE2 === void 0 || _popupElement$parentE2.removeChild(placeholderElement);
+            // Calculate scale
+            var _scaleX = (0, _util.toNum)(Math.round(popupWidth / parseFloat(width) * 1000) / 1000);
+            var _scaleY = (0, _util.toNum)(Math.round(popupHeight / parseFloat(height) * 1000) / 1000);
+            // No need to align since it's not visible in view
+            if (_scaleX === 0 || _scaleY === 0 || (0, _findDOMNode.isDOM)(target) && !(0, _isVisibleDefault.default)(target)) return;
+            // Offset
+            var offset = placementInfo.offset, targetOffset = placementInfo.targetOffset;
+            var _getNumberOffset = getNumberOffset(popupRect, offset), _getNumberOffset2 = (0, _slicedToArrayDefault.default)(_getNumberOffset, 2), popupOffsetX = _getNumberOffset2[0], popupOffsetY = _getNumberOffset2[1];
+            var _getNumberOffset3 = getNumberOffset(targetRect, targetOffset), _getNumberOffset4 = (0, _slicedToArrayDefault.default)(_getNumberOffset3, 2), targetOffsetX = _getNumberOffset4[0], targetOffsetY = _getNumberOffset4[1];
+            targetRect.x -= targetOffsetX;
+            targetRect.y -= targetOffsetY;
+            // Points
+            var _ref3 = placementInfo.points || [], _ref4 = (0, _slicedToArrayDefault.default)(_ref3, 2), popupPoint = _ref4[0], targetPoint = _ref4[1];
+            var targetPoints = splitPoints(targetPoint);
+            var popupPoints = splitPoints(popupPoint);
+            var targetAlignPoint = getAlignPoint(targetRect, targetPoints);
+            var popupAlignPoint = getAlignPoint(popupRect, popupPoints);
+            // Real align info may not same as origin one
+            var nextAlignInfo = (0, _objectSpread2Default.default)({}, placementInfo);
+            // Next Offset
+            var nextOffsetX = targetAlignPoint.x - popupAlignPoint.x + popupOffsetX;
+            var nextOffsetY = targetAlignPoint.y - popupAlignPoint.y + popupOffsetY;
+            // ============== Intersection ===============
+            // Get area by position. Used for check if flip area is better
+            function getIntersectionVisibleArea(offsetX, offsetY) {
+                var area = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : visibleArea;
+                var l = popupRect.x + offsetX;
+                var t = popupRect.y + offsetY;
+                var r = l + popupWidth;
+                var b = t + popupHeight;
+                var visibleL = Math.max(l, area.left);
+                var visibleT = Math.max(t, area.top);
+                var visibleR = Math.min(r, area.right);
+                var visibleB = Math.min(b, area.bottom);
+                return Math.max(0, (visibleR - visibleL) * (visibleB - visibleT));
+            }
+            var originIntersectionVisibleArea = getIntersectionVisibleArea(nextOffsetX, nextOffsetY);
+            // As `visibleFirst`, we prepare this for check
+            var originIntersectionRecommendArea = getIntersectionVisibleArea(nextOffsetX, nextOffsetY, visibleRegionArea);
+            // ========================== Overflow ===========================
+            var targetAlignPointTL = getAlignPoint(targetRect, [
+                "t",
+                "l"
+            ]);
+            var popupAlignPointTL = getAlignPoint(popupRect, [
+                "t",
+                "l"
+            ]);
+            var targetAlignPointBR = getAlignPoint(targetRect, [
+                "b",
+                "r"
+            ]);
+            var popupAlignPointBR = getAlignPoint(popupRect, [
+                "b",
+                "r"
+            ]);
+            var overflow = placementInfo.overflow || {};
+            var adjustX = overflow.adjustX, adjustY = overflow.adjustY, shiftX = overflow.shiftX, shiftY = overflow.shiftY;
+            var supportAdjust = function supportAdjust(val) {
+                if (typeof val === "boolean") return val;
+                return val >= 0;
+            };
+            // Prepare position
+            var nextPopupY;
+            var nextPopupBottom;
+            var nextPopupX;
+            var nextPopupRight;
+            function syncNextPopupPosition() {
+                nextPopupY = popupRect.y + nextOffsetY;
+                nextPopupBottom = nextPopupY + popupHeight;
+                nextPopupX = popupRect.x + nextOffsetX;
+                nextPopupRight = nextPopupX + popupWidth;
+            }
+            syncNextPopupPosition();
+            // >>>>>>>>>> Top & Bottom
+            var needAdjustY = supportAdjust(adjustY);
+            var sameTB = popupPoints[0] === targetPoints[0];
+            // Bottom to Top
+            if (needAdjustY && popupPoints[0] === "t" && (nextPopupBottom > adjustCheckVisibleArea.bottom || prevFlipRef.current.bt)) {
+                var tmpNextOffsetY = nextOffsetY;
+                if (sameTB) tmpNextOffsetY -= popupHeight - targetHeight;
+                else tmpNextOffsetY = targetAlignPointTL.y - popupAlignPointBR.y - popupOffsetY;
+                var newVisibleArea = getIntersectionVisibleArea(nextOffsetX, tmpNextOffsetY);
+                var newVisibleRecommendArea = getIntersectionVisibleArea(nextOffsetX, tmpNextOffsetY, visibleRegionArea);
+                if (// Of course use larger one
+                newVisibleArea > originIntersectionVisibleArea || newVisibleArea === originIntersectionVisibleArea && (!isVisibleFirst || // Choose recommend one
+                newVisibleRecommendArea >= originIntersectionRecommendArea)) {
+                    prevFlipRef.current.bt = true;
+                    nextOffsetY = tmpNextOffsetY;
+                    popupOffsetY = -popupOffsetY;
+                    nextAlignInfo.points = [
+                        reversePoints(popupPoints, 0),
+                        reversePoints(targetPoints, 0)
+                    ];
+                } else prevFlipRef.current.bt = false;
+            }
+            // Top to Bottom
+            if (needAdjustY && popupPoints[0] === "b" && (nextPopupY < adjustCheckVisibleArea.top || prevFlipRef.current.tb)) {
+                var _tmpNextOffsetY = nextOffsetY;
+                if (sameTB) _tmpNextOffsetY += popupHeight - targetHeight;
+                else _tmpNextOffsetY = targetAlignPointBR.y - popupAlignPointTL.y - popupOffsetY;
+                var _newVisibleArea = getIntersectionVisibleArea(nextOffsetX, _tmpNextOffsetY);
+                var _newVisibleRecommendArea = getIntersectionVisibleArea(nextOffsetX, _tmpNextOffsetY, visibleRegionArea);
+                if (// Of course use larger one
+                _newVisibleArea > originIntersectionVisibleArea || _newVisibleArea === originIntersectionVisibleArea && (!isVisibleFirst || // Choose recommend one
+                _newVisibleRecommendArea >= originIntersectionRecommendArea)) {
+                    prevFlipRef.current.tb = true;
+                    nextOffsetY = _tmpNextOffsetY;
+                    popupOffsetY = -popupOffsetY;
+                    nextAlignInfo.points = [
+                        reversePoints(popupPoints, 0),
+                        reversePoints(targetPoints, 0)
+                    ];
+                } else prevFlipRef.current.tb = false;
+            }
+            // >>>>>>>>>> Left & Right
+            var needAdjustX = supportAdjust(adjustX);
+            // >>>>> Flip
+            var sameLR = popupPoints[1] === targetPoints[1];
+            // Right to Left
+            if (needAdjustX && popupPoints[1] === "l" && (nextPopupRight > adjustCheckVisibleArea.right || prevFlipRef.current.rl)) {
+                var tmpNextOffsetX = nextOffsetX;
+                if (sameLR) tmpNextOffsetX -= popupWidth - targetWidth;
+                else tmpNextOffsetX = targetAlignPointTL.x - popupAlignPointBR.x - popupOffsetX;
+                var _newVisibleArea2 = getIntersectionVisibleArea(tmpNextOffsetX, nextOffsetY);
+                var _newVisibleRecommendArea2 = getIntersectionVisibleArea(tmpNextOffsetX, nextOffsetY, visibleRegionArea);
+                if (// Of course use larger one
+                _newVisibleArea2 > originIntersectionVisibleArea || _newVisibleArea2 === originIntersectionVisibleArea && (!isVisibleFirst || // Choose recommend one
+                _newVisibleRecommendArea2 >= originIntersectionRecommendArea)) {
+                    prevFlipRef.current.rl = true;
+                    nextOffsetX = tmpNextOffsetX;
+                    popupOffsetX = -popupOffsetX;
+                    nextAlignInfo.points = [
+                        reversePoints(popupPoints, 1),
+                        reversePoints(targetPoints, 1)
+                    ];
+                } else prevFlipRef.current.rl = false;
+            }
+            // Left to Right
+            if (needAdjustX && popupPoints[1] === "r" && (nextPopupX < adjustCheckVisibleArea.left || prevFlipRef.current.lr)) {
+                var _tmpNextOffsetX = nextOffsetX;
+                if (sameLR) _tmpNextOffsetX += popupWidth - targetWidth;
+                else _tmpNextOffsetX = targetAlignPointBR.x - popupAlignPointTL.x - popupOffsetX;
+                var _newVisibleArea3 = getIntersectionVisibleArea(_tmpNextOffsetX, nextOffsetY);
+                var _newVisibleRecommendArea3 = getIntersectionVisibleArea(_tmpNextOffsetX, nextOffsetY, visibleRegionArea);
+                if (// Of course use larger one
+                _newVisibleArea3 > originIntersectionVisibleArea || _newVisibleArea3 === originIntersectionVisibleArea && (!isVisibleFirst || // Choose recommend one
+                _newVisibleRecommendArea3 >= originIntersectionRecommendArea)) {
+                    prevFlipRef.current.lr = true;
+                    nextOffsetX = _tmpNextOffsetX;
+                    popupOffsetX = -popupOffsetX;
+                    nextAlignInfo.points = [
+                        reversePoints(popupPoints, 1),
+                        reversePoints(targetPoints, 1)
+                    ];
+                } else prevFlipRef.current.lr = false;
+            }
+            // ============================ Shift ============================
+            syncNextPopupPosition();
+            var numShiftX = shiftX === true ? 0 : shiftX;
+            if (typeof numShiftX === "number") {
+                // Left
+                if (nextPopupX < visibleRegionArea.left) {
+                    nextOffsetX -= nextPopupX - visibleRegionArea.left - popupOffsetX;
+                    if (targetRect.x + targetWidth < visibleRegionArea.left + numShiftX) nextOffsetX += targetRect.x - visibleRegionArea.left + targetWidth - numShiftX;
+                }
+                // Right
+                if (nextPopupRight > visibleRegionArea.right) {
+                    nextOffsetX -= nextPopupRight - visibleRegionArea.right - popupOffsetX;
+                    if (targetRect.x > visibleRegionArea.right - numShiftX) nextOffsetX += targetRect.x - visibleRegionArea.right + numShiftX;
+                }
+            }
+            var numShiftY = shiftY === true ? 0 : shiftY;
+            if (typeof numShiftY === "number") {
+                // Top
+                if (nextPopupY < visibleRegionArea.top) {
+                    nextOffsetY -= nextPopupY - visibleRegionArea.top - popupOffsetY;
+                    // When target if far away from visible area
+                    // Stop shift
+                    if (targetRect.y + targetHeight < visibleRegionArea.top + numShiftY) nextOffsetY += targetRect.y - visibleRegionArea.top + targetHeight - numShiftY;
+                }
+                // Bottom
+                if (nextPopupBottom > visibleRegionArea.bottom) {
+                    nextOffsetY -= nextPopupBottom - visibleRegionArea.bottom - popupOffsetY;
+                    if (targetRect.y > visibleRegionArea.bottom - numShiftY) nextOffsetY += targetRect.y - visibleRegionArea.bottom + numShiftY;
+                }
+            }
+            // ============================ Arrow ============================
+            // Arrow center align
+            var popupLeft = popupRect.x + nextOffsetX;
+            var popupRight = popupLeft + popupWidth;
+            var popupTop = popupRect.y + nextOffsetY;
+            var popupBottom = popupTop + popupHeight;
+            var targetLeft = targetRect.x;
+            var targetRight = targetLeft + targetWidth;
+            var targetTop = targetRect.y;
+            var targetBottom = targetTop + targetHeight;
+            var maxLeft = Math.max(popupLeft, targetLeft);
+            var minRight = Math.min(popupRight, targetRight);
+            var xCenter = (maxLeft + minRight) / 2;
+            var nextArrowX = xCenter - popupLeft;
+            var maxTop = Math.max(popupTop, targetTop);
+            var minBottom = Math.min(popupBottom, targetBottom);
+            var yCenter = (maxTop + minBottom) / 2;
+            var nextArrowY = yCenter - popupTop;
+            onPopupAlign === null || onPopupAlign === void 0 || onPopupAlign(popupEle, nextAlignInfo);
+            // Additional calculate right & bottom position
+            var offsetX4Right = popupMirrorRect.right - popupRect.x - (nextOffsetX + popupRect.width);
+            var offsetY4Bottom = popupMirrorRect.bottom - popupRect.y - (nextOffsetY + popupRect.height);
+            if (_scaleX === 1) {
+                nextOffsetX = Math.round(nextOffsetX);
+                offsetX4Right = Math.round(offsetX4Right);
+            }
+            if (_scaleY === 1) {
+                nextOffsetY = Math.round(nextOffsetY);
+                offsetY4Bottom = Math.round(offsetY4Bottom);
+            }
+            var nextOffsetInfo = {
+                ready: true,
+                offsetX: nextOffsetX / _scaleX,
+                offsetY: nextOffsetY / _scaleY,
+                offsetR: offsetX4Right / _scaleX,
+                offsetB: offsetY4Bottom / _scaleY,
+                arrowX: nextArrowX / _scaleX,
+                arrowY: nextArrowY / _scaleY,
+                scaleX: _scaleX,
+                scaleY: _scaleY,
+                align: nextAlignInfo
+            };
+            setOffsetInfo(nextOffsetInfo);
+        }
+    });
+    var triggerAlign = function triggerAlign() {
+        alignCountRef.current += 1;
+        var id = alignCountRef.current;
+        // Merge all align requirement into one frame
+        Promise.resolve().then(function() {
+            if (alignCountRef.current === id) onAlign();
+        });
+    };
+    // Reset ready status when placement & open changed
+    var resetReady = function resetReady() {
+        setOffsetInfo(function(ori) {
+            return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, ori), {}, {
+                ready: false
+            });
+        });
+    };
+    (0, _useLayoutEffectDefault.default)(resetReady, [
+        placement
+    ]);
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (!open) resetReady();
+    }, [
+        open
+    ]);
+    return [
+        offsetInfo.ready,
+        offsetInfo.offsetX,
+        offsetInfo.offsetY,
+        offsetInfo.offsetR,
+        offsetInfo.offsetB,
+        offsetInfo.arrowX,
+        offsetInfo.arrowY,
+        offsetInfo.scaleX,
+        offsetInfo.scaleY,
+        offsetInfo.align,
+        triggerAlign
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/Dom/findDOMNode":"3PTYf","rc-util/es/Dom/isVisible":"f0y09","rc-util/es/hooks/useEvent":"jv4C9","rc-util/es/hooks/useLayoutEffect":"b6Tje","react":"21dqq","../util":"7IoBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"f0y09":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = function(element) {
+    if (!element) return false;
+    if (element instanceof Element) {
+        if (element.offsetParent) return true;
+        if (element.getBBox) {
+            var _getBBox = element.getBBox(), width = _getBBox.width, height = _getBBox.height;
+            if (width || height) return true;
+        }
+        if (element.getBoundingClientRect) {
+            var _element$getBoundingC = element.getBoundingClientRect(), _width = _element$getBoundingC.width, _height = _element$getBoundingC.height;
+            if (_width || _height) return true;
+        }
+    }
+    return false;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7IoBE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getAlignPopupClassName", ()=>getAlignPopupClassName);
+/** @deprecated We should not use this if we can refactor all deps */ parcelHelpers.export(exports, "getMotion", ()=>getMotion);
+parcelHelpers.export(exports, "getWin", ()=>getWin);
+/**
+ * Get all the scrollable parent elements of the element
+ * @param ele       The element to be detected
+ * @param areaOnly  Only return the parent which will cut visible area
+ */ parcelHelpers.export(exports, "collectScroller", ()=>collectScroller);
+parcelHelpers.export(exports, "toNum", ()=>toNum);
+/**
+ *
+ *
+ *  **************************************
+ *  *              Border                *
+ *  *     **************************     *
+ *  *     *                  *     *     *
+ *  *  B  *                  *  S  *  B  *
+ *  *  o  *                  *  c  *  o  *
+ *  *  r  *      Content     *  r  *  r  *
+ *  *  d  *                  *  o  *  d  *
+ *  *  e  *                  *  l  *  e  *
+ *  *  r  ********************  l  *  r  *
+ *  *     *        Scroll          *     *
+ *  *     **************************     *
+ *  *              Border                *
+ *  **************************************
+ *
+ */ /**
+ * Get visible area of element
+ */ parcelHelpers.export(exports, "getVisibleArea", ()=>getVisibleArea);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+function isPointsEq() {
+    var a1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var a2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var isAlignPoint = arguments.length > 2 ? arguments[2] : undefined;
+    if (isAlignPoint) return a1[0] === a2[0];
+    return a1[0] === a2[0] && a1[1] === a2[1];
+}
+function getAlignPopupClassName(builtinPlacements, prefixCls, align, isAlignPoint) {
+    var points = align.points;
+    var placements = Object.keys(builtinPlacements);
+    for(var i = 0; i < placements.length; i += 1){
+        var _builtinPlacements$pl;
+        var placement = placements[i];
+        if (isPointsEq((_builtinPlacements$pl = builtinPlacements[placement]) === null || _builtinPlacements$pl === void 0 ? void 0 : _builtinPlacements$pl.points, points, isAlignPoint)) return "".concat(prefixCls, "-placement-").concat(placement);
+    }
+    return "";
+}
+function getMotion(prefixCls, motion, animation, transitionName) {
+    if (motion) return motion;
+    if (animation) return {
+        motionName: "".concat(prefixCls, "-").concat(animation)
+    };
+    if (transitionName) return {
+        motionName: transitionName
+    };
+    return null;
+}
+function getWin(ele) {
+    return ele.ownerDocument.defaultView;
+}
+function collectScroller(ele) {
+    var scrollerList = [];
+    var current = ele === null || ele === void 0 ? void 0 : ele.parentElement;
+    var scrollStyle = [
+        "hidden",
+        "scroll",
+        "clip",
+        "auto"
+    ];
+    while(current){
+        var _getWin$getComputedSt = getWin(current).getComputedStyle(current), overflowX = _getWin$getComputedSt.overflowX, overflowY = _getWin$getComputedSt.overflowY, overflow = _getWin$getComputedSt.overflow;
+        if ([
+            overflowX,
+            overflowY,
+            overflow
+        ].some(function(o) {
+            return scrollStyle.includes(o);
+        })) scrollerList.push(current);
+        current = current.parentElement;
+    }
+    return scrollerList;
+}
+function toNum(num) {
+    var defaultValue = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+    return Number.isNaN(num) ? defaultValue : num;
+}
+function getPxValue(val) {
+    return toNum(parseFloat(val), 0);
+}
+function getVisibleArea(initArea, scrollerList) {
+    var visibleArea = (0, _objectSpread2Default.default)({}, initArea);
+    (scrollerList || []).forEach(function(ele) {
+        if (ele instanceof HTMLBodyElement || ele instanceof HTMLHtmlElement) return;
+        // Skip if static position which will not affect visible area
+        var _getWin$getComputedSt2 = getWin(ele).getComputedStyle(ele), overflow = _getWin$getComputedSt2.overflow, overflowClipMargin = _getWin$getComputedSt2.overflowClipMargin, borderTopWidth = _getWin$getComputedSt2.borderTopWidth, borderBottomWidth = _getWin$getComputedSt2.borderBottomWidth, borderLeftWidth = _getWin$getComputedSt2.borderLeftWidth, borderRightWidth = _getWin$getComputedSt2.borderRightWidth;
+        var eleRect = ele.getBoundingClientRect();
+        var eleOutHeight = ele.offsetHeight, eleInnerHeight = ele.clientHeight, eleOutWidth = ele.offsetWidth, eleInnerWidth = ele.clientWidth;
+        var borderTopNum = getPxValue(borderTopWidth);
+        var borderBottomNum = getPxValue(borderBottomWidth);
+        var borderLeftNum = getPxValue(borderLeftWidth);
+        var borderRightNum = getPxValue(borderRightWidth);
+        var scaleX = toNum(Math.round(eleRect.width / eleOutWidth * 1000) / 1000);
+        var scaleY = toNum(Math.round(eleRect.height / eleOutHeight * 1000) / 1000);
+        // Original visible area
+        var eleScrollWidth = (eleOutWidth - eleInnerWidth - borderLeftNum - borderRightNum) * scaleX;
+        var eleScrollHeight = (eleOutHeight - eleInnerHeight - borderTopNum - borderBottomNum) * scaleY;
+        // Cut border size
+        var scaledBorderTopWidth = borderTopNum * scaleY;
+        var scaledBorderBottomWidth = borderBottomNum * scaleY;
+        var scaledBorderLeftWidth = borderLeftNum * scaleX;
+        var scaledBorderRightWidth = borderRightNum * scaleX;
+        // Clip margin
+        var clipMarginWidth = 0;
+        var clipMarginHeight = 0;
+        if (overflow === "clip") {
+            var clipNum = getPxValue(overflowClipMargin);
+            clipMarginWidth = clipNum * scaleX;
+            clipMarginHeight = clipNum * scaleY;
+        }
+        // Region
+        var eleLeft = eleRect.x + scaledBorderLeftWidth - clipMarginWidth;
+        var eleTop = eleRect.y + scaledBorderTopWidth - clipMarginHeight;
+        var eleRight = eleLeft + eleRect.width + 2 * clipMarginWidth - scaledBorderLeftWidth - scaledBorderRightWidth - eleScrollWidth;
+        var eleBottom = eleTop + eleRect.height + 2 * clipMarginHeight - scaledBorderTopWidth - scaledBorderBottomWidth - eleScrollHeight;
+        visibleArea.left = Math.max(visibleArea.left, eleLeft);
+        visibleArea.top = Math.max(visibleArea.top, eleTop);
+        visibleArea.right = Math.min(visibleArea.right, eleRight);
+        visibleArea.bottom = Math.min(visibleArea.bottom, eleBottom);
+    });
+    return visibleArea;
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7t7L7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useWatch);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _util = require("../util");
+function useWatch(open, target, popup, onAlign, onScroll) {
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (open && target && popup) {
+            var targetElement = target;
+            var popupElement = popup;
+            var targetScrollList = (0, _util.collectScroller)(targetElement);
+            var popupScrollList = (0, _util.collectScroller)(popupElement);
+            var win = (0, _util.getWin)(popupElement);
+            var mergedList = new Set([
+                win
+            ].concat((0, _toConsumableArrayDefault.default)(targetScrollList), (0, _toConsumableArrayDefault.default)(popupScrollList)));
+            function notifyScroll() {
+                onAlign();
+                onScroll();
+            }
+            mergedList.forEach(function(scroller) {
+                scroller.addEventListener("scroll", notifyScroll, {
+                    passive: true
+                });
+            });
+            win.addEventListener("resize", notifyScroll, {
+                passive: true
+            });
+            // First time always do align
+            onAlign();
+            return function() {
+                mergedList.forEach(function(scroller) {
+                    scroller.removeEventListener("scroll", notifyScroll);
+                    win.removeEventListener("resize", notifyScroll);
+                });
+            };
+        }
+    }, [
+        open,
+        target,
+        popup
+    ]);
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","rc-util/es/hooks/useLayoutEffect":"b6Tje","../util":"7IoBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"66zBi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useWinClick);
+var _shadow = require("rc-util/es/Dom/shadow");
+var _warning = require("rc-util/es/warning");
+var _react = require("react");
+var _util = require("../util");
+function useWinClick(open, clickToHide, targetEle, popupEle, mask, maskClosable, inPopupOrChild, triggerOpen) {
+    var openRef = _react.useRef(open);
+    openRef.current = open;
+    // Click to hide is special action since click popup element should not hide
+    _react.useEffect(function() {
+        if (clickToHide && popupEle && (!mask || maskClosable)) {
+            var onTriggerClose = function onTriggerClose(_ref) {
+                var target = _ref.target;
+                if (openRef.current && !inPopupOrChild(target)) triggerOpen(false);
+            };
+            var win = (0, _util.getWin)(popupEle);
+            win.addEventListener("mousedown", onTriggerClose, true);
+            win.addEventListener("contextmenu", onTriggerClose, true);
+            // shadow root
+            var targetShadowRoot = (0, _shadow.getShadowRoot)(targetEle);
+            if (targetShadowRoot) {
+                targetShadowRoot.addEventListener("mousedown", onTriggerClose, true);
+                targetShadowRoot.addEventListener("contextmenu", onTriggerClose, true);
+            }
+            var _targetEle$getRootNod, _popupEle$getRootNode;
+            var targetRoot = targetEle === null || targetEle === void 0 || (_targetEle$getRootNod = targetEle.getRootNode) === null || _targetEle$getRootNod === void 0 ? void 0 : _targetEle$getRootNod.call(targetEle);
+            var popupRoot = (_popupEle$getRootNode = popupEle.getRootNode) === null || _popupEle$getRootNode === void 0 ? void 0 : _popupEle$getRootNode.call(popupEle);
+            (0, _warning.warning)(targetRoot === popupRoot, "trigger element and popup element should in same shadow root.");
+            return function() {
+                win.removeEventListener("mousedown", onTriggerClose, true);
+                win.removeEventListener("contextmenu", onTriggerClose, true);
+                if (targetShadowRoot) {
+                    targetShadowRoot.removeEventListener("mousedown", onTriggerClose, true);
+                    targetShadowRoot.removeEventListener("contextmenu", onTriggerClose, true);
+                }
+            };
+        }
+    }, [
+        clickToHide,
+        targetEle,
+        popupEle,
+        mask,
+        maskClosable
+    ]);
+}
+
+},{"rc-util/es/Dom/shadow":"5SLLq","rc-util/es/warning":"c7oua","react":"21dqq","../util":"7IoBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5e5KV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useAccessibility);
+var _keyCode = require("rc-util/es/KeyCode");
+var _keyCodeDefault = parcelHelpers.interopDefault(_keyCode);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _react = require("react");
+var ESC = (0, _keyCodeDefault.default).ESC, TAB = (0, _keyCodeDefault.default).TAB;
+function useAccessibility(_ref) {
+    var visible = _ref.visible, triggerRef = _ref.triggerRef, onVisibleChange = _ref.onVisibleChange, autoFocus = _ref.autoFocus, overlayRef = _ref.overlayRef;
+    var focusMenuRef = _react.useRef(false);
+    var handleCloseMenuAndReturnFocus = function handleCloseMenuAndReturnFocus() {
+        if (visible) {
+            var _triggerRef$current, _triggerRef$current$f;
+            (_triggerRef$current = triggerRef.current) === null || _triggerRef$current === void 0 || (_triggerRef$current$f = _triggerRef$current.focus) === null || _triggerRef$current$f === void 0 || _triggerRef$current$f.call(_triggerRef$current);
+            onVisibleChange === null || onVisibleChange === void 0 || onVisibleChange(false);
+        }
+    };
+    var focusMenu = function focusMenu() {
+        var _overlayRef$current;
+        if ((_overlayRef$current = overlayRef.current) !== null && _overlayRef$current !== void 0 && _overlayRef$current.focus) {
+            overlayRef.current.focus();
+            focusMenuRef.current = true;
+            return true;
+        }
+        return false;
+    };
+    var handleKeyDown = function handleKeyDown(event) {
+        switch(event.keyCode){
+            case ESC:
+                handleCloseMenuAndReturnFocus();
+                break;
+            case TAB:
+                var focusResult = false;
+                if (!focusMenuRef.current) focusResult = focusMenu();
+                if (focusResult) event.preventDefault();
+                else handleCloseMenuAndReturnFocus();
+                break;
+        }
+    };
+    _react.useEffect(function() {
+        if (visible) {
+            window.addEventListener("keydown", handleKeyDown);
+            if (autoFocus) // FIXME: hack with raf
+            (0, _rafDefault.default)(focusMenu, 3);
+            return function() {
+                window.removeEventListener("keydown", handleKeyDown);
+                focusMenuRef.current = false;
+            };
+        }
+        return function() {
+            focusMenuRef.current = false;
+        };
+    }, [
+        visible
+    ]); // eslint-disable-line react-hooks/exhaustive-deps
+}
+
+},{"rc-util/es/KeyCode":"77Hyb","rc-util/es/raf":"7OvWw","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"77Hyb":[function(require,module,exports) {
+/**
+ * @ignore
+ * some key-codes definition and utils from closure-library
+ * @author yiminghe@gmail.com
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var KeyCode = {
+    /**
+   * MAC_ENTER
+   */ MAC_ENTER: 3,
+    /**
+   * BACKSPACE
+   */ BACKSPACE: 8,
+    /**
+   * TAB
+   */ TAB: 9,
+    /**
+   * NUMLOCK on FF/Safari Mac
+   */ NUM_CENTER: 12,
+    // NUMLOCK on FF/Safari Mac
+    /**
+   * ENTER
+   */ ENTER: 13,
+    /**
+   * SHIFT
+   */ SHIFT: 16,
+    /**
+   * CTRL
+   */ CTRL: 17,
+    /**
+   * ALT
+   */ ALT: 18,
+    /**
+   * PAUSE
+   */ PAUSE: 19,
+    /**
+   * CAPS_LOCK
+   */ CAPS_LOCK: 20,
+    /**
+   * ESC
+   */ ESC: 27,
+    /**
+   * SPACE
+   */ SPACE: 32,
+    /**
+   * PAGE_UP
+   */ PAGE_UP: 33,
+    // also NUM_NORTH_EAST
+    /**
+   * PAGE_DOWN
+   */ PAGE_DOWN: 34,
+    // also NUM_SOUTH_EAST
+    /**
+   * END
+   */ END: 35,
+    // also NUM_SOUTH_WEST
+    /**
+   * HOME
+   */ HOME: 36,
+    // also NUM_NORTH_WEST
+    /**
+   * LEFT
+   */ LEFT: 37,
+    // also NUM_WEST
+    /**
+   * UP
+   */ UP: 38,
+    // also NUM_NORTH
+    /**
+   * RIGHT
+   */ RIGHT: 39,
+    // also NUM_EAST
+    /**
+   * DOWN
+   */ DOWN: 40,
+    // also NUM_SOUTH
+    /**
+   * PRINT_SCREEN
+   */ PRINT_SCREEN: 44,
+    /**
+   * INSERT
+   */ INSERT: 45,
+    // also NUM_INSERT
+    /**
+   * DELETE
+   */ DELETE: 46,
+    // also NUM_DELETE
+    /**
+   * ZERO
+   */ ZERO: 48,
+    /**
+   * ONE
+   */ ONE: 49,
+    /**
+   * TWO
+   */ TWO: 50,
+    /**
+   * THREE
+   */ THREE: 51,
+    /**
+   * FOUR
+   */ FOUR: 52,
+    /**
+   * FIVE
+   */ FIVE: 53,
+    /**
+   * SIX
+   */ SIX: 54,
+    /**
+   * SEVEN
+   */ SEVEN: 55,
+    /**
+   * EIGHT
+   */ EIGHT: 56,
+    /**
+   * NINE
+   */ NINE: 57,
+    /**
+   * QUESTION_MARK
+   */ QUESTION_MARK: 63,
+    // needs localization
+    /**
+   * A
+   */ A: 65,
+    /**
+   * B
+   */ B: 66,
+    /**
+   * C
+   */ C: 67,
+    /**
+   * D
+   */ D: 68,
+    /**
+   * E
+   */ E: 69,
+    /**
+   * F
+   */ F: 70,
+    /**
+   * G
+   */ G: 71,
+    /**
+   * H
+   */ H: 72,
+    /**
+   * I
+   */ I: 73,
+    /**
+   * J
+   */ J: 74,
+    /**
+   * K
+   */ K: 75,
+    /**
+   * L
+   */ L: 76,
+    /**
+   * M
+   */ M: 77,
+    /**
+   * N
+   */ N: 78,
+    /**
+   * O
+   */ O: 79,
+    /**
+   * P
+   */ P: 80,
+    /**
+   * Q
+   */ Q: 81,
+    /**
+   * R
+   */ R: 82,
+    /**
+   * S
+   */ S: 83,
+    /**
+   * T
+   */ T: 84,
+    /**
+   * U
+   */ U: 85,
+    /**
+   * V
+   */ V: 86,
+    /**
+   * W
+   */ W: 87,
+    /**
+   * X
+   */ X: 88,
+    /**
+   * Y
+   */ Y: 89,
+    /**
+   * Z
+   */ Z: 90,
+    /**
+   * META
+   */ META: 91,
+    // WIN_KEY_LEFT
+    /**
+   * WIN_KEY_RIGHT
+   */ WIN_KEY_RIGHT: 92,
+    /**
+   * CONTEXT_MENU
+   */ CONTEXT_MENU: 93,
+    /**
+   * NUM_ZERO
+   */ NUM_ZERO: 96,
+    /**
+   * NUM_ONE
+   */ NUM_ONE: 97,
+    /**
+   * NUM_TWO
+   */ NUM_TWO: 98,
+    /**
+   * NUM_THREE
+   */ NUM_THREE: 99,
+    /**
+   * NUM_FOUR
+   */ NUM_FOUR: 100,
+    /**
+   * NUM_FIVE
+   */ NUM_FIVE: 101,
+    /**
+   * NUM_SIX
+   */ NUM_SIX: 102,
+    /**
+   * NUM_SEVEN
+   */ NUM_SEVEN: 103,
+    /**
+   * NUM_EIGHT
+   */ NUM_EIGHT: 104,
+    /**
+   * NUM_NINE
+   */ NUM_NINE: 105,
+    /**
+   * NUM_MULTIPLY
+   */ NUM_MULTIPLY: 106,
+    /**
+   * NUM_PLUS
+   */ NUM_PLUS: 107,
+    /**
+   * NUM_MINUS
+   */ NUM_MINUS: 109,
+    /**
+   * NUM_PERIOD
+   */ NUM_PERIOD: 110,
+    /**
+   * NUM_DIVISION
+   */ NUM_DIVISION: 111,
+    /**
+   * F1
+   */ F1: 112,
+    /**
+   * F2
+   */ F2: 113,
+    /**
+   * F3
+   */ F3: 114,
+    /**
+   * F4
+   */ F4: 115,
+    /**
+   * F5
+   */ F5: 116,
+    /**
+   * F6
+   */ F6: 117,
+    /**
+   * F7
+   */ F7: 118,
+    /**
+   * F8
+   */ F8: 119,
+    /**
+   * F9
+   */ F9: 120,
+    /**
+   * F10
+   */ F10: 121,
+    /**
+   * F11
+   */ F11: 122,
+    /**
+   * F12
+   */ F12: 123,
+    /**
+   * NUMLOCK
+   */ NUMLOCK: 144,
+    /**
+   * SEMICOLON
+   */ SEMICOLON: 186,
+    // needs localization
+    /**
+   * DASH
+   */ DASH: 189,
+    // needs localization
+    /**
+   * EQUALS
+   */ EQUALS: 187,
+    // needs localization
+    /**
+   * COMMA
+   */ COMMA: 188,
+    // needs localization
+    /**
+   * PERIOD
+   */ PERIOD: 190,
+    // needs localization
+    /**
+   * SLASH
+   */ SLASH: 191,
+    // needs localization
+    /**
+   * APOSTROPHE
+   */ APOSTROPHE: 192,
+    // needs localization
+    /**
+   * SINGLE_QUOTE
+   */ SINGLE_QUOTE: 222,
+    // needs localization
+    /**
+   * OPEN_SQUARE_BRACKET
+   */ OPEN_SQUARE_BRACKET: 219,
+    // needs localization
+    /**
+   * BACKSLASH
+   */ BACKSLASH: 220,
+    // needs localization
+    /**
+   * CLOSE_SQUARE_BRACKET
+   */ CLOSE_SQUARE_BRACKET: 221,
+    // needs localization
+    /**
+   * WIN_KEY
+   */ WIN_KEY: 224,
+    /**
+   * MAC_FF_META
+   */ MAC_FF_META: 224,
+    // Firefox (Gecko) fires this for the meta key instead of 91
+    /**
+   * WIN_IME
+   */ WIN_IME: 229,
+    // ======================== Function ========================
+    /**
+   * whether text and modified key is entered at the same time.
+   */ isTextModifyingKeyEvent: function isTextModifyingKeyEvent(e) {
+        var keyCode = e.keyCode;
+        if (e.altKey && !e.ctrlKey || e.metaKey || // Function keys don't generate text
+        keyCode >= KeyCode.F1 && keyCode <= KeyCode.F12) return false;
+        // The following keys are quite harmless, even in combination with
+        // CTRL, ALT or SHIFT.
+        switch(keyCode){
+            case KeyCode.ALT:
+            case KeyCode.CAPS_LOCK:
+            case KeyCode.CONTEXT_MENU:
+            case KeyCode.CTRL:
+            case KeyCode.DOWN:
+            case KeyCode.END:
+            case KeyCode.ESC:
+            case KeyCode.HOME:
+            case KeyCode.INSERT:
+            case KeyCode.LEFT:
+            case KeyCode.MAC_FF_META:
+            case KeyCode.META:
+            case KeyCode.NUMLOCK:
+            case KeyCode.NUM_CENTER:
+            case KeyCode.PAGE_DOWN:
+            case KeyCode.PAGE_UP:
+            case KeyCode.PAUSE:
+            case KeyCode.PRINT_SCREEN:
+            case KeyCode.RIGHT:
+            case KeyCode.SHIFT:
+            case KeyCode.UP:
+            case KeyCode.WIN_KEY:
+            case KeyCode.WIN_KEY_RIGHT:
+                return false;
+            default:
+                return true;
+        }
+    },
+    /**
+   * whether character is entered.
+   */ isCharacterKey: function isCharacterKey(keyCode) {
+        if (keyCode >= KeyCode.ZERO && keyCode <= KeyCode.NINE) return true;
+        if (keyCode >= KeyCode.NUM_ZERO && keyCode <= KeyCode.NUM_MULTIPLY) return true;
+        if (keyCode >= KeyCode.A && keyCode <= KeyCode.Z) return true;
+        // Safari sends zero key code for non-latin characters.
+        if (window.navigator.userAgent.indexOf("WebKit") !== -1 && keyCode === 0) return true;
+        switch(keyCode){
+            case KeyCode.SPACE:
+            case KeyCode.QUESTION_MARK:
+            case KeyCode.NUM_PLUS:
+            case KeyCode.NUM_MINUS:
+            case KeyCode.NUM_PERIOD:
+            case KeyCode.NUM_DIVISION:
+            case KeyCode.SEMICOLON:
+            case KeyCode.DASH:
+            case KeyCode.EQUALS:
+            case KeyCode.COMMA:
+            case KeyCode.PERIOD:
+            case KeyCode.SLASH:
+            case KeyCode.APOSTROPHE:
+            case KeyCode.SINGLE_QUOTE:
+            case KeyCode.OPEN_SQUARE_BRACKET:
+            case KeyCode.BACKSLASH:
+            case KeyCode.CLOSE_SQUARE_BRACKET:
+                return true;
+            default:
+                return false;
+        }
+    }
+};
+exports.default = KeyCode;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6vFdg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _ref = require("rc-util/es/ref");
+var Overlay = /*#__PURE__*/ (0, _react.forwardRef)(function(props, ref) {
+    var overlay = props.overlay, arrow = props.arrow, prefixCls = props.prefixCls;
+    var overlayNode = (0, _react.useMemo)(function() {
+        var overlayElement;
+        if (typeof overlay === "function") overlayElement = overlay();
+        else overlayElement = overlay;
+        return overlayElement;
+    }, [
+        overlay
+    ]);
+    var composedRef = (0, _ref.composeRef)(ref, overlayNode === null || overlayNode === void 0 ? void 0 : overlayNode.ref);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, arrow && /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: "".concat(prefixCls, "-arrow")
+    }), /*#__PURE__*/ (0, _reactDefault.default).cloneElement(overlayNode, {
+        ref: (0, _ref.supportRef)(overlayNode) ? composedRef : undefined
+    }));
+});
+exports.default = Overlay;
+
+},{"react":"21dqq","rc-util/es/ref":"jS1Z6","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cDi7B":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var autoAdjustOverflow = {
+    adjustX: 1,
+    adjustY: 1
+};
+var targetOffset = [
+    0,
+    0
+];
+var placements = {
+    topLeft: {
+        points: [
+            "bl",
+            "tl"
+        ],
+        overflow: autoAdjustOverflow,
+        offset: [
+            0,
+            -4
+        ],
+        targetOffset: targetOffset
+    },
+    top: {
+        points: [
+            "bc",
+            "tc"
+        ],
+        overflow: autoAdjustOverflow,
+        offset: [
+            0,
+            -4
+        ],
+        targetOffset: targetOffset
+    },
+    topRight: {
+        points: [
+            "br",
+            "tr"
+        ],
+        overflow: autoAdjustOverflow,
+        offset: [
+            0,
+            -4
+        ],
+        targetOffset: targetOffset
+    },
+    bottomLeft: {
+        points: [
+            "tl",
+            "bl"
+        ],
+        overflow: autoAdjustOverflow,
+        offset: [
+            0,
+            4
+        ],
+        targetOffset: targetOffset
+    },
+    bottom: {
+        points: [
+            "tc",
+            "bc"
+        ],
+        overflow: autoAdjustOverflow,
+        offset: [
+            0,
+            4
+        ],
+        targetOffset: targetOffset
+    },
+    bottomRight: {
+        points: [
+            "tr",
+            "br"
+        ],
+        overflow: autoAdjustOverflow,
+        offset: [
+            0,
+            4
+        ],
+        targetOffset: targetOffset
+    }
+};
+exports.default = placements;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ebQRf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SubMenu", ()=>(0, _subMenuDefault.default));
+parcelHelpers.export(exports, "Item", ()=>(0, _menuItemDefault.default));
+parcelHelpers.export(exports, "MenuItem", ()=>(0, _menuItemDefault.default));
+parcelHelpers.export(exports, "MenuItemGroup", ()=>(0, _menuItemGroupDefault.default));
+parcelHelpers.export(exports, "ItemGroup", ()=>(0, _menuItemGroupDefault.default));
+parcelHelpers.export(exports, "Divider", ()=>(0, _dividerDefault.default));
+parcelHelpers.export(exports, "useFullPath", ()=>/** @private Only used for antd internal. Do not use in your production. */ (0, _pathContext.useFullPath));
+var _menu = require("./Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _menuItem = require("./MenuItem");
+var _menuItemDefault = parcelHelpers.interopDefault(_menuItem);
+var _subMenu = require("./SubMenu");
+var _subMenuDefault = parcelHelpers.interopDefault(_subMenu);
+var _menuItemGroup = require("./MenuItemGroup");
+var _menuItemGroupDefault = parcelHelpers.interopDefault(_menuItemGroup);
+var _pathContext = require("./context/PathContext");
+var _divider = require("./Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var ExportMenu = (0, _menuDefault.default);
+ExportMenu.Item = (0, _menuItemDefault.default);
+ExportMenu.SubMenu = (0, _subMenuDefault.default);
+ExportMenu.ItemGroup = (0, _menuItemGroupDefault.default);
+ExportMenu.Divider = (0, _dividerDefault.default);
+exports.default = ExportMenu;
+
+},{"./Menu":"exhuL","./MenuItem":"gCG2C","./SubMenu":"7towV","./MenuItemGroup":"e8a91","./context/PathContext":"2H1sf","./Divider":"lWccB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"exhuL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcOverflow = require("rc-overflow");
+var _rcOverflowDefault = parcelHelpers.interopDefault(_rcOverflow);
+var _useMergedState = require("rc-util/es/hooks/useMergedState");
+var _useMergedStateDefault = parcelHelpers.interopDefault(_useMergedState);
+var _isEqual = require("rc-util/es/isEqual");
+var _isEqualDefault = parcelHelpers.interopDefault(_isEqual);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _idContext = require("./context/IdContext");
+var _menuContext = require("./context/MenuContext");
+var _menuContextDefault = parcelHelpers.interopDefault(_menuContext);
+var _pathContext = require("./context/PathContext");
+var _privateContext = require("./context/PrivateContext");
+var _privateContextDefault = parcelHelpers.interopDefault(_privateContext);
+var _useAccessibility = require("./hooks/useAccessibility");
+var _useKeyRecords = require("./hooks/useKeyRecords");
+var _useKeyRecordsDefault = parcelHelpers.interopDefault(_useKeyRecords);
+var _useMemoCallback = require("./hooks/useMemoCallback");
+var _useMemoCallbackDefault = parcelHelpers.interopDefault(_useMemoCallback);
+var _useUUID = require("./hooks/useUUID");
+var _useUUIDDefault = parcelHelpers.interopDefault(_useUUID);
+var _menuItem = require("./MenuItem");
+var _menuItemDefault = parcelHelpers.interopDefault(_menuItem);
+var _subMenu = require("./SubMenu");
+var _subMenuDefault = parcelHelpers.interopDefault(_subMenu);
+var _nodeUtil = require("./utils/nodeUtil");
+var _warnUtil = require("./utils/warnUtil");
+var _excluded = [
+    "prefixCls",
+    "rootClassName",
+    "style",
+    "className",
+    "tabIndex",
+    "items",
+    "children",
+    "direction",
+    "id",
+    "mode",
+    "inlineCollapsed",
+    "disabled",
+    "disabledOverflow",
+    "subMenuOpenDelay",
+    "subMenuCloseDelay",
+    "forceSubMenuRender",
+    "defaultOpenKeys",
+    "openKeys",
+    "activeKey",
+    "defaultActiveFirst",
+    "selectable",
+    "multiple",
+    "defaultSelectedKeys",
+    "selectedKeys",
+    "onSelect",
+    "onDeselect",
+    "inlineIndent",
+    "motion",
+    "defaultMotions",
+    "triggerSubMenuAction",
+    "builtinPlacements",
+    "itemIcon",
+    "expandIcon",
+    "overflowedIndicator",
+    "overflowedIndicatorPopupClassName",
+    "getPopupContainer",
+    "onClick",
+    "onOpenChange",
+    "onKeyDown",
+    "openAnimation",
+    "openTransitionName",
+    "_internalRenderMenuItem",
+    "_internalRenderSubMenuItem",
+    "_internalComponents"
+];
+/**
+ * Menu modify after refactor:
+ * ## Add
+ * - disabled
+ *
+ * ## Remove
+ * - openTransitionName
+ * - openAnimation
+ * - onDestroy
+ * - siderCollapsed: Seems antd do not use this prop (Need test in antd)
+ * - collapsedWidth: Seems this logic should be handle by antd Layout.Sider
+ */ // optimize for render
+var EMPTY_LIST = [];
+var Menu = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var _childList$;
+    var _ref = props, _ref$prefixCls = _ref.prefixCls, prefixCls = _ref$prefixCls === void 0 ? "rc-menu" : _ref$prefixCls, rootClassName = _ref.rootClassName, style = _ref.style, className = _ref.className, _ref$tabIndex = _ref.tabIndex, tabIndex = _ref$tabIndex === void 0 ? 0 : _ref$tabIndex, items = _ref.items, children = _ref.children, direction = _ref.direction, id = _ref.id, _ref$mode = _ref.mode, mode = _ref$mode === void 0 ? "vertical" : _ref$mode, inlineCollapsed = _ref.inlineCollapsed, disabled = _ref.disabled, disabledOverflow = _ref.disabledOverflow, _ref$subMenuOpenDelay = _ref.subMenuOpenDelay, subMenuOpenDelay = _ref$subMenuOpenDelay === void 0 ? 0.1 : _ref$subMenuOpenDelay, _ref$subMenuCloseDela = _ref.subMenuCloseDelay, subMenuCloseDelay = _ref$subMenuCloseDela === void 0 ? 0.1 : _ref$subMenuCloseDela, forceSubMenuRender = _ref.forceSubMenuRender, defaultOpenKeys = _ref.defaultOpenKeys, openKeys = _ref.openKeys, activeKey = _ref.activeKey, defaultActiveFirst = _ref.defaultActiveFirst, _ref$selectable = _ref.selectable, selectable = _ref$selectable === void 0 ? true : _ref$selectable, _ref$multiple = _ref.multiple, multiple = _ref$multiple === void 0 ? false : _ref$multiple, defaultSelectedKeys = _ref.defaultSelectedKeys, selectedKeys = _ref.selectedKeys, onSelect = _ref.onSelect, onDeselect = _ref.onDeselect, _ref$inlineIndent = _ref.inlineIndent, inlineIndent = _ref$inlineIndent === void 0 ? 24 : _ref$inlineIndent, motion = _ref.motion, defaultMotions = _ref.defaultMotions, _ref$triggerSubMenuAc = _ref.triggerSubMenuAction, triggerSubMenuAction = _ref$triggerSubMenuAc === void 0 ? "hover" : _ref$triggerSubMenuAc, builtinPlacements = _ref.builtinPlacements, itemIcon = _ref.itemIcon, expandIcon = _ref.expandIcon, _ref$overflowedIndica = _ref.overflowedIndicator, overflowedIndicator = _ref$overflowedIndica === void 0 ? "..." : _ref$overflowedIndica, overflowedIndicatorPopupClassName = _ref.overflowedIndicatorPopupClassName, getPopupContainer = _ref.getPopupContainer, onClick = _ref.onClick, onOpenChange = _ref.onOpenChange, onKeyDown = _ref.onKeyDown, openAnimation = _ref.openAnimation, openTransitionName = _ref.openTransitionName, _internalRenderMenuItem = _ref._internalRenderMenuItem, _internalRenderSubMenuItem = _ref._internalRenderSubMenuItem, _internalComponents = _ref._internalComponents, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    var _React$useMemo = _react.useMemo(function() {
+        return [
+            (0, _nodeUtil.parseItems)(children, items, EMPTY_LIST, _internalComponents),
+            (0, _nodeUtil.parseItems)(children, items, EMPTY_LIST, {})
+        ];
+    }, [
+        children,
+        items,
+        _internalComponents
+    ]), _React$useMemo2 = (0, _slicedToArrayDefault.default)(_React$useMemo, 2), childList = _React$useMemo2[0], measureChildList = _React$useMemo2[1];
+    var _React$useState = _react.useState(false), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), mounted = _React$useState2[0], setMounted = _React$useState2[1];
+    var containerRef = _react.useRef();
+    var uuid = (0, _useUUIDDefault.default)(id);
+    var isRtl = direction === "rtl";
+    (0, _warningDefault.default)(!openAnimation && !openTransitionName, "`openAnimation` and `openTransitionName` is removed. Please use `motion` or `defaultMotion` instead.");
+    // ========================= Open =========================
+    var _useMergedState = (0, _useMergedStateDefault.default)(defaultOpenKeys, {
+        value: openKeys,
+        postState: function postState(keys) {
+            return keys || EMPTY_LIST;
+        }
+    }), _useMergedState2 = (0, _slicedToArrayDefault.default)(_useMergedState, 2), mergedOpenKeys = _useMergedState2[0], setMergedOpenKeys = _useMergedState2[1];
+    // React 18 will merge mouse event which means we open key will not sync
+    // ref: https://github.com/ant-design/ant-design/issues/38818
+    var triggerOpenKeys = function triggerOpenKeys(keys) {
+        var forceFlush = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+        function doUpdate() {
+            setMergedOpenKeys(keys);
+            onOpenChange === null || onOpenChange === void 0 || onOpenChange(keys);
+        }
+        if (forceFlush) (0, _reactDom.flushSync)(doUpdate);
+        else doUpdate();
+    };
+    // >>>>> Cache & Reset open keys when inlineCollapsed changed
+    var _React$useState3 = _react.useState(mergedOpenKeys), _React$useState4 = (0, _slicedToArrayDefault.default)(_React$useState3, 2), inlineCacheOpenKeys = _React$useState4[0], setInlineCacheOpenKeys = _React$useState4[1];
+    var mountRef = _react.useRef(false);
+    // ========================= Mode =========================
+    var _React$useMemo3 = _react.useMemo(function() {
+        if ((mode === "inline" || mode === "vertical") && inlineCollapsed) return [
+            "vertical",
+            inlineCollapsed
+        ];
+        return [
+            mode,
+            false
+        ];
+    }, [
+        mode,
+        inlineCollapsed
+    ]), _React$useMemo4 = (0, _slicedToArrayDefault.default)(_React$useMemo3, 2), mergedMode = _React$useMemo4[0], mergedInlineCollapsed = _React$useMemo4[1];
+    var isInlineMode = mergedMode === "inline";
+    var _React$useState5 = _react.useState(mergedMode), _React$useState6 = (0, _slicedToArrayDefault.default)(_React$useState5, 2), internalMode = _React$useState6[0], setInternalMode = _React$useState6[1];
+    var _React$useState7 = _react.useState(mergedInlineCollapsed), _React$useState8 = (0, _slicedToArrayDefault.default)(_React$useState7, 2), internalInlineCollapsed = _React$useState8[0], setInternalInlineCollapsed = _React$useState8[1];
+    _react.useEffect(function() {
+        setInternalMode(mergedMode);
+        setInternalInlineCollapsed(mergedInlineCollapsed);
+        if (!mountRef.current) return;
+        // Synchronously update MergedOpenKeys
+        if (isInlineMode) setMergedOpenKeys(inlineCacheOpenKeys);
+        else // Trigger open event in case its in control
+        triggerOpenKeys(EMPTY_LIST);
+    }, [
+        mergedMode,
+        mergedInlineCollapsed
+    ]);
+    // ====================== Responsive ======================
+    var _React$useState9 = _react.useState(0), _React$useState10 = (0, _slicedToArrayDefault.default)(_React$useState9, 2), lastVisibleIndex = _React$useState10[0], setLastVisibleIndex = _React$useState10[1];
+    var allVisible = lastVisibleIndex >= childList.length - 1 || internalMode !== "horizontal" || disabledOverflow;
+    // Cache
+    _react.useEffect(function() {
+        if (isInlineMode) setInlineCacheOpenKeys(mergedOpenKeys);
+    }, [
+        mergedOpenKeys
+    ]);
+    _react.useEffect(function() {
+        mountRef.current = true;
+        return function() {
+            mountRef.current = false;
+        };
+    }, []);
+    // ========================= Path =========================
+    var _useKeyRecords1 = (0, _useKeyRecordsDefault.default)(), registerPath = _useKeyRecords1.registerPath, unregisterPath = _useKeyRecords1.unregisterPath, refreshOverflowKeys = _useKeyRecords1.refreshOverflowKeys, isSubPathKey = _useKeyRecords1.isSubPathKey, getKeyPath = _useKeyRecords1.getKeyPath, getKeys = _useKeyRecords1.getKeys, getSubPathKeys = _useKeyRecords1.getSubPathKeys;
+    var registerPathContext = _react.useMemo(function() {
+        return {
+            registerPath: registerPath,
+            unregisterPath: unregisterPath
+        };
+    }, [
+        registerPath,
+        unregisterPath
+    ]);
+    var pathUserContext = _react.useMemo(function() {
+        return {
+            isSubPathKey: isSubPathKey
+        };
+    }, [
+        isSubPathKey
+    ]);
+    _react.useEffect(function() {
+        refreshOverflowKeys(allVisible ? EMPTY_LIST : childList.slice(lastVisibleIndex + 1).map(function(child) {
+            return child.key;
+        }));
+    }, [
+        lastVisibleIndex,
+        allVisible
+    ]);
+    // ======================== Active ========================
+    var _useMergedState3 = (0, _useMergedStateDefault.default)(activeKey || defaultActiveFirst && ((_childList$ = childList[0]) === null || _childList$ === void 0 ? void 0 : _childList$.key), {
+        value: activeKey
+    }), _useMergedState4 = (0, _slicedToArrayDefault.default)(_useMergedState3, 2), mergedActiveKey = _useMergedState4[0], setMergedActiveKey = _useMergedState4[1];
+    var onActive = (0, _useMemoCallbackDefault.default)(function(key) {
+        setMergedActiveKey(key);
+    });
+    var onInactive = (0, _useMemoCallbackDefault.default)(function() {
+        setMergedActiveKey(undefined);
+    });
+    (0, _react.useImperativeHandle)(ref, function() {
+        return {
+            list: containerRef.current,
+            focus: function focus(options) {
+                var _childList$find;
+                var keys = getKeys();
+                var _refreshElements = (0, _useAccessibility.refreshElements)(keys, uuid), elements = _refreshElements.elements, key2element = _refreshElements.key2element, element2key = _refreshElements.element2key;
+                var focusableElements = (0, _useAccessibility.getFocusableElements)(containerRef.current, elements);
+                var shouldFocusKey = mergedActiveKey !== null && mergedActiveKey !== void 0 ? mergedActiveKey : focusableElements[0] ? element2key.get(focusableElements[0]) : (_childList$find = childList.find(function(node) {
+                    return !node.props.disabled;
+                })) === null || _childList$find === void 0 ? void 0 : _childList$find.key;
+                var elementToFocus = key2element.get(shouldFocusKey);
+                if (shouldFocusKey && elementToFocus) {
+                    var _elementToFocus$focus;
+                    elementToFocus === null || elementToFocus === void 0 || (_elementToFocus$focus = elementToFocus.focus) === null || _elementToFocus$focus === void 0 || _elementToFocus$focus.call(elementToFocus, options);
+                }
+            }
+        };
+    });
+    // ======================== Select ========================
+    // >>>>> Select keys
+    var _useMergedState5 = (0, _useMergedStateDefault.default)(defaultSelectedKeys || [], {
+        value: selectedKeys,
+        // Legacy convert key to array
+        postState: function postState(keys) {
+            if (Array.isArray(keys)) return keys;
+            if (keys === null || keys === undefined) return EMPTY_LIST;
+            return [
+                keys
+            ];
+        }
+    }), _useMergedState6 = (0, _slicedToArrayDefault.default)(_useMergedState5, 2), mergedSelectKeys = _useMergedState6[0], setMergedSelectKeys = _useMergedState6[1];
+    // >>>>> Trigger select
+    var triggerSelection = function triggerSelection(info) {
+        if (selectable) {
+            // Insert or Remove
+            var targetKey = info.key;
+            var exist = mergedSelectKeys.includes(targetKey);
+            var newSelectKeys;
+            if (multiple) {
+                if (exist) newSelectKeys = mergedSelectKeys.filter(function(key) {
+                    return key !== targetKey;
+                });
+                else newSelectKeys = [].concat((0, _toConsumableArrayDefault.default)(mergedSelectKeys), [
+                    targetKey
+                ]);
+            } else newSelectKeys = [
+                targetKey
+            ];
+            setMergedSelectKeys(newSelectKeys);
+            // Trigger event
+            var selectInfo = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, info), {}, {
+                selectedKeys: newSelectKeys
+            });
+            if (exist) onDeselect === null || onDeselect === void 0 || onDeselect(selectInfo);
+            else onSelect === null || onSelect === void 0 || onSelect(selectInfo);
+        }
+        // Whatever selectable, always close it
+        if (!multiple && mergedOpenKeys.length && internalMode !== "inline") triggerOpenKeys(EMPTY_LIST);
+    };
+    // ========================= Open =========================
+    /**
+   * Click for item. SubMenu do not have selection status
+   */ var onInternalClick = (0, _useMemoCallbackDefault.default)(function(info) {
+        onClick === null || onClick === void 0 || onClick((0, _warnUtil.warnItemProp)(info));
+        triggerSelection(info);
+    });
+    var onInternalOpenChange = (0, _useMemoCallbackDefault.default)(function(key, open) {
+        var newOpenKeys = mergedOpenKeys.filter(function(k) {
+            return k !== key;
+        });
+        if (open) newOpenKeys.push(key);
+        else if (internalMode !== "inline") {
+            // We need find all related popup to close
+            var subPathKeys = getSubPathKeys(key);
+            newOpenKeys = newOpenKeys.filter(function(k) {
+                return !subPathKeys.has(k);
+            });
+        }
+        if (!(0, _isEqualDefault.default)(mergedOpenKeys, newOpenKeys, true)) triggerOpenKeys(newOpenKeys, true);
+    });
+    // ==================== Accessibility =====================
+    var triggerAccessibilityOpen = function triggerAccessibilityOpen(key, open) {
+        var nextOpen = open !== null && open !== void 0 ? open : !mergedOpenKeys.includes(key);
+        onInternalOpenChange(key, nextOpen);
+    };
+    var onInternalKeyDown = (0, _useAccessibility.useAccessibility)(internalMode, mergedActiveKey, isRtl, uuid, containerRef, getKeys, getKeyPath, setMergedActiveKey, triggerAccessibilityOpen, onKeyDown);
+    // ======================== Effect ========================
+    _react.useEffect(function() {
+        setMounted(true);
+    }, []);
+    // ======================= Context ========================
+    var privateContext = _react.useMemo(function() {
+        return {
+            _internalRenderMenuItem: _internalRenderMenuItem,
+            _internalRenderSubMenuItem: _internalRenderSubMenuItem
+        };
+    }, [
+        _internalRenderMenuItem,
+        _internalRenderSubMenuItem
+    ]);
+    // ======================== Render ========================
+    // >>>>> Children
+    var wrappedChildList = internalMode !== "horizontal" || disabledOverflow ? childList : // Need wrap for overflow dropdown that do not response for open
+    childList.map(function(child, index) {
+        return(/*#__PURE__*/ // Always wrap provider to avoid sub node re-mount
+        _react.createElement((0, _menuContextDefault.default), {
+            key: child.key,
+            overflowDisabled: index > lastVisibleIndex
+        }, child));
+    });
+    // >>>>> Container
+    var container = /*#__PURE__*/ _react.createElement((0, _rcOverflowDefault.default), (0, _extendsDefault.default)({
+        id: id,
+        ref: containerRef,
+        prefixCls: "".concat(prefixCls, "-overflow"),
+        component: "ul",
+        itemComponent: (0, _menuItemDefault.default),
+        className: (0, _classnamesDefault.default)(prefixCls, "".concat(prefixCls, "-root"), "".concat(prefixCls, "-").concat(internalMode), className, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-inline-collapsed"), internalInlineCollapsed), "".concat(prefixCls, "-rtl"), isRtl), rootClassName),
+        dir: direction,
+        style: style,
+        role: "menu",
+        tabIndex: tabIndex,
+        data: wrappedChildList,
+        renderRawItem: function renderRawItem(node) {
+            return node;
+        },
+        renderRawRest: function renderRawRest(omitItems) {
+            // We use origin list since wrapped list use context to prevent open
+            var len = omitItems.length;
+            var originOmitItems = len ? childList.slice(-len) : null;
+            return /*#__PURE__*/ _react.createElement((0, _subMenuDefault.default), {
+                eventKey: (0, _useKeyRecords.OVERFLOW_KEY),
+                title: overflowedIndicator,
+                disabled: allVisible,
+                internalPopupClose: len === 0,
+                popupClassName: overflowedIndicatorPopupClassName
+            }, originOmitItems);
+        },
+        maxCount: internalMode !== "horizontal" || disabledOverflow ? (0, _rcOverflowDefault.default).INVALIDATE : (0, _rcOverflowDefault.default).RESPONSIVE,
+        ssr: "full",
+        "data-menu-list": true,
+        onVisibleChange: function onVisibleChange(newLastIndex) {
+            setLastVisibleIndex(newLastIndex);
+        },
+        onKeyDown: onInternalKeyDown
+    }, restProps));
+    // >>>>> Render
+    return /*#__PURE__*/ _react.createElement((0, _privateContextDefault.default).Provider, {
+        value: privateContext
+    }, /*#__PURE__*/ _react.createElement((0, _idContext.IdContext).Provider, {
+        value: uuid
+    }, /*#__PURE__*/ _react.createElement((0, _menuContextDefault.default), {
+        prefixCls: prefixCls,
+        rootClassName: rootClassName,
+        mode: internalMode,
+        openKeys: mergedOpenKeys,
+        rtl: isRtl,
+        disabled: disabled,
+        motion: mounted ? motion : null,
+        defaultMotions: mounted ? defaultMotions : null,
+        activeKey: mergedActiveKey,
+        onActive: onActive,
+        onInactive: onInactive,
+        selectedKeys: mergedSelectKeys,
+        inlineIndent: inlineIndent,
+        subMenuOpenDelay: subMenuOpenDelay,
+        subMenuCloseDelay: subMenuCloseDelay,
+        forceSubMenuRender: forceSubMenuRender,
+        builtinPlacements: builtinPlacements,
+        triggerSubMenuAction: triggerSubMenuAction,
+        getPopupContainer: getPopupContainer,
+        itemIcon: itemIcon,
+        expandIcon: expandIcon,
+        onItemClick: onInternalClick,
+        onOpenChange: onInternalOpenChange
+    }, /*#__PURE__*/ _react.createElement((0, _pathContext.PathUserContext).Provider, {
+        value: pathUserContext
+    }, container), /*#__PURE__*/ _react.createElement("div", {
+        style: {
+            display: "none"
+        },
+        "aria-hidden": true
+    }, /*#__PURE__*/ _react.createElement((0, _pathContext.PathRegisterContext).Provider, {
+        value: registerPathContext
+    }, measureChildList)))));
+});
+exports.default = Menu;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","classnames":"jocGM","rc-overflow":"bI683","rc-util/es/hooks/useMergedState":"guGeI","rc-util/es/isEqual":"eBVVK","rc-util/es/warning":"c7oua","react":"21dqq","react-dom":"j6uA9","./context/IdContext":"881oO","./context/MenuContext":"fcpeJ","./context/PathContext":"2H1sf","./context/PrivateContext":"7rTnI","./hooks/useAccessibility":"e4mfd","./hooks/useKeyRecords":"8n5ct","./hooks/useMemoCallback":"eWzZH","./hooks/useUUID":"bcrFH","./MenuItem":"gCG2C","./SubMenu":"7towV","./utils/nodeUtil":"TGuMe","./utils/warnUtil":"3Voms","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bI683":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _overflow = require("./Overflow");
+var _overflowDefault = parcelHelpers.interopDefault(_overflow);
+exports.default = (0, _overflowDefault.default);
+
+},{"./Overflow":"5rklQ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5rklQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "OverflowContext", ()=>(0, _context.OverflowContext));
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcResizeObserver = require("rc-resize-observer");
+var _rcResizeObserverDefault = parcelHelpers.interopDefault(_rcResizeObserver);
+var _useLayoutEffect = require("rc-util/es/hooks/useLayoutEffect");
+var _useLayoutEffectDefault = parcelHelpers.interopDefault(_useLayoutEffect);
+var _item = require("./Item");
+var _itemDefault = parcelHelpers.interopDefault(_item);
+var _useEffectState = require("./hooks/useEffectState");
+var _useEffectStateDefault = parcelHelpers.interopDefault(_useEffectState);
+var _rawItem = require("./RawItem");
+var _rawItemDefault = parcelHelpers.interopDefault(_rawItem);
+var _context = require("./context");
+var _excluded = [
+    "prefixCls",
+    "data",
+    "renderItem",
+    "renderRawItem",
+    "itemKey",
+    "itemWidth",
+    "ssr",
+    "style",
+    "className",
+    "maxCount",
+    "renderRest",
+    "renderRawRest",
+    "suffix",
+    "component",
+    "itemComponent",
+    "onVisibleChange"
+];
+var RESPONSIVE = "responsive";
+var INVALIDATE = "invalidate";
+function defaultRenderRest(omittedItems) {
+    return "+ ".concat(omittedItems.length, " ...");
+}
+function Overflow(props, ref) {
+    var _props$prefixCls = props.prefixCls, prefixCls = _props$prefixCls === void 0 ? "rc-overflow" : _props$prefixCls, _props$data = props.data, data = _props$data === void 0 ? [] : _props$data, renderItem = props.renderItem, renderRawItem = props.renderRawItem, itemKey = props.itemKey, _props$itemWidth = props.itemWidth, itemWidth = _props$itemWidth === void 0 ? 10 : _props$itemWidth, ssr = props.ssr, style = props.style, className = props.className, maxCount = props.maxCount, renderRest = props.renderRest, renderRawRest = props.renderRawRest, suffix = props.suffix, _props$component = props.component, Component = _props$component === void 0 ? "div" : _props$component, itemComponent = props.itemComponent, onVisibleChange = props.onVisibleChange, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var fullySSR = ssr === "full";
+    var notifyEffectUpdate = (0, _useEffectState.useBatcher)();
+    var _useEffectState1 = (0, _useEffectStateDefault.default)(notifyEffectUpdate, null), _useEffectState2 = (0, _slicedToArrayDefault.default)(_useEffectState1, 2), containerWidth = _useEffectState2[0], setContainerWidth = _useEffectState2[1];
+    var mergedContainerWidth = containerWidth || 0;
+    var _useEffectState3 = (0, _useEffectStateDefault.default)(notifyEffectUpdate, new Map()), _useEffectState4 = (0, _slicedToArrayDefault.default)(_useEffectState3, 2), itemWidths = _useEffectState4[0], setItemWidths = _useEffectState4[1];
+    var _useEffectState5 = (0, _useEffectStateDefault.default)(notifyEffectUpdate, 0), _useEffectState6 = (0, _slicedToArrayDefault.default)(_useEffectState5, 2), prevRestWidth = _useEffectState6[0], setPrevRestWidth = _useEffectState6[1];
+    var _useEffectState7 = (0, _useEffectStateDefault.default)(notifyEffectUpdate, 0), _useEffectState8 = (0, _slicedToArrayDefault.default)(_useEffectState7, 2), restWidth = _useEffectState8[0], setRestWidth = _useEffectState8[1];
+    var _useEffectState9 = (0, _useEffectStateDefault.default)(notifyEffectUpdate, 0), _useEffectState10 = (0, _slicedToArrayDefault.default)(_useEffectState9, 2), suffixWidth = _useEffectState10[0], setSuffixWidth = _useEffectState10[1];
+    var _useState = (0, _react.useState)(null), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), suffixFixedStart = _useState2[0], setSuffixFixedStart = _useState2[1];
+    var _useState3 = (0, _react.useState)(null), _useState4 = (0, _slicedToArrayDefault.default)(_useState3, 2), displayCount = _useState4[0], setDisplayCount = _useState4[1];
+    var mergedDisplayCount = _react.useMemo(function() {
+        if (displayCount === null && fullySSR) return Number.MAX_SAFE_INTEGER;
+        return displayCount || 0;
+    }, [
+        displayCount,
+        containerWidth
+    ]);
+    var _useState5 = (0, _react.useState)(false), _useState6 = (0, _slicedToArrayDefault.default)(_useState5, 2), restReady = _useState6[0], setRestReady = _useState6[1];
+    var itemPrefixCls = "".concat(prefixCls, "-item");
+    // Always use the max width to avoid blink
+    var mergedRestWidth = Math.max(prevRestWidth, restWidth);
+    // ================================= Data =================================
+    var isResponsive = maxCount === RESPONSIVE;
+    var shouldResponsive = data.length && isResponsive;
+    var invalidate = maxCount === INVALIDATE;
+    /**
+   * When is `responsive`, we will always render rest node to get the real width of it for calculation
+   */ var showRest = shouldResponsive || typeof maxCount === "number" && data.length > maxCount;
+    var mergedData = (0, _react.useMemo)(function() {
+        var items = data;
+        if (shouldResponsive) {
+            if (containerWidth === null && fullySSR) items = data;
+            else items = data.slice(0, Math.min(data.length, mergedContainerWidth / itemWidth));
+        } else if (typeof maxCount === "number") items = data.slice(0, maxCount);
+        return items;
+    }, [
+        data,
+        itemWidth,
+        containerWidth,
+        maxCount,
+        shouldResponsive
+    ]);
+    var omittedItems = (0, _react.useMemo)(function() {
+        if (shouldResponsive) return data.slice(mergedDisplayCount + 1);
+        return data.slice(mergedData.length);
+    }, [
+        data,
+        mergedData,
+        shouldResponsive,
+        mergedDisplayCount
+    ]);
+    // ================================= Item =================================
+    var getKey = (0, _react.useCallback)(function(item, index) {
+        var _ref;
+        if (typeof itemKey === "function") return itemKey(item);
+        return (_ref = itemKey && (item === null || item === void 0 ? void 0 : item[itemKey])) !== null && _ref !== void 0 ? _ref : index;
+    }, [
+        itemKey
+    ]);
+    var mergedRenderItem = (0, _react.useCallback)(renderItem || function(item) {
+        return item;
+    }, [
+        renderItem
+    ]);
+    function updateDisplayCount(count, suffixFixedStartVal, notReady) {
+        // React 18 will sync render even when the value is same in some case.
+        // We take `mergedData` as deps which may cause dead loop if it's dynamic generate.
+        // ref: https://github.com/ant-design/ant-design/issues/36559
+        if (displayCount === count && (suffixFixedStartVal === undefined || suffixFixedStartVal === suffixFixedStart)) return;
+        setDisplayCount(count);
+        if (!notReady) {
+            setRestReady(count < data.length - 1);
+            onVisibleChange === null || onVisibleChange === void 0 || onVisibleChange(count);
+        }
+        if (suffixFixedStartVal !== undefined) setSuffixFixedStart(suffixFixedStartVal);
+    }
+    // ================================= Size =================================
+    function onOverflowResize(_, element) {
+        setContainerWidth(element.clientWidth);
+    }
+    function registerSize(key, width) {
+        setItemWidths(function(origin) {
+            var clone = new Map(origin);
+            if (width === null) clone.delete(key);
+            else clone.set(key, width);
+            return clone;
+        });
+    }
+    function registerOverflowSize(_, width) {
+        setRestWidth(width);
+        setPrevRestWidth(restWidth);
+    }
+    function registerSuffixSize(_, width) {
+        setSuffixWidth(width);
+    }
+    // ================================ Effect ================================
+    function getItemWidth(index) {
+        return itemWidths.get(getKey(mergedData[index], index));
+    }
+    (0, _useLayoutEffectDefault.default)(function() {
+        if (mergedContainerWidth && typeof mergedRestWidth === "number" && mergedData) {
+            var totalWidth = suffixWidth;
+            var len = mergedData.length;
+            var lastIndex = len - 1;
+            // When data count change to 0, reset this since not loop will reach
+            if (!len) {
+                updateDisplayCount(0, null);
+                return;
+            }
+            for(var i = 0; i < len; i += 1){
+                var currentItemWidth = getItemWidth(i);
+                // Fully will always render
+                if (fullySSR) currentItemWidth = currentItemWidth || 0;
+                // Break since data not ready
+                if (currentItemWidth === undefined) {
+                    updateDisplayCount(i - 1, undefined, true);
+                    break;
+                }
+                // Find best match
+                totalWidth += currentItemWidth;
+                if (// Only one means `totalWidth` is the final width
+                lastIndex === 0 && totalWidth <= mergedContainerWidth || // Last two width will be the final width
+                i === lastIndex - 1 && totalWidth + getItemWidth(lastIndex) <= mergedContainerWidth) {
+                    // Additional check if match the end
+                    updateDisplayCount(lastIndex, null);
+                    break;
+                } else if (totalWidth + mergedRestWidth > mergedContainerWidth) {
+                    // Can not hold all the content to show rest
+                    updateDisplayCount(i - 1, totalWidth - currentItemWidth - suffixWidth + restWidth);
+                    break;
+                }
+            }
+            if (suffix && getItemWidth(0) + suffixWidth > mergedContainerWidth) setSuffixFixedStart(null);
+        }
+    }, [
+        mergedContainerWidth,
+        itemWidths,
+        restWidth,
+        suffixWidth,
+        getKey,
+        mergedData
+    ]);
+    // ================================ Render ================================
+    var displayRest = restReady && !!omittedItems.length;
+    var suffixStyle = {};
+    if (suffixFixedStart !== null && shouldResponsive) suffixStyle = {
+        position: "absolute",
+        left: suffixFixedStart,
+        top: 0
+    };
+    var itemSharedProps = {
+        prefixCls: itemPrefixCls,
+        responsive: shouldResponsive,
+        component: itemComponent,
+        invalidate: invalidate
+    };
+    // >>>>> Choice render fun by `renderRawItem`
+    var internalRenderItemNode = renderRawItem ? function(item, index) {
+        var key = getKey(item, index);
+        return /*#__PURE__*/ _react.createElement((0, _context.OverflowContext).Provider, {
+            key: key,
+            value: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, itemSharedProps), {}, {
+                order: index,
+                item: item,
+                itemKey: key,
+                registerSize: registerSize,
+                display: index <= mergedDisplayCount
+            })
+        }, renderRawItem(item, index));
+    } : function(item, index) {
+        var key = getKey(item, index);
+        return /*#__PURE__*/ _react.createElement((0, _itemDefault.default), (0, _extendsDefault.default)({}, itemSharedProps, {
+            order: index,
+            key: key,
+            item: item,
+            renderItem: mergedRenderItem,
+            itemKey: key,
+            registerSize: registerSize,
+            display: index <= mergedDisplayCount
+        }));
+    };
+    // >>>>> Rest node
+    var restNode;
+    var restContextProps = {
+        order: displayRest ? mergedDisplayCount : Number.MAX_SAFE_INTEGER,
+        className: "".concat(itemPrefixCls, "-rest"),
+        registerSize: registerOverflowSize,
+        display: displayRest
+    };
+    if (!renderRawRest) {
+        var mergedRenderRest = renderRest || defaultRenderRest;
+        restNode = /*#__PURE__*/ _react.createElement((0, _itemDefault.default), (0, _extendsDefault.default)({}, itemSharedProps, restContextProps), typeof mergedRenderRest === "function" ? mergedRenderRest(omittedItems) : mergedRenderRest);
+    } else if (renderRawRest) restNode = /*#__PURE__*/ _react.createElement((0, _context.OverflowContext).Provider, {
+        value: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, itemSharedProps), restContextProps)
+    }, renderRawRest(omittedItems));
+    var overflowNode = /*#__PURE__*/ _react.createElement(Component, (0, _extendsDefault.default)({
+        className: (0, _classnamesDefault.default)(!invalidate && prefixCls, className),
+        style: style,
+        ref: ref
+    }, restProps), mergedData.map(internalRenderItemNode), showRest ? restNode : null, suffix && /*#__PURE__*/ _react.createElement((0, _itemDefault.default), (0, _extendsDefault.default)({}, itemSharedProps, {
+        responsive: isResponsive,
+        responsiveDisabled: !shouldResponsive,
+        order: mergedDisplayCount,
+        className: "".concat(itemPrefixCls, "-suffix"),
+        registerSize: registerSuffixSize,
+        display: true,
+        style: suffixStyle
+    }), suffix));
+    if (isResponsive) overflowNode = /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+        onResize: onOverflowResize,
+        disabled: !shouldResponsive
+    }, overflowNode);
+    return overflowNode;
+}
+var ForwardOverflow = /*#__PURE__*/ _react.forwardRef(Overflow);
+ForwardOverflow.displayName = "Overflow";
+ForwardOverflow.Item = (0, _rawItemDefault.default);
+ForwardOverflow.RESPONSIVE = RESPONSIVE;
+ForwardOverflow.INVALIDATE = INVALIDATE;
+// Convert to generic type
+exports.default = ForwardOverflow;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","rc-resize-observer":"gxwi9","rc-util/es/hooks/useLayoutEffect":"b6Tje","./Item":"2TuzH","./hooks/useEffectState":"cui9M","./RawItem":"34r8n","./context":"fXter","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2TuzH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcResizeObserver = require("rc-resize-observer");
+var _rcResizeObserverDefault = parcelHelpers.interopDefault(_rcResizeObserver);
+var _excluded = [
+    "prefixCls",
+    "invalidate",
+    "item",
+    "renderItem",
+    "responsive",
+    "responsiveDisabled",
+    "registerSize",
+    "itemKey",
+    "className",
+    "style",
+    "children",
+    "display",
+    "order",
+    "component"
+];
+// Use shared variable to save bundle size
+var UNDEFINED = undefined;
+function InternalItem(props, ref) {
+    var prefixCls = props.prefixCls, invalidate = props.invalidate, item = props.item, renderItem = props.renderItem, responsive = props.responsive, responsiveDisabled = props.responsiveDisabled, registerSize = props.registerSize, itemKey = props.itemKey, className = props.className, style = props.style, children = props.children, display = props.display, order = props.order, _props$component = props.component, Component = _props$component === void 0 ? "div" : _props$component, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var mergedHidden = responsive && !display;
+    // ================================ Effect ================================
+    function internalRegisterSize(width) {
+        registerSize(itemKey, width);
+    }
+    _react.useEffect(function() {
+        return function() {
+            internalRegisterSize(null);
+        };
+    }, []);
+    // ================================ Render ================================
+    var childNode = renderItem && item !== UNDEFINED ? renderItem(item) : children;
+    var overflowStyle;
+    if (!invalidate) overflowStyle = {
+        opacity: mergedHidden ? 0 : 1,
+        height: mergedHidden ? 0 : UNDEFINED,
+        overflowY: mergedHidden ? "hidden" : UNDEFINED,
+        order: responsive ? order : UNDEFINED,
+        pointerEvents: mergedHidden ? "none" : UNDEFINED,
+        position: mergedHidden ? "absolute" : UNDEFINED
+    };
+    var overflowProps = {};
+    if (mergedHidden) overflowProps["aria-hidden"] = true;
+    var itemNode = /*#__PURE__*/ _react.createElement(Component, (0, _extendsDefault.default)({
+        className: (0, _classnamesDefault.default)(!invalidate && prefixCls, className),
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, overflowStyle), style)
+    }, overflowProps, restProps, {
+        ref: ref
+    }), childNode);
+    if (responsive) itemNode = /*#__PURE__*/ _react.createElement((0, _rcResizeObserverDefault.default), {
+        onResize: function onResize(_ref) {
+            var offsetWidth = _ref.offsetWidth;
+            internalRegisterSize(offsetWidth);
+        },
+        disabled: responsiveDisabled
+    }, itemNode);
+    return itemNode;
+}
+var Item = /*#__PURE__*/ _react.forwardRef(InternalItem);
+Item.displayName = "Item";
+exports.default = Item;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","rc-resize-observer":"gxwi9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cui9M":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Batcher for record any `useEffectState` need update.
+ */ parcelHelpers.export(exports, "useBatcher", ()=>useBatcher);
+parcelHelpers.export(exports, "default", ()=>useEffectState);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _useEvent = require("rc-util/es/hooks/useEvent");
+var _useEventDefault = parcelHelpers.interopDefault(_useEvent);
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _channelUpdate = require("./channelUpdate");
+var _channelUpdateDefault = parcelHelpers.interopDefault(_channelUpdate);
+function useBatcher() {
+    // Updater Trigger
+    var updateFuncRef = _react.useRef(null);
+    // Notify update
+    var notifyEffectUpdate = function notifyEffectUpdate(callback) {
+        if (!updateFuncRef.current) {
+            updateFuncRef.current = [];
+            (0, _channelUpdateDefault.default)(function() {
+                (0, _reactDom.unstable_batchedUpdates)(function() {
+                    updateFuncRef.current.forEach(function(fn) {
+                        fn();
+                    });
+                    updateFuncRef.current = null;
+                });
+            });
+        }
+        updateFuncRef.current.push(callback);
+    };
+    return notifyEffectUpdate;
+}
+function useEffectState(notifyEffectUpdate, defaultValue) {
+    // Value
+    var _React$useState = _react.useState(defaultValue), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), stateValue = _React$useState2[0], setStateValue = _React$useState2[1];
+    // Set State
+    var setEffectVal = (0, _useEventDefault.default)(function(nextValue) {
+        notifyEffectUpdate(function() {
+            setStateValue(nextValue);
+        });
+    });
+    return [
+        stateValue,
+        setEffectVal
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/hooks/useEvent":"jv4C9","react":"21dqq","react-dom":"j6uA9","./channelUpdate":"6k9MY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6k9MY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>channelUpdate);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+function channelUpdate(callback) {
+    if (typeof MessageChannel === "undefined") (0, _rafDefault.default)(callback);
+    else {
+        var channel = new MessageChannel();
+        channel.port1.onmessage = function() {
+            return callback();
+        };
+        channel.port2.postMessage(undefined);
+    }
+}
+
+},{"rc-util/es/raf":"7OvWw","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"34r8n":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _item = require("./Item");
+var _itemDefault = parcelHelpers.interopDefault(_item);
+var _context = require("./context");
+var _excluded = [
+    "component"
+], _excluded2 = [
+    "className"
+], _excluded3 = [
+    "className"
+];
+var InternalRawItem = function InternalRawItem(props, ref) {
+    var context = _react.useContext((0, _context.OverflowContext));
+    // Render directly when context not provided
+    if (!context) {
+        var _props$component = props.component, Component = _props$component === void 0 ? "div" : _props$component, _restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+        return /*#__PURE__*/ _react.createElement(Component, (0, _extendsDefault.default)({}, _restProps, {
+            ref: ref
+        }));
+    }
+    var contextClassName = context.className, restContext = (0, _objectWithoutPropertiesDefault.default)(context, _excluded2);
+    var className = props.className, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded3);
+    // Do not pass context to sub item to avoid multiple measure
+    return /*#__PURE__*/ _react.createElement((0, _context.OverflowContext).Provider, {
+        value: null
+    }, /*#__PURE__*/ _react.createElement((0, _itemDefault.default), (0, _extendsDefault.default)({
+        ref: ref,
+        className: (0, _classnamesDefault.default)(contextClassName, className)
+    }, restContext, restProps)));
+};
+var RawItem = /*#__PURE__*/ _react.forwardRef(InternalRawItem);
+RawItem.displayName = "RawItem";
+exports.default = RawItem;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","./Item":"2TuzH","./context":"fXter","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fXter":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "OverflowContext", ()=>OverflowContext);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var OverflowContext = /*#__PURE__*/ (0, _reactDefault.default).createContext(null);
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"881oO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IdContext", ()=>IdContext);
+parcelHelpers.export(exports, "getMenuId", ()=>getMenuId);
+/**
+ * Get `data-menu-id`
+ */ parcelHelpers.export(exports, "useMenuId", ()=>useMenuId);
+var _react = require("react");
+var IdContext = /*#__PURE__*/ _react.createContext(null);
+function getMenuId(uuid, eventKey) {
+    if (uuid === undefined) return null;
+    return "".concat(uuid, "-").concat(eventKey);
+}
+function useMenuId(eventKey) {
+    var id = _react.useContext(IdContext);
+    return getMenuId(id, eventKey);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fcpeJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MenuContext", ()=>MenuContext);
+parcelHelpers.export(exports, "default", ()=>InheritableContextProvider);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+var _useMemo = require("rc-util/es/hooks/useMemo");
+var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
+var _isEqual = require("rc-util/es/isEqual");
+var _isEqualDefault = parcelHelpers.interopDefault(_isEqual);
+var _excluded = [
+    "children",
+    "locked"
+];
+var MenuContext = /*#__PURE__*/ _react.createContext(null);
+function mergeProps(origin, target) {
+    var clone = (0, _objectSpread2Default.default)({}, origin);
+    Object.keys(target).forEach(function(key) {
+        var value = target[key];
+        if (value !== undefined) clone[key] = value;
+    });
+    return clone;
+}
+function InheritableContextProvider(_ref) {
+    var children = _ref.children, locked = _ref.locked, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    var context = _react.useContext(MenuContext);
+    var inheritableContext = (0, _useMemoDefault.default)(function() {
+        return mergeProps(context, restProps);
+    }, [
+        context,
+        restProps
+    ], function(prev, next) {
+        return !locked && (prev[0] !== next[0] || !(0, _isEqualDefault.default)(prev[1], next[1], true));
+    });
+    return /*#__PURE__*/ _react.createElement(MenuContext.Provider, {
+        value: inheritableContext
+    }, children);
+}
+
+},{"@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","rc-util/es/hooks/useMemo":"cxcbY","rc-util/es/isEqual":"eBVVK","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2H1sf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PathRegisterContext", ()=>PathRegisterContext);
+parcelHelpers.export(exports, "useMeasure", ()=>useMeasure);
+parcelHelpers.export(exports, "PathTrackerContext", ()=>PathTrackerContext);
+parcelHelpers.export(exports, "useFullPath", ()=>useFullPath);
+parcelHelpers.export(exports, "PathUserContext", ()=>PathUserContext);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var EmptyList = [];
+var PathRegisterContext = /*#__PURE__*/ _react.createContext(null);
+function useMeasure() {
+    return _react.useContext(PathRegisterContext);
+}
+var PathTrackerContext = /*#__PURE__*/ _react.createContext(EmptyList);
+function useFullPath(eventKey) {
+    var parentKeyPath = _react.useContext(PathTrackerContext);
+    return _react.useMemo(function() {
+        return eventKey !== undefined ? [].concat((0, _toConsumableArrayDefault.default)(parentKeyPath), [
+            eventKey
+        ]) : parentKeyPath;
+    }, [
+        parentKeyPath,
+        eventKey
+    ]);
+}
+var PathUserContext = /*#__PURE__*/ _react.createContext(null);
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7rTnI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var PrivateContext = /*#__PURE__*/ _react.createContext({});
+exports.default = PrivateContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"e4mfd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Get focusable elements from the element set under provided container
+ */ parcelHelpers.export(exports, "getFocusableElements", ()=>getFocusableElements);
+parcelHelpers.export(exports, "refreshElements", ()=>refreshElements);
+parcelHelpers.export(exports, "useAccessibility", ()=>useAccessibility);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _focus = require("rc-util/es/Dom/focus");
+var _keyCode = require("rc-util/es/KeyCode");
+var _keyCodeDefault = parcelHelpers.interopDefault(_keyCode);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _react = require("react");
+var _idContext = require("../context/IdContext");
+// destruct to reduce minify size
+var LEFT = (0, _keyCodeDefault.default).LEFT, RIGHT = (0, _keyCodeDefault.default).RIGHT, UP = (0, _keyCodeDefault.default).UP, DOWN = (0, _keyCodeDefault.default).DOWN, ENTER = (0, _keyCodeDefault.default).ENTER, ESC = (0, _keyCodeDefault.default).ESC, HOME = (0, _keyCodeDefault.default).HOME, END = (0, _keyCodeDefault.default).END;
+var ArrowKeys = [
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT
+];
+function getOffset(mode, isRootLevel, isRtl, which) {
+    var _offsets;
+    var prev = "prev";
+    var next = "next";
+    var children = "children";
+    var parent = "parent";
+    // Inline enter is special that we use unique operation
+    if (mode === "inline" && which === ENTER) return {
+        inlineTrigger: true
+    };
+    var inline = (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, UP, prev), DOWN, next);
+    var horizontal = (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, LEFT, isRtl ? next : prev), RIGHT, isRtl ? prev : next), DOWN, children), ENTER, children);
+    var vertical = (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, UP, prev), DOWN, next), ENTER, children), ESC, parent), LEFT, isRtl ? children : parent), RIGHT, isRtl ? parent : children);
+    var offsets = {
+        inline: inline,
+        horizontal: horizontal,
+        vertical: vertical,
+        inlineSub: inline,
+        horizontalSub: vertical,
+        verticalSub: vertical
+    };
+    var type = (_offsets = offsets["".concat(mode).concat(isRootLevel ? "" : "Sub")]) === null || _offsets === void 0 ? void 0 : _offsets[which];
+    switch(type){
+        case prev:
+            return {
+                offset: -1,
+                sibling: true
+            };
+        case next:
+            return {
+                offset: 1,
+                sibling: true
+            };
+        case parent:
+            return {
+                offset: -1,
+                sibling: false
+            };
+        case children:
+            return {
+                offset: 1,
+                sibling: false
+            };
+        default:
+            return null;
+    }
+}
+function findContainerUL(element) {
+    var current = element;
+    while(current){
+        if (current.getAttribute("data-menu-list")) return current;
+        current = current.parentElement;
+    }
+    // Normally should not reach this line
+    /* istanbul ignore next */ return null;
+}
+/**
+ * Find focused element within element set provided
+ */ function getFocusElement(activeElement, elements) {
+    var current = activeElement || document.activeElement;
+    while(current){
+        if (elements.has(current)) return current;
+        current = current.parentElement;
+    }
+    return null;
+}
+function getFocusableElements(container, elements) {
+    var list = (0, _focus.getFocusNodeList)(container, true);
+    return list.filter(function(ele) {
+        return elements.has(ele);
+    });
+}
+function getNextFocusElement(parentQueryContainer, elements, focusMenuElement) {
+    var offset = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
+    // Key on the menu item will not get validate parent container
+    if (!parentQueryContainer) return null;
+    // List current level menu item elements
+    var sameLevelFocusableMenuElementList = getFocusableElements(parentQueryContainer, elements);
+    // Find next focus index
+    var count = sameLevelFocusableMenuElementList.length;
+    var focusIndex = sameLevelFocusableMenuElementList.findIndex(function(ele) {
+        return focusMenuElement === ele;
+    });
+    if (offset < 0) {
+        if (focusIndex === -1) focusIndex = count - 1;
+        else focusIndex -= 1;
+    } else if (offset > 0) focusIndex += 1;
+    focusIndex = (focusIndex + count) % count;
+    // Focus menu item
+    return sameLevelFocusableMenuElementList[focusIndex];
+}
+var refreshElements = function refreshElements(keys, id) {
+    var elements = new Set();
+    var key2element = new Map();
+    var element2key = new Map();
+    keys.forEach(function(key) {
+        var element = document.querySelector("[data-menu-id='".concat((0, _idContext.getMenuId)(id, key), "']"));
+        if (element) {
+            elements.add(element);
+            element2key.set(element, key);
+            key2element.set(key, element);
+        }
+    });
+    return {
+        elements: elements,
+        key2element: key2element,
+        element2key: element2key
+    };
+};
+function useAccessibility(mode, activeKey, isRtl, id, containerRef, getKeys, getKeyPath, triggerActiveKey, triggerAccessibilityOpen, originOnKeyDown) {
+    var rafRef = _react.useRef();
+    var activeRef = _react.useRef();
+    activeRef.current = activeKey;
+    var cleanRaf = function cleanRaf() {
+        (0, _rafDefault.default).cancel(rafRef.current);
+    };
+    _react.useEffect(function() {
+        return function() {
+            cleanRaf();
+        };
+    }, []);
+    return function(e) {
+        var which = e.which;
+        if ([].concat(ArrowKeys, [
+            ENTER,
+            ESC,
+            HOME,
+            END
+        ]).includes(which)) {
+            var keys = getKeys();
+            var refreshedElements = refreshElements(keys, id);
+            var _refreshedElements = refreshedElements, elements = _refreshedElements.elements, key2element = _refreshedElements.key2element, element2key = _refreshedElements.element2key;
+            // First we should find current focused MenuItem/SubMenu element
+            var activeElement = key2element.get(activeKey);
+            var focusMenuElement = getFocusElement(activeElement, elements);
+            var focusMenuKey = element2key.get(focusMenuElement);
+            var offsetObj = getOffset(mode, getKeyPath(focusMenuKey, true).length === 1, isRtl, which);
+            // Some mode do not have fully arrow operation like inline
+            if (!offsetObj && which !== HOME && which !== END) return;
+            // Arrow prevent default to avoid page scroll
+            if (ArrowKeys.includes(which) || [
+                HOME,
+                END
+            ].includes(which)) e.preventDefault();
+            var tryFocus = function tryFocus(menuElement) {
+                if (menuElement) {
+                    var focusTargetElement = menuElement;
+                    // Focus to link instead of menu item if possible
+                    var link = menuElement.querySelector("a");
+                    if (link !== null && link !== void 0 && link.getAttribute("href")) focusTargetElement = link;
+                    var targetKey = element2key.get(menuElement);
+                    triggerActiveKey(targetKey);
+                    /**
+           * Do not `useEffect` here since `tryFocus` may trigger async
+           * which makes React sync update the `activeKey`
+           * that force render before `useRef` set the next activeKey
+           */ cleanRaf();
+                    rafRef.current = (0, _rafDefault.default)(function() {
+                        if (activeRef.current === targetKey) focusTargetElement.focus();
+                    });
+                }
+            };
+            if ([
+                HOME,
+                END
+            ].includes(which) || offsetObj.sibling || !focusMenuElement) {
+                // ========================== Sibling ==========================
+                // Find walkable focus menu element container
+                var parentQueryContainer;
+                if (!focusMenuElement || mode === "inline") parentQueryContainer = containerRef.current;
+                else parentQueryContainer = findContainerUL(focusMenuElement);
+                // Get next focus element
+                var targetElement;
+                var focusableElements = getFocusableElements(parentQueryContainer, elements);
+                if (which === HOME) targetElement = focusableElements[0];
+                else if (which === END) targetElement = focusableElements[focusableElements.length - 1];
+                else targetElement = getNextFocusElement(parentQueryContainer, elements, focusMenuElement, offsetObj.offset);
+                // Focus menu item
+                tryFocus(targetElement);
+            // ======================= InlineTrigger =======================
+            } else if (offsetObj.inlineTrigger) // Inline trigger no need switch to sub menu item
+            triggerAccessibilityOpen(focusMenuKey);
+            else if (offsetObj.offset > 0) {
+                triggerAccessibilityOpen(focusMenuKey, true);
+                cleanRaf();
+                rafRef.current = (0, _rafDefault.default)(function() {
+                    // Async should resync elements
+                    refreshedElements = refreshElements(keys, id);
+                    var controlId = focusMenuElement.getAttribute("aria-controls");
+                    var subQueryContainer = document.getElementById(controlId);
+                    // Get sub focusable menu item
+                    var targetElement = getNextFocusElement(subQueryContainer, refreshedElements.elements);
+                    // Focus menu item
+                    tryFocus(targetElement);
+                }, 5);
+            } else if (offsetObj.offset < 0) {
+                var keyPath = getKeyPath(focusMenuKey, true);
+                var parentKey = keyPath[keyPath.length - 2];
+                var parentMenuElement = key2element.get(parentKey);
+                // Focus menu item
+                triggerAccessibilityOpen(parentKey, false);
+                tryFocus(parentMenuElement);
+            }
+        }
+        // Pass origin key down event
+        originOnKeyDown === null || originOnKeyDown === void 0 || originOnKeyDown(e);
+    };
+}
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","rc-util/es/Dom/focus":"cqeE0","rc-util/es/KeyCode":"77Hyb","rc-util/es/raf":"7OvWw","react":"21dqq","../context/IdContext":"881oO","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cqeE0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getFocusNodeList", ()=>getFocusNodeList);
+/** @deprecated Do not use since this may failed when used in async */ parcelHelpers.export(exports, "saveLastFocusNode", ()=>saveLastFocusNode);
+/** @deprecated Do not use since this may failed when used in async */ parcelHelpers.export(exports, "clearLastFocusNode", ()=>clearLastFocusNode);
+/** @deprecated Do not use since this may failed when used in async */ parcelHelpers.export(exports, "backLastFocusNode", ()=>backLastFocusNode);
+parcelHelpers.export(exports, "limitTabRange", ()=>limitTabRange);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _isVisible = require("./isVisible");
+var _isVisibleDefault = parcelHelpers.interopDefault(_isVisible);
+function focusable(node) {
+    var includePositive = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    if ((0, _isVisibleDefault.default)(node)) {
+        var nodeName = node.nodeName.toLowerCase();
+        var isFocusableElement = // Focusable element
+        [
+            "input",
+            "select",
+            "textarea",
+            "button"
+        ].includes(nodeName) || // Editable element
+        node.isContentEditable || // Anchor with href element
+        nodeName === "a" && !!node.getAttribute("href");
+        // Get tabIndex
+        var tabIndexAttr = node.getAttribute("tabindex");
+        var tabIndexNum = Number(tabIndexAttr);
+        // Parse as number if validate
+        var tabIndex = null;
+        if (tabIndexAttr && !Number.isNaN(tabIndexNum)) tabIndex = tabIndexNum;
+        else if (isFocusableElement && tabIndex === null) tabIndex = 0;
+        // Block focusable if disabled
+        if (isFocusableElement && node.disabled) tabIndex = null;
+        return tabIndex !== null && (tabIndex >= 0 || includePositive && tabIndex < 0);
+    }
+    return false;
+}
+function getFocusNodeList(node) {
+    var includePositive = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var res = (0, _toConsumableArrayDefault.default)(node.querySelectorAll("*")).filter(function(child) {
+        return focusable(child, includePositive);
+    });
+    if (focusable(node, includePositive)) res.unshift(node);
+    return res;
+}
+var lastFocusElement = null;
+function saveLastFocusNode() {
+    lastFocusElement = document.activeElement;
+}
+function clearLastFocusNode() {
+    lastFocusElement = null;
+}
+function backLastFocusNode() {
+    if (lastFocusElement) try {
+        // 元素可能已经被移动了
+        lastFocusElement.focus();
+    /* eslint-disable no-empty */ } catch (e) {
+    // empty
+    }
+}
+function limitTabRange(node, e) {
+    if (e.keyCode === 9) {
+        var tabNodeList = getFocusNodeList(node);
+        var lastTabNode = tabNodeList[e.shiftKey ? 0 : tabNodeList.length - 1];
+        var leavingTab = lastTabNode === document.activeElement || node === document.activeElement;
+        if (leavingTab) {
+            var target = tabNodeList[e.shiftKey ? tabNodeList.length - 1 : 0];
+            target.focus();
+            e.preventDefault();
+        }
+    }
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","./isVisible":"f0y09","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8n5ct":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "OVERFLOW_KEY", ()=>OVERFLOW_KEY);
+parcelHelpers.export(exports, "default", ()=>useKeyRecords);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _timeUtil = require("../utils/timeUtil");
+var PATH_SPLIT = "__RC_UTIL_PATH_SPLIT__";
+var getPathStr = function getPathStr(keyPath) {
+    return keyPath.join(PATH_SPLIT);
+};
+var getPathKeys = function getPathKeys(keyPathStr) {
+    return keyPathStr.split(PATH_SPLIT);
+};
+var OVERFLOW_KEY = "rc-menu-more";
+function useKeyRecords() {
+    var _React$useState = _react.useState({}), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), internalForceUpdate = _React$useState2[1];
+    var key2pathRef = (0, _react.useRef)(new Map());
+    var path2keyRef = (0, _react.useRef)(new Map());
+    var _React$useState3 = _react.useState([]), _React$useState4 = (0, _slicedToArrayDefault.default)(_React$useState3, 2), overflowKeys = _React$useState4[0], setOverflowKeys = _React$useState4[1];
+    var updateRef = (0, _react.useRef)(0);
+    var destroyRef = (0, _react.useRef)(false);
+    var forceUpdate = function forceUpdate() {
+        if (!destroyRef.current) internalForceUpdate({});
+    };
+    var registerPath = (0, _react.useCallback)(function(key, keyPath) {
+        (0, _warningDefault.default)(!key2pathRef.current.has(key), "Duplicated key '".concat(key, "' used in Menu by path [").concat(keyPath.join(" > "), "]"));
+        // Fill map
+        var connectedPath = getPathStr(keyPath);
+        path2keyRef.current.set(connectedPath, key);
+        key2pathRef.current.set(key, connectedPath);
+        updateRef.current += 1;
+        var id = updateRef.current;
+        (0, _timeUtil.nextSlice)(function() {
+            if (id === updateRef.current) forceUpdate();
+        });
+    }, []);
+    var unregisterPath = (0, _react.useCallback)(function(key, keyPath) {
+        var connectedPath = getPathStr(keyPath);
+        path2keyRef.current.delete(connectedPath);
+        key2pathRef.current.delete(key);
+    }, []);
+    var refreshOverflowKeys = (0, _react.useCallback)(function(keys) {
+        setOverflowKeys(keys);
+    }, []);
+    var getKeyPath = (0, _react.useCallback)(function(eventKey, includeOverflow) {
+        var fullPath = key2pathRef.current.get(eventKey) || "";
+        var keys = getPathKeys(fullPath);
+        if (includeOverflow && overflowKeys.includes(keys[0])) keys.unshift(OVERFLOW_KEY);
+        return keys;
+    }, [
+        overflowKeys
+    ]);
+    var isSubPathKey = (0, _react.useCallback)(function(pathKeys, eventKey) {
+        return pathKeys.some(function(pathKey) {
+            var pathKeyList = getKeyPath(pathKey, true);
+            return pathKeyList.includes(eventKey);
+        });
+    }, [
+        getKeyPath
+    ]);
+    var getKeys = function getKeys() {
+        var keys = (0, _toConsumableArrayDefault.default)(key2pathRef.current.keys());
+        if (overflowKeys.length) keys.push(OVERFLOW_KEY);
+        return keys;
+    };
+    /**
+   * Find current key related child path keys
+   */ var getSubPathKeys = (0, _react.useCallback)(function(key) {
+        var connectedPath = "".concat(key2pathRef.current.get(key)).concat(PATH_SPLIT);
+        var pathKeys = new Set();
+        (0, _toConsumableArrayDefault.default)(path2keyRef.current.keys()).forEach(function(pathKey) {
+            if (pathKey.startsWith(connectedPath)) pathKeys.add(path2keyRef.current.get(pathKey));
+        });
+        return pathKeys;
+    }, []);
+    _react.useEffect(function() {
+        return function() {
+            destroyRef.current = true;
+        };
+    }, []);
+    return {
+        // Register
+        registerPath: registerPath,
+        unregisterPath: unregisterPath,
+        refreshOverflowKeys: refreshOverflowKeys,
+        // Util
+        isSubPathKey: isSubPathKey,
+        getKeyPath: getKeyPath,
+        getKeys: getKeys,
+        getSubPathKeys: getSubPathKeys
+    };
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","rc-util/es/warning":"c7oua","../utils/timeUtil":"gUH6u","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gUH6u":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "nextSlice", ()=>nextSlice);
+function nextSlice(callback) {
+    /* istanbul ignore next */ Promise.resolve().then(callback);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eWzZH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMemoCallback);
+var _react = require("react");
+function useMemoCallback(func) {
+    var funRef = _react.useRef(func);
+    funRef.current = func;
+    var callback = _react.useCallback(function() {
+        var _funRef$current;
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        return (_funRef$current = funRef.current) === null || _funRef$current === void 0 ? void 0 : _funRef$current.call.apply(_funRef$current, [
+            funRef
+        ].concat(args));
+    }, []);
+    return func ? callback : undefined;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bcrFH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useUUID);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _useMergedState = require("rc-util/es/hooks/useMergedState");
+var _useMergedStateDefault = parcelHelpers.interopDefault(_useMergedState);
+var uniquePrefix = Math.random().toFixed(5).toString().slice(2);
+var internalId = 0;
+function useUUID(id) {
+    var _useMergedState = (0, _useMergedStateDefault.default)(id, {
+        value: id
+    }), _useMergedState2 = (0, _slicedToArrayDefault.default)(_useMergedState, 2), uuid = _useMergedState2[0], setUUID = _useMergedState2[1];
+    _react.useEffect(function() {
+        internalId += 1;
+        var newId = "".concat(uniquePrefix, "-").concat(internalId);
+        setUUID("rc-menu-uuid-".concat(newId));
+    }, []);
+    return uuid;
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","rc-util/es/hooks/useMergedState":"guGeI","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gCG2C":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _createSuper = require("@babel/runtime/helpers/esm/createSuper");
+var _createSuperDefault = parcelHelpers.interopDefault(_createSuper);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcOverflow = require("rc-overflow");
+var _rcOverflowDefault = parcelHelpers.interopDefault(_rcOverflow);
+var _keyCode = require("rc-util/es/KeyCode");
+var _keyCodeDefault = parcelHelpers.interopDefault(_keyCode);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _ref = require("rc-util/es/ref");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _idContext = require("./context/IdContext");
+var _menuContext = require("./context/MenuContext");
+var _pathContext = require("./context/PathContext");
+var _privateContext = require("./context/PrivateContext");
+var _privateContextDefault = parcelHelpers.interopDefault(_privateContext);
+var _useActive = require("./hooks/useActive");
+var _useActiveDefault = parcelHelpers.interopDefault(_useActive);
+var _useDirectionStyle = require("./hooks/useDirectionStyle");
+var _useDirectionStyleDefault = parcelHelpers.interopDefault(_useDirectionStyle);
+var _icon = require("./Icon");
+var _iconDefault = parcelHelpers.interopDefault(_icon);
+var _warnUtil = require("./utils/warnUtil");
+var _excluded = [
+    "title",
+    "attribute",
+    "elementRef"
+], _excluded2 = [
+    "style",
+    "className",
+    "eventKey",
+    "warnKey",
+    "disabled",
+    "itemIcon",
+    "children",
+    "role",
+    "onMouseEnter",
+    "onMouseLeave",
+    "onClick",
+    "onKeyDown",
+    "onFocus"
+], _excluded3 = [
+    "active"
+];
+// Since Menu event provide the `info.item` which point to the MenuItem node instance.
+// We have to use class component here.
+// This should be removed from doc & api in future.
+var LegacyMenuItem = /*#__PURE__*/ function(_React$Component) {
+    (0, _inheritsDefault.default)(LegacyMenuItem, _React$Component);
+    var _super = (0, _createSuperDefault.default)(LegacyMenuItem);
+    function LegacyMenuItem() {
+        (0, _classCallCheckDefault.default)(this, LegacyMenuItem);
+        return _super.apply(this, arguments);
+    }
+    (0, _createClassDefault.default)(LegacyMenuItem, [
+        {
+            key: "render",
+            value: function render() {
+                var _this$props = this.props, title = _this$props.title, attribute = _this$props.attribute, elementRef = _this$props.elementRef, restProps = (0, _objectWithoutPropertiesDefault.default)(_this$props, _excluded);
+                // Here the props are eventually passed to the DOM element.
+                // React does not recognize non-standard attributes.
+                // Therefore, remove the props that is not used here.
+                // ref: https://github.com/ant-design/ant-design/issues/41395
+                var passedProps = (0, _omitDefault.default)(restProps, [
+                    "eventKey",
+                    "popupClassName",
+                    "popupOffset",
+                    "onTitleClick"
+                ]);
+                (0, _warningDefault.default)(!attribute, "`attribute` of Menu.Item is deprecated. Please pass attribute directly.");
+                return /*#__PURE__*/ _react.createElement((0, _rcOverflowDefault.default).Item, (0, _extendsDefault.default)({}, attribute, {
+                    title: typeof title === "string" ? title : undefined
+                }, passedProps, {
+                    ref: elementRef
+                }));
+            }
+        }
+    ]);
+    return LegacyMenuItem;
+}(_react.Component);
+/**
+ * Real Menu Item component
+ */ var InternalMenuItem = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var style = props.style, className = props.className, eventKey = props.eventKey, warnKey = props.warnKey, disabled = props.disabled, itemIcon = props.itemIcon, children = props.children, role = props.role, onMouseEnter = props.onMouseEnter, onMouseLeave = props.onMouseLeave, onClick = props.onClick, onKeyDown = props.onKeyDown, onFocus = props.onFocus, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded2);
+    var domDataId = (0, _idContext.useMenuId)(eventKey);
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), prefixCls = _React$useContext.prefixCls, onItemClick = _React$useContext.onItemClick, contextDisabled = _React$useContext.disabled, overflowDisabled = _React$useContext.overflowDisabled, contextItemIcon = _React$useContext.itemIcon, selectedKeys = _React$useContext.selectedKeys, onActive = _React$useContext.onActive;
+    var _React$useContext2 = _react.useContext((0, _privateContextDefault.default)), _internalRenderMenuItem = _React$useContext2._internalRenderMenuItem;
+    var itemCls = "".concat(prefixCls, "-item");
+    var legacyMenuItemRef = _react.useRef();
+    var elementRef = _react.useRef();
+    var mergedDisabled = contextDisabled || disabled;
+    var mergedEleRef = (0, _ref.useComposeRef)(ref, elementRef);
+    var connectedKeys = (0, _pathContext.useFullPath)(eventKey);
+    // ================================ Warn ================================
+    if (warnKey) (0, _warningDefault.default)(false, "MenuItem should not leave undefined `key`.");
+    // ============================= Info =============================
+    var getEventInfo = function getEventInfo(e) {
+        return {
+            key: eventKey,
+            // Note: For legacy code is reversed which not like other antd component
+            keyPath: (0, _toConsumableArrayDefault.default)(connectedKeys).reverse(),
+            item: legacyMenuItemRef.current,
+            domEvent: e
+        };
+    };
+    // ============================= Icon =============================
+    var mergedItemIcon = itemIcon || contextItemIcon;
+    // ============================ Active ============================
+    var _useActive = (0, _useActiveDefault.default)(eventKey, mergedDisabled, onMouseEnter, onMouseLeave), active = _useActive.active, activeProps = (0, _objectWithoutPropertiesDefault.default)(_useActive, _excluded3);
+    // ============================ Select ============================
+    var selected = selectedKeys.includes(eventKey);
+    // ======================== DirectionStyle ========================
+    var directionStyle = (0, _useDirectionStyleDefault.default)(connectedKeys.length);
+    // ============================ Events ============================
+    var onInternalClick = function onInternalClick(e) {
+        if (mergedDisabled) return;
+        var info = getEventInfo(e);
+        onClick === null || onClick === void 0 || onClick((0, _warnUtil.warnItemProp)(info));
+        onItemClick(info);
+    };
+    var onInternalKeyDown = function onInternalKeyDown(e) {
+        onKeyDown === null || onKeyDown === void 0 || onKeyDown(e);
+        if (e.which === (0, _keyCodeDefault.default).ENTER) {
+            var info = getEventInfo(e);
+            // Legacy. Key will also trigger click event
+            onClick === null || onClick === void 0 || onClick((0, _warnUtil.warnItemProp)(info));
+            onItemClick(info);
+        }
+    };
+    /**
+   * Used for accessibility. Helper will focus element without key board.
+   * We should manually trigger an active
+   */ var onInternalFocus = function onInternalFocus(e) {
+        onActive(eventKey);
+        onFocus === null || onFocus === void 0 || onFocus(e);
+    };
+    // ============================ Render ============================
+    var optionRoleProps = {};
+    if (props.role === "option") optionRoleProps["aria-selected"] = selected;
+    var renderNode = /*#__PURE__*/ _react.createElement(LegacyMenuItem, (0, _extendsDefault.default)({
+        ref: legacyMenuItemRef,
+        elementRef: mergedEleRef,
+        role: role === null ? "none" : role || "menuitem",
+        tabIndex: disabled ? null : -1,
+        "data-menu-id": overflowDisabled && domDataId ? null : domDataId
+    }, restProps, activeProps, optionRoleProps, {
+        component: "li",
+        "aria-disabled": disabled,
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, directionStyle), style),
+        className: (0, _classnamesDefault.default)(itemCls, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(itemCls, "-active"), active), "".concat(itemCls, "-selected"), selected), "".concat(itemCls, "-disabled"), mergedDisabled), className),
+        onClick: onInternalClick,
+        onKeyDown: onInternalKeyDown,
+        onFocus: onInternalFocus
+    }), children, /*#__PURE__*/ _react.createElement((0, _iconDefault.default), {
+        props: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, props), {}, {
+            isSelected: selected
+        }),
+        icon: mergedItemIcon
+    }));
+    if (_internalRenderMenuItem) renderNode = _internalRenderMenuItem(renderNode, props, {
+        selected: selected
+    });
+    return renderNode;
+});
+function MenuItem(props, ref) {
+    var eventKey = props.eventKey;
+    // ==================== Record KeyPath ====================
+    var measure = (0, _pathContext.useMeasure)();
+    var connectedKeyPath = (0, _pathContext.useFullPath)(eventKey);
+    // eslint-disable-next-line consistent-return
+    _react.useEffect(function() {
+        if (measure) {
+            measure.registerPath(eventKey, connectedKeyPath);
+            return function() {
+                measure.unregisterPath(eventKey, connectedKeyPath);
+            };
+        }
+    }, [
+        connectedKeyPath
+    ]);
+    if (measure) return null;
+    // ======================== Render ========================
+    return /*#__PURE__*/ _react.createElement(InternalMenuItem, (0, _extendsDefault.default)({}, props, {
+        ref: ref
+    }));
+}
+exports.default = /*#__PURE__*/ _react.forwardRef(MenuItem);
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/inherits":"drFw3","@babel/runtime/helpers/esm/createSuper":"hp3mc","classnames":"jocGM","rc-overflow":"bI683","rc-util/es/KeyCode":"77Hyb","rc-util/es/omit":"e7Re6","rc-util/es/ref":"jS1Z6","rc-util/es/warning":"c7oua","react":"21dqq","./context/IdContext":"881oO","./context/MenuContext":"fcpeJ","./context/PathContext":"2H1sf","./context/PrivateContext":"7rTnI","./hooks/useActive":"6qKPQ","./hooks/useDirectionStyle":"gL0Sh","./Icon":"bk0zv","./utils/warnUtil":"3Voms","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6qKPQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useActive);
+var _react = require("react");
+var _menuContext = require("../context/MenuContext");
+function useActive(eventKey, disabled, onMouseEnter, onMouseLeave) {
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), activeKey = _React$useContext.activeKey, onActive = _React$useContext.onActive, onInactive = _React$useContext.onInactive;
+    var ret = {
+        active: activeKey === eventKey
+    };
+    // Skip when disabled
+    if (!disabled) {
+        ret.onMouseEnter = function(domEvent) {
+            onMouseEnter === null || onMouseEnter === void 0 || onMouseEnter({
+                key: eventKey,
+                domEvent: domEvent
+            });
+            onActive(eventKey);
+        };
+        ret.onMouseLeave = function(domEvent) {
+            onMouseLeave === null || onMouseLeave === void 0 || onMouseLeave({
+                key: eventKey,
+                domEvent: domEvent
+            });
+            onInactive(eventKey);
+        };
+    }
+    return ret;
+}
+
+},{"react":"21dqq","../context/MenuContext":"fcpeJ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gL0Sh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useDirectionStyle);
+var _react = require("react");
+var _menuContext = require("../context/MenuContext");
+function useDirectionStyle(level) {
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), mode = _React$useContext.mode, rtl = _React$useContext.rtl, inlineIndent = _React$useContext.inlineIndent;
+    if (mode !== "inline") return null;
+    var len = level;
+    return rtl ? {
+        paddingRight: len * inlineIndent
+    } : {
+        paddingLeft: len * inlineIndent
+    };
+}
+
+},{"react":"21dqq","../context/MenuContext":"fcpeJ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bk0zv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Icon);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+function Icon(_ref) {
+    var icon = _ref.icon, props = _ref.props, children = _ref.children;
+    var iconNode;
+    if (icon === null || icon === false) return null;
+    if (typeof icon === "function") iconNode = /*#__PURE__*/ _react.createElement(icon, (0, _objectSpread2Default.default)({}, props));
+    else if (typeof icon !== "boolean") // Compatible for origin definition
+    iconNode = icon;
+    return iconNode || children || null;
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3Voms":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * `onClick` event return `info.item` which point to react node directly.
+ * We should warning this since it will not work on FC.
+ */ parcelHelpers.export(exports, "warnItemProp", ()=>warnItemProp);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _excluded = [
+    "item"
+];
+function warnItemProp(_ref) {
+    var item = _ref.item, restInfo = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    Object.defineProperty(restInfo, "item", {
+        get: function get() {
+            (0, _warningDefault.default)(false, "`info.item` is deprecated since we will move to function component that not provides React Node instance in future.");
+            return item;
+        }
+    });
+    return restInfo;
+}
+
+},{"@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","rc-util/es/warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7towV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcOverflow = require("rc-overflow");
+var _rcOverflowDefault = parcelHelpers.interopDefault(_rcOverflow);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _subMenuList = require("./SubMenuList");
+var _subMenuListDefault = parcelHelpers.interopDefault(_subMenuList);
+var _commonUtil = require("../utils/commonUtil");
+var _menuContext = require("../context/MenuContext");
+var _menuContextDefault = parcelHelpers.interopDefault(_menuContext);
+var _useMemoCallback = require("../hooks/useMemoCallback");
+var _useMemoCallbackDefault = parcelHelpers.interopDefault(_useMemoCallback);
+var _popupTrigger = require("./PopupTrigger");
+var _popupTriggerDefault = parcelHelpers.interopDefault(_popupTrigger);
+var _icon = require("../Icon");
+var _iconDefault = parcelHelpers.interopDefault(_icon);
+var _useActive = require("../hooks/useActive");
+var _useActiveDefault = parcelHelpers.interopDefault(_useActive);
+var _warnUtil = require("../utils/warnUtil");
+var _useDirectionStyle = require("../hooks/useDirectionStyle");
+var _useDirectionStyleDefault = parcelHelpers.interopDefault(_useDirectionStyle);
+var _inlineSubMenuList = require("./InlineSubMenuList");
+var _inlineSubMenuListDefault = parcelHelpers.interopDefault(_inlineSubMenuList);
+var _pathContext = require("../context/PathContext");
+var _idContext = require("../context/IdContext");
+var _privateContext = require("../context/PrivateContext");
+var _privateContextDefault = parcelHelpers.interopDefault(_privateContext);
+var _excluded = [
+    "style",
+    "className",
+    "title",
+    "eventKey",
+    "warnKey",
+    "disabled",
+    "internalPopupClose",
+    "children",
+    "itemIcon",
+    "expandIcon",
+    "popupClassName",
+    "popupOffset",
+    "popupStyle",
+    "onClick",
+    "onMouseEnter",
+    "onMouseLeave",
+    "onTitleClick",
+    "onTitleMouseEnter",
+    "onTitleMouseLeave"
+], _excluded2 = [
+    "active"
+];
+var InternalSubMenu = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var style = props.style, className = props.className, title = props.title, eventKey = props.eventKey, warnKey = props.warnKey, disabled = props.disabled, internalPopupClose = props.internalPopupClose, children = props.children, itemIcon = props.itemIcon, expandIcon = props.expandIcon, popupClassName = props.popupClassName, popupOffset = props.popupOffset, popupStyle = props.popupStyle, onClick = props.onClick, onMouseEnter = props.onMouseEnter, onMouseLeave = props.onMouseLeave, onTitleClick = props.onTitleClick, onTitleMouseEnter = props.onTitleMouseEnter, onTitleMouseLeave = props.onTitleMouseLeave, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var domDataId = (0, _idContext.useMenuId)(eventKey);
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), prefixCls = _React$useContext.prefixCls, mode = _React$useContext.mode, openKeys = _React$useContext.openKeys, contextDisabled = _React$useContext.disabled, overflowDisabled = _React$useContext.overflowDisabled, activeKey = _React$useContext.activeKey, selectedKeys = _React$useContext.selectedKeys, contextItemIcon = _React$useContext.itemIcon, contextExpandIcon = _React$useContext.expandIcon, onItemClick = _React$useContext.onItemClick, onOpenChange = _React$useContext.onOpenChange, onActive = _React$useContext.onActive;
+    var _React$useContext2 = _react.useContext((0, _privateContextDefault.default)), _internalRenderSubMenuItem = _React$useContext2._internalRenderSubMenuItem;
+    var _React$useContext3 = _react.useContext((0, _pathContext.PathUserContext)), isSubPathKey = _React$useContext3.isSubPathKey;
+    var connectedPath = (0, _pathContext.useFullPath)();
+    var subMenuPrefixCls = "".concat(prefixCls, "-submenu");
+    var mergedDisabled = contextDisabled || disabled;
+    var elementRef = _react.useRef();
+    var popupRef = _react.useRef();
+    // ================================ Warn ================================
+    if (warnKey) (0, _warningDefault.default)(false, "SubMenu should not leave undefined `key`.");
+    // ================================ Icon ================================
+    var mergedItemIcon = itemIcon !== null && itemIcon !== void 0 ? itemIcon : contextItemIcon;
+    var mergedExpandIcon = expandIcon !== null && expandIcon !== void 0 ? expandIcon : contextExpandIcon;
+    // ================================ Open ================================
+    var originOpen = openKeys.includes(eventKey);
+    var open = !overflowDisabled && originOpen;
+    // =============================== Select ===============================
+    var childrenSelected = isSubPathKey(selectedKeys, eventKey);
+    // =============================== Active ===============================
+    var _useActive = (0, _useActiveDefault.default)(eventKey, mergedDisabled, onTitleMouseEnter, onTitleMouseLeave), active = _useActive.active, activeProps = (0, _objectWithoutPropertiesDefault.default)(_useActive, _excluded2);
+    // Fallback of active check to avoid hover on menu title or disabled item
+    var _React$useState = _react.useState(false), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), childrenActive = _React$useState2[0], setChildrenActive = _React$useState2[1];
+    var triggerChildrenActive = function triggerChildrenActive(newActive) {
+        if (!mergedDisabled) setChildrenActive(newActive);
+    };
+    var onInternalMouseEnter = function onInternalMouseEnter(domEvent) {
+        triggerChildrenActive(true);
+        onMouseEnter === null || onMouseEnter === void 0 || onMouseEnter({
+            key: eventKey,
+            domEvent: domEvent
+        });
+    };
+    var onInternalMouseLeave = function onInternalMouseLeave(domEvent) {
+        triggerChildrenActive(false);
+        onMouseLeave === null || onMouseLeave === void 0 || onMouseLeave({
+            key: eventKey,
+            domEvent: domEvent
+        });
+    };
+    var mergedActive = _react.useMemo(function() {
+        if (active) return active;
+        if (mode !== "inline") return childrenActive || isSubPathKey([
+            activeKey
+        ], eventKey);
+        return false;
+    }, [
+        mode,
+        active,
+        activeKey,
+        childrenActive,
+        eventKey,
+        isSubPathKey
+    ]);
+    // ========================== DirectionStyle ==========================
+    var directionStyle = (0, _useDirectionStyleDefault.default)(connectedPath.length);
+    // =============================== Events ===============================
+    // >>>> Title click
+    var onInternalTitleClick = function onInternalTitleClick(e) {
+        // Skip if disabled
+        if (mergedDisabled) return;
+        onTitleClick === null || onTitleClick === void 0 || onTitleClick({
+            key: eventKey,
+            domEvent: e
+        });
+        // Trigger open by click when mode is `inline`
+        if (mode === "inline") onOpenChange(eventKey, !originOpen);
+    };
+    // >>>> Context for children click
+    var onMergedItemClick = (0, _useMemoCallbackDefault.default)(function(info) {
+        onClick === null || onClick === void 0 || onClick((0, _warnUtil.warnItemProp)(info));
+        onItemClick(info);
+    });
+    // >>>>> Visible change
+    var onPopupVisibleChange = function onPopupVisibleChange(newVisible) {
+        if (mode !== "inline") onOpenChange(eventKey, newVisible);
+    };
+    /**
+   * Used for accessibility. Helper will focus element without key board.
+   * We should manually trigger an active
+   */ var onInternalFocus = function onInternalFocus() {
+        onActive(eventKey);
+    };
+    // =============================== Render ===============================
+    var popupId = domDataId && "".concat(domDataId, "-popup");
+    // >>>>> Title
+    var titleNode = /*#__PURE__*/ _react.createElement("div", (0, _extendsDefault.default)({
+        role: "menuitem",
+        style: directionStyle,
+        className: "".concat(subMenuPrefixCls, "-title"),
+        tabIndex: mergedDisabled ? null : -1,
+        ref: elementRef,
+        title: typeof title === "string" ? title : null,
+        "data-menu-id": overflowDisabled && domDataId ? null : domDataId,
+        "aria-expanded": open,
+        "aria-haspopup": true,
+        "aria-controls": popupId,
+        "aria-disabled": mergedDisabled,
+        onClick: onInternalTitleClick,
+        onFocus: onInternalFocus
+    }, activeProps), title, /*#__PURE__*/ _react.createElement((0, _iconDefault.default), {
+        icon: mode !== "horizontal" ? mergedExpandIcon : undefined,
+        props: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, props), {}, {
+            isOpen: open,
+            // [Legacy] Not sure why need this mark
+            isSubMenu: true
+        })
+    }, /*#__PURE__*/ _react.createElement("i", {
+        className: "".concat(subMenuPrefixCls, "-arrow")
+    })));
+    // Cache mode if it change to `inline` which do not have popup motion
+    var triggerModeRef = _react.useRef(mode);
+    if (mode !== "inline" && connectedPath.length > 1) triggerModeRef.current = "vertical";
+    else triggerModeRef.current = mode;
+    if (!overflowDisabled) {
+        var triggerMode = triggerModeRef.current;
+        // Still wrap with Trigger here since we need avoid react re-mount dom node
+        // Which makes motion failed
+        titleNode = /*#__PURE__*/ _react.createElement((0, _popupTriggerDefault.default), {
+            mode: triggerMode,
+            prefixCls: subMenuPrefixCls,
+            visible: !internalPopupClose && open && mode !== "inline",
+            popupClassName: popupClassName,
+            popupOffset: popupOffset,
+            popupStyle: popupStyle,
+            popup: /*#__PURE__*/ _react.createElement((0, _menuContextDefault.default), {
+                mode: triggerMode === "horizontal" ? "vertical" : triggerMode
+            }, /*#__PURE__*/ _react.createElement((0, _subMenuListDefault.default), {
+                id: popupId,
+                ref: popupRef
+            }, children)),
+            disabled: mergedDisabled,
+            onVisibleChange: onPopupVisibleChange
+        }, titleNode);
+    }
+    // >>>>> List node
+    var listNode = /*#__PURE__*/ _react.createElement((0, _rcOverflowDefault.default).Item, (0, _extendsDefault.default)({
+        ref: ref,
+        role: "none"
+    }, restProps, {
+        component: "li",
+        style: style,
+        className: (0, _classnamesDefault.default)(subMenuPrefixCls, "".concat(subMenuPrefixCls, "-").concat(mode), className, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(subMenuPrefixCls, "-open"), open), "".concat(subMenuPrefixCls, "-active"), mergedActive), "".concat(subMenuPrefixCls, "-selected"), childrenSelected), "".concat(subMenuPrefixCls, "-disabled"), mergedDisabled)),
+        onMouseEnter: onInternalMouseEnter,
+        onMouseLeave: onInternalMouseLeave
+    }), titleNode, !overflowDisabled && /*#__PURE__*/ _react.createElement((0, _inlineSubMenuListDefault.default), {
+        id: popupId,
+        open: open,
+        keyPath: connectedPath
+    }, children));
+    if (_internalRenderSubMenuItem) listNode = _internalRenderSubMenuItem(listNode, props, {
+        selected: childrenSelected,
+        active: mergedActive,
+        open: open,
+        disabled: mergedDisabled
+    });
+    // >>>>> Render
+    return /*#__PURE__*/ _react.createElement((0, _menuContextDefault.default), {
+        onItemClick: onMergedItemClick,
+        mode: mode === "horizontal" ? "vertical" : mode,
+        itemIcon: mergedItemIcon,
+        expandIcon: mergedExpandIcon
+    }, listNode);
+});
+var SubMenu = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var eventKey = props.eventKey, children = props.children;
+    var connectedKeyPath = (0, _pathContext.useFullPath)(eventKey);
+    var childList = (0, _commonUtil.parseChildren)(children, connectedKeyPath);
+    // ==================== Record KeyPath ====================
+    var measure = (0, _pathContext.useMeasure)();
+    // eslint-disable-next-line consistent-return
+    _react.useEffect(function() {
+        if (measure) {
+            measure.registerPath(eventKey, connectedKeyPath);
+            return function() {
+                measure.unregisterPath(eventKey, connectedKeyPath);
+            };
+        }
+    }, [
+        connectedKeyPath
+    ]);
+    var renderNode;
+    // ======================== Render ========================
+    if (measure) renderNode = childList;
+    else renderNode = /*#__PURE__*/ _react.createElement(InternalSubMenu, (0, _extendsDefault.default)({
+        ref: ref
+    }, props), childList);
+    return /*#__PURE__*/ _react.createElement((0, _pathContext.PathTrackerContext).Provider, {
+        value: connectedKeyPath
+    }, renderNode);
+});
+SubMenu.displayName = "SubMenu";
+exports.default = SubMenu;
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","rc-overflow":"bI683","rc-util/es/warning":"c7oua","./SubMenuList":"gfhWp","../utils/commonUtil":"aDA2j","../context/MenuContext":"fcpeJ","../hooks/useMemoCallback":"eWzZH","./PopupTrigger":"h9e48","../Icon":"bk0zv","../hooks/useActive":"6qKPQ","../utils/warnUtil":"3Voms","../hooks/useDirectionStyle":"gL0Sh","./InlineSubMenuList":"etFlS","../context/PathContext":"2H1sf","../context/IdContext":"881oO","../context/PrivateContext":"7rTnI","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gfhWp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _menuContext = require("../context/MenuContext");
+var _excluded = [
+    "className",
+    "children"
+];
+var InternalSubMenuList = function InternalSubMenuList(_ref, ref) {
+    var className = _ref.className, children = _ref.children, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), prefixCls = _React$useContext.prefixCls, mode = _React$useContext.mode, rtl = _React$useContext.rtl;
+    return /*#__PURE__*/ _react.createElement("ul", (0, _extendsDefault.default)({
+        className: (0, _classnamesDefault.default)(prefixCls, rtl && "".concat(prefixCls, "-rtl"), "".concat(prefixCls, "-sub"), "".concat(prefixCls, "-").concat(mode === "inline" ? "inline" : "vertical"), className),
+        role: "menu"
+    }, restProps, {
+        "data-menu-list": true,
+        ref: ref
+    }), children);
+};
+var SubMenuList = /*#__PURE__*/ _react.forwardRef(InternalSubMenuList);
+SubMenuList.displayName = "SubMenuList";
+exports.default = SubMenuList;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","../context/MenuContext":"fcpeJ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aDA2j":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "parseChildren", ()=>parseChildren);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _toArray = require("rc-util/es/Children/toArray");
+var _toArrayDefault = parcelHelpers.interopDefault(_toArray);
+var _react = require("react");
+function parseChildren(children, keyPath) {
+    return (0, _toArrayDefault.default)(children).map(function(child, index) {
+        if (/*#__PURE__*/ _react.isValidElement(child)) {
+            var _eventKey, _child$props;
+            var key = child.key;
+            var eventKey = (_eventKey = (_child$props = child.props) === null || _child$props === void 0 ? void 0 : _child$props.eventKey) !== null && _eventKey !== void 0 ? _eventKey : key;
+            var emptyKey = eventKey === null || eventKey === undefined;
+            if (emptyKey) eventKey = "tmp_key-".concat([].concat((0, _toConsumableArrayDefault.default)(keyPath), [
+                index
+            ]).join("-"));
+            var cloneProps = {
+                key: eventKey,
+                eventKey: eventKey
+            };
+            if (emptyKey) cloneProps.warnKey = true;
+            return /*#__PURE__*/ _react.cloneElement(child, cloneProps);
+        }
+        return child;
+    });
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","rc-util/es/Children/toArray":"itYV7","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"h9e48":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>PopupTrigger);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _trigger = require("@rc-component/trigger");
+var _triggerDefault = parcelHelpers.interopDefault(_trigger);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _menuContext = require("../context/MenuContext");
+var _placements = require("../placements");
+var _motionUtil = require("../utils/motionUtil");
+var popupPlacementMap = {
+    horizontal: "bottomLeft",
+    vertical: "rightTop",
+    "vertical-left": "rightTop",
+    "vertical-right": "leftTop"
+};
+function PopupTrigger(_ref) {
+    var prefixCls = _ref.prefixCls, visible = _ref.visible, children = _ref.children, popup = _ref.popup, popupStyle = _ref.popupStyle, popupClassName = _ref.popupClassName, popupOffset = _ref.popupOffset, disabled = _ref.disabled, mode = _ref.mode, onVisibleChange = _ref.onVisibleChange;
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), getPopupContainer = _React$useContext.getPopupContainer, rtl = _React$useContext.rtl, subMenuOpenDelay = _React$useContext.subMenuOpenDelay, subMenuCloseDelay = _React$useContext.subMenuCloseDelay, builtinPlacements = _React$useContext.builtinPlacements, triggerSubMenuAction = _React$useContext.triggerSubMenuAction, forceSubMenuRender = _React$useContext.forceSubMenuRender, rootClassName = _React$useContext.rootClassName, motion = _React$useContext.motion, defaultMotions = _React$useContext.defaultMotions;
+    var _React$useState = _react.useState(false), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), innerVisible = _React$useState2[0], setInnerVisible = _React$useState2[1];
+    var placement = rtl ? (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, (0, _placements.placementsRtl)), builtinPlacements) : (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, (0, _placements.placements)), builtinPlacements);
+    var popupPlacement = popupPlacementMap[mode];
+    var targetMotion = (0, _motionUtil.getMotion)(mode, motion, defaultMotions);
+    var targetMotionRef = _react.useRef(targetMotion);
+    if (mode !== "inline") /**
+     * PopupTrigger is only used for vertical and horizontal types.
+     * When collapsed is unfolded, the inline animation will destroy the vertical animation.
+     */ targetMotionRef.current = targetMotion;
+    var mergedMotion = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, targetMotionRef.current), {}, {
+        leavedClassName: "".concat(prefixCls, "-hidden"),
+        removeOnLeave: false,
+        motionAppear: true
+    });
+    // Delay to change visible
+    var visibleRef = _react.useRef();
+    _react.useEffect(function() {
+        visibleRef.current = (0, _rafDefault.default)(function() {
+            setInnerVisible(visible);
+        });
+        return function() {
+            (0, _rafDefault.default).cancel(visibleRef.current);
+        };
+    }, [
+        visible
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _triggerDefault.default), {
+        prefixCls: prefixCls,
+        popupClassName: (0, _classnamesDefault.default)("".concat(prefixCls, "-popup"), (0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-rtl"), rtl), popupClassName, rootClassName),
+        stretch: mode === "horizontal" ? "minWidth" : null,
+        getPopupContainer: getPopupContainer,
+        builtinPlacements: placement,
+        popupPlacement: popupPlacement,
+        popupVisible: innerVisible,
+        popup: popup,
+        popupStyle: popupStyle,
+        popupAlign: popupOffset && {
+            offset: popupOffset
+        },
+        action: disabled ? [] : [
+            triggerSubMenuAction
+        ],
+        mouseEnterDelay: subMenuOpenDelay,
+        mouseLeaveDelay: subMenuCloseDelay,
+        onPopupVisibleChange: onVisibleChange,
+        forceRender: forceSubMenuRender,
+        popupMotion: mergedMotion,
+        fresh: true
+    }, children);
+}
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","@rc-component/trigger":"45Hz4","classnames":"jocGM","rc-util/es/raf":"7OvWw","../context/MenuContext":"fcpeJ","../placements":"hCzZK","../utils/motionUtil":"9ZeMY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hCzZK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "placements", ()=>placements);
+parcelHelpers.export(exports, "placementsRtl", ()=>placementsRtl);
+var autoAdjustOverflow = {
+    adjustX: 1,
+    adjustY: 1
+};
+var placements = {
+    topLeft: {
+        points: [
+            "bl",
+            "tl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    topRight: {
+        points: [
+            "br",
+            "tr"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    bottomLeft: {
+        points: [
+            "tl",
+            "bl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    bottomRight: {
+        points: [
+            "tr",
+            "br"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    leftTop: {
+        points: [
+            "tr",
+            "tl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    leftBottom: {
+        points: [
+            "br",
+            "bl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    rightTop: {
+        points: [
+            "tl",
+            "tr"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    rightBottom: {
+        points: [
+            "bl",
+            "br"
+        ],
+        overflow: autoAdjustOverflow
+    }
+};
+var placementsRtl = {
+    topLeft: {
+        points: [
+            "bl",
+            "tl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    topRight: {
+        points: [
+            "br",
+            "tr"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    bottomLeft: {
+        points: [
+            "tl",
+            "bl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    bottomRight: {
+        points: [
+            "tr",
+            "br"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    rightTop: {
+        points: [
+            "tr",
+            "tl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    rightBottom: {
+        points: [
+            "br",
+            "bl"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    leftTop: {
+        points: [
+            "tl",
+            "tr"
+        ],
+        overflow: autoAdjustOverflow
+    },
+    leftBottom: {
+        points: [
+            "bl",
+            "br"
+        ],
+        overflow: autoAdjustOverflow
+    }
+};
+exports.default = placements;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9ZeMY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getMotion", ()=>getMotion);
+function getMotion(mode, motion, defaultMotions) {
+    if (motion) return motion;
+    if (defaultMotions) return defaultMotions[mode] || defaultMotions.other;
+    return undefined;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"etFlS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>InlineSubMenuList);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _motionUtil = require("../utils/motionUtil");
+var _menuContext = require("../context/MenuContext");
+var _menuContextDefault = parcelHelpers.interopDefault(_menuContext);
+var _subMenuList = require("./SubMenuList");
+var _subMenuListDefault = parcelHelpers.interopDefault(_subMenuList);
+function InlineSubMenuList(_ref) {
+    var id = _ref.id, open = _ref.open, keyPath = _ref.keyPath, children = _ref.children;
+    var fixedMode = "inline";
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), prefixCls = _React$useContext.prefixCls, forceSubMenuRender = _React$useContext.forceSubMenuRender, motion = _React$useContext.motion, defaultMotions = _React$useContext.defaultMotions, mode = _React$useContext.mode;
+    // Always use latest mode check
+    var sameModeRef = _react.useRef(false);
+    sameModeRef.current = mode === fixedMode;
+    // We record `destroy` mark here since when mode change from `inline` to others.
+    // The inline list should remove when motion end.
+    var _React$useState = _react.useState(!sameModeRef.current), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), destroy = _React$useState2[0], setDestroy = _React$useState2[1];
+    var mergedOpen = sameModeRef.current ? open : false;
+    // ================================= Effect =================================
+    // Reset destroy state when mode change back
+    _react.useEffect(function() {
+        if (sameModeRef.current) setDestroy(false);
+    }, [
+        mode
+    ]);
+    // ================================= Render =================================
+    var mergedMotion = (0, _objectSpread2Default.default)({}, (0, _motionUtil.getMotion)(fixedMode, motion, defaultMotions));
+    // No need appear since nest inlineCollapse changed
+    if (keyPath.length > 1) mergedMotion.motionAppear = false;
+    // Hide inline list when mode changed and motion end
+    var originOnVisibleChanged = mergedMotion.onVisibleChanged;
+    mergedMotion.onVisibleChanged = function(newVisible) {
+        if (!sameModeRef.current && !newVisible) setDestroy(true);
+        return originOnVisibleChanged === null || originOnVisibleChanged === void 0 ? void 0 : originOnVisibleChanged(newVisible);
+    };
+    if (destroy) return null;
+    return /*#__PURE__*/ _react.createElement((0, _menuContextDefault.default), {
+        mode: fixedMode,
+        locked: !sameModeRef.current
+    }, /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), (0, _extendsDefault.default)({
+        visible: mergedOpen
+    }, mergedMotion, {
+        forceRender: forceSubMenuRender,
+        removeOnLeave: false,
+        leavedClassName: "".concat(prefixCls, "-hidden")
+    }), function(_ref2) {
+        var motionClassName = _ref2.className, motionStyle = _ref2.style;
+        return /*#__PURE__*/ _react.createElement((0, _subMenuListDefault.default), {
+            id: id,
+            className: motionClassName,
+            style: motionStyle
+        }, children);
+    }));
+}
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","rc-motion":"aaavi","../utils/motionUtil":"9ZeMY","../context/MenuContext":"fcpeJ","./SubMenuList":"gfhWp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"TGuMe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "parseItems", ()=>parseItems);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _react = require("react");
+var _divider = require("../Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _menuItem = require("../MenuItem");
+var _menuItemDefault = parcelHelpers.interopDefault(_menuItem);
+var _menuItemGroup = require("../MenuItemGroup");
+var _menuItemGroupDefault = parcelHelpers.interopDefault(_menuItemGroup);
+var _subMenu = require("../SubMenu");
+var _subMenuDefault = parcelHelpers.interopDefault(_subMenu);
+var _commonUtil = require("./commonUtil");
+var _excluded = [
+    "label",
+    "children",
+    "key",
+    "type"
+];
+function convertItemsToNodes(list, components) {
+    var MergedMenuItem = components.item, MergedMenuItemGroup = components.group, MergedSubMenu = components.submenu, MergedDivider = components.divider;
+    return (list || []).map(function(opt, index) {
+        if (opt && (0, _typeofDefault.default)(opt) === "object") {
+            var _ref = opt, label = _ref.label, children = _ref.children, key = _ref.key, type = _ref.type, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+            var mergedKey = key !== null && key !== void 0 ? key : "tmp-".concat(index);
+            // MenuItemGroup & SubMenuItem
+            if (children || type === "group") {
+                if (type === "group") // Group
+                return /*#__PURE__*/ _react.createElement(MergedMenuItemGroup, (0, _extendsDefault.default)({
+                    key: mergedKey
+                }, restProps, {
+                    title: label
+                }), convertItemsToNodes(children, components));
+                // Sub Menu
+                return /*#__PURE__*/ _react.createElement(MergedSubMenu, (0, _extendsDefault.default)({
+                    key: mergedKey
+                }, restProps, {
+                    title: label
+                }), convertItemsToNodes(children, components));
+            }
+            // MenuItem & Divider
+            if (type === "divider") return /*#__PURE__*/ _react.createElement(MergedDivider, (0, _extendsDefault.default)({
+                key: mergedKey
+            }, restProps));
+            return /*#__PURE__*/ _react.createElement(MergedMenuItem, (0, _extendsDefault.default)({
+                key: mergedKey
+            }, restProps), label);
+        }
+        return null;
+    }).filter(function(opt) {
+        return opt;
+    });
+}
+function parseItems(children, items, keyPath, components) {
+    var childNodes = children;
+    var mergedComponents = (0, _objectSpread2Default.default)({
+        divider: (0, _dividerDefault.default),
+        item: (0, _menuItemDefault.default),
+        group: (0, _menuItemGroupDefault.default),
+        submenu: (0, _subMenuDefault.default)
+    }, components);
+    if (items) childNodes = convertItemsToNodes(items, mergedComponents);
+    return (0, _commonUtil.parseChildren)(childNodes, keyPath);
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/typeof":"i7HWY","react":"21dqq","../Divider":"lWccB","../MenuItem":"gCG2C","../MenuItemGroup":"e8a91","../SubMenu":"7towV","./commonUtil":"aDA2j","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lWccB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Divider);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _menuContext = require("./context/MenuContext");
+var _pathContext = require("./context/PathContext");
+function Divider(_ref) {
+    var className = _ref.className, style = _ref.style;
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), prefixCls = _React$useContext.prefixCls;
+    var measure = (0, _pathContext.useMeasure)();
+    if (measure) return null;
+    return /*#__PURE__*/ _react.createElement("li", {
+        role: "separator",
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-item-divider"), className),
+        style: style
+    });
+}
+
+},{"react":"21dqq","classnames":"jocGM","./context/MenuContext":"fcpeJ","./context/PathContext":"2H1sf","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"e8a91":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _react = require("react");
+var _menuContext = require("./context/MenuContext");
+var _pathContext = require("./context/PathContext");
+var _commonUtil = require("./utils/commonUtil");
+var _excluded = [
+    "className",
+    "title",
+    "eventKey",
+    "children"
+];
+var InternalMenuItemGroup = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var className = props.className, title = props.title, eventKey = props.eventKey, children = props.children, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var _React$useContext = _react.useContext((0, _menuContext.MenuContext)), prefixCls = _React$useContext.prefixCls;
+    var groupPrefixCls = "".concat(prefixCls, "-item-group");
+    return /*#__PURE__*/ _react.createElement("li", (0, _extendsDefault.default)({
+        ref: ref,
+        role: "presentation"
+    }, restProps, {
+        onClick: function onClick(e) {
+            return e.stopPropagation();
+        },
+        className: (0, _classnamesDefault.default)(groupPrefixCls, className)
+    }), /*#__PURE__*/ _react.createElement("div", {
+        role: "presentation",
+        className: "".concat(groupPrefixCls, "-title"),
+        title: typeof title === "string" ? title : undefined
+    }, title), /*#__PURE__*/ _react.createElement("ul", {
+        role: "group",
+        className: "".concat(groupPrefixCls, "-list")
+    }, children));
+});
+var MenuItemGroup = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var eventKey = props.eventKey, children = props.children;
+    var connectedKeyPath = (0, _pathContext.useFullPath)(eventKey);
+    var childList = (0, _commonUtil.parseChildren)(children, connectedKeyPath);
+    var measure = (0, _pathContext.useMeasure)();
+    if (measure) return childList;
+    return /*#__PURE__*/ _react.createElement(InternalMenuItemGroup, (0, _extendsDefault.default)({
+        ref: ref
+    }, (0, _omitDefault.default)(props, [
+        "warnKey"
+    ])), childList);
+});
+MenuItemGroup.displayName = "MenuItemGroup";
+exports.default = MenuItemGroup;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","classnames":"jocGM","rc-util/es/omit":"e7Re6","react":"21dqq","./context/MenuContext":"fcpeJ","./context/PathContext":"2H1sf","./utils/commonUtil":"aDA2j","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2zSO6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _keyCode = require("rc-util/es/KeyCode");
+var _keyCodeDefault = parcelHelpers.interopDefault(_keyCode);
+var _react = require("react");
+var _util = require("../util");
+var TabNode = function TabNode(props) {
+    var prefixCls = props.prefixCls, id = props.id, active = props.active, _props$tab = props.tab, key = _props$tab.key, label = _props$tab.label, disabled = _props$tab.disabled, closeIcon = _props$tab.closeIcon, icon = _props$tab.icon, closable = props.closable, renderWrapper = props.renderWrapper, removeAriaLabel = props.removeAriaLabel, editable = props.editable, onClick = props.onClick, onFocus = props.onFocus, style = props.style;
+    var tabPrefix = "".concat(prefixCls, "-tab");
+    var removable = (0, _util.getRemovable)(closable, closeIcon, editable, disabled);
+    function onInternalClick(e) {
+        if (disabled) return;
+        onClick(e);
+    }
+    function onRemoveTab(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        editable.onEdit("remove", {
+            key: key,
+            event: event
+        });
+    }
+    var labelNode = _react.useMemo(function() {
+        return icon && typeof label === "string" ? /*#__PURE__*/ _react.createElement("span", null, label) : label;
+    }, [
+        label,
+        icon
+    ]);
+    var node = /*#__PURE__*/ _react.createElement("div", {
+        key: key,
+        "data-node-key": (0, _util.genDataNodeKey)(key),
+        className: (0, _classnamesDefault.default)(tabPrefix, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(tabPrefix, "-with-remove"), removable), "".concat(tabPrefix, "-active"), active), "".concat(tabPrefix, "-disabled"), disabled)),
+        style: style,
+        onClick: onInternalClick
+    }, /*#__PURE__*/ _react.createElement("div", {
+        role: "tab",
+        "aria-selected": active,
+        id: id && "".concat(id, "-tab-").concat(key),
+        className: "".concat(tabPrefix, "-btn"),
+        "aria-controls": id && "".concat(id, "-panel-").concat(key),
+        "aria-disabled": disabled,
+        tabIndex: disabled ? null : 0,
+        onClick: function onClick(e) {
+            e.stopPropagation();
+            onInternalClick(e);
+        },
+        onKeyDown: function onKeyDown(e) {
+            if ([
+                (0, _keyCodeDefault.default).SPACE,
+                (0, _keyCodeDefault.default).ENTER
+            ].includes(e.which)) {
+                e.preventDefault();
+                onInternalClick(e);
+            }
+        },
+        onFocus: onFocus
+    }, icon && /*#__PURE__*/ _react.createElement("span", {
+        className: "".concat(tabPrefix, "-icon")
+    }, icon), label && labelNode), removable && /*#__PURE__*/ _react.createElement("button", {
+        type: "button",
+        "aria-label": removeAriaLabel || "remove",
+        tabIndex: 0,
+        className: "".concat(tabPrefix, "-remove"),
+        onClick: function onClick(e) {
+            e.stopPropagation();
+            onRemoveTab(e);
+        }
+    }, closeIcon || editable.removeIcon || "\xd7"));
+    return renderWrapper ? renderWrapper(node) : node;
+};
+exports.default = TabNode;
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","classnames":"jocGM","rc-util/es/KeyCode":"77Hyb","react":"21dqq","../util":"fU1oe","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ehzqL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _react = require("react");
+var TabPane = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var prefixCls = props.prefixCls, className = props.className, style = props.style, id = props.id, active = props.active, tabKey = props.tabKey, children = props.children;
+    return /*#__PURE__*/ _react.createElement("div", {
+        id: id && "".concat(id, "-panel-").concat(tabKey),
+        role: "tabpanel",
+        tabIndex: active ? 0 : -1,
+        "aria-labelledby": id && "".concat(id, "-tab-").concat(tabKey),
+        "aria-hidden": !active,
+        style: style,
+        className: (0, _classnamesDefault.default)(prefixCls, active && "".concat(prefixCls, "-active"), className),
+        ref: ref
+    }, children);
+});
+TabPane.displayName = "TabPane";
+exports.default = TabPane;
+
+},{"classnames":"jocGM","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9cnT9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _react = require("react");
+var _tabContext = require("../TabContext");
+var _tabContextDefault = parcelHelpers.interopDefault(_tabContext);
+var _tabPane = require("./TabPane");
+var _tabPaneDefault = parcelHelpers.interopDefault(_tabPane);
+var _excluded = [
+    "key",
+    "forceRender",
+    "style",
+    "className",
+    "destroyInactiveTabPane"
+];
+var TabPanelList = function TabPanelList(props) {
+    var id = props.id, activeKey = props.activeKey, animated = props.animated, tabPosition = props.tabPosition, destroyInactiveTabPane = props.destroyInactiveTabPane;
+    var _React$useContext = _react.useContext((0, _tabContextDefault.default)), prefixCls = _React$useContext.prefixCls, tabs = _React$useContext.tabs;
+    var tabPaneAnimated = animated.tabPane;
+    var tabPanePrefixCls = "".concat(prefixCls, "-tabpane");
+    return /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-content-holder"))
+    }, /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-content"), "".concat(prefixCls, "-content-").concat(tabPosition), (0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-content-animated"), tabPaneAnimated))
+    }, tabs.map(function(item) {
+        var key = item.key, forceRender = item.forceRender, paneStyle = item.style, paneClassName = item.className, itemDestroyInactiveTabPane = item.destroyInactiveTabPane, restTabProps = (0, _objectWithoutPropertiesDefault.default)(item, _excluded);
+        var active = key === activeKey;
+        return /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), (0, _extendsDefault.default)({
+            key: key,
+            visible: active,
+            forceRender: forceRender,
+            removeOnLeave: !!(destroyInactiveTabPane || itemDestroyInactiveTabPane),
+            leavedClassName: "".concat(tabPanePrefixCls, "-hidden")
+        }, animated.tabPaneMotion), function(_ref, ref) {
+            var motionStyle = _ref.style, motionClassName = _ref.className;
+            return /*#__PURE__*/ _react.createElement((0, _tabPaneDefault.default), (0, _extendsDefault.default)({}, restTabProps, {
+                prefixCls: tabPanePrefixCls,
+                id: id,
+                tabKey: key,
+                animated: tabPaneAnimated,
+                active: active,
+                style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, paneStyle), motionStyle),
+                className: (0, _classnamesDefault.default)(paneClassName, motionClassName),
+                ref: ref
+            }));
+        });
+    })));
+};
+exports.default = TabPanelList;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/defineProperty":"hbmCA","classnames":"jocGM","rc-motion":"aaavi","react":"21dqq","../TabContext":"dK0F9","./TabPane":"ehzqL","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2m4Re":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useAnimateConfig);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+function useAnimateConfig() {
+    var animated = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+        inkBar: true,
+        tabPane: false
+    };
+    var mergedAnimated;
+    if (animated === false) mergedAnimated = {
+        inkBar: false,
+        tabPane: false
+    };
+    else if (animated === true) mergedAnimated = {
+        inkBar: true,
+        tabPane: false
+    };
+    else mergedAnimated = (0, _objectSpread2Default.default)({
+        inkBar: true
+    }, (0, _typeofDefault.default)(animated) === "object" ? animated : {});
+    // Enable tabPane animation if provide motion
+    if (mergedAnimated.tabPaneMotion && mergedAnimated.tabPane === undefined) mergedAnimated.tabPane = true;
+    if (!mergedAnimated.tabPaneMotion && mergedAnimated.tabPane) {
+        (0, _warningDefault.default)(false, "`animated.tabPane` is true but `animated.tabPaneMotion` is not provided. Motion will not work.");
+        mergedAnimated.tabPane = false;
+    }
+    return mergedAnimated;
+}
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","rc-util/es/warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eY64b":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _internal = require("../../theme/internal");
+/**
+ * This hook is only for cssVar to add root className for components.
+ * If root ClassName is needed, this hook could be refactored with `-root`
+ * @param prefixCls
+ */ const useCSSVarCls = (prefixCls)=>{
+    const [, , , , cssVar] = (0, _internal.useToken)();
+    return cssVar ? `${prefixCls}-css-var` : "";
+};
+exports.default = useCSSVarCls;
+
+},{"../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"k5dlJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useAnimateConfig);
+var _motion = require("../../_util/motion");
+const motion = {
+    motionAppear: false,
+    motionEnter: true,
+    motionLeave: true
+};
+function useAnimateConfig(prefixCls) {
+    let animated = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+        inkBar: true,
+        tabPane: false
+    };
+    let mergedAnimated;
+    if (animated === false) mergedAnimated = {
+        inkBar: false,
+        tabPane: false
+    };
+    else if (animated === true) mergedAnimated = {
+        inkBar: true,
+        tabPane: true
+    };
+    else mergedAnimated = Object.assign({
+        inkBar: true
+    }, typeof animated === "object" ? animated : {});
+    if (mergedAnimated.tabPane) mergedAnimated.tabPaneMotion = Object.assign(Object.assign({}, motion), {
+        motionName: (0, _motion.getTransitionName)(prefixCls, "switch")
+    });
+    return mergedAnimated;
+}
+
+},{"../../_util/motion":"8VhHM","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8VhHM":[function(require,module,exports) {
+// ================== Collapse Motion ==================
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getTransitionName", ()=>getTransitionName);
+const getCollapsedHeight = ()=>({
+        height: 0,
+        opacity: 0
+    });
+const getRealHeight = (node)=>{
+    const { scrollHeight } = node;
+    return {
+        height: scrollHeight,
+        opacity: 1
+    };
+};
+const getCurrentHeight = (node)=>({
+        height: node ? node.offsetHeight : 0
+    });
+const skipOpacityTransition = (_, event)=>(event === null || event === void 0 ? void 0 : event.deadline) === true || event.propertyName === "height";
+const initCollapseMotion = function() {
+    let rootCls = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "ant";
+    return {
+        motionName: `${rootCls}-motion-collapse`,
+        onAppearStart: getCollapsedHeight,
+        onEnterStart: getCollapsedHeight,
+        onAppearActive: getRealHeight,
+        onEnterActive: getRealHeight,
+        onLeaveStart: getCurrentHeight,
+        onLeaveActive: getCollapsedHeight,
+        onAppearEnd: skipOpacityTransition,
+        onEnterEnd: skipOpacityTransition,
+        onLeaveEnd: skipOpacityTransition,
+        motionDeadline: 500
+    };
+};
+const SelectPlacements = [
+    "bottomLeft",
+    "bottomRight",
+    "topLeft",
+    "topRight"
+];
+const getTransitionName = (rootPrefixCls, motion, transitionName)=>{
+    if (transitionName !== undefined) return transitionName;
+    return `${rootPrefixCls}-${motion}`;
+};
+exports.default = initCollapseMotion;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"k3KR1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useLegacyItems);
+var _react = require("react");
+var _toArray = require("rc-util/es/Children/toArray");
+var _toArrayDefault = parcelHelpers.interopDefault(_toArray);
+var _warning = require("../../_util/warning");
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+function filter(items) {
+    return items.filter((item)=>item);
+}
+function useLegacyItems(items, children) {
+    {
+        const warning = (0, _warning.devUseWarning)("Tabs");
+        warning.deprecated(!children, "Tabs.TabPane", "items");
+    }
+    if (items) return items;
+    const childrenItems = (0, _toArrayDefault.default)(children).map((node)=>{
+        if (/*#__PURE__*/ _react.isValidElement(node)) {
+            const { key, props } = node;
+            const _a = props || {}, { tab } = _a, restProps = __rest(_a, [
+                "tab"
+            ]);
+            const item = Object.assign(Object.assign({
+                key: String(key)
+            }, restProps), {
+                label: tab
+            });
+            return item;
+        }
+        return null;
+    });
+    return filter(childrenItems);
+}
+
+},{"react":"21dqq","rc-util/es/Children/toArray":"itYV7","../../_util/warning":"daUrm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2ykvH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "prepareComponentToken", ()=>prepareComponentToken);
+var _cssinjs = require("@ant-design/cssinjs");
+var _style = require("../../style");
+var _internal = require("../../theme/internal");
+var _motion = require("./motion");
+var _motionDefault = parcelHelpers.interopDefault(_motion);
+const genCardStyle = (token)=>{
+    const { componentCls, tabsCardPadding, cardBg, cardGutter, colorBorderSecondary, itemSelectedColor } = token;
+    return {
+        [`${componentCls}-card`]: {
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                [`${componentCls}-tab`]: {
+                    margin: 0,
+                    padding: tabsCardPadding,
+                    background: cardBg,
+                    border: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${colorBorderSecondary}`,
+                    transition: `all ${token.motionDurationSlow} ${token.motionEaseInOut}`
+                },
+                [`${componentCls}-tab-active`]: {
+                    color: itemSelectedColor,
+                    background: token.colorBgContainer
+                },
+                [`${componentCls}-ink-bar`]: {
+                    visibility: "hidden"
+                }
+            },
+            // ========================== Top & Bottom ==========================
+            [`&${componentCls}-top, &${componentCls}-bottom`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab + ${componentCls}-tab`]: {
+                        marginLeft: {
+                            _skip_check_: true,
+                            value: (0, _cssinjs.unit)(cardGutter)
+                        }
+                    }
+                }
+            },
+            [`&${componentCls}-top`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        borderRadius: `${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0`
+                    },
+                    [`${componentCls}-tab-active`]: {
+                        borderBottomColor: token.colorBgContainer
+                    }
+                }
+            },
+            [`&${componentCls}-bottom`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        borderRadius: `0 0 ${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)}`
+                    },
+                    [`${componentCls}-tab-active`]: {
+                        borderTopColor: token.colorBgContainer
+                    }
+                }
+            },
+            // ========================== Left & Right ==========================
+            [`&${componentCls}-left, &${componentCls}-right`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab + ${componentCls}-tab`]: {
+                        marginTop: (0, _cssinjs.unit)(cardGutter)
+                    }
+                }
+            },
+            [`&${componentCls}-left`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        borderRadius: {
+                            _skip_check_: true,
+                            value: `${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0 ${(0, _cssinjs.unit)(token.borderRadiusLG)}`
+                        }
+                    },
+                    [`${componentCls}-tab-active`]: {
+                        borderRightColor: {
+                            _skip_check_: true,
+                            value: token.colorBgContainer
+                        }
+                    }
+                }
+            },
+            [`&${componentCls}-right`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        borderRadius: {
+                            _skip_check_: true,
+                            value: `0 ${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0`
+                        }
+                    },
+                    [`${componentCls}-tab-active`]: {
+                        borderLeftColor: {
+                            _skip_check_: true,
+                            value: token.colorBgContainer
+                        }
+                    }
+                }
+            }
+        }
+    };
+};
+const genDropdownStyle = (token)=>{
+    const { componentCls, itemHoverColor, dropdownEdgeChildVerticalPadding } = token;
+    return {
+        [`${componentCls}-dropdown`]: Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+            position: "absolute",
+            top: -9999,
+            left: {
+                _skip_check_: true,
+                value: -9999
+            },
+            zIndex: token.zIndexPopup,
+            display: "block",
+            "&-hidden": {
+                display: "none"
+            },
+            [`${componentCls}-dropdown-menu`]: {
+                maxHeight: token.tabsDropdownHeight,
+                margin: 0,
+                padding: `${(0, _cssinjs.unit)(dropdownEdgeChildVerticalPadding)} 0`,
+                overflowX: "hidden",
+                overflowY: "auto",
+                textAlign: {
+                    _skip_check_: true,
+                    value: "left"
+                },
+                listStyleType: "none",
+                backgroundColor: token.colorBgContainer,
+                backgroundClip: "padding-box",
+                borderRadius: token.borderRadiusLG,
+                outline: "none",
+                boxShadow: token.boxShadowSecondary,
+                "&-item": Object.assign(Object.assign({}, (0, _style.textEllipsis)), {
+                    display: "flex",
+                    alignItems: "center",
+                    minWidth: token.tabsDropdownWidth,
+                    margin: 0,
+                    padding: `${(0, _cssinjs.unit)(token.paddingXXS)} ${(0, _cssinjs.unit)(token.paddingSM)}`,
+                    color: token.colorText,
+                    fontWeight: "normal",
+                    fontSize: token.fontSize,
+                    lineHeight: token.lineHeight,
+                    cursor: "pointer",
+                    transition: `all ${token.motionDurationSlow}`,
+                    "> span": {
+                        flex: 1,
+                        whiteSpace: "nowrap"
+                    },
+                    "&-remove": {
+                        flex: "none",
+                        marginLeft: {
+                            _skip_check_: true,
+                            value: token.marginSM
+                        },
+                        color: token.colorTextDescription,
+                        fontSize: token.fontSizeSM,
+                        background: "transparent",
+                        border: 0,
+                        cursor: "pointer",
+                        "&:hover": {
+                            color: itemHoverColor
+                        }
+                    },
+                    "&:hover": {
+                        background: token.controlItemBgHover
+                    },
+                    "&-disabled": {
+                        "&, &:hover": {
+                            color: token.colorTextDisabled,
+                            background: "transparent",
+                            cursor: "not-allowed"
+                        }
+                    }
+                })
+            }
+        })
+    };
+};
+const genPositionStyle = (token)=>{
+    const { componentCls, margin, colorBorderSecondary, horizontalMargin, verticalItemPadding, verticalItemMargin, calc } = token;
+    return {
+        // ========================== Top & Bottom ==========================
+        [`${componentCls}-top, ${componentCls}-bottom`]: {
+            flexDirection: "column",
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                margin: horizontalMargin,
+                "&::before": {
+                    position: "absolute",
+                    right: {
+                        _skip_check_: true,
+                        value: 0
+                    },
+                    left: {
+                        _skip_check_: true,
+                        value: 0
+                    },
+                    borderBottom: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${colorBorderSecondary}`,
+                    content: "''"
+                },
+                [`${componentCls}-ink-bar`]: {
+                    height: token.lineWidthBold,
+                    "&-animated": {
+                        transition: `width ${token.motionDurationSlow}, left ${token.motionDurationSlow},
+            right ${token.motionDurationSlow}`
+                    }
+                },
+                [`${componentCls}-nav-wrap`]: {
+                    "&::before, &::after": {
+                        top: 0,
+                        bottom: 0,
+                        width: token.controlHeight
+                    },
+                    "&::before": {
+                        left: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        boxShadow: token.boxShadowTabsOverflowLeft
+                    },
+                    "&::after": {
+                        right: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        boxShadow: token.boxShadowTabsOverflowRight
+                    },
+                    [`&${componentCls}-nav-wrap-ping-left::before`]: {
+                        opacity: 1
+                    },
+                    [`&${componentCls}-nav-wrap-ping-right::after`]: {
+                        opacity: 1
+                    }
+                }
+            }
+        },
+        [`${componentCls}-top`]: {
+            [`> ${componentCls}-nav,
+        > div > ${componentCls}-nav`]: {
+                "&::before": {
+                    bottom: 0
+                },
+                [`${componentCls}-ink-bar`]: {
+                    bottom: 0
+                }
+            }
+        },
+        [`${componentCls}-bottom`]: {
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                order: 1,
+                marginTop: margin,
+                marginBottom: 0,
+                "&::before": {
+                    top: 0
+                },
+                [`${componentCls}-ink-bar`]: {
+                    top: 0
+                }
+            },
+            [`> ${componentCls}-content-holder, > div > ${componentCls}-content-holder`]: {
+                order: 0
+            }
+        },
+        // ========================== Left & Right ==========================
+        [`${componentCls}-left, ${componentCls}-right`]: {
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                flexDirection: "column",
+                minWidth: calc(token.controlHeight).mul(1.25).equal(),
+                // >>>>>>>>>>> Tab
+                [`${componentCls}-tab`]: {
+                    padding: verticalItemPadding,
+                    textAlign: "center"
+                },
+                [`${componentCls}-tab + ${componentCls}-tab`]: {
+                    margin: verticalItemMargin
+                },
+                // >>>>>>>>>>> Nav
+                [`${componentCls}-nav-wrap`]: {
+                    flexDirection: "column",
+                    "&::before, &::after": {
+                        right: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        left: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        height: token.controlHeight
+                    },
+                    "&::before": {
+                        top: 0,
+                        boxShadow: token.boxShadowTabsOverflowTop
+                    },
+                    "&::after": {
+                        bottom: 0,
+                        boxShadow: token.boxShadowTabsOverflowBottom
+                    },
+                    [`&${componentCls}-nav-wrap-ping-top::before`]: {
+                        opacity: 1
+                    },
+                    [`&${componentCls}-nav-wrap-ping-bottom::after`]: {
+                        opacity: 1
+                    }
+                },
+                // >>>>>>>>>>> Ink Bar
+                [`${componentCls}-ink-bar`]: {
+                    width: token.lineWidthBold,
+                    "&-animated": {
+                        transition: `height ${token.motionDurationSlow}, top ${token.motionDurationSlow}`
+                    }
+                },
+                [`${componentCls}-nav-list, ${componentCls}-nav-operations`]: {
+                    flex: "1 0 auto",
+                    // fix safari scroll problem
+                    flexDirection: "column"
+                }
+            }
+        },
+        [`${componentCls}-left`]: {
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                [`${componentCls}-ink-bar`]: {
+                    right: {
+                        _skip_check_: true,
+                        value: 0
+                    }
+                }
+            },
+            [`> ${componentCls}-content-holder, > div > ${componentCls}-content-holder`]: {
+                marginLeft: {
+                    _skip_check_: true,
+                    value: (0, _cssinjs.unit)(calc(token.lineWidth).mul(-1).equal())
+                },
+                borderLeft: {
+                    _skip_check_: true,
+                    value: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${token.colorBorder}`
+                },
+                [`> ${componentCls}-content > ${componentCls}-tabpane`]: {
+                    paddingLeft: {
+                        _skip_check_: true,
+                        value: token.paddingLG
+                    }
+                }
+            }
+        },
+        [`${componentCls}-right`]: {
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                order: 1,
+                [`${componentCls}-ink-bar`]: {
+                    left: {
+                        _skip_check_: true,
+                        value: 0
+                    }
+                }
+            },
+            [`> ${componentCls}-content-holder, > div > ${componentCls}-content-holder`]: {
+                order: 0,
+                marginRight: {
+                    _skip_check_: true,
+                    value: calc(token.lineWidth).mul(-1).equal()
+                },
+                borderRight: {
+                    _skip_check_: true,
+                    value: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${token.colorBorder}`
+                },
+                [`> ${componentCls}-content > ${componentCls}-tabpane`]: {
+                    paddingRight: {
+                        _skip_check_: true,
+                        value: token.paddingLG
+                    }
+                }
+            }
+        }
+    };
+};
+const genSizeStyle = (token)=>{
+    const { componentCls, cardPaddingSM, cardPaddingLG, horizontalItemPaddingSM, horizontalItemPaddingLG } = token;
+    return {
+        [componentCls]: {
+            "&-small": {
+                [`> ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        padding: horizontalItemPaddingSM,
+                        fontSize: token.titleFontSizeSM
+                    }
+                }
+            },
+            "&-large": {
+                [`> ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        padding: horizontalItemPaddingLG,
+                        fontSize: token.titleFontSizeLG
+                    }
+                }
+            }
+        },
+        [`${componentCls}-card`]: {
+            [`&${componentCls}-small`]: {
+                [`> ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        padding: cardPaddingSM
+                    }
+                },
+                [`&${componentCls}-bottom`]: {
+                    [`> ${componentCls}-nav ${componentCls}-tab`]: {
+                        borderRadius: `0 0 ${(0, _cssinjs.unit)(token.borderRadius)} ${(0, _cssinjs.unit)(token.borderRadius)}`
+                    }
+                },
+                [`&${componentCls}-top`]: {
+                    [`> ${componentCls}-nav ${componentCls}-tab`]: {
+                        borderRadius: `${(0, _cssinjs.unit)(token.borderRadius)} ${(0, _cssinjs.unit)(token.borderRadius)} 0 0`
+                    }
+                },
+                [`&${componentCls}-right`]: {
+                    [`> ${componentCls}-nav ${componentCls}-tab`]: {
+                        borderRadius: {
+                            _skip_check_: true,
+                            value: `0 ${(0, _cssinjs.unit)(token.borderRadius)} ${(0, _cssinjs.unit)(token.borderRadius)} 0`
+                        }
+                    }
+                },
+                [`&${componentCls}-left`]: {
+                    [`> ${componentCls}-nav ${componentCls}-tab`]: {
+                        borderRadius: {
+                            _skip_check_: true,
+                            value: `${(0, _cssinjs.unit)(token.borderRadius)} 0 0 ${(0, _cssinjs.unit)(token.borderRadius)}`
+                        }
+                    }
+                }
+            },
+            [`&${componentCls}-large`]: {
+                [`> ${componentCls}-nav`]: {
+                    [`${componentCls}-tab`]: {
+                        padding: cardPaddingLG
+                    }
+                }
+            }
+        }
+    };
+};
+const genTabStyle = (token)=>{
+    const { componentCls, itemActiveColor, itemHoverColor, iconCls, tabsHorizontalItemMargin, horizontalItemPadding, itemSelectedColor, itemColor } = token;
+    const tabCls = `${componentCls}-tab`;
+    return {
+        [tabCls]: {
+            position: "relative",
+            WebkitTouchCallout: "none",
+            WebkitTapHighlightColor: "transparent",
+            display: "inline-flex",
+            alignItems: "center",
+            padding: horizontalItemPadding,
+            fontSize: token.titleFontSize,
+            background: "transparent",
+            border: 0,
+            outline: "none",
+            cursor: "pointer",
+            color: itemColor,
+            "&-btn, &-remove": Object.assign({
+                "&:focus:not(:focus-visible), &:active": {
+                    color: itemActiveColor
+                }
+            }, (0, _style.genFocusStyle)(token)),
+            "&-btn": {
+                outline: "none",
+                transition: `all ${token.motionDurationSlow}`,
+                [`${tabCls}-icon:not(:last-child)`]: {
+                    marginInlineEnd: token.marginSM
+                }
+            },
+            "&-remove": {
+                flex: "none",
+                marginRight: {
+                    _skip_check_: true,
+                    value: token.calc(token.marginXXS).mul(-1).equal()
+                },
+                marginLeft: {
+                    _skip_check_: true,
+                    value: token.marginXS
+                },
+                color: token.colorTextDescription,
+                fontSize: token.fontSizeSM,
+                background: "transparent",
+                border: "none",
+                outline: "none",
+                cursor: "pointer",
+                transition: `all ${token.motionDurationSlow}`,
+                "&:hover": {
+                    color: token.colorTextHeading
+                }
+            },
+            "&:hover": {
+                color: itemHoverColor
+            },
+            [`&${tabCls}-active ${tabCls}-btn`]: {
+                color: itemSelectedColor,
+                textShadow: token.tabsActiveTextShadow
+            },
+            [`&${tabCls}-disabled`]: {
+                color: token.colorTextDisabled,
+                cursor: "not-allowed"
+            },
+            [`&${tabCls}-disabled ${tabCls}-btn, &${tabCls}-disabled ${componentCls}-remove`]: {
+                "&:focus, &:active": {
+                    color: token.colorTextDisabled
+                }
+            },
+            [`& ${tabCls}-remove ${iconCls}`]: {
+                margin: 0
+            },
+            [`${iconCls}:not(:last-child)`]: {
+                marginRight: {
+                    _skip_check_: true,
+                    value: token.marginSM
+                }
+            }
+        },
+        [`${tabCls} + ${tabCls}`]: {
+            margin: {
+                _skip_check_: true,
+                value: tabsHorizontalItemMargin
+            }
+        }
+    };
+};
+const genRtlStyle = (token)=>{
+    const { componentCls, tabsHorizontalItemMarginRTL, iconCls, cardGutter, calc } = token;
+    const rtlCls = `${componentCls}-rtl`;
+    return {
+        [rtlCls]: {
+            direction: "rtl",
+            [`${componentCls}-nav`]: {
+                [`${componentCls}-tab`]: {
+                    margin: {
+                        _skip_check_: true,
+                        value: tabsHorizontalItemMarginRTL
+                    },
+                    [`${componentCls}-tab:last-of-type`]: {
+                        marginLeft: {
+                            _skip_check_: true,
+                            value: 0
+                        }
+                    },
+                    [iconCls]: {
+                        marginRight: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        marginLeft: {
+                            _skip_check_: true,
+                            value: (0, _cssinjs.unit)(token.marginSM)
+                        }
+                    },
+                    [`${componentCls}-tab-remove`]: {
+                        marginRight: {
+                            _skip_check_: true,
+                            value: (0, _cssinjs.unit)(token.marginXS)
+                        },
+                        marginLeft: {
+                            _skip_check_: true,
+                            value: (0, _cssinjs.unit)(calc(token.marginXXS).mul(-1).equal())
+                        },
+                        [iconCls]: {
+                            margin: 0
+                        }
+                    }
+                }
+            },
+            [`&${componentCls}-left`]: {
+                [`> ${componentCls}-nav`]: {
+                    order: 1
+                },
+                [`> ${componentCls}-content-holder`]: {
+                    order: 0
+                }
+            },
+            [`&${componentCls}-right`]: {
+                [`> ${componentCls}-nav`]: {
+                    order: 0
+                },
+                [`> ${componentCls}-content-holder`]: {
+                    order: 1
+                }
+            },
+            // ====================== Card ======================
+            [`&${componentCls}-card${componentCls}-top, &${componentCls}-card${componentCls}-bottom`]: {
+                [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                    [`${componentCls}-tab + ${componentCls}-tab`]: {
+                        marginRight: {
+                            _skip_check_: true,
+                            value: cardGutter
+                        },
+                        marginLeft: {
+                            _skip_check_: true,
+                            value: 0
+                        }
+                    }
+                }
+            }
+        },
+        [`${componentCls}-dropdown-rtl`]: {
+            direction: "rtl"
+        },
+        [`${componentCls}-menu-item`]: {
+            [`${componentCls}-dropdown-rtl`]: {
+                textAlign: {
+                    _skip_check_: true,
+                    value: "right"
+                }
+            }
+        }
+    };
+};
+const genTabsStyle = (token)=>{
+    const { componentCls, tabsCardPadding, cardHeight, cardGutter, itemHoverColor, itemActiveColor, colorBorderSecondary } = token;
+    return {
+        [componentCls]: Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+            display: "flex",
+            // ========================== Navigation ==========================
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                position: "relative",
+                display: "flex",
+                flex: "none",
+                alignItems: "center",
+                [`${componentCls}-nav-wrap`]: {
+                    position: "relative",
+                    display: "flex",
+                    flex: "auto",
+                    alignSelf: "stretch",
+                    overflow: "hidden",
+                    whiteSpace: "nowrap",
+                    transform: "translate(0)",
+                    // Fix chrome render bug
+                    // >>>>> Ping shadow
+                    "&::before, &::after": {
+                        position: "absolute",
+                        zIndex: 1,
+                        opacity: 0,
+                        transition: `opacity ${token.motionDurationSlow}`,
+                        content: "''",
+                        pointerEvents: "none"
+                    }
+                },
+                [`${componentCls}-nav-list`]: {
+                    position: "relative",
+                    display: "flex",
+                    transition: `opacity ${token.motionDurationSlow}`
+                },
+                // >>>>>>>> Operations
+                [`${componentCls}-nav-operations`]: {
+                    display: "flex",
+                    alignSelf: "stretch"
+                },
+                [`${componentCls}-nav-operations-hidden`]: {
+                    position: "absolute",
+                    visibility: "hidden",
+                    pointerEvents: "none"
+                },
+                [`${componentCls}-nav-more`]: {
+                    position: "relative",
+                    padding: tabsCardPadding,
+                    background: "transparent",
+                    border: 0,
+                    color: token.colorText,
+                    "&::after": {
+                        position: "absolute",
+                        right: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        bottom: 0,
+                        left: {
+                            _skip_check_: true,
+                            value: 0
+                        },
+                        height: token.calc(token.controlHeightLG).div(8).equal(),
+                        transform: "translateY(100%)",
+                        content: "''"
+                    }
+                },
+                [`${componentCls}-nav-add`]: Object.assign({
+                    minWidth: cardHeight,
+                    minHeight: cardHeight,
+                    marginLeft: {
+                        _skip_check_: true,
+                        value: cardGutter
+                    },
+                    padding: `0 ${(0, _cssinjs.unit)(token.paddingXS)}`,
+                    background: "transparent",
+                    border: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${colorBorderSecondary}`,
+                    borderRadius: `${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0`,
+                    outline: "none",
+                    cursor: "pointer",
+                    color: token.colorText,
+                    transition: `all ${token.motionDurationSlow} ${token.motionEaseInOut}`,
+                    "&:hover": {
+                        color: itemHoverColor
+                    },
+                    "&:active, &:focus:not(:focus-visible)": {
+                        color: itemActiveColor
+                    }
+                }, (0, _style.genFocusStyle)(token))
+            },
+            [`${componentCls}-extra-content`]: {
+                flex: "none"
+            },
+            // ============================ InkBar ============================
+            [`${componentCls}-ink-bar`]: {
+                position: "absolute",
+                background: token.inkBarColor,
+                pointerEvents: "none"
+            }
+        }), genTabStyle(token)), {
+            // =========================== TabPanes ===========================
+            [`${componentCls}-content`]: {
+                position: "relative",
+                width: "100%"
+            },
+            [`${componentCls}-content-holder`]: {
+                flex: "auto",
+                minWidth: 0,
+                minHeight: 0
+            },
+            [`${componentCls}-tabpane`]: {
+                outline: "none",
+                "&-hidden": {
+                    display: "none"
+                }
+            }
+        }),
+        [`${componentCls}-centered`]: {
+            [`> ${componentCls}-nav, > div > ${componentCls}-nav`]: {
+                [`${componentCls}-nav-wrap`]: {
+                    [`&:not([class*='${componentCls}-nav-wrap-ping'])`]: {
+                        justifyContent: "center"
+                    }
+                }
+            }
+        }
+    };
+};
+const prepareComponentToken = (token)=>{
+    const cardHeight = token.controlHeightLG;
+    return {
+        zIndexPopup: token.zIndexPopupBase + 50,
+        cardBg: token.colorFillAlter,
+        cardHeight,
+        // Initialize with empty string, because cardPadding will be calculated with cardHeight by default.
+        cardPadding: `${(cardHeight - Math.round(token.fontSize * token.lineHeight)) / 2 - token.lineWidth}px ${token.padding}px`,
+        cardPaddingSM: `${token.paddingXXS * 1.5}px ${token.padding}px`,
+        cardPaddingLG: `${token.paddingXS}px ${token.padding}px ${token.paddingXXS * 1.5}px`,
+        titleFontSize: token.fontSize,
+        titleFontSizeLG: token.fontSizeLG,
+        titleFontSizeSM: token.fontSize,
+        inkBarColor: token.colorPrimary,
+        horizontalMargin: `0 0 ${token.margin}px 0`,
+        horizontalItemGutter: 32,
+        // Fixed Value
+        // Initialize with empty string, because horizontalItemMargin will be calculated with horizontalItemGutter by default.
+        horizontalItemMargin: ``,
+        horizontalItemMarginRTL: ``,
+        horizontalItemPadding: `${token.paddingSM}px 0`,
+        horizontalItemPaddingSM: `${token.paddingXS}px 0`,
+        horizontalItemPaddingLG: `${token.padding}px 0`,
+        verticalItemPadding: `${token.paddingXS}px ${token.paddingLG}px`,
+        verticalItemMargin: `${token.margin}px 0 0 0`,
+        itemColor: token.colorText,
+        itemSelectedColor: token.colorPrimary,
+        itemHoverColor: token.colorPrimaryHover,
+        itemActiveColor: token.colorPrimaryActive,
+        cardGutter: token.marginXXS / 2
+    };
+};
+// ============================== Export ==============================
+exports.default = (0, _internal.genStyleHooks)("Tabs", (token)=>{
+    const tabsToken = (0, _internal.mergeToken)(token, {
+        // `cardPadding` is empty by default, so we could calculate with dynamic `cardHeight`
+        tabsCardPadding: token.cardPadding,
+        dropdownEdgeChildVerticalPadding: token.paddingXXS,
+        tabsActiveTextShadow: "0 0 0.25px currentcolor",
+        tabsDropdownHeight: 200,
+        tabsDropdownWidth: 120,
+        tabsHorizontalItemMargin: `0 0 0 ${(0, _cssinjs.unit)(token.horizontalItemGutter)}`,
+        tabsHorizontalItemMarginRTL: `0 0 0 ${(0, _cssinjs.unit)(token.horizontalItemGutter)}`
+    });
+    return [
+        genSizeStyle(tabsToken),
+        genRtlStyle(tabsToken),
+        genPositionStyle(tabsToken),
+        genDropdownStyle(tabsToken),
+        genCardStyle(tabsToken),
+        genTabsStyle(tabsToken),
+        (0, _motionDefault.default)(tabsToken)
+    ];
+}, prepareComponentToken);
+
+},{"@ant-design/cssinjs":"k46HC","../../style":"b1Psq","../../theme/internal":"7S7jp","./motion":"61qVX","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"61qVX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _motion = require("../../style/motion");
+const genMotionStyle = (token)=>{
+    const { componentCls, motionDurationSlow } = token;
+    return [
+        {
+            [componentCls]: {
+                [`${componentCls}-switch`]: {
+                    "&-appear, &-enter": {
+                        transition: "none",
+                        "&-start": {
+                            opacity: 0
+                        },
+                        "&-active": {
+                            opacity: 1,
+                            transition: `opacity ${motionDurationSlow}`
+                        }
+                    },
+                    "&-leave": {
+                        position: "absolute",
+                        transition: "none",
+                        inset: 0,
+                        "&-start": {
+                            opacity: 1
+                        },
+                        "&-active": {
+                            opacity: 0,
+                            transition: `opacity ${motionDurationSlow}`
+                        }
+                    }
+                }
+            }
+        },
+        // Follow code may reuse in other components
+        [
+            (0, _motion.initSlideMotion)(token, "slide-up"),
+            (0, _motion.initSlideMotion)(token, "slide-down")
+        ]
+    ];
+};
+exports.default = genMotionStyle;
+
+},{"../../style/motion":"eTZWJ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eTZWJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initSlideMotion", ()=>(0, _slide.initSlideMotion));
+parcelHelpers.export(exports, "slideUpIn", ()=>(0, _slide.slideUpIn));
+parcelHelpers.export(exports, "slideUpOut", ()=>(0, _slide.slideUpOut));
+parcelHelpers.export(exports, "slideDownIn", ()=>(0, _slide.slideDownIn));
+parcelHelpers.export(exports, "slideDownOut", ()=>(0, _slide.slideDownOut));
+parcelHelpers.export(exports, "slideLeftIn", ()=>(0, _slide.slideLeftIn));
+parcelHelpers.export(exports, "slideLeftOut", ()=>(0, _slide.slideLeftOut));
+parcelHelpers.export(exports, "slideRightIn", ()=>(0, _slide.slideRightIn));
+parcelHelpers.export(exports, "slideRightOut", ()=>(0, _slide.slideRightOut));
+parcelHelpers.export(exports, "zoomOut", ()=>(0, _zoom.zoomOut));
+parcelHelpers.export(exports, "zoomIn", ()=>(0, _zoom.zoomIn));
+parcelHelpers.export(exports, "zoomBigIn", ()=>(0, _zoom.zoomBigIn));
+parcelHelpers.export(exports, "zoomLeftOut", ()=>(0, _zoom.zoomLeftOut));
+parcelHelpers.export(exports, "zoomBigOut", ()=>(0, _zoom.zoomBigOut));
+parcelHelpers.export(exports, "zoomLeftIn", ()=>(0, _zoom.zoomLeftIn));
+parcelHelpers.export(exports, "zoomRightIn", ()=>(0, _zoom.zoomRightIn));
+parcelHelpers.export(exports, "zoomUpIn", ()=>(0, _zoom.zoomUpIn));
+parcelHelpers.export(exports, "zoomRightOut", ()=>(0, _zoom.zoomRightOut));
+parcelHelpers.export(exports, "zoomUpOut", ()=>(0, _zoom.zoomUpOut));
+parcelHelpers.export(exports, "zoomDownIn", ()=>(0, _zoom.zoomDownIn));
+parcelHelpers.export(exports, "zoomDownOut", ()=>(0, _zoom.zoomDownOut));
+parcelHelpers.export(exports, "initZoomMotion", ()=>(0, _zoom.initZoomMotion));
+parcelHelpers.export(exports, "fadeIn", ()=>(0, _fade.fadeIn));
+parcelHelpers.export(exports, "fadeOut", ()=>(0, _fade.fadeOut));
+parcelHelpers.export(exports, "initFadeMotion", ()=>(0, _fade.initFadeMotion));
+parcelHelpers.export(exports, "moveRightOut", ()=>(0, _move.moveRightOut));
+parcelHelpers.export(exports, "moveRightIn", ()=>(0, _move.moveRightIn));
+parcelHelpers.export(exports, "moveLeftOut", ()=>(0, _move.moveLeftOut));
+parcelHelpers.export(exports, "moveLeftIn", ()=>(0, _move.moveLeftIn));
+parcelHelpers.export(exports, "moveDownOut", ()=>(0, _move.moveDownOut));
+parcelHelpers.export(exports, "moveDownIn", ()=>(0, _move.moveDownIn));
+parcelHelpers.export(exports, "moveUpIn", ()=>(0, _move.moveUpIn));
+parcelHelpers.export(exports, "moveUpOut", ()=>(0, _move.moveUpOut));
+parcelHelpers.export(exports, "initMoveMotion", ()=>(0, _move.initMoveMotion));
+parcelHelpers.export(exports, "genCollapseMotion", ()=>(0, _collapseDefault.default));
+var _collapse = require("./collapse");
+var _collapseDefault = parcelHelpers.interopDefault(_collapse);
+var _fade = require("./fade");
+var _move = require("./move");
+var _slide = require("./slide");
+var _zoom = require("./zoom");
+
+},{"./collapse":false,"./fade":false,"./move":false,"./slide":"6S4x6","./zoom":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6S4x6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "slideUpIn", ()=>slideUpIn);
+parcelHelpers.export(exports, "slideUpOut", ()=>slideUpOut);
+parcelHelpers.export(exports, "slideDownIn", ()=>slideDownIn);
+parcelHelpers.export(exports, "slideDownOut", ()=>slideDownOut);
+parcelHelpers.export(exports, "slideLeftIn", ()=>slideLeftIn);
+parcelHelpers.export(exports, "slideLeftOut", ()=>slideLeftOut);
+parcelHelpers.export(exports, "slideRightIn", ()=>slideRightIn);
+parcelHelpers.export(exports, "slideRightOut", ()=>slideRightOut);
+parcelHelpers.export(exports, "initSlideMotion", ()=>initSlideMotion);
+var _cssinjs = require("@ant-design/cssinjs");
+var _motion = require("./motion");
+const slideUpIn = new (0, _cssinjs.Keyframes)("antSlideUpIn", {
+    "0%": {
+        transform: "scaleY(0.8)",
+        transformOrigin: "0% 0%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scaleY(1)",
+        transformOrigin: "0% 0%",
+        opacity: 1
+    }
+});
+const slideUpOut = new (0, _cssinjs.Keyframes)("antSlideUpOut", {
+    "0%": {
+        transform: "scaleY(1)",
+        transformOrigin: "0% 0%",
+        opacity: 1
+    },
+    "100%": {
+        transform: "scaleY(0.8)",
+        transformOrigin: "0% 0%",
+        opacity: 0
+    }
+});
+const slideDownIn = new (0, _cssinjs.Keyframes)("antSlideDownIn", {
+    "0%": {
+        transform: "scaleY(0.8)",
+        transformOrigin: "100% 100%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scaleY(1)",
+        transformOrigin: "100% 100%",
+        opacity: 1
+    }
+});
+const slideDownOut = new (0, _cssinjs.Keyframes)("antSlideDownOut", {
+    "0%": {
+        transform: "scaleY(1)",
+        transformOrigin: "100% 100%",
+        opacity: 1
+    },
+    "100%": {
+        transform: "scaleY(0.8)",
+        transformOrigin: "100% 100%",
+        opacity: 0
+    }
+});
+const slideLeftIn = new (0, _cssinjs.Keyframes)("antSlideLeftIn", {
+    "0%": {
+        transform: "scaleX(0.8)",
+        transformOrigin: "0% 0%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scaleX(1)",
+        transformOrigin: "0% 0%",
+        opacity: 1
+    }
+});
+const slideLeftOut = new (0, _cssinjs.Keyframes)("antSlideLeftOut", {
+    "0%": {
+        transform: "scaleX(1)",
+        transformOrigin: "0% 0%",
+        opacity: 1
+    },
+    "100%": {
+        transform: "scaleX(0.8)",
+        transformOrigin: "0% 0%",
+        opacity: 0
+    }
+});
+const slideRightIn = new (0, _cssinjs.Keyframes)("antSlideRightIn", {
+    "0%": {
+        transform: "scaleX(0.8)",
+        transformOrigin: "100% 0%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scaleX(1)",
+        transformOrigin: "100% 0%",
+        opacity: 1
+    }
+});
+const slideRightOut = new (0, _cssinjs.Keyframes)("antSlideRightOut", {
+    "0%": {
+        transform: "scaleX(1)",
+        transformOrigin: "100% 0%",
+        opacity: 1
+    },
+    "100%": {
+        transform: "scaleX(0.8)",
+        transformOrigin: "100% 0%",
+        opacity: 0
+    }
+});
+const slideMotion = {
+    "slide-up": {
+        inKeyframes: slideUpIn,
+        outKeyframes: slideUpOut
+    },
+    "slide-down": {
+        inKeyframes: slideDownIn,
+        outKeyframes: slideDownOut
+    },
+    "slide-left": {
+        inKeyframes: slideLeftIn,
+        outKeyframes: slideLeftOut
+    },
+    "slide-right": {
+        inKeyframes: slideRightIn,
+        outKeyframes: slideRightOut
+    }
+};
+const initSlideMotion = (token, motionName)=>{
+    const { antCls } = token;
+    const motionCls = `${antCls}-${motionName}`;
+    const { inKeyframes, outKeyframes } = slideMotion[motionName];
+    return [
+        (0, _motion.initMotion)(motionCls, inKeyframes, outKeyframes, token.motionDurationMid),
+        {
+            [`
+      ${motionCls}-enter,
+      ${motionCls}-appear
+    `]: {
+                transform: "scale(0)",
+                transformOrigin: "0% 0%",
+                opacity: 0,
+                animationTimingFunction: token.motionEaseOutQuint,
+                [`&-prepare`]: {
+                    transform: "scale(1)"
+                }
+            },
+            [`${motionCls}-leave`]: {
+                animationTimingFunction: token.motionEaseInQuint
+            }
+        }
+    ];
+};
+
+},{"@ant-design/cssinjs":"k46HC","./motion":"6dieZ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6dieZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initMotion", ()=>initMotion);
+const initMotionCommon = (duration)=>({
+        animationDuration: duration,
+        animationFillMode: "both"
+    });
+// FIXME: origin less code seems same as initMotionCommon. Maybe we can safe remove
+const initMotionCommonLeave = (duration)=>({
+        animationDuration: duration,
+        animationFillMode: "both"
+    });
+const initMotion = function(motionCls, inKeyframes, outKeyframes, duration) {
+    let sameLevel = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+    const sameLevelPrefix = sameLevel ? "&" : "";
+    return {
+        [`
+      ${sameLevelPrefix}${motionCls}-enter,
+      ${sameLevelPrefix}${motionCls}-appear
+    `]: Object.assign(Object.assign({}, initMotionCommon(duration)), {
+            animationPlayState: "paused"
+        }),
+        [`${sameLevelPrefix}${motionCls}-leave`]: Object.assign(Object.assign({}, initMotionCommonLeave(duration)), {
+            animationPlayState: "paused"
+        }),
+        [`
+      ${sameLevelPrefix}${motionCls}-enter${motionCls}-enter-active,
+      ${sameLevelPrefix}${motionCls}-appear${motionCls}-appear-active
+    `]: {
+            animationName: inKeyframes,
+            animationPlayState: "running"
+        },
+        [`${sameLevelPrefix}${motionCls}-leave${motionCls}-leave-active`]: {
+            animationName: outKeyframes,
+            animationPlayState: "running",
+            pointerEvents: "none"
+        }
+    };
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2eqcT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const TabPane = ()=>null;
+TabPane.displayName = "DeprecatedTabPane";
+exports.default = TabPane;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jvl43":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _configProvider = require("../config-provider");
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const Grid = (_a)=>{
+    var { prefixCls, className, hoverable = true } = _a, props = __rest(_a, [
+        "prefixCls",
+        "className",
+        "hoverable"
+    ]);
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefix = getPrefixCls("card", prefixCls);
+    const classString = (0, _classnamesDefault.default)(`${prefix}-grid`, className, {
+        [`${prefix}-grid-hoverable`]: hoverable
+    });
+    return /*#__PURE__*/ _react.createElement("div", Object.assign({}, props, {
+        className: classString
+    }));
+};
+exports.default = Grid;
+
+},{"react":"21dqq","classnames":"jocGM","../config-provider":"iMraF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"c2VDR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "prepareComponentToken", ()=>prepareComponentToken);
+var _cssinjs = require("@ant-design/cssinjs");
+var _style = require("../../style");
+var _internal = require("../../theme/internal");
+// ============================== Styles ==============================
+// ============================== Head ==============================
+const genCardHeadStyle = (token)=>{
+    const { antCls, componentCls, headerHeight, cardPaddingBase, tabsMarginBottom } = token;
+    return Object.assign(Object.assign({
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        minHeight: headerHeight,
+        marginBottom: -1,
+        padding: `0 ${(0, _cssinjs.unit)(cardPaddingBase)}`,
+        color: token.colorTextHeading,
+        fontWeight: token.fontWeightStrong,
+        fontSize: token.headerFontSize,
+        background: token.headerBg,
+        borderBottom: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${token.colorBorderSecondary}`,
+        borderRadius: `${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0`
+    }, (0, _style.clearFix)()), {
+        "&-wrapper": {
+            width: "100%",
+            display: "flex",
+            alignItems: "center"
+        },
+        "&-title": Object.assign(Object.assign({
+            display: "inline-block",
+            flex: 1
+        }, (0, _style.textEllipsis)), {
+            [`
+          > ${componentCls}-typography,
+          > ${componentCls}-typography-edit-content
+        `]: {
+                insetInlineStart: 0,
+                marginTop: 0,
+                marginBottom: 0
+            }
+        }),
+        [`${antCls}-tabs-top`]: {
+            clear: "both",
+            marginBottom: tabsMarginBottom,
+            color: token.colorText,
+            fontWeight: "normal",
+            fontSize: token.fontSize,
+            "&-bar": {
+                borderBottom: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${token.colorBorderSecondary}`
+            }
+        }
+    });
+};
+// ============================== Grid ==============================
+const genCardGridStyle = (token)=>{
+    const { cardPaddingBase, colorBorderSecondary, cardShadow, lineWidth } = token;
+    return {
+        width: "33.33%",
+        padding: cardPaddingBase,
+        border: 0,
+        borderRadius: 0,
+        boxShadow: `
+      ${(0, _cssinjs.unit)(lineWidth)} 0 0 0 ${colorBorderSecondary},
+      0 ${(0, _cssinjs.unit)(lineWidth)} 0 0 ${colorBorderSecondary},
+      ${(0, _cssinjs.unit)(lineWidth)} ${(0, _cssinjs.unit)(lineWidth)} 0 0 ${colorBorderSecondary},
+      ${(0, _cssinjs.unit)(lineWidth)} 0 0 0 ${colorBorderSecondary} inset,
+      0 ${(0, _cssinjs.unit)(lineWidth)} 0 0 ${colorBorderSecondary} inset;
+    `,
+        transition: `all ${token.motionDurationMid}`,
+        "&-hoverable:hover": {
+            position: "relative",
+            zIndex: 1,
+            boxShadow: cardShadow
+        }
+    };
+};
+// ============================== Actions ==============================
+const genCardActionsStyle = (token)=>{
+    const { componentCls, iconCls, actionsLiMargin, cardActionsIconSize, colorBorderSecondary, actionsBg } = token;
+    return Object.assign(Object.assign({
+        margin: 0,
+        padding: 0,
+        listStyle: "none",
+        background: actionsBg,
+        borderTop: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${colorBorderSecondary}`,
+        display: "flex",
+        borderRadius: `0 0 ${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)}`
+    }, (0, _style.clearFix)()), {
+        "& > li": {
+            margin: actionsLiMargin,
+            color: token.colorTextDescription,
+            textAlign: "center",
+            "> span": {
+                position: "relative",
+                display: "block",
+                minWidth: token.calc(token.cardActionsIconSize).mul(2).equal(),
+                fontSize: token.fontSize,
+                lineHeight: token.lineHeight,
+                cursor: "pointer",
+                "&:hover": {
+                    color: token.colorPrimary,
+                    transition: `color ${token.motionDurationMid}`
+                },
+                [`a:not(${componentCls}-btn), > ${iconCls}`]: {
+                    display: "inline-block",
+                    width: "100%",
+                    color: token.colorTextDescription,
+                    lineHeight: (0, _cssinjs.unit)(token.fontHeight),
+                    transition: `color ${token.motionDurationMid}`,
+                    "&:hover": {
+                        color: token.colorPrimary
+                    }
+                },
+                [`> ${iconCls}`]: {
+                    fontSize: cardActionsIconSize,
+                    lineHeight: (0, _cssinjs.unit)(token.calc(cardActionsIconSize).mul(token.lineHeight).equal())
+                }
+            },
+            "&:not(:last-child)": {
+                borderInlineEnd: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${colorBorderSecondary}`
+            }
+        }
+    });
+};
+// ============================== Meta ==============================
+const genCardMetaStyle = (token)=>Object.assign(Object.assign({
+        margin: `${(0, _cssinjs.unit)(token.calc(token.marginXXS).mul(-1).equal())} 0`,
+        display: "flex"
+    }, (0, _style.clearFix)()), {
+        "&-avatar": {
+            paddingInlineEnd: token.padding
+        },
+        "&-detail": {
+            overflow: "hidden",
+            flex: 1,
+            "> div:not(:last-child)": {
+                marginBottom: token.marginXS
+            }
+        },
+        "&-title": Object.assign({
+            color: token.colorTextHeading,
+            fontWeight: token.fontWeightStrong,
+            fontSize: token.fontSizeLG
+        }, (0, _style.textEllipsis)),
+        "&-description": {
+            color: token.colorTextDescription
+        }
+    });
+// ============================== Inner ==============================
+const genCardTypeInnerStyle = (token)=>{
+    const { componentCls, cardPaddingBase, colorFillAlter } = token;
+    return {
+        [`${componentCls}-head`]: {
+            padding: `0 ${(0, _cssinjs.unit)(cardPaddingBase)}`,
+            background: colorFillAlter,
+            "&-title": {
+                fontSize: token.fontSize
+            }
+        },
+        [`${componentCls}-body`]: {
+            padding: `${(0, _cssinjs.unit)(token.padding)} ${(0, _cssinjs.unit)(cardPaddingBase)}`
+        }
+    };
+};
+// ============================== Loading ==============================
+const genCardLoadingStyle = (token)=>{
+    const { componentCls } = token;
+    return {
+        overflow: "hidden",
+        [`${componentCls}-body`]: {
+            userSelect: "none"
+        }
+    };
+};
+// ============================== Basic ==============================
+const genCardStyle = (token)=>{
+    const { antCls, componentCls, cardShadow, cardHeadPadding, colorBorderSecondary, boxShadowTertiary, cardPaddingBase, extraColor } = token;
+    return {
+        [componentCls]: Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+            position: "relative",
+            background: token.colorBgContainer,
+            borderRadius: token.borderRadiusLG,
+            [`&:not(${componentCls}-bordered)`]: {
+                boxShadow: boxShadowTertiary
+            },
+            [`${componentCls}-head`]: genCardHeadStyle(token),
+            [`${componentCls}-extra`]: {
+                // https://stackoverflow.com/a/22429853/3040605
+                marginInlineStart: "auto",
+                color: extraColor,
+                fontWeight: "normal",
+                fontSize: token.fontSize
+            },
+            [`${componentCls}-body`]: Object.assign({
+                padding: cardPaddingBase,
+                borderRadius: `0 0 ${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)}`
+            }, (0, _style.clearFix)()),
+            [`${componentCls}-grid`]: genCardGridStyle(token),
+            [`${componentCls}-cover`]: {
+                "> *": {
+                    display: "block",
+                    width: "100%"
+                },
+                [`img, img + ${antCls}-image-mask`]: {
+                    borderRadius: `${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0`
+                }
+            },
+            [`${componentCls}-actions`]: genCardActionsStyle(token),
+            [`${componentCls}-meta`]: genCardMetaStyle(token)
+        }),
+        [`${componentCls}-bordered`]: {
+            border: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${colorBorderSecondary}`,
+            [`${componentCls}-cover`]: {
+                marginTop: -1,
+                marginInlineStart: -1,
+                marginInlineEnd: -1
+            }
+        },
+        [`${componentCls}-hoverable`]: {
+            cursor: "pointer",
+            transition: `box-shadow ${token.motionDurationMid}, border-color ${token.motionDurationMid}`,
+            "&:hover": {
+                borderColor: "transparent",
+                boxShadow: cardShadow
+            }
+        },
+        [`${componentCls}-contain-grid`]: {
+            borderRadius: `${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0 `,
+            [`${componentCls}-body`]: {
+                display: "flex",
+                flexWrap: "wrap"
+            },
+            [`&:not(${componentCls}-loading) ${componentCls}-body`]: {
+                marginBlockStart: token.calc(token.lineWidth).mul(-1).equal(),
+                marginInlineStart: token.calc(token.lineWidth).mul(-1).equal(),
+                padding: 0
+            }
+        },
+        [`${componentCls}-contain-tabs`]: {
+            [`> div${componentCls}-head`]: {
+                minHeight: 0,
+                [`${componentCls}-head-title, ${componentCls}-extra`]: {
+                    paddingTop: cardHeadPadding
+                }
+            }
+        },
+        [`${componentCls}-type-inner`]: genCardTypeInnerStyle(token),
+        [`${componentCls}-loading`]: genCardLoadingStyle(token),
+        [`${componentCls}-rtl`]: {
+            direction: "rtl"
+        }
+    };
+};
+// ============================== Size ==============================
+const genCardSizeStyle = (token)=>{
+    const { componentCls, cardPaddingSM, headerHeightSM, headerFontSizeSM } = token;
+    return {
+        [`${componentCls}-small`]: {
+            [`> ${componentCls}-head`]: {
+                minHeight: headerHeightSM,
+                padding: `0 ${(0, _cssinjs.unit)(cardPaddingSM)}`,
+                fontSize: headerFontSizeSM,
+                [`> ${componentCls}-head-wrapper`]: {
+                    [`> ${componentCls}-extra`]: {
+                        fontSize: token.fontSize
+                    }
+                }
+            },
+            [`> ${componentCls}-body`]: {
+                padding: cardPaddingSM
+            }
+        },
+        [`${componentCls}-small${componentCls}-contain-tabs`]: {
+            [`> ${componentCls}-head`]: {
+                [`${componentCls}-head-title, ${componentCls}-extra`]: {
+                    paddingTop: 0,
+                    display: "flex",
+                    alignItems: "center"
+                }
+            }
+        }
+    };
+};
+const prepareComponentToken = (token)=>({
+        headerBg: "transparent",
+        headerFontSize: token.fontSizeLG,
+        headerFontSizeSM: token.fontSize,
+        headerHeight: token.fontSizeLG * token.lineHeightLG + token.padding * 2,
+        headerHeightSM: token.fontSize * token.lineHeight + token.paddingXS * 2,
+        actionsBg: token.colorBgContainer,
+        actionsLiMargin: `${token.paddingSM}px 0`,
+        tabsMarginBottom: -token.padding - token.lineWidth,
+        extraColor: token.colorText
+    });
+// ============================== Export ==============================
+exports.default = (0, _internal.genStyleHooks)("Card", (token)=>{
+    const cardToken = (0, _internal.mergeToken)(token, {
+        cardShadow: token.boxShadowCard,
+        cardHeadPadding: token.padding,
+        cardPaddingBase: token.paddingLG,
+        cardActionsIconSize: token.fontSize,
+        cardPaddingSM: 12 // Fixed padding.
+    });
+    return [
+        // Style
+        genCardStyle(cardToken),
+        // Size
+        genCardSizeStyle(cardToken)
+    ];
+}, prepareComponentToken);
+
+},{"@ant-design/cssinjs":"k46HC","../../style":"b1Psq","../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"78Bb9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _configProvider = require("../config-provider");
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const Meta = (props)=>{
+    const { prefixCls: customizePrefixCls, className, avatar, title, description } = props, others = __rest(props, [
+        "prefixCls",
+        "className",
+        "avatar",
+        "title",
+        "description"
+    ]);
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("card", customizePrefixCls);
+    const classString = (0, _classnamesDefault.default)(`${prefixCls}-meta`, className);
+    const avatarDom = avatar ? /*#__PURE__*/ _react.createElement("div", {
+        className: `${prefixCls}-meta-avatar`
+    }, avatar) : null;
+    const titleDom = title ? /*#__PURE__*/ _react.createElement("div", {
+        className: `${prefixCls}-meta-title`
+    }, title) : null;
+    const descriptionDom = description ? /*#__PURE__*/ _react.createElement("div", {
+        className: `${prefixCls}-meta-description`
+    }, description) : null;
+    const MetaDetail = titleDom || descriptionDom ? /*#__PURE__*/ _react.createElement("div", {
+        className: `${prefixCls}-meta-detail`
+    }, titleDom, descriptionDom) : null;
+    return /*#__PURE__*/ _react.createElement("div", Object.assign({}, others, {
+        className: classString
+    }), avatarDom, MetaDetail);
+};
+exports.default = Meta;
+
+},{"react":"21dqq","classnames":"jocGM","../config-provider":"iMraF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ilHrj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$07ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
