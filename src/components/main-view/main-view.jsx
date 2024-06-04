@@ -30,6 +30,8 @@ const MainView = () => {
                     };
                 });
                 setFoodlist(foodlistFromApi);
+            }).catch(error => {
+                console.error('Error: ', error);
             });
     }, []);
 

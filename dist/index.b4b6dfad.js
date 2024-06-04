@@ -27394,6 +27394,8 @@ const MainView = ()=>{
                 };
             });
             setFoodlist(foodlistFromApi);
+        }).catch((error)=>{
+            console.error("Error: ", error);
         });
     }, []);
     console.log("API response:", foodlist);
@@ -27403,14 +27405,14 @@ const MainView = ()=>{
         onBackClick: ()=>setSelectedFood(null)
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 41,
+        lineNumber: 43,
         columnNumber: 13
     }, undefined);
     if (foodlist.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "The list is empty!"
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 46,
+        lineNumber: 48,
         columnNumber: 16
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27421,7 +27423,7 @@ const MainView = ()=>{
                 }
             }, food.id, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 52,
+                lineNumber: 54,
                 columnNumber: 17
             }, undefined))
     }, void 0, false);
