@@ -27367,6 +27367,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _mainViewScss = require("./main-view.scss");
 // Import Components
 var _foodCard = require("../food-card/food-card");
 var _foodView = require("../food-view/food-view");
@@ -27405,28 +27406,40 @@ const MainView = ()=>{
         onBackClick: ()=>setSelectedFood(null)
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 13
     }, undefined);
     if (foodlist.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "The list is empty!"
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 16
     }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: foodlist.map((food)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodCard.FoodCard), {
-                food: food,
-                onFoodClick: (newSelectedFood)=>{
-                    setSelectedFood(newSelectedFood);
-                }
-            }, food.id, false, {
-                fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 54,
-                columnNumber: 17
-            }, undefined))
-    }, void 0, false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main-container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "list-container",
+            children: foodlist.map((food)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodCard.FoodCard), {
+                    food: food,
+                    onFoodClick: (newSelectedFood)=>{
+                        setSelectedFood(newSelectedFood);
+                    }
+                }, food.id, false, {
+                    fileName: "src/components/main-view/main-view.jsx",
+                    lineNumber: 56,
+                    columnNumber: 17
+                }, undefined))
+        }, void 0, false, {
+            fileName: "src/components/main-view/main-view.jsx",
+            lineNumber: 54,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/main-view/main-view.jsx",
+        lineNumber: 53,
+        columnNumber: 9
+    }, undefined);
 };
 _s(MainView, "83+QdlVmQxovI8k8QcMI6XiMzAs=");
 _c = MainView;
@@ -27439,7 +27452,7 @@ $RefreshReg$(_c, "MainView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","../food-card/food-card":"l0MqD","../food-view/food-view":"ilHrj","cf59f04c7455237":"fCgem"}],"5PjbX":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","../food-card/food-card":"l0MqD","../food-view/food-view":"ilHrj","cf59f04c7455237":"fCgem","./main-view.scss":"eBaMl"}],"5PjbX":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -49741,6 +49754,6 @@ exports.write = function(buffer, value, offset, isLE, mLen, nBytes) {
     buffer[offset + i - d] |= s * 128;
 };
 
-},{}]},["k46Zn","7WTH5","d8Dch"], "d8Dch", "parcelRequireeffd")
+},{}],"eBaMl":[function() {},{}]},["k46Zn","7WTH5","d8Dch"], "d8Dch", "parcelRequireeffd")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

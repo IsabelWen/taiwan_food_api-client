@@ -1,6 +1,7 @@
 // Imports
 import React from "react";
 import { useState, useEffect } from "react";
+import "./main-view.scss";
 
 // Import Components
 import { FoodCard } from "../food-card/food-card";
@@ -49,7 +50,8 @@ const MainView = () => {
     }
 
     return (
-        <>
+        <div className="main-container">
+            <div className="list-container">
             {foodlist.map((food) => (
                 <FoodCard
                     key={food.id}
@@ -59,7 +61,8 @@ const MainView = () => {
                     }}
                 />
             ))}
-        </>
+            </div>
+        </div>
     );
 };
 

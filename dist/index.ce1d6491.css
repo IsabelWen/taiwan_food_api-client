@@ -2,4 +2,17 @@
   color: #4682b4;
 }
 
+.main-container {
+  justify-content: center;
+  display: flex;
+}
+
+.main-container .list-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 90%;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.ce1d6491.css.map */
