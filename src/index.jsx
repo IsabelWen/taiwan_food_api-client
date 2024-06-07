@@ -1,10 +1,16 @@
 import { createRoot } from "react-dom/client";
 import MainView from './components/main-view/main-view';
+import { Navbar } from "./components/navbar/navbar";
 
 import "./index.scss";
 
 const App = () => {
-    return <MainView />;
+    return (
+        <>
+        <Navbar />
+        <MainView />
+        </>
+    );
 };
 
 // Finds the root of your app

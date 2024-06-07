@@ -2947,13 +2947,23 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _client = require("react-dom/client");
 var _mainView = require("./components/main-view/main-view");
 var _mainViewDefault = parcelHelpers.interopDefault(_mainView);
+var _navbar = require("./components/navbar/navbar");
 var _indexScss = require("./index.scss");
 const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainViewDefault.default), {}, void 0, false, {
-        fileName: "src/index.jsx",
-        lineNumber: 7,
-        columnNumber: 12
-    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbar.Navbar), {}, void 0, false, {
+                fileName: "src/index.jsx",
+                lineNumber: 10,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainViewDefault.default), {}, void 0, false, {
+                fileName: "src/index.jsx",
+                lineNumber: 11,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = App;
 // Finds the root of your app
@@ -2962,7 +2972,7 @@ const root = (0, _client.createRoot)(container);
 // Tells React to render your app in the root DOM element
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 15,
+    lineNumber: 21,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -2973,7 +2983,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./components/main-view/main-view":"4gflv","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./components/main-view/main-view":"4gflv","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","./components/navbar/navbar":"bNPgg"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -49754,6 +49764,48 @@ exports.write = function(buffer, value, offset, isLE, mLen, nBytes) {
     buffer[offset + i - d] |= s * 128;
 };
 
-},{}],"eBaMl":[function() {},{}]},["k46Zn","7WTH5","d8Dch"], "d8Dch", "parcelRequireeffd")
+},{}],"eBaMl":[function() {},{}],"bNPgg":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8fd2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8fd2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Navbar", ()=>Navbar);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbarScss = require("./navbar.scss");
+const Navbar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "navbar",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+            style: {
+                marginLeft: "20px"
+            },
+            children: "Navbar"
+        }, void 0, false, {
+            fileName: "src/components/navbar/navbar.jsx",
+            lineNumber: 8,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/navbar/navbar.jsx",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Navbar;
+var _c;
+$RefreshReg$(_c, "Navbar");
+
+  $parcel$ReactRefreshHelpers$8fd2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./navbar.scss":"8wkoA"}],"8wkoA":[function() {},{}]},["k46Zn","7WTH5","d8Dch"], "d8Dch", "parcelRequireeffd")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
