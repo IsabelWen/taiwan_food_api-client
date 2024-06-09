@@ -27504,9 +27504,10 @@ parcelHelpers.export(exports, "FoodCard", ()=>FoodCard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _antd = require("antd");
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _foodCardScss = require("./food-card.scss");
+var _antd = require("antd");
 const FoodCard = ({ food, onFoodClick })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _antd.Card), {
         onClick: ()=>onFoodClick(food),
@@ -27514,6 +27515,7 @@ const FoodCard = ({ food, onFoodClick })=>{
         style: {
             width: 400
         },
+        className: "food-card",
         cover: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
             src: food.image,
             alt: food.english,
@@ -27524,7 +27526,7 @@ const FoodCard = ({ food, onFoodClick })=>{
         }, void 0, false, void 0, void 0)
     }, void 0, false, {
         fileName: "src/components/food-card/food-card.jsx",
-        lineNumber: 9,
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
@@ -27545,7 +27547,7 @@ $RefreshReg$(_c, "FoodCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","prop-types":"7wKI2","antd":"6C7kW"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","prop-types":"7wKI2","antd":"6C7kW","./food-card.scss":"3pXWt"}],"7wKI2":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -56590,7 +56592,7 @@ const HookModal = (_a, ref)=>{
 };
 exports.default = /*#__PURE__*/ _react.forwardRef(HookModal);
 
-},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","../../config-provider":"iMraF","../../locale/en_US":"3cTtE","../../locale/useLocale":"4Rsra","../ConfirmDialog":"aLjRz","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ilHrj":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","../../config-provider":"iMraF","../../locale/en_US":"3cTtE","../../locale/useLocale":"4Rsra","../ConfirmDialog":"aLjRz","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3pXWt":[function() {},{}],"ilHrj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$07ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
