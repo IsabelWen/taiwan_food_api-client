@@ -6,7 +6,8 @@ import { Card } from 'antd';
 export const FoodCard = ({ food, onFoodClick }) => {
     return (
         <Card onClick={() => onFoodClick(food)} title={food.chinese} style={{width: 400}} className="food-card"
-            cover={<img src={food.image} alt={food.english} style={{maxHeight: '300px', objectFit: 'cover'}}/>}
+            cover={<img src={food.image} alt={food.english} 
+            style={{maxHeight: '300px', objectFit: 'cover'}}/>}
         >
         </Card>
     );

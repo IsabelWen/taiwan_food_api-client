@@ -21,6 +21,18 @@ body {
   transform: translateY(-5px);
 }
 
+.food-card .ant-card-head {
+  font-size: 25px;
+}
+
+.food-modal .ant-modal-title {
+  font-size: 20px;
+}
+
+.food-modal .ant-modal-body {
+  font-size: 18px;
+}
+
 .main-container {
   justify-content: center;
   display: flex;
