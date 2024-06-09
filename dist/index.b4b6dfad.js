@@ -27409,45 +27409,44 @@ const MainView = ()=>{
             console.error("Error: ", error);
         });
     }, []);
-    console.log("API response:", foodlist);
-    // Function to show food on click
-    if (selectedFood) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodView.FoodView), {
-        food: selectedFood,
-        onBackClick: ()=>setSelectedFood(null)
-    }, void 0, false, {
-        fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 44,
-        columnNumber: 13
-    }, undefined);
+    // Conditional rendering for empty food list
     if (foodlist.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "The list is empty!"
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 49,
+        lineNumber: 41,
         columnNumber: 16
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main-container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "list-container",
-            children: foodlist.map((food)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodCard.FoodCard), {
-                    food: food,
-                    onFoodClick: (newSelectedFood)=>{
-                        setSelectedFood(newSelectedFood);
-                    }
-                }, food.id, false, {
-                    fileName: "src/components/main-view/main-view.jsx",
-                    lineNumber: 56,
-                    columnNumber: 17
-                }, undefined))
-        }, void 0, false, {
-            fileName: "src/components/main-view/main-view.jsx",
-            lineNumber: 54,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "list-container",
+                children: foodlist.map((food)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodCard.FoodCard), {
+                        food: food,
+                        onFoodClick: ()=>setSelectedFood(food)
+                    }, food.id, false, {
+                        fileName: "src/components/main-view/main-view.jsx",
+                        lineNumber: 48,
+                        columnNumber: 17
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 46,
+                columnNumber: 13
+            }, undefined),
+            selectedFood ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodView.FoodView), {
+                food: selectedFood,
+                onBackClick: ()=>setSelectedFood(null)
+            }, void 0, false, {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 56,
+                columnNumber: 17
+            }, undefined) : null
+        ]
+    }, void 0, true, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 53,
+        lineNumber: 45,
         columnNumber: 9
     }, undefined);
 };
@@ -28514,42 +28513,46 @@ var _watermark = require("./watermark");
 var _watermarkDefault = parcelHelpers.interopDefault(_watermark);
 "use client";
 
-},{"./affix":false,"./alert":false,"./anchor":false,"./app":false,"./auto-complete":false,"./avatar":false,"./back-top":false,"./badge":false,"./breadcrumb":false,"./button":false,"./calendar":false,"./card":"6brkx","./carousel":false,"./cascader":false,"./checkbox":false,"./col":false,"./collapse":false,"./color-picker":false,"./config-provider":false,"./date-picker":false,"./descriptions":false,"./divider":false,"./drawer":false,"./dropdown":false,"./empty":false,"./flex":false,"./float-button":false,"./form":false,"./grid":false,"./image":false,"./input":false,"./input-number":false,"./layout":false,"./list":false,"./mentions":false,"./menu":false,"./message":false,"./modal":false,"./notification":false,"./pagination":false,"./popconfirm":false,"./popover":false,"./progress":false,"./qr-code":false,"./radio":false,"./rate":false,"./result":false,"./row":false,"./segmented":false,"./select":false,"./skeleton":false,"./slider":false,"./space":false,"./spin":false,"./statistic":false,"./steps":false,"./switch":false,"./table":false,"./tabs":false,"./tag":false,"./theme":false,"./time-picker":false,"./timeline":false,"./tooltip":false,"./tour":false,"./transfer":false,"./tree":false,"./tree-select":false,"./typography":false,"./upload":false,"./version":false,"./watermark":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6brkx":[function(require,module,exports) {
+},{"./affix":false,"./alert":false,"./anchor":false,"./app":false,"./auto-complete":false,"./avatar":false,"./back-top":false,"./badge":false,"./breadcrumb":false,"./button":false,"./calendar":false,"./card":"6brkx","./carousel":false,"./cascader":false,"./checkbox":false,"./col":false,"./collapse":false,"./color-picker":false,"./config-provider":false,"./date-picker":false,"./descriptions":false,"./divider":false,"./drawer":false,"./dropdown":false,"./empty":false,"./flex":false,"./float-button":false,"./form":false,"./grid":false,"./image":false,"./input":false,"./input-number":false,"./layout":false,"./list":false,"./mentions":false,"./menu":false,"./message":false,"./modal":"6jDuT","./notification":false,"./pagination":false,"./popconfirm":false,"./popover":false,"./progress":false,"./qr-code":false,"./radio":false,"./rate":false,"./result":false,"./row":false,"./segmented":false,"./select":false,"./skeleton":false,"./slider":false,"./space":false,"./spin":false,"./statistic":false,"./steps":false,"./switch":false,"./table":false,"./tabs":false,"./tag":false,"./theme":false,"./time-picker":false,"./timeline":false,"./tooltip":false,"./tour":false,"./transfer":false,"./tree":false,"./tree-select":false,"./typography":false,"./upload":false,"./version":false,"./watermark":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"SbZy4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _card = require("./Card");
-var _cardDefault = parcelHelpers.interopDefault(_card);
-var _grid = require("./Grid");
-var _gridDefault = parcelHelpers.interopDefault(_grid);
-var _meta = require("./Meta");
-var _metaDefault = parcelHelpers.interopDefault(_meta);
+var _button = require("./button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _buttonHelpers = require("./buttonHelpers");
+parcelHelpers.exportAll(_buttonHelpers, exports);
 "use client";
-const Card = (0, _cardDefault.default);
-Card.Grid = (0, _gridDefault.default);
-Card.Meta = (0, _metaDefault.default);
-Card.displayName = "Card";
-exports.default = Card;
+exports.default = (0, _buttonDefault.default);
 
-},{"./Card":"fMSzJ","./Grid":"jvl43","./Meta":"78Bb9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fMSzJ":[function(require,module,exports) {
+},{"./button":"55Yea","./buttonHelpers":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"55Yea":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
+/* eslint-disable react/button-has-type */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _classnames = require("classnames");
 var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
 var _omit = require("rc-util/es/omit");
 var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _ref = require("rc-util/es/ref");
 var _warning = require("../_util/warning");
+var _wave = require("../_util/wave");
+var _waveDefault = parcelHelpers.interopDefault(_wave);
 var _configProvider = require("../config-provider");
+var _disabledContext = require("../config-provider/DisabledContext");
+var _disabledContextDefault = parcelHelpers.interopDefault(_disabledContext);
 var _useSize = require("../config-provider/hooks/useSize");
 var _useSizeDefault = parcelHelpers.interopDefault(_useSize);
-var _skeleton = require("../skeleton");
-var _skeletonDefault = parcelHelpers.interopDefault(_skeleton);
-var _tabs = require("../tabs");
-var _tabsDefault = parcelHelpers.interopDefault(_tabs);
-var _grid = require("./Grid");
-var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _compact = require("../space/Compact");
+var _buttonGroup = require("./button-group");
+var _buttonGroupDefault = parcelHelpers.interopDefault(_buttonGroup);
+var _buttonHelpers = require("./buttonHelpers");
+var _iconWrapper = require("./IconWrapper");
+var _iconWrapperDefault = parcelHelpers.interopDefault(_iconWrapper);
+var _loadingIcon = require("./LoadingIcon");
+var _loadingIconDefault = parcelHelpers.interopDefault(_loadingIcon);
 var _style = require("./style");
 var _styleDefault = parcelHelpers.interopDefault(_style);
+var _compactCmp = require("./style/compactCmp");
+var _compactCmpDefault = parcelHelpers.interopDefault(_compactCmp);
 "use client";
 var __rest = undefined && undefined.__rest || function(s, e) {
     var t = {};
@@ -28559,179 +28562,178 @@ var __rest = undefined && undefined.__rest || function(s, e) {
     }
     return t;
 };
-const ActionNode = (props)=>{
-    const { actionClasses, actions = [], actionStyle } = props;
-    return /*#__PURE__*/ _react.createElement("ul", {
-        className: actionClasses,
-        style: actionStyle
-    }, actions.map((action, index)=>{
-        // Move this out since eslint not allow index key
-        // And eslint-disable makes conflict with rollup
-        // ref https://github.com/ant-design/ant-design/issues/46022
-        const key = `action-${index}`;
-        return /*#__PURE__*/ _react.createElement("li", {
-            style: {
-                width: `${100 / actions.length}%`
-            },
-            key: key
-        }, /*#__PURE__*/ _react.createElement("span", null, action));
-    }));
-};
-const Card = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
-    const { prefixCls: customizePrefixCls, className, rootClassName, style, extra, headStyle = {}, bodyStyle = {}, title, loading, bordered = true, size: customizeSize, type, cover, actions, tabList, children, activeTabKey, defaultActiveTabKey, tabBarExtraContent, hoverable, tabProps = {}, classNames: customClassNames, styles: customStyles } = props, others = __rest(props, [
+function getLoadingConfig(loading) {
+    if (typeof loading === "object" && loading) {
+        let delay = loading === null || loading === void 0 ? void 0 : loading.delay;
+        delay = !Number.isNaN(delay) && typeof delay === "number" ? delay : 0;
+        return {
+            loading: delay <= 0,
+            delay
+        };
+    }
+    return {
+        loading: !!loading,
+        delay: 0
+    };
+}
+const InternalCompoundedButton = /*#__PURE__*/ (0, _reactDefault.default).forwardRef((props, ref)=>{
+    var _a, _b, _c;
+    const { loading = false, prefixCls: customizePrefixCls, type, danger = false, shape = "default", size: customizeSize, styles, disabled: customDisabled, className, rootClassName, children, icon, iconPosition = "start", ghost = false, block = false, // React does not recognize the `htmlType` prop on a DOM element. Here we pick it out of `rest`.
+    htmlType = "button", classNames: customClassNames, style: customStyle = {}, autoInsertSpace } = props, rest = __rest(props, [
+        "loading",
         "prefixCls",
+        "type",
+        "danger",
+        "shape",
+        "size",
+        "styles",
+        "disabled",
         "className",
         "rootClassName",
-        "style",
-        "extra",
-        "headStyle",
-        "bodyStyle",
-        "title",
-        "loading",
-        "bordered",
-        "size",
-        "type",
-        "cover",
-        "actions",
-        "tabList",
         "children",
-        "activeTabKey",
-        "defaultActiveTabKey",
-        "tabBarExtraContent",
-        "hoverable",
-        "tabProps",
+        "icon",
+        "iconPosition",
+        "ghost",
+        "block",
+        "htmlType",
         "classNames",
-        "styles"
+        "style",
+        "autoInsertSpace"
     ]);
-    const { getPrefixCls, direction, card } = _react.useContext((0, _configProvider.ConfigContext));
-    {
-        const warning = (0, _warning.devUseWarning)("Card");
-        [
-            [
-                "headStyle",
-                "styles.header"
-            ],
-            [
-                "bodyStyle",
-                "styles.body"
-            ]
-        ].forEach((_ref)=>{
-            let [deprecatedName, newName] = _ref;
-            warning.deprecated(!(deprecatedName in props), deprecatedName, newName);
-        });
-    }
-    const onTabChange = (key)=>{
-        var _a;
-        (_a = props.onTabChange) === null || _a === void 0 || _a.call(props, key);
-    };
-    const moduleClass = (moduleName)=>{
-        var _a;
-        return (0, _classnamesDefault.default)((_a = card === null || card === void 0 ? void 0 : card.classNames) === null || _a === void 0 ? void 0 : _a[moduleName], customClassNames === null || customClassNames === void 0 ? void 0 : customClassNames[moduleName]);
-    };
-    const moduleStyle = (moduleName)=>{
-        var _a;
-        return Object.assign(Object.assign({}, (_a = card === null || card === void 0 ? void 0 : card.styles) === null || _a === void 0 ? void 0 : _a[moduleName]), customStyles === null || customStyles === void 0 ? void 0 : customStyles[moduleName]);
-    };
-    const isContainGrid = _react.useMemo(()=>{
-        let containGrid = false;
-        _react.Children.forEach(children, (element)=>{
-            if (element && element.type && element.type === (0, _gridDefault.default)) containGrid = true;
-        });
-        return containGrid;
-    }, [
-        children
-    ]);
-    const prefixCls = getPrefixCls("card", customizePrefixCls);
+    // https://github.com/ant-design/ant-design/issues/47605
+    // Compatible with original `type` behavior
+    const mergedType = type || "default";
+    const { getPrefixCls, direction, button } = (0, _react.useContext)((0, _configProvider.ConfigContext));
+    const mergedInsertSpace = (_a = autoInsertSpace !== null && autoInsertSpace !== void 0 ? autoInsertSpace : button === null || button === void 0 ? void 0 : button.autoInsertSpace) !== null && _a !== void 0 ? _a : true;
+    const prefixCls = getPrefixCls("btn", customizePrefixCls);
     const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
-    const loadingBlock = /*#__PURE__*/ _react.createElement((0, _skeletonDefault.default), {
-        loading: true,
-        active: true,
-        paragraph: {
-            rows: 4
-        },
-        title: false
-    }, children);
-    const hasActiveTabKey = activeTabKey !== undefined;
-    const extraProps = Object.assign(Object.assign({}, tabProps), {
-        [hasActiveTabKey ? "activeKey" : "defaultActiveKey"]: hasActiveTabKey ? activeTabKey : defaultActiveTabKey,
-        tabBarExtraContent
-    });
-    let head;
-    const mergedSize = (0, _useSizeDefault.default)(customizeSize);
-    const tabSize = !mergedSize || mergedSize === "default" ? "large" : mergedSize;
-    const tabs = tabList ? /*#__PURE__*/ _react.createElement((0, _tabsDefault.default), Object.assign({
-        size: tabSize
-    }, extraProps, {
-        className: `${prefixCls}-head-tabs`,
-        onChange: onTabChange,
-        items: tabList.map((_a)=>{
-            var { tab } = _a, item = __rest(_a, [
-                "tab"
-            ]);
-            return Object.assign({
-                label: tab
-            }, item);
-        })
-    })) : null;
-    if (title || extra || tabs) {
-        const headClasses = (0, _classnamesDefault.default)(`${prefixCls}-head`, moduleClass("header"));
-        const titleClasses = (0, _classnamesDefault.default)(`${prefixCls}-head-title`, moduleClass("title"));
-        const extraClasses = (0, _classnamesDefault.default)(`${prefixCls}-extra`, moduleClass("extra"));
-        const mergedHeadStyle = Object.assign(Object.assign({}, headStyle), moduleStyle("header"));
-        head = /*#__PURE__*/ _react.createElement("div", {
-            className: headClasses,
-            style: mergedHeadStyle
-        }, /*#__PURE__*/ _react.createElement("div", {
-            className: `${prefixCls}-head-wrapper`
-        }, title && /*#__PURE__*/ _react.createElement("div", {
-            className: titleClasses,
-            style: moduleStyle("title")
-        }, title), extra && /*#__PURE__*/ _react.createElement("div", {
-            className: extraClasses,
-            style: moduleStyle("extra")
-        }, extra)), tabs);
-    }
-    const coverClasses = (0, _classnamesDefault.default)(`${prefixCls}-cover`, moduleClass("cover"));
-    const coverDom = cover ? /*#__PURE__*/ _react.createElement("div", {
-        className: coverClasses,
-        style: moduleStyle("cover")
-    }, cover) : null;
-    const bodyClasses = (0, _classnamesDefault.default)(`${prefixCls}-body`, moduleClass("body"));
-    const mergedBodyStyle = Object.assign(Object.assign({}, bodyStyle), moduleStyle("body"));
-    const body = /*#__PURE__*/ _react.createElement("div", {
-        className: bodyClasses,
-        style: mergedBodyStyle
-    }, loading ? loadingBlock : children);
-    const actionClasses = (0, _classnamesDefault.default)(`${prefixCls}-actions`, moduleClass("actions"));
-    const actionDom = actions && actions.length ? /*#__PURE__*/ _react.createElement(ActionNode, {
-        actionClasses: actionClasses,
-        actionStyle: moduleStyle("actions"),
-        actions: actions
-    }) : null;
-    const divProps = (0, _omitDefault.default)(others, [
-        "onTabChange"
+    const disabled = (0, _react.useContext)((0, _disabledContextDefault.default));
+    const mergedDisabled = customDisabled !== null && customDisabled !== void 0 ? customDisabled : disabled;
+    const groupSize = (0, _react.useContext)((0, _buttonGroup.GroupSizeContext));
+    const loadingOrDelay = (0, _react.useMemo)(()=>getLoadingConfig(loading), [
+        loading
     ]);
-    const classString = (0, _classnamesDefault.default)(prefixCls, card === null || card === void 0 ? void 0 : card.className, {
-        [`${prefixCls}-loading`]: loading,
-        [`${prefixCls}-bordered`]: bordered,
-        [`${prefixCls}-hoverable`]: hoverable,
-        [`${prefixCls}-contain-grid`]: isContainGrid,
-        [`${prefixCls}-contain-tabs`]: tabList && tabList.length,
-        [`${prefixCls}-${mergedSize}`]: mergedSize,
-        [`${prefixCls}-type-${type}`]: !!type,
-        [`${prefixCls}-rtl`]: direction === "rtl"
-    }, className, rootClassName, hashId, cssVarCls);
-    const mergedStyle = Object.assign(Object.assign({}, card === null || card === void 0 ? void 0 : card.style), style);
-    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", Object.assign({
-        ref: ref
-    }, divProps, {
-        className: classString,
-        style: mergedStyle
-    }), head, coverDom, body, actionDom));
+    const [innerLoading, setLoading] = (0, _react.useState)(loadingOrDelay.loading);
+    const [hasTwoCNChar, setHasTwoCNChar] = (0, _react.useState)(false);
+    const internalRef = /*#__PURE__*/ (0, _react.createRef)();
+    const buttonRef = (0, _ref.composeRef)(ref, internalRef);
+    const needInserted = (0, _react.Children).count(children) === 1 && !icon && !(0, _buttonHelpers.isUnBorderedButtonType)(mergedType);
+    (0, _react.useEffect)(()=>{
+        let delayTimer = null;
+        if (loadingOrDelay.delay > 0) delayTimer = setTimeout(()=>{
+            delayTimer = null;
+            setLoading(true);
+        }, loadingOrDelay.delay);
+        else setLoading(loadingOrDelay.loading);
+        function cleanupTimer() {
+            if (delayTimer) {
+                clearTimeout(delayTimer);
+                delayTimer = null;
+            }
+        }
+        return cleanupTimer;
+    }, [
+        loadingOrDelay
+    ]);
+    (0, _react.useEffect)(()=>{
+        // FIXME: for HOC usage like <FormatMessage />
+        if (!buttonRef || !buttonRef.current || !mergedInsertSpace) return;
+        const buttonText = buttonRef.current.textContent;
+        if (needInserted && (0, _buttonHelpers.isTwoCNChar)(buttonText)) {
+            if (!hasTwoCNChar) setHasTwoCNChar(true);
+        } else if (hasTwoCNChar) setHasTwoCNChar(false);
+    }, [
+        buttonRef
+    ]);
+    const handleClick = (e)=>{
+        const { onClick } = props;
+        // FIXME: https://github.com/ant-design/ant-design/issues/30207
+        if (innerLoading || mergedDisabled) {
+            e.preventDefault();
+            return;
+        }
+        onClick === null || onClick === void 0 || onClick(e);
+    };
+    {
+        const warning = (0, _warning.devUseWarning)("Button");
+        warning(!(typeof icon === "string" && icon.length > 2), "breaking", `\`icon\` is using ReactNode instead of string naming in v4. Please check \`${icon}\` at https://ant.design/components/icon`);
+        warning(!(ghost && (0, _buttonHelpers.isUnBorderedButtonType)(mergedType)), "usage", "`link` or `text` button can't be a `ghost` button.");
+    }
+    const { compactSize, compactItemClassnames } = (0, _compact.useCompactItemContext)(prefixCls, direction);
+    const sizeClassNameMap = {
+        large: "lg",
+        small: "sm",
+        middle: undefined
+    };
+    const sizeFullName = (0, _useSizeDefault.default)((ctxSize)=>{
+        var _a, _b;
+        return (_b = (_a = customizeSize !== null && customizeSize !== void 0 ? customizeSize : compactSize) !== null && _a !== void 0 ? _a : groupSize) !== null && _b !== void 0 ? _b : ctxSize;
+    });
+    const sizeCls = sizeFullName ? sizeClassNameMap[sizeFullName] || "" : "";
+    const iconType = innerLoading ? "loading" : icon;
+    const linkButtonRestProps = (0, _omitDefault.default)(rest, [
+        "navigate"
+    ]);
+    const classes = (0, _classnamesDefault.default)(prefixCls, hashId, cssVarCls, {
+        [`${prefixCls}-${shape}`]: shape !== "default" && shape,
+        [`${prefixCls}-${mergedType}`]: mergedType,
+        [`${prefixCls}-${sizeCls}`]: sizeCls,
+        [`${prefixCls}-icon-only`]: !children && children !== 0 && !!iconType,
+        [`${prefixCls}-background-ghost`]: ghost && !(0, _buttonHelpers.isUnBorderedButtonType)(mergedType),
+        [`${prefixCls}-loading`]: innerLoading,
+        [`${prefixCls}-two-chinese-chars`]: hasTwoCNChar && mergedInsertSpace && !innerLoading,
+        [`${prefixCls}-block`]: block,
+        [`${prefixCls}-dangerous`]: danger,
+        [`${prefixCls}-rtl`]: direction === "rtl",
+        [`${prefixCls}-icon-end`]: iconPosition === "end"
+    }, compactItemClassnames, className, rootClassName, button === null || button === void 0 ? void 0 : button.className);
+    const fullStyle = Object.assign(Object.assign({}, button === null || button === void 0 ? void 0 : button.style), customStyle);
+    const iconClasses = (0, _classnamesDefault.default)(customClassNames === null || customClassNames === void 0 ? void 0 : customClassNames.icon, (_b = button === null || button === void 0 ? void 0 : button.classNames) === null || _b === void 0 ? void 0 : _b.icon);
+    const iconStyle = Object.assign(Object.assign({}, (styles === null || styles === void 0 ? void 0 : styles.icon) || {}), ((_c = button === null || button === void 0 ? void 0 : button.styles) === null || _c === void 0 ? void 0 : _c.icon) || {});
+    const iconNode = icon && !innerLoading ? /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _iconWrapperDefault.default), {
+        prefixCls: prefixCls,
+        className: iconClasses,
+        style: iconStyle
+    }, icon) : /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _loadingIconDefault.default), {
+        existIcon: !!icon,
+        prefixCls: prefixCls,
+        loading: innerLoading
+    });
+    const kids = children || children === 0 ? (0, _buttonHelpers.spaceChildren)(children, needInserted && mergedInsertSpace) : null;
+    if (linkButtonRestProps.href !== undefined) return wrapCSSVar(/*#__PURE__*/ (0, _reactDefault.default).createElement("a", Object.assign({}, linkButtonRestProps, {
+        className: (0, _classnamesDefault.default)(classes, {
+            [`${prefixCls}-disabled`]: mergedDisabled
+        }),
+        href: mergedDisabled ? undefined : linkButtonRestProps.href,
+        style: fullStyle,
+        onClick: handleClick,
+        ref: buttonRef,
+        tabIndex: mergedDisabled ? -1 : 0
+    }), iconNode, kids));
+    let buttonNode = /*#__PURE__*/ (0, _reactDefault.default).createElement("button", Object.assign({}, rest, {
+        type: htmlType,
+        className: classes,
+        style: fullStyle,
+        onClick: handleClick,
+        disabled: mergedDisabled,
+        ref: buttonRef
+    }), iconNode, kids, !!compactItemClassnames && /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _compactCmpDefault.default), {
+        key: "compact",
+        prefixCls: prefixCls
+    }));
+    if (!(0, _buttonHelpers.isUnBorderedButtonType)(mergedType)) buttonNode = /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _waveDefault.default), {
+        component: "Button",
+        disabled: innerLoading
+    }, buttonNode);
+    return wrapCSSVar(buttonNode);
 });
-exports.default = Card;
+const Button = InternalCompoundedButton;
+Button.Group = (0, _buttonGroupDefault.default);
+Button.__ANT_BUTTON = true;
+Button.displayName = "Button";
+exports.default = Button;
 
-},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","../_util/warning":"daUrm","../config-provider":"iMraF","../config-provider/hooks/useSize":"daQoa","../skeleton":"lppaB","../tabs":"likKM","./Grid":"jvl43","./style":"c2VDR","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jocGM":[function(require,module,exports) {
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","rc-util/es/ref":"jS1Z6","../_util/warning":"daUrm","../_util/wave":"a2v1e","../config-provider":"iMraF","../config-provider/DisabledContext":"kJAKR","../config-provider/hooks/useSize":"daQoa","../space/Compact":"9inLd","./button-group":"45IvJ","./buttonHelpers":"04LWt","./IconWrapper":"fljqK","./LoadingIcon":"gc8N8","./style":"5Ml60","./style/compactCmp":"cGtco","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jocGM":[function(require,module,exports) {
 /*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see
@@ -28871,7 +28873,258 @@ function toPrimitive(t, r) {
     return ("string" === r ? String : Number)(t);
 }
 
-},{"./typeof.js":"i7HWY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"daUrm":[function(require,module,exports) {
+},{"./typeof.js":"i7HWY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jS1Z6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "fillRef", ()=>fillRef);
+parcelHelpers.export(exports, "composeRef", ()=>composeRef);
+parcelHelpers.export(exports, "useComposeRef", ()=>useComposeRef);
+parcelHelpers.export(exports, "supportRef", ()=>supportRef);
+parcelHelpers.export(exports, "supportNodeRef", ()=>supportNodeRef);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _react = require("react");
+var _reactIs = require("react-is");
+var _useMemo = require("./hooks/useMemo");
+var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
+var fillRef = function fillRef(ref, node) {
+    if (typeof ref === "function") ref(node);
+    else if ((0, _typeofDefault.default)(ref) === "object" && ref && "current" in ref) ref.current = node;
+};
+var composeRef = function composeRef() {
+    for(var _len = arguments.length, refs = new Array(_len), _key = 0; _key < _len; _key++)refs[_key] = arguments[_key];
+    var refList = refs.filter(Boolean);
+    if (refList.length <= 1) return refList[0];
+    return function(node) {
+        refs.forEach(function(ref) {
+            fillRef(ref, node);
+        });
+    };
+};
+var useComposeRef = function useComposeRef() {
+    for(var _len2 = arguments.length, refs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)refs[_key2] = arguments[_key2];
+    return (0, _useMemoDefault.default)(function() {
+        return composeRef.apply(void 0, refs);
+    }, refs, function(prev, next) {
+        return prev.length !== next.length || prev.every(function(ref, i) {
+            return ref !== next[i];
+        });
+    });
+};
+var supportRef = function supportRef(nodeOrComponent) {
+    var _type$prototype, _nodeOrComponent$prot;
+    var type = (0, _reactIs.isMemo)(nodeOrComponent) ? nodeOrComponent.type.type : nodeOrComponent.type;
+    // Function component node
+    if (typeof type === "function" && !((_type$prototype = type.prototype) !== null && _type$prototype !== void 0 && _type$prototype.render) && type.$$typeof !== (0, _reactIs.ForwardRef)) return false;
+    // Class component
+    if (typeof nodeOrComponent === "function" && !((_nodeOrComponent$prot = nodeOrComponent.prototype) !== null && _nodeOrComponent$prot !== void 0 && _nodeOrComponent$prot.render) && nodeOrComponent.$$typeof !== (0, _reactIs.ForwardRef)) return false;
+    return true;
+};
+var supportNodeRef = function supportNodeRef(node) {
+    if (!/*#__PURE__*/ (0, _react.isValidElement)(node)) return false;
+    if ((0, _reactIs.isFragment)(node)) return false;
+    return supportRef(node);
+};
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","react":"21dqq","react-is":"g7MZm","./hooks/useMemo":"cxcbY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g7MZm":[function(require,module,exports) {
+"use strict";
+module.exports = require("da06c0f26f2b2d66");
+
+},{"da06c0f26f2b2d66":"7Os0P"}],"7Os0P":[function(require,module,exports) {
+/**
+ * @license React
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types.
+    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+    var REACT_SERVER_CONTEXT_TYPE = Symbol.for("react.server_context");
+    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+    var REACT_MEMO_TYPE = Symbol.for("react.memo");
+    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+    // -----------------------------------------------------------------------------
+    var enableScopeAPI = false; // Experimental Create Event Handle API.
+    var enableCacheElement = false;
+    var enableTransitionTracing = false; // No known bugs, but needs performance testing
+    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+    // stuff. Intended to enable React core members to more easily debug scheduling
+    // issues in DEV builds.
+    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+    var REACT_MODULE_REFERENCE;
+    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+    function isValidElementType(type) {
+        if (typeof type === "string" || typeof type === "function") return true;
+         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
+        if (typeof type === "object" && type !== null) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
+        }
+        return false;
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                        case REACT_SUSPENSE_LIST_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_SERVER_CONTEXT_TYPE:
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    }
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var SuspenseList = REACT_SUSPENSE_LIST_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false;
+    var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 18+.");
+        }
+        return false;
+    }
+    function isConcurrentMode(object) {
+        if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
+            hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isConcurrentMode() alias has been deprecated, and will be removed in React 18+.");
+        }
+        return false;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    function isSuspenseList(object) {
+        return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
+    }
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.SuspenseList = SuspenseList;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isSuspenseList = isSuspenseList;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"cxcbY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMemo);
+var _react = require("react");
+function useMemo(getValue, condition, shouldUpdate) {
+    var cacheRef = _react.useRef({});
+    if (!("value" in cacheRef.current) || shouldUpdate(cacheRef.current.condition, condition)) {
+        cacheRef.current.value = getValue();
+        cacheRef.current.condition = condition;
+    }
+    return cacheRef.current.value;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"daUrm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "noop", ()=>noop);
@@ -28975,6 +29228,79 @@ warningOnce.preMessage = preMessage;
 warningOnce.resetWarned = resetWarned;
 warningOnce.noteOnce = noteOnce;
 exports.default = warningOnce;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"a2v1e":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _isVisible = require("rc-util/es/Dom/isVisible");
+var _isVisibleDefault = parcelHelpers.interopDefault(_isVisible);
+var _ref = require("rc-util/es/ref");
+var _configProvider = require("../../config-provider");
+var _reactNode = require("../reactNode");
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+var _useWave = require("./useWave");
+var _useWaveDefault = parcelHelpers.interopDefault(_useWave);
+const Wave = (props)=>{
+    const { children, disabled, component } = props;
+    const { getPrefixCls } = (0, _react.useContext)((0, _configProvider.ConfigContext));
+    const containerRef = (0, _react.useRef)(null);
+    // ============================== Style ===============================
+    const prefixCls = getPrefixCls("wave");
+    const [, hashId] = (0, _styleDefault.default)(prefixCls);
+    // =============================== Wave ===============================
+    const showWave = (0, _useWaveDefault.default)(containerRef, (0, _classnamesDefault.default)(prefixCls, hashId), component);
+    // ============================== Effect ==============================
+    (0, _reactDefault.default).useEffect(()=>{
+        const node = containerRef.current;
+        if (!node || node.nodeType !== 1 || disabled) return;
+        // Click handler
+        const onClick = (e)=>{
+            // Fix radio button click twice
+            if (!(0, _isVisibleDefault.default)(e.target) || // No need wave
+            !node.getAttribute || node.getAttribute("disabled") || node.disabled || node.className.includes("disabled") || node.className.includes("-leave")) return;
+            showWave(e);
+        };
+        // Bind events
+        node.addEventListener("click", onClick, true);
+        return ()=>{
+            node.removeEventListener("click", onClick, true);
+        };
+    }, [
+        disabled
+    ]);
+    // ============================== Render ==============================
+    if (!/*#__PURE__*/ (0, _reactDefault.default).isValidElement(children)) return children !== null && children !== void 0 ? children : null;
+    const ref = (0, _ref.supportRef)(children) ? (0, _ref.composeRef)(children.ref, containerRef) : containerRef;
+    return (0, _reactNode.cloneElement)(children, {
+        ref
+    });
+};
+Wave.displayName = "Wave";
+exports.default = Wave;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/Dom/isVisible":"f0y09","rc-util/es/ref":"jS1Z6","../../config-provider":"iMraF","../reactNode":"d1mV0","./style":"h9EmK","./useWave":"gK9iP","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"f0y09":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = function(element) {
+    if (!element) return false;
+    if (element instanceof Element) {
+        if (element.offsetParent) return true;
+        if (element.getBBox) {
+            var _getBBox = element.getBBox(), width = _getBBox.width, height = _getBBox.height;
+            if (width || height) return true;
+        }
+        if (element.getBoundingClientRect) {
+            var _element$getBoundingC = element.getBoundingClientRect(), _width = _element$getBoundingC.width, _height = _element$getBoundingC.height;
+            if (_width || _height) return true;
+        }
+    }
+    return false;
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iMraF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30010,21 +30336,7 @@ function _objectWithoutPropertiesLoose(r, e) {
     return t;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cxcbY":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>useMemo);
-var _react = require("react");
-function useMemo(getValue, condition, shouldUpdate) {
-    var cacheRef = _react.useRef({});
-    if (!("value" in cacheRef.current) || shouldUpdate(cacheRef.current.condition, condition)) {
-        cacheRef.current.value = getValue();
-        cacheRef.current.condition = condition;
-    }
-    return cacheRef.current.value;
-}
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eBVVK":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eBVVK":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _typeof = require("@babel/runtime/helpers/esm/typeof");
@@ -32722,7 +33034,7 @@ const LocaleProvider = (props)=>{
 LocaleProvider.displayName = "LocaleProvider";
 exports.default = LocaleProvider;
 
-},{"react":"21dqq","../_util/warning":"daUrm","../modal/locale":"cgYI5","./context":"gK9Be","./useLocale":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cgYI5":[function(require,module,exports) {
+},{"react":"21dqq","../_util/warning":"daUrm","../modal/locale":"cgYI5","./context":"gK9Be","./useLocale":"4Rsra","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cgYI5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "changeConfirmLocale", ()=>changeConfirmLocale);
@@ -33024,7 +33336,42 @@ var _react = require("react");
 const LocaleContext = /*#__PURE__*/ (0, _react.createContext)(undefined);
 exports.default = LocaleContext;
 
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1kv1r":[function(require,module,exports) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4Rsra":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _context = require("./context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _enUS = require("./en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+const useLocale = (componentName, defaultLocale)=>{
+    const fullLocale = _react.useContext((0, _contextDefault.default));
+    const getLocale = _react.useMemo(()=>{
+        var _a;
+        const locale = defaultLocale || (0, _enUSDefault.default)[componentName];
+        const localeFromContext = (_a = fullLocale === null || fullLocale === void 0 ? void 0 : fullLocale[componentName]) !== null && _a !== void 0 ? _a : {};
+        return Object.assign(Object.assign({}, typeof locale === "function" ? locale() : locale), localeFromContext || {});
+    }, [
+        componentName,
+        defaultLocale,
+        fullLocale
+    ]);
+    const getLocaleCode = _react.useMemo(()=>{
+        const localeCode = fullLocale === null || fullLocale === void 0 ? void 0 : fullLocale.locale;
+        // Had use LocaleProvide but didn't set locale
+        if ((fullLocale === null || fullLocale === void 0 ? void 0 : fullLocale.exist) && !localeCode) return (0, _enUSDefault.default).locale;
+        return localeCode;
+    }, [
+        fullLocale
+    ]);
+    return [
+        getLocale,
+        getLocaleCode
+    ];
+};
+exports.default = useLocale;
+
+},{"react":"21dqq","./context":"gK9Be","./en_US":"3cTtE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1kv1r":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "defaultTheme", ()=>defaultTheme);
@@ -35042,7 +35389,7 @@ var _useResetIconStyle = require("./util/useResetIconStyle");
 var _useResetIconStyleDefault = parcelHelpers.interopDefault(_useResetIconStyle);
 var _context = require("./context");
 
-},{"@ant-design/cssinjs":"k46HC","./interface":false,"./themes/shared/genFontSizes":false,"./useToken":"7Ig10","./util/calc":false,"./util/genComponentStyleHook":"afXFa","./util/genPresetColor":false,"./util/statistic":"j6cAt","./util/useResetIconStyle":"fSChB","./context":"1kv1r","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7Ig10":[function(require,module,exports) {
+},{"@ant-design/cssinjs":"k46HC","./interface":false,"./themes/shared/genFontSizes":"4F5Xy","./useToken":"7Ig10","./util/calc":false,"./util/genComponentStyleHook":"afXFa","./util/genPresetColor":false,"./util/statistic":"j6cAt","./util/useResetIconStyle":"fSChB","./context":"1kv1r","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7Ig10":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "unitless", ()=>unitless);
@@ -36004,244 +36351,7 @@ function useSafeState(defaultValue) {
     ];
 }
 
-},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jS1Z6":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "fillRef", ()=>fillRef);
-parcelHelpers.export(exports, "composeRef", ()=>composeRef);
-parcelHelpers.export(exports, "useComposeRef", ()=>useComposeRef);
-parcelHelpers.export(exports, "supportRef", ()=>supportRef);
-parcelHelpers.export(exports, "supportNodeRef", ()=>supportNodeRef);
-var _typeof = require("@babel/runtime/helpers/esm/typeof");
-var _typeofDefault = parcelHelpers.interopDefault(_typeof);
-var _react = require("react");
-var _reactIs = require("react-is");
-var _useMemo = require("./hooks/useMemo");
-var _useMemoDefault = parcelHelpers.interopDefault(_useMemo);
-var fillRef = function fillRef(ref, node) {
-    if (typeof ref === "function") ref(node);
-    else if ((0, _typeofDefault.default)(ref) === "object" && ref && "current" in ref) ref.current = node;
-};
-var composeRef = function composeRef() {
-    for(var _len = arguments.length, refs = new Array(_len), _key = 0; _key < _len; _key++)refs[_key] = arguments[_key];
-    var refList = refs.filter(Boolean);
-    if (refList.length <= 1) return refList[0];
-    return function(node) {
-        refs.forEach(function(ref) {
-            fillRef(ref, node);
-        });
-    };
-};
-var useComposeRef = function useComposeRef() {
-    for(var _len2 = arguments.length, refs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)refs[_key2] = arguments[_key2];
-    return (0, _useMemoDefault.default)(function() {
-        return composeRef.apply(void 0, refs);
-    }, refs, function(prev, next) {
-        return prev.length !== next.length || prev.every(function(ref, i) {
-            return ref !== next[i];
-        });
-    });
-};
-var supportRef = function supportRef(nodeOrComponent) {
-    var _type$prototype, _nodeOrComponent$prot;
-    var type = (0, _reactIs.isMemo)(nodeOrComponent) ? nodeOrComponent.type.type : nodeOrComponent.type;
-    // Function component node
-    if (typeof type === "function" && !((_type$prototype = type.prototype) !== null && _type$prototype !== void 0 && _type$prototype.render) && type.$$typeof !== (0, _reactIs.ForwardRef)) return false;
-    // Class component
-    if (typeof nodeOrComponent === "function" && !((_nodeOrComponent$prot = nodeOrComponent.prototype) !== null && _nodeOrComponent$prot !== void 0 && _nodeOrComponent$prot.render) && nodeOrComponent.$$typeof !== (0, _reactIs.ForwardRef)) return false;
-    return true;
-};
-var supportNodeRef = function supportNodeRef(node) {
-    if (!/*#__PURE__*/ (0, _react.isValidElement)(node)) return false;
-    if ((0, _reactIs.isFragment)(node)) return false;
-    return supportRef(node);
-};
-
-},{"@babel/runtime/helpers/esm/typeof":"i7HWY","react":"21dqq","react-is":"g7MZm","./hooks/useMemo":"cxcbY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"g7MZm":[function(require,module,exports) {
-"use strict";
-module.exports = require("da06c0f26f2b2d66");
-
-},{"da06c0f26f2b2d66":"7Os0P"}],"7Os0P":[function(require,module,exports) {
-/**
- * @license React
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    // ATTENTION
-    // When adding new symbols to this file,
-    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-    // The Symbol used to tag the ReactElement-like types.
-    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-    var REACT_SERVER_CONTEXT_TYPE = Symbol.for("react.server_context");
-    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-    var REACT_MEMO_TYPE = Symbol.for("react.memo");
-    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
-    // -----------------------------------------------------------------------------
-    var enableScopeAPI = false; // Experimental Create Event Handle API.
-    var enableCacheElement = false;
-    var enableTransitionTracing = false; // No known bugs, but needs performance testing
-    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
-    // stuff. Intended to enable React core members to more easily debug scheduling
-    // issues in DEV builds.
-    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
-    var REACT_MODULE_REFERENCE;
-    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
-    function isValidElementType(type) {
-        if (typeof type === "string" || typeof type === "function") return true;
-         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
-        if (typeof type === "object" && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-            // types supported by any Flight configuration anywhere since
-            // we don't know which Flight build this will end up being used
-            // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
-        }
-        return false;
-    }
-    function typeOf(object) {
-        if (typeof object === "object" && object !== null) {
-            var $$typeof = object.$$typeof;
-            switch($$typeof){
-                case REACT_ELEMENT_TYPE:
-                    var type = object.type;
-                    switch(type){
-                        case REACT_FRAGMENT_TYPE:
-                        case REACT_PROFILER_TYPE:
-                        case REACT_STRICT_MODE_TYPE:
-                        case REACT_SUSPENSE_TYPE:
-                        case REACT_SUSPENSE_LIST_TYPE:
-                            return type;
-                        default:
-                            var $$typeofType = type && type.$$typeof;
-                            switch($$typeofType){
-                                case REACT_SERVER_CONTEXT_TYPE:
-                                case REACT_CONTEXT_TYPE:
-                                case REACT_FORWARD_REF_TYPE:
-                                case REACT_LAZY_TYPE:
-                                case REACT_MEMO_TYPE:
-                                case REACT_PROVIDER_TYPE:
-                                    return $$typeofType;
-                                default:
-                                    return $$typeof;
-                            }
-                    }
-                case REACT_PORTAL_TYPE:
-                    return $$typeof;
-            }
-        }
-        return undefined;
-    }
-    var ContextConsumer = REACT_CONTEXT_TYPE;
-    var ContextProvider = REACT_PROVIDER_TYPE;
-    var Element = REACT_ELEMENT_TYPE;
-    var ForwardRef = REACT_FORWARD_REF_TYPE;
-    var Fragment = REACT_FRAGMENT_TYPE;
-    var Lazy = REACT_LAZY_TYPE;
-    var Memo = REACT_MEMO_TYPE;
-    var Portal = REACT_PORTAL_TYPE;
-    var Profiler = REACT_PROFILER_TYPE;
-    var StrictMode = REACT_STRICT_MODE_TYPE;
-    var Suspense = REACT_SUSPENSE_TYPE;
-    var SuspenseList = REACT_SUSPENSE_LIST_TYPE;
-    var hasWarnedAboutDeprecatedIsAsyncMode = false;
-    var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
-    function isAsyncMode(object) {
-        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 18+.");
-        }
-        return false;
-    }
-    function isConcurrentMode(object) {
-        if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
-            hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
-            console["warn"]("The ReactIs.isConcurrentMode() alias has been deprecated, and will be removed in React 18+.");
-        }
-        return false;
-    }
-    function isContextConsumer(object) {
-        return typeOf(object) === REACT_CONTEXT_TYPE;
-    }
-    function isContextProvider(object) {
-        return typeOf(object) === REACT_PROVIDER_TYPE;
-    }
-    function isElement(object) {
-        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function isForwardRef(object) {
-        return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    }
-    function isFragment(object) {
-        return typeOf(object) === REACT_FRAGMENT_TYPE;
-    }
-    function isLazy(object) {
-        return typeOf(object) === REACT_LAZY_TYPE;
-    }
-    function isMemo(object) {
-        return typeOf(object) === REACT_MEMO_TYPE;
-    }
-    function isPortal(object) {
-        return typeOf(object) === REACT_PORTAL_TYPE;
-    }
-    function isProfiler(object) {
-        return typeOf(object) === REACT_PROFILER_TYPE;
-    }
-    function isStrictMode(object) {
-        return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    }
-    function isSuspense(object) {
-        return typeOf(object) === REACT_SUSPENSE_TYPE;
-    }
-    function isSuspenseList(object) {
-        return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
-    }
-    exports.ContextConsumer = ContextConsumer;
-    exports.ContextProvider = ContextProvider;
-    exports.Element = Element;
-    exports.ForwardRef = ForwardRef;
-    exports.Fragment = Fragment;
-    exports.Lazy = Lazy;
-    exports.Memo = Memo;
-    exports.Portal = Portal;
-    exports.Profiler = Profiler;
-    exports.StrictMode = StrictMode;
-    exports.Suspense = Suspense;
-    exports.SuspenseList = SuspenseList;
-    exports.isAsyncMode = isAsyncMode;
-    exports.isConcurrentMode = isConcurrentMode;
-    exports.isContextConsumer = isContextConsumer;
-    exports.isContextProvider = isContextProvider;
-    exports.isElement = isElement;
-    exports.isForwardRef = isForwardRef;
-    exports.isFragment = isFragment;
-    exports.isLazy = isLazy;
-    exports.isMemo = isMemo;
-    exports.isPortal = isPortal;
-    exports.isProfiler = isProfiler;
-    exports.isStrictMode = isStrictMode;
-    exports.isSuspense = isSuspense;
-    exports.isSuspenseList = isSuspenseList;
-    exports.isValidElementType = isValidElementType;
-    exports.typeOf = typeOf;
-})();
-
-},{}],"b1Psq":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"b1Psq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "operationUnit", ()=>(0, _operationUnit.operationUnit));
@@ -37524,7 +37634,685 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _internal.useResetIconStyle));
 var _internal = require("../../theme/internal");
 
-},{"../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"daQoa":[function(require,module,exports) {
+},{"../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"d1mV0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isFragment", ()=>isFragment);
+parcelHelpers.export(exports, "replaceElement", ()=>replaceElement);
+parcelHelpers.export(exports, "cloneElement", ()=>cloneElement);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function isFragment(child) {
+    return child && /*#__PURE__*/ (0, _reactDefault.default).isValidElement(child) && child.type === (0, _reactDefault.default).Fragment;
+}
+const replaceElement = (element, replacement, props)=>{
+    if (!/*#__PURE__*/ (0, _reactDefault.default).isValidElement(element)) return replacement;
+    return /*#__PURE__*/ (0, _reactDefault.default).cloneElement(element, typeof props === "function" ? props(element.props || {}) : props);
+};
+function cloneElement(element, props) {
+    return replaceElement(element, element, props);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"h9EmK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _internal = require("../../theme/internal");
+const genWaveStyle = (token)=>{
+    const { componentCls, colorPrimary } = token;
+    return {
+        [componentCls]: {
+            position: "absolute",
+            background: "transparent",
+            pointerEvents: "none",
+            boxSizing: "border-box",
+            color: `var(--wave-color, ${colorPrimary})`,
+            boxShadow: `0 0 0 0 currentcolor`,
+            opacity: 0.2,
+            // =================== Motion ===================
+            "&.wave-motion-appear": {
+                transition: [
+                    `box-shadow 0.4s ${token.motionEaseOutCirc}`,
+                    `opacity 2s ${token.motionEaseOutCirc}`
+                ].join(","),
+                "&-active": {
+                    boxShadow: `0 0 0 6px currentcolor`,
+                    opacity: 0
+                },
+                "&.wave-quick": {
+                    transition: [
+                        `box-shadow ${token.motionDurationSlow} ${token.motionEaseInOut}`,
+                        `opacity ${token.motionDurationSlow} ${token.motionEaseInOut}`
+                    ].join(",")
+                }
+            }
+        }
+    };
+};
+exports.default = (0, _internal.genComponentStyleHook)("Wave", (token)=>[
+        genWaveStyle(token)
+    ]);
+
+},{"../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gK9iP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _rcUtil = require("rc-util");
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _configProvider = require("../../config-provider");
+var _useToken = require("../../theme/useToken");
+var _useTokenDefault = parcelHelpers.interopDefault(_useToken);
+var _interface = require("./interface");
+var _waveEffect = require("./WaveEffect");
+var _waveEffectDefault = parcelHelpers.interopDefault(_waveEffect);
+const useWave = (nodeRef, className, component)=>{
+    const { wave } = _react.useContext((0, _configProvider.ConfigContext));
+    const [, token, hashId] = (0, _useTokenDefault.default)();
+    const showWave = (0, _rcUtil.useEvent)((event)=>{
+        const node = nodeRef.current;
+        if ((wave === null || wave === void 0 ? void 0 : wave.disabled) || !node) return;
+        const targetNode = node.querySelector(`.${(0, _interface.TARGET_CLS)}`) || node;
+        const { showEffect } = wave || {};
+        // Customize wave effect
+        (showEffect || (0, _waveEffectDefault.default))(targetNode, {
+            className,
+            token,
+            component,
+            event,
+            hashId
+        });
+    });
+    const rafId = _react.useRef();
+    // Merge trigger event into one for each frame
+    const showDebounceWave = (event)=>{
+        (0, _rafDefault.default).cancel(rafId.current);
+        rafId.current = (0, _rafDefault.default)(()=>{
+            showWave(event);
+        });
+    };
+    return showDebounceWave;
+};
+exports.default = useWave;
+
+},{"react":"21dqq","rc-util":"2CvWk","rc-util/es/raf":"7OvWw","../../config-provider":"iMraF","../../theme/useToken":"7Ig10","./interface":"buSxd","./WaveEffect":"cTb8j","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"buSxd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "TARGET_CLS", ()=>TARGET_CLS);
+const TARGET_CLS = "ant-wave-target";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cTb8j":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _raf = require("rc-util/es/raf");
+var _rafDefault = parcelHelpers.interopDefault(_raf);
+var _render = require("rc-util/es/React/render");
+var _ref = require("rc-util/es/ref");
+var _interface = require("./interface");
+var _util = require("./util");
+"use client";
+function validateNum(value) {
+    return Number.isNaN(value) ? 0 : value;
+}
+const WaveEffect = (props)=>{
+    const { className, target, component } = props;
+    const divRef = _react.useRef(null);
+    const [color, setWaveColor] = _react.useState(null);
+    const [borderRadius, setBorderRadius] = _react.useState([]);
+    const [left, setLeft] = _react.useState(0);
+    const [top, setTop] = _react.useState(0);
+    const [width, setWidth] = _react.useState(0);
+    const [height, setHeight] = _react.useState(0);
+    const [enabled, setEnabled] = _react.useState(false);
+    const waveStyle = {
+        left,
+        top,
+        width,
+        height,
+        borderRadius: borderRadius.map((radius)=>`${radius}px`).join(" ")
+    };
+    if (color) waveStyle["--wave-color"] = color;
+    function syncPos() {
+        const nodeStyle = getComputedStyle(target);
+        // Get wave color from target
+        setWaveColor((0, _util.getTargetWaveColor)(target));
+        const isStatic = nodeStyle.position === "static";
+        // Rect
+        const { borderLeftWidth, borderTopWidth } = nodeStyle;
+        setLeft(isStatic ? target.offsetLeft : validateNum(-parseFloat(borderLeftWidth)));
+        setTop(isStatic ? target.offsetTop : validateNum(-parseFloat(borderTopWidth)));
+        setWidth(target.offsetWidth);
+        setHeight(target.offsetHeight);
+        // Get border radius
+        const { borderTopLeftRadius, borderTopRightRadius, borderBottomLeftRadius, borderBottomRightRadius } = nodeStyle;
+        setBorderRadius([
+            borderTopLeftRadius,
+            borderTopRightRadius,
+            borderBottomRightRadius,
+            borderBottomLeftRadius
+        ].map((radius)=>validateNum(parseFloat(radius))));
+    }
+    _react.useEffect(()=>{
+        if (target) {
+            // We need delay to check position here
+            // since UI may change after click
+            const id = (0, _rafDefault.default)(()=>{
+                syncPos();
+                setEnabled(true);
+            });
+            // Add resize observer to follow size
+            let resizeObserver;
+            if (typeof ResizeObserver !== "undefined") {
+                resizeObserver = new ResizeObserver(syncPos);
+                resizeObserver.observe(target);
+            }
+            return ()=>{
+                (0, _rafDefault.default).cancel(id);
+                resizeObserver === null || resizeObserver === void 0 || resizeObserver.disconnect();
+            };
+        }
+    }, []);
+    if (!enabled) return null;
+    const isSmallComponent = (component === "Checkbox" || component === "Radio") && (target === null || target === void 0 ? void 0 : target.classList.contains((0, _interface.TARGET_CLS)));
+    return /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), {
+        visible: true,
+        motionAppear: true,
+        motionName: "wave-motion",
+        motionDeadline: 5000,
+        onAppearEnd: (_, event)=>{
+            var _a;
+            if (event.deadline || event.propertyName === "opacity") {
+                const holder = (_a = divRef.current) === null || _a === void 0 ? void 0 : _a.parentElement;
+                (0, _render.unmount)(holder).then(()=>{
+                    holder === null || holder === void 0 || holder.remove();
+                });
+            }
+            return false;
+        }
+    }, (_ref1, ref)=>{
+        let { className: motionClassName } = _ref1;
+        return /*#__PURE__*/ _react.createElement("div", {
+            ref: (0, _ref.composeRef)(divRef, ref),
+            className: (0, _classnamesDefault.default)(className, {
+                "wave-quick": isSmallComponent
+            }, motionClassName),
+            style: waveStyle
+        });
+    });
+};
+const showWaveEffect = (target, info)=>{
+    var _a;
+    const { component } = info;
+    // Skip for unchecked checkbox
+    if (component === "Checkbox" && !((_a = target.querySelector("input")) === null || _a === void 0 ? void 0 : _a.checked)) return;
+    // Create holder
+    const holder = document.createElement("div");
+    holder.style.position = "absolute";
+    holder.style.left = "0px";
+    holder.style.top = "0px";
+    target === null || target === void 0 || target.insertBefore(holder, target === null || target === void 0 ? void 0 : target.firstChild);
+    (0, _render.render)(/*#__PURE__*/ _react.createElement(WaveEffect, Object.assign({}, info, {
+        target: target
+    })), holder);
+};
+exports.default = showWaveEffect;
+
+},{"react":"21dqq","classnames":"jocGM","rc-motion":"aaavi","rc-util/es/raf":"7OvWw","rc-util/es/React/render":"fvmXJ","rc-util/es/ref":"jS1Z6","./interface":"buSxd","./util":"eGpnz","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fvmXJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/** @private Test usage. Not work in prod */ parcelHelpers.export(exports, "_r", ()=>_r);
+parcelHelpers.export(exports, "render", ()=>render);
+/** @private Test usage. Not work in prod */ parcelHelpers.export(exports, "_u", ()=>_u);
+parcelHelpers.export(exports, "unmount", ()=>unmount);
+var _regeneratorRuntime = require("@babel/runtime/helpers/esm/regeneratorRuntime");
+var _regeneratorRuntimeDefault = parcelHelpers.interopDefault(_regeneratorRuntime);
+var _asyncToGenerator = require("@babel/runtime/helpers/esm/asyncToGenerator");
+var _asyncToGeneratorDefault = parcelHelpers.interopDefault(_asyncToGenerator);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _reactDom = require("react-dom");
+// Let compiler not to search module usage
+var fullClone = (0, _objectSpread2Default.default)({}, _reactDom);
+var version = fullClone.version, reactRender = fullClone.render, unmountComponentAtNode = fullClone.unmountComponentAtNode;
+var createRoot;
+try {
+    var mainVersion = Number((version || "").split(".")[0]);
+    if (mainVersion >= 18) createRoot = fullClone.createRoot;
+} catch (e) {
+// Do nothing;
+}
+function toggleWarning(skip) {
+    var __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = fullClone.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    if (__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED && (0, _typeofDefault.default)(__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) === "object") __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.usingClientEntryPoint = skip;
+}
+var MARK = "__rc_react_root__";
+// ========================== Render ==========================
+function modernRender(node, container) {
+    toggleWarning(true);
+    var root = container[MARK] || createRoot(container);
+    toggleWarning(false);
+    root.render(node);
+    container[MARK] = root;
+}
+function legacyRender(node, container) {
+    reactRender(node, container);
+}
+function _r(node, container) {
+    return legacyRender(node, container);
+}
+function render(node, container) {
+    if (createRoot) {
+        modernRender(node, container);
+        return;
+    }
+    legacyRender(node, container);
+}
+// ========================= Unmount ==========================
+function modernUnmount(_x) {
+    return _modernUnmount.apply(this, arguments);
+}
+function _modernUnmount() {
+    _modernUnmount = (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee(container) {
+        return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee$(_context) {
+            while(true)switch(_context.prev = _context.next){
+                case 0:
+                    return _context.abrupt("return", Promise.resolve().then(function() {
+                        var _container$MARK;
+                        (_container$MARK = container[MARK]) === null || _container$MARK === void 0 || _container$MARK.unmount();
+                        delete container[MARK];
+                    }));
+                case 1:
+                case "end":
+                    return _context.stop();
+            }
+        }, _callee);
+    }));
+    return _modernUnmount.apply(this, arguments);
+}
+function legacyUnmount(container) {
+    unmountComponentAtNode(container);
+}
+function _u(container) {
+    return legacyUnmount(container);
+}
+function unmount(_x2) {
+    return _unmount.apply(this, arguments);
+}
+function _unmount() {
+    _unmount = (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee2(container) {
+        return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee2$(_context2) {
+            while(true)switch(_context2.prev = _context2.next){
+                case 0:
+                    if (!(createRoot !== undefined)) {
+                        _context2.next = 2;
+                        break;
+                    }
+                    return _context2.abrupt("return", modernUnmount(container));
+                case 2:
+                    legacyUnmount(container);
+                case 3:
+                case "end":
+                    return _context2.stop();
+            }
+        }, _callee2);
+    }));
+    return _unmount.apply(this, arguments);
+}
+
+},{"@babel/runtime/helpers/esm/regeneratorRuntime":"8VPP1","@babel/runtime/helpers/esm/asyncToGenerator":"5Tzvv","@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8VPP1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_regeneratorRuntime);
+var _typeofJs = require("./typeof.js");
+var _typeofJsDefault = parcelHelpers.interopDefault(_typeofJs);
+function _regeneratorRuntime() {
+    "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ 
+    _regeneratorRuntime = function _regeneratorRuntime() {
+        return e;
+    };
+    var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function(t, e, r) {
+        t[e] = r.value;
+    }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag";
+    function define(t, e, r) {
+        return Object.defineProperty(t, e, {
+            value: r,
+            enumerable: !0,
+            configurable: !0,
+            writable: !0
+        }), t[e];
+    }
+    try {
+        define({}, "");
+    } catch (t) {
+        define = function define(t, e, r) {
+            return t[e] = r;
+        };
+    }
+    function wrap(t, e, r, n) {
+        var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []);
+        return o(a, "_invoke", {
+            value: makeInvokeMethod(t, r, c)
+        }), a;
+    }
+    function tryCatch(t, e, r) {
+        try {
+            return {
+                type: "normal",
+                arg: t.call(e, r)
+            };
+        } catch (t) {
+            return {
+                type: "throw",
+                arg: t
+            };
+        }
+    }
+    e.wrap = wrap;
+    var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {};
+    function Generator() {}
+    function GeneratorFunction() {}
+    function GeneratorFunctionPrototype() {}
+    var p = {};
+    define(p, a, function() {
+        return this;
+    });
+    var d = Object.getPrototypeOf, v = d && d(d(values([])));
+    v && v !== r && n.call(v, a) && (p = v);
+    var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p);
+    function defineIteratorMethods(t) {
+        [
+            "next",
+            "throw",
+            "return"
+        ].forEach(function(e) {
+            define(t, e, function(t) {
+                return this._invoke(e, t);
+            });
+        });
+    }
+    function AsyncIterator(t, e) {
+        function invoke(r, o, i, a) {
+            var c = tryCatch(t[r], t, o);
+            if ("throw" !== c.type) {
+                var u = c.arg, h = u.value;
+                return h && "object" == (0, _typeofJsDefault.default)(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function(t) {
+                    invoke("next", t, i, a);
+                }, function(t) {
+                    invoke("throw", t, i, a);
+                }) : e.resolve(h).then(function(t) {
+                    u.value = t, i(u);
+                }, function(t) {
+                    return invoke("throw", t, i, a);
+                });
+            }
+            a(c.arg);
+        }
+        var r;
+        o(this, "_invoke", {
+            value: function value(t, n) {
+                function callInvokeWithMethodAndArg() {
+                    return new e(function(e, r) {
+                        invoke(t, n, e, r);
+                    });
+                }
+                return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+            }
+        });
+    }
+    function makeInvokeMethod(e, r, n) {
+        var o = h;
+        return function(i, a) {
+            if (o === f) throw Error("Generator is already running");
+            if (o === s) {
+                if ("throw" === i) throw a;
+                return {
+                    value: t,
+                    done: !0
+                };
+            }
+            for(n.method = i, n.arg = a;;){
+                var c = n.delegate;
+                if (c) {
+                    var u = maybeInvokeDelegate(c, n);
+                    if (u) {
+                        if (u === y) continue;
+                        return u;
+                    }
+                }
+                if ("next" === n.method) n.sent = n._sent = n.arg;
+                else if ("throw" === n.method) {
+                    if (o === h) throw o = s, n.arg;
+                    n.dispatchException(n.arg);
+                } else "return" === n.method && n.abrupt("return", n.arg);
+                o = f;
+                var p = tryCatch(e, r, n);
+                if ("normal" === p.type) {
+                    if (o = n.done ? s : l, p.arg === y) continue;
+                    return {
+                        value: p.arg,
+                        done: n.done
+                    };
+                }
+                "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg);
+            }
+        };
+    }
+    function maybeInvokeDelegate(e, r) {
+        var n = r.method, o = e.iterator[n];
+        if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y;
+        var i = tryCatch(o, e.iterator, r.arg);
+        if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y;
+        var a = i.arg;
+        return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y);
+    }
+    function pushTryEntry(t) {
+        var e = {
+            tryLoc: t[0]
+        };
+        1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e);
+    }
+    function resetTryEntry(t) {
+        var e = t.completion || {};
+        e.type = "normal", delete e.arg, t.completion = e;
+    }
+    function Context(t) {
+        this.tryEntries = [
+            {
+                tryLoc: "root"
+            }
+        ], t.forEach(pushTryEntry, this), this.reset(!0);
+    }
+    function values(e) {
+        if (e || "" === e) {
+            var r = e[a];
+            if (r) return r.call(e);
+            if ("function" == typeof e.next) return e;
+            if (!isNaN(e.length)) {
+                var o = -1, i = function next() {
+                    for(; ++o < e.length;)if (n.call(e, o)) return next.value = e[o], next.done = !1, next;
+                    return next.value = t, next.done = !0, next;
+                };
+                return i.next = i;
+            }
+        }
+        throw new TypeError((0, _typeofJsDefault.default)(e) + " is not iterable");
+    }
+    return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", {
+        value: GeneratorFunctionPrototype,
+        configurable: !0
+    }), o(GeneratorFunctionPrototype, "constructor", {
+        value: GeneratorFunction,
+        configurable: !0
+    }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function(t) {
+        var e = "function" == typeof t && t.constructor;
+        return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name));
+    }, e.mark = function(t) {
+        return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t;
+    }, e.awrap = function(t) {
+        return {
+            __await: t
+        };
+    }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function() {
+        return this;
+    }), e.AsyncIterator = AsyncIterator, e.async = function(t, r, n, o, i) {
+        void 0 === i && (i = Promise);
+        var a = new AsyncIterator(wrap(t, r, n, o), i);
+        return e.isGeneratorFunction(r) ? a : a.next().then(function(t) {
+            return t.done ? t.value : a.next();
+        });
+    }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function() {
+        return this;
+    }), define(g, "toString", function() {
+        return "[object Generator]";
+    }), e.keys = function(t) {
+        var e = Object(t), r = [];
+        for(var n in e)r.push(n);
+        return r.reverse(), function next() {
+            for(; r.length;){
+                var t = r.pop();
+                if (t in e) return next.value = t, next.done = !1, next;
+            }
+            return next.done = !0, next;
+        };
+    }, e.values = values, Context.prototype = {
+        constructor: Context,
+        reset: function reset(e) {
+            if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for(var r in this)"t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t);
+        },
+        stop: function stop() {
+            this.done = !0;
+            var t = this.tryEntries[0].completion;
+            if ("throw" === t.type) throw t.arg;
+            return this.rval;
+        },
+        dispatchException: function dispatchException(e) {
+            if (this.done) throw e;
+            var r = this;
+            function handle(n, o) {
+                return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o;
+            }
+            for(var o = this.tryEntries.length - 1; o >= 0; --o){
+                var i = this.tryEntries[o], a = i.completion;
+                if ("root" === i.tryLoc) return handle("end");
+                if (i.tryLoc <= this.prev) {
+                    var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc");
+                    if (c && u) {
+                        if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
+                        if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
+                    } else if (c) {
+                        if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
+                    } else {
+                        if (!u) throw Error("try statement without catch or finally");
+                        if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
+                    }
+                }
+            }
+        },
+        abrupt: function abrupt(t, e) {
+            for(var r = this.tryEntries.length - 1; r >= 0; --r){
+                var o = this.tryEntries[r];
+                if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) {
+                    var i = o;
+                    break;
+                }
+            }
+            i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null);
+            var a = i ? i.completion : {};
+            return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a);
+        },
+        complete: function complete(t, e) {
+            if ("throw" === t.type) throw t.arg;
+            return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y;
+        },
+        finish: function finish(t) {
+            for(var e = this.tryEntries.length - 1; e >= 0; --e){
+                var r = this.tryEntries[e];
+                if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y;
+            }
+        },
+        "catch": function _catch(t) {
+            for(var e = this.tryEntries.length - 1; e >= 0; --e){
+                var r = this.tryEntries[e];
+                if (r.tryLoc === t) {
+                    var n = r.completion;
+                    if ("throw" === n.type) {
+                        var o = n.arg;
+                        resetTryEntry(r);
+                    }
+                    return o;
+                }
+            }
+            throw Error("illegal catch attempt");
+        },
+        delegateYield: function delegateYield(e, r, n) {
+            return this.delegate = {
+                iterator: values(e),
+                resultName: r,
+                nextLoc: n
+            }, "next" === this.method && (this.arg = t), y;
+        }
+    }, e;
+}
+
+},{"./typeof.js":"i7HWY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5Tzvv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_asyncToGenerator);
+function asyncGeneratorStep(n, t, e, r, o, a, c) {
+    try {
+        var i = n[a](c), u = i.value;
+    } catch (n) {
+        return void e(n);
+    }
+    i.done ? t(u) : Promise.resolve(u).then(r, o);
+}
+function _asyncToGenerator(n) {
+    return function() {
+        var t = this, e = arguments;
+        return new Promise(function(r, o) {
+            var a = n.apply(t, e);
+            function _next(n) {
+                asyncGeneratorStep(a, r, o, _next, _throw, "next", n);
+            }
+            function _throw(n) {
+                asyncGeneratorStep(a, r, o, _next, _throw, "throw", n);
+            }
+            _next(void 0);
+        });
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eGpnz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isNotGrey", ()=>isNotGrey);
+parcelHelpers.export(exports, "isValidWaveColor", ()=>isValidWaveColor);
+parcelHelpers.export(exports, "getTargetWaveColor", ()=>getTargetWaveColor);
+function isNotGrey(color) {
+    // eslint-disable-next-line no-useless-escape
+    const match = (color || "").match(/rgba?\((\d*), (\d*), (\d*)(, [\d.]*)?\)/);
+    if (match && match[1] && match[2] && match[3]) return !(match[1] === match[2] && match[2] === match[3]);
+    return true;
+}
+function isValidWaveColor(color) {
+    return color && color !== "#fff" && color !== "#ffffff" && color !== "rgb(255, 255, 255)" && color !== "rgba(255, 255, 255, 1)" && isNotGrey(color) && !/rgba\((?:\d*, ){3}0\)/.test(color) && // any transparent rgba color
+    color !== "transparent";
+}
+function getTargetWaveColor(node) {
+    const { borderTopColor, borderColor, backgroundColor } = getComputedStyle(node);
+    if (isValidWaveColor(borderTopColor)) return borderTopColor;
+    if (isValidWaveColor(borderColor)) return borderColor;
+    if (isValidWaveColor(backgroundColor)) return backgroundColor;
+    return null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"daQoa":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -37546,7 +38334,1638 @@ const useSize = (customSize)=>{
 };
 exports.default = useSize;
 
-},{"react":"21dqq","../SizeContext":"kxcXW","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lppaB":[function(require,module,exports) {
+},{"react":"21dqq","../SizeContext":"kxcXW","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9inLd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SpaceCompactItemContext", ()=>SpaceCompactItemContext);
+parcelHelpers.export(exports, "useCompactItemContext", ()=>useCompactItemContext);
+parcelHelpers.export(exports, "NoCompactStyle", ()=>NoCompactStyle);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _toArray = require("rc-util/es/Children/toArray");
+var _toArrayDefault = parcelHelpers.interopDefault(_toArray);
+var _configProvider = require("../config-provider");
+var _useSize = require("../config-provider/hooks/useSize");
+var _useSizeDefault = parcelHelpers.interopDefault(_useSize);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const SpaceCompactItemContext = /*#__PURE__*/ _react.createContext(null);
+const useCompactItemContext = (prefixCls, direction)=>{
+    const compactItemContext = _react.useContext(SpaceCompactItemContext);
+    const compactItemClassnames = _react.useMemo(()=>{
+        if (!compactItemContext) return "";
+        const { compactDirection, isFirstItem, isLastItem } = compactItemContext;
+        const separator = compactDirection === "vertical" ? "-vertical-" : "-";
+        return (0, _classnamesDefault.default)(`${prefixCls}-compact${separator}item`, {
+            [`${prefixCls}-compact${separator}first-item`]: isFirstItem,
+            [`${prefixCls}-compact${separator}last-item`]: isLastItem,
+            [`${prefixCls}-compact${separator}item-rtl`]: direction === "rtl"
+        });
+    }, [
+        prefixCls,
+        direction,
+        compactItemContext
+    ]);
+    return {
+        compactSize: compactItemContext === null || compactItemContext === void 0 ? void 0 : compactItemContext.compactSize,
+        compactDirection: compactItemContext === null || compactItemContext === void 0 ? void 0 : compactItemContext.compactDirection,
+        compactItemClassnames
+    };
+};
+const NoCompactStyle = (_ref)=>{
+    let { children } = _ref;
+    return /*#__PURE__*/ _react.createElement(SpaceCompactItemContext.Provider, {
+        value: null
+    }, children);
+};
+const CompactItem = (_a)=>{
+    var { children } = _a, otherProps = __rest(_a, [
+        "children"
+    ]);
+    return /*#__PURE__*/ _react.createElement(SpaceCompactItemContext.Provider, {
+        value: otherProps
+    }, children);
+};
+const Compact = (props)=>{
+    const { getPrefixCls, direction: directionConfig } = _react.useContext((0, _configProvider.ConfigContext));
+    const { size, direction, block, prefixCls: customizePrefixCls, className, rootClassName, children } = props, restProps = __rest(props, [
+        "size",
+        "direction",
+        "block",
+        "prefixCls",
+        "className",
+        "rootClassName",
+        "children"
+    ]);
+    const mergedSize = (0, _useSizeDefault.default)((ctx)=>size !== null && size !== void 0 ? size : ctx);
+    const prefixCls = getPrefixCls("space-compact", customizePrefixCls);
+    const [wrapCSSVar, hashId] = (0, _styleDefault.default)(prefixCls);
+    const clx = (0, _classnamesDefault.default)(prefixCls, hashId, {
+        [`${prefixCls}-rtl`]: directionConfig === "rtl",
+        [`${prefixCls}-block`]: block,
+        [`${prefixCls}-vertical`]: direction === "vertical"
+    }, className, rootClassName);
+    const compactItemContext = _react.useContext(SpaceCompactItemContext);
+    const childNodes = (0, _toArrayDefault.default)(children);
+    const nodes = _react.useMemo(()=>childNodes.map((child, i)=>{
+            const key = child && child.key || `${prefixCls}-item-${i}`;
+            return /*#__PURE__*/ _react.createElement(CompactItem, {
+                key: key,
+                compactSize: mergedSize,
+                compactDirection: direction,
+                isFirstItem: i === 0 && (!compactItemContext || (compactItemContext === null || compactItemContext === void 0 ? void 0 : compactItemContext.isFirstItem)),
+                isLastItem: i === childNodes.length - 1 && (!compactItemContext || (compactItemContext === null || compactItemContext === void 0 ? void 0 : compactItemContext.isLastItem))
+            }, child);
+        }), [
+        size,
+        childNodes,
+        compactItemContext
+    ]);
+    // =========================== Render ===========================
+    if (childNodes.length === 0) return null;
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", Object.assign({
+        className: clx
+    }, restProps), nodes));
+};
+exports.default = Compact;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/Children/toArray":"itYV7","../config-provider":"iMraF","../config-provider/hooks/useSize":"daQoa","./style":"5kbIV","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"itYV7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>toArray);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactIs = require("react-is");
+function toArray(children) {
+    var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var ret = [];
+    (0, _reactDefault.default).Children.forEach(children, function(child) {
+        if ((child === undefined || child === null) && !option.keepEmpty) return;
+        if (Array.isArray(child)) ret = ret.concat(toArray(child));
+        else if ((0, _reactIs.isFragment)(child) && child.props) ret = ret.concat(toArray(child.props.children, option));
+        else ret.push(child);
+    });
+    return ret;
+}
+
+},{"react":"21dqq","react-is":"g7MZm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5kbIV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "prepareComponentToken", ()=>prepareComponentToken);
+var _internal = require("../../theme/internal");
+var _compact = require("./compact");
+var _compactDefault = parcelHelpers.interopDefault(_compact);
+const genSpaceStyle = (token)=>{
+    const { componentCls, antCls } = token;
+    return {
+        [componentCls]: {
+            display: "inline-flex",
+            "&-rtl": {
+                direction: "rtl"
+            },
+            "&-vertical": {
+                flexDirection: "column"
+            },
+            "&-align": {
+                flexDirection: "column",
+                "&-center": {
+                    alignItems: "center"
+                },
+                "&-start": {
+                    alignItems: "flex-start"
+                },
+                "&-end": {
+                    alignItems: "flex-end"
+                },
+                "&-baseline": {
+                    alignItems: "baseline"
+                }
+            },
+            [`${componentCls}-item:empty`]: {
+                display: "none"
+            },
+            // https://github.com/ant-design/ant-design/issues/47875
+            [`${componentCls}-item > ${antCls}-badge-not-a-wrapper:only-child`]: {
+                display: "block"
+            }
+        }
+    };
+};
+const genSpaceGapStyle = (token)=>{
+    const { componentCls } = token;
+    return {
+        [componentCls]: {
+            "&-gap-row-small": {
+                rowGap: token.spaceGapSmallSize
+            },
+            "&-gap-row-middle": {
+                rowGap: token.spaceGapMiddleSize
+            },
+            "&-gap-row-large": {
+                rowGap: token.spaceGapLargeSize
+            },
+            "&-gap-col-small": {
+                columnGap: token.spaceGapSmallSize
+            },
+            "&-gap-col-middle": {
+                columnGap: token.spaceGapMiddleSize
+            },
+            "&-gap-col-large": {
+                columnGap: token.spaceGapLargeSize
+            }
+        }
+    };
+};
+const prepareComponentToken = ()=>({});
+exports.default = (0, _internal.genStyleHooks)("Space", (token)=>{
+    const spaceToken = (0, _internal.mergeToken)(token, {
+        spaceGapSmallSize: token.paddingXS,
+        spaceGapMiddleSize: token.padding,
+        spaceGapLargeSize: token.paddingLG
+    });
+    return [
+        genSpaceStyle(spaceToken),
+        genSpaceGapStyle(spaceToken),
+        (0, _compactDefault.default)(spaceToken)
+    ];
+}, ()=>({}), {
+    // Space component don't apply extra font style
+    // https://github.com/ant-design/ant-design/issues/40315
+    resetStyle: false
+});
+
+},{"../../theme/internal":"7S7jp","./compact":"kylFu","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kylFu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const genSpaceCompactStyle = (token)=>{
+    const { componentCls } = token;
+    return {
+        [componentCls]: {
+            "&-block": {
+                display: "flex",
+                width: "100%"
+            },
+            "&-vertical": {
+                flexDirection: "column"
+            }
+        }
+    };
+};
+// ============================== Export ==============================
+exports.default = genSpaceCompactStyle;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"45IvJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "GroupSizeContext", ()=>GroupSizeContext);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _warning = require("../_util/warning");
+var _configProvider = require("../config-provider");
+var _internal = require("../theme/internal");
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const GroupSizeContext = /*#__PURE__*/ _react.createContext(undefined);
+const ButtonGroup = (props)=>{
+    const { getPrefixCls, direction } = _react.useContext((0, _configProvider.ConfigContext));
+    const { prefixCls: customizePrefixCls, size, className } = props, others = __rest(props, [
+        "prefixCls",
+        "size",
+        "className"
+    ]);
+    const prefixCls = getPrefixCls("btn-group", customizePrefixCls);
+    const [, , hashId] = (0, _internal.useToken)();
+    let sizeCls = "";
+    switch(size){
+        case "large":
+            sizeCls = "lg";
+            break;
+        case "small":
+            sizeCls = "sm";
+            break;
+        case "middle":
+        default:
+    }
+    {
+        const warning = (0, _warning.devUseWarning)("Button.Group");
+        warning(!size || [
+            "large",
+            "small",
+            "middle"
+        ].includes(size), "usage", "Invalid prop `size`.");
+    }
+    const classes = (0, _classnamesDefault.default)(prefixCls, {
+        [`${prefixCls}-${sizeCls}`]: sizeCls,
+        [`${prefixCls}-rtl`]: direction === "rtl"
+    }, className, hashId);
+    return /*#__PURE__*/ _react.createElement(GroupSizeContext.Provider, {
+        value: size
+    }, /*#__PURE__*/ _react.createElement("div", Object.assign({}, others, {
+        className: classes
+    })));
+};
+exports.default = ButtonGroup;
+
+},{"react":"21dqq","classnames":"jocGM","../_util/warning":"daUrm","../config-provider":"iMraF","../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"04LWt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isTwoCNChar", ()=>isTwoCNChar);
+parcelHelpers.export(exports, "convertLegacyProps", ()=>convertLegacyProps);
+parcelHelpers.export(exports, "isString", ()=>isString);
+parcelHelpers.export(exports, "isUnBorderedButtonType", ()=>isUnBorderedButtonType);
+parcelHelpers.export(exports, "spaceChildren", ()=>spaceChildren);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactNode = require("../_util/reactNode");
+"use client";
+const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
+const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
+function convertLegacyProps(type) {
+    if (type === "danger") return {
+        danger: true
+    };
+    return {
+        type
+    };
+}
+function isString(str) {
+    return typeof str === "string";
+}
+function isUnBorderedButtonType(type) {
+    return type === "text" || type === "link";
+}
+function splitCNCharsBySpace(child, needInserted) {
+    if (child === null || child === undefined) return;
+    const SPACE = needInserted ? " " : "";
+    if (typeof child !== "string" && typeof child !== "number" && isString(child.type) && isTwoCNChar(child.props.children)) return (0, _reactNode.cloneElement)(child, {
+        children: child.props.children.split("").join(SPACE)
+    });
+    if (isString(child)) return isTwoCNChar(child) ? /*#__PURE__*/ (0, _reactDefault.default).createElement("span", null, child.split("").join(SPACE)) : /*#__PURE__*/ (0, _reactDefault.default).createElement("span", null, child);
+    if ((0, _reactNode.isFragment)(child)) return /*#__PURE__*/ (0, _reactDefault.default).createElement("span", null, child);
+    return child;
+}
+function spaceChildren(children, needInserted) {
+    let isPrevChildPure = false;
+    const childList = [];
+    (0, _reactDefault.default).Children.forEach(children, (child)=>{
+        const type = typeof child;
+        const isCurrentChildPure = type === "string" || type === "number";
+        if (isPrevChildPure && isCurrentChildPure) {
+            const lastIndex = childList.length - 1;
+            const lastChild = childList[lastIndex];
+            childList[lastIndex] = `${lastChild}${child}`;
+        } else childList.push(child);
+        isPrevChildPure = isCurrentChildPure;
+    });
+    return (0, _reactDefault.default).Children.map(childList, (child)=>splitCNCharsBySpace(child, needInserted));
+}
+const ButtonTypes = [
+    "default",
+    "primary",
+    "dashed",
+    "link",
+    "text"
+];
+const ButtonShapes = [
+    "default",
+    "circle",
+    "round"
+];
+const ButtonHTMLTypes = [
+    "submit",
+    "button",
+    "reset"
+];
+
+},{"react":"21dqq","../_util/reactNode":"d1mV0","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fljqK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+"use client";
+const IconWrapper = /*#__PURE__*/ (0, _react.forwardRef)((props, ref)=>{
+    const { className, style, children, prefixCls } = props;
+    const iconWrapperCls = (0, _classnamesDefault.default)(`${prefixCls}-icon`, className);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("span", {
+        ref: ref,
+        className: iconWrapperCls,
+        style: style
+    }, children);
+});
+exports.default = IconWrapper;
+
+},{"react":"21dqq","classnames":"jocGM","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gc8N8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _loadingOutlined = require("@ant-design/icons/es/icons/LoadingOutlined");
+var _loadingOutlinedDefault = parcelHelpers.interopDefault(_loadingOutlined);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _iconWrapper = require("./IconWrapper");
+var _iconWrapperDefault = parcelHelpers.interopDefault(_iconWrapper);
+"use client";
+const InnerLoadingIcon = /*#__PURE__*/ (0, _react.forwardRef)((props, ref)=>{
+    const { prefixCls, className, style, iconClassName } = props;
+    const mergedIconCls = (0, _classnamesDefault.default)(`${prefixCls}-loading-icon`, className);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _iconWrapperDefault.default), {
+        prefixCls: prefixCls,
+        className: mergedIconCls,
+        style: style,
+        ref: ref
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _loadingOutlinedDefault.default), {
+        className: iconClassName
+    }));
+});
+const getCollapsedWidth = ()=>({
+        width: 0,
+        opacity: 0,
+        transform: "scale(0)"
+    });
+const getRealWidth = (node)=>({
+        width: node.scrollWidth,
+        opacity: 1,
+        transform: "scale(1)"
+    });
+const LoadingIcon = (props)=>{
+    const { prefixCls, loading, existIcon, className, style } = props;
+    const visible = !!loading;
+    if (existIcon) return /*#__PURE__*/ (0, _reactDefault.default).createElement(InnerLoadingIcon, {
+        prefixCls: prefixCls,
+        className: className,
+        style: style
+    });
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _rcMotionDefault.default), {
+        visible: visible,
+        // We do not really use this motionName
+        motionName: `${prefixCls}-loading-icon-motion`,
+        motionLeave: visible,
+        removeOnLeave: true,
+        onAppearStart: getCollapsedWidth,
+        onAppearActive: getRealWidth,
+        onEnterStart: getCollapsedWidth,
+        onEnterActive: getRealWidth,
+        onLeaveStart: getRealWidth,
+        onLeaveActive: getCollapsedWidth
+    }, (_ref, ref)=>{
+        let { className: motionCls, style: motionStyle } = _ref;
+        return /*#__PURE__*/ (0, _reactDefault.default).createElement(InnerLoadingIcon, {
+            prefixCls: prefixCls,
+            className: className,
+            style: Object.assign(Object.assign({}, style), motionStyle),
+            ref: ref,
+            iconClassName: motionCls
+        });
+    });
+};
+exports.default = LoadingIcon;
+
+},{"react":"21dqq","@ant-design/icons/es/icons/LoadingOutlined":"1Fi2e","classnames":"jocGM","rc-motion":"aaavi","./IconWrapper":"fljqK","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1Fi2e":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _loadingOutlined = require("@ant-design/icons-svg/es/asn/LoadingOutlined");
+var _loadingOutlinedDefault = parcelHelpers.interopDefault(_loadingOutlined);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var LoadingOutlined = function LoadingOutlined(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _loadingOutlinedDefault.default)
+    }));
+};
+/**![loading](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTk4OCA1NDhjLTE5LjkgMC0zNi0xNi4xLTM2LTM2IDAtNTkuNC0xMS42LTExNy0zNC42LTE3MS4zYTQ0MC40NSA0NDAuNDUgMCAwMC05NC4zLTEzOS45IDQzNy43MSA0MzcuNzEgMCAwMC0xMzkuOS05NC4zQzYyOSA4My42IDU3MS40IDcyIDUxMiA3MmMtMTkuOSAwLTM2LTE2LjEtMzYtMzZzMTYuMS0zNiAzNi0zNmM2OS4xIDAgMTM2LjIgMTMuNSAxOTkuMyA0MC4zQzc3Mi4zIDY2IDgyNyAxMDMgODc0IDE1MGM0NyA0NyA4My45IDEwMS44IDEwOS43IDE2Mi43IDI2LjcgNjMuMSA0MC4yIDEzMC4yIDQwLjIgMTk5LjMuMSAxOS45LTE2IDM2LTM1LjkgMzZ6IiAvPjwvc3ZnPg==) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(LoadingOutlined);
+RefIcon.displayName = "LoadingOutlined";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/LoadingOutlined":"1fpzt","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1fpzt":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var LoadingOutlined = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "0 0 1024 1024",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 00-94.3-139.9 437.71 437.71 0 00-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"
+                }
+            }
+        ]
+    },
+    "name": "loading",
+    "theme": "outlined"
+};
+exports.default = LoadingOutlined;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kkong":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _colors = require("@ant-design/colors");
+var _context = require("./Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+var _iconBase = require("./IconBase");
+var _iconBaseDefault = parcelHelpers.interopDefault(_iconBase);
+var _twoTonePrimaryColor = require("./twoTonePrimaryColor");
+var _utils = require("../utils");
+"use client";
+var _excluded = [
+    "className",
+    "icon",
+    "spin",
+    "rotate",
+    "tabIndex",
+    "onClick",
+    "twoToneColor"
+];
+// Initial setting
+// should move it to antd main repo?
+(0, _twoTonePrimaryColor.setTwoToneColor)((0, _colors.blue).primary);
+// https://github.com/DefinitelyTyped/DefinitelyTyped/issues/34757#issuecomment-488848720
+var Icon = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var className = props.className, icon = props.icon, spin = props.spin, rotate = props.rotate, tabIndex = props.tabIndex, onClick = props.onClick, twoToneColor = props.twoToneColor, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var _React$useContext = _react.useContext((0, _contextDefault.default)), _React$useContext$pre = _React$useContext.prefixCls, prefixCls = _React$useContext$pre === void 0 ? "anticon" : _React$useContext$pre, rootClassName = _React$useContext.rootClassName;
+    var classString = (0, _classnamesDefault.default)(rootClassName, prefixCls, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-").concat(icon.name), !!icon.name), "".concat(prefixCls, "-spin"), !!spin || icon.name === "loading"), className);
+    var iconTabIndex = tabIndex;
+    if (iconTabIndex === undefined && onClick) iconTabIndex = -1;
+    var svgStyle = rotate ? {
+        msTransform: "rotate(".concat(rotate, "deg)"),
+        transform: "rotate(".concat(rotate, "deg)")
+    } : undefined;
+    var _normalizeTwoToneColo = (0, _utils.normalizeTwoToneColors)(twoToneColor), _normalizeTwoToneColo2 = (0, _slicedToArrayDefault.default)(_normalizeTwoToneColo, 2), primaryColor = _normalizeTwoToneColo2[0], secondaryColor = _normalizeTwoToneColo2[1];
+    return /*#__PURE__*/ _react.createElement("span", (0, _extendsDefault.default)({
+        role: "img",
+        "aria-label": icon.name
+    }, restProps, {
+        ref: ref,
+        tabIndex: iconTabIndex,
+        onClick: onClick,
+        className: classString
+    }), /*#__PURE__*/ _react.createElement((0, _iconBaseDefault.default), {
+        icon: icon,
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor,
+        style: svgStyle
+    }));
+});
+Icon.displayName = "AntdIcon";
+Icon.getTwoToneColor = (0, _twoTonePrimaryColor.getTwoToneColor);
+Icon.setTwoToneColor = (0, _twoTonePrimaryColor.setTwoToneColor);
+exports.default = Icon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","@ant-design/colors":"7O27E","./Context":"dIWfS","./IconBase":"beKS9","./twoTonePrimaryColor":"cs45k","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"beKS9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+var _utils = require("../utils");
+var _excluded = [
+    "icon",
+    "className",
+    "onClick",
+    "style",
+    "primaryColor",
+    "secondaryColor"
+];
+var twoToneColorPalette = {
+    primaryColor: "#333",
+    secondaryColor: "#E6E6E6",
+    calculated: false
+};
+function setTwoToneColors(_ref) {
+    var primaryColor = _ref.primaryColor, secondaryColor = _ref.secondaryColor;
+    twoToneColorPalette.primaryColor = primaryColor;
+    twoToneColorPalette.secondaryColor = secondaryColor || (0, _utils.getSecondaryColor)(primaryColor);
+    twoToneColorPalette.calculated = !!secondaryColor;
+}
+function getTwoToneColors() {
+    return (0, _objectSpread2Default.default)({}, twoToneColorPalette);
+}
+var IconBase = function IconBase(props) {
+    var icon = props.icon, className = props.className, onClick = props.onClick, style = props.style, primaryColor = props.primaryColor, secondaryColor = props.secondaryColor, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
+    var svgRef = _react.useRef();
+    var colors = twoToneColorPalette;
+    if (primaryColor) colors = {
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor || (0, _utils.getSecondaryColor)(primaryColor)
+    };
+    (0, _utils.useInsertStyles)(svgRef);
+    (0, _utils.warning)((0, _utils.isIconDefinition)(icon), "icon should be icon definiton, but got ".concat(icon));
+    if (!(0, _utils.isIconDefinition)(icon)) return null;
+    var target = icon;
+    if (target && typeof target.icon === "function") target = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, target), {}, {
+        icon: target.icon(colors.primaryColor, colors.secondaryColor)
+    });
+    return (0, _utils.generate)(target.icon, "svg-".concat(target.name), (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+        className: className,
+        onClick: onClick,
+        style: style,
+        "data-icon": target.name,
+        width: "1em",
+        height: "1em",
+        fill: "currentColor",
+        "aria-hidden": "true"
+    }, restProps), {}, {
+        ref: svgRef
+    }));
+};
+IconBase.displayName = "IconReact";
+IconBase.getTwoToneColors = getTwoToneColors;
+IconBase.setTwoToneColors = setTwoToneColors;
+exports.default = IconBase;
+
+},{"@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aP1dF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "warning", ()=>warning);
+parcelHelpers.export(exports, "isIconDefinition", ()=>isIconDefinition);
+parcelHelpers.export(exports, "normalizeAttrs", ()=>normalizeAttrs);
+parcelHelpers.export(exports, "generate", ()=>generate);
+parcelHelpers.export(exports, "getSecondaryColor", ()=>getSecondaryColor);
+parcelHelpers.export(exports, "normalizeTwoToneColors", ()=>normalizeTwoToneColors);
+parcelHelpers.export(exports, "svgBaseProps", ()=>svgBaseProps);
+parcelHelpers.export(exports, "iconStyles", ()=>iconStyles);
+parcelHelpers.export(exports, "useInsertStyles", ()=>useInsertStyles);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _colors = require("@ant-design/colors");
+var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
+var _shadow = require("rc-util/es/Dom/shadow");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _context = require("./components/Context");
+var _contextDefault = parcelHelpers.interopDefault(_context);
+function camelCase(input) {
+    return input.replace(/-(.)/g, function(match, g) {
+        return g.toUpperCase();
+    });
+}
+function warning(valid, message) {
+    (0, _warningDefault.default)(valid, "[@ant-design/icons] ".concat(message));
+}
+function isIconDefinition(target) {
+    return (0, _typeofDefault.default)(target) === "object" && typeof target.name === "string" && typeof target.theme === "string" && ((0, _typeofDefault.default)(target.icon) === "object" || typeof target.icon === "function");
+}
+function normalizeAttrs() {
+    var attrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    return Object.keys(attrs).reduce(function(acc, key) {
+        var val = attrs[key];
+        switch(key){
+            case "class":
+                acc.className = val;
+                delete acc.class;
+                break;
+            default:
+                delete acc[key];
+                acc[camelCase(key)] = val;
+        }
+        return acc;
+    }, {});
+}
+function generate(node, key, rootProps) {
+    if (!rootProps) return /*#__PURE__*/ (0, _reactDefault.default).createElement(node.tag, (0, _objectSpread2Default.default)({
+        key: key
+    }, normalizeAttrs(node.attrs)), (node.children || []).map(function(child, index) {
+        return generate(child, "".concat(key, "-").concat(node.tag, "-").concat(index));
+    }));
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement(node.tag, (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+        key: key
+    }, normalizeAttrs(node.attrs)), rootProps), (node.children || []).map(function(child, index) {
+        return generate(child, "".concat(key, "-").concat(node.tag, "-").concat(index));
+    }));
+}
+function getSecondaryColor(primaryColor) {
+    // choose the second color
+    return (0, _colors.generate)(primaryColor)[0];
+}
+function normalizeTwoToneColors(twoToneColor) {
+    if (!twoToneColor) return [];
+    return Array.isArray(twoToneColor) ? twoToneColor : [
+        twoToneColor
+    ];
+}
+var svgBaseProps = {
+    width: "1em",
+    height: "1em",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    focusable: "false"
+};
+var iconStyles = "\n.anticon {\n  display: inline-flex;\n  align-items: center;\n  color: inherit;\n  font-style: normal;\n  line-height: 0;\n  text-align: center;\n  text-transform: none;\n  vertical-align: -0.125em;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.anticon > * {\n  line-height: 1;\n}\n\n.anticon svg {\n  display: inline-block;\n}\n\n.anticon::before {\n  display: none;\n}\n\n.anticon .anticon-icon {\n  display: block;\n}\n\n.anticon[tabindex] {\n  cursor: pointer;\n}\n\n.anticon-spin::before,\n.anticon-spin {\n  display: inline-block;\n  -webkit-animation: loadingCircle 1s infinite linear;\n  animation: loadingCircle 1s infinite linear;\n}\n\n@-webkit-keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n";
+var useInsertStyles = function useInsertStyles(eleRef) {
+    var _useContext = (0, _react.useContext)((0, _contextDefault.default)), csp = _useContext.csp, prefixCls = _useContext.prefixCls;
+    var mergedStyleStr = iconStyles;
+    if (prefixCls) mergedStyleStr = mergedStyleStr.replace(/anticon/g, prefixCls);
+    (0, _react.useEffect)(function() {
+        var ele = eleRef.current;
+        var shadowRoot = (0, _shadow.getShadowRoot)(ele);
+        (0, _dynamicCSS.updateCSS)(mergedStyleStr, "@ant-design-icons", {
+            prepend: true,
+            csp: csp,
+            attachTo: shadowRoot
+        });
+    }, []);
+};
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","@ant-design/colors":"7O27E","rc-util/es/Dom/dynamicCSS":"lfei6","rc-util/es/Dom/shadow":"5SLLq","rc-util/es/warning":"c7oua","react":"21dqq","./components/Context":"dIWfS","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5SLLq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Check if is in shadowRoot
+ */ parcelHelpers.export(exports, "inShadow", ()=>inShadow);
+/**
+ * Return shadowRoot if possible
+ */ parcelHelpers.export(exports, "getShadowRoot", ()=>getShadowRoot);
+function getRoot(ele) {
+    var _ele$getRootNode;
+    return ele === null || ele === void 0 || (_ele$getRootNode = ele.getRootNode) === null || _ele$getRootNode === void 0 ? void 0 : _ele$getRootNode.call(ele);
+}
+function inShadow(ele) {
+    return getRoot(ele) instanceof ShadowRoot;
+}
+function getShadowRoot(ele) {
+    return inShadow(ele) ? getRoot(ele) : null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cs45k":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "setTwoToneColor", ()=>setTwoToneColor);
+parcelHelpers.export(exports, "getTwoToneColor", ()=>getTwoToneColor);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _iconBase = require("./IconBase");
+var _iconBaseDefault = parcelHelpers.interopDefault(_iconBase);
+var _utils = require("../utils");
+function setTwoToneColor(twoToneColor) {
+    var _normalizeTwoToneColo = (0, _utils.normalizeTwoToneColors)(twoToneColor), _normalizeTwoToneColo2 = (0, _slicedToArrayDefault.default)(_normalizeTwoToneColo, 2), primaryColor = _normalizeTwoToneColo2[0], secondaryColor = _normalizeTwoToneColo2[1];
+    return (0, _iconBaseDefault.default).setTwoToneColors({
+        primaryColor: primaryColor,
+        secondaryColor: secondaryColor
+    });
+}
+function getTwoToneColor() {
+    var colors = (0, _iconBaseDefault.default).getTwoToneColors();
+    if (!colors.calculated) return colors.primaryColor;
+    return [
+        colors.primaryColor,
+        colors.secondaryColor
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","./IconBase":"beKS9","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5Ml60":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cssinjs = require("@ant-design/cssinjs");
+var _style = require("../../style");
+var _internal = require("../../theme/internal");
+var _group = require("./group");
+var _groupDefault = parcelHelpers.interopDefault(_group);
+var _token = require("./token");
+// ============================== Shared ==============================
+const genSharedButtonStyle = (token)=>{
+    const { componentCls, iconCls, fontWeight } = token;
+    return {
+        [componentCls]: {
+            outline: "none",
+            position: "relative",
+            display: "inline-flex",
+            gap: token.marginXS,
+            alignItems: "center",
+            justifyContent: "center",
+            fontWeight,
+            whiteSpace: "nowrap",
+            textAlign: "center",
+            backgroundImage: "none",
+            background: "transparent",
+            border: `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} transparent`,
+            cursor: "pointer",
+            transition: `all ${token.motionDurationMid} ${token.motionEaseInOut}`,
+            userSelect: "none",
+            touchAction: "manipulation",
+            color: token.colorText,
+            "&:disabled > *": {
+                pointerEvents: "none"
+            },
+            "> span": {
+                display: "inline-block"
+            },
+            [`${componentCls}-icon`]: {
+                lineHeight: 1
+            },
+            "> a": {
+                color: "currentColor"
+            },
+            "&:not(:disabled)": Object.assign({}, (0, _style.genFocusStyle)(token)),
+            [`&${componentCls}-two-chinese-chars::first-letter`]: {
+                letterSpacing: "0.34em"
+            },
+            [`&${componentCls}-two-chinese-chars > *:not(${iconCls})`]: {
+                marginInlineEnd: "-0.34em",
+                letterSpacing: "0.34em"
+            },
+            // iconPosition="end"
+            "&-icon-end": {
+                flexDirection: "row-reverse"
+            }
+        }
+    };
+};
+const genHoverActiveButtonStyle = (btnCls, hoverStyle, activeStyle)=>({
+        [`&:not(:disabled):not(${btnCls}-disabled)`]: {
+            "&:hover": hoverStyle,
+            "&:active": activeStyle
+        }
+    });
+// ============================== Shape ===============================
+const genCircleButtonStyle = (token)=>({
+        minWidth: token.controlHeight,
+        paddingInlineStart: 0,
+        paddingInlineEnd: 0,
+        borderRadius: "50%"
+    });
+const genRoundButtonStyle = (token)=>({
+        borderRadius: token.controlHeight,
+        paddingInlineStart: token.calc(token.controlHeight).div(2).equal(),
+        paddingInlineEnd: token.calc(token.controlHeight).div(2).equal()
+    });
+// =============================== Type ===============================
+const genDisabledStyle = (token)=>({
+        cursor: "not-allowed",
+        borderColor: token.borderColorDisabled,
+        color: token.colorTextDisabled,
+        background: token.colorBgContainerDisabled,
+        boxShadow: "none"
+    });
+const genGhostButtonStyle = (btnCls, background, textColor, borderColor, textColorDisabled, borderColorDisabled, hoverStyle, activeStyle)=>({
+        [`&${btnCls}-background-ghost`]: Object.assign(Object.assign({
+            color: textColor || undefined,
+            background,
+            borderColor: borderColor || undefined,
+            boxShadow: "none"
+        }, genHoverActiveButtonStyle(btnCls, Object.assign({
+            background
+        }, hoverStyle), Object.assign({
+            background
+        }, activeStyle))), {
+            "&:disabled": {
+                cursor: "not-allowed",
+                color: textColorDisabled || undefined,
+                borderColor: borderColorDisabled || undefined
+            }
+        })
+    });
+const genSolidDisabledButtonStyle = (token)=>({
+        [`&:disabled, &${token.componentCls}-disabled`]: Object.assign({}, genDisabledStyle(token))
+    });
+const genSolidButtonStyle = (token)=>Object.assign({}, genSolidDisabledButtonStyle(token));
+const genPureDisabledButtonStyle = (token)=>({
+        [`&:disabled, &${token.componentCls}-disabled`]: {
+            cursor: "not-allowed",
+            color: token.colorTextDisabled
+        }
+    });
+// Type: Default
+const genDefaultButtonStyle = (token)=>Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, genSolidButtonStyle(token)), {
+        background: token.defaultBg,
+        borderColor: token.defaultBorderColor,
+        color: token.defaultColor,
+        boxShadow: token.defaultShadow
+    }), genHoverActiveButtonStyle(token.componentCls, {
+        color: token.defaultHoverColor,
+        borderColor: token.defaultHoverBorderColor,
+        background: token.defaultHoverBg
+    }, {
+        color: token.defaultActiveColor,
+        borderColor: token.defaultActiveBorderColor,
+        background: token.defaultActiveBg
+    })), genGhostButtonStyle(token.componentCls, token.ghostBg, token.defaultGhostColor, token.defaultGhostBorderColor, token.colorTextDisabled, token.colorBorder)), {
+        [`&${token.componentCls}-dangerous`]: Object.assign(Object.assign(Object.assign({
+            color: token.colorError,
+            borderColor: token.colorError
+        }, genHoverActiveButtonStyle(token.componentCls, {
+            color: token.colorErrorHover,
+            borderColor: token.colorErrorBorderHover
+        }, {
+            color: token.colorErrorActive,
+            borderColor: token.colorErrorActive
+        })), genGhostButtonStyle(token.componentCls, token.ghostBg, token.colorError, token.colorError, token.colorTextDisabled, token.colorBorder)), genSolidDisabledButtonStyle(token))
+    });
+// Type: Primary
+const genPrimaryButtonStyle = (token)=>Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, genSolidButtonStyle(token)), {
+        color: token.primaryColor,
+        background: token.colorPrimary,
+        boxShadow: token.primaryShadow
+    }), genHoverActiveButtonStyle(token.componentCls, {
+        color: token.colorTextLightSolid,
+        background: token.colorPrimaryHover
+    }, {
+        color: token.colorTextLightSolid,
+        background: token.colorPrimaryActive
+    })), genGhostButtonStyle(token.componentCls, token.ghostBg, token.colorPrimary, token.colorPrimary, token.colorTextDisabled, token.colorBorder, {
+        color: token.colorPrimaryHover,
+        borderColor: token.colorPrimaryHover
+    }, {
+        color: token.colorPrimaryActive,
+        borderColor: token.colorPrimaryActive
+    })), {
+        [`&${token.componentCls}-dangerous`]: Object.assign(Object.assign(Object.assign({
+            background: token.colorError,
+            boxShadow: token.dangerShadow,
+            color: token.dangerColor
+        }, genHoverActiveButtonStyle(token.componentCls, {
+            background: token.colorErrorHover
+        }, {
+            background: token.colorErrorActive
+        })), genGhostButtonStyle(token.componentCls, token.ghostBg, token.colorError, token.colorError, token.colorTextDisabled, token.colorBorder, {
+            color: token.colorErrorHover,
+            borderColor: token.colorErrorHover
+        }, {
+            color: token.colorErrorActive,
+            borderColor: token.colorErrorActive
+        })), genSolidDisabledButtonStyle(token))
+    });
+// Type: Dashed
+const genDashedButtonStyle = (token)=>Object.assign(Object.assign({}, genDefaultButtonStyle(token)), {
+        borderStyle: "dashed"
+    });
+// Type: Link
+const genLinkButtonStyle = (token)=>Object.assign(Object.assign(Object.assign({
+        color: token.colorLink
+    }, genHoverActiveButtonStyle(token.componentCls, {
+        color: token.colorLinkHover,
+        background: token.linkHoverBg
+    }, {
+        color: token.colorLinkActive
+    })), genPureDisabledButtonStyle(token)), {
+        [`&${token.componentCls}-dangerous`]: Object.assign(Object.assign({
+            color: token.colorError
+        }, genHoverActiveButtonStyle(token.componentCls, {
+            color: token.colorErrorHover
+        }, {
+            color: token.colorErrorActive
+        })), genPureDisabledButtonStyle(token))
+    });
+// Type: Text
+const genTextButtonStyle = (token)=>Object.assign(Object.assign(Object.assign({}, genHoverActiveButtonStyle(token.componentCls, {
+        color: token.colorText,
+        background: token.textHoverBg
+    }, {
+        color: token.colorText,
+        background: token.colorBgTextActive
+    })), genPureDisabledButtonStyle(token)), {
+        [`&${token.componentCls}-dangerous`]: Object.assign(Object.assign({
+            color: token.colorError
+        }, genPureDisabledButtonStyle(token)), genHoverActiveButtonStyle(token.componentCls, {
+            color: token.colorErrorHover,
+            background: token.colorErrorBg
+        }, {
+            color: token.colorErrorHover,
+            background: token.colorErrorBgActive
+        }))
+    });
+const genTypeButtonStyle = (token)=>{
+    const { componentCls } = token;
+    return {
+        [`${componentCls}-default`]: genDefaultButtonStyle(token),
+        [`${componentCls}-primary`]: genPrimaryButtonStyle(token),
+        [`${componentCls}-dashed`]: genDashedButtonStyle(token),
+        [`${componentCls}-link`]: genLinkButtonStyle(token),
+        [`${componentCls}-text`]: genTextButtonStyle(token),
+        [`${componentCls}-ghost`]: genGhostButtonStyle(token.componentCls, token.ghostBg, token.colorBgContainer, token.colorBgContainer, token.colorTextDisabled, token.colorBorder)
+    };
+};
+// =============================== Size ===============================
+const genButtonStyle = function(token) {
+    let prefixCls = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
+    const { componentCls, controlHeight, fontSize, lineHeight, borderRadius, buttonPaddingHorizontal, iconCls, buttonPaddingVertical } = token;
+    const iconOnlyCls = `${componentCls}-icon-only`;
+    return [
+        {
+            [`${prefixCls}`]: {
+                fontSize,
+                lineHeight,
+                height: controlHeight,
+                padding: `${(0, _cssinjs.unit)(buttonPaddingVertical)} ${(0, _cssinjs.unit)(buttonPaddingHorizontal)}`,
+                borderRadius,
+                [`&${iconOnlyCls}`]: {
+                    width: controlHeight,
+                    paddingInline: 0,
+                    // make `btn-icon-only` not too narrow
+                    [`&${componentCls}-compact-item`]: {
+                        flex: "none"
+                    },
+                    [`&${componentCls}-round`]: {
+                        width: "auto"
+                    },
+                    [iconCls]: {
+                        fontSize: token.buttonIconOnlyFontSize
+                    }
+                },
+                // Loading
+                [`&${componentCls}-loading`]: {
+                    opacity: token.opacityLoading,
+                    cursor: "default"
+                },
+                [`${componentCls}-loading-icon`]: {
+                    transition: `width ${token.motionDurationSlow} ${token.motionEaseInOut}, opacity ${token.motionDurationSlow} ${token.motionEaseInOut}`
+                }
+            }
+        },
+        // Shape - patch prefixCls again to override solid border radius style
+        {
+            [`${componentCls}${componentCls}-circle${prefixCls}`]: genCircleButtonStyle(token)
+        },
+        {
+            [`${componentCls}${componentCls}-round${prefixCls}`]: genRoundButtonStyle(token)
+        }
+    ];
+};
+const genSizeBaseButtonStyle = (token)=>{
+    const baseToken = (0, _internal.mergeToken)(token, {
+        fontSize: token.contentFontSize,
+        lineHeight: token.contentLineHeight
+    });
+    return genButtonStyle(baseToken, token.componentCls);
+};
+const genSizeSmallButtonStyle = (token)=>{
+    const smallToken = (0, _internal.mergeToken)(token, {
+        controlHeight: token.controlHeightSM,
+        fontSize: token.contentFontSizeSM,
+        lineHeight: token.contentLineHeightSM,
+        padding: token.paddingXS,
+        buttonPaddingHorizontal: token.paddingInlineSM,
+        buttonPaddingVertical: token.paddingBlockSM,
+        borderRadius: token.borderRadiusSM,
+        buttonIconOnlyFontSize: token.onlyIconSizeSM
+    });
+    return genButtonStyle(smallToken, `${token.componentCls}-sm`);
+};
+const genSizeLargeButtonStyle = (token)=>{
+    const largeToken = (0, _internal.mergeToken)(token, {
+        controlHeight: token.controlHeightLG,
+        fontSize: token.contentFontSizeLG,
+        lineHeight: token.contentLineHeightLG,
+        buttonPaddingHorizontal: token.paddingInlineLG,
+        buttonPaddingVertical: token.paddingBlockLG,
+        borderRadius: token.borderRadiusLG,
+        buttonIconOnlyFontSize: token.onlyIconSizeLG
+    });
+    return genButtonStyle(largeToken, `${token.componentCls}-lg`);
+};
+const genBlockButtonStyle = (token)=>{
+    const { componentCls } = token;
+    return {
+        [componentCls]: {
+            [`&${componentCls}-block`]: {
+                width: "100%"
+            }
+        }
+    };
+};
+// ============================== Export ==============================
+exports.default = (0, _internal.genStyleHooks)("Button", (token)=>{
+    const buttonToken = (0, _token.prepareToken)(token);
+    return [
+        // Shared
+        genSharedButtonStyle(buttonToken),
+        // Size
+        genSizeBaseButtonStyle(buttonToken),
+        genSizeSmallButtonStyle(buttonToken),
+        genSizeLargeButtonStyle(buttonToken),
+        // Block
+        genBlockButtonStyle(buttonToken),
+        // Group (type, ghost, danger, loading)
+        genTypeButtonStyle(buttonToken),
+        // Button Group
+        (0, _groupDefault.default)(buttonToken)
+    ];
+}, (0, _token.prepareComponentToken), {
+    unitless: {
+        fontWeight: true,
+        contentLineHeight: true,
+        contentLineHeightSM: true,
+        contentLineHeightLG: true
+    }
+});
+
+},{"@ant-design/cssinjs":"k46HC","../../style":"b1Psq","../../theme/internal":"7S7jp","./group":"4tHXI","./token":"eT6db","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4tHXI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const genButtonBorderStyle = (buttonTypeCls, borderColor)=>({
+        // Border
+        [`> span, > ${buttonTypeCls}`]: {
+            "&:not(:last-child)": {
+                [`&, & > ${buttonTypeCls}`]: {
+                    "&:not(:disabled)": {
+                        borderInlineEndColor: borderColor
+                    }
+                }
+            },
+            "&:not(:first-child)": {
+                [`&, & > ${buttonTypeCls}`]: {
+                    "&:not(:disabled)": {
+                        borderInlineStartColor: borderColor
+                    }
+                }
+            }
+        }
+    });
+const genGroupStyle = (token)=>{
+    const { componentCls, fontSize, lineWidth, groupBorderColor, colorErrorHover } = token;
+    return {
+        [`${componentCls}-group`]: [
+            {
+                position: "relative",
+                display: "inline-flex",
+                // Border
+                [`> span, > ${componentCls}`]: {
+                    "&:not(:last-child)": {
+                        [`&, & > ${componentCls}`]: {
+                            borderStartEndRadius: 0,
+                            borderEndEndRadius: 0
+                        }
+                    },
+                    "&:not(:first-child)": {
+                        marginInlineStart: token.calc(lineWidth).mul(-1).equal(),
+                        [`&, & > ${componentCls}`]: {
+                            borderStartStartRadius: 0,
+                            borderEndStartRadius: 0
+                        }
+                    }
+                },
+                [componentCls]: {
+                    position: "relative",
+                    zIndex: 1,
+                    [`&:hover,
+          &:focus,
+          &:active`]: {
+                        zIndex: 2
+                    },
+                    "&[disabled]": {
+                        zIndex: 0
+                    }
+                },
+                [`${componentCls}-icon-only`]: {
+                    fontSize
+                }
+            },
+            // Border Color
+            genButtonBorderStyle(`${componentCls}-primary`, groupBorderColor),
+            genButtonBorderStyle(`${componentCls}-danger`, colorErrorHover)
+        ]
+    };
+};
+exports.default = genGroupStyle;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"eT6db":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "prepareToken", ()=>prepareToken);
+parcelHelpers.export(exports, "prepareComponentToken", ()=>prepareComponentToken);
+var _internal = require("../../theme/internal");
+const prepareToken = (token)=>{
+    const { paddingInline, onlyIconSize, paddingBlock } = token;
+    const buttonToken = (0, _internal.mergeToken)(token, {
+        buttonPaddingHorizontal: paddingInline,
+        buttonPaddingVertical: paddingBlock,
+        buttonIconOnlyFontSize: onlyIconSize
+    });
+    return buttonToken;
+};
+const prepareComponentToken = (token)=>{
+    var _a, _b, _c, _d, _e, _f;
+    const contentFontSize = (_a = token.contentFontSize) !== null && _a !== void 0 ? _a : token.fontSize;
+    const contentFontSizeSM = (_b = token.contentFontSizeSM) !== null && _b !== void 0 ? _b : token.fontSize;
+    const contentFontSizeLG = (_c = token.contentFontSizeLG) !== null && _c !== void 0 ? _c : token.fontSizeLG;
+    const contentLineHeight = (_d = token.contentLineHeight) !== null && _d !== void 0 ? _d : (0, _internal.getLineHeight)(contentFontSize);
+    const contentLineHeightSM = (_e = token.contentLineHeightSM) !== null && _e !== void 0 ? _e : (0, _internal.getLineHeight)(contentFontSizeSM);
+    const contentLineHeightLG = (_f = token.contentLineHeightLG) !== null && _f !== void 0 ? _f : (0, _internal.getLineHeight)(contentFontSizeLG);
+    return {
+        fontWeight: 400,
+        defaultShadow: `0 ${token.controlOutlineWidth}px 0 ${token.controlTmpOutline}`,
+        primaryShadow: `0 ${token.controlOutlineWidth}px 0 ${token.controlOutline}`,
+        dangerShadow: `0 ${token.controlOutlineWidth}px 0 ${token.colorErrorOutline}`,
+        primaryColor: token.colorTextLightSolid,
+        dangerColor: token.colorTextLightSolid,
+        borderColorDisabled: token.colorBorder,
+        defaultGhostColor: token.colorBgContainer,
+        ghostBg: "transparent",
+        defaultGhostBorderColor: token.colorBgContainer,
+        paddingInline: token.paddingContentHorizontal - token.lineWidth,
+        paddingInlineLG: token.paddingContentHorizontal - token.lineWidth,
+        paddingInlineSM: 8 - token.lineWidth,
+        onlyIconSize: token.fontSizeLG,
+        onlyIconSizeSM: token.fontSizeLG - 2,
+        onlyIconSizeLG: token.fontSizeLG + 2,
+        groupBorderColor: token.colorPrimaryHover,
+        linkHoverBg: "transparent",
+        textHoverBg: token.colorBgTextHover,
+        defaultColor: token.colorText,
+        defaultBg: token.colorBgContainer,
+        defaultBorderColor: token.colorBorder,
+        defaultBorderColorDisabled: token.colorBorder,
+        defaultHoverBg: token.colorBgContainer,
+        defaultHoverColor: token.colorPrimaryHover,
+        defaultHoverBorderColor: token.colorPrimaryHover,
+        defaultActiveBg: token.colorBgContainer,
+        defaultActiveColor: token.colorPrimaryActive,
+        defaultActiveBorderColor: token.colorPrimaryActive,
+        contentFontSize,
+        contentFontSizeSM,
+        contentFontSizeLG,
+        contentLineHeight,
+        contentLineHeightSM,
+        contentLineHeightLG,
+        paddingBlock: Math.max((token.controlHeight - contentFontSize * contentLineHeight) / 2 - token.lineWidth, 0),
+        paddingBlockSM: Math.max((token.controlHeightSM - contentFontSizeSM * contentLineHeightSM) / 2 - token.lineWidth, 0),
+        paddingBlockLG: Math.max((token.controlHeightLG - contentFontSizeLG * contentLineHeightLG) / 2 - token.lineWidth, 0)
+    };
+};
+
+},{"../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cGtco":[function(require,module,exports) {
+// Style as inline component
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cssinjs = require("@ant-design/cssinjs");
+var _compactItem = require("../../style/compact-item");
+var _compactItemVertical = require("../../style/compact-item-vertical");
+var _internal = require("../../theme/internal");
+var _token = require("./token");
+const genButtonCompactStyle = (token)=>{
+    const { componentCls, calc } = token;
+    return {
+        [componentCls]: {
+            // Special styles for Primary Button
+            [`&-compact-item${componentCls}-primary`]: {
+                [`&:not([disabled]) + ${componentCls}-compact-item${componentCls}-primary:not([disabled])`]: {
+                    position: "relative",
+                    "&:before": {
+                        position: "absolute",
+                        top: calc(token.lineWidth).mul(-1).equal(),
+                        insetInlineStart: calc(token.lineWidth).mul(-1).equal(),
+                        display: "inline-block",
+                        width: token.lineWidth,
+                        height: `calc(100% + ${(0, _cssinjs.unit)(token.lineWidth)} * 2)`,
+                        backgroundColor: token.colorPrimaryHover,
+                        content: '""'
+                    }
+                }
+            },
+            // Special styles for Primary Button
+            "&-compact-vertical-item": {
+                [`&${componentCls}-primary`]: {
+                    [`&:not([disabled]) + ${componentCls}-compact-vertical-item${componentCls}-primary:not([disabled])`]: {
+                        position: "relative",
+                        "&:before": {
+                            position: "absolute",
+                            top: calc(token.lineWidth).mul(-1).equal(),
+                            insetInlineStart: calc(token.lineWidth).mul(-1).equal(),
+                            display: "inline-block",
+                            width: `calc(100% + ${(0, _cssinjs.unit)(token.lineWidth)} * 2)`,
+                            height: token.lineWidth,
+                            backgroundColor: token.colorPrimaryHover,
+                            content: '""'
+                        }
+                    }
+                }
+            }
+        }
+    };
+};
+// ============================== Export ==============================
+exports.default = (0, _internal.genSubStyleComponent)([
+    "Button",
+    "compact"
+], (token)=>{
+    const buttonToken = (0, _token.prepareToken)(token);
+    return [
+        // Space Compact
+        (0, _compactItem.genCompactItemStyle)(buttonToken),
+        (0, _compactItemVertical.genCompactItemVerticalStyle)(buttonToken),
+        genButtonCompactStyle(buttonToken)
+    ];
+}, (0, _token.prepareComponentToken));
+
+},{"@ant-design/cssinjs":"k46HC","../../style/compact-item":"15vsi","../../style/compact-item-vertical":"9eyfc","../../theme/internal":"7S7jp","./token":"eT6db","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"15vsi":[function(require,module,exports) {
+// handle border collapse
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "genCompactItemStyle", ()=>genCompactItemStyle);
+function compactItemBorder(token, parentCls, options) {
+    const { focusElCls, focus, borderElCls } = options;
+    const childCombinator = borderElCls ? "> *" : "";
+    const hoverEffects = [
+        "hover",
+        focus ? "focus" : null,
+        "active"
+    ].filter(Boolean).map((n)=>`&:${n} ${childCombinator}`).join(",");
+    return {
+        [`&-item:not(${parentCls}-last-item)`]: {
+            marginInlineEnd: token.calc(token.lineWidth).mul(-1).equal()
+        },
+        "&-item": Object.assign(Object.assign({
+            [hoverEffects]: {
+                zIndex: 2
+            }
+        }, focusElCls ? {
+            [`&${focusElCls}`]: {
+                zIndex: 2
+            }
+        } : {}), {
+            [`&[disabled] ${childCombinator}`]: {
+                zIndex: 0
+            }
+        })
+    };
+}
+// handle border-radius
+function compactItemBorderRadius(prefixCls, parentCls, options) {
+    const { borderElCls } = options;
+    const childCombinator = borderElCls ? `> ${borderElCls}` : "";
+    return {
+        [`&-item:not(${parentCls}-first-item):not(${parentCls}-last-item) ${childCombinator}`]: {
+            borderRadius: 0
+        },
+        [`&-item:not(${parentCls}-last-item)${parentCls}-first-item`]: {
+            [`& ${childCombinator}, &${prefixCls}-sm ${childCombinator}, &${prefixCls}-lg ${childCombinator}`]: {
+                borderStartEndRadius: 0,
+                borderEndEndRadius: 0
+            }
+        },
+        [`&-item:not(${parentCls}-first-item)${parentCls}-last-item`]: {
+            [`& ${childCombinator}, &${prefixCls}-sm ${childCombinator}, &${prefixCls}-lg ${childCombinator}`]: {
+                borderStartStartRadius: 0,
+                borderEndStartRadius: 0
+            }
+        }
+    };
+}
+function genCompactItemStyle(token) {
+    let options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+        focus: true
+    };
+    const { componentCls } = token;
+    const compactCls = `${componentCls}-compact`;
+    return {
+        [compactCls]: Object.assign(Object.assign({}, compactItemBorder(token, compactCls, options)), compactItemBorderRadius(componentCls, compactCls, options))
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9eyfc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "genCompactItemVerticalStyle", ()=>genCompactItemVerticalStyle);
+function compactItemVerticalBorder(token, parentCls) {
+    return {
+        // border collapse
+        [`&-item:not(${parentCls}-last-item)`]: {
+            marginBottom: token.calc(token.lineWidth).mul(-1).equal()
+        },
+        "&-item": {
+            "&:hover,&:focus,&:active": {
+                zIndex: 2
+            },
+            "&[disabled]": {
+                zIndex: 0
+            }
+        }
+    };
+}
+function compactItemBorderVerticalRadius(prefixCls, parentCls) {
+    return {
+        [`&-item:not(${parentCls}-first-item):not(${parentCls}-last-item)`]: {
+            borderRadius: 0
+        },
+        [`&-item${parentCls}-first-item:not(${parentCls}-last-item)`]: {
+            [`&, &${prefixCls}-sm, &${prefixCls}-lg`]: {
+                borderEndEndRadius: 0,
+                borderEndStartRadius: 0
+            }
+        },
+        [`&-item${parentCls}-last-item:not(${parentCls}-first-item)`]: {
+            [`&, &${prefixCls}-sm, &${prefixCls}-lg`]: {
+                borderStartStartRadius: 0,
+                borderStartEndRadius: 0
+            }
+        }
+    };
+}
+function genCompactItemVerticalStyle(token) {
+    const compactCls = `${token.componentCls}-compact-vertical`;
+    return {
+        [compactCls]: Object.assign(Object.assign({}, compactItemVerticalBorder(token, compactCls)), compactItemBorderVerticalRadius(token.componentCls, compactCls))
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6brkx":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _card = require("./Card");
+var _cardDefault = parcelHelpers.interopDefault(_card);
+var _grid = require("./Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _meta = require("./Meta");
+var _metaDefault = parcelHelpers.interopDefault(_meta);
+"use client";
+const Card = (0, _cardDefault.default);
+Card.Grid = (0, _gridDefault.default);
+Card.Meta = (0, _metaDefault.default);
+Card.displayName = "Card";
+exports.default = Card;
+
+},{"./Card":"fMSzJ","./Grid":"jvl43","./Meta":"78Bb9","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fMSzJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+var _warning = require("../_util/warning");
+var _configProvider = require("../config-provider");
+var _useSize = require("../config-provider/hooks/useSize");
+var _useSizeDefault = parcelHelpers.interopDefault(_useSize);
+var _skeleton = require("../skeleton");
+var _skeletonDefault = parcelHelpers.interopDefault(_skeleton);
+var _tabs = require("../tabs");
+var _tabsDefault = parcelHelpers.interopDefault(_tabs);
+var _grid = require("./Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const ActionNode = (props)=>{
+    const { actionClasses, actions = [], actionStyle } = props;
+    return /*#__PURE__*/ _react.createElement("ul", {
+        className: actionClasses,
+        style: actionStyle
+    }, actions.map((action, index)=>{
+        // Move this out since eslint not allow index key
+        // And eslint-disable makes conflict with rollup
+        // ref https://github.com/ant-design/ant-design/issues/46022
+        const key = `action-${index}`;
+        return /*#__PURE__*/ _react.createElement("li", {
+            style: {
+                width: `${100 / actions.length}%`
+            },
+            key: key
+        }, /*#__PURE__*/ _react.createElement("span", null, action));
+    }));
+};
+const Card = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
+    const { prefixCls: customizePrefixCls, className, rootClassName, style, extra, headStyle = {}, bodyStyle = {}, title, loading, bordered = true, size: customizeSize, type, cover, actions, tabList, children, activeTabKey, defaultActiveTabKey, tabBarExtraContent, hoverable, tabProps = {}, classNames: customClassNames, styles: customStyles } = props, others = __rest(props, [
+        "prefixCls",
+        "className",
+        "rootClassName",
+        "style",
+        "extra",
+        "headStyle",
+        "bodyStyle",
+        "title",
+        "loading",
+        "bordered",
+        "size",
+        "type",
+        "cover",
+        "actions",
+        "tabList",
+        "children",
+        "activeTabKey",
+        "defaultActiveTabKey",
+        "tabBarExtraContent",
+        "hoverable",
+        "tabProps",
+        "classNames",
+        "styles"
+    ]);
+    const { getPrefixCls, direction, card } = _react.useContext((0, _configProvider.ConfigContext));
+    {
+        const warning = (0, _warning.devUseWarning)("Card");
+        [
+            [
+                "headStyle",
+                "styles.header"
+            ],
+            [
+                "bodyStyle",
+                "styles.body"
+            ]
+        ].forEach((_ref)=>{
+            let [deprecatedName, newName] = _ref;
+            warning.deprecated(!(deprecatedName in props), deprecatedName, newName);
+        });
+    }
+    const onTabChange = (key)=>{
+        var _a;
+        (_a = props.onTabChange) === null || _a === void 0 || _a.call(props, key);
+    };
+    const moduleClass = (moduleName)=>{
+        var _a;
+        return (0, _classnamesDefault.default)((_a = card === null || card === void 0 ? void 0 : card.classNames) === null || _a === void 0 ? void 0 : _a[moduleName], customClassNames === null || customClassNames === void 0 ? void 0 : customClassNames[moduleName]);
+    };
+    const moduleStyle = (moduleName)=>{
+        var _a;
+        return Object.assign(Object.assign({}, (_a = card === null || card === void 0 ? void 0 : card.styles) === null || _a === void 0 ? void 0 : _a[moduleName]), customStyles === null || customStyles === void 0 ? void 0 : customStyles[moduleName]);
+    };
+    const isContainGrid = _react.useMemo(()=>{
+        let containGrid = false;
+        _react.Children.forEach(children, (element)=>{
+            if (element && element.type && element.type === (0, _gridDefault.default)) containGrid = true;
+        });
+        return containGrid;
+    }, [
+        children
+    ]);
+    const prefixCls = getPrefixCls("card", customizePrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls);
+    const loadingBlock = /*#__PURE__*/ _react.createElement((0, _skeletonDefault.default), {
+        loading: true,
+        active: true,
+        paragraph: {
+            rows: 4
+        },
+        title: false
+    }, children);
+    const hasActiveTabKey = activeTabKey !== undefined;
+    const extraProps = Object.assign(Object.assign({}, tabProps), {
+        [hasActiveTabKey ? "activeKey" : "defaultActiveKey"]: hasActiveTabKey ? activeTabKey : defaultActiveTabKey,
+        tabBarExtraContent
+    });
+    let head;
+    const mergedSize = (0, _useSizeDefault.default)(customizeSize);
+    const tabSize = !mergedSize || mergedSize === "default" ? "large" : mergedSize;
+    const tabs = tabList ? /*#__PURE__*/ _react.createElement((0, _tabsDefault.default), Object.assign({
+        size: tabSize
+    }, extraProps, {
+        className: `${prefixCls}-head-tabs`,
+        onChange: onTabChange,
+        items: tabList.map((_a)=>{
+            var { tab } = _a, item = __rest(_a, [
+                "tab"
+            ]);
+            return Object.assign({
+                label: tab
+            }, item);
+        })
+    })) : null;
+    if (title || extra || tabs) {
+        const headClasses = (0, _classnamesDefault.default)(`${prefixCls}-head`, moduleClass("header"));
+        const titleClasses = (0, _classnamesDefault.default)(`${prefixCls}-head-title`, moduleClass("title"));
+        const extraClasses = (0, _classnamesDefault.default)(`${prefixCls}-extra`, moduleClass("extra"));
+        const mergedHeadStyle = Object.assign(Object.assign({}, headStyle), moduleStyle("header"));
+        head = /*#__PURE__*/ _react.createElement("div", {
+            className: headClasses,
+            style: mergedHeadStyle
+        }, /*#__PURE__*/ _react.createElement("div", {
+            className: `${prefixCls}-head-wrapper`
+        }, title && /*#__PURE__*/ _react.createElement("div", {
+            className: titleClasses,
+            style: moduleStyle("title")
+        }, title), extra && /*#__PURE__*/ _react.createElement("div", {
+            className: extraClasses,
+            style: moduleStyle("extra")
+        }, extra)), tabs);
+    }
+    const coverClasses = (0, _classnamesDefault.default)(`${prefixCls}-cover`, moduleClass("cover"));
+    const coverDom = cover ? /*#__PURE__*/ _react.createElement("div", {
+        className: coverClasses,
+        style: moduleStyle("cover")
+    }, cover) : null;
+    const bodyClasses = (0, _classnamesDefault.default)(`${prefixCls}-body`, moduleClass("body"));
+    const mergedBodyStyle = Object.assign(Object.assign({}, bodyStyle), moduleStyle("body"));
+    const body = /*#__PURE__*/ _react.createElement("div", {
+        className: bodyClasses,
+        style: mergedBodyStyle
+    }, loading ? loadingBlock : children);
+    const actionClasses = (0, _classnamesDefault.default)(`${prefixCls}-actions`, moduleClass("actions"));
+    const actionDom = actions && actions.length ? /*#__PURE__*/ _react.createElement(ActionNode, {
+        actionClasses: actionClasses,
+        actionStyle: moduleStyle("actions"),
+        actions: actions
+    }) : null;
+    const divProps = (0, _omitDefault.default)(others, [
+        "onTabChange"
+    ]);
+    const classString = (0, _classnamesDefault.default)(prefixCls, card === null || card === void 0 ? void 0 : card.className, {
+        [`${prefixCls}-loading`]: loading,
+        [`${prefixCls}-bordered`]: bordered,
+        [`${prefixCls}-hoverable`]: hoverable,
+        [`${prefixCls}-contain-grid`]: isContainGrid,
+        [`${prefixCls}-contain-tabs`]: tabList && tabList.length,
+        [`${prefixCls}-${mergedSize}`]: mergedSize,
+        [`${prefixCls}-type-${type}`]: !!type,
+        [`${prefixCls}-rtl`]: direction === "rtl"
+    }, className, rootClassName, hashId, cssVarCls);
+    const mergedStyle = Object.assign(Object.assign({}, card === null || card === void 0 ? void 0 : card.style), style);
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement("div", Object.assign({
+        ref: ref
+    }, divProps, {
+        className: classString,
+        style: mergedStyle
+    }), head, coverDom, body, actionDom));
+});
+exports.default = Card;
+
+},{"react":"21dqq","classnames":"jocGM","rc-util/es/omit":"e7Re6","../_util/warning":"daUrm","../config-provider":"iMraF","../config-provider/hooks/useSize":"daQoa","../skeleton":"lppaB","../tabs":"likKM","./Grid":"jvl43","./style":"c2VDR","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lppaB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _skeleton = require("./Skeleton");
@@ -38195,280 +40614,7 @@ var DotChartOutlined = {
 };
 exports.default = DotChartOutlined;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kkong":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _extends = require("@babel/runtime/helpers/esm/extends");
-var _extendsDefault = parcelHelpers.interopDefault(_extends);
-var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
-var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
-var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
-var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
-var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
-var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
-var _react = require("react");
-var _classnames = require("classnames");
-var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
-var _colors = require("@ant-design/colors");
-var _context = require("./Context");
-var _contextDefault = parcelHelpers.interopDefault(_context);
-var _iconBase = require("./IconBase");
-var _iconBaseDefault = parcelHelpers.interopDefault(_iconBase);
-var _twoTonePrimaryColor = require("./twoTonePrimaryColor");
-var _utils = require("../utils");
-"use client";
-var _excluded = [
-    "className",
-    "icon",
-    "spin",
-    "rotate",
-    "tabIndex",
-    "onClick",
-    "twoToneColor"
-];
-// Initial setting
-// should move it to antd main repo?
-(0, _twoTonePrimaryColor.setTwoToneColor)((0, _colors.blue).primary);
-// https://github.com/DefinitelyTyped/DefinitelyTyped/issues/34757#issuecomment-488848720
-var Icon = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
-    var className = props.className, icon = props.icon, spin = props.spin, rotate = props.rotate, tabIndex = props.tabIndex, onClick = props.onClick, twoToneColor = props.twoToneColor, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
-    var _React$useContext = _react.useContext((0, _contextDefault.default)), _React$useContext$pre = _React$useContext.prefixCls, prefixCls = _React$useContext$pre === void 0 ? "anticon" : _React$useContext$pre, rootClassName = _React$useContext.rootClassName;
-    var classString = (0, _classnamesDefault.default)(rootClassName, prefixCls, (0, _definePropertyDefault.default)((0, _definePropertyDefault.default)({}, "".concat(prefixCls, "-").concat(icon.name), !!icon.name), "".concat(prefixCls, "-spin"), !!spin || icon.name === "loading"), className);
-    var iconTabIndex = tabIndex;
-    if (iconTabIndex === undefined && onClick) iconTabIndex = -1;
-    var svgStyle = rotate ? {
-        msTransform: "rotate(".concat(rotate, "deg)"),
-        transform: "rotate(".concat(rotate, "deg)")
-    } : undefined;
-    var _normalizeTwoToneColo = (0, _utils.normalizeTwoToneColors)(twoToneColor), _normalizeTwoToneColo2 = (0, _slicedToArrayDefault.default)(_normalizeTwoToneColo, 2), primaryColor = _normalizeTwoToneColo2[0], secondaryColor = _normalizeTwoToneColo2[1];
-    return /*#__PURE__*/ _react.createElement("span", (0, _extendsDefault.default)({
-        role: "img",
-        "aria-label": icon.name
-    }, restProps, {
-        ref: ref,
-        tabIndex: iconTabIndex,
-        onClick: onClick,
-        className: classString
-    }), /*#__PURE__*/ _react.createElement((0, _iconBaseDefault.default), {
-        icon: icon,
-        primaryColor: primaryColor,
-        secondaryColor: secondaryColor,
-        style: svgStyle
-    }));
-});
-Icon.displayName = "AntdIcon";
-Icon.getTwoToneColor = (0, _twoTonePrimaryColor.getTwoToneColor);
-Icon.setTwoToneColor = (0, _twoTonePrimaryColor.setTwoToneColor);
-exports.default = Icon;
-
-},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","classnames":"jocGM","@ant-design/colors":"7O27E","./Context":"dIWfS","./IconBase":"beKS9","./twoTonePrimaryColor":"cs45k","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"beKS9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
-var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
-var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
-var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
-var _react = require("react");
-var _utils = require("../utils");
-var _excluded = [
-    "icon",
-    "className",
-    "onClick",
-    "style",
-    "primaryColor",
-    "secondaryColor"
-];
-var twoToneColorPalette = {
-    primaryColor: "#333",
-    secondaryColor: "#E6E6E6",
-    calculated: false
-};
-function setTwoToneColors(_ref) {
-    var primaryColor = _ref.primaryColor, secondaryColor = _ref.secondaryColor;
-    twoToneColorPalette.primaryColor = primaryColor;
-    twoToneColorPalette.secondaryColor = secondaryColor || (0, _utils.getSecondaryColor)(primaryColor);
-    twoToneColorPalette.calculated = !!secondaryColor;
-}
-function getTwoToneColors() {
-    return (0, _objectSpread2Default.default)({}, twoToneColorPalette);
-}
-var IconBase = function IconBase(props) {
-    var icon = props.icon, className = props.className, onClick = props.onClick, style = props.style, primaryColor = props.primaryColor, secondaryColor = props.secondaryColor, restProps = (0, _objectWithoutPropertiesDefault.default)(props, _excluded);
-    var svgRef = _react.useRef();
-    var colors = twoToneColorPalette;
-    if (primaryColor) colors = {
-        primaryColor: primaryColor,
-        secondaryColor: secondaryColor || (0, _utils.getSecondaryColor)(primaryColor)
-    };
-    (0, _utils.useInsertStyles)(svgRef);
-    (0, _utils.warning)((0, _utils.isIconDefinition)(icon), "icon should be icon definiton, but got ".concat(icon));
-    if (!(0, _utils.isIconDefinition)(icon)) return null;
-    var target = icon;
-    if (target && typeof target.icon === "function") target = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, target), {}, {
-        icon: target.icon(colors.primaryColor, colors.secondaryColor)
-    });
-    return (0, _utils.generate)(target.icon, "svg-".concat(target.name), (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
-        className: className,
-        onClick: onClick,
-        style: style,
-        "data-icon": target.name,
-        width: "1em",
-        height: "1em",
-        fill: "currentColor",
-        "aria-hidden": "true"
-    }, restProps), {}, {
-        ref: svgRef
-    }));
-};
-IconBase.displayName = "IconReact";
-IconBase.getTwoToneColors = getTwoToneColors;
-IconBase.setTwoToneColors = setTwoToneColors;
-exports.default = IconBase;
-
-},{"@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aP1dF":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "warning", ()=>warning);
-parcelHelpers.export(exports, "isIconDefinition", ()=>isIconDefinition);
-parcelHelpers.export(exports, "normalizeAttrs", ()=>normalizeAttrs);
-parcelHelpers.export(exports, "generate", ()=>generate);
-parcelHelpers.export(exports, "getSecondaryColor", ()=>getSecondaryColor);
-parcelHelpers.export(exports, "normalizeTwoToneColors", ()=>normalizeTwoToneColors);
-parcelHelpers.export(exports, "svgBaseProps", ()=>svgBaseProps);
-parcelHelpers.export(exports, "iconStyles", ()=>iconStyles);
-parcelHelpers.export(exports, "useInsertStyles", ()=>useInsertStyles);
-var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
-var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
-var _typeof = require("@babel/runtime/helpers/esm/typeof");
-var _typeofDefault = parcelHelpers.interopDefault(_typeof);
-var _colors = require("@ant-design/colors");
-var _dynamicCSS = require("rc-util/es/Dom/dynamicCSS");
-var _shadow = require("rc-util/es/Dom/shadow");
-var _warning = require("rc-util/es/warning");
-var _warningDefault = parcelHelpers.interopDefault(_warning);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _context = require("./components/Context");
-var _contextDefault = parcelHelpers.interopDefault(_context);
-function camelCase(input) {
-    return input.replace(/-(.)/g, function(match, g) {
-        return g.toUpperCase();
-    });
-}
-function warning(valid, message) {
-    (0, _warningDefault.default)(valid, "[@ant-design/icons] ".concat(message));
-}
-function isIconDefinition(target) {
-    return (0, _typeofDefault.default)(target) === "object" && typeof target.name === "string" && typeof target.theme === "string" && ((0, _typeofDefault.default)(target.icon) === "object" || typeof target.icon === "function");
-}
-function normalizeAttrs() {
-    var attrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    return Object.keys(attrs).reduce(function(acc, key) {
-        var val = attrs[key];
-        switch(key){
-            case "class":
-                acc.className = val;
-                delete acc.class;
-                break;
-            default:
-                delete acc[key];
-                acc[camelCase(key)] = val;
-        }
-        return acc;
-    }, {});
-}
-function generate(node, key, rootProps) {
-    if (!rootProps) return /*#__PURE__*/ (0, _reactDefault.default).createElement(node.tag, (0, _objectSpread2Default.default)({
-        key: key
-    }, normalizeAttrs(node.attrs)), (node.children || []).map(function(child, index) {
-        return generate(child, "".concat(key, "-").concat(node.tag, "-").concat(index));
-    }));
-    return /*#__PURE__*/ (0, _reactDefault.default).createElement(node.tag, (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
-        key: key
-    }, normalizeAttrs(node.attrs)), rootProps), (node.children || []).map(function(child, index) {
-        return generate(child, "".concat(key, "-").concat(node.tag, "-").concat(index));
-    }));
-}
-function getSecondaryColor(primaryColor) {
-    // choose the second color
-    return (0, _colors.generate)(primaryColor)[0];
-}
-function normalizeTwoToneColors(twoToneColor) {
-    if (!twoToneColor) return [];
-    return Array.isArray(twoToneColor) ? twoToneColor : [
-        twoToneColor
-    ];
-}
-var svgBaseProps = {
-    width: "1em",
-    height: "1em",
-    fill: "currentColor",
-    "aria-hidden": "true",
-    focusable: "false"
-};
-var iconStyles = "\n.anticon {\n  display: inline-flex;\n  align-items: center;\n  color: inherit;\n  font-style: normal;\n  line-height: 0;\n  text-align: center;\n  text-transform: none;\n  vertical-align: -0.125em;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.anticon > * {\n  line-height: 1;\n}\n\n.anticon svg {\n  display: inline-block;\n}\n\n.anticon::before {\n  display: none;\n}\n\n.anticon .anticon-icon {\n  display: block;\n}\n\n.anticon[tabindex] {\n  cursor: pointer;\n}\n\n.anticon-spin::before,\n.anticon-spin {\n  display: inline-block;\n  -webkit-animation: loadingCircle 1s infinite linear;\n  animation: loadingCircle 1s infinite linear;\n}\n\n@-webkit-keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n";
-var useInsertStyles = function useInsertStyles(eleRef) {
-    var _useContext = (0, _react.useContext)((0, _contextDefault.default)), csp = _useContext.csp, prefixCls = _useContext.prefixCls;
-    var mergedStyleStr = iconStyles;
-    if (prefixCls) mergedStyleStr = mergedStyleStr.replace(/anticon/g, prefixCls);
-    (0, _react.useEffect)(function() {
-        var ele = eleRef.current;
-        var shadowRoot = (0, _shadow.getShadowRoot)(ele);
-        (0, _dynamicCSS.updateCSS)(mergedStyleStr, "@ant-design-icons", {
-            prepend: true,
-            csp: csp,
-            attachTo: shadowRoot
-        });
-    }, []);
-};
-
-},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","@ant-design/colors":"7O27E","rc-util/es/Dom/dynamicCSS":"lfei6","rc-util/es/Dom/shadow":"5SLLq","rc-util/es/warning":"c7oua","react":"21dqq","./components/Context":"dIWfS","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5SLLq":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-/**
- * Check if is in shadowRoot
- */ parcelHelpers.export(exports, "inShadow", ()=>inShadow);
-/**
- * Return shadowRoot if possible
- */ parcelHelpers.export(exports, "getShadowRoot", ()=>getShadowRoot);
-function getRoot(ele) {
-    var _ele$getRootNode;
-    return ele === null || ele === void 0 || (_ele$getRootNode = ele.getRootNode) === null || _ele$getRootNode === void 0 ? void 0 : _ele$getRootNode.call(ele);
-}
-function inShadow(ele) {
-    return getRoot(ele) instanceof ShadowRoot;
-}
-function getShadowRoot(ele) {
-    return inShadow(ele) ? getRoot(ele) : null;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cs45k":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "setTwoToneColor", ()=>setTwoToneColor);
-parcelHelpers.export(exports, "getTwoToneColor", ()=>getTwoToneColor);
-var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
-var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
-var _iconBase = require("./IconBase");
-var _iconBaseDefault = parcelHelpers.interopDefault(_iconBase);
-var _utils = require("../utils");
-function setTwoToneColor(twoToneColor) {
-    var _normalizeTwoToneColo = (0, _utils.normalizeTwoToneColors)(twoToneColor), _normalizeTwoToneColo2 = (0, _slicedToArrayDefault.default)(_normalizeTwoToneColo, 2), primaryColor = _normalizeTwoToneColo2[0], secondaryColor = _normalizeTwoToneColo2[1];
-    return (0, _iconBaseDefault.default).setTwoToneColors({
-        primaryColor: primaryColor,
-        secondaryColor: secondaryColor
-    });
-}
-function getTwoToneColor() {
-    var colors = (0, _iconBaseDefault.default).getTwoToneColors();
-    if (!colors.calculated) return colors.primaryColor;
-    return [
-        colors.primaryColor,
-        colors.secondaryColor
-    ];
-}
-
-},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","./IconBase":"beKS9","../utils":"aP1dF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jW3zS":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jW3zS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
@@ -39470,26 +41616,7 @@ RefResizeObserver.displayName = "ResizeObserver";
 RefResizeObserver.Collection = (0, _collection.Collection);
 exports.default = RefResizeObserver;
 
-},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","rc-util/es/Children/toArray":"itYV7","rc-util/es/warning":"c7oua","./SingleObserver":"hB21e","./Collection":"imrLy","./utils/observerUtil":"auQdi","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"itYV7":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>toArray);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactIs = require("react-is");
-function toArray(children) {
-    var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var ret = [];
-    (0, _reactDefault.default).Children.forEach(children, function(child) {
-        if ((child === undefined || child === null) && !option.keepEmpty) return;
-        if (Array.isArray(child)) ret = ret.concat(toArray(child));
-        else if ((0, _reactIs.isFragment)(child) && child.props) ret = ret.concat(toArray(child.props.children, option));
-        else ret.push(child);
-    });
-    return ret;
-}
-
-},{"react":"21dqq","react-is":"g7MZm","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hB21e":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","rc-util/es/Children/toArray":"itYV7","rc-util/es/warning":"c7oua","./SingleObserver":"hB21e","./Collection":"imrLy","./utils/observerUtil":"auQdi","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hB21e":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
@@ -42822,26 +44949,7 @@ function useAlign(open, popupEle, target, placement, builtinPlacements, popupAli
     ];
 }
 
-},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/Dom/findDOMNode":"3PTYf","rc-util/es/Dom/isVisible":"f0y09","rc-util/es/hooks/useEvent":"jv4C9","rc-util/es/hooks/useLayoutEffect":"b6Tje","react":"21dqq","../util":"7IoBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"f0y09":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = function(element) {
-    if (!element) return false;
-    if (element instanceof Element) {
-        if (element.offsetParent) return true;
-        if (element.getBBox) {
-            var _getBBox = element.getBBox(), width = _getBBox.width, height = _getBBox.height;
-            if (width || height) return true;
-        }
-        if (element.getBoundingClientRect) {
-            var _element$getBoundingC = element.getBoundingClientRect(), _width = _element$getBoundingC.width, _height = _element$getBoundingC.height;
-            if (_width || _height) return true;
-        }
-    }
-    return false;
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7IoBE":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/Dom/findDOMNode":"3PTYf","rc-util/es/Dom/isVisible":"f0y09","rc-util/es/hooks/useEvent":"jv4C9","rc-util/es/hooks/useLayoutEffect":"b6Tje","react":"21dqq","../util":"7IoBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7IoBE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getAlignPopupClassName", ()=>getAlignPopupClassName);
@@ -47414,7 +49522,94 @@ var _move = require("./move");
 var _slide = require("./slide");
 var _zoom = require("./zoom");
 
-},{"./collapse":false,"./fade":false,"./move":false,"./slide":"6S4x6","./zoom":false,"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6S4x6":[function(require,module,exports) {
+},{"./collapse":false,"./fade":"76xIL","./move":false,"./slide":"6S4x6","./zoom":"7ZYaF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"76xIL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "fadeIn", ()=>fadeIn);
+parcelHelpers.export(exports, "fadeOut", ()=>fadeOut);
+parcelHelpers.export(exports, "initFadeMotion", ()=>initFadeMotion);
+var _cssinjs = require("@ant-design/cssinjs");
+var _motion = require("./motion");
+const fadeIn = new (0, _cssinjs.Keyframes)("antFadeIn", {
+    "0%": {
+        opacity: 0
+    },
+    "100%": {
+        opacity: 1
+    }
+});
+const fadeOut = new (0, _cssinjs.Keyframes)("antFadeOut", {
+    "0%": {
+        opacity: 1
+    },
+    "100%": {
+        opacity: 0
+    }
+});
+const initFadeMotion = function(token) {
+    let sameLevel = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    const { antCls } = token;
+    const motionCls = `${antCls}-fade`;
+    const sameLevelPrefix = sameLevel ? "&" : "";
+    return [
+        (0, _motion.initMotion)(motionCls, fadeIn, fadeOut, token.motionDurationMid, sameLevel),
+        {
+            [`
+        ${sameLevelPrefix}${motionCls}-enter,
+        ${sameLevelPrefix}${motionCls}-appear
+      `]: {
+                opacity: 0,
+                animationTimingFunction: "linear"
+            },
+            [`${sameLevelPrefix}${motionCls}-leave`]: {
+                animationTimingFunction: "linear"
+            }
+        }
+    ];
+};
+
+},{"@ant-design/cssinjs":"k46HC","./motion":"6dieZ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6dieZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initMotion", ()=>initMotion);
+const initMotionCommon = (duration)=>({
+        animationDuration: duration,
+        animationFillMode: "both"
+    });
+// FIXME: origin less code seems same as initMotionCommon. Maybe we can safe remove
+const initMotionCommonLeave = (duration)=>({
+        animationDuration: duration,
+        animationFillMode: "both"
+    });
+const initMotion = function(motionCls, inKeyframes, outKeyframes, duration) {
+    let sameLevel = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+    const sameLevelPrefix = sameLevel ? "&" : "";
+    return {
+        [`
+      ${sameLevelPrefix}${motionCls}-enter,
+      ${sameLevelPrefix}${motionCls}-appear
+    `]: Object.assign(Object.assign({}, initMotionCommon(duration)), {
+            animationPlayState: "paused"
+        }),
+        [`${sameLevelPrefix}${motionCls}-leave`]: Object.assign(Object.assign({}, initMotionCommonLeave(duration)), {
+            animationPlayState: "paused"
+        }),
+        [`
+      ${sameLevelPrefix}${motionCls}-enter${motionCls}-enter-active,
+      ${sameLevelPrefix}${motionCls}-appear${motionCls}-appear-active
+    `]: {
+            animationName: inKeyframes,
+            animationPlayState: "running"
+        },
+        [`${sameLevelPrefix}${motionCls}-leave${motionCls}-leave-active`]: {
+            animationName: outKeyframes,
+            animationPlayState: "running",
+            pointerEvents: "none"
+        }
+    };
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6S4x6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "slideUpIn", ()=>slideUpIn);
@@ -47568,48 +49763,206 @@ const initSlideMotion = (token, motionName)=>{
     ];
 };
 
-},{"@ant-design/cssinjs":"k46HC","./motion":"6dieZ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6dieZ":[function(require,module,exports) {
+},{"@ant-design/cssinjs":"k46HC","./motion":"6dieZ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7ZYaF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initMotion", ()=>initMotion);
-const initMotionCommon = (duration)=>({
-        animationDuration: duration,
-        animationFillMode: "both"
-    });
-// FIXME: origin less code seems same as initMotionCommon. Maybe we can safe remove
-const initMotionCommonLeave = (duration)=>({
-        animationDuration: duration,
-        animationFillMode: "both"
-    });
-const initMotion = function(motionCls, inKeyframes, outKeyframes, duration) {
-    let sameLevel = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-    const sameLevelPrefix = sameLevel ? "&" : "";
-    return {
-        [`
-      ${sameLevelPrefix}${motionCls}-enter,
-      ${sameLevelPrefix}${motionCls}-appear
-    `]: Object.assign(Object.assign({}, initMotionCommon(duration)), {
-            animationPlayState: "paused"
-        }),
-        [`${sameLevelPrefix}${motionCls}-leave`]: Object.assign(Object.assign({}, initMotionCommonLeave(duration)), {
-            animationPlayState: "paused"
-        }),
-        [`
-      ${sameLevelPrefix}${motionCls}-enter${motionCls}-enter-active,
-      ${sameLevelPrefix}${motionCls}-appear${motionCls}-appear-active
-    `]: {
-            animationName: inKeyframes,
-            animationPlayState: "running"
-        },
-        [`${sameLevelPrefix}${motionCls}-leave${motionCls}-leave-active`]: {
-            animationName: outKeyframes,
-            animationPlayState: "running",
-            pointerEvents: "none"
+parcelHelpers.export(exports, "zoomIn", ()=>zoomIn);
+parcelHelpers.export(exports, "zoomOut", ()=>zoomOut);
+parcelHelpers.export(exports, "zoomBigIn", ()=>zoomBigIn);
+parcelHelpers.export(exports, "zoomBigOut", ()=>zoomBigOut);
+parcelHelpers.export(exports, "zoomUpIn", ()=>zoomUpIn);
+parcelHelpers.export(exports, "zoomUpOut", ()=>zoomUpOut);
+parcelHelpers.export(exports, "zoomLeftIn", ()=>zoomLeftIn);
+parcelHelpers.export(exports, "zoomLeftOut", ()=>zoomLeftOut);
+parcelHelpers.export(exports, "zoomRightIn", ()=>zoomRightIn);
+parcelHelpers.export(exports, "zoomRightOut", ()=>zoomRightOut);
+parcelHelpers.export(exports, "zoomDownIn", ()=>zoomDownIn);
+parcelHelpers.export(exports, "zoomDownOut", ()=>zoomDownOut);
+parcelHelpers.export(exports, "initZoomMotion", ()=>initZoomMotion);
+var _cssinjs = require("@ant-design/cssinjs");
+var _motion = require("./motion");
+const zoomIn = new (0, _cssinjs.Keyframes)("antZoomIn", {
+    "0%": {
+        transform: "scale(0.2)",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scale(1)",
+        opacity: 1
+    }
+});
+const zoomOut = new (0, _cssinjs.Keyframes)("antZoomOut", {
+    "0%": {
+        transform: "scale(1)"
+    },
+    "100%": {
+        transform: "scale(0.2)",
+        opacity: 0
+    }
+});
+const zoomBigIn = new (0, _cssinjs.Keyframes)("antZoomBigIn", {
+    "0%": {
+        transform: "scale(0.8)",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scale(1)",
+        opacity: 1
+    }
+});
+const zoomBigOut = new (0, _cssinjs.Keyframes)("antZoomBigOut", {
+    "0%": {
+        transform: "scale(1)"
+    },
+    "100%": {
+        transform: "scale(0.8)",
+        opacity: 0
+    }
+});
+const zoomUpIn = new (0, _cssinjs.Keyframes)("antZoomUpIn", {
+    "0%": {
+        transform: "scale(0.8)",
+        transformOrigin: "50% 0%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scale(1)",
+        transformOrigin: "50% 0%"
+    }
+});
+const zoomUpOut = new (0, _cssinjs.Keyframes)("antZoomUpOut", {
+    "0%": {
+        transform: "scale(1)",
+        transformOrigin: "50% 0%"
+    },
+    "100%": {
+        transform: "scale(0.8)",
+        transformOrigin: "50% 0%",
+        opacity: 0
+    }
+});
+const zoomLeftIn = new (0, _cssinjs.Keyframes)("antZoomLeftIn", {
+    "0%": {
+        transform: "scale(0.8)",
+        transformOrigin: "0% 50%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scale(1)",
+        transformOrigin: "0% 50%"
+    }
+});
+const zoomLeftOut = new (0, _cssinjs.Keyframes)("antZoomLeftOut", {
+    "0%": {
+        transform: "scale(1)",
+        transformOrigin: "0% 50%"
+    },
+    "100%": {
+        transform: "scale(0.8)",
+        transformOrigin: "0% 50%",
+        opacity: 0
+    }
+});
+const zoomRightIn = new (0, _cssinjs.Keyframes)("antZoomRightIn", {
+    "0%": {
+        transform: "scale(0.8)",
+        transformOrigin: "100% 50%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scale(1)",
+        transformOrigin: "100% 50%"
+    }
+});
+const zoomRightOut = new (0, _cssinjs.Keyframes)("antZoomRightOut", {
+    "0%": {
+        transform: "scale(1)",
+        transformOrigin: "100% 50%"
+    },
+    "100%": {
+        transform: "scale(0.8)",
+        transformOrigin: "100% 50%",
+        opacity: 0
+    }
+});
+const zoomDownIn = new (0, _cssinjs.Keyframes)("antZoomDownIn", {
+    "0%": {
+        transform: "scale(0.8)",
+        transformOrigin: "50% 100%",
+        opacity: 0
+    },
+    "100%": {
+        transform: "scale(1)",
+        transformOrigin: "50% 100%"
+    }
+});
+const zoomDownOut = new (0, _cssinjs.Keyframes)("antZoomDownOut", {
+    "0%": {
+        transform: "scale(1)",
+        transformOrigin: "50% 100%"
+    },
+    "100%": {
+        transform: "scale(0.8)",
+        transformOrigin: "50% 100%",
+        opacity: 0
+    }
+});
+const zoomMotion = {
+    zoom: {
+        inKeyframes: zoomIn,
+        outKeyframes: zoomOut
+    },
+    "zoom-big": {
+        inKeyframes: zoomBigIn,
+        outKeyframes: zoomBigOut
+    },
+    "zoom-big-fast": {
+        inKeyframes: zoomBigIn,
+        outKeyframes: zoomBigOut
+    },
+    "zoom-left": {
+        inKeyframes: zoomLeftIn,
+        outKeyframes: zoomLeftOut
+    },
+    "zoom-right": {
+        inKeyframes: zoomRightIn,
+        outKeyframes: zoomRightOut
+    },
+    "zoom-up": {
+        inKeyframes: zoomUpIn,
+        outKeyframes: zoomUpOut
+    },
+    "zoom-down": {
+        inKeyframes: zoomDownIn,
+        outKeyframes: zoomDownOut
+    }
+};
+const initZoomMotion = (token, motionName)=>{
+    const { antCls } = token;
+    const motionCls = `${antCls}-${motionName}`;
+    const { inKeyframes, outKeyframes } = zoomMotion[motionName];
+    return [
+        (0, _motion.initMotion)(motionCls, inKeyframes, outKeyframes, motionName === "zoom-big-fast" ? token.motionDurationFast : token.motionDurationMid),
+        {
+            [`
+        ${motionCls}-enter,
+        ${motionCls}-appear
+      `]: {
+                transform: "scale(0)",
+                opacity: 0,
+                animationTimingFunction: token.motionEaseOutCirc,
+                "&-prepare": {
+                    transform: "none"
+                }
+            },
+            [`${motionCls}-leave`]: {
+                animationTimingFunction: token.motionEaseInOutCirc
+            }
         }
-    };
+    ];
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2eqcT":[function(require,module,exports) {
+},{"@ant-design/cssinjs":"k46HC","./motion":"6dieZ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2eqcT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const TabPane = ()=>null;
@@ -48007,7 +50360,6237 @@ const Meta = (props)=>{
 };
 exports.default = Meta;
 
-},{"react":"21dqq","classnames":"jocGM","../config-provider":"iMraF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ilHrj":[function(require,module,exports) {
+},{"react":"21dqq","classnames":"jocGM","../config-provider":"iMraF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6jDuT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _confirm = require("./confirm");
+var _confirmDefault = parcelHelpers.interopDefault(_confirm);
+var _destroyFns = require("./destroyFns");
+var _destroyFnsDefault = parcelHelpers.interopDefault(_destroyFns);
+var _modal = require("./Modal");
+var _modalDefault = parcelHelpers.interopDefault(_modal);
+var _purePanel = require("./PurePanel");
+var _purePanelDefault = parcelHelpers.interopDefault(_purePanel);
+var _useModal = require("./useModal");
+var _useModalDefault = parcelHelpers.interopDefault(_useModal);
+"use client";
+function modalWarn(props) {
+    return (0, _confirmDefault.default)((0, _confirm.withWarn)(props));
+}
+const Modal = (0, _modalDefault.default);
+Modal.useModal = (0, _useModalDefault.default);
+Modal.info = function infoFn(props) {
+    return (0, _confirmDefault.default)((0, _confirm.withInfo)(props));
+};
+Modal.success = function successFn(props) {
+    return (0, _confirmDefault.default)((0, _confirm.withSuccess)(props));
+};
+Modal.error = function errorFn(props) {
+    return (0, _confirmDefault.default)((0, _confirm.withError)(props));
+};
+Modal.warning = modalWarn;
+Modal.warn = modalWarn;
+Modal.confirm = function confirmFn(props) {
+    return (0, _confirmDefault.default)((0, _confirm.withConfirm)(props));
+};
+Modal.destroyAll = function destroyAllFn() {
+    while((0, _destroyFnsDefault.default).length){
+        const close = (0, _destroyFnsDefault.default).pop();
+        if (close) close();
+    }
+};
+Modal.config = (0, _confirm.modalGlobalConfig);
+Modal._InternalPanelDoNotUseOrYouWillBeFired = (0, _purePanelDefault.default);
+Modal.displayName = "Modal";
+exports.default = Modal;
+
+},{"./confirm":"iPb72","./destroyFns":"7lYyB","./Modal":"lTP8t","./PurePanel":"amhhO","./useModal":"1EQPb","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iPb72":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>confirm);
+parcelHelpers.export(exports, "withWarn", ()=>withWarn);
+parcelHelpers.export(exports, "withInfo", ()=>withInfo);
+parcelHelpers.export(exports, "withSuccess", ()=>withSuccess);
+parcelHelpers.export(exports, "withError", ()=>withError);
+parcelHelpers.export(exports, "withConfirm", ()=>withConfirm);
+parcelHelpers.export(exports, "modalGlobalConfig", ()=>modalGlobalConfig);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _render = require("rc-util/es/React/render");
+var _warning = require("../_util/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _configProvider = require("../config-provider");
+var _configProviderDefault = parcelHelpers.interopDefault(_configProvider);
+var _confirmDialog = require("./ConfirmDialog");
+var _confirmDialogDefault = parcelHelpers.interopDefault(_confirmDialog);
+var _destroyFns = require("./destroyFns");
+var _destroyFnsDefault = parcelHelpers.interopDefault(_destroyFns);
+var _locale = require("./locale");
+"use client";
+let defaultRootPrefixCls = "";
+function getRootPrefixCls() {
+    return defaultRootPrefixCls;
+}
+const ConfirmDialogWrapper = (props)=>{
+    var _a, _b;
+    const { prefixCls: customizePrefixCls, getContainer, direction } = props;
+    const runtimeLocale = (0, _locale.getConfirmLocale)();
+    const config = (0, _react.useContext)((0, _configProvider.ConfigContext));
+    const rootPrefixCls = getRootPrefixCls() || config.getPrefixCls();
+    // because Modal.config set rootPrefixCls, which is different from other components
+    const prefixCls = customizePrefixCls || `${rootPrefixCls}-modal`;
+    let mergedGetContainer = getContainer;
+    if (mergedGetContainer === false) {
+        mergedGetContainer = undefined;
+        (0, _warningDefault.default)(false, "Modal", "Static method not support `getContainer` to be `false` since it do not have context env.");
+    }
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _confirmDialogDefault.default), Object.assign({}, props, {
+        rootPrefixCls: rootPrefixCls,
+        prefixCls: prefixCls,
+        iconPrefixCls: config.iconPrefixCls,
+        theme: config.theme,
+        direction: direction !== null && direction !== void 0 ? direction : config.direction,
+        locale: (_b = (_a = config.locale) === null || _a === void 0 ? void 0 : _a.Modal) !== null && _b !== void 0 ? _b : runtimeLocale,
+        getContainer: mergedGetContainer
+    }));
+};
+function confirm(config) {
+    const global = (0, _configProvider.globalConfig)();
+    if (!global.holderRender) (0, _configProvider.warnContext)("Modal");
+    const container = document.createDocumentFragment();
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
+    let currentConfig = Object.assign(Object.assign({}, config), {
+        close,
+        open: true
+    });
+    let timeoutId;
+    function destroy() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        const triggerCancel = args.some((param)=>param && param.triggerCancel);
+        if (config.onCancel && triggerCancel) config.onCancel.apply(config, [
+            ()=>{}
+        ].concat((0, _toConsumableArrayDefault.default)(args.slice(1))));
+        for(let i = 0; i < (0, _destroyFnsDefault.default).length; i++){
+            const fn = (0, _destroyFnsDefault.default)[i];
+            // eslint-disable-next-line @typescript-eslint/no-use-before-define
+            if (fn === close) {
+                (0, _destroyFnsDefault.default).splice(i, 1);
+                break;
+            }
+        }
+        (0, _render.unmount)(container);
+    }
+    function render(props) {
+        clearTimeout(timeoutId);
+        /**
+     * https://github.com/ant-design/ant-design/issues/23623
+     *
+     * Sync render blocks React event. Let's make this async.
+     */ timeoutId = setTimeout(()=>{
+            const rootPrefixCls = global.getPrefixCls(undefined, getRootPrefixCls());
+            const iconPrefixCls = global.getIconPrefixCls();
+            const theme = global.getTheme();
+            const dom = /*#__PURE__*/ (0, _reactDefault.default).createElement(ConfirmDialogWrapper, Object.assign({}, props));
+            (0, _render.render)(/*#__PURE__*/ (0, _reactDefault.default).createElement((0, _configProviderDefault.default), {
+                prefixCls: rootPrefixCls,
+                iconPrefixCls: iconPrefixCls,
+                theme: theme
+            }, global.holderRender ? global.holderRender(dom) : dom), container);
+        });
+    }
+    function close() {
+        for(var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)args[_key2] = arguments[_key2];
+        currentConfig = Object.assign(Object.assign({}, currentConfig), {
+            open: false,
+            afterClose: ()=>{
+                if (typeof config.afterClose === "function") config.afterClose();
+                // @ts-ignore
+                destroy.apply(this, args);
+            }
+        });
+        // Legacy support
+        if (currentConfig.visible) delete currentConfig.visible;
+        render(currentConfig);
+    }
+    function update(configUpdate) {
+        if (typeof configUpdate === "function") currentConfig = configUpdate(currentConfig);
+        else currentConfig = Object.assign(Object.assign({}, currentConfig), configUpdate);
+        render(currentConfig);
+    }
+    render(currentConfig);
+    (0, _destroyFnsDefault.default).push(close);
+    return {
+        destroy: close,
+        update
+    };
+}
+function withWarn(props) {
+    return Object.assign(Object.assign({}, props), {
+        type: "warning"
+    });
+}
+function withInfo(props) {
+    return Object.assign(Object.assign({}, props), {
+        type: "info"
+    });
+}
+function withSuccess(props) {
+    return Object.assign(Object.assign({}, props), {
+        type: "success"
+    });
+}
+function withError(props) {
+    return Object.assign(Object.assign({}, props), {
+        type: "error"
+    });
+}
+function withConfirm(props) {
+    return Object.assign(Object.assign({}, props), {
+        type: "confirm"
+    });
+}
+function modalGlobalConfig(_ref) {
+    let { rootPrefixCls } = _ref;
+    (0, _warningDefault.default)(false, "Modal", "Modal.config is deprecated. Please use ConfigProvider.config instead.");
+    defaultRootPrefixCls = rootPrefixCls;
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","rc-util/es/React/render":"fvmXJ","../_util/warning":"daUrm","../config-provider":"iMraF","./ConfirmDialog":"aLjRz","./destroyFns":"7lYyB","./locale":"cgYI5","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aLjRz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ConfirmContent", ()=>ConfirmContent);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _checkCircleFilled = require("@ant-design/icons/es/icons/CheckCircleFilled");
+var _checkCircleFilledDefault = parcelHelpers.interopDefault(_checkCircleFilled);
+var _closeCircleFilled = require("@ant-design/icons/es/icons/CloseCircleFilled");
+var _closeCircleFilledDefault = parcelHelpers.interopDefault(_closeCircleFilled);
+var _exclamationCircleFilled = require("@ant-design/icons/es/icons/ExclamationCircleFilled");
+var _exclamationCircleFilledDefault = parcelHelpers.interopDefault(_exclamationCircleFilled);
+var _infoCircleFilled = require("@ant-design/icons/es/icons/InfoCircleFilled");
+var _infoCircleFilledDefault = parcelHelpers.interopDefault(_infoCircleFilled);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _useZIndex = require("../_util/hooks/useZIndex");
+var _motion = require("../_util/motion");
+var _warning = require("../_util/warning");
+var _configProvider = require("../config-provider");
+var _configProviderDefault = parcelHelpers.interopDefault(_configProvider);
+var _locale = require("../locale");
+var _useToken = require("../theme/useToken");
+var _useTokenDefault = parcelHelpers.interopDefault(_useToken);
+var _confirmCancelBtn = require("./components/ConfirmCancelBtn");
+var _confirmCancelBtnDefault = parcelHelpers.interopDefault(_confirmCancelBtn);
+var _confirmOkBtn = require("./components/ConfirmOkBtn");
+var _confirmOkBtnDefault = parcelHelpers.interopDefault(_confirmOkBtn);
+var _context = require("./context");
+var _modal = require("./Modal");
+var _modalDefault = parcelHelpers.interopDefault(_modal);
+var _confirm = require("./style/confirm");
+var _confirmDefault = parcelHelpers.interopDefault(_confirm);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+function ConfirmContent(props) {
+    const { prefixCls, icon, okText, cancelText, confirmPrefixCls, type, okCancel, footer, // Legacy for static function usage
+    locale: staticLocale } = props, resetProps = __rest(props, [
+        "prefixCls",
+        "icon",
+        "okText",
+        "cancelText",
+        "confirmPrefixCls",
+        "type",
+        "okCancel",
+        "footer",
+        "locale"
+    ]);
+    {
+        const warning = (0, _warning.devUseWarning)("Modal");
+        warning(!(typeof icon === "string" && icon.length > 2), "breaking", `\`icon\` is using ReactNode instead of string naming in v4. Please check \`${icon}\` at https://ant.design/components/icon`);
+    }
+    // Icon
+    let mergedIcon = icon;
+    // 支持传入{ icon: null }来隐藏`Modal.confirm`默认的Icon
+    if (!icon && icon !== null) switch(type){
+        case "info":
+            mergedIcon = /*#__PURE__*/ _react.createElement((0, _infoCircleFilledDefault.default), null);
+            break;
+        case "success":
+            mergedIcon = /*#__PURE__*/ _react.createElement((0, _checkCircleFilledDefault.default), null);
+            break;
+        case "error":
+            mergedIcon = /*#__PURE__*/ _react.createElement((0, _closeCircleFilledDefault.default), null);
+            break;
+        default:
+            mergedIcon = /*#__PURE__*/ _react.createElement((0, _exclamationCircleFilledDefault.default), null);
+    }
+    // 默认为 true，保持向下兼容
+    const mergedOkCancel = okCancel !== null && okCancel !== void 0 ? okCancel : type === "confirm";
+    const autoFocusButton = props.autoFocusButton === null ? false : props.autoFocusButton || "ok";
+    const [locale] = (0, _locale.useLocale)("Modal");
+    const mergedLocale = staticLocale || locale;
+    // ================== Locale Text ==================
+    const okTextLocale = okText || (mergedOkCancel ? mergedLocale === null || mergedLocale === void 0 ? void 0 : mergedLocale.okText : mergedLocale === null || mergedLocale === void 0 ? void 0 : mergedLocale.justOkText);
+    const cancelTextLocale = cancelText || (mergedLocale === null || mergedLocale === void 0 ? void 0 : mergedLocale.cancelText);
+    // ================= Context Value =================
+    const btnCtxValue = Object.assign({
+        autoFocusButton,
+        cancelTextLocale,
+        okTextLocale,
+        mergedOkCancel
+    }, resetProps);
+    const btnCtxValueMemo = _react.useMemo(()=>btnCtxValue, (0, _toConsumableArrayDefault.default)(Object.values(btnCtxValue)));
+    // ====================== Footer Origin Node ======================
+    const footerOriginNode = /*#__PURE__*/ _react.createElement(_react.Fragment, null, /*#__PURE__*/ _react.createElement((0, _confirmCancelBtnDefault.default), null), /*#__PURE__*/ _react.createElement((0, _confirmOkBtnDefault.default), null));
+    const hasTitle = props.title !== undefined && props.title !== null;
+    const bodyCls = `${confirmPrefixCls}-body`;
+    return /*#__PURE__*/ _react.createElement("div", {
+        className: `${confirmPrefixCls}-body-wrapper`
+    }, /*#__PURE__*/ _react.createElement("div", {
+        className: (0, _classnamesDefault.default)(bodyCls, {
+            [`${bodyCls}-has-title`]: hasTitle
+        })
+    }, mergedIcon, /*#__PURE__*/ _react.createElement("div", {
+        className: `${confirmPrefixCls}-paragraph`
+    }, hasTitle && /*#__PURE__*/ _react.createElement("span", {
+        className: `${confirmPrefixCls}-title`
+    }, props.title), /*#__PURE__*/ _react.createElement("div", {
+        className: `${confirmPrefixCls}-content`
+    }, props.content))), footer === undefined || typeof footer === "function" ? /*#__PURE__*/ _react.createElement((0, _context.ModalContextProvider), {
+        value: btnCtxValueMemo
+    }, /*#__PURE__*/ _react.createElement("div", {
+        className: `${confirmPrefixCls}-btns`
+    }, typeof footer === "function" ? footer(footerOriginNode, {
+        OkBtn: (0, _confirmOkBtnDefault.default),
+        CancelBtn: (0, _confirmCancelBtnDefault.default)
+    }) : footerOriginNode)) : footer, /*#__PURE__*/ _react.createElement((0, _confirmDefault.default), {
+        prefixCls: prefixCls
+    }));
+}
+const ConfirmDialog = (props)=>{
+    const { close, zIndex, afterClose, open, keyboard, centered, getContainer, maskStyle, direction, prefixCls, wrapClassName, rootPrefixCls, bodyStyle, closable = false, closeIcon, modalRender, focusTriggerAfterClose, onConfirm, styles } = props;
+    {
+        const warning = (0, _warning.devUseWarning)("Modal");
+        [
+            [
+                "visible",
+                "open"
+            ],
+            [
+                "bodyStyle",
+                "styles.body"
+            ],
+            [
+                "maskStyle",
+                "styles.mask"
+            ]
+        ].forEach((_ref)=>{
+            let [deprecatedName, newName] = _ref;
+            warning.deprecated(!(deprecatedName in props), deprecatedName, newName);
+        });
+    }
+    const confirmPrefixCls = `${prefixCls}-confirm`;
+    const width = props.width || 416;
+    const style = props.style || {};
+    const mask = props.mask === undefined ? true : props.mask;
+    // 默认为 false，保持旧版默认行为
+    const maskClosable = props.maskClosable === undefined ? false : props.maskClosable;
+    const classString = (0, _classnamesDefault.default)(confirmPrefixCls, `${confirmPrefixCls}-${props.type}`, {
+        [`${confirmPrefixCls}-rtl`]: direction === "rtl"
+    }, props.className);
+    // ========================= zIndex =========================
+    const [, token] = (0, _useTokenDefault.default)();
+    const mergedZIndex = _react.useMemo(()=>{
+        if (zIndex !== undefined) return zIndex;
+        // Static always use max zIndex
+        return token.zIndexPopupBase + (0, _useZIndex.CONTAINER_MAX_OFFSET);
+    }, [
+        zIndex,
+        token
+    ]);
+    // ========================= Render =========================
+    return /*#__PURE__*/ _react.createElement((0, _modalDefault.default), {
+        prefixCls: prefixCls,
+        className: classString,
+        wrapClassName: (0, _classnamesDefault.default)({
+            [`${confirmPrefixCls}-centered`]: !!props.centered
+        }, wrapClassName),
+        onCancel: ()=>{
+            close === null || close === void 0 || close({
+                triggerCancel: true
+            });
+            onConfirm === null || onConfirm === void 0 || onConfirm(false);
+        },
+        open: open,
+        title: "",
+        footer: null,
+        transitionName: (0, _motion.getTransitionName)(rootPrefixCls || "", "zoom", props.transitionName),
+        maskTransitionName: (0, _motion.getTransitionName)(rootPrefixCls || "", "fade", props.maskTransitionName),
+        mask: mask,
+        maskClosable: maskClosable,
+        style: style,
+        styles: Object.assign({
+            body: bodyStyle,
+            mask: maskStyle
+        }, styles),
+        width: width,
+        zIndex: mergedZIndex,
+        afterClose: afterClose,
+        keyboard: keyboard,
+        centered: centered,
+        getContainer: getContainer,
+        closable: closable,
+        closeIcon: closeIcon,
+        modalRender: modalRender,
+        focusTriggerAfterClose: focusTriggerAfterClose
+    }, /*#__PURE__*/ _react.createElement(ConfirmContent, Object.assign({}, props, {
+        confirmPrefixCls: confirmPrefixCls
+    })));
+};
+const ConfirmDialogWrapper = (props)=>{
+    const { rootPrefixCls, iconPrefixCls, direction, theme } = props;
+    return /*#__PURE__*/ _react.createElement((0, _configProviderDefault.default), {
+        prefixCls: rootPrefixCls,
+        iconPrefixCls: iconPrefixCls,
+        direction: direction,
+        theme: theme
+    }, /*#__PURE__*/ _react.createElement(ConfirmDialog, Object.assign({}, props)));
+};
+ConfirmDialog.displayName = "ConfirmDialog";
+ConfirmDialogWrapper.displayName = "ConfirmDialogWrapper";
+exports.default = ConfirmDialogWrapper;
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","@ant-design/icons/es/icons/CheckCircleFilled":"cF33C","@ant-design/icons/es/icons/CloseCircleFilled":"hNhJu","@ant-design/icons/es/icons/ExclamationCircleFilled":"dLwMF","@ant-design/icons/es/icons/InfoCircleFilled":"76Mek","classnames":"jocGM","../_util/hooks/useZIndex":"7Fs4S","../_util/motion":"8VhHM","../_util/warning":"daUrm","../config-provider":"iMraF","../locale":"dwvDt","../theme/useToken":"7Ig10","./components/ConfirmCancelBtn":"5YMWF","./components/ConfirmOkBtn":"aOPKK","./context":"6SQvP","./Modal":"lTP8t","./style/confirm":"bqpjL","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cF33C":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _checkCircleFilled = require("@ant-design/icons-svg/es/asn/CheckCircleFilled");
+var _checkCircleFilledDefault = parcelHelpers.interopDefault(_checkCircleFilled);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var CheckCircleFilled = function CheckCircleFilled(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _checkCircleFilledDefault.default)
+    }));
+};
+/**![check-circle](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjY0IDY0IDg5NiA4OTYiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUxMiA2NEMyNjQuNiA2NCA2NCAyNjQuNiA2NCA1MTJzMjAwLjYgNDQ4IDQ0OCA0NDggNDQ4LTIwMC42IDQ0OC00NDhTNzU5LjQgNjQgNTEyIDY0em0xOTMuNSAzMDEuN2wtMjEwLjYgMjkyYTMxLjggMzEuOCAwIDAxLTUxLjcgMEwzMTguNSA0ODQuOWMtMy44LTUuMyAwLTEyLjcgNi41LTEyLjdoNDYuOWMxMC4yIDAgMTkuOSA0LjkgMjUuOSAxMy4zbDcxLjIgOTguOCAxNTcuMi0yMThjNi04LjMgMTUuNi0xMy4zIDI1LjktMTMuM0g2OTljNi41IDAgMTAuMyA3LjQgNi41IDEyLjd6IiAvPjwvc3ZnPg==) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(CheckCircleFilled);
+RefIcon.displayName = "CheckCircleFilled";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/CheckCircleFilled":"ddvWC","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ddvWC":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var CheckCircleFilled = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                }
+            }
+        ]
+    },
+    "name": "check-circle",
+    "theme": "filled"
+};
+exports.default = CheckCircleFilled;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hNhJu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _closeCircleFilled = require("@ant-design/icons-svg/es/asn/CloseCircleFilled");
+var _closeCircleFilledDefault = parcelHelpers.interopDefault(_closeCircleFilled);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var CloseCircleFilled = function CloseCircleFilled(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _closeCircleFilledDefault.default)
+    }));
+};
+/**![close-circle](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdmlld0JveD0iNjQgNjQgODk2IDg5NiIgZm9jdXNhYmxlPSJmYWxzZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTEyIDY0YzI0Ny40IDAgNDQ4IDIwMC42IDQ0OCA0NDhTNzU5LjQgOTYwIDUxMiA5NjAgNjQgNzU5LjQgNjQgNTEyIDI2NC42IDY0IDUxMiA2NHptMTI3Ljk4IDI3NC44MmgtLjA0bC0uMDguMDZMNTEyIDQ2Ni43NSAzODQuMTQgMzM4Ljg4Yy0uMDQtLjA1LS4wNi0uMDYtLjA4LS4wNmEuMTIuMTIgMCAwMC0uMDcgMGMtLjAzIDAtLjA1LjAxLS4wOS4wNWwtNDUuMDIgNDUuMDJhLjIuMiAwIDAwLS4wNS4wOS4xMi4xMiAwIDAwMCAuMDd2LjAyYS4yNy4yNyAwIDAwLjA2LjA2TDQ2Ni43NSA1MTIgMzM4Ljg4IDYzOS44NmMtLjA1LjA0LS4wNi4wNi0uMDYuMDhhLjEyLjEyIDAgMDAwIC4wN2MwIC4wMy4wMS4wNS4wNS4wOWw0NS4wMiA0NS4wMmEuMi4yIDAgMDAuMDkuMDUuMTIuMTIgMCAwMC4wNyAwYy4wMiAwIC4wNC0uMDEuMDgtLjA1TDUxMiA1NTcuMjVsMTI3Ljg2IDEyNy44N2MuMDQuMDQuMDYuMDUuMDguMDVhLjEyLjEyIDAgMDAuMDcgMGMuMDMgMCAuMDUtLjAxLjA5LS4wNWw0NS4wMi00NS4wMmEuMi4yIDAgMDAuMDUtLjA5LjEyLjEyIDAgMDAwLS4wN3YtLjAyYS4yNy4yNyAwIDAwLS4wNS0uMDZMNTU3LjI1IDUxMmwxMjcuODctMTI3Ljg2Yy4wNC0uMDQuMDUtLjA2LjA1LS4wOGEuMTIuMTIgMCAwMDAtLjA3YzAtLjAzLS4wMS0uMDUtLjA1LS4wOWwtNDUuMDItNDUuMDJhLjIuMiAwIDAwLS4wOS0uMDUuMTIuMTIgMCAwMC0uMDcgMHoiIC8+PC9zdmc+) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(CloseCircleFilled);
+RefIcon.displayName = "CloseCircleFilled";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/CloseCircleFilled":"hpQDU","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hpQDU":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var CloseCircleFilled = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "fill-rule": "evenodd",
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"
+                }
+            }
+        ]
+    },
+    "name": "close-circle",
+    "theme": "filled"
+};
+exports.default = CloseCircleFilled;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dLwMF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _exclamationCircleFilled = require("@ant-design/icons-svg/es/asn/ExclamationCircleFilled");
+var _exclamationCircleFilledDefault = parcelHelpers.interopDefault(_exclamationCircleFilled);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var ExclamationCircleFilled = function ExclamationCircleFilled(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _exclamationCircleFilledDefault.default)
+    }));
+};
+/**![exclamation-circle](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjY0IDY0IDg5NiA4OTYiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUxMiA2NEMyNjQuNiA2NCA2NCAyNjQuNiA2NCA1MTJzMjAwLjYgNDQ4IDQ0OCA0NDggNDQ4LTIwMC42IDQ0OC00NDhTNzU5LjQgNjQgNTEyIDY0em0tMzIgMjMyYzAtNC40IDMuNi04IDgtOGg0OGM0LjQgMCA4IDMuNiA4IDh2MjcyYzAgNC40LTMuNiA4LTggOGgtNDhjLTQuNCAwLTgtMy42LTgtOFYyOTZ6bTMyIDQ0MGE0OC4wMSA0OC4wMSAwIDAxMC05NiA0OC4wMSA0OC4wMSAwIDAxMCA5NnoiIC8+PC9zdmc+) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(ExclamationCircleFilled);
+RefIcon.displayName = "ExclamationCircleFilled";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/ExclamationCircleFilled":"dHARN","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dHARN":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var ExclamationCircleFilled = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-32 232c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V296zm32 440a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+                }
+            }
+        ]
+    },
+    "name": "exclamation-circle",
+    "theme": "filled"
+};
+exports.default = ExclamationCircleFilled;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"76Mek":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+var _react = require("react");
+var _infoCircleFilled = require("@ant-design/icons-svg/es/asn/InfoCircleFilled");
+var _infoCircleFilledDefault = parcelHelpers.interopDefault(_infoCircleFilled);
+var _antdIcon = require("../components/AntdIcon");
+var _antdIconDefault = parcelHelpers.interopDefault(_antdIcon);
+var InfoCircleFilled = function InfoCircleFilled(props, ref) {
+    return /*#__PURE__*/ _react.createElement((0, _antdIconDefault.default), (0, _extendsDefault.default)({}, props, {
+        ref: ref,
+        icon: (0, _infoCircleFilledDefault.default)
+    }));
+};
+/**![info-circle](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiNjYWNhY2EiIHZpZXdCb3g9IjY0IDY0IDg5NiA4OTYiIGZvY3VzYWJsZT0iZmFsc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUxMiA2NEMyNjQuNiA2NCA2NCAyNjQuNiA2NCA1MTJzMjAwLjYgNDQ4IDQ0OCA0NDggNDQ4LTIwMC42IDQ0OC00NDhTNzU5LjQgNjQgNTEyIDY0em0zMiA2NjRjMCA0LjQtMy42IDgtOCA4aC00OGMtNC40IDAtOC0zLjYtOC04VjQ1NmMwLTQuNCAzLjYtOCA4LThoNDhjNC40IDAgOCAzLjYgOCA4djI3MnptLTMyLTM0NGE0OC4wMSA0OC4wMSAwIDAxMC05NiA0OC4wMSA0OC4wMSAwIDAxMCA5NnoiIC8+PC9zdmc+) */ var RefIcon = /*#__PURE__*/ _react.forwardRef(InfoCircleFilled);
+RefIcon.displayName = "InfoCircleFilled";
+exports.default = RefIcon;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","react":"21dqq","@ant-design/icons-svg/es/asn/InfoCircleFilled":"7JKQy","../components/AntdIcon":"kkong","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7JKQy":[function(require,module,exports) {
+// This icon file is generated automatically.
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var InfoCircleFilled = {
+    "icon": {
+        "tag": "svg",
+        "attrs": {
+            "viewBox": "64 64 896 896",
+            "focusable": "false"
+        },
+        "children": [
+            {
+                "tag": "path",
+                "attrs": {
+                    "d": "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+                }
+            }
+        ]
+    },
+    "name": "info-circle",
+    "theme": "filled"
+};
+exports.default = InfoCircleFilled;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7Fs4S":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CONTAINER_MAX_OFFSET", ()=>CONTAINER_MAX_OFFSET);
+parcelHelpers.export(exports, "containerBaseZIndexOffset", ()=>containerBaseZIndexOffset);
+parcelHelpers.export(exports, "consumerBaseZIndexOffset", ()=>consumerBaseZIndexOffset);
+parcelHelpers.export(exports, "useZIndex", ()=>useZIndex);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _useToken = require("../../theme/useToken");
+var _useTokenDefault = parcelHelpers.interopDefault(_useToken);
+var _zindexContext = require("../zindexContext");
+var _zindexContextDefault = parcelHelpers.interopDefault(_zindexContext);
+// Z-Index control range
+// Container: 1000 + offset 100 (max base + 10 * offset = 2000)
+// Popover: offset 50
+// Notification: Container Max zIndex + componentOffset
+const CONTAINER_OFFSET = 100;
+const CONTAINER_OFFSET_MAX_COUNT = 10;
+const CONTAINER_MAX_OFFSET = CONTAINER_OFFSET * CONTAINER_OFFSET_MAX_COUNT;
+const containerBaseZIndexOffset = {
+    Modal: CONTAINER_OFFSET,
+    Drawer: CONTAINER_OFFSET,
+    Popover: CONTAINER_OFFSET,
+    Popconfirm: CONTAINER_OFFSET,
+    Tooltip: CONTAINER_OFFSET,
+    Tour: CONTAINER_OFFSET
+};
+const consumerBaseZIndexOffset = {
+    SelectLike: 50,
+    Dropdown: 50,
+    DatePicker: 50,
+    Menu: 50,
+    ImagePreview: 1
+};
+function isContainerType(type) {
+    return type in containerBaseZIndexOffset;
+}
+function useZIndex(componentType, customZIndex) {
+    const [, token] = (0, _useTokenDefault.default)();
+    const parentZIndex = (0, _reactDefault.default).useContext((0, _zindexContextDefault.default));
+    const isContainer = isContainerType(componentType);
+    if (customZIndex !== undefined) return [
+        customZIndex,
+        customZIndex
+    ];
+    let zIndex = parentZIndex !== null && parentZIndex !== void 0 ? parentZIndex : 0;
+    if (isContainer) {
+        zIndex += // Use preset token zIndex by default but not stack when has parent container
+        (parentZIndex ? 0 : token.zIndexPopupBase) + // Container offset
+        containerBaseZIndexOffset[componentType];
+        zIndex = Math.min(zIndex, token.zIndexPopupBase + CONTAINER_MAX_OFFSET);
+    } else zIndex += consumerBaseZIndexOffset[componentType];
+    return [
+        parentZIndex === undefined ? customZIndex : zIndex,
+        zIndex
+    ];
+}
+
+},{"react":"21dqq","../../theme/useToken":"7Ig10","../zindexContext":"8JE3R","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8JE3R":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const zIndexContext = /*#__PURE__*/ (0, _reactDefault.default).createContext(undefined);
+zIndexContext.displayName = "zIndexContext";
+exports.default = zIndexContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5YMWF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _actionButton = require("../../_util/ActionButton");
+var _actionButtonDefault = parcelHelpers.interopDefault(_actionButton);
+var _context = require("../context");
+"use client";
+const ConfirmCancelBtn = ()=>{
+    const { autoFocusButton, cancelButtonProps, cancelTextLocale, isSilent, mergedOkCancel, rootPrefixCls, close, onCancel, onConfirm } = (0, _react.useContext)((0, _context.ModalContext));
+    return mergedOkCancel ? /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _actionButtonDefault.default), {
+        isSilent: isSilent,
+        actionFn: onCancel,
+        close: function() {
+            close === null || close === void 0 || close.apply(void 0, arguments);
+            onConfirm === null || onConfirm === void 0 || onConfirm(false);
+        },
+        autoFocus: autoFocusButton === "cancel",
+        buttonProps: cancelButtonProps,
+        prefixCls: `${rootPrefixCls}-btn`
+    }, cancelTextLocale) : null;
+};
+exports.default = ConfirmCancelBtn;
+
+},{"react":"21dqq","../../_util/ActionButton":"OcdQC","../context":"6SQvP","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"OcdQC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _useState = require("rc-util/es/hooks/useState");
+var _useStateDefault = parcelHelpers.interopDefault(_useState);
+var _button = require("../button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _buttonHelpers = require("../button/buttonHelpers");
+"use client";
+function isThenable(thing) {
+    return !!(thing && thing.then);
+}
+const ActionButton = (props)=>{
+    const { type, children, prefixCls, buttonProps, close, autoFocus, emitEvent, isSilent, quitOnNullishReturnValue, actionFn } = props;
+    const clickedRef = _react.useRef(false);
+    const buttonRef = _react.useRef(null);
+    const [loading, setLoading] = (0, _useStateDefault.default)(false);
+    const onInternalClose = function() {
+        close === null || close === void 0 || close.apply(void 0, arguments);
+    };
+    _react.useEffect(()=>{
+        let timeoutId = null;
+        if (autoFocus) timeoutId = setTimeout(()=>{
+            var _a;
+            (_a = buttonRef.current) === null || _a === void 0 || _a.focus();
+        });
+        return ()=>{
+            if (timeoutId) clearTimeout(timeoutId);
+        };
+    }, []);
+    const handlePromiseOnOk = (returnValueOfOnOk)=>{
+        if (!isThenable(returnValueOfOnOk)) return;
+        setLoading(true);
+        returnValueOfOnOk.then(function() {
+            setLoading(false, true);
+            onInternalClose.apply(void 0, arguments);
+            clickedRef.current = false;
+        }, (e)=>{
+            // See: https://github.com/ant-design/ant-design/issues/6183
+            setLoading(false, true);
+            clickedRef.current = false;
+            // Do not throw if is `await` mode
+            if (isSilent === null || isSilent === void 0 ? void 0 : isSilent()) return;
+            return Promise.reject(e);
+        });
+    };
+    const onClick = (e)=>{
+        if (clickedRef.current) return;
+        clickedRef.current = true;
+        if (!actionFn) {
+            onInternalClose();
+            return;
+        }
+        let returnValueOfOnOk;
+        if (emitEvent) {
+            returnValueOfOnOk = actionFn(e);
+            if (quitOnNullishReturnValue && !isThenable(returnValueOfOnOk)) {
+                clickedRef.current = false;
+                onInternalClose(e);
+                return;
+            }
+        } else if (actionFn.length) {
+            returnValueOfOnOk = actionFn(close);
+            // https://github.com/ant-design/ant-design/issues/23358
+            clickedRef.current = false;
+        } else {
+            returnValueOfOnOk = actionFn();
+            if (!isThenable(returnValueOfOnOk)) {
+                onInternalClose();
+                return;
+            }
+        }
+        handlePromiseOnOk(returnValueOfOnOk);
+    };
+    return /*#__PURE__*/ _react.createElement((0, _buttonDefault.default), Object.assign({}, (0, _buttonHelpers.convertLegacyProps)(type), {
+        onClick: onClick,
+        loading: loading,
+        prefixCls: prefixCls
+    }, buttonProps, {
+        ref: buttonRef
+    }), children);
+};
+exports.default = ActionButton;
+
+},{"react":"21dqq","rc-util/es/hooks/useState":"4KG3w","../button":"SbZy4","../button/buttonHelpers":"04LWt","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6SQvP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ModalContext", ()=>ModalContext);
+parcelHelpers.export(exports, "ModalContextProvider", ()=>ModalContextProvider);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const ModalContext = /*#__PURE__*/ (0, _reactDefault.default).createContext({});
+const { Provider: ModalContextProvider } = ModalContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"aOPKK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _actionButton = require("../../_util/ActionButton");
+var _actionButtonDefault = parcelHelpers.interopDefault(_actionButton);
+var _context = require("../context");
+"use client";
+const ConfirmOkBtn = ()=>{
+    const { autoFocusButton, close, isSilent, okButtonProps, rootPrefixCls, okTextLocale, okType, onConfirm, onOk } = (0, _react.useContext)((0, _context.ModalContext));
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _actionButtonDefault.default), {
+        isSilent: isSilent,
+        type: okType || "primary",
+        actionFn: onOk,
+        close: function() {
+            close === null || close === void 0 || close.apply(void 0, arguments);
+            onConfirm === null || onConfirm === void 0 || onConfirm(true);
+        },
+        autoFocus: autoFocusButton === "ok",
+        buttonProps: okButtonProps,
+        prefixCls: `${rootPrefixCls}-btn`
+    }, okTextLocale);
+};
+exports.default = ConfirmOkBtn;
+
+},{"react":"21dqq","../../_util/ActionButton":"OcdQC","../context":"6SQvP","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"lTP8t":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _closeOutlined = require("@ant-design/icons/es/icons/CloseOutlined");
+var _closeOutlinedDefault = parcelHelpers.interopDefault(_closeOutlined);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcDialog = require("rc-dialog");
+var _rcDialogDefault = parcelHelpers.interopDefault(_rcDialog);
+var _useClosable = require("../_util/hooks/useClosable");
+var _useClosableDefault = parcelHelpers.interopDefault(_useClosable);
+var _useZIndex = require("../_util/hooks/useZIndex");
+var _motion = require("../_util/motion");
+var _styleChecker = require("../_util/styleChecker");
+var _warning = require("../_util/warning");
+var _zindexContext = require("../_util/zindexContext");
+var _zindexContextDefault = parcelHelpers.interopDefault(_zindexContext);
+var _configProvider = require("../config-provider");
+var _useCSSVarCls = require("../config-provider/hooks/useCSSVarCls");
+var _useCSSVarClsDefault = parcelHelpers.interopDefault(_useCSSVarCls);
+var _context = require("../form/context");
+var _skeleton = require("../skeleton");
+var _skeletonDefault = parcelHelpers.interopDefault(_skeleton);
+var _compact = require("../space/Compact");
+var _context1 = require("../watermark/context");
+var _shared = require("./shared");
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+let mousePosition;
+// ref: https://github.com/ant-design/ant-design/issues/15795
+const getClickPosition = (e)=>{
+    mousePosition = {
+        x: e.pageX,
+        y: e.pageY
+    };
+    // 100ms 内发生过点击事件，则从点击位置动画展示
+    // 否则直接 zoom 展示
+    // 这样可以兼容非点击方式展开
+    setTimeout(()=>{
+        mousePosition = null;
+    }, 100);
+};
+// 只有点击事件支持从鼠标位置动画展开
+if ((0, _styleChecker.canUseDocElement)()) document.documentElement.addEventListener("click", getClickPosition, true);
+const Modal = (props)=>{
+    var _a;
+    const { getPopupContainer: getContextPopupContainer, getPrefixCls, direction, modal: modalContext } = _react.useContext((0, _configProvider.ConfigContext));
+    const handleCancel = (e)=>{
+        const { onCancel } = props;
+        onCancel === null || onCancel === void 0 || onCancel(e);
+    };
+    const handleOk = (e)=>{
+        const { onOk } = props;
+        onOk === null || onOk === void 0 || onOk(e);
+    };
+    {
+        const warning = (0, _warning.devUseWarning)("Modal");
+        [
+            [
+                "visible",
+                "open"
+            ],
+            [
+                "bodyStyle",
+                "styles.body"
+            ],
+            [
+                "maskStyle",
+                "styles.mask"
+            ]
+        ].forEach((_ref)=>{
+            let [deprecatedName, newName] = _ref;
+            warning.deprecated(!(deprecatedName in props), deprecatedName, newName);
+        });
+    }
+    const { prefixCls: customizePrefixCls, className, rootClassName, open, wrapClassName, centered, getContainer, focusTriggerAfterClose = true, style, // Deprecated
+    visible, width = 520, footer, classNames: modalClassNames, styles: modalStyles, children, loading } = props, restProps = __rest(props, [
+        "prefixCls",
+        "className",
+        "rootClassName",
+        "open",
+        "wrapClassName",
+        "centered",
+        "getContainer",
+        "focusTriggerAfterClose",
+        "style",
+        "visible",
+        "width",
+        "footer",
+        "classNames",
+        "styles",
+        "children",
+        "loading"
+    ]);
+    const prefixCls = getPrefixCls("modal", customizePrefixCls);
+    const rootPrefixCls = getPrefixCls();
+    // Style
+    const rootCls = (0, _useCSSVarClsDefault.default)(prefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls, rootCls);
+    const wrapClassNameExtended = (0, _classnamesDefault.default)(wrapClassName, {
+        [`${prefixCls}-centered`]: !!centered,
+        [`${prefixCls}-wrap-rtl`]: direction === "rtl"
+    });
+    const dialogFooter = footer !== null && !loading ? /*#__PURE__*/ _react.createElement((0, _shared.Footer), Object.assign({}, props, {
+        onOk: handleOk,
+        onCancel: handleCancel
+    })) : null;
+    const [mergedClosable, mergedCloseIcon] = (0, _useClosableDefault.default)((0, _useClosable.pickClosable)(props), (0, _useClosable.pickClosable)(modalContext), {
+        closable: true,
+        closeIcon: /*#__PURE__*/ _react.createElement((0, _closeOutlinedDefault.default), {
+            className: `${prefixCls}-close-icon`
+        }),
+        closeIconRender: (icon)=>(0, _shared.renderCloseIcon)(prefixCls, icon)
+    });
+    // ============================ Refs ============================
+    // Select `ant-modal-content` by `panelRef`
+    const panelRef = (0, _context1.usePanelRef)(`.${prefixCls}-content`);
+    // ============================ zIndex ============================
+    const [zIndex, contextZIndex] = (0, _useZIndex.useZIndex)("Modal", restProps.zIndex);
+    // =========================== Render ===========================
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement((0, _compact.NoCompactStyle), null, /*#__PURE__*/ _react.createElement((0, _context.NoFormStyle), {
+        status: true,
+        override: true
+    }, /*#__PURE__*/ _react.createElement((0, _zindexContextDefault.default).Provider, {
+        value: contextZIndex
+    }, /*#__PURE__*/ _react.createElement((0, _rcDialogDefault.default), Object.assign({
+        width: width
+    }, restProps, {
+        zIndex: zIndex,
+        getContainer: getContainer === undefined ? getContextPopupContainer : getContainer,
+        prefixCls: prefixCls,
+        rootClassName: (0, _classnamesDefault.default)(hashId, rootClassName, cssVarCls, rootCls),
+        footer: dialogFooter,
+        visible: open !== null && open !== void 0 ? open : visible,
+        mousePosition: (_a = restProps.mousePosition) !== null && _a !== void 0 ? _a : mousePosition,
+        onClose: handleCancel,
+        closable: mergedClosable,
+        closeIcon: mergedCloseIcon,
+        focusTriggerAfterClose: focusTriggerAfterClose,
+        transitionName: (0, _motion.getTransitionName)(rootPrefixCls, "zoom", props.transitionName),
+        maskTransitionName: (0, _motion.getTransitionName)(rootPrefixCls, "fade", props.maskTransitionName),
+        className: (0, _classnamesDefault.default)(hashId, className, modalContext === null || modalContext === void 0 ? void 0 : modalContext.className),
+        style: Object.assign(Object.assign({}, modalContext === null || modalContext === void 0 ? void 0 : modalContext.style), style),
+        classNames: Object.assign(Object.assign(Object.assign({}, modalContext === null || modalContext === void 0 ? void 0 : modalContext.classNames), modalClassNames), {
+            wrapper: (0, _classnamesDefault.default)(wrapClassNameExtended, modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.wrapper)
+        }),
+        styles: Object.assign(Object.assign({}, modalContext === null || modalContext === void 0 ? void 0 : modalContext.styles), modalStyles),
+        panelRef: panelRef
+    }), loading ? /*#__PURE__*/ _react.createElement((0, _skeletonDefault.default), {
+        active: true,
+        title: false,
+        paragraph: {
+            rows: 4
+        },
+        className: `${prefixCls}-body-skeleton`
+    }) : children)))));
+};
+exports.default = Modal;
+
+},{"react":"21dqq","@ant-design/icons/es/icons/CloseOutlined":"a9P1C","classnames":"jocGM","rc-dialog":"4Hjo4","../_util/hooks/useClosable":"isGWv","../_util/hooks/useZIndex":"7Fs4S","../_util/motion":"8VhHM","../_util/styleChecker":"a2Olf","../_util/warning":"daUrm","../_util/zindexContext":"8JE3R","../config-provider":"iMraF","../config-provider/hooks/useCSSVarCls":"eY64b","../form/context":"flRlt","../skeleton":"lppaB","../space/Compact":"9inLd","../watermark/context":"3aOut","./shared":"gAzjK","./style":"jfsBh","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4Hjo4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Panel", ()=>(0, _panelDefault.default));
+var _dialogWrap = require("./DialogWrap");
+var _dialogWrapDefault = parcelHelpers.interopDefault(_dialogWrap);
+var _panel = require("./Dialog/Content/Panel");
+var _panelDefault = parcelHelpers.interopDefault(_panel);
+exports.default = (0, _dialogWrapDefault.default);
+
+},{"./DialogWrap":"8GHWe","./Dialog/Content/Panel":"LLUuB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8GHWe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _portal = require("@rc-component/portal");
+var _portalDefault = parcelHelpers.interopDefault(_portal);
+var _react = require("react");
+var _context = require("./context");
+var _dialog = require("./Dialog");
+var _dialogDefault = parcelHelpers.interopDefault(_dialog);
+// fix issue #10656
+/*
+ * getContainer remarks
+ * Custom container should not be return, because in the Portal component, it will remove the
+ * return container element here, if the custom container is the only child of it's component,
+ * like issue #10656, It will has a conflict with removeChild method in react-dom.
+ * So here should add a child (div element) to custom container.
+ * */ var DialogWrap = function DialogWrap(props) {
+    var visible = props.visible, getContainer = props.getContainer, forceRender = props.forceRender, _props$destroyOnClose = props.destroyOnClose, destroyOnClose = _props$destroyOnClose === void 0 ? false : _props$destroyOnClose, _afterClose = props.afterClose, panelRef = props.panelRef;
+    var _React$useState = _react.useState(visible), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), animatedVisible = _React$useState2[0], setAnimatedVisible = _React$useState2[1];
+    var refContext = _react.useMemo(function() {
+        return {
+            panel: panelRef
+        };
+    }, [
+        panelRef
+    ]);
+    _react.useEffect(function() {
+        if (visible) setAnimatedVisible(true);
+    }, [
+        visible
+    ]);
+    // Destroy on close will remove wrapped div
+    if (!forceRender && destroyOnClose && !animatedVisible) return null;
+    return /*#__PURE__*/ _react.createElement((0, _context.RefContext).Provider, {
+        value: refContext
+    }, /*#__PURE__*/ _react.createElement((0, _portalDefault.default), {
+        open: visible || forceRender || animatedVisible,
+        autoDestroy: false,
+        getContainer: getContainer,
+        autoLock: visible || animatedVisible
+    }, /*#__PURE__*/ _react.createElement((0, _dialogDefault.default), (0, _extendsDefault.default)({}, props, {
+        destroyOnClose: destroyOnClose,
+        afterClose: function afterClose() {
+            _afterClose === null || _afterClose === void 0 || _afterClose();
+            setAnimatedVisible(false);
+        }
+    }))));
+};
+DialogWrap.displayName = "Dialog";
+exports.default = DialogWrap;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@rc-component/portal":"aJNl8","react":"21dqq","./context":"6QeiA","./Dialog":"kPZu0","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6QeiA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "RefContext", ()=>RefContext);
+var _react = require("react");
+var RefContext = /*#__PURE__*/ _react.createContext({});
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kPZu0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Dialog);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _contains = require("rc-util/es/Dom/contains");
+var _containsDefault = parcelHelpers.interopDefault(_contains);
+var _useId = require("rc-util/es/hooks/useId");
+var _useIdDefault = parcelHelpers.interopDefault(_useId);
+var _keyCode = require("rc-util/es/KeyCode");
+var _keyCodeDefault = parcelHelpers.interopDefault(_keyCode);
+var _pickAttrs = require("rc-util/es/pickAttrs");
+var _pickAttrsDefault = parcelHelpers.interopDefault(_pickAttrs);
+var _react = require("react");
+var _util = require("../util");
+var _content = require("./Content");
+var _contentDefault = parcelHelpers.interopDefault(_content);
+var _mask = require("./Mask");
+var _maskDefault = parcelHelpers.interopDefault(_mask);
+var _warning = require("rc-util/es/warning");
+function Dialog(props) {
+    var _props$prefixCls = props.prefixCls, prefixCls = _props$prefixCls === void 0 ? "rc-dialog" : _props$prefixCls, zIndex = props.zIndex, _props$visible = props.visible, visible = _props$visible === void 0 ? false : _props$visible, _props$keyboard = props.keyboard, keyboard = _props$keyboard === void 0 ? true : _props$keyboard, _props$focusTriggerAf = props.focusTriggerAfterClose, focusTriggerAfterClose = _props$focusTriggerAf === void 0 ? true : _props$focusTriggerAf, wrapStyle = props.wrapStyle, wrapClassName = props.wrapClassName, wrapProps = props.wrapProps, onClose = props.onClose, afterOpenChange = props.afterOpenChange, afterClose = props.afterClose, transitionName = props.transitionName, animation = props.animation, _props$closable = props.closable, closable = _props$closable === void 0 ? true : _props$closable, _props$mask = props.mask, mask = _props$mask === void 0 ? true : _props$mask, maskTransitionName = props.maskTransitionName, maskAnimation = props.maskAnimation, _props$maskClosable = props.maskClosable, maskClosable = _props$maskClosable === void 0 ? true : _props$maskClosable, maskStyle = props.maskStyle, maskProps = props.maskProps, rootClassName = props.rootClassName, modalClassNames = props.classNames, modalStyles = props.styles;
+    [
+        "wrapStyle",
+        "bodyStyle",
+        "maskStyle"
+    ].forEach(function(prop) {
+        // (prop in props) && console.error(`Warning: ${prop} is deprecated, please use styles instead.`)
+        (0, _warning.warning)(!(prop in props), "".concat(prop, " is deprecated, please use styles instead."));
+    });
+    if ("wrapClassName" in props) (0, _warning.warning)(false, "wrapClassName is deprecated, please use classNames instead.");
+    var lastOutSideActiveElementRef = (0, _react.useRef)();
+    var wrapperRef = (0, _react.useRef)();
+    var contentRef = (0, _react.useRef)();
+    var _React$useState = _react.useState(visible), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), animatedVisible = _React$useState2[0], setAnimatedVisible = _React$useState2[1];
+    // ========================== Init ==========================
+    var ariaId = (0, _useIdDefault.default)();
+    function saveLastOutSideActiveElementRef() {
+        if (!(0, _containsDefault.default)(wrapperRef.current, document.activeElement)) lastOutSideActiveElementRef.current = document.activeElement;
+    }
+    function focusDialogContent() {
+        if (!(0, _containsDefault.default)(wrapperRef.current, document.activeElement)) {
+            var _contentRef$current;
+            (_contentRef$current = contentRef.current) === null || _contentRef$current === void 0 || _contentRef$current.focus();
+        }
+    }
+    // ========================= Events =========================
+    function onDialogVisibleChanged(newVisible) {
+        // Try to focus
+        if (newVisible) focusDialogContent();
+        else {
+            // Clean up scroll bar & focus back
+            setAnimatedVisible(false);
+            if (mask && lastOutSideActiveElementRef.current && focusTriggerAfterClose) {
+                try {
+                    lastOutSideActiveElementRef.current.focus({
+                        preventScroll: true
+                    });
+                } catch (e) {
+                // Do nothing
+                }
+                lastOutSideActiveElementRef.current = null;
+            }
+            // Trigger afterClose only when change visible from true to false
+            if (animatedVisible) afterClose === null || afterClose === void 0 || afterClose();
+        }
+        afterOpenChange === null || afterOpenChange === void 0 || afterOpenChange(newVisible);
+    }
+    function onInternalClose(e) {
+        onClose === null || onClose === void 0 || onClose(e);
+    }
+    // >>> Content
+    var contentClickRef = (0, _react.useRef)(false);
+    var contentTimeoutRef = (0, _react.useRef)();
+    // We need record content click incase content popup out of dialog
+    var onContentMouseDown = function onContentMouseDown() {
+        clearTimeout(contentTimeoutRef.current);
+        contentClickRef.current = true;
+    };
+    var onContentMouseUp = function onContentMouseUp() {
+        contentTimeoutRef.current = setTimeout(function() {
+            contentClickRef.current = false;
+        });
+    };
+    // >>> Wrapper
+    // Close only when element not on dialog
+    var onWrapperClick = null;
+    if (maskClosable) onWrapperClick = function onWrapperClick(e) {
+        if (contentClickRef.current) contentClickRef.current = false;
+        else if (wrapperRef.current === e.target) onInternalClose(e);
+    };
+    function onWrapperKeyDown(e) {
+        if (keyboard && e.keyCode === (0, _keyCodeDefault.default).ESC) {
+            e.stopPropagation();
+            onInternalClose(e);
+            return;
+        }
+        // keep focus inside dialog
+        if (visible) {
+            if (e.keyCode === (0, _keyCodeDefault.default).TAB) contentRef.current.changeActive(!e.shiftKey);
+        }
+    }
+    // ========================= Effect =========================
+    (0, _react.useEffect)(function() {
+        if (visible) {
+            setAnimatedVisible(true);
+            saveLastOutSideActiveElementRef();
+        }
+    }, [
+        visible
+    ]);
+    // Remove direct should also check the scroll bar update
+    (0, _react.useEffect)(function() {
+        return function() {
+            clearTimeout(contentTimeoutRef.current);
+        };
+    }, []);
+    // ========================= Render =========================
+    return /*#__PURE__*/ _react.createElement("div", (0, _extendsDefault.default)({
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-root"), rootClassName)
+    }, (0, _pickAttrsDefault.default)(props, {
+        data: true
+    })), /*#__PURE__*/ _react.createElement((0, _maskDefault.default), {
+        prefixCls: prefixCls,
+        visible: mask && visible,
+        motionName: (0, _util.getMotionName)(prefixCls, maskTransitionName, maskAnimation),
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+            zIndex: zIndex
+        }, maskStyle), modalStyles === null || modalStyles === void 0 ? void 0 : modalStyles.mask),
+        maskProps: maskProps,
+        className: modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.mask
+    }), /*#__PURE__*/ _react.createElement("div", (0, _extendsDefault.default)({
+        tabIndex: -1,
+        onKeyDown: onWrapperKeyDown,
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-wrap"), wrapClassName, modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.wrapper),
+        ref: wrapperRef,
+        onClick: onWrapperClick,
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({
+            zIndex: zIndex
+        }, wrapStyle), modalStyles === null || modalStyles === void 0 ? void 0 : modalStyles.wrapper), {}, {
+            display: !animatedVisible ? "none" : null
+        })
+    }, wrapProps), /*#__PURE__*/ _react.createElement((0, _contentDefault.default), (0, _extendsDefault.default)({}, props, {
+        onMouseDown: onContentMouseDown,
+        onMouseUp: onContentMouseUp,
+        ref: contentRef,
+        closable: closable,
+        ariaId: ariaId,
+        prefixCls: prefixCls,
+        visible: visible && animatedVisible,
+        onClose: onInternalClose,
+        onVisibleChanged: onDialogVisibleChanged,
+        motionName: (0, _util.getMotionName)(prefixCls, transitionName, animation)
+    }))));
+}
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","classnames":"jocGM","rc-util/es/Dom/contains":"hm8Lm","rc-util/es/hooks/useId":"5lCgP","rc-util/es/KeyCode":"77Hyb","rc-util/es/pickAttrs":"e9qAQ","react":"21dqq","../util":"SODsh","./Content":"NAHAo","./Mask":"1EfEU","rc-util/es/warning":"c7oua","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"e9qAQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>pickAttrs);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var attributes = "accept acceptCharset accessKey action allowFullScreen allowTransparency\n    alt async autoComplete autoFocus autoPlay capture cellPadding cellSpacing challenge\n    charSet checked classID className colSpan cols content contentEditable contextMenu\n    controls coords crossOrigin data dateTime default defer dir disabled download draggable\n    encType form formAction formEncType formMethod formNoValidate formTarget frameBorder\n    headers height hidden high href hrefLang htmlFor httpEquiv icon id inputMode integrity\n    is keyParams keyType kind label lang list loop low manifest marginHeight marginWidth max maxLength media\n    mediaGroup method min minLength multiple muted name noValidate nonce open\n    optimum pattern placeholder poster preload radioGroup readOnly rel required\n    reversed role rowSpan rows sandbox scope scoped scrolling seamless selected\n    shape size sizes span spellCheck src srcDoc srcLang srcSet start step style\n    summary tabIndex target title type useMap value width wmode wrap";
+var eventsName = "onCopy onCut onPaste onCompositionEnd onCompositionStart onCompositionUpdate onKeyDown\n    onKeyPress onKeyUp onFocus onBlur onChange onInput onSubmit onClick onContextMenu onDoubleClick\n    onDrag onDragEnd onDragEnter onDragExit onDragLeave onDragOver onDragStart onDrop onMouseDown\n    onMouseEnter onMouseLeave onMouseMove onMouseOut onMouseOver onMouseUp onSelect onTouchCancel\n    onTouchEnd onTouchMove onTouchStart onScroll onWheel onAbort onCanPlay onCanPlayThrough\n    onDurationChange onEmptied onEncrypted onEnded onError onLoadedData onLoadedMetadata\n    onLoadStart onPause onPlay onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend onTimeUpdate onVolumeChange onWaiting onLoad onError";
+var propList = "".concat(attributes, " ").concat(eventsName).split(/[\s\n]+/);
+/* eslint-enable max-len */ var ariaPrefix = "aria-";
+var dataPrefix = "data-";
+function match(key, prefix) {
+    return key.indexOf(prefix) === 0;
+}
+function pickAttrs(props) {
+    var ariaOnly = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var mergedConfig;
+    if (ariaOnly === false) mergedConfig = {
+        aria: true,
+        data: true,
+        attr: true
+    };
+    else if (ariaOnly === true) mergedConfig = {
+        aria: true
+    };
+    else mergedConfig = (0, _objectSpread2Default.default)({}, ariaOnly);
+    var attrs = {};
+    Object.keys(props).forEach(function(key) {
+        if (// Aria
+        mergedConfig.aria && (key === "role" || match(key, ariaPrefix)) || // Data
+        mergedConfig.data && match(key, dataPrefix) || // Attr
+        mergedConfig.attr && propList.includes(key)) attrs[key] = props[key];
+    });
+    return attrs;
+}
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"SODsh":[function(require,module,exports) {
+// =============================== Motion ===============================
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getMotionName", ()=>getMotionName);
+parcelHelpers.export(exports, "offset", ()=>offset);
+function getMotionName(prefixCls, transitionName, animationName) {
+    var motionName = transitionName;
+    if (!motionName && animationName) motionName = "".concat(prefixCls, "-").concat(animationName);
+    return motionName;
+}
+// =============================== Offset ===============================
+function getScroll(w, top) {
+    var ret = w["page".concat(top ? "Y" : "X", "Offset")];
+    var method = "scroll".concat(top ? "Top" : "Left");
+    if (typeof ret !== "number") {
+        var d = w.document;
+        ret = d.documentElement[method];
+        if (typeof ret !== "number") ret = d.body[method];
+    }
+    return ret;
+}
+function offset(el) {
+    var rect = el.getBoundingClientRect();
+    var pos = {
+        left: rect.left,
+        top: rect.top
+    };
+    var doc = el.ownerDocument;
+    var w = doc.defaultView || doc.parentWindow;
+    pos.left += getScroll(w);
+    pos.top += getScroll(w, true);
+    return pos;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"NAHAo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+var _util = require("../../util");
+var _panel = require("./Panel");
+var _panelDefault = parcelHelpers.interopDefault(_panel);
+var Content = /*#__PURE__*/ _react.forwardRef(function(props, ref) {
+    var prefixCls = props.prefixCls, title = props.title, style = props.style, className = props.className, visible = props.visible, forceRender = props.forceRender, destroyOnClose = props.destroyOnClose, motionName = props.motionName, ariaId = props.ariaId, onVisibleChanged = props.onVisibleChanged, mousePosition = props.mousePosition;
+    var dialogRef = (0, _react.useRef)();
+    // ============================= Style ==============================
+    var _React$useState = _react.useState(), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), transformOrigin = _React$useState2[0], setTransformOrigin = _React$useState2[1];
+    var contentStyle = {};
+    if (transformOrigin) contentStyle.transformOrigin = transformOrigin;
+    function onPrepare() {
+        var elementOffset = (0, _util.offset)(dialogRef.current);
+        setTransformOrigin(mousePosition ? "".concat(mousePosition.x - elementOffset.left, "px ").concat(mousePosition.y - elementOffset.top, "px") : "");
+    }
+    // ============================= Render =============================
+    return /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), {
+        visible: visible,
+        onVisibleChanged: onVisibleChanged,
+        onAppearPrepare: onPrepare,
+        onEnterPrepare: onPrepare,
+        forceRender: forceRender,
+        motionName: motionName,
+        removeOnLeave: destroyOnClose,
+        ref: dialogRef
+    }, function(_ref, motionRef) {
+        var motionClassName = _ref.className, motionStyle = _ref.style;
+        return /*#__PURE__*/ _react.createElement((0, _panelDefault.default), (0, _extendsDefault.default)({}, props, {
+            ref: ref,
+            title: title,
+            ariaId: ariaId,
+            prefixCls: prefixCls,
+            holderRef: motionRef,
+            style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, motionStyle), style), contentStyle),
+            className: (0, _classnamesDefault.default)(className, motionClassName)
+        }));
+    });
+});
+Content.displayName = "Content";
+exports.default = Content;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","react":"21dqq","classnames":"jocGM","rc-motion":"aaavi","../../util":"SODsh","./Panel":"LLUuB","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"LLUuB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _ref = require("rc-util/es/ref");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _context = require("../../context");
+var _memoChildren = require("./MemoChildren");
+var _memoChildrenDefault = parcelHelpers.interopDefault(_memoChildren);
+var _pickAttrs = require("rc-util/es/pickAttrs");
+var _pickAttrsDefault = parcelHelpers.interopDefault(_pickAttrs);
+var sentinelStyle = {
+    width: 0,
+    height: 0,
+    overflow: "hidden",
+    outline: "none"
+};
+var entityStyle = {
+    outline: "none"
+};
+var Panel = /*#__PURE__*/ (0, _reactDefault.default).forwardRef(function(props, ref) {
+    var prefixCls = props.prefixCls, className = props.className, style = props.style, title = props.title, ariaId = props.ariaId, footer = props.footer, closable = props.closable, closeIcon = props.closeIcon, onClose = props.onClose, children = props.children, bodyStyle = props.bodyStyle, bodyProps = props.bodyProps, modalRender = props.modalRender, onMouseDown = props.onMouseDown, onMouseUp = props.onMouseUp, holderRef = props.holderRef, visible = props.visible, forceRender = props.forceRender, width = props.width, height = props.height, modalClassNames = props.classNames, modalStyles = props.styles;
+    // ================================= Refs =================================
+    var _React$useContext = (0, _reactDefault.default).useContext((0, _context.RefContext)), panelRef = _React$useContext.panel;
+    var mergedRef = (0, _ref.useComposeRef)(holderRef, panelRef);
+    var sentinelStartRef = (0, _react.useRef)();
+    var sentinelEndRef = (0, _react.useRef)();
+    var entityRef = (0, _react.useRef)();
+    (0, _reactDefault.default).useImperativeHandle(ref, function() {
+        return {
+            focus: function focus() {
+                var _entityRef$current;
+                (_entityRef$current = entityRef.current) === null || _entityRef$current === void 0 || _entityRef$current.focus();
+            },
+            changeActive: function changeActive(next) {
+                var _document = document, activeElement = _document.activeElement;
+                if (next && activeElement === sentinelEndRef.current) sentinelStartRef.current.focus();
+                else if (!next && activeElement === sentinelStartRef.current) sentinelEndRef.current.focus();
+            }
+        };
+    });
+    // ================================ Style =================================
+    var contentStyle = {};
+    if (width !== undefined) contentStyle.width = width;
+    if (height !== undefined) contentStyle.height = height;
+    // ================================ Render ================================
+    var footerNode;
+    if (footer) footerNode = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-footer"), modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.footer),
+        style: (0, _objectSpread2Default.default)({}, modalStyles === null || modalStyles === void 0 ? void 0 : modalStyles.footer)
+    }, footer);
+    var headerNode;
+    if (title) headerNode = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-header"), modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.header),
+        style: (0, _objectSpread2Default.default)({}, modalStyles === null || modalStyles === void 0 ? void 0 : modalStyles.header)
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: "".concat(prefixCls, "-title"),
+        id: ariaId
+    }, title));
+    var closableObj = (0, _react.useMemo)(function() {
+        if ((0, _typeofDefault.default)(closable) === "object" && closable !== null) return closable;
+        if (closable) return {
+            closeIcon: closeIcon !== null && closeIcon !== void 0 ? closeIcon : /*#__PURE__*/ (0, _reactDefault.default).createElement("span", {
+                className: "".concat(prefixCls, "-close-x")
+            })
+        };
+        return {};
+    }, [
+        closable,
+        closeIcon
+    ]);
+    var ariaProps = (0, _pickAttrsDefault.default)(closableObj, true);
+    var closer;
+    if (closable) closer = /*#__PURE__*/ (0, _reactDefault.default).createElement("button", (0, _extendsDefault.default)({
+        type: "button",
+        onClick: onClose,
+        "aria-label": "Close"
+    }, ariaProps, {
+        className: "".concat(prefixCls, "-close")
+    }), closableObj.closeIcon);
+    var content = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-content"), modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.content),
+        style: modalStyles === null || modalStyles === void 0 ? void 0 : modalStyles.content
+    }, closer, headerNode, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", (0, _extendsDefault.default)({
+        className: (0, _classnamesDefault.default)("".concat(prefixCls, "-body"), modalClassNames === null || modalClassNames === void 0 ? void 0 : modalClassNames.body),
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, bodyStyle), modalStyles === null || modalStyles === void 0 ? void 0 : modalStyles.body)
+    }, bodyProps), children), footerNode);
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        key: "dialog-element",
+        role: "dialog",
+        "aria-labelledby": title ? ariaId : null,
+        "aria-modal": "true",
+        ref: mergedRef,
+        style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, style), contentStyle),
+        className: (0, _classnamesDefault.default)(prefixCls, className),
+        onMouseDown: onMouseDown,
+        onMouseUp: onMouseUp
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        tabIndex: 0,
+        ref: sentinelStartRef,
+        style: sentinelStyle,
+        "aria-hidden": "true"
+    }), /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        ref: entityRef,
+        tabIndex: -1,
+        style: entityStyle
+    }, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _memoChildrenDefault.default), {
+        shouldUpdate: visible || forceRender
+    }, modalRender ? modalRender(content) : content)), /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+        tabIndex: 0,
+        ref: sentinelEndRef,
+        style: sentinelStyle,
+        "aria-hidden": "true"
+    }));
+});
+Panel.displayName = "Panel";
+exports.default = Panel;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","classnames":"jocGM","rc-util/es/ref":"jS1Z6","react":"21dqq","../../context":"6QeiA","./MemoChildren":"3cq6g","rc-util/es/pickAttrs":"e9qAQ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3cq6g":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+exports.default = /*#__PURE__*/ _react.memo(function(_ref) {
+    var children = _ref.children;
+    return children;
+}, function(_, _ref2) {
+    var shouldUpdate = _ref2.shouldUpdate;
+    return !shouldUpdate;
+});
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1EfEU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Mask);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcMotion = require("rc-motion");
+var _rcMotionDefault = parcelHelpers.interopDefault(_rcMotion);
+function Mask(props) {
+    var prefixCls = props.prefixCls, style = props.style, visible = props.visible, maskProps = props.maskProps, motionName = props.motionName, className = props.className;
+    return /*#__PURE__*/ _react.createElement((0, _rcMotionDefault.default), {
+        key: "mask",
+        visible: visible,
+        motionName: motionName,
+        leavedClassName: "".concat(prefixCls, "-mask-hidden")
+    }, function(_ref, ref) {
+        var motionClassName = _ref.className, motionStyle = _ref.style;
+        return /*#__PURE__*/ _react.createElement("div", (0, _extendsDefault.default)({
+            ref: ref,
+            style: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, motionStyle), style),
+            className: (0, _classnamesDefault.default)("".concat(prefixCls, "-mask"), motionClassName, className)
+        }, maskProps));
+    });
+}
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","classnames":"jocGM","rc-motion":"aaavi","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"isGWv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "pickClosable", ()=>pickClosable);
+parcelHelpers.export(exports, "default", ()=>useClosable);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _closeOutlined = require("@ant-design/icons/es/icons/CloseOutlined");
+var _closeOutlinedDefault = parcelHelpers.interopDefault(_closeOutlined);
+var _pickAttrs = require("rc-util/es/pickAttrs");
+var _pickAttrsDefault = parcelHelpers.interopDefault(_pickAttrs);
+"use client";
+function pickClosable(context) {
+    if (!context) return undefined;
+    return {
+        closable: context.closable,
+        closeIcon: context.closeIcon
+    };
+}
+/** Convert `closable` and `closeIcon` to config object */ function useClosableConfig(closableCollection) {
+    const { closable, closeIcon } = closableCollection || {};
+    return (0, _reactDefault.default).useMemo(()=>{
+        if (// If `closable`, whatever rest be should be true
+        !closable && (closable === false || closeIcon === false || closeIcon === null)) return false;
+        if (closable === undefined && closeIcon === undefined) return null;
+        let closableConfig = {
+            closeIcon: typeof closeIcon !== "boolean" && closeIcon !== null ? closeIcon : undefined
+        };
+        if (closable && typeof closable === "object") closableConfig = Object.assign(Object.assign({}, closableConfig), closable);
+        return closableConfig;
+    }, [
+        closable,
+        closeIcon
+    ]);
+}
+/**
+ * Assign object without `undefined` field. Will skip if is `false`.
+ * This helps to handle both closableConfig or false
+ */ function assignWithoutUndefined() {
+    const target = {};
+    for(var _len = arguments.length, objList = new Array(_len), _key = 0; _key < _len; _key++)objList[_key] = arguments[_key];
+    objList.forEach((obj)=>{
+        if (obj) Object.keys(obj).forEach((key)=>{
+            if (obj[key] !== undefined) target[key] = obj[key];
+        });
+    });
+    return target;
+}
+/** Use same object to support `useMemo` optimization */ const EmptyFallbackCloseCollection = {};
+function useClosable(propCloseCollection, contextCloseCollection) {
+    let fallbackCloseCollection = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : EmptyFallbackCloseCollection;
+    // Align the `props`, `context` `fallback` to config object first
+    const propCloseConfig = useClosableConfig(propCloseCollection);
+    const contextCloseConfig = useClosableConfig(contextCloseCollection);
+    const mergedFallbackCloseCollection = (0, _reactDefault.default).useMemo(()=>Object.assign({
+            closeIcon: /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _closeOutlinedDefault.default), null)
+        }, fallbackCloseCollection), [
+        fallbackCloseCollection
+    ]);
+    // Use fallback logic to fill the config
+    const mergedClosableConfig = (0, _reactDefault.default).useMemo(()=>{
+        // ================ Props First ================
+        // Skip if prop is disabled
+        if (propCloseConfig === false) return false;
+        if (propCloseConfig) return assignWithoutUndefined(mergedFallbackCloseCollection, contextCloseConfig, propCloseConfig);
+        // =============== Context Second ==============
+        // Skip if context is disabled
+        if (contextCloseConfig === false) return false;
+        if (contextCloseConfig) return assignWithoutUndefined(mergedFallbackCloseCollection, contextCloseConfig);
+        // ============= Fallback Default ==============
+        return !mergedFallbackCloseCollection.closable ? false : mergedFallbackCloseCollection;
+    }, [
+        propCloseConfig,
+        contextCloseConfig,
+        mergedFallbackCloseCollection
+    ]);
+    // Calculate the final closeIcon
+    return (0, _reactDefault.default).useMemo(()=>{
+        if (mergedClosableConfig === false) return [
+            false,
+            null
+        ];
+        const { closeIconRender } = mergedFallbackCloseCollection;
+        const { closeIcon } = mergedClosableConfig;
+        let mergedCloseIcon = closeIcon;
+        if (mergedCloseIcon !== null && mergedCloseIcon !== undefined) {
+            // Wrap the closeIcon if needed
+            if (closeIconRender) mergedCloseIcon = closeIconRender(closeIcon);
+            // Wrap the closeIcon with aria props
+            const ariaProps = (0, _pickAttrsDefault.default)(mergedClosableConfig, true);
+            if (Object.keys(ariaProps).length) mergedCloseIcon = /*#__PURE__*/ (0, _reactDefault.default).isValidElement(mergedCloseIcon) ? /*#__PURE__*/ (0, _reactDefault.default).cloneElement(mergedCloseIcon, ariaProps) : /*#__PURE__*/ (0, _reactDefault.default).createElement("span", Object.assign({}, ariaProps), mergedCloseIcon);
+        }
+        return [
+            true,
+            mergedCloseIcon
+        ];
+    }, [
+        mergedClosableConfig,
+        mergedFallbackCloseCollection
+    ]);
+}
+
+},{"react":"21dqq","@ant-design/icons/es/icons/CloseOutlined":"a9P1C","rc-util/es/pickAttrs":"e9qAQ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"a2Olf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "canUseDocElement", ()=>canUseDocElement);
+parcelHelpers.export(exports, "isStyleSupport", ()=>(0, _styleChecker.isStyleSupport));
+var _canUseDom = require("rc-util/es/Dom/canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var _styleChecker = require("rc-util/es/Dom/styleChecker");
+const canUseDocElement = ()=>(0, _canUseDomDefault.default)() && window.document.documentElement;
+
+},{"rc-util/es/Dom/canUseDom":"hGxAQ","rc-util/es/Dom/styleChecker":"j7lOO","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"j7lOO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isStyleSupport", ()=>isStyleSupport);
+var _canUseDom = require("./canUseDom");
+var _canUseDomDefault = parcelHelpers.interopDefault(_canUseDom);
+var isStyleNameSupport = function isStyleNameSupport(styleName) {
+    if ((0, _canUseDomDefault.default)() && window.document.documentElement) {
+        var styleNameList = Array.isArray(styleName) ? styleName : [
+            styleName
+        ];
+        var documentElement = window.document.documentElement;
+        return styleNameList.some(function(name) {
+            return name in documentElement.style;
+        });
+    }
+    return false;
+};
+var isStyleValueSupport = function isStyleValueSupport(styleName, value) {
+    if (!isStyleNameSupport(styleName)) return false;
+    var ele = document.createElement("div");
+    var origin = ele.style[styleName];
+    ele.style[styleName] = value;
+    return ele.style[styleName] !== origin;
+};
+function isStyleSupport(styleName, styleValue) {
+    if (!Array.isArray(styleName) && styleValue !== undefined) return isStyleValueSupport(styleName, styleValue);
+    return isStyleNameSupport(styleName);
+}
+
+},{"./canUseDom":"hGxAQ","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"flRlt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FormContext", ()=>FormContext);
+parcelHelpers.export(exports, "NoStyleItemContext", ()=>NoStyleItemContext);
+parcelHelpers.export(exports, "FormProvider", ()=>FormProvider);
+parcelHelpers.export(exports, "FormItemPrefixContext", ()=>FormItemPrefixContext);
+parcelHelpers.export(exports, "FormItemInputContext", ()=>FormItemInputContext);
+parcelHelpers.export(exports, "NoFormStyle", ()=>NoFormStyle);
+parcelHelpers.export(exports, "VariantContext", ()=>VariantContext);
+var _react = require("react");
+var _rcFieldForm = require("rc-field-form");
+var _omit = require("rc-util/es/omit");
+var _omitDefault = parcelHelpers.interopDefault(_omit);
+"use client";
+const FormContext = /*#__PURE__*/ _react.createContext({
+    labelAlign: "right",
+    vertical: false,
+    itemRef: ()=>{}
+});
+const NoStyleItemContext = /*#__PURE__*/ _react.createContext(null);
+const FormProvider = (props)=>{
+    const providerProps = (0, _omitDefault.default)(props, [
+        "prefixCls"
+    ]);
+    return /*#__PURE__*/ _react.createElement((0, _rcFieldForm.FormProvider), Object.assign({}, providerProps));
+};
+const FormItemPrefixContext = /*#__PURE__*/ _react.createContext({
+    prefixCls: ""
+});
+const FormItemInputContext = /*#__PURE__*/ _react.createContext({});
+FormItemInputContext.displayName = "FormItemInputContext";
+const NoFormStyle = (_ref)=>{
+    let { children, status, override } = _ref;
+    const formItemInputContext = (0, _react.useContext)(FormItemInputContext);
+    const newFormItemInputContext = (0, _react.useMemo)(()=>{
+        const newContext = Object.assign({}, formItemInputContext);
+        if (override) delete newContext.isFormItemInput;
+        if (status) {
+            delete newContext.status;
+            delete newContext.hasFeedback;
+            delete newContext.feedbackIcon;
+        }
+        return newContext;
+    }, [
+        status,
+        override,
+        formItemInputContext
+    ]);
+    return /*#__PURE__*/ _react.createElement(FormItemInputContext.Provider, {
+        value: newFormItemInputContext
+    }, children);
+};
+const VariantContext = /*#__PURE__*/ (0, _react.createContext)(undefined);
+
+},{"react":"21dqq","rc-field-form":"bdxu5","rc-util/es/omit":"e7Re6","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bdxu5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Field", ()=>(0, _fieldDefault.default));
+parcelHelpers.export(exports, "List", ()=>(0, _listDefault.default));
+parcelHelpers.export(exports, "useForm", ()=>(0, _useFormDefault.default));
+parcelHelpers.export(exports, "FormProvider", ()=>(0, _formContext.FormProvider));
+parcelHelpers.export(exports, "FieldContext", ()=>(0, _fieldContextDefault.default));
+parcelHelpers.export(exports, "ListContext", ()=>(0, _listContextDefault.default));
+parcelHelpers.export(exports, "useWatch", ()=>(0, _useWatchDefault.default));
+var _react = require("react");
+var _field = require("./Field");
+var _fieldDefault = parcelHelpers.interopDefault(_field);
+var _list = require("./List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _useForm = require("./useForm");
+var _useFormDefault = parcelHelpers.interopDefault(_useForm);
+var _form = require("./Form");
+var _formDefault = parcelHelpers.interopDefault(_form);
+var _formContext = require("./FormContext");
+var _fieldContext = require("./FieldContext");
+var _fieldContextDefault = parcelHelpers.interopDefault(_fieldContext);
+var _listContext = require("./ListContext");
+var _listContextDefault = parcelHelpers.interopDefault(_listContext);
+var _useWatch = require("./useWatch");
+var _useWatchDefault = parcelHelpers.interopDefault(_useWatch);
+var InternalForm = /*#__PURE__*/ _react.forwardRef((0, _formDefault.default));
+var RefForm = InternalForm;
+RefForm.FormProvider = (0, _formContext.FormProvider);
+RefForm.Field = (0, _fieldDefault.default);
+RefForm.List = (0, _listDefault.default);
+RefForm.useForm = (0, _useFormDefault.default);
+RefForm.useWatch = (0, _useWatchDefault.default);
+exports.default = RefForm;
+
+},{"react":"21dqq","./Field":"66zlt","./List":"hUxbS","./useForm":"hgZUW","./Form":"87pbN","./FormContext":"cpeez","./FieldContext":"edeC2","./ListContext":"9sjEA","./useWatch":"2X6w3","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"66zlt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _regeneratorRuntime = require("@babel/runtime/helpers/esm/regeneratorRuntime");
+var _regeneratorRuntimeDefault = parcelHelpers.interopDefault(_regeneratorRuntime);
+var _asyncToGenerator = require("@babel/runtime/helpers/esm/asyncToGenerator");
+var _asyncToGeneratorDefault = parcelHelpers.interopDefault(_asyncToGenerator);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _assertThisInitialized = require("@babel/runtime/helpers/esm/assertThisInitialized");
+var _assertThisInitializedDefault = parcelHelpers.interopDefault(_assertThisInitialized);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _createSuper = require("@babel/runtime/helpers/esm/createSuper");
+var _createSuperDefault = parcelHelpers.interopDefault(_createSuper);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _toArray = require("rc-util/es/Children/toArray");
+var _toArrayDefault = parcelHelpers.interopDefault(_toArray);
+var _isEqual = require("rc-util/es/isEqual");
+var _isEqualDefault = parcelHelpers.interopDefault(_isEqual);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _fieldContext = require("./FieldContext");
+var _fieldContextDefault = parcelHelpers.interopDefault(_fieldContext);
+var _listContext = require("./ListContext");
+var _listContextDefault = parcelHelpers.interopDefault(_listContext);
+var _typeUtil = require("./utils/typeUtil");
+var _validateUtil = require("./utils/validateUtil");
+var _valueUtil = require("./utils/valueUtil");
+var _excluded = [
+    "name"
+];
+var EMPTY_ERRORS = [];
+function requireUpdate(shouldUpdate, prev, next, prevValue, nextValue, info) {
+    if (typeof shouldUpdate === "function") return shouldUpdate(prev, next, "source" in info ? {
+        source: info.source
+    } : {});
+    return prevValue !== nextValue;
+}
+// eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
+// We use Class instead of Hooks here since it will cost much code by using Hooks.
+var Field = /*#__PURE__*/ function(_React$Component) {
+    (0, _inheritsDefault.default)(Field, _React$Component);
+    var _super = (0, _createSuperDefault.default)(Field);
+    // ============================== Subscriptions ==============================
+    function Field(props) {
+        var _this;
+        (0, _classCallCheckDefault.default)(this, Field);
+        _this = _super.call(this, props);
+        // Register on init
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "state", {
+            resetCount: 0
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "cancelRegisterFunc", null);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "mounted", false);
+        /**
+     * Follow state should not management in State since it will async update by React.
+     * This makes first render of form can not get correct state value.
+     */ (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "touched", false);
+        /**
+     * Mark when touched & validated. Currently only used for `dependencies`.
+     * Note that we do not think field with `initialValue` is dirty
+     * but this will be by `isFieldDirty` func.
+     */ (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "dirty", false);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "validatePromise", void 0);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "prevValidating", void 0);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "errors", EMPTY_ERRORS);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "warnings", EMPTY_ERRORS);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "cancelRegister", function() {
+            var _this$props = _this.props, preserve = _this$props.preserve, isListField = _this$props.isListField, name = _this$props.name;
+            if (_this.cancelRegisterFunc) _this.cancelRegisterFunc(isListField, preserve, (0, _valueUtil.getNamePath)(name));
+            _this.cancelRegisterFunc = null;
+        });
+        // ================================== Utils ==================================
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getNamePath", function() {
+            var _this$props2 = _this.props, name = _this$props2.name, fieldContext = _this$props2.fieldContext;
+            var _fieldContext$prefixN = fieldContext.prefixName, prefixName = _fieldContext$prefixN === void 0 ? [] : _fieldContext$prefixN;
+            return name !== undefined ? [].concat((0, _toConsumableArrayDefault.default)(prefixName), (0, _toConsumableArrayDefault.default)(name)) : [];
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getRules", function() {
+            var _this$props3 = _this.props, _this$props3$rules = _this$props3.rules, rules = _this$props3$rules === void 0 ? [] : _this$props3$rules, fieldContext = _this$props3.fieldContext;
+            return rules.map(function(rule) {
+                if (typeof rule === "function") return rule(fieldContext);
+                return rule;
+            });
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "refresh", function() {
+            if (!_this.mounted) return;
+            /**
+       * Clean up current node.
+       */ _this.setState(function(_ref) {
+                var resetCount = _ref.resetCount;
+                return {
+                    resetCount: resetCount + 1
+                };
+            });
+        });
+        // Event should only trigger when meta changed
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "metaCache", null);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "triggerMetaEvent", function(destroy) {
+            var onMetaChange = _this.props.onMetaChange;
+            if (onMetaChange) {
+                var _meta = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, _this.getMeta()), {}, {
+                    destroy: destroy
+                });
+                if (!(0, _isEqualDefault.default)(_this.metaCache, _meta)) onMetaChange(_meta);
+                _this.metaCache = _meta;
+            } else _this.metaCache = null;
+        });
+        // ========================= Field Entity Interfaces =========================
+        // Trigger by store update. Check if need update the component
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "onStoreChange", function(prevStore, namePathList, info) {
+            var _this$props4 = _this.props, shouldUpdate = _this$props4.shouldUpdate, _this$props4$dependen = _this$props4.dependencies, dependencies = _this$props4$dependen === void 0 ? [] : _this$props4$dependen, onReset = _this$props4.onReset;
+            var store = info.store;
+            var namePath = _this.getNamePath();
+            var prevValue = _this.getValue(prevStore);
+            var curValue = _this.getValue(store);
+            var namePathMatch = namePathList && (0, _valueUtil.containsNamePath)(namePathList, namePath);
+            // `setFieldsValue` is a quick access to update related status
+            if (info.type === "valueUpdate" && info.source === "external" && !(0, _isEqualDefault.default)(prevValue, curValue)) {
+                _this.touched = true;
+                _this.dirty = true;
+                _this.validatePromise = null;
+                _this.errors = EMPTY_ERRORS;
+                _this.warnings = EMPTY_ERRORS;
+                _this.triggerMetaEvent();
+            }
+            switch(info.type){
+                case "reset":
+                    if (!namePathList || namePathMatch) {
+                        // Clean up state
+                        _this.touched = false;
+                        _this.dirty = false;
+                        _this.validatePromise = undefined;
+                        _this.errors = EMPTY_ERRORS;
+                        _this.warnings = EMPTY_ERRORS;
+                        _this.triggerMetaEvent();
+                        onReset === null || onReset === void 0 || onReset();
+                        _this.refresh();
+                        return;
+                    }
+                    break;
+                /**
+         * In case field with `preserve = false` nest deps like:
+         * - A = 1 => show B
+         * - B = 1 => show C
+         * - Reset A, need clean B, C
+         */ case "remove":
+                    if (shouldUpdate) {
+                        _this.reRender();
+                        return;
+                    }
+                    break;
+                case "setField":
+                    var data = info.data;
+                    if (namePathMatch) {
+                        if ("touched" in data) _this.touched = data.touched;
+                        if ("validating" in data && !("originRCField" in data)) _this.validatePromise = data.validating ? Promise.resolve([]) : null;
+                        if ("errors" in data) _this.errors = data.errors || EMPTY_ERRORS;
+                        if ("warnings" in data) _this.warnings = data.warnings || EMPTY_ERRORS;
+                        _this.dirty = true;
+                        _this.triggerMetaEvent();
+                        _this.reRender();
+                        return;
+                    } else if ("value" in data && (0, _valueUtil.containsNamePath)(namePathList, namePath, true)) {
+                        // Contains path with value should also check
+                        _this.reRender();
+                        return;
+                    }
+                    // Handle update by `setField` with `shouldUpdate`
+                    if (shouldUpdate && !namePath.length && requireUpdate(shouldUpdate, prevStore, store, prevValue, curValue, info)) {
+                        _this.reRender();
+                        return;
+                    }
+                    break;
+                case "dependenciesUpdate":
+                    /**
+             * Trigger when marked `dependencies` updated. Related fields will all update
+             */ var dependencyList = dependencies.map((0, _valueUtil.getNamePath));
+                    // No need for `namePathMath` check and `shouldUpdate` check, since `valueUpdate` will be
+                    // emitted earlier and they will work there
+                    // If set it may cause unnecessary twice rerendering
+                    if (dependencyList.some(function(dependency) {
+                        return (0, _valueUtil.containsNamePath)(info.relatedFields, dependency);
+                    })) {
+                        _this.reRender();
+                        return;
+                    }
+                    break;
+                default:
+                    // 1. If `namePath` exists in `namePathList`, means it's related value and should update
+                    //      For example <List name="list"><Field name={['list', 0]}></List>
+                    //      If `namePathList` is [['list']] (List value update), Field should be updated
+                    //      If `namePathList` is [['list', 0]] (Field value update), List shouldn't be updated
+                    // 2.
+                    //   2.1 If `dependencies` is set, `name` is not set and `shouldUpdate` is not set,
+                    //       don't use `shouldUpdate`. `dependencies` is view as a shortcut if `shouldUpdate`
+                    //       is not provided
+                    //   2.2 If `shouldUpdate` provided, use customize logic to update the field
+                    //       else to check if value changed
+                    if (namePathMatch || (!dependencies.length || namePath.length || shouldUpdate) && requireUpdate(shouldUpdate, prevStore, store, prevValue, curValue, info)) {
+                        _this.reRender();
+                        return;
+                    }
+                    break;
+            }
+            if (shouldUpdate === true) _this.reRender();
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "validateRules", function(options) {
+            // We should fixed namePath & value to avoid developer change then by form function
+            var namePath = _this.getNamePath();
+            var currentValue = _this.getValue();
+            var _ref2 = options || {}, triggerName = _ref2.triggerName, _ref2$validateOnly = _ref2.validateOnly, validateOnly = _ref2$validateOnly === void 0 ? false : _ref2$validateOnly;
+            // Force change to async to avoid rule OOD under renderProps field
+            var rootPromise = Promise.resolve().then(/*#__PURE__*/ (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee() {
+                var _this$props5, _this$props5$validate, validateFirst, messageVariables, validateDebounce, filteredRules, promise;
+                return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee$(_context) {
+                    while(true)switch(_context.prev = _context.next){
+                        case 0:
+                            if (_this.mounted) {
+                                _context.next = 2;
+                                break;
+                            }
+                            return _context.abrupt("return", []);
+                        case 2:
+                            _this$props5 = _this.props, _this$props5$validate = _this$props5.validateFirst, validateFirst = _this$props5$validate === void 0 ? false : _this$props5$validate, messageVariables = _this$props5.messageVariables, validateDebounce = _this$props5.validateDebounce; // Start validate
+                            filteredRules = _this.getRules();
+                            if (triggerName) filteredRules = filteredRules.filter(function(rule) {
+                                return rule;
+                            }).filter(function(rule) {
+                                var validateTrigger = rule.validateTrigger;
+                                if (!validateTrigger) return true;
+                                var triggerList = (0, _typeUtil.toArray)(validateTrigger);
+                                return triggerList.includes(triggerName);
+                            });
+                            // Wait for debounce. Skip if no `triggerName` since its from `validateFields / submit`
+                            if (!(validateDebounce && triggerName)) {
+                                _context.next = 10;
+                                break;
+                            }
+                            _context.next = 8;
+                            return new Promise(function(resolve) {
+                                setTimeout(resolve, validateDebounce);
+                            });
+                        case 8:
+                            if (!(_this.validatePromise !== rootPromise)) {
+                                _context.next = 10;
+                                break;
+                            }
+                            return _context.abrupt("return", []);
+                        case 10:
+                            promise = (0, _validateUtil.validateRules)(namePath, currentValue, filteredRules, options, validateFirst, messageVariables);
+                            promise.catch(function(e) {
+                                return e;
+                            }).then(function() {
+                                var ruleErrors = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : EMPTY_ERRORS;
+                                if (_this.validatePromise === rootPromise) {
+                                    var _ruleErrors$forEach;
+                                    _this.validatePromise = null;
+                                    // Get errors & warnings
+                                    var nextErrors = [];
+                                    var nextWarnings = [];
+                                    (_ruleErrors$forEach = ruleErrors.forEach) === null || _ruleErrors$forEach === void 0 || _ruleErrors$forEach.call(ruleErrors, function(_ref4) {
+                                        var warningOnly = _ref4.rule.warningOnly, _ref4$errors = _ref4.errors, errors = _ref4$errors === void 0 ? EMPTY_ERRORS : _ref4$errors;
+                                        if (warningOnly) nextWarnings.push.apply(nextWarnings, (0, _toConsumableArrayDefault.default)(errors));
+                                        else nextErrors.push.apply(nextErrors, (0, _toConsumableArrayDefault.default)(errors));
+                                    });
+                                    _this.errors = nextErrors;
+                                    _this.warnings = nextWarnings;
+                                    _this.triggerMetaEvent();
+                                    _this.reRender();
+                                }
+                            });
+                            return _context.abrupt("return", promise);
+                        case 13:
+                        case "end":
+                            return _context.stop();
+                    }
+                }, _callee);
+            })));
+            if (validateOnly) return rootPromise;
+            _this.validatePromise = rootPromise;
+            _this.dirty = true;
+            _this.errors = EMPTY_ERRORS;
+            _this.warnings = EMPTY_ERRORS;
+            _this.triggerMetaEvent();
+            // Force trigger re-render since we need sync renderProps with new meta
+            _this.reRender();
+            return rootPromise;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "isFieldValidating", function() {
+            return !!_this.validatePromise;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "isFieldTouched", function() {
+            return _this.touched;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "isFieldDirty", function() {
+            // Touched or validate or has initialValue
+            if (_this.dirty || _this.props.initialValue !== undefined) return true;
+            // Form set initialValue
+            var fieldContext = _this.props.fieldContext;
+            var _fieldContext$getInte = fieldContext.getInternalHooks((0, _fieldContext.HOOK_MARK)), getInitialValue = _fieldContext$getInte.getInitialValue;
+            if (getInitialValue(_this.getNamePath()) !== undefined) return true;
+            return false;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getErrors", function() {
+            return _this.errors;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getWarnings", function() {
+            return _this.warnings;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "isListField", function() {
+            return _this.props.isListField;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "isList", function() {
+            return _this.props.isList;
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "isPreserve", function() {
+            return _this.props.preserve;
+        });
+        // ============================= Child Component =============================
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getMeta", function() {
+            // Make error & validating in cache to save perf
+            _this.prevValidating = _this.isFieldValidating();
+            var meta = {
+                touched: _this.isFieldTouched(),
+                validating: _this.prevValidating,
+                errors: _this.errors,
+                warnings: _this.warnings,
+                name: _this.getNamePath(),
+                validated: _this.validatePromise === null
+            };
+            return meta;
+        });
+        // Only return validate child node. If invalidate, will do nothing about field.
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getOnlyChild", function(children) {
+            // Support render props
+            if (typeof children === "function") {
+                var _meta2 = _this.getMeta();
+                return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, _this.getOnlyChild(children(_this.getControlled(), _meta2, _this.props.fieldContext))), {}, {
+                    isFunction: true
+                });
+            }
+            // Filed element only
+            var childList = (0, _toArrayDefault.default)(children);
+            if (childList.length !== 1 || !/*#__PURE__*/ _react.isValidElement(childList[0])) return {
+                child: childList,
+                isFunction: false
+            };
+            return {
+                child: childList[0],
+                isFunction: false
+            };
+        });
+        // ============================== Field Control ==============================
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getValue", function(store) {
+            var getFieldsValue = _this.props.fieldContext.getFieldsValue;
+            var namePath = _this.getNamePath();
+            return (0, _valueUtil.getValue)(store || getFieldsValue(true), namePath);
+        });
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "getControlled", function() {
+            var childProps = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+            var _this$props6 = _this.props, name = _this$props6.name, trigger = _this$props6.trigger, validateTrigger = _this$props6.validateTrigger, getValueFromEvent = _this$props6.getValueFromEvent, normalize = _this$props6.normalize, valuePropName = _this$props6.valuePropName, getValueProps = _this$props6.getValueProps, fieldContext = _this$props6.fieldContext;
+            var mergedValidateTrigger = validateTrigger !== undefined ? validateTrigger : fieldContext.validateTrigger;
+            var namePath = _this.getNamePath();
+            var getInternalHooks = fieldContext.getInternalHooks, getFieldsValue = fieldContext.getFieldsValue;
+            var _getInternalHooks = getInternalHooks((0, _fieldContext.HOOK_MARK)), dispatch = _getInternalHooks.dispatch;
+            var value = _this.getValue();
+            var mergedGetValueProps = getValueProps || function(val) {
+                return (0, _definePropertyDefault.default)({}, valuePropName, val);
+            };
+            var originTriggerFunc = childProps[trigger];
+            var valueProps = name !== undefined ? mergedGetValueProps(value) : {};
+            // warning when prop value is function
+            if (valueProps) Object.keys(valueProps).forEach(function(key) {
+                (0, _warningDefault.default)(typeof valueProps[key] !== "function", "It's not recommended to generate dynamic function prop by `getValueProps`. Please pass it to child component directly (prop: ".concat(key, ")"));
+            });
+            var control = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, childProps), valueProps);
+            // Add trigger
+            control[trigger] = function() {
+                // Mark as touched
+                _this.touched = true;
+                _this.dirty = true;
+                _this.triggerMetaEvent();
+                var newValue;
+                for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+                if (getValueFromEvent) newValue = getValueFromEvent.apply(void 0, args);
+                else newValue = (0, _valueUtil.defaultGetValueFromEvent).apply(void 0, [
+                    valuePropName
+                ].concat(args));
+                if (normalize) newValue = normalize(newValue, value, getFieldsValue(true));
+                dispatch({
+                    type: "updateValue",
+                    namePath: namePath,
+                    value: newValue
+                });
+                if (originTriggerFunc) originTriggerFunc.apply(void 0, args);
+            };
+            // Add validateTrigger
+            var validateTriggerList = (0, _typeUtil.toArray)(mergedValidateTrigger || []);
+            validateTriggerList.forEach(function(triggerName) {
+                // Wrap additional function of component, so that we can get latest value from store
+                var originTrigger = control[triggerName];
+                control[triggerName] = function() {
+                    if (originTrigger) originTrigger.apply(void 0, arguments);
+                    // Always use latest rules
+                    var rules = _this.props.rules;
+                    if (rules && rules.length) // We dispatch validate to root,
+                    // since it will update related data with other field with same name
+                    dispatch({
+                        type: "validateField",
+                        namePath: namePath,
+                        triggerName: triggerName
+                    });
+                };
+            });
+            return control;
+        });
+        if (props.fieldContext) {
+            var getInternalHooks = props.fieldContext.getInternalHooks;
+            var _getInternalHooks2 = getInternalHooks((0, _fieldContext.HOOK_MARK)), initEntityValue = _getInternalHooks2.initEntityValue;
+            initEntityValue((0, _assertThisInitializedDefault.default)(_this));
+        }
+        return _this;
+    }
+    (0, _createClassDefault.default)(Field, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                var _this$props7 = this.props, shouldUpdate = _this$props7.shouldUpdate, fieldContext = _this$props7.fieldContext;
+                this.mounted = true;
+                // Register on init
+                if (fieldContext) {
+                    var getInternalHooks = fieldContext.getInternalHooks;
+                    var _getInternalHooks3 = getInternalHooks((0, _fieldContext.HOOK_MARK)), registerField = _getInternalHooks3.registerField;
+                    this.cancelRegisterFunc = registerField(this);
+                }
+                // One more render for component in case fields not ready
+                if (shouldUpdate === true) this.reRender();
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                this.cancelRegister();
+                this.triggerMetaEvent(true);
+                this.mounted = false;
+            }
+        },
+        {
+            key: "reRender",
+            value: function reRender() {
+                if (!this.mounted) return;
+                this.forceUpdate();
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var resetCount = this.state.resetCount;
+                var children = this.props.children;
+                var _this$getOnlyChild = this.getOnlyChild(children), child = _this$getOnlyChild.child, isFunction = _this$getOnlyChild.isFunction;
+                // Not need to `cloneElement` since user can handle this in render function self
+                var returnChildNode;
+                if (isFunction) returnChildNode = child;
+                else if (/*#__PURE__*/ _react.isValidElement(child)) returnChildNode = /*#__PURE__*/ _react.cloneElement(child, this.getControlled(child.props));
+                else {
+                    (0, _warningDefault.default)(!child, "`children` of Field is not validate ReactElement.");
+                    returnChildNode = child;
+                }
+                return /*#__PURE__*/ _react.createElement(_react.Fragment, {
+                    key: resetCount
+                }, returnChildNode);
+            }
+        }
+    ]);
+    return Field;
+}(_react.Component);
+(0, _definePropertyDefault.default)(Field, "contextType", (0, _fieldContextDefault.default));
+(0, _definePropertyDefault.default)(Field, "defaultProps", {
+    trigger: "onChange",
+    valuePropName: "value"
+});
+function WrapperField(_ref6) {
+    var name = _ref6.name, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref6, _excluded);
+    var fieldContext = _react.useContext((0, _fieldContextDefault.default));
+    var listContext = _react.useContext((0, _listContextDefault.default));
+    var namePath = name !== undefined ? (0, _valueUtil.getNamePath)(name) : undefined;
+    var key = "keep";
+    if (!restProps.isListField) key = "_".concat((namePath || []).join("_"));
+    // Warning if it's a directly list field.
+    // We can still support multiple level field preserve.
+    if (restProps.preserve === false && restProps.isListField && namePath.length <= 1) (0, _warningDefault.default)(false, "`preserve` should not apply on Form.List fields.");
+    return /*#__PURE__*/ _react.createElement(Field, (0, _extendsDefault.default)({
+        key: key,
+        name: namePath,
+        isListField: !!listContext
+    }, restProps, {
+        fieldContext: fieldContext
+    }));
+}
+exports.default = WrapperField;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/regeneratorRuntime":"8VPP1","@babel/runtime/helpers/esm/asyncToGenerator":"5Tzvv","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/assertThisInitialized":"iy3su","@babel/runtime/helpers/esm/inherits":"drFw3","@babel/runtime/helpers/esm/createSuper":"hp3mc","@babel/runtime/helpers/esm/defineProperty":"hbmCA","rc-util/es/Children/toArray":"itYV7","rc-util/es/isEqual":"eBVVK","rc-util/es/warning":"c7oua","react":"21dqq","./FieldContext":"edeC2","./ListContext":"9sjEA","./utils/typeUtil":"klmYi","./utils/validateUtil":"2yO5k","./utils/valueUtil":"dtwSd","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"edeC2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HOOK_MARK", ()=>HOOK_MARK);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var HOOK_MARK = "RC_FORM_INTERNAL_HOOKS";
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+var warningFunc = function warningFunc() {
+    (0, _warningDefault.default)(false, "Can not find FormContext. Please make sure you wrap Field under Form.");
+};
+var Context = /*#__PURE__*/ _react.createContext({
+    getFieldValue: warningFunc,
+    getFieldsValue: warningFunc,
+    getFieldError: warningFunc,
+    getFieldWarning: warningFunc,
+    getFieldsError: warningFunc,
+    isFieldsTouched: warningFunc,
+    isFieldTouched: warningFunc,
+    isFieldValidating: warningFunc,
+    isFieldsValidating: warningFunc,
+    resetFields: warningFunc,
+    setFields: warningFunc,
+    setFieldValue: warningFunc,
+    setFieldsValue: warningFunc,
+    validateFields: warningFunc,
+    submit: warningFunc,
+    getInternalHooks: function getInternalHooks() {
+        warningFunc();
+        return {
+            dispatch: warningFunc,
+            initEntityValue: warningFunc,
+            registerField: warningFunc,
+            useSubscribe: warningFunc,
+            setInitialValues: warningFunc,
+            destroyForm: warningFunc,
+            setCallbacks: warningFunc,
+            registerWatch: warningFunc,
+            getFields: warningFunc,
+            setValidateMessages: warningFunc,
+            setPreserve: warningFunc,
+            getInitialValue: warningFunc
+        };
+    }
+});
+exports.default = Context;
+
+},{"rc-util/es/warning":"c7oua","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9sjEA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var ListContext = /*#__PURE__*/ _react.createContext(null);
+exports.default = ListContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"klmYi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "toArray", ()=>toArray);
+parcelHelpers.export(exports, "isFormInstance", ()=>isFormInstance);
+function toArray(value) {
+    if (value === undefined || value === null) return [];
+    return Array.isArray(value) ? value : [
+        value
+    ];
+}
+function isFormInstance(form) {
+    return form && !!form._init;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2yO5k":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "validateRules", ()=>validateRules);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _regeneratorRuntime = require("@babel/runtime/helpers/esm/regeneratorRuntime");
+var _regeneratorRuntimeDefault = parcelHelpers.interopDefault(_regeneratorRuntime);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _asyncToGenerator = require("@babel/runtime/helpers/esm/asyncToGenerator");
+var _asyncToGeneratorDefault = parcelHelpers.interopDefault(_asyncToGenerator);
+var _asyncValidator = require("@rc-component/async-validator");
+var _asyncValidatorDefault = parcelHelpers.interopDefault(_asyncValidator);
+var _react = require("react");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _messages = require("./messages");
+var _set = require("rc-util/es/utils/set");
+// Remove incorrect original ts define
+var AsyncValidator = (0, _asyncValidatorDefault.default);
+/**
+ * Replace with template.
+ *   `I'm ${name}` + { name: 'bamboo' } = I'm bamboo
+ */ function replaceMessage(template, kv) {
+    return template.replace(/\$\{\w+\}/g, function(str) {
+        var key = str.slice(2, -1);
+        return kv[key];
+    });
+}
+var CODE_LOGIC_ERROR = "CODE_LOGIC_ERROR";
+function validateRule(_x, _x2, _x3, _x4, _x5) {
+    return _validateRule.apply(this, arguments);
+}
+/**
+ * We use `async-validator` to validate the value.
+ * But only check one value in a time to avoid namePath validate issue.
+ */ function _validateRule() {
+    _validateRule = (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee2(name, value, rule, options, messageVariables) {
+        var cloneRule, originValidator, subRuleField, validator, messages, result, subResults, kv, fillVariableResult;
+        return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee2$(_context2) {
+            while(true)switch(_context2.prev = _context2.next){
+                case 0:
+                    cloneRule = (0, _objectSpread2Default.default)({}, rule); // Bug of `async-validator`
+                    // https://github.com/react-component/field-form/issues/316
+                    // https://github.com/react-component/field-form/issues/313
+                    delete cloneRule.ruleIndex;
+                    // https://github.com/ant-design/ant-design/issues/40497#issuecomment-1422282378
+                    AsyncValidator.warning = function() {
+                        return void 0;
+                    };
+                    if (cloneRule.validator) {
+                        originValidator = cloneRule.validator;
+                        cloneRule.validator = function() {
+                            try {
+                                return originValidator.apply(void 0, arguments);
+                            } catch (error) {
+                                console.error(error);
+                                return Promise.reject(CODE_LOGIC_ERROR);
+                            }
+                        };
+                    }
+                    // We should special handle array validate
+                    subRuleField = null;
+                    if (cloneRule && cloneRule.type === "array" && cloneRule.defaultField) {
+                        subRuleField = cloneRule.defaultField;
+                        delete cloneRule.defaultField;
+                    }
+                    validator = new AsyncValidator((0, _definePropertyDefault.default)({}, name, [
+                        cloneRule
+                    ]));
+                    messages = (0, _set.merge)((0, _messages.defaultValidateMessages), options.validateMessages);
+                    validator.messages(messages);
+                    result = [];
+                    _context2.prev = 10;
+                    _context2.next = 13;
+                    return Promise.resolve(validator.validate((0, _definePropertyDefault.default)({}, name, value), (0, _objectSpread2Default.default)({}, options)));
+                case 13:
+                    _context2.next = 18;
+                    break;
+                case 15:
+                    _context2.prev = 15;
+                    _context2.t0 = _context2["catch"](10);
+                    if (_context2.t0.errors) result = _context2.t0.errors.map(function(_ref4, index) {
+                        var message = _ref4.message;
+                        var mergedMessage = message === CODE_LOGIC_ERROR ? messages.default : message;
+                        return /*#__PURE__*/ _react.isValidElement(mergedMessage) ? /*#__PURE__*/ // Wrap ReactNode with `key`
+                        _react.cloneElement(mergedMessage, {
+                            key: "error_".concat(index)
+                        }) : mergedMessage;
+                    });
+                case 18:
+                    if (!(!result.length && subRuleField)) {
+                        _context2.next = 23;
+                        break;
+                    }
+                    _context2.next = 21;
+                    return Promise.all(value.map(function(subValue, i) {
+                        return validateRule("".concat(name, ".").concat(i), subValue, subRuleField, options, messageVariables);
+                    }));
+                case 21:
+                    subResults = _context2.sent;
+                    return _context2.abrupt("return", subResults.reduce(function(prev, errors) {
+                        return [].concat((0, _toConsumableArrayDefault.default)(prev), (0, _toConsumableArrayDefault.default)(errors));
+                    }, []));
+                case 23:
+                    // Replace message with variables
+                    kv = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, rule), {}, {
+                        name: name,
+                        enum: (rule.enum || []).join(", ")
+                    }, messageVariables);
+                    fillVariableResult = result.map(function(error) {
+                        if (typeof error === "string") return replaceMessage(error, kv);
+                        return error;
+                    });
+                    return _context2.abrupt("return", fillVariableResult);
+                case 26:
+                case "end":
+                    return _context2.stop();
+            }
+        }, _callee2, null, [
+            [
+                10,
+                15
+            ]
+        ]);
+    }));
+    return _validateRule.apply(this, arguments);
+}
+function validateRules(namePath, value, rules, options, validateFirst, messageVariables) {
+    var name = namePath.join(".");
+    // Fill rule with context
+    var filledRules = rules.map(function(currentRule, ruleIndex) {
+        var originValidatorFunc = currentRule.validator;
+        var cloneRule = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, currentRule), {}, {
+            ruleIndex: ruleIndex
+        });
+        // Replace validator if needed
+        if (originValidatorFunc) cloneRule.validator = function(rule, val, callback) {
+            var hasPromise = false;
+            // Wrap callback only accept when promise not provided
+            var wrappedCallback = function wrappedCallback() {
+                for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+                // Wait a tick to make sure return type is a promise
+                Promise.resolve().then(function() {
+                    (0, _warningDefault.default)(!hasPromise, "Your validator function has already return a promise. `callback` will be ignored.");
+                    if (!hasPromise) callback.apply(void 0, args);
+                });
+            };
+            // Get promise
+            var promise = originValidatorFunc(rule, val, wrappedCallback);
+            hasPromise = promise && typeof promise.then === "function" && typeof promise.catch === "function";
+            /**
+         * 1. Use promise as the first priority.
+         * 2. If promise not exist, use callback with warning instead
+         */ (0, _warningDefault.default)(hasPromise, "`callback` is deprecated. Please return a promise instead.");
+            if (hasPromise) promise.then(function() {
+                callback();
+            }).catch(function(err) {
+                callback(err || " ");
+            });
+        };
+        return cloneRule;
+    }).sort(function(_ref, _ref2) {
+        var w1 = _ref.warningOnly, i1 = _ref.ruleIndex;
+        var w2 = _ref2.warningOnly, i2 = _ref2.ruleIndex;
+        if (!!w1 === !!w2) // Let keep origin order
+        return i1 - i2;
+        if (w1) return 1;
+        return -1;
+    });
+    // Do validate rules
+    var summaryPromise;
+    if (validateFirst === true) // >>>>> Validate by serialization
+    summaryPromise = new Promise(/*#__PURE__*/ function() {
+        var _ref3 = (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee(resolve, reject) {
+            var i, rule, errors;
+            return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee$(_context) {
+                while(true)switch(_context.prev = _context.next){
+                    case 0:
+                        i = 0;
+                    case 1:
+                        if (!(i < filledRules.length)) {
+                            _context.next = 12;
+                            break;
+                        }
+                        rule = filledRules[i];
+                        _context.next = 5;
+                        return validateRule(name, value, rule, options, messageVariables);
+                    case 5:
+                        errors = _context.sent;
+                        if (!errors.length) {
+                            _context.next = 9;
+                            break;
+                        }
+                        reject([
+                            {
+                                errors: errors,
+                                rule: rule
+                            }
+                        ]);
+                        return _context.abrupt("return");
+                    case 9:
+                        i += 1;
+                        _context.next = 1;
+                        break;
+                    case 12:
+                        /* eslint-enable */ resolve([]);
+                    case 13:
+                    case "end":
+                        return _context.stop();
+                }
+            }, _callee);
+        }));
+        return function(_x6, _x7) {
+            return _ref3.apply(this, arguments);
+        };
+    }());
+    else {
+        // >>>>> Validate by parallel
+        var rulePromises = filledRules.map(function(rule) {
+            return validateRule(name, value, rule, options, messageVariables).then(function(errors) {
+                return {
+                    errors: errors,
+                    rule: rule
+                };
+            });
+        });
+        summaryPromise = (validateFirst ? finishOnFirstFailed(rulePromises) : finishOnAllFailed(rulePromises)).then(function(errors) {
+            // Always change to rejection for Field to catch
+            return Promise.reject(errors);
+        });
+    }
+    // Internal catch error to avoid console error log.
+    summaryPromise.catch(function(e) {
+        return e;
+    });
+    return summaryPromise;
+}
+function finishOnAllFailed(_x8) {
+    return _finishOnAllFailed.apply(this, arguments);
+}
+function _finishOnAllFailed() {
+    _finishOnAllFailed = (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee3(rulePromises) {
+        return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee3$(_context3) {
+            while(true)switch(_context3.prev = _context3.next){
+                case 0:
+                    return _context3.abrupt("return", Promise.all(rulePromises).then(function(errorsList) {
+                        var _ref5;
+                        var errors = (_ref5 = []).concat.apply(_ref5, (0, _toConsumableArrayDefault.default)(errorsList));
+                        return errors;
+                    }));
+                case 1:
+                case "end":
+                    return _context3.stop();
+            }
+        }, _callee3);
+    }));
+    return _finishOnAllFailed.apply(this, arguments);
+}
+function finishOnFirstFailed(_x9) {
+    return _finishOnFirstFailed.apply(this, arguments);
+}
+function _finishOnFirstFailed() {
+    _finishOnFirstFailed = (0, _asyncToGeneratorDefault.default)(/*#__PURE__*/ (0, _regeneratorRuntimeDefault.default)().mark(function _callee4(rulePromises) {
+        var count;
+        return (0, _regeneratorRuntimeDefault.default)().wrap(function _callee4$(_context4) {
+            while(true)switch(_context4.prev = _context4.next){
+                case 0:
+                    count = 0;
+                    return _context4.abrupt("return", new Promise(function(resolve) {
+                        rulePromises.forEach(function(promise) {
+                            promise.then(function(ruleError) {
+                                if (ruleError.errors.length) resolve([
+                                    ruleError
+                                ]);
+                                count += 1;
+                                if (count === rulePromises.length) resolve([]);
+                            });
+                        });
+                    }));
+                case 2:
+                case "end":
+                    return _context4.stop();
+            }
+        }, _callee4);
+    }));
+    return _finishOnFirstFailed.apply(this, arguments);
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/regeneratorRuntime":"8VPP1","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/asyncToGenerator":"5Tzvv","@rc-component/async-validator":"8RuAa","react":"21dqq","rc-util/es/warning":"c7oua","./messages":"7dCqc","rc-util/es/utils/set":"jx2yS","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"8RuAa":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _messages = require("./messages");
+var _util = require("./util");
+var _index = require("./validator/index");
+var _indexDefault = parcelHelpers.interopDefault(_index);
+var _interface = require("./interface");
+parcelHelpers.exportAll(_interface, exports);
+/**
+ *  Encapsulates a validation schema.
+ *
+ *  @param descriptor An object declaring validation rules
+ *  for this schema.
+ */ var Schema = /*#__PURE__*/ function() {
+    function Schema(descriptor) {
+        (0, _classCallCheckDefault.default)(this, Schema);
+        // ======================== Instance ========================
+        (0, _definePropertyDefault.default)(this, "rules", null);
+        (0, _definePropertyDefault.default)(this, "_messages", (0, _messages.messages));
+        this.define(descriptor);
+    }
+    (0, _createClassDefault.default)(Schema, [
+        {
+            key: "define",
+            value: function define(rules) {
+                var _this = this;
+                if (!rules) throw new Error("Cannot configure a schema with no rules");
+                if ((0, _typeofDefault.default)(rules) !== "object" || Array.isArray(rules)) throw new Error("Rules must be an object");
+                this.rules = {};
+                Object.keys(rules).forEach(function(name) {
+                    var item = rules[name];
+                    _this.rules[name] = Array.isArray(item) ? item : [
+                        item
+                    ];
+                });
+            }
+        },
+        {
+            key: "messages",
+            value: function messages(_messages1) {
+                if (_messages1) this._messages = (0, _util.deepMerge)((0, _messages.newMessages)(), _messages1);
+                return this._messages;
+            }
+        },
+        {
+            key: "validate",
+            value: function validate(source_) {
+                var _this2 = this;
+                var o = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+                var oc = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function() {};
+                var source = source_;
+                var options = o;
+                var callback = oc;
+                if (typeof options === "function") {
+                    callback = options;
+                    options = {};
+                }
+                if (!this.rules || Object.keys(this.rules).length === 0) {
+                    if (callback) callback(null, source);
+                    return Promise.resolve(source);
+                }
+                function complete(results) {
+                    var errors = [];
+                    var fields = {};
+                    function add(e) {
+                        if (Array.isArray(e)) {
+                            var _errors;
+                            errors = (_errors = errors).concat.apply(_errors, (0, _toConsumableArrayDefault.default)(e));
+                        } else errors.push(e);
+                    }
+                    for(var i = 0; i < results.length; i++)add(results[i]);
+                    if (!errors.length) callback(null, source);
+                    else {
+                        fields = (0, _util.convertFieldsError)(errors);
+                        callback(errors, fields);
+                    }
+                }
+                if (options.messages) {
+                    var messages = this.messages();
+                    if (messages === (0, _messages.messages)) messages = (0, _messages.newMessages)();
+                    (0, _util.deepMerge)(messages, options.messages);
+                    options.messages = messages;
+                } else options.messages = this.messages();
+                var series = {};
+                var keys = options.keys || Object.keys(this.rules);
+                keys.forEach(function(z) {
+                    var arr = _this2.rules[z];
+                    var value = source[z];
+                    arr.forEach(function(r) {
+                        var rule = r;
+                        if (typeof rule.transform === "function") {
+                            if (source === source_) source = (0, _objectSpread2Default.default)({}, source);
+                            value = source[z] = rule.transform(value);
+                            if (value !== undefined && value !== null) rule.type = rule.type || (Array.isArray(value) ? "array" : (0, _typeofDefault.default)(value));
+                        }
+                        if (typeof rule === "function") rule = {
+                            validator: rule
+                        };
+                        else rule = (0, _objectSpread2Default.default)({}, rule);
+                        // Fill validator. Skip if nothing need to validate
+                        rule.validator = _this2.getValidationMethod(rule);
+                        if (!rule.validator) return;
+                        rule.field = z;
+                        rule.fullField = rule.fullField || z;
+                        rule.type = _this2.getType(rule);
+                        series[z] = series[z] || [];
+                        series[z].push({
+                            rule: rule,
+                            value: value,
+                            source: source,
+                            field: z
+                        });
+                    });
+                });
+                var errorFields = {};
+                return (0, _util.asyncMap)(series, options, function(data, doIt) {
+                    var rule = data.rule;
+                    var deep = (rule.type === "object" || rule.type === "array") && ((0, _typeofDefault.default)(rule.fields) === "object" || (0, _typeofDefault.default)(rule.defaultField) === "object");
+                    deep = deep && (rule.required || !rule.required && data.value);
+                    rule.field = data.field;
+                    function addFullField(key, schema) {
+                        return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, schema), {}, {
+                            fullField: "".concat(rule.fullField, ".").concat(key),
+                            fullFields: rule.fullFields ? [].concat((0, _toConsumableArrayDefault.default)(rule.fullFields), [
+                                key
+                            ]) : [
+                                key
+                            ]
+                        });
+                    }
+                    function cb() {
+                        var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+                        var errorList = Array.isArray(e) ? e : [
+                            e
+                        ];
+                        if (!options.suppressWarning && errorList.length) Schema.warning("async-validator:", errorList);
+                        if (errorList.length && rule.message !== undefined) errorList = [].concat(rule.message);
+                        // Fill error info
+                        var filledErrors = errorList.map((0, _util.complementError)(rule, source));
+                        if (options.first && filledErrors.length) {
+                            errorFields[rule.field] = 1;
+                            return doIt(filledErrors);
+                        }
+                        if (!deep) doIt(filledErrors);
+                        else {
+                            // if rule is required but the target object
+                            // does not exist fail at the rule level and don't
+                            // go deeper
+                            if (rule.required && !data.value) {
+                                if (rule.message !== undefined) filledErrors = [].concat(rule.message).map((0, _util.complementError)(rule, source));
+                                else if (options.error) filledErrors = [
+                                    options.error(rule, (0, _util.format)(options.messages.required, rule.field))
+                                ];
+                                return doIt(filledErrors);
+                            }
+                            var fieldsSchema = {};
+                            if (rule.defaultField) Object.keys(data.value).map(function(key) {
+                                fieldsSchema[key] = rule.defaultField;
+                            });
+                            fieldsSchema = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, fieldsSchema), data.rule.fields);
+                            var paredFieldsSchema = {};
+                            Object.keys(fieldsSchema).forEach(function(field) {
+                                var fieldSchema = fieldsSchema[field];
+                                var fieldSchemaList = Array.isArray(fieldSchema) ? fieldSchema : [
+                                    fieldSchema
+                                ];
+                                paredFieldsSchema[field] = fieldSchemaList.map(addFullField.bind(null, field));
+                            });
+                            var schema = new Schema(paredFieldsSchema);
+                            schema.messages(options.messages);
+                            if (data.rule.options) {
+                                data.rule.options.messages = options.messages;
+                                data.rule.options.error = options.error;
+                            }
+                            schema.validate(data.value, data.rule.options || options, function(errs) {
+                                var finalErrors = [];
+                                if (filledErrors && filledErrors.length) finalErrors.push.apply(finalErrors, (0, _toConsumableArrayDefault.default)(filledErrors));
+                                if (errs && errs.length) finalErrors.push.apply(finalErrors, (0, _toConsumableArrayDefault.default)(errs));
+                                doIt(finalErrors.length ? finalErrors : null);
+                            });
+                        }
+                    }
+                    var res;
+                    if (rule.asyncValidator) res = rule.asyncValidator(rule, data.value, cb, data.source, options);
+                    else if (rule.validator) {
+                        try {
+                            res = rule.validator(rule, data.value, cb, data.source, options);
+                        } catch (error) {
+                            var _console$error, _console;
+                            (_console$error = (_console = console).error) === null || _console$error === void 0 || _console$error.call(_console, error);
+                            // rethrow to report error
+                            if (!options.suppressValidatorError) setTimeout(function() {
+                                throw error;
+                            }, 0);
+                            cb(error.message);
+                        }
+                        if (res === true) cb();
+                        else if (res === false) cb(typeof rule.message === "function" ? rule.message(rule.fullField || rule.field) : rule.message || "".concat(rule.fullField || rule.field, " fails"));
+                        else if (res instanceof Array) cb(res);
+                        else if (res instanceof Error) cb(res.message);
+                    }
+                    if (res && res.then) res.then(function() {
+                        return cb();
+                    }, function(e) {
+                        return cb(e);
+                    });
+                }, function(results) {
+                    complete(results);
+                }, source);
+            }
+        },
+        {
+            key: "getType",
+            value: function getType(rule) {
+                if (rule.type === undefined && rule.pattern instanceof RegExp) rule.type = "pattern";
+                if (typeof rule.validator !== "function" && rule.type && !(0, _indexDefault.default).hasOwnProperty(rule.type)) throw new Error((0, _util.format)("Unknown rule type %s", rule.type));
+                return rule.type || "string";
+            }
+        },
+        {
+            key: "getValidationMethod",
+            value: function getValidationMethod(rule) {
+                if (typeof rule.validator === "function") return rule.validator;
+                var keys = Object.keys(rule);
+                var messageIndex = keys.indexOf("message");
+                if (messageIndex !== -1) keys.splice(messageIndex, 1);
+                if (keys.length === 1 && keys[0] === "required") return (0, _indexDefault.default).required;
+                return (0, _indexDefault.default)[this.getType(rule)] || undefined;
+            }
+        }
+    ]);
+    return Schema;
+}();
+// ========================= Static =========================
+(0, _definePropertyDefault.default)(Schema, "register", function register(type, validator) {
+    if (typeof validator !== "function") throw new Error("Cannot register a validator by type, validator is not a function");
+    (0, _indexDefault.default)[type] = validator;
+});
+(0, _definePropertyDefault.default)(Schema, "warning", (0, _util.warning));
+(0, _definePropertyDefault.default)(Schema, "messages", (0, _messages.messages));
+(0, _definePropertyDefault.default)(Schema, "validators", (0, _indexDefault.default));
+exports.default = Schema;
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/defineProperty":"hbmCA","./messages":"4iNJ9","./util":"havIo","./validator/index":"3Eenl","./interface":"1OCBE","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4iNJ9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "newMessages", ()=>newMessages);
+parcelHelpers.export(exports, "messages", ()=>messages);
+function newMessages() {
+    return {
+        default: "Validation error on field %s",
+        required: "%s is required",
+        enum: "%s must be one of %s",
+        whitespace: "%s cannot be empty",
+        date: {
+            format: "%s date %s is invalid for format %s",
+            parse: "%s date could not be parsed, %s is invalid ",
+            invalid: "%s date %s is invalid"
+        },
+        types: {
+            string: "%s is not a %s",
+            method: "%s is not a %s (function)",
+            array: "%s is not an %s",
+            object: "%s is not an %s",
+            number: "%s is not a %s",
+            date: "%s is not a %s",
+            boolean: "%s is not a %s",
+            integer: "%s is not an %s",
+            float: "%s is not a %s",
+            regexp: "%s is not a valid %s",
+            email: "%s is not a valid %s",
+            url: "%s is not a valid %s",
+            hex: "%s is not a valid %s"
+        },
+        string: {
+            len: "%s must be exactly %s characters",
+            min: "%s must be at least %s characters",
+            max: "%s cannot be longer than %s characters",
+            range: "%s must be between %s and %s characters"
+        },
+        number: {
+            len: "%s must equal %s",
+            min: "%s cannot be less than %s",
+            max: "%s cannot be greater than %s",
+            range: "%s must be between %s and %s"
+        },
+        array: {
+            len: "%s must be exactly %s in length",
+            min: "%s cannot be less than %s in length",
+            max: "%s cannot be greater than %s in length",
+            range: "%s must be between %s and %s in length"
+        },
+        pattern: {
+            mismatch: "%s value %s does not match pattern %s"
+        },
+        clone: function clone() {
+            var cloned = JSON.parse(JSON.stringify(this));
+            cloned.clone = this.clone;
+            return cloned;
+        }
+    };
+}
+var messages = newMessages();
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"havIo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "warning", ()=>warning);
+parcelHelpers.export(exports, "convertFieldsError", ()=>convertFieldsError);
+parcelHelpers.export(exports, "format", ()=>format);
+parcelHelpers.export(exports, "isEmptyValue", ()=>isEmptyValue);
+parcelHelpers.export(exports, "isEmptyObject", ()=>isEmptyObject);
+parcelHelpers.export(exports, "AsyncValidationError", ()=>AsyncValidationError);
+parcelHelpers.export(exports, "asyncMap", ()=>asyncMap);
+parcelHelpers.export(exports, "complementError", ()=>complementError);
+parcelHelpers.export(exports, "deepMerge", ()=>deepMerge);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _assertThisInitialized = require("@babel/runtime/helpers/esm/assertThisInitialized");
+var _assertThisInitializedDefault = parcelHelpers.interopDefault(_assertThisInitialized);
+var _inherits = require("@babel/runtime/helpers/esm/inherits");
+var _inheritsDefault = parcelHelpers.interopDefault(_inherits);
+var _createSuper = require("@babel/runtime/helpers/esm/createSuper");
+var _createSuperDefault = parcelHelpers.interopDefault(_createSuper);
+var _wrapNativeSuper = require("@babel/runtime/helpers/esm/wrapNativeSuper");
+var _wrapNativeSuperDefault = parcelHelpers.interopDefault(_wrapNativeSuper);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var process = require("9db1f087c2d4e56e");
+/* eslint no-console:0 */ var formatRegExp = /%[sdj%]/g;
+var warning = function warning() {};
+// don't print warning message when in production env or node runtime
+if (typeof process !== "undefined" && process.env && true && typeof window !== "undefined" && typeof document !== "undefined") warning = function warning(type, errors) {
+    if (typeof console !== "undefined" && console.warn && typeof ASYNC_VALIDATOR_NO_WARNING === "undefined") {
+        if (errors.every(function(e) {
+            return typeof e === "string";
+        })) console.warn(type, errors);
+    }
+};
+function convertFieldsError(errors) {
+    if (!errors || !errors.length) return null;
+    var fields = {};
+    errors.forEach(function(error) {
+        var field = error.field;
+        fields[field] = fields[field] || [];
+        fields[field].push(error);
+    });
+    return fields;
+}
+function format(template) {
+    for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++)args[_key - 1] = arguments[_key];
+    var i = 0;
+    var len = args.length;
+    if (typeof template === "function") // eslint-disable-next-line prefer-spread
+    return template.apply(null, args);
+    if (typeof template === "string") {
+        var str = template.replace(formatRegExp, function(x) {
+            if (x === "%%") return "%";
+            if (i >= len) return x;
+            switch(x){
+                case "%s":
+                    return String(args[i++]);
+                case "%d":
+                    return Number(args[i++]);
+                case "%j":
+                    try {
+                        return JSON.stringify(args[i++]);
+                    } catch (_) {
+                        return "[Circular]";
+                    }
+                    break;
+                default:
+                    return x;
+            }
+        });
+        return str;
+    }
+    return template;
+}
+function isNativeStringType(type) {
+    return type === "string" || type === "url" || type === "hex" || type === "email" || type === "date" || type === "pattern";
+}
+function isEmptyValue(value, type) {
+    if (value === undefined || value === null) return true;
+    if (type === "array" && Array.isArray(value) && !value.length) return true;
+    if (isNativeStringType(type) && typeof value === "string" && !value) return true;
+    return false;
+}
+function isEmptyObject(obj) {
+    return Object.keys(obj).length === 0;
+}
+function asyncParallelArray(arr, func, callback) {
+    var results = [];
+    var total = 0;
+    var arrLength = arr.length;
+    function count(errors) {
+        results.push.apply(results, (0, _toConsumableArrayDefault.default)(errors || []));
+        total++;
+        if (total === arrLength) callback(results);
+    }
+    arr.forEach(function(a) {
+        func(a, count);
+    });
+}
+function asyncSerialArray(arr, func, callback) {
+    var index = 0;
+    var arrLength = arr.length;
+    function next(errors) {
+        if (errors && errors.length) {
+            callback(errors);
+            return;
+        }
+        var original = index;
+        index = index + 1;
+        if (original < arrLength) func(arr[original], next);
+        else callback([]);
+    }
+    next([]);
+}
+function flattenObjArr(objArr) {
+    var ret = [];
+    Object.keys(objArr).forEach(function(k) {
+        ret.push.apply(ret, (0, _toConsumableArrayDefault.default)(objArr[k] || []));
+    });
+    return ret;
+}
+var AsyncValidationError = /*#__PURE__*/ function(_Error) {
+    (0, _inheritsDefault.default)(AsyncValidationError, _Error);
+    var _super = (0, _createSuperDefault.default)(AsyncValidationError);
+    function AsyncValidationError(errors, fields) {
+        var _this;
+        (0, _classCallCheckDefault.default)(this, AsyncValidationError);
+        _this = _super.call(this, "Async Validation Error");
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "errors", void 0);
+        (0, _definePropertyDefault.default)((0, _assertThisInitializedDefault.default)(_this), "fields", void 0);
+        _this.errors = errors;
+        _this.fields = fields;
+        return _this;
+    }
+    return (0, _createClassDefault.default)(AsyncValidationError);
+}(/*#__PURE__*/ (0, _wrapNativeSuperDefault.default)(Error));
+function asyncMap(objArr, option, func, callback, source) {
+    if (option.first) {
+        var _pending = new Promise(function(resolve, reject) {
+            var next = function next(errors) {
+                callback(errors);
+                return errors.length ? reject(new AsyncValidationError(errors, convertFieldsError(errors))) : resolve(source);
+            };
+            var flattenArr = flattenObjArr(objArr);
+            asyncSerialArray(flattenArr, func, next);
+        });
+        _pending.catch(function(e) {
+            return e;
+        });
+        return _pending;
+    }
+    var firstFields = option.firstFields === true ? Object.keys(objArr) : option.firstFields || [];
+    var objArrKeys = Object.keys(objArr);
+    var objArrLength = objArrKeys.length;
+    var total = 0;
+    var results = [];
+    var pending = new Promise(function(resolve, reject) {
+        var next = function next(errors) {
+            // eslint-disable-next-line prefer-spread
+            results.push.apply(results, errors);
+            total++;
+            if (total === objArrLength) {
+                callback(results);
+                return results.length ? reject(new AsyncValidationError(results, convertFieldsError(results))) : resolve(source);
+            }
+        };
+        if (!objArrKeys.length) {
+            callback(results);
+            resolve(source);
+        }
+        objArrKeys.forEach(function(key) {
+            var arr = objArr[key];
+            if (firstFields.indexOf(key) !== -1) asyncSerialArray(arr, func, next);
+            else asyncParallelArray(arr, func, next);
+        });
+    });
+    pending.catch(function(e) {
+        return e;
+    });
+    return pending;
+}
+function isErrorObj(obj) {
+    return !!(obj && obj.message !== undefined);
+}
+function getValue(value, path) {
+    var v = value;
+    for(var i = 0; i < path.length; i++){
+        if (v == undefined) return v;
+        v = v[path[i]];
+    }
+    return v;
+}
+function complementError(rule, source) {
+    return function(oe) {
+        var fieldValue;
+        if (rule.fullFields) fieldValue = getValue(source, rule.fullFields);
+        else fieldValue = source[oe.field || rule.fullField];
+        if (isErrorObj(oe)) {
+            oe.field = oe.field || rule.fullField;
+            oe.fieldValue = fieldValue;
+            return oe;
+        }
+        return {
+            message: typeof oe === "function" ? oe() : oe,
+            fieldValue: fieldValue,
+            field: oe.field || rule.fullField
+        };
+    };
+}
+function deepMerge(target, source) {
+    if (source) {
+        for(var s in source)if (source.hasOwnProperty(s)) {
+            var value = source[s];
+            if ((0, _typeofDefault.default)(value) === "object" && (0, _typeofDefault.default)(target[s]) === "object") target[s] = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, target[s]), value);
+            else target[s] = value;
+        }
+    }
+    return target;
+}
+
+},{"9db1f087c2d4e56e":"d5jf4","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/assertThisInitialized":"iy3su","@babel/runtime/helpers/esm/inherits":"drFw3","@babel/runtime/helpers/esm/createSuper":"hp3mc","@babel/runtime/helpers/esm/wrapNativeSuper":"2rzUb","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2rzUb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_wrapNativeSuper);
+var _getPrototypeOfJs = require("./getPrototypeOf.js");
+var _getPrototypeOfJsDefault = parcelHelpers.interopDefault(_getPrototypeOfJs);
+var _setPrototypeOfJs = require("./setPrototypeOf.js");
+var _setPrototypeOfJsDefault = parcelHelpers.interopDefault(_setPrototypeOfJs);
+var _isNativeFunctionJs = require("./isNativeFunction.js");
+var _isNativeFunctionJsDefault = parcelHelpers.interopDefault(_isNativeFunctionJs);
+var _constructJs = require("./construct.js");
+var _constructJsDefault = parcelHelpers.interopDefault(_constructJs);
+function _wrapNativeSuper(t) {
+    var r = "function" == typeof Map ? new Map() : void 0;
+    return _wrapNativeSuper = function _wrapNativeSuper(t) {
+        if (null === t || !(0, _isNativeFunctionJsDefault.default)(t)) return t;
+        if ("function" != typeof t) throw new TypeError("Super expression must either be null or a function");
+        if (void 0 !== r) {
+            if (r.has(t)) return r.get(t);
+            r.set(t, Wrapper);
+        }
+        function Wrapper() {
+            return (0, _constructJsDefault.default)(t, arguments, (0, _getPrototypeOfJsDefault.default)(this).constructor);
+        }
+        return Wrapper.prototype = Object.create(t.prototype, {
+            constructor: {
+                value: Wrapper,
+                enumerable: !1,
+                writable: !0,
+                configurable: !0
+            }
+        }), (0, _setPrototypeOfJsDefault.default)(Wrapper, t);
+    }, _wrapNativeSuper(t);
+}
+
+},{"./getPrototypeOf.js":"edBWC","./setPrototypeOf.js":"3XDFA","./isNativeFunction.js":"2Z2qt","./construct.js":"4uIwW","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2Z2qt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_isNativeFunction);
+function _isNativeFunction(t) {
+    try {
+        return -1 !== Function.toString.call(t).indexOf("[native code]");
+    } catch (n) {
+        return "function" == typeof t;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"4uIwW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_construct);
+var _isNativeReflectConstructJs = require("./isNativeReflectConstruct.js");
+var _isNativeReflectConstructJsDefault = parcelHelpers.interopDefault(_isNativeReflectConstructJs);
+var _setPrototypeOfJs = require("./setPrototypeOf.js");
+var _setPrototypeOfJsDefault = parcelHelpers.interopDefault(_setPrototypeOfJs);
+function _construct(t, e, r) {
+    if ((0, _isNativeReflectConstructJsDefault.default)()) return Reflect.construct.apply(null, arguments);
+    var o = [
+        null
+    ];
+    o.push.apply(o, e);
+    var p = new (t.bind.apply(t, o))();
+    return r && (0, _setPrototypeOfJsDefault.default)(p, r.prototype), p;
+}
+
+},{"./isNativeReflectConstruct.js":"6LwWg","./setPrototypeOf.js":"3XDFA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3Eenl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _any = require("./any");
+var _anyDefault = parcelHelpers.interopDefault(_any);
+var _array = require("./array");
+var _arrayDefault = parcelHelpers.interopDefault(_array);
+var _boolean = require("./boolean");
+var _booleanDefault = parcelHelpers.interopDefault(_boolean);
+var _date = require("./date");
+var _dateDefault = parcelHelpers.interopDefault(_date);
+var _enum = require("./enum");
+var _enumDefault = parcelHelpers.interopDefault(_enum);
+var _float = require("./float");
+var _floatDefault = parcelHelpers.interopDefault(_float);
+var _integer = require("./integer");
+var _integerDefault = parcelHelpers.interopDefault(_integer);
+var _method = require("./method");
+var _methodDefault = parcelHelpers.interopDefault(_method);
+var _number = require("./number");
+var _numberDefault = parcelHelpers.interopDefault(_number);
+var _object = require("./object");
+var _objectDefault = parcelHelpers.interopDefault(_object);
+var _pattern = require("./pattern");
+var _patternDefault = parcelHelpers.interopDefault(_pattern);
+var _regexp = require("./regexp");
+var _regexpDefault = parcelHelpers.interopDefault(_regexp);
+var _required = require("./required");
+var _requiredDefault = parcelHelpers.interopDefault(_required);
+var _string = require("./string");
+var _stringDefault = parcelHelpers.interopDefault(_string);
+var _type = require("./type");
+var _typeDefault = parcelHelpers.interopDefault(_type);
+exports.default = {
+    string: (0, _stringDefault.default),
+    method: (0, _methodDefault.default),
+    number: (0, _numberDefault.default),
+    boolean: (0, _booleanDefault.default),
+    regexp: (0, _regexpDefault.default),
+    integer: (0, _integerDefault.default),
+    float: (0, _floatDefault.default),
+    array: (0, _arrayDefault.default),
+    object: (0, _objectDefault.default),
+    enum: (0, _enumDefault.default),
+    pattern: (0, _patternDefault.default),
+    date: (0, _dateDefault.default),
+    url: (0, _typeDefault.default),
+    hex: (0, _typeDefault.default),
+    email: (0, _typeDefault.default),
+    required: (0, _requiredDefault.default),
+    any: (0, _anyDefault.default)
+};
+
+},{"./any":"fvXku","./array":"iAkMi","./boolean":"jxvmO","./date":"h8cTL","./enum":"71r1V","./float":"kxbo1","./integer":"2HvYw","./method":"7nVtq","./number":"cbCcZ","./object":"snaGS","./pattern":"7GZ0c","./regexp":"dke0V","./required":"jMBTB","./string":"2jIHM","./type":"1uxDj","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fvXku":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var any = function any(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = any;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5kW6X":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _enum = require("./enum");
+var _enumDefault = parcelHelpers.interopDefault(_enum);
+var _pattern = require("./pattern");
+var _patternDefault = parcelHelpers.interopDefault(_pattern);
+var _range = require("./range");
+var _rangeDefault = parcelHelpers.interopDefault(_range);
+var _required = require("./required");
+var _requiredDefault = parcelHelpers.interopDefault(_required);
+var _type = require("./type");
+var _typeDefault = parcelHelpers.interopDefault(_type);
+var _whitespace = require("./whitespace");
+var _whitespaceDefault = parcelHelpers.interopDefault(_whitespace);
+exports.default = {
+    required: (0, _requiredDefault.default),
+    whitespace: (0, _whitespaceDefault.default),
+    type: (0, _typeDefault.default),
+    range: (0, _rangeDefault.default),
+    enum: (0, _enumDefault.default),
+    pattern: (0, _patternDefault.default)
+};
+
+},{"./enum":"ckPIk","./pattern":"5pUA3","./range":"jTlwO","./required":"foVGo","./type":"fOQDT","./whitespace":"71O73","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ckPIk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _util = require("../util");
+var ENUM = "enum";
+var enumerable = function enumerable(rule, value, source, errors, options) {
+    rule[ENUM] = Array.isArray(rule[ENUM]) ? rule[ENUM] : [];
+    if (rule[ENUM].indexOf(value) === -1) errors.push((0, _util.format)(options.messages[ENUM], rule.fullField, rule[ENUM].join(", ")));
+};
+exports.default = enumerable;
+
+},{"../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"5pUA3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _util = require("../util");
+var pattern = function pattern(rule, value, source, errors, options) {
+    if (rule.pattern) {
+        if (rule.pattern instanceof RegExp) {
+            // if a RegExp instance is passed, reset `lastIndex` in case its `global`
+            // flag is accidentally set to `true`, which in a validation scenario
+            // is not necessary and the result might be misleading
+            rule.pattern.lastIndex = 0;
+            if (!rule.pattern.test(value)) errors.push((0, _util.format)(options.messages.pattern.mismatch, rule.fullField, value, rule.pattern));
+        } else if (typeof rule.pattern === "string") {
+            var _pattern = new RegExp(rule.pattern);
+            if (!_pattern.test(value)) errors.push((0, _util.format)(options.messages.pattern.mismatch, rule.fullField, value, rule.pattern));
+        }
+    }
+};
+exports.default = pattern;
+
+},{"../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jTlwO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _util = require("../util");
+var range = function range(rule, value, source, errors, options) {
+    var len = typeof rule.len === "number";
+    var min = typeof rule.min === "number";
+    var max = typeof rule.max === "number";
+    // 正则匹配码点范围从U+010000一直到U+10FFFF的文字（补充平面Supplementary Plane）
+    var spRegexp = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
+    var val = value;
+    var key = null;
+    var num = typeof value === "number";
+    var str = typeof value === "string";
+    var arr = Array.isArray(value);
+    if (num) key = "number";
+    else if (str) key = "string";
+    else if (arr) key = "array";
+    // if the value is not of a supported type for range validation
+    // the validation rule rule should use the
+    // type property to also test for a particular type
+    if (!key) return false;
+    if (arr) val = value.length;
+    if (str) // 处理码点大于U+010000的文字length属性不准确的bug，如"𠮷𠮷𠮷".length !== 3
+    val = value.replace(spRegexp, "_").length;
+    if (len) {
+        if (val !== rule.len) errors.push((0, _util.format)(options.messages[key].len, rule.fullField, rule.len));
+    } else if (min && !max && val < rule.min) errors.push((0, _util.format)(options.messages[key].min, rule.fullField, rule.min));
+    else if (max && !min && val > rule.max) errors.push((0, _util.format)(options.messages[key].max, rule.fullField, rule.max));
+    else if (min && max && (val < rule.min || val > rule.max)) errors.push((0, _util.format)(options.messages[key].range, rule.fullField, rule.min, rule.max));
+};
+exports.default = range;
+
+},{"../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"foVGo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _util = require("../util");
+var required = function required(rule, value, source, errors, options, type) {
+    if (rule.required && (!source.hasOwnProperty(rule.field) || (0, _util.isEmptyValue)(value, type || rule.type))) errors.push((0, _util.format)(options.messages.required, rule.fullField));
+};
+exports.default = required;
+
+},{"../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"fOQDT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _util = require("../util");
+var _required = require("./required");
+var _requiredDefault = parcelHelpers.interopDefault(_required);
+var _url = require("./url");
+var _urlDefault = parcelHelpers.interopDefault(_url);
+/* eslint max-len:0 */ var pattern = {
+    // http://emailregex.com/
+    email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+\.)+[a-zA-Z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{2,}))$/,
+    // url: new RegExp(
+    //   '^(?!mailto:)(?:(?:http|https|ftp)://|//)(?:\\S+(?::\\S*)?@)?(?:(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[0-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))|localhost)(?::\\d{2,5})?(?:(/|\\?|#)[^\\s]*)?$',
+    //   'i',
+    // ),
+    hex: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/i
+};
+var types = {
+    integer: function integer(value) {
+        return types.number(value) && parseInt(value, 10) === value;
+    },
+    float: function float(value) {
+        return types.number(value) && !types.integer(value);
+    },
+    array: function array(value) {
+        return Array.isArray(value);
+    },
+    regexp: function regexp(value) {
+        if (value instanceof RegExp) return true;
+        try {
+            return new RegExp(value), true;
+        } catch (e) {
+            return false;
+        }
+    },
+    date: function date(value) {
+        return typeof value.getTime === "function" && typeof value.getMonth === "function" && typeof value.getYear === "function" && !isNaN(value.getTime());
+    },
+    number: function number(value) {
+        if (isNaN(value)) return false;
+        return typeof value === "number";
+    },
+    object: function object(value) {
+        return (0, _typeofDefault.default)(value) === "object" && !types.array(value);
+    },
+    method: function method(value) {
+        return typeof value === "function";
+    },
+    email: function email(value) {
+        return typeof value === "string" && value.length <= 320 && !!value.match(pattern.email);
+    },
+    url: function url(value) {
+        return typeof value === "string" && value.length <= 2048 && !!value.match((0, _urlDefault.default)());
+    },
+    hex: function hex(value) {
+        return typeof value === "string" && !!value.match(pattern.hex);
+    }
+};
+var type = function type(rule, value, source, errors, options) {
+    if (rule.required && value === undefined) {
+        (0, _requiredDefault.default)(rule, value, source, errors, options);
+        return;
+    }
+    var custom = [
+        "integer",
+        "float",
+        "array",
+        "regexp",
+        "object",
+        "method",
+        "email",
+        "number",
+        "date",
+        "url",
+        "hex"
+    ];
+    var ruleType = rule.type;
+    if (custom.indexOf(ruleType) > -1) {
+        if (!types[ruleType](value)) errors.push((0, _util.format)(options.messages.types[ruleType], rule.fullField, rule.type));
+    } else if (ruleType && (0, _typeofDefault.default)(value) !== rule.type) errors.push((0, _util.format)(options.messages.types[ruleType], rule.fullField, rule.type));
+};
+exports.default = type;
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","../util":"havIo","./required":"foVGo","./url":"9EVdr","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"9EVdr":[function(require,module,exports) {
+// https://github.com/kevva/url-regex/blob/master/index.js
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var urlReg;
+exports.default = function() {
+    if (urlReg) return urlReg;
+    var word = "[a-fA-F\\d:]";
+    var b = function b(options) {
+        return options && options.includeBoundaries ? "(?:(?<=\\s|^)(?=".concat(word, ")|(?<=").concat(word, ")(?=\\s|$))") : "";
+    };
+    var v4 = "(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3}";
+    var v6seg = "[a-fA-F\\d]{1,4}";
+    var v6List = [
+        "(?:".concat(v6seg, ":){7}(?:").concat(v6seg, "|:)"),
+        "(?:".concat(v6seg, ":){6}(?:").concat(v4, "|:").concat(v6seg, "|:)"),
+        "(?:".concat(v6seg, ":){5}(?::").concat(v4, "|(?::").concat(v6seg, "){1,2}|:)"),
+        "(?:".concat(v6seg, ":){4}(?:(?::").concat(v6seg, "){0,1}:").concat(v4, "|(?::").concat(v6seg, "){1,3}|:)"),
+        "(?:".concat(v6seg, ":){3}(?:(?::").concat(v6seg, "){0,2}:").concat(v4, "|(?::").concat(v6seg, "){1,4}|:)"),
+        "(?:".concat(v6seg, ":){2}(?:(?::").concat(v6seg, "){0,3}:").concat(v4, "|(?::").concat(v6seg, "){1,5}|:)"),
+        "(?:".concat(v6seg, ":){1}(?:(?::").concat(v6seg, "){0,4}:").concat(v4, "|(?::").concat(v6seg, "){1,6}|:)"),
+        "(?::(?:(?::".concat(v6seg, "){0,5}:").concat(v4, "|(?::").concat(v6seg, "){1,7}|:))") // ::2:3:4:5:6:7:8  ::2:3:4:5:6:7:8  ::8             ::
+    ];
+    var v6Eth0 = "(?:%[0-9a-zA-Z]{1,})?"; // %eth0            %1
+    var v6 = "(?:".concat(v6List.join("|"), ")").concat(v6Eth0);
+    // Pre-compile only the exact regexes because adding a global flag make regexes stateful
+    var v46Exact = new RegExp("(?:^".concat(v4, "$)|(?:^").concat(v6, "$)"));
+    var v4exact = new RegExp("^".concat(v4, "$"));
+    var v6exact = new RegExp("^".concat(v6, "$"));
+    var ip = function ip(options) {
+        return options && options.exact ? v46Exact : new RegExp("(?:".concat(b(options)).concat(v4).concat(b(options), ")|(?:").concat(b(options)).concat(v6).concat(b(options), ")"), "g");
+    };
+    ip.v4 = function(options) {
+        return options && options.exact ? v4exact : new RegExp("".concat(b(options)).concat(v4).concat(b(options)), "g");
+    };
+    ip.v6 = function(options) {
+        return options && options.exact ? v6exact : new RegExp("".concat(b(options)).concat(v6).concat(b(options)), "g");
+    };
+    var protocol = "(?:(?:[a-z]+:)?//)";
+    var auth = "(?:\\S+(?::\\S*)?@)?";
+    var ipv4 = ip.v4().source;
+    var ipv6 = ip.v6().source;
+    var host = "(?:(?:[a-z\\u00a1-\\uffff0-9][-_]*)*[a-z\\u00a1-\\uffff0-9]+)";
+    var domain = "(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*";
+    var tld = "(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))";
+    var port = "(?::\\d{2,5})?";
+    var path = '(?:[/?#][^\\s"]*)?';
+    var regex = "(?:".concat(protocol, "|www\\.)").concat(auth, "(?:localhost|").concat(ipv4, "|").concat(ipv6, "|").concat(host).concat(domain).concat(tld, ")").concat(port).concat(path);
+    urlReg = new RegExp("(?:^".concat(regex, "$)"), "i");
+    return urlReg;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"71O73":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _util = require("../util");
+/**
+ *  Rule for validating whitespace.
+ *
+ *  @param rule The validation rule.
+ *  @param value The value of the field on the source object.
+ *  @param source The source object being validated.
+ *  @param errors An array of errors that this rule may add
+ *  validation errors to.
+ *  @param options The validation options.
+ *  @param options.messages The validation messages.
+ */ var whitespace = function whitespace(rule, value, source, errors, options) {
+    if (/^\s+$/.test(value) || value === "") errors.push((0, _util.format)(options.messages.whitespace, rule.fullField));
+};
+exports.default = whitespace;
+
+},{"../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"iAkMi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _index = require("../rule/index");
+var _indexDefault = parcelHelpers.interopDefault(_index);
+var array = function array(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((value === undefined || value === null) && !rule.required) return callback();
+        (0, _indexDefault.default).required(rule, value, source, errors, options, "array");
+        if (value !== undefined && value !== null) {
+            (0, _indexDefault.default).type(rule, value, source, errors, options);
+            (0, _indexDefault.default).range(rule, value, source, errors, options);
+        }
+    }
+    callback(errors);
+};
+exports.default = array;
+
+},{"../rule/index":"5kW6X","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jxvmO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var boolean = function boolean(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) (0, _ruleDefault.default).type(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = boolean;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"h8cTL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var date = function date(rule, value, callback, source, options) {
+    // console.log('integer rule called %j', rule);
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    // console.log('validate on %s value', value);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value, "date") && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (!(0, _util.isEmptyValue)(value, "date")) {
+            var dateObject;
+            if (value instanceof Date) dateObject = value;
+            else dateObject = new Date(value);
+            (0, _ruleDefault.default).type(rule, dateObject, source, errors, options);
+            if (dateObject) (0, _ruleDefault.default).range(rule, dateObject.getTime(), source, errors, options);
+        }
+    }
+    callback(errors);
+};
+exports.default = date;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"71r1V":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var ENUM = "enum";
+var enumerable = function enumerable(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) (0, _ruleDefault.default)[ENUM](rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = enumerable;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"kxbo1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var floatFn = function floatFn(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) {
+            (0, _ruleDefault.default).type(rule, value, source, errors, options);
+            (0, _ruleDefault.default).range(rule, value, source, errors, options);
+        }
+    }
+    callback(errors);
+};
+exports.default = floatFn;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2HvYw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var integer = function integer(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) {
+            (0, _ruleDefault.default).type(rule, value, source, errors, options);
+            (0, _ruleDefault.default).range(rule, value, source, errors, options);
+        }
+    }
+    callback(errors);
+};
+exports.default = integer;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7nVtq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var method = function method(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) (0, _ruleDefault.default).type(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = method;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cbCcZ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var number = function number(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if (value === "") // eslint-disable-next-line no-param-reassign
+        value = undefined;
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) {
+            (0, _ruleDefault.default).type(rule, value, source, errors, options);
+            (0, _ruleDefault.default).range(rule, value, source, errors, options);
+        }
+    }
+    callback(errors);
+};
+exports.default = number;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"snaGS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var object = function object(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (value !== undefined) (0, _ruleDefault.default).type(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = object;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7GZ0c":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var pattern = function pattern(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value, "string") && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (!(0, _util.isEmptyValue)(value, "string")) (0, _ruleDefault.default).pattern(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = pattern;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dke0V":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var regexp = function regexp(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options);
+        if (!(0, _util.isEmptyValue)(value)) (0, _ruleDefault.default).type(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = regexp;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jMBTB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var required = function required(rule, value, callback, source, options) {
+    var errors = [];
+    var type = Array.isArray(value) ? "array" : (0, _typeofDefault.default)(value);
+    (0, _ruleDefault.default).required(rule, value, source, errors, options, type);
+    callback(errors);
+};
+exports.default = required;
+
+},{"@babel/runtime/helpers/esm/typeof":"i7HWY","../rule":"5kW6X","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2jIHM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var string = function string(rule, value, callback, source, options) {
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value, "string") && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options, "string");
+        if (!(0, _util.isEmptyValue)(value, "string")) {
+            (0, _ruleDefault.default).type(rule, value, source, errors, options);
+            (0, _ruleDefault.default).range(rule, value, source, errors, options);
+            (0, _ruleDefault.default).pattern(rule, value, source, errors, options);
+            if (rule.whitespace === true) (0, _ruleDefault.default).whitespace(rule, value, source, errors, options);
+        }
+    }
+    callback(errors);
+};
+exports.default = string;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1uxDj":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _rule = require("../rule");
+var _ruleDefault = parcelHelpers.interopDefault(_rule);
+var _util = require("../util");
+var type = function type(rule, value, callback, source, options) {
+    var ruleType = rule.type;
+    var errors = [];
+    var validate = rule.required || !rule.required && source.hasOwnProperty(rule.field);
+    if (validate) {
+        if ((0, _util.isEmptyValue)(value, ruleType) && !rule.required) return callback();
+        (0, _ruleDefault.default).required(rule, value, source, errors, options, ruleType);
+        if (!(0, _util.isEmptyValue)(value, ruleType)) (0, _ruleDefault.default).type(rule, value, source, errors, options);
+    }
+    callback(errors);
+};
+exports.default = type;
+
+},{"../rule":"5kW6X","../util":"havIo","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1OCBE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7dCqc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "defaultValidateMessages", ()=>defaultValidateMessages);
+var typeTemplate = "'${name}' is not a valid ${type}";
+var defaultValidateMessages = {
+    default: "Validation error on field '${name}'",
+    required: "'${name}' is required",
+    enum: "'${name}' must be one of [${enum}]",
+    whitespace: "'${name}' cannot be empty",
+    date: {
+        format: "'${name}' is invalid for format date",
+        parse: "'${name}' could not be parsed as date",
+        invalid: "'${name}' is invalid date"
+    },
+    types: {
+        string: typeTemplate,
+        method: typeTemplate,
+        array: typeTemplate,
+        object: typeTemplate,
+        number: typeTemplate,
+        date: typeTemplate,
+        boolean: typeTemplate,
+        integer: typeTemplate,
+        float: typeTemplate,
+        regexp: typeTemplate,
+        email: typeTemplate,
+        url: typeTemplate,
+        hex: typeTemplate
+    },
+    string: {
+        len: "'${name}' must be exactly ${len} characters",
+        min: "'${name}' must be at least ${min} characters",
+        max: "'${name}' cannot be longer than ${max} characters",
+        range: "'${name}' must be between ${min} and ${max} characters"
+    },
+    number: {
+        len: "'${name}' must equal ${len}",
+        min: "'${name}' cannot be less than ${min}",
+        max: "'${name}' cannot be greater than ${max}",
+        range: "'${name}' must be between ${min} and ${max}"
+    },
+    array: {
+        len: "'${name}' must be exactly ${len} in length",
+        min: "'${name}' cannot be less than ${min} in length",
+        max: "'${name}' cannot be greater than ${max} in length",
+        range: "'${name}' must be between ${min} and ${max} in length"
+    },
+    pattern: {
+        mismatch: "'${name}' does not match pattern ${pattern}"
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"dtwSd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getValue", ()=>(0, _getDefault.default));
+parcelHelpers.export(exports, "setValue", ()=>(0, _setDefault.default));
+/**
+ * Convert name to internal supported format.
+ * This function should keep since we still thinking if need support like `a.b.c` format.
+ * 'a' => ['a']
+ * 123 => [123]
+ * ['a', 123] => ['a', 123]
+ */ parcelHelpers.export(exports, "getNamePath", ()=>getNamePath);
+parcelHelpers.export(exports, "cloneByNamePathList", ()=>cloneByNamePathList);
+/**
+ * Check if `namePathList` includes `namePath`.
+ * @param namePathList A list of `InternalNamePath[]`
+ * @param namePath Compare `InternalNamePath`
+ * @param partialMatch True will make `[a, b]` match `[a, b, c]`
+ */ parcelHelpers.export(exports, "containsNamePath", ()=>containsNamePath);
+/**
+ * Check if `namePath` is super set or equal of `subNamePath`.
+ * @param namePath A list of `InternalNamePath[]`
+ * @param subNamePath Compare `InternalNamePath`
+ * @param partialMatch True will make `[a, b]` match `[a, b, c]`
+ */ parcelHelpers.export(exports, "matchNamePath", ()=>matchNamePath);
+// Like `shallowEqual`, but we not check the data which may cause re-render
+parcelHelpers.export(exports, "isSimilar", ()=>isSimilar);
+parcelHelpers.export(exports, "defaultGetValueFromEvent", ()=>defaultGetValueFromEvent);
+/**
+ * Moves an array item from one position in an array to another.
+ *
+ * Note: This is a pure function so a new array will be returned, instead
+ * of altering the array argument.
+ *
+ * @param array         Array in which to move an item.         (required)
+ * @param moveIndex     The index of the item to move.          (required)
+ * @param toIndex       The index to move item at moveIndex to. (required)
+ */ parcelHelpers.export(exports, "move", ()=>move);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _get = require("rc-util/es/utils/get");
+var _getDefault = parcelHelpers.interopDefault(_get);
+var _set = require("rc-util/es/utils/set");
+var _setDefault = parcelHelpers.interopDefault(_set);
+var _typeUtil = require("./typeUtil");
+function getNamePath(path) {
+    return (0, _typeUtil.toArray)(path);
+}
+function cloneByNamePathList(store, namePathList) {
+    var newStore = {};
+    namePathList.forEach(function(namePath) {
+        var value = (0, _getDefault.default)(store, namePath);
+        newStore = (0, _setDefault.default)(newStore, namePath, value);
+    });
+    return newStore;
+}
+function containsNamePath(namePathList, namePath) {
+    var partialMatch = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    return namePathList && namePathList.some(function(path) {
+        return matchNamePath(namePath, path, partialMatch);
+    });
+}
+function matchNamePath(namePath, subNamePath) {
+    var partialMatch = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    if (!namePath || !subNamePath) return false;
+    if (!partialMatch && namePath.length !== subNamePath.length) return false;
+    return subNamePath.every(function(nameUnit, i) {
+        return namePath[i] === nameUnit;
+    });
+}
+function isSimilar(source, target) {
+    if (source === target) return true;
+    if (!source && target || source && !target) return false;
+    if (!source || !target || (0, _typeofDefault.default)(source) !== "object" || (0, _typeofDefault.default)(target) !== "object") return false;
+    var sourceKeys = Object.keys(source);
+    var targetKeys = Object.keys(target);
+    var keys = new Set([].concat(sourceKeys, targetKeys));
+    return (0, _toConsumableArrayDefault.default)(keys).every(function(key) {
+        var sourceValue = source[key];
+        var targetValue = target[key];
+        if (typeof sourceValue === "function" && typeof targetValue === "function") return true;
+        return sourceValue === targetValue;
+    });
+}
+function defaultGetValueFromEvent(valuePropName) {
+    var event = arguments.length <= 1 ? undefined : arguments[1];
+    if (event && event.target && (0, _typeofDefault.default)(event.target) === "object" && valuePropName in event.target) return event.target[valuePropName];
+    return event;
+}
+function move(array, moveIndex, toIndex) {
+    var length = array.length;
+    if (moveIndex < 0 || moveIndex >= length || toIndex < 0 || toIndex >= length) return array;
+    var item = array[moveIndex];
+    var diff = moveIndex - toIndex;
+    if (diff > 0) // move left
+    return [].concat((0, _toConsumableArrayDefault.default)(array.slice(0, toIndex)), [
+        item
+    ], (0, _toConsumableArrayDefault.default)(array.slice(toIndex, moveIndex)), (0, _toConsumableArrayDefault.default)(array.slice(moveIndex + 1, length)));
+    if (diff < 0) // move right
+    return [].concat((0, _toConsumableArrayDefault.default)(array.slice(0, moveIndex)), (0, _toConsumableArrayDefault.default)(array.slice(moveIndex + 1, toIndex + 1)), [
+        item
+    ], (0, _toConsumableArrayDefault.default)(array.slice(toIndex + 1, length)));
+    return array;
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/typeof":"i7HWY","rc-util/es/utils/get":"b4y5F","rc-util/es/utils/set":"jx2yS","./typeUtil":"klmYi","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hUxbS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _fieldContext = require("./FieldContext");
+var _fieldContextDefault = parcelHelpers.interopDefault(_fieldContext);
+var _field = require("./Field");
+var _fieldDefault = parcelHelpers.interopDefault(_field);
+var _valueUtil = require("./utils/valueUtil");
+var _listContext = require("./ListContext");
+var _listContextDefault = parcelHelpers.interopDefault(_listContext);
+function List(_ref) {
+    var name = _ref.name, initialValue = _ref.initialValue, children = _ref.children, rules = _ref.rules, validateTrigger = _ref.validateTrigger, isListField = _ref.isListField;
+    var context = _react.useContext((0, _fieldContextDefault.default));
+    var wrapperListContext = _react.useContext((0, _listContextDefault.default));
+    var keyRef = _react.useRef({
+        keys: [],
+        id: 0
+    });
+    var keyManager = keyRef.current;
+    var prefixName = _react.useMemo(function() {
+        var parentPrefixName = (0, _valueUtil.getNamePath)(context.prefixName) || [];
+        return [].concat((0, _toConsumableArrayDefault.default)(parentPrefixName), (0, _toConsumableArrayDefault.default)((0, _valueUtil.getNamePath)(name)));
+    }, [
+        context.prefixName,
+        name
+    ]);
+    var fieldContext = _react.useMemo(function() {
+        return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, context), {}, {
+            prefixName: prefixName
+        });
+    }, [
+        context,
+        prefixName
+    ]);
+    // List context
+    var listContext = _react.useMemo(function() {
+        return {
+            getKey: function getKey(namePath) {
+                var len = prefixName.length;
+                var pathName = namePath[len];
+                return [
+                    keyManager.keys[pathName],
+                    namePath.slice(len + 1)
+                ];
+            }
+        };
+    }, [
+        prefixName
+    ]);
+    // User should not pass `children` as other type.
+    if (typeof children !== "function") {
+        (0, _warningDefault.default)(false, "Form.List only accepts function as children.");
+        return null;
+    }
+    var shouldUpdate = function shouldUpdate(prevValue, nextValue, _ref2) {
+        var source = _ref2.source;
+        if (source === "internal") return false;
+        return prevValue !== nextValue;
+    };
+    return /*#__PURE__*/ _react.createElement((0, _listContextDefault.default).Provider, {
+        value: listContext
+    }, /*#__PURE__*/ _react.createElement((0, _fieldContextDefault.default).Provider, {
+        value: fieldContext
+    }, /*#__PURE__*/ _react.createElement((0, _fieldDefault.default), {
+        name: [],
+        shouldUpdate: shouldUpdate,
+        rules: rules,
+        validateTrigger: validateTrigger,
+        initialValue: initialValue,
+        isList: true,
+        isListField: isListField !== null && isListField !== void 0 ? isListField : !!wrapperListContext
+    }, function(_ref3, meta) {
+        var _ref3$value = _ref3.value, value = _ref3$value === void 0 ? [] : _ref3$value, onChange = _ref3.onChange;
+        var getFieldValue = context.getFieldValue;
+        var getNewValue = function getNewValue() {
+            var values = getFieldValue(prefixName || []);
+            return values || [];
+        };
+        /**
+     * Always get latest value in case user update fields by `form` api.
+     */ var operations = {
+            add: function add(defaultValue, index) {
+                // Mapping keys
+                var newValue = getNewValue();
+                if (index >= 0 && index <= newValue.length) {
+                    keyManager.keys = [].concat((0, _toConsumableArrayDefault.default)(keyManager.keys.slice(0, index)), [
+                        keyManager.id
+                    ], (0, _toConsumableArrayDefault.default)(keyManager.keys.slice(index)));
+                    onChange([].concat((0, _toConsumableArrayDefault.default)(newValue.slice(0, index)), [
+                        defaultValue
+                    ], (0, _toConsumableArrayDefault.default)(newValue.slice(index))));
+                } else {
+                    if (index < 0 || index > newValue.length) (0, _warningDefault.default)(false, "The second parameter of the add function should be a valid positive number.");
+                    keyManager.keys = [].concat((0, _toConsumableArrayDefault.default)(keyManager.keys), [
+                        keyManager.id
+                    ]);
+                    onChange([].concat((0, _toConsumableArrayDefault.default)(newValue), [
+                        defaultValue
+                    ]));
+                }
+                keyManager.id += 1;
+            },
+            remove: function remove(index) {
+                var newValue = getNewValue();
+                var indexSet = new Set(Array.isArray(index) ? index : [
+                    index
+                ]);
+                if (indexSet.size <= 0) return;
+                keyManager.keys = keyManager.keys.filter(function(_, keysIndex) {
+                    return !indexSet.has(keysIndex);
+                });
+                // Trigger store change
+                onChange(newValue.filter(function(_, valueIndex) {
+                    return !indexSet.has(valueIndex);
+                }));
+            },
+            move: function move(from, to) {
+                if (from === to) return;
+                var newValue = getNewValue();
+                // Do not handle out of range
+                if (from < 0 || from >= newValue.length || to < 0 || to >= newValue.length) return;
+                keyManager.keys = (0, _valueUtil.move)(keyManager.keys, from, to);
+                // Trigger store change
+                onChange((0, _valueUtil.move)(newValue, from, to));
+            }
+        };
+        var listValue = value || [];
+        if (!Array.isArray(listValue)) {
+            listValue = [];
+            (0, _warningDefault.default)(false, "Current value of '".concat(prefixName.join(" > "), "' is not an array type."));
+        }
+        return children(listValue.map(function(__, index) {
+            var key = keyManager.keys[index];
+            if (key === undefined) {
+                keyManager.keys[index] = keyManager.id;
+                key = keyManager.keys[index];
+                keyManager.id += 1;
+            }
+            return {
+                name: index,
+                key: key,
+                isListField: true
+            };
+        }), operations, meta);
+    })));
+}
+exports.default = List;
+
+},{"@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","rc-util/es/warning":"c7oua","./FieldContext":"edeC2","./Field":"66zlt","./utils/valueUtil":"dtwSd","./ListContext":"9sjEA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"hgZUW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FormStore", ()=>FormStore);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _set = require("rc-util/es/utils/set");
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _fieldContext = require("./FieldContext");
+var _asyncUtil = require("./utils/asyncUtil");
+var _messages = require("./utils/messages");
+var _nameMap = require("./utils/NameMap");
+var _nameMapDefault = parcelHelpers.interopDefault(_nameMap);
+var _valueUtil = require("./utils/valueUtil");
+var _excluded = [
+    "name"
+];
+var FormStore = /*#__PURE__*/ (0, _createClassDefault.default)(function FormStore(forceRootUpdate) {
+    var _this = this;
+    (0, _classCallCheckDefault.default)(this, FormStore);
+    (0, _definePropertyDefault.default)(this, "formHooked", false);
+    (0, _definePropertyDefault.default)(this, "forceRootUpdate", void 0);
+    (0, _definePropertyDefault.default)(this, "subscribable", true);
+    (0, _definePropertyDefault.default)(this, "store", {});
+    (0, _definePropertyDefault.default)(this, "fieldEntities", []);
+    (0, _definePropertyDefault.default)(this, "initialValues", {});
+    (0, _definePropertyDefault.default)(this, "callbacks", {});
+    (0, _definePropertyDefault.default)(this, "validateMessages", null);
+    (0, _definePropertyDefault.default)(this, "preserve", null);
+    (0, _definePropertyDefault.default)(this, "lastValidatePromise", null);
+    (0, _definePropertyDefault.default)(this, "getForm", function() {
+        return {
+            getFieldValue: _this.getFieldValue,
+            getFieldsValue: _this.getFieldsValue,
+            getFieldError: _this.getFieldError,
+            getFieldWarning: _this.getFieldWarning,
+            getFieldsError: _this.getFieldsError,
+            isFieldsTouched: _this.isFieldsTouched,
+            isFieldTouched: _this.isFieldTouched,
+            isFieldValidating: _this.isFieldValidating,
+            isFieldsValidating: _this.isFieldsValidating,
+            resetFields: _this.resetFields,
+            setFields: _this.setFields,
+            setFieldValue: _this.setFieldValue,
+            setFieldsValue: _this.setFieldsValue,
+            validateFields: _this.validateFields,
+            submit: _this.submit,
+            _init: true,
+            getInternalHooks: _this.getInternalHooks
+        };
+    });
+    // ======================== Internal Hooks ========================
+    (0, _definePropertyDefault.default)(this, "getInternalHooks", function(key) {
+        if (key === (0, _fieldContext.HOOK_MARK)) {
+            _this.formHooked = true;
+            return {
+                dispatch: _this.dispatch,
+                initEntityValue: _this.initEntityValue,
+                registerField: _this.registerField,
+                useSubscribe: _this.useSubscribe,
+                setInitialValues: _this.setInitialValues,
+                destroyForm: _this.destroyForm,
+                setCallbacks: _this.setCallbacks,
+                setValidateMessages: _this.setValidateMessages,
+                getFields: _this.getFields,
+                setPreserve: _this.setPreserve,
+                getInitialValue: _this.getInitialValue,
+                registerWatch: _this.registerWatch
+            };
+        }
+        (0, _warningDefault.default)(false, "`getInternalHooks` is internal usage. Should not call directly.");
+        return null;
+    });
+    (0, _definePropertyDefault.default)(this, "useSubscribe", function(subscribable) {
+        _this.subscribable = subscribable;
+    });
+    /**
+   * Record prev Form unmount fieldEntities which config preserve false.
+   * This need to be refill with initialValues instead of store value.
+   */ (0, _definePropertyDefault.default)(this, "prevWithoutPreserves", null);
+    /**
+   * First time `setInitialValues` should update store with initial value
+   */ (0, _definePropertyDefault.default)(this, "setInitialValues", function(initialValues, init) {
+        _this.initialValues = initialValues || {};
+        if (init) {
+            var _this$prevWithoutPres;
+            var nextStore = (0, _set.merge)(initialValues, _this.store);
+            // We will take consider prev form unmount fields.
+            // When the field is not `preserve`, we need fill this with initialValues instead of store.
+            // eslint-disable-next-line array-callback-return
+            (_this$prevWithoutPres = _this.prevWithoutPreserves) === null || _this$prevWithoutPres === void 0 || _this$prevWithoutPres.map(function(_ref) {
+                var namePath = _ref.key;
+                nextStore = (0, _valueUtil.setValue)(nextStore, namePath, (0, _valueUtil.getValue)(initialValues, namePath));
+            });
+            _this.prevWithoutPreserves = null;
+            _this.updateStore(nextStore);
+        }
+    });
+    (0, _definePropertyDefault.default)(this, "destroyForm", function(clearOnDestroy) {
+        if (clearOnDestroy) // destroy form reset store
+        _this.updateStore({});
+        else {
+            // Fill preserve fields
+            var prevWithoutPreserves = new (0, _nameMapDefault.default)();
+            _this.getFieldEntities(true).forEach(function(entity) {
+                if (!_this.isMergedPreserve(entity.isPreserve())) prevWithoutPreserves.set(entity.getNamePath(), true);
+            });
+            _this.prevWithoutPreserves = prevWithoutPreserves;
+        }
+    });
+    (0, _definePropertyDefault.default)(this, "getInitialValue", function(namePath) {
+        var initValue = (0, _valueUtil.getValue)(_this.initialValues, namePath);
+        // Not cloneDeep when without `namePath`
+        return namePath.length ? (0, _set.merge)(initValue) : initValue;
+    });
+    (0, _definePropertyDefault.default)(this, "setCallbacks", function(callbacks) {
+        _this.callbacks = callbacks;
+    });
+    (0, _definePropertyDefault.default)(this, "setValidateMessages", function(validateMessages) {
+        _this.validateMessages = validateMessages;
+    });
+    (0, _definePropertyDefault.default)(this, "setPreserve", function(preserve) {
+        _this.preserve = preserve;
+    });
+    // ============================= Watch ============================
+    (0, _definePropertyDefault.default)(this, "watchList", []);
+    (0, _definePropertyDefault.default)(this, "registerWatch", function(callback) {
+        _this.watchList.push(callback);
+        return function() {
+            _this.watchList = _this.watchList.filter(function(fn) {
+                return fn !== callback;
+            });
+        };
+    });
+    (0, _definePropertyDefault.default)(this, "notifyWatch", function() {
+        var namePath = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+        // No need to cost perf when nothing need to watch
+        if (_this.watchList.length) {
+            var values = _this.getFieldsValue();
+            var allValues = _this.getFieldsValue(true);
+            _this.watchList.forEach(function(callback) {
+                callback(values, allValues, namePath);
+            });
+        }
+    });
+    // ========================== Dev Warning =========================
+    (0, _definePropertyDefault.default)(this, "timeoutId", null);
+    (0, _definePropertyDefault.default)(this, "warningUnhooked", function() {
+        if (!_this.timeoutId && typeof window !== "undefined") _this.timeoutId = setTimeout(function() {
+            _this.timeoutId = null;
+            if (!_this.formHooked) (0, _warningDefault.default)(false, "Instance created by `useForm` is not connected to any Form element. Forget to pass `form` prop?");
+        });
+    });
+    // ============================ Store =============================
+    (0, _definePropertyDefault.default)(this, "updateStore", function(nextStore) {
+        _this.store = nextStore;
+    });
+    // ============================ Fields ============================
+    /**
+   * Get registered field entities.
+   * @param pure Only return field which has a `name`. Default: false
+   */ (0, _definePropertyDefault.default)(this, "getFieldEntities", function() {
+        var pure = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+        if (!pure) return _this.fieldEntities;
+        return _this.fieldEntities.filter(function(field) {
+            return field.getNamePath().length;
+        });
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldsMap", function() {
+        var pure = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+        var cache = new (0, _nameMapDefault.default)();
+        _this.getFieldEntities(pure).forEach(function(field) {
+            var namePath = field.getNamePath();
+            cache.set(namePath, field);
+        });
+        return cache;
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldEntitiesForNamePathList", function(nameList) {
+        if (!nameList) return _this.getFieldEntities(true);
+        var cache = _this.getFieldsMap(true);
+        return nameList.map(function(name) {
+            var namePath = (0, _valueUtil.getNamePath)(name);
+            return cache.get(namePath) || {
+                INVALIDATE_NAME_PATH: (0, _valueUtil.getNamePath)(name)
+            };
+        });
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldsValue", function(nameList, filterFunc) {
+        _this.warningUnhooked();
+        // Fill args
+        var mergedNameList;
+        var mergedFilterFunc;
+        var mergedStrict;
+        if (nameList === true || Array.isArray(nameList)) {
+            mergedNameList = nameList;
+            mergedFilterFunc = filterFunc;
+        } else if (nameList && (0, _typeofDefault.default)(nameList) === "object") {
+            mergedStrict = nameList.strict;
+            mergedFilterFunc = nameList.filter;
+        }
+        if (mergedNameList === true && !mergedFilterFunc) return _this.store;
+        var fieldEntities = _this.getFieldEntitiesForNamePathList(Array.isArray(mergedNameList) ? mergedNameList : null);
+        var filteredNameList = [];
+        fieldEntities.forEach(function(entity) {
+            var _isListField, _ref3;
+            var namePath = "INVALIDATE_NAME_PATH" in entity ? entity.INVALIDATE_NAME_PATH : entity.getNamePath();
+            // Ignore when it's a list item and not specific the namePath,
+            // since parent field is already take in count
+            if (mergedStrict) {
+                var _isList, _ref2;
+                if ((_isList = (_ref2 = entity).isList) !== null && _isList !== void 0 && _isList.call(_ref2)) return;
+            } else if (!mergedNameList && (_isListField = (_ref3 = entity).isListField) !== null && _isListField !== void 0 && _isListField.call(_ref3)) return;
+            if (!mergedFilterFunc) filteredNameList.push(namePath);
+            else {
+                var meta = "getMeta" in entity ? entity.getMeta() : null;
+                if (mergedFilterFunc(meta)) filteredNameList.push(namePath);
+            }
+        });
+        return (0, _valueUtil.cloneByNamePathList)(_this.store, filteredNameList.map((0, _valueUtil.getNamePath)));
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldValue", function(name) {
+        _this.warningUnhooked();
+        var namePath = (0, _valueUtil.getNamePath)(name);
+        return (0, _valueUtil.getValue)(_this.store, namePath);
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldsError", function(nameList) {
+        _this.warningUnhooked();
+        var fieldEntities = _this.getFieldEntitiesForNamePathList(nameList);
+        return fieldEntities.map(function(entity, index) {
+            if (entity && !("INVALIDATE_NAME_PATH" in entity)) return {
+                name: entity.getNamePath(),
+                errors: entity.getErrors(),
+                warnings: entity.getWarnings()
+            };
+            return {
+                name: (0, _valueUtil.getNamePath)(nameList[index]),
+                errors: [],
+                warnings: []
+            };
+        });
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldError", function(name) {
+        _this.warningUnhooked();
+        var namePath = (0, _valueUtil.getNamePath)(name);
+        var fieldError = _this.getFieldsError([
+            namePath
+        ])[0];
+        return fieldError.errors;
+    });
+    (0, _definePropertyDefault.default)(this, "getFieldWarning", function(name) {
+        _this.warningUnhooked();
+        var namePath = (0, _valueUtil.getNamePath)(name);
+        var fieldError = _this.getFieldsError([
+            namePath
+        ])[0];
+        return fieldError.warnings;
+    });
+    (0, _definePropertyDefault.default)(this, "isFieldsTouched", function() {
+        _this.warningUnhooked();
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        var arg0 = args[0], arg1 = args[1];
+        var namePathList;
+        var isAllFieldsTouched = false;
+        if (args.length === 0) namePathList = null;
+        else if (args.length === 1) {
+            if (Array.isArray(arg0)) {
+                namePathList = arg0.map((0, _valueUtil.getNamePath));
+                isAllFieldsTouched = false;
+            } else {
+                namePathList = null;
+                isAllFieldsTouched = arg0;
+            }
+        } else {
+            namePathList = arg0.map((0, _valueUtil.getNamePath));
+            isAllFieldsTouched = arg1;
+        }
+        var fieldEntities = _this.getFieldEntities(true);
+        var isFieldTouched = function isFieldTouched(field) {
+            return field.isFieldTouched();
+        };
+        // ===== Will get fully compare when not config namePathList =====
+        if (!namePathList) return isAllFieldsTouched ? fieldEntities.every(function(entity) {
+            return isFieldTouched(entity) || entity.isList();
+        }) : fieldEntities.some(isFieldTouched);
+        // Generate a nest tree for validate
+        var map = new (0, _nameMapDefault.default)();
+        namePathList.forEach(function(shortNamePath) {
+            map.set(shortNamePath, []);
+        });
+        fieldEntities.forEach(function(field) {
+            var fieldNamePath = field.getNamePath();
+            // Find matched entity and put into list
+            namePathList.forEach(function(shortNamePath) {
+                if (shortNamePath.every(function(nameUnit, i) {
+                    return fieldNamePath[i] === nameUnit;
+                })) map.update(shortNamePath, function(list) {
+                    return [].concat((0, _toConsumableArrayDefault.default)(list), [
+                        field
+                    ]);
+                });
+            });
+        });
+        // Check if NameMap value is touched
+        var isNamePathListTouched = function isNamePathListTouched(entities) {
+            return entities.some(isFieldTouched);
+        };
+        var namePathListEntities = map.map(function(_ref4) {
+            var value = _ref4.value;
+            return value;
+        });
+        return isAllFieldsTouched ? namePathListEntities.every(isNamePathListTouched) : namePathListEntities.some(isNamePathListTouched);
+    });
+    (0, _definePropertyDefault.default)(this, "isFieldTouched", function(name) {
+        _this.warningUnhooked();
+        return _this.isFieldsTouched([
+            name
+        ]);
+    });
+    (0, _definePropertyDefault.default)(this, "isFieldsValidating", function(nameList) {
+        _this.warningUnhooked();
+        var fieldEntities = _this.getFieldEntities();
+        if (!nameList) return fieldEntities.some(function(testField) {
+            return testField.isFieldValidating();
+        });
+        var namePathList = nameList.map((0, _valueUtil.getNamePath));
+        return fieldEntities.some(function(testField) {
+            var fieldNamePath = testField.getNamePath();
+            return (0, _valueUtil.containsNamePath)(namePathList, fieldNamePath) && testField.isFieldValidating();
+        });
+    });
+    (0, _definePropertyDefault.default)(this, "isFieldValidating", function(name) {
+        _this.warningUnhooked();
+        return _this.isFieldsValidating([
+            name
+        ]);
+    });
+    /**
+   * Reset Field with field `initialValue` prop.
+   * Can pass `entities` or `namePathList` or just nothing.
+   */ (0, _definePropertyDefault.default)(this, "resetWithFieldInitialValue", function() {
+        var info = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        // Create cache
+        var cache = new (0, _nameMapDefault.default)();
+        var fieldEntities = _this.getFieldEntities(true);
+        fieldEntities.forEach(function(field) {
+            var initialValue = field.props.initialValue;
+            var namePath = field.getNamePath();
+            // Record only if has `initialValue`
+            if (initialValue !== undefined) {
+                var records = cache.get(namePath) || new Set();
+                records.add({
+                    entity: field,
+                    value: initialValue
+                });
+                cache.set(namePath, records);
+            }
+        });
+        // Reset
+        var resetWithFields = function resetWithFields(entities) {
+            entities.forEach(function(field) {
+                var initialValue = field.props.initialValue;
+                if (initialValue !== undefined) {
+                    var namePath = field.getNamePath();
+                    var formInitialValue = _this.getInitialValue(namePath);
+                    if (formInitialValue !== undefined) // Warning if conflict with form initialValues and do not modify value
+                    (0, _warningDefault.default)(false, "Form already set 'initialValues' with path '".concat(namePath.join("."), "'. Field can not overwrite it."));
+                    else {
+                        var records = cache.get(namePath);
+                        if (records && records.size > 1) // Warning if multiple field set `initialValue`and do not modify value
+                        (0, _warningDefault.default)(false, "Multiple Field with path '".concat(namePath.join("."), "' set 'initialValue'. Can not decide which one to pick."));
+                        else if (records) {
+                            var originValue = _this.getFieldValue(namePath);
+                            var isListField = field.isListField();
+                            // Set `initialValue`
+                            if (!isListField && (!info.skipExist || originValue === undefined)) _this.updateStore((0, _valueUtil.setValue)(_this.store, namePath, (0, _toConsumableArrayDefault.default)(records)[0].value));
+                        }
+                    }
+                }
+            });
+        };
+        var requiredFieldEntities;
+        if (info.entities) requiredFieldEntities = info.entities;
+        else if (info.namePathList) {
+            requiredFieldEntities = [];
+            info.namePathList.forEach(function(namePath) {
+                var records = cache.get(namePath);
+                if (records) {
+                    var _requiredFieldEntitie;
+                    (_requiredFieldEntitie = requiredFieldEntities).push.apply(_requiredFieldEntitie, (0, _toConsumableArrayDefault.default)((0, _toConsumableArrayDefault.default)(records).map(function(r) {
+                        return r.entity;
+                    })));
+                }
+            });
+        } else requiredFieldEntities = fieldEntities;
+        resetWithFields(requiredFieldEntities);
+    });
+    (0, _definePropertyDefault.default)(this, "resetFields", function(nameList) {
+        _this.warningUnhooked();
+        var prevStore = _this.store;
+        if (!nameList) {
+            _this.updateStore((0, _set.merge)(_this.initialValues));
+            _this.resetWithFieldInitialValue();
+            _this.notifyObservers(prevStore, null, {
+                type: "reset"
+            });
+            _this.notifyWatch();
+            return;
+        }
+        // Reset by `nameList`
+        var namePathList = nameList.map((0, _valueUtil.getNamePath));
+        namePathList.forEach(function(namePath) {
+            var initialValue = _this.getInitialValue(namePath);
+            _this.updateStore((0, _valueUtil.setValue)(_this.store, namePath, initialValue));
+        });
+        _this.resetWithFieldInitialValue({
+            namePathList: namePathList
+        });
+        _this.notifyObservers(prevStore, namePathList, {
+            type: "reset"
+        });
+        _this.notifyWatch(namePathList);
+    });
+    (0, _definePropertyDefault.default)(this, "setFields", function(fields) {
+        _this.warningUnhooked();
+        var prevStore = _this.store;
+        var namePathList = [];
+        fields.forEach(function(fieldData) {
+            var name = fieldData.name, data = (0, _objectWithoutPropertiesDefault.default)(fieldData, _excluded);
+            var namePath = (0, _valueUtil.getNamePath)(name);
+            namePathList.push(namePath);
+            // Value
+            if ("value" in data) _this.updateStore((0, _valueUtil.setValue)(_this.store, namePath, data.value));
+            _this.notifyObservers(prevStore, [
+                namePath
+            ], {
+                type: "setField",
+                data: fieldData
+            });
+        });
+        _this.notifyWatch(namePathList);
+    });
+    (0, _definePropertyDefault.default)(this, "getFields", function() {
+        var entities = _this.getFieldEntities(true);
+        var fields = entities.map(function(field) {
+            var namePath = field.getNamePath();
+            var meta = field.getMeta();
+            var fieldData = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, meta), {}, {
+                name: namePath,
+                value: _this.getFieldValue(namePath)
+            });
+            Object.defineProperty(fieldData, "originRCField", {
+                value: true
+            });
+            return fieldData;
+        });
+        return fields;
+    });
+    // =========================== Observer ===========================
+    /**
+   * This only trigger when a field is on constructor to avoid we get initialValue too late
+   */ (0, _definePropertyDefault.default)(this, "initEntityValue", function(entity) {
+        var initialValue = entity.props.initialValue;
+        if (initialValue !== undefined) {
+            var namePath = entity.getNamePath();
+            var prevValue = (0, _valueUtil.getValue)(_this.store, namePath);
+            if (prevValue === undefined) _this.updateStore((0, _valueUtil.setValue)(_this.store, namePath, initialValue));
+        }
+    });
+    (0, _definePropertyDefault.default)(this, "isMergedPreserve", function(fieldPreserve) {
+        var mergedPreserve = fieldPreserve !== undefined ? fieldPreserve : _this.preserve;
+        return mergedPreserve !== null && mergedPreserve !== void 0 ? mergedPreserve : true;
+    });
+    (0, _definePropertyDefault.default)(this, "registerField", function(entity) {
+        _this.fieldEntities.push(entity);
+        var namePath = entity.getNamePath();
+        _this.notifyWatch([
+            namePath
+        ]);
+        // Set initial values
+        if (entity.props.initialValue !== undefined) {
+            var prevStore = _this.store;
+            _this.resetWithFieldInitialValue({
+                entities: [
+                    entity
+                ],
+                skipExist: true
+            });
+            _this.notifyObservers(prevStore, [
+                entity.getNamePath()
+            ], {
+                type: "valueUpdate",
+                source: "internal"
+            });
+        }
+        // un-register field callback
+        return function(isListField, preserve) {
+            var subNamePath = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+            _this.fieldEntities = _this.fieldEntities.filter(function(item) {
+                return item !== entity;
+            });
+            // Clean up store value if not preserve
+            if (!_this.isMergedPreserve(preserve) && (!isListField || subNamePath.length > 1)) {
+                var defaultValue = isListField ? undefined : _this.getInitialValue(namePath);
+                if (namePath.length && _this.getFieldValue(namePath) !== defaultValue && _this.fieldEntities.every(function(field) {
+                    return(// Only reset when no namePath exist
+                    !(0, _valueUtil.matchNamePath)(field.getNamePath(), namePath));
+                })) {
+                    var _prevStore = _this.store;
+                    _this.updateStore((0, _valueUtil.setValue)(_prevStore, namePath, defaultValue, true));
+                    // Notify that field is unmount
+                    _this.notifyObservers(_prevStore, [
+                        namePath
+                    ], {
+                        type: "remove"
+                    });
+                    // Dependencies update
+                    _this.triggerDependenciesUpdate(_prevStore, namePath);
+                }
+            }
+            _this.notifyWatch([
+                namePath
+            ]);
+        };
+    });
+    (0, _definePropertyDefault.default)(this, "dispatch", function(action) {
+        switch(action.type){
+            case "updateValue":
+                var namePath = action.namePath, value = action.value;
+                _this.updateValue(namePath, value);
+                break;
+            case "validateField":
+                var _namePath = action.namePath, triggerName = action.triggerName;
+                _this.validateFields([
+                    _namePath
+                ], {
+                    triggerName: triggerName
+                });
+                break;
+            default:
+        }
+    });
+    (0, _definePropertyDefault.default)(this, "notifyObservers", function(prevStore, namePathList, info) {
+        if (_this.subscribable) {
+            var mergedInfo = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, info), {}, {
+                store: _this.getFieldsValue(true)
+            });
+            _this.getFieldEntities().forEach(function(_ref5) {
+                var onStoreChange = _ref5.onStoreChange;
+                onStoreChange(prevStore, namePathList, mergedInfo);
+            });
+        } else _this.forceRootUpdate();
+    });
+    /**
+   * Notify dependencies children with parent update
+   * We need delay to trigger validate in case Field is under render props
+   */ (0, _definePropertyDefault.default)(this, "triggerDependenciesUpdate", function(prevStore, namePath) {
+        var childrenFields = _this.getDependencyChildrenFields(namePath);
+        if (childrenFields.length) _this.validateFields(childrenFields);
+        _this.notifyObservers(prevStore, childrenFields, {
+            type: "dependenciesUpdate",
+            relatedFields: [
+                namePath
+            ].concat((0, _toConsumableArrayDefault.default)(childrenFields))
+        });
+        return childrenFields;
+    });
+    (0, _definePropertyDefault.default)(this, "updateValue", function(name, value) {
+        var namePath = (0, _valueUtil.getNamePath)(name);
+        var prevStore = _this.store;
+        _this.updateStore((0, _valueUtil.setValue)(_this.store, namePath, value));
+        _this.notifyObservers(prevStore, [
+            namePath
+        ], {
+            type: "valueUpdate",
+            source: "internal"
+        });
+        _this.notifyWatch([
+            namePath
+        ]);
+        // Dependencies update
+        var childrenFields = _this.triggerDependenciesUpdate(prevStore, namePath);
+        // trigger callback function
+        var onValuesChange = _this.callbacks.onValuesChange;
+        if (onValuesChange) {
+            var changedValues = (0, _valueUtil.cloneByNamePathList)(_this.store, [
+                namePath
+            ]);
+            onValuesChange(changedValues, _this.getFieldsValue());
+        }
+        _this.triggerOnFieldsChange([
+            namePath
+        ].concat((0, _toConsumableArrayDefault.default)(childrenFields)));
+    });
+    // Let all child Field get update.
+    (0, _definePropertyDefault.default)(this, "setFieldsValue", function(store) {
+        _this.warningUnhooked();
+        var prevStore = _this.store;
+        if (store) {
+            var nextStore = (0, _set.merge)(_this.store, store);
+            _this.updateStore(nextStore);
+        }
+        _this.notifyObservers(prevStore, null, {
+            type: "valueUpdate",
+            source: "external"
+        });
+        _this.notifyWatch();
+    });
+    (0, _definePropertyDefault.default)(this, "setFieldValue", function(name, value) {
+        _this.setFields([
+            {
+                name: name,
+                value: value
+            }
+        ]);
+    });
+    (0, _definePropertyDefault.default)(this, "getDependencyChildrenFields", function(rootNamePath) {
+        var children = new Set();
+        var childrenFields = [];
+        var dependencies2fields = new (0, _nameMapDefault.default)();
+        /**
+     * Generate maps
+     * Can use cache to save perf if user report performance issue with this
+     */ _this.getFieldEntities().forEach(function(field) {
+            var dependencies = field.props.dependencies;
+            (dependencies || []).forEach(function(dependency) {
+                var dependencyNamePath = (0, _valueUtil.getNamePath)(dependency);
+                dependencies2fields.update(dependencyNamePath, function() {
+                    var fields = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new Set();
+                    fields.add(field);
+                    return fields;
+                });
+            });
+        });
+        var fillChildren = function fillChildren(namePath) {
+            var fields = dependencies2fields.get(namePath) || new Set();
+            fields.forEach(function(field) {
+                if (!children.has(field)) {
+                    children.add(field);
+                    var fieldNamePath = field.getNamePath();
+                    if (field.isFieldDirty() && fieldNamePath.length) {
+                        childrenFields.push(fieldNamePath);
+                        fillChildren(fieldNamePath);
+                    }
+                }
+            });
+        };
+        fillChildren(rootNamePath);
+        return childrenFields;
+    });
+    (0, _definePropertyDefault.default)(this, "triggerOnFieldsChange", function(namePathList, filedErrors) {
+        var onFieldsChange = _this.callbacks.onFieldsChange;
+        if (onFieldsChange) {
+            var fields = _this.getFields();
+            /**
+       * Fill errors since `fields` may be replaced by controlled fields
+       */ if (filedErrors) {
+                var cache = new (0, _nameMapDefault.default)();
+                filedErrors.forEach(function(_ref6) {
+                    var name = _ref6.name, errors = _ref6.errors;
+                    cache.set(name, errors);
+                });
+                fields.forEach(function(field) {
+                    // eslint-disable-next-line no-param-reassign
+                    field.errors = cache.get(field.name) || field.errors;
+                });
+            }
+            var changedFields = fields.filter(function(_ref7) {
+                var fieldName = _ref7.name;
+                return (0, _valueUtil.containsNamePath)(namePathList, fieldName);
+            });
+            if (changedFields.length) onFieldsChange(changedFields, fields);
+        }
+    });
+    // =========================== Validate ===========================
+    (0, _definePropertyDefault.default)(this, "validateFields", function(arg1, arg2) {
+        _this.warningUnhooked();
+        var nameList;
+        var options;
+        if (Array.isArray(arg1) || typeof arg1 === "string" || typeof arg2 === "string") {
+            nameList = arg1;
+            options = arg2;
+        } else options = arg1;
+        var provideNameList = !!nameList;
+        var namePathList = provideNameList ? nameList.map((0, _valueUtil.getNamePath)) : [];
+        // Collect result in promise list
+        var promiseList = [];
+        // We temp save the path which need trigger for `onFieldsChange`
+        var TMP_SPLIT = String(Date.now());
+        var validateNamePathList = new Set();
+        var _ref8 = options || {}, recursive = _ref8.recursive, dirty = _ref8.dirty;
+        _this.getFieldEntities(true).forEach(function(field) {
+            // Add field if not provide `nameList`
+            if (!provideNameList) namePathList.push(field.getNamePath());
+            // Skip if without rule
+            if (!field.props.rules || !field.props.rules.length) return;
+            // Skip if only validate dirty field
+            if (dirty && !field.isFieldDirty()) return;
+            var fieldNamePath = field.getNamePath();
+            validateNamePathList.add(fieldNamePath.join(TMP_SPLIT));
+            // Add field validate rule in to promise list
+            if (!provideNameList || (0, _valueUtil.containsNamePath)(namePathList, fieldNamePath, recursive)) {
+                var promise = field.validateRules((0, _objectSpread2Default.default)({
+                    validateMessages: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, (0, _messages.defaultValidateMessages)), _this.validateMessages)
+                }, options));
+                // Wrap promise with field
+                promiseList.push(promise.then(function() {
+                    return {
+                        name: fieldNamePath,
+                        errors: [],
+                        warnings: []
+                    };
+                }).catch(function(ruleErrors) {
+                    var _ruleErrors$forEach;
+                    var mergedErrors = [];
+                    var mergedWarnings = [];
+                    (_ruleErrors$forEach = ruleErrors.forEach) === null || _ruleErrors$forEach === void 0 || _ruleErrors$forEach.call(ruleErrors, function(_ref9) {
+                        var warningOnly = _ref9.rule.warningOnly, errors = _ref9.errors;
+                        if (warningOnly) mergedWarnings.push.apply(mergedWarnings, (0, _toConsumableArrayDefault.default)(errors));
+                        else mergedErrors.push.apply(mergedErrors, (0, _toConsumableArrayDefault.default)(errors));
+                    });
+                    if (mergedErrors.length) return Promise.reject({
+                        name: fieldNamePath,
+                        errors: mergedErrors,
+                        warnings: mergedWarnings
+                    });
+                    return {
+                        name: fieldNamePath,
+                        errors: mergedErrors,
+                        warnings: mergedWarnings
+                    };
+                }));
+            }
+        });
+        var summaryPromise = (0, _asyncUtil.allPromiseFinish)(promiseList);
+        _this.lastValidatePromise = summaryPromise;
+        // Notify fields with rule that validate has finished and need update
+        summaryPromise.catch(function(results) {
+            return results;
+        }).then(function(results) {
+            var resultNamePathList = results.map(function(_ref10) {
+                var name = _ref10.name;
+                return name;
+            });
+            _this.notifyObservers(_this.store, resultNamePathList, {
+                type: "validateFinish"
+            });
+            _this.triggerOnFieldsChange(resultNamePathList, results);
+        });
+        var returnPromise = summaryPromise.then(function() {
+            if (_this.lastValidatePromise === summaryPromise) return Promise.resolve(_this.getFieldsValue(namePathList));
+            return Promise.reject([]);
+        }).catch(function(results) {
+            var errorList = results.filter(function(result) {
+                return result && result.errors.length;
+            });
+            return Promise.reject({
+                values: _this.getFieldsValue(namePathList),
+                errorFields: errorList,
+                outOfDate: _this.lastValidatePromise !== summaryPromise
+            });
+        });
+        // Do not throw in console
+        returnPromise.catch(function(e) {
+            return e;
+        });
+        // `validating` changed. Trigger `onFieldsChange`
+        var triggerNamePathList = namePathList.filter(function(namePath) {
+            return validateNamePathList.has(namePath.join(TMP_SPLIT));
+        });
+        _this.triggerOnFieldsChange(triggerNamePathList);
+        return returnPromise;
+    });
+    // ============================ Submit ============================
+    (0, _definePropertyDefault.default)(this, "submit", function() {
+        _this.warningUnhooked();
+        _this.validateFields().then(function(values) {
+            var onFinish = _this.callbacks.onFinish;
+            if (onFinish) try {
+                onFinish(values);
+            } catch (err) {
+                // Should print error if user `onFinish` callback failed
+                console.error(err);
+            }
+        }).catch(function(e) {
+            var onFinishFailed = _this.callbacks.onFinishFailed;
+            if (onFinishFailed) onFinishFailed(e);
+        });
+    });
+    this.forceRootUpdate = forceRootUpdate;
+});
+function useForm(form) {
+    var formRef = _react.useRef();
+    var _React$useState = _react.useState({}), _React$useState2 = (0, _slicedToArrayDefault.default)(_React$useState, 2), forceUpdate = _React$useState2[1];
+    if (!formRef.current) {
+        if (form) formRef.current = form;
+        else {
+            // Create a new FormStore if not provided
+            var forceReRender = function forceReRender() {
+                forceUpdate({});
+            };
+            var formStore = new FormStore(forceReRender);
+            formRef.current = formStore.getForm();
+        }
+    }
+    return [
+        formRef.current
+    ];
+}
+exports.default = useForm;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/typeof":"i7HWY","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/defineProperty":"hbmCA","rc-util/es/utils/set":"jx2yS","rc-util/es/warning":"c7oua","react":"21dqq","./FieldContext":"edeC2","./utils/asyncUtil":"d8E7b","./utils/messages":"7dCqc","./utils/NameMap":"7EzOW","./utils/valueUtil":"dtwSd","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"d8E7b":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "allPromiseFinish", ()=>allPromiseFinish);
+function allPromiseFinish(promiseList) {
+    var hasError = false;
+    var count = promiseList.length;
+    var results = [];
+    if (!promiseList.length) return Promise.resolve([]);
+    return new Promise(function(resolve, reject) {
+        promiseList.forEach(function(promise, index) {
+            promise.catch(function(e) {
+                hasError = true;
+                return e;
+            }).then(function(result) {
+                count -= 1;
+                results[index] = result;
+                if (count > 0) return;
+                if (hasError) reject(results);
+                resolve(results);
+            });
+        });
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7EzOW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _classCallCheck = require("@babel/runtime/helpers/esm/classCallCheck");
+var _classCallCheckDefault = parcelHelpers.interopDefault(_classCallCheck);
+var _createClass = require("@babel/runtime/helpers/esm/createClass");
+var _createClassDefault = parcelHelpers.interopDefault(_createClass);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _typeof = require("@babel/runtime/helpers/esm/typeof");
+var _typeofDefault = parcelHelpers.interopDefault(_typeof);
+var SPLIT = "__@field_split__";
+/**
+ * Convert name path into string to fast the fetch speed of Map.
+ */ function normalize(namePath) {
+    return namePath.map(function(cell) {
+        return "".concat((0, _typeofDefault.default)(cell), ":").concat(cell);
+    })// Magic split
+    .join(SPLIT);
+}
+/**
+ * NameMap like a `Map` but accepts `string[]` as key.
+ */ var NameMap = /*#__PURE__*/ function() {
+    function NameMap() {
+        (0, _classCallCheckDefault.default)(this, NameMap);
+        (0, _definePropertyDefault.default)(this, "kvs", new Map());
+    }
+    (0, _createClassDefault.default)(NameMap, [
+        {
+            key: "set",
+            value: function set(key, value) {
+                this.kvs.set(normalize(key), value);
+            }
+        },
+        {
+            key: "get",
+            value: function get(key) {
+                return this.kvs.get(normalize(key));
+            }
+        },
+        {
+            key: "update",
+            value: function update(key, updater) {
+                var origin = this.get(key);
+                var next = updater(origin);
+                if (!next) this.delete(key);
+                else this.set(key, next);
+            }
+        },
+        {
+            key: "delete",
+            value: function _delete(key) {
+                this.kvs.delete(normalize(key));
+            }
+        },
+        {
+            key: "map",
+            value: function map(callback) {
+                return (0, _toConsumableArrayDefault.default)(this.kvs.entries()).map(function(_ref) {
+                    var _ref2 = (0, _slicedToArrayDefault.default)(_ref, 2), key = _ref2[0], value = _ref2[1];
+                    var cells = key.split(SPLIT);
+                    return callback({
+                        key: cells.map(function(cell) {
+                            var _cell$match = cell.match(/^([^:]*):(.*)$/), _cell$match2 = (0, _slicedToArrayDefault.default)(_cell$match, 3), type = _cell$match2[1], unit = _cell$match2[2];
+                            return type === "number" ? Number(unit) : unit;
+                        }),
+                        value: value
+                    });
+                });
+            }
+        },
+        {
+            key: "toJSON",
+            value: function toJSON() {
+                var json = {};
+                this.map(function(_ref3) {
+                    var key = _ref3.key, value = _ref3.value;
+                    json[key.join(".")] = value;
+                    return null;
+                });
+                return json;
+            }
+        }
+    ]);
+    return NameMap;
+}();
+exports.default = NameMap;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","@babel/runtime/helpers/esm/classCallCheck":"aNx1x","@babel/runtime/helpers/esm/createClass":"kZyth","@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/typeof":"i7HWY","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"87pbN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _extends = require("@babel/runtime/helpers/esm/extends");
+var _extendsDefault = parcelHelpers.interopDefault(_extends);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _objectWithoutProperties = require("@babel/runtime/helpers/esm/objectWithoutProperties");
+var _objectWithoutPropertiesDefault = parcelHelpers.interopDefault(_objectWithoutProperties);
+var _react = require("react");
+var _useForm = require("./useForm");
+var _useFormDefault = parcelHelpers.interopDefault(_useForm);
+var _fieldContext = require("./FieldContext");
+var _fieldContextDefault = parcelHelpers.interopDefault(_fieldContext);
+var _formContext = require("./FormContext");
+var _formContextDefault = parcelHelpers.interopDefault(_formContext);
+var _valueUtil = require("./utils/valueUtil");
+var _listContext = require("./ListContext");
+var _listContextDefault = parcelHelpers.interopDefault(_listContext);
+var _excluded = [
+    "name",
+    "initialValues",
+    "fields",
+    "form",
+    "preserve",
+    "children",
+    "component",
+    "validateMessages",
+    "validateTrigger",
+    "onValuesChange",
+    "onFieldsChange",
+    "onFinish",
+    "onFinishFailed",
+    "clearOnDestroy"
+];
+var Form = function Form(_ref, ref) {
+    var name = _ref.name, initialValues = _ref.initialValues, fields = _ref.fields, form = _ref.form, preserve = _ref.preserve, children = _ref.children, _ref$component = _ref.component, Component = _ref$component === void 0 ? "form" : _ref$component, validateMessages = _ref.validateMessages, _ref$validateTrigger = _ref.validateTrigger, validateTrigger = _ref$validateTrigger === void 0 ? "onChange" : _ref$validateTrigger, onValuesChange = _ref.onValuesChange, _onFieldsChange = _ref.onFieldsChange, _onFinish = _ref.onFinish, onFinishFailed = _ref.onFinishFailed, clearOnDestroy = _ref.clearOnDestroy, restProps = (0, _objectWithoutPropertiesDefault.default)(_ref, _excluded);
+    var nativeElementRef = _react.useRef(null);
+    var formContext = _react.useContext((0, _formContextDefault.default));
+    // We customize handle event since Context will makes all the consumer re-render:
+    // https://reactjs.org/docs/context.html#contextprovider
+    var _useForm = (0, _useFormDefault.default)(form), _useForm2 = (0, _slicedToArrayDefault.default)(_useForm, 1), formInstance = _useForm2[0];
+    var _getInternalHooks = formInstance.getInternalHooks((0, _fieldContext.HOOK_MARK)), useSubscribe = _getInternalHooks.useSubscribe, setInitialValues = _getInternalHooks.setInitialValues, setCallbacks = _getInternalHooks.setCallbacks, setValidateMessages = _getInternalHooks.setValidateMessages, setPreserve = _getInternalHooks.setPreserve, destroyForm = _getInternalHooks.destroyForm;
+    // Pass ref with form instance
+    _react.useImperativeHandle(ref, function() {
+        return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, formInstance), {}, {
+            nativeElement: nativeElementRef.current
+        });
+    });
+    // Register form into Context
+    _react.useEffect(function() {
+        formContext.registerForm(name, formInstance);
+        return function() {
+            formContext.unregisterForm(name);
+        };
+    }, [
+        formContext,
+        formInstance,
+        name
+    ]);
+    // Pass props to store
+    setValidateMessages((0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, formContext.validateMessages), validateMessages));
+    setCallbacks({
+        onValuesChange: onValuesChange,
+        onFieldsChange: function onFieldsChange(changedFields) {
+            formContext.triggerFormChange(name, changedFields);
+            if (_onFieldsChange) {
+                for(var _len = arguments.length, rest = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++)rest[_key - 1] = arguments[_key];
+                _onFieldsChange.apply(void 0, [
+                    changedFields
+                ].concat(rest));
+            }
+        },
+        onFinish: function onFinish(values) {
+            formContext.triggerFormFinish(name, values);
+            if (_onFinish) _onFinish(values);
+        },
+        onFinishFailed: onFinishFailed
+    });
+    setPreserve(preserve);
+    // Set initial value, init store value when first mount
+    var mountRef = _react.useRef(null);
+    setInitialValues(initialValues, !mountRef.current);
+    if (!mountRef.current) mountRef.current = true;
+    _react.useEffect(function() {
+        return function() {
+            return destroyForm(clearOnDestroy);
+        };
+    }, // eslint-disable-next-line react-hooks/exhaustive-deps
+    []);
+    // Prepare children by `children` type
+    var childrenNode;
+    var childrenRenderProps = typeof children === "function";
+    if (childrenRenderProps) {
+        var _values = formInstance.getFieldsValue(true);
+        childrenNode = children(_values, formInstance);
+    } else childrenNode = children;
+    // Not use subscribe when using render props
+    useSubscribe(!childrenRenderProps);
+    // Listen if fields provided. We use ref to save prev data here to avoid additional render
+    var prevFieldsRef = _react.useRef();
+    _react.useEffect(function() {
+        if (!(0, _valueUtil.isSimilar)(prevFieldsRef.current || [], fields || [])) formInstance.setFields(fields || []);
+        prevFieldsRef.current = fields;
+    }, [
+        fields,
+        formInstance
+    ]);
+    var formContextValue = _react.useMemo(function() {
+        return (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, formInstance), {}, {
+            validateTrigger: validateTrigger
+        });
+    }, [
+        formInstance,
+        validateTrigger
+    ]);
+    var wrapperNode = /*#__PURE__*/ _react.createElement((0, _listContextDefault.default).Provider, {
+        value: null
+    }, /*#__PURE__*/ _react.createElement((0, _fieldContextDefault.default).Provider, {
+        value: formContextValue
+    }, childrenNode));
+    if (Component === false) return wrapperNode;
+    return /*#__PURE__*/ _react.createElement(Component, (0, _extendsDefault.default)({}, restProps, {
+        ref: nativeElementRef,
+        onSubmit: function onSubmit(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            formInstance.submit();
+        },
+        onReset: function onReset(event) {
+            var _restProps$onReset;
+            event.preventDefault();
+            formInstance.resetFields();
+            (_restProps$onReset = restProps.onReset) === null || _restProps$onReset === void 0 || _restProps$onReset.call(restProps, event);
+        }
+    }), wrapperNode);
+};
+exports.default = Form;
+
+},{"@babel/runtime/helpers/esm/extends":"fTBFS","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","@babel/runtime/helpers/esm/slicedToArray":"cBZWN","@babel/runtime/helpers/esm/objectWithoutProperties":"25tJ4","react":"21dqq","./useForm":"hgZUW","./FieldContext":"edeC2","./FormContext":"cpeez","./utils/valueUtil":"dtwSd","./ListContext":"9sjEA","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"cpeez":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FormProvider", ()=>FormProvider);
+var _defineProperty = require("@babel/runtime/helpers/esm/defineProperty");
+var _definePropertyDefault = parcelHelpers.interopDefault(_defineProperty);
+var _objectSpread2 = require("@babel/runtime/helpers/esm/objectSpread2");
+var _objectSpread2Default = parcelHelpers.interopDefault(_objectSpread2);
+var _react = require("react");
+var FormContext = /*#__PURE__*/ _react.createContext({
+    triggerFormChange: function triggerFormChange() {},
+    triggerFormFinish: function triggerFormFinish() {},
+    registerForm: function registerForm() {},
+    unregisterForm: function unregisterForm() {}
+});
+var FormProvider = function FormProvider(_ref) {
+    var validateMessages = _ref.validateMessages, onFormChange = _ref.onFormChange, onFormFinish = _ref.onFormFinish, children = _ref.children;
+    var formContext = _react.useContext(FormContext);
+    var formsRef = _react.useRef({});
+    return /*#__PURE__*/ _react.createElement(FormContext.Provider, {
+        value: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, formContext), {}, {
+            validateMessages: (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, formContext.validateMessages), validateMessages),
+            // =========================================================
+            // =                  Global Form Control                  =
+            // =========================================================
+            triggerFormChange: function triggerFormChange(name, changedFields) {
+                if (onFormChange) onFormChange(name, {
+                    changedFields: changedFields,
+                    forms: formsRef.current
+                });
+                formContext.triggerFormChange(name, changedFields);
+            },
+            triggerFormFinish: function triggerFormFinish(name, values) {
+                if (onFormFinish) onFormFinish(name, {
+                    values: values,
+                    forms: formsRef.current
+                });
+                formContext.triggerFormFinish(name, values);
+            },
+            registerForm: function registerForm(name, form) {
+                if (name) formsRef.current = (0, _objectSpread2Default.default)((0, _objectSpread2Default.default)({}, formsRef.current), {}, (0, _definePropertyDefault.default)({}, name, form));
+                formContext.registerForm(name, form);
+            },
+            unregisterForm: function unregisterForm(name) {
+                var newForms = (0, _objectSpread2Default.default)({}, formsRef.current);
+                delete newForms[name];
+                formsRef.current = newForms;
+                formContext.unregisterForm(name);
+            }
+        })
+    }, children);
+};
+exports.default = FormContext;
+
+},{"@babel/runtime/helpers/esm/defineProperty":"hbmCA","@babel/runtime/helpers/esm/objectSpread2":"bS0uk","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"2X6w3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "stringify", ()=>stringify);
+var _slicedToArray = require("@babel/runtime/helpers/esm/slicedToArray");
+var _slicedToArrayDefault = parcelHelpers.interopDefault(_slicedToArray);
+var _warning = require("rc-util/es/warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _react = require("react");
+var _fieldContext = require("./FieldContext");
+var _fieldContextDefault = parcelHelpers.interopDefault(_fieldContext);
+var _typeUtil = require("./utils/typeUtil");
+var _valueUtil = require("./utils/valueUtil");
+function stringify(value) {
+    try {
+        return JSON.stringify(value);
+    } catch (err) {
+        return Math.random();
+    }
+}
+var useWatchWarning = function(namePath) {
+    var fullyStr = namePath.join("__RC_FIELD_FORM_SPLIT__");
+    var nameStrRef = (0, _react.useRef)(fullyStr);
+    (0, _warningDefault.default)(nameStrRef.current === fullyStr, "`useWatch` is not support dynamic `namePath`. Please provide static instead.");
+};
+// ------- selector type -------
+// ------- selector type end -------
+function useWatch() {
+    for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+    var dependencies = args[0], _args$ = args[1], _form = _args$ === void 0 ? {} : _args$;
+    var options = (0, _typeUtil.isFormInstance)(_form) ? {
+        form: _form
+    } : _form;
+    var form = options.form;
+    var _useState = (0, _react.useState)(), _useState2 = (0, _slicedToArrayDefault.default)(_useState, 2), value = _useState2[0], setValue = _useState2[1];
+    var valueStr = (0, _react.useMemo)(function() {
+        return stringify(value);
+    }, [
+        value
+    ]);
+    var valueStrRef = (0, _react.useRef)(valueStr);
+    valueStrRef.current = valueStr;
+    var fieldContext = (0, _react.useContext)((0, _fieldContextDefault.default));
+    var formInstance = form || fieldContext;
+    var isValidForm = formInstance && formInstance._init;
+    (0, _warningDefault.default)(args.length === 2 ? form ? isValidForm : true : isValidForm, "useWatch requires a form instance since it can not auto detect from context.");
+    var namePath = (0, _valueUtil.getNamePath)(dependencies);
+    var namePathRef = (0, _react.useRef)(namePath);
+    namePathRef.current = namePath;
+    useWatchWarning(namePath);
+    (0, _react.useEffect)(function() {
+        // Skip if not exist form instance
+        if (!isValidForm) return;
+        var getFieldsValue = formInstance.getFieldsValue, getInternalHooks = formInstance.getInternalHooks;
+        var _getInternalHooks = getInternalHooks((0, _fieldContext.HOOK_MARK)), registerWatch = _getInternalHooks.registerWatch;
+        var getWatchValue = function getWatchValue(values, allValues) {
+            var watchValue = options.preserve ? allValues : values;
+            return typeof dependencies === "function" ? dependencies(watchValue) : (0, _valueUtil.getValue)(watchValue, namePathRef.current);
+        };
+        var cancelRegister = registerWatch(function(values, allValues) {
+            var newValue = getWatchValue(values, allValues);
+            var nextValueStr = stringify(newValue);
+            // Compare stringify in case it's nest object
+            if (valueStrRef.current !== nextValueStr) {
+                valueStrRef.current = nextValueStr;
+                setValue(newValue);
+            }
+        });
+        // TODO: We can improve this perf in future
+        var initialValue = getWatchValue(getFieldsValue(), getFieldsValue(true));
+        // React 18 has the bug that will queue update twice even the value is not changed
+        // ref: https://github.com/facebook/react/issues/27213
+        if (value !== initialValue) setValue(initialValue);
+        return cancelRegister;
+    }, // We do not need re-register since namePath content is the same
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [
+        isValidForm
+    ]);
+    return value;
+}
+exports.default = useWatch;
+
+},{"@babel/runtime/helpers/esm/slicedToArray":"cBZWN","rc-util/es/warning":"c7oua","react":"21dqq","./FieldContext":"edeC2","./utils/typeUtil":"klmYi","./utils/valueUtil":"dtwSd","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"3aOut":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "usePanelRef", ()=>usePanelRef);
+var _react = require("react");
+var _rcUtil = require("rc-util");
+function voidFunc() {}
+const WatermarkContext = /*#__PURE__*/ _react.createContext({
+    add: voidFunc,
+    remove: voidFunc
+});
+function usePanelRef(panelSelector) {
+    const watermark = _react.useContext(WatermarkContext);
+    const panelEleRef = _react.useRef();
+    const panelRef = (0, _rcUtil.useEvent)((ele)=>{
+        if (ele) {
+            const innerContentEle = panelSelector ? ele.querySelector(panelSelector) : ele;
+            watermark.add(innerContentEle);
+            panelEleRef.current = innerContentEle;
+        } else watermark.remove(panelEleRef.current);
+    });
+    return panelRef;
+}
+exports.default = WatermarkContext;
+
+},{"react":"21dqq","rc-util":"2CvWk","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"gAzjK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "renderCloseIcon", ()=>renderCloseIcon);
+parcelHelpers.export(exports, "Footer", ()=>Footer);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _closeOutlined = require("@ant-design/icons/es/icons/CloseOutlined");
+var _closeOutlinedDefault = parcelHelpers.interopDefault(_closeOutlined);
+var _disabledContext = require("../config-provider/DisabledContext");
+var _locale = require("../locale");
+var _normalCancelBtn = require("./components/NormalCancelBtn");
+var _normalCancelBtnDefault = parcelHelpers.interopDefault(_normalCancelBtn);
+var _normalOkBtn = require("./components/NormalOkBtn");
+var _normalOkBtnDefault = parcelHelpers.interopDefault(_normalOkBtn);
+var _context = require("./context");
+var _locale1 = require("./locale");
+"use client";
+function renderCloseIcon(prefixCls, closeIcon) {
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement("span", {
+        className: `${prefixCls}-close-x`
+    }, closeIcon || /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _closeOutlinedDefault.default), {
+        className: `${prefixCls}-close-icon`
+    }));
+}
+const Footer = (props)=>{
+    const { okText, okType = "primary", cancelText, confirmLoading, onOk, onCancel, okButtonProps, cancelButtonProps, footer } = props;
+    const [locale] = (0, _locale.useLocale)("Modal", (0, _locale1.getConfirmLocale)());
+    // ================== Locale Text ==================
+    const okTextLocale = okText || (locale === null || locale === void 0 ? void 0 : locale.okText);
+    const cancelTextLocale = cancelText || (locale === null || locale === void 0 ? void 0 : locale.cancelText);
+    // ================= Context Value =================
+    const btnCtxValue = {
+        confirmLoading,
+        okButtonProps,
+        cancelButtonProps,
+        okTextLocale,
+        cancelTextLocale,
+        okType,
+        onOk,
+        onCancel
+    };
+    const btnCtxValueMemo = (0, _reactDefault.default).useMemo(()=>btnCtxValue, (0, _toConsumableArrayDefault.default)(Object.values(btnCtxValue)));
+    let footerNode;
+    if (typeof footer === "function" || typeof footer === "undefined") {
+        footerNode = /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _reactDefault.default).Fragment, null, /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _normalCancelBtnDefault.default), null), /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _normalOkBtnDefault.default), null));
+        if (typeof footer === "function") footerNode = footer(footerNode, {
+            OkBtn: (0, _normalOkBtnDefault.default),
+            CancelBtn: (0, _normalCancelBtnDefault.default)
+        });
+        footerNode = /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _context.ModalContextProvider), {
+            value: btnCtxValueMemo
+        }, footerNode);
+    } else footerNode = footer;
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _disabledContext.DisabledContextProvider), {
+        disabled: false
+    }, footerNode);
+};
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","@ant-design/icons/es/icons/CloseOutlined":"a9P1C","../config-provider/DisabledContext":"kJAKR","../locale":"dwvDt","./components/NormalCancelBtn":"6Kpiv","./components/NormalOkBtn":"buCYE","./context":"6SQvP","./locale":"cgYI5","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"6Kpiv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _button = require("../../button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _context = require("../context");
+"use client";
+const NormalCancelBtn = ()=>{
+    const { cancelButtonProps, cancelTextLocale, onCancel } = (0, _react.useContext)((0, _context.ModalContext));
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _buttonDefault.default), Object.assign({
+        onClick: onCancel
+    }, cancelButtonProps), cancelTextLocale);
+};
+exports.default = NormalCancelBtn;
+
+},{"react":"21dqq","../../button":"SbZy4","../context":"6SQvP","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"buCYE":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _button = require("../../button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _buttonHelpers = require("../../button/buttonHelpers");
+var _context = require("../context");
+"use client";
+const NormalOkBtn = ()=>{
+    const { confirmLoading, okButtonProps, okType, okTextLocale, onOk } = (0, _react.useContext)((0, _context.ModalContext));
+    return /*#__PURE__*/ (0, _reactDefault.default).createElement((0, _buttonDefault.default), Object.assign({}, (0, _buttonHelpers.convertLegacyProps)(okType), {
+        loading: confirmLoading,
+        onClick: onOk
+    }, okButtonProps), okTextLocale);
+};
+exports.default = NormalOkBtn;
+
+},{"react":"21dqq","../../button":"SbZy4","../../button/buttonHelpers":"04LWt","../context":"6SQvP","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"jfsBh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "genModalMaskStyle", ()=>genModalMaskStyle);
+parcelHelpers.export(exports, "prepareToken", ()=>prepareToken);
+parcelHelpers.export(exports, "prepareComponentToken", ()=>prepareComponentToken);
+var _cssinjs = require("@ant-design/cssinjs");
+var _style = require("../../style");
+var _motion = require("../../style/motion");
+var _internal = require("../../theme/internal");
+function box(position) {
+    return {
+        position,
+        inset: 0
+    };
+}
+const genModalMaskStyle = (token)=>{
+    const { componentCls, antCls } = token;
+    return [
+        {
+            [`${componentCls}-root`]: {
+                [`${componentCls}${antCls}-zoom-enter, ${componentCls}${antCls}-zoom-appear`]: {
+                    // reset scale avoid mousePosition bug
+                    transform: "none",
+                    opacity: 0,
+                    animationDuration: token.motionDurationSlow,
+                    // https://github.com/ant-design/ant-design/issues/11777
+                    userSelect: "none"
+                },
+                // https://github.com/ant-design/ant-design/issues/37329
+                // https://github.com/ant-design/ant-design/issues/40272
+                [`${componentCls}${antCls}-zoom-leave ${componentCls}-content`]: {
+                    pointerEvents: "none"
+                },
+                [`${componentCls}-mask`]: Object.assign(Object.assign({}, box("fixed")), {
+                    zIndex: token.zIndexPopupBase,
+                    height: "100%",
+                    backgroundColor: token.colorBgMask,
+                    pointerEvents: "none",
+                    [`${componentCls}-hidden`]: {
+                        display: "none"
+                    }
+                }),
+                [`${componentCls}-wrap`]: Object.assign(Object.assign({}, box("fixed")), {
+                    zIndex: token.zIndexPopupBase,
+                    overflow: "auto",
+                    outline: 0,
+                    WebkitOverflowScrolling: "touch"
+                })
+            }
+        },
+        {
+            [`${componentCls}-root`]: (0, _motion.initFadeMotion)(token)
+        }
+    ];
+};
+const genModalStyle = (token)=>{
+    const { componentCls } = token;
+    return [
+        // ======================== Root =========================
+        {
+            [`${componentCls}-root`]: {
+                [`${componentCls}-wrap-rtl`]: {
+                    direction: "rtl"
+                },
+                [`${componentCls}-centered`]: {
+                    textAlign: "center",
+                    "&::before": {
+                        display: "inline-block",
+                        width: 0,
+                        height: "100%",
+                        verticalAlign: "middle",
+                        content: '""'
+                    },
+                    [componentCls]: {
+                        top: 0,
+                        display: "inline-block",
+                        paddingBottom: 0,
+                        textAlign: "start",
+                        verticalAlign: "middle"
+                    }
+                },
+                [`@media (max-width: ${token.screenSMMax}px)`]: {
+                    [componentCls]: {
+                        maxWidth: "calc(100vw - 16px)",
+                        margin: `${(0, _cssinjs.unit)(token.marginXS)} auto`
+                    },
+                    [`${componentCls}-centered`]: {
+                        [componentCls]: {
+                            flex: 1
+                        }
+                    }
+                }
+            }
+        },
+        // ======================== Modal ========================
+        {
+            [componentCls]: Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+                pointerEvents: "none",
+                position: "relative",
+                top: 100,
+                width: "auto",
+                maxWidth: `calc(100vw - ${(0, _cssinjs.unit)(token.calc(token.margin).mul(2).equal())})`,
+                margin: "0 auto",
+                paddingBottom: token.paddingLG,
+                [`${componentCls}-title`]: {
+                    margin: 0,
+                    color: token.titleColor,
+                    fontWeight: token.fontWeightStrong,
+                    fontSize: token.titleFontSize,
+                    lineHeight: token.titleLineHeight,
+                    wordWrap: "break-word"
+                },
+                [`${componentCls}-content`]: {
+                    position: "relative",
+                    backgroundColor: token.contentBg,
+                    backgroundClip: "padding-box",
+                    border: 0,
+                    borderRadius: token.borderRadiusLG,
+                    boxShadow: token.boxShadow,
+                    pointerEvents: "auto",
+                    padding: token.contentPadding
+                },
+                [`${componentCls}-close`]: Object.assign({
+                    position: "absolute",
+                    top: token.calc(token.modalHeaderHeight).sub(token.modalCloseBtnSize).div(2).equal(),
+                    insetInlineEnd: token.calc(token.modalHeaderHeight).sub(token.modalCloseBtnSize).div(2).equal(),
+                    zIndex: token.calc(token.zIndexPopupBase).add(10).equal(),
+                    padding: 0,
+                    color: token.modalCloseIconColor,
+                    fontWeight: token.fontWeightStrong,
+                    lineHeight: 1,
+                    textDecoration: "none",
+                    background: "transparent",
+                    borderRadius: token.borderRadiusSM,
+                    width: token.modalCloseBtnSize,
+                    height: token.modalCloseBtnSize,
+                    border: 0,
+                    outline: 0,
+                    cursor: "pointer",
+                    transition: `color ${token.motionDurationMid}, background-color ${token.motionDurationMid}`,
+                    "&-x": {
+                        display: "flex",
+                        fontSize: token.fontSizeLG,
+                        fontStyle: "normal",
+                        lineHeight: `${(0, _cssinjs.unit)(token.modalCloseBtnSize)}`,
+                        justifyContent: "center",
+                        textTransform: "none",
+                        textRendering: "auto"
+                    },
+                    "&:hover": {
+                        color: token.modalCloseIconHoverColor,
+                        backgroundColor: token.colorBgTextHover,
+                        textDecoration: "none"
+                    },
+                    "&:active": {
+                        backgroundColor: token.colorBgTextActive
+                    }
+                }, (0, _style.genFocusStyle)(token)),
+                [`${componentCls}-header`]: {
+                    color: token.colorText,
+                    background: token.headerBg,
+                    borderRadius: `${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)} 0 0`,
+                    marginBottom: token.headerMarginBottom,
+                    padding: token.headerPadding,
+                    borderBottom: token.headerBorderBottom
+                },
+                [`${componentCls}-body`]: {
+                    fontSize: token.fontSize,
+                    lineHeight: token.lineHeight,
+                    wordWrap: "break-word",
+                    padding: token.bodyPadding,
+                    [`${componentCls}-body-skeleton`]: {
+                        width: "100%",
+                        height: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        margin: `${(0, _cssinjs.unit)(token.margin)} auto`
+                    }
+                },
+                [`${componentCls}-footer`]: {
+                    textAlign: "end",
+                    background: token.footerBg,
+                    marginTop: token.footerMarginTop,
+                    padding: token.footerPadding,
+                    borderTop: token.footerBorderTop,
+                    borderRadius: token.footerBorderRadius,
+                    [`> ${token.antCls}-btn + ${token.antCls}-btn`]: {
+                        marginInlineStart: token.marginXS
+                    }
+                },
+                [`${componentCls}-open`]: {
+                    overflow: "hidden"
+                }
+            })
+        },
+        // ======================== Pure =========================
+        {
+            [`${componentCls}-pure-panel`]: {
+                top: "auto",
+                padding: 0,
+                display: "flex",
+                flexDirection: "column",
+                [`${componentCls}-content,
+          ${componentCls}-body,
+          ${componentCls}-confirm-body-wrapper`]: {
+                    display: "flex",
+                    flexDirection: "column",
+                    flex: "auto"
+                },
+                [`${componentCls}-confirm-body`]: {
+                    marginBottom: "auto"
+                }
+            }
+        }
+    ];
+};
+const genRTLStyle = (token)=>{
+    const { componentCls } = token;
+    return {
+        [`${componentCls}-root`]: {
+            [`${componentCls}-wrap-rtl`]: {
+                direction: "rtl",
+                [`${componentCls}-confirm-body`]: {
+                    direction: "rtl"
+                }
+            }
+        }
+    };
+};
+const prepareToken = (token)=>{
+    const headerPaddingVertical = token.padding;
+    const headerFontSize = token.fontSizeHeading5;
+    const headerLineHeight = token.lineHeightHeading5;
+    const modalToken = (0, _internal.mergeToken)(token, {
+        modalHeaderHeight: token.calc(token.calc(headerLineHeight).mul(headerFontSize).equal()).add(token.calc(headerPaddingVertical).mul(2).equal()).equal(),
+        modalFooterBorderColorSplit: token.colorSplit,
+        modalFooterBorderStyle: token.lineType,
+        modalFooterBorderWidth: token.lineWidth,
+        modalCloseIconColor: token.colorIcon,
+        modalCloseIconHoverColor: token.colorIconHover,
+        modalCloseBtnSize: token.controlHeight,
+        modalConfirmIconSize: token.fontHeight,
+        modalTitleHeight: token.calc(token.titleFontSize).mul(token.titleLineHeight).equal()
+    });
+    return modalToken;
+};
+const prepareComponentToken = (token)=>({
+        footerBg: "transparent",
+        headerBg: token.colorBgElevated,
+        titleLineHeight: token.lineHeightHeading5,
+        titleFontSize: token.fontSizeHeading5,
+        contentBg: token.colorBgElevated,
+        titleColor: token.colorTextHeading,
+        // internal
+        contentPadding: token.wireframe ? 0 : `${(0, _cssinjs.unit)(token.paddingMD)} ${(0, _cssinjs.unit)(token.paddingContentHorizontalLG)}`,
+        headerPadding: token.wireframe ? `${(0, _cssinjs.unit)(token.padding)} ${(0, _cssinjs.unit)(token.paddingLG)}` : 0,
+        headerBorderBottom: token.wireframe ? `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${token.colorSplit}` : "none",
+        headerMarginBottom: token.wireframe ? 0 : token.marginXS,
+        bodyPadding: token.wireframe ? token.paddingLG : 0,
+        footerPadding: token.wireframe ? `${(0, _cssinjs.unit)(token.paddingXS)} ${(0, _cssinjs.unit)(token.padding)}` : 0,
+        footerBorderTop: token.wireframe ? `${(0, _cssinjs.unit)(token.lineWidth)} ${token.lineType} ${token.colorSplit}` : "none",
+        footerBorderRadius: token.wireframe ? `0 0 ${(0, _cssinjs.unit)(token.borderRadiusLG)} ${(0, _cssinjs.unit)(token.borderRadiusLG)}` : 0,
+        footerMarginTop: token.wireframe ? 0 : token.marginSM,
+        confirmBodyPadding: token.wireframe ? `${(0, _cssinjs.unit)(token.padding * 2)} ${(0, _cssinjs.unit)(token.padding * 2)} ${(0, _cssinjs.unit)(token.paddingLG)}` : 0,
+        confirmIconMarginInlineEnd: token.wireframe ? token.margin : token.marginSM,
+        confirmBtnsMarginTop: token.wireframe ? token.marginLG : token.marginSM
+    });
+exports.default = (0, _internal.genStyleHooks)("Modal", (token)=>{
+    const modalToken = prepareToken(token);
+    return [
+        genModalStyle(modalToken),
+        genRTLStyle(modalToken),
+        genModalMaskStyle(modalToken),
+        (0, _motion.initZoomMotion)(modalToken, "zoom")
+    ];
+}, prepareComponentToken, {
+    unitless: {
+        titleLineHeight: true
+    }
+});
+
+},{"@ant-design/cssinjs":"k46HC","../../style":"b1Psq","../../style/motion":"eTZWJ","../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"bqpjL":[function(require,module,exports) {
+// Style as confirm component
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _cssinjs = require("@ant-design/cssinjs");
+var _ = require(".");
+var _style = require("../../style");
+var _internal = require("../../theme/internal");
+// ============================= Confirm ==============================
+const genModalConfirmStyle = (token)=>{
+    const { componentCls, titleFontSize, titleLineHeight, modalConfirmIconSize, fontSize, lineHeight, modalTitleHeight, fontHeight, confirmBodyPadding } = token;
+    const confirmComponentCls = `${componentCls}-confirm`;
+    return {
+        [confirmComponentCls]: {
+            "&-rtl": {
+                direction: "rtl"
+            },
+            [`${token.antCls}-modal-header`]: {
+                display: "none"
+            },
+            [`${confirmComponentCls}-body-wrapper`]: Object.assign({}, (0, _style.clearFix)()),
+            [`&${componentCls} ${componentCls}-body`]: {
+                padding: confirmBodyPadding
+            },
+            // ====================== Body ======================
+            [`${confirmComponentCls}-body`]: {
+                display: "flex",
+                flexWrap: "nowrap",
+                alignItems: "start",
+                [`> ${token.iconCls}`]: {
+                    flex: "none",
+                    fontSize: modalConfirmIconSize,
+                    marginInlineEnd: token.confirmIconMarginInlineEnd,
+                    marginTop: token.calc(token.calc(fontHeight).sub(modalConfirmIconSize).equal()).div(2).equal()
+                },
+                [`&-has-title > ${token.iconCls}`]: {
+                    marginTop: token.calc(token.calc(modalTitleHeight).sub(modalConfirmIconSize).equal()).div(2).equal()
+                }
+            },
+            [`${confirmComponentCls}-paragraph`]: {
+                display: "flex",
+                flexDirection: "column",
+                flex: "auto",
+                rowGap: token.marginXS
+            },
+            // https://github.com/ant-design/ant-design/issues/48159
+            [`${token.iconCls} + ${confirmComponentCls}-paragraph`]: {
+                maxWidth: `calc(100% - ${(0, _cssinjs.unit)(token.calc(token.modalConfirmIconSize).add(token.marginSM).equal())})`
+            },
+            [`${confirmComponentCls}-title`]: {
+                color: token.colorTextHeading,
+                fontWeight: token.fontWeightStrong,
+                fontSize: titleFontSize,
+                lineHeight: titleLineHeight
+            },
+            [`${confirmComponentCls}-content`]: {
+                color: token.colorText,
+                fontSize,
+                lineHeight
+            },
+            // ===================== Footer =====================
+            [`${confirmComponentCls}-btns`]: {
+                textAlign: "end",
+                marginTop: token.confirmBtnsMarginTop,
+                [`${token.antCls}-btn + ${token.antCls}-btn`]: {
+                    marginBottom: 0,
+                    marginInlineStart: token.marginXS
+                }
+            }
+        },
+        [`${confirmComponentCls}-error ${confirmComponentCls}-body > ${token.iconCls}`]: {
+            color: token.colorError
+        },
+        [`${confirmComponentCls}-warning ${confirmComponentCls}-body > ${token.iconCls},
+        ${confirmComponentCls}-confirm ${confirmComponentCls}-body > ${token.iconCls}`]: {
+            color: token.colorWarning
+        },
+        [`${confirmComponentCls}-info ${confirmComponentCls}-body > ${token.iconCls}`]: {
+            color: token.colorInfo
+        },
+        [`${confirmComponentCls}-success ${confirmComponentCls}-body > ${token.iconCls}`]: {
+            color: token.colorSuccess
+        }
+    };
+};
+// ============================== Export ==============================
+exports.default = (0, _internal.genSubStyleComponent)([
+    "Modal",
+    "confirm"
+], (token)=>{
+    const modalToken = (0, _.prepareToken)(token);
+    return [
+        genModalConfirmStyle(modalToken)
+    ];
+}, (0, _.prepareComponentToken), {
+    // confirm is weak than modal since no conflict here
+    order: -1000
+});
+
+},{"@ant-design/cssinjs":"k46HC",".":"jfsBh","../../style":"b1Psq","../../theme/internal":"7S7jp","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"7lYyB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const destroyFns = [];
+exports.default = destroyFns;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"amhhO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/* eslint-disable react/jsx-no-useless-fragment */ var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _rcDialog = require("rc-dialog");
+var _purePanel = require("../_util/PurePanel");
+var _configProvider = require("../config-provider");
+var _useCSSVarCls = require("../config-provider/hooks/useCSSVarCls");
+var _useCSSVarClsDefault = parcelHelpers.interopDefault(_useCSSVarCls);
+var _confirmDialog = require("./ConfirmDialog");
+var _shared = require("./shared");
+var _style = require("./style");
+var _styleDefault = parcelHelpers.interopDefault(_style);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const PurePanel = (props)=>{
+    const { prefixCls: customizePrefixCls, className, closeIcon, closable, type, title, children, footer } = props, restProps = __rest(props, [
+        "prefixCls",
+        "className",
+        "closeIcon",
+        "closable",
+        "type",
+        "title",
+        "children",
+        "footer"
+    ]);
+    const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const rootPrefixCls = getPrefixCls();
+    const prefixCls = customizePrefixCls || getPrefixCls("modal");
+    const rootCls = (0, _useCSSVarClsDefault.default)(rootPrefixCls);
+    const [wrapCSSVar, hashId, cssVarCls] = (0, _styleDefault.default)(prefixCls, rootCls);
+    const confirmPrefixCls = `${prefixCls}-confirm`;
+    // Choose target props by confirm mark
+    let additionalProps = {};
+    if (type) additionalProps = {
+        closable: closable !== null && closable !== void 0 ? closable : false,
+        title: "",
+        footer: "",
+        children: /*#__PURE__*/ _react.createElement((0, _confirmDialog.ConfirmContent), Object.assign({}, props, {
+            prefixCls: prefixCls,
+            confirmPrefixCls: confirmPrefixCls,
+            rootPrefixCls: rootPrefixCls,
+            content: children
+        }))
+    };
+    else additionalProps = {
+        closable: closable !== null && closable !== void 0 ? closable : true,
+        title,
+        footer: footer !== null && /*#__PURE__*/ _react.createElement((0, _shared.Footer), Object.assign({}, props)),
+        children
+    };
+    return wrapCSSVar(/*#__PURE__*/ _react.createElement((0, _rcDialog.Panel), Object.assign({
+        prefixCls: prefixCls,
+        className: (0, _classnamesDefault.default)(hashId, `${prefixCls}-pure-panel`, type && confirmPrefixCls, type && `${confirmPrefixCls}-${type}`, className, cssVarCls, rootCls)
+    }, restProps, {
+        closeIcon: (0, _shared.renderCloseIcon)(prefixCls, closeIcon),
+        closable: closable
+    }, additionalProps)));
+};
+exports.default = (0, _purePanel.withPureRenderTheme)(PurePanel);
+
+},{"react":"21dqq","classnames":"jocGM","rc-dialog":"4Hjo4","../_util/PurePanel":"ahS0f","../config-provider":"iMraF","../config-provider/hooks/useCSSVarCls":"eY64b","./ConfirmDialog":"aLjRz","./shared":"gAzjK","./style":"jfsBh","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ahS0f":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "withPureRenderTheme", ()=>withPureRenderTheme);
+var _react = require("react");
+var _useMergedState = require("rc-util/es/hooks/useMergedState");
+var _useMergedStateDefault = parcelHelpers.interopDefault(_useMergedState);
+var _configProvider = require("../config-provider");
+var _configProviderDefault = parcelHelpers.interopDefault(_configProvider);
+"use client";
+function withPureRenderTheme(Component) {
+    return (props)=>/*#__PURE__*/ _react.createElement((0, _configProviderDefault.default), {
+            theme: {
+                token: {
+                    motion: false,
+                    zIndexPopupBase: 0
+                }
+            }
+        }, /*#__PURE__*/ _react.createElement(Component, Object.assign({}, props)));
+}
+/* istanbul ignore next */ const genPurePanel = (Component, defaultPrefixCls, getDropdownCls, postProps)=>{
+    const PurePanel = (props)=>{
+        const { prefixCls: customizePrefixCls, style } = props;
+        const holderRef = _react.useRef(null);
+        const [popupHeight, setPopupHeight] = _react.useState(0);
+        const [popupWidth, setPopupWidth] = _react.useState(0);
+        const [open, setOpen] = (0, _useMergedStateDefault.default)(false, {
+            value: props.open
+        });
+        const { getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+        const prefixCls = getPrefixCls(defaultPrefixCls || "select", customizePrefixCls);
+        _react.useEffect(()=>{
+            // We do not care about ssr
+            setOpen(true);
+            if (typeof ResizeObserver !== "undefined") {
+                const resizeObserver = new ResizeObserver((entries)=>{
+                    const element = entries[0].target;
+                    setPopupHeight(element.offsetHeight + 8);
+                    setPopupWidth(element.offsetWidth);
+                });
+                const interval = setInterval(()=>{
+                    var _a;
+                    const dropdownCls = getDropdownCls ? `.${getDropdownCls(prefixCls)}` : `.${prefixCls}-dropdown`;
+                    const popup = (_a = holderRef.current) === null || _a === void 0 ? void 0 : _a.querySelector(dropdownCls);
+                    if (popup) {
+                        clearInterval(interval);
+                        resizeObserver.observe(popup);
+                    }
+                }, 10);
+                return ()=>{
+                    clearInterval(interval);
+                    resizeObserver.disconnect();
+                };
+            }
+        }, []);
+        let mergedProps = Object.assign(Object.assign({}, props), {
+            style: Object.assign(Object.assign({}, style), {
+                margin: 0
+            }),
+            open,
+            visible: open,
+            getPopupContainer: ()=>holderRef.current
+        });
+        if (postProps) mergedProps = postProps(mergedProps);
+        const mergedStyle = {
+            paddingBottom: popupHeight,
+            position: "relative",
+            minWidth: popupWidth
+        };
+        return /*#__PURE__*/ _react.createElement("div", {
+            ref: holderRef,
+            style: mergedStyle
+        }, /*#__PURE__*/ _react.createElement(Component, Object.assign({}, mergedProps)));
+    };
+    return withPureRenderTheme(PurePanel);
+};
+exports.default = genPurePanel;
+
+},{"react":"21dqq","rc-util/es/hooks/useMergedState":"guGeI","../config-provider":"iMraF","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"1EQPb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _usePatchElement = require("../../_util/hooks/usePatchElement");
+var _usePatchElementDefault = parcelHelpers.interopDefault(_usePatchElement);
+var _confirm = require("../confirm");
+var _destroyFns = require("../destroyFns");
+var _destroyFnsDefault = parcelHelpers.interopDefault(_destroyFns);
+var _hookModal = require("./HookModal");
+var _hookModalDefault = parcelHelpers.interopDefault(_hookModal);
+"use client";
+let uuid = 0;
+const ElementsHolder = /*#__PURE__*/ _react.memo(/*#__PURE__*/ _react.forwardRef((_props, ref)=>{
+    const [elements, patchElement] = (0, _usePatchElementDefault.default)();
+    _react.useImperativeHandle(ref, ()=>({
+            patchElement
+        }), []);
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    return /*#__PURE__*/ _react.createElement(_react.Fragment, null, elements);
+}));
+function useModal() {
+    const holderRef = _react.useRef(null);
+    // ========================== Effect ==========================
+    const [actionQueue, setActionQueue] = _react.useState([]);
+    _react.useEffect(()=>{
+        if (actionQueue.length) {
+            const cloneQueue = (0, _toConsumableArrayDefault.default)(actionQueue);
+            cloneQueue.forEach((action)=>{
+                action();
+            });
+            setActionQueue([]);
+        }
+    }, [
+        actionQueue
+    ]);
+    // =========================== Hook ===========================
+    const getConfirmFunc = _react.useCallback((withFunc)=>function hookConfirm(config) {
+            var _a;
+            uuid += 1;
+            const modalRef = /*#__PURE__*/ _react.createRef();
+            // Proxy to promise with `onClose`
+            let resolvePromise;
+            const promise = new Promise((resolve)=>{
+                resolvePromise = resolve;
+            });
+            let silent = false;
+            let closeFunc;
+            const modal = /*#__PURE__*/ _react.createElement((0, _hookModalDefault.default), {
+                key: `modal-${uuid}`,
+                config: withFunc(config),
+                ref: modalRef,
+                afterClose: ()=>{
+                    closeFunc === null || closeFunc === void 0 || closeFunc();
+                },
+                isSilent: ()=>silent,
+                onConfirm: (confirmed)=>{
+                    resolvePromise(confirmed);
+                }
+            });
+            closeFunc = (_a = holderRef.current) === null || _a === void 0 ? void 0 : _a.patchElement(modal);
+            if (closeFunc) (0, _destroyFnsDefault.default).push(closeFunc);
+            const instance = {
+                destroy: ()=>{
+                    function destroyAction() {
+                        var _a;
+                        (_a = modalRef.current) === null || _a === void 0 || _a.destroy();
+                    }
+                    if (modalRef.current) destroyAction();
+                    else setActionQueue((prev)=>[].concat((0, _toConsumableArrayDefault.default)(prev), [
+                            destroyAction
+                        ]));
+                },
+                update: (newConfig)=>{
+                    function updateAction() {
+                        var _a;
+                        (_a = modalRef.current) === null || _a === void 0 || _a.update(newConfig);
+                    }
+                    if (modalRef.current) updateAction();
+                    else setActionQueue((prev)=>[].concat((0, _toConsumableArrayDefault.default)(prev), [
+                            updateAction
+                        ]));
+                },
+                then: (resolve)=>{
+                    silent = true;
+                    return promise.then(resolve);
+                }
+            };
+            return instance;
+        }, []);
+    const fns = _react.useMemo(()=>({
+            info: getConfirmFunc((0, _confirm.withInfo)),
+            success: getConfirmFunc((0, _confirm.withSuccess)),
+            error: getConfirmFunc((0, _confirm.withError)),
+            warning: getConfirmFunc((0, _confirm.withWarn)),
+            confirm: getConfirmFunc((0, _confirm.withConfirm))
+        }), []);
+    return [
+        fns,
+        /*#__PURE__*/ _react.createElement(ElementsHolder, {
+            key: "modal-holder",
+            ref: holderRef
+        })
+    ];
+}
+exports.default = useModal;
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","../../_util/hooks/usePatchElement":"l3T9T","../confirm":"iPb72","../destroyFns":"7lYyB","./HookModal":"66cs6","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"l3T9T":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>usePatchElement);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+function usePatchElement() {
+    const [elements, setElements] = _react.useState([]);
+    const patchElement = _react.useCallback((element)=>{
+        // append a new element to elements (and create a new ref)
+        setElements((originElements)=>[].concat((0, _toConsumableArrayDefault.default)(originElements), [
+                element
+            ]));
+        // return a function that removes the new element out of elements (and create a new ref)
+        // it works a little like useEffect
+        return ()=>{
+            setElements((originElements)=>originElements.filter((ele)=>ele !== element));
+        };
+    }, []);
+    return [
+        elements,
+        patchElement
+    ];
+}
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"66cs6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _toConsumableArray = require("@babel/runtime/helpers/esm/toConsumableArray");
+var _toConsumableArrayDefault = parcelHelpers.interopDefault(_toConsumableArray);
+var _react = require("react");
+var _configProvider = require("../../config-provider");
+var _enUS = require("../../locale/en_US");
+var _enUSDefault = parcelHelpers.interopDefault(_enUS);
+var _useLocale = require("../../locale/useLocale");
+var _useLocaleDefault = parcelHelpers.interopDefault(_useLocale);
+var _confirmDialog = require("../ConfirmDialog");
+var _confirmDialogDefault = parcelHelpers.interopDefault(_confirmDialog);
+"use client";
+var __rest = undefined && undefined.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+const HookModal = (_a, ref)=>{
+    var _b;
+    var { afterClose: hookAfterClose, config } = _a, restProps = __rest(_a, [
+        "afterClose",
+        "config"
+    ]);
+    const [open, setOpen] = _react.useState(true);
+    const [innerConfig, setInnerConfig] = _react.useState(config);
+    const { direction, getPrefixCls } = _react.useContext((0, _configProvider.ConfigContext));
+    const prefixCls = getPrefixCls("modal");
+    const rootPrefixCls = getPrefixCls();
+    const afterClose = ()=>{
+        var _a;
+        hookAfterClose();
+        (_a = innerConfig.afterClose) === null || _a === void 0 || _a.call(innerConfig);
+    };
+    const close = function() {
+        setOpen(false);
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        const triggerCancel = args.some((param)=>param && param.triggerCancel);
+        if (innerConfig.onCancel && triggerCancel) innerConfig.onCancel.apply(innerConfig, [
+            ()=>{}
+        ].concat((0, _toConsumableArrayDefault.default)(args.slice(1))));
+    };
+    _react.useImperativeHandle(ref, ()=>({
+            destroy: close,
+            update: (newConfig)=>{
+                setInnerConfig((originConfig)=>Object.assign(Object.assign({}, originConfig), newConfig));
+            }
+        }));
+    const mergedOkCancel = (_b = innerConfig.okCancel) !== null && _b !== void 0 ? _b : innerConfig.type === "confirm";
+    const [contextLocale] = (0, _useLocaleDefault.default)("Modal", (0, _enUSDefault.default).Modal);
+    return /*#__PURE__*/ _react.createElement((0, _confirmDialogDefault.default), Object.assign({
+        prefixCls: prefixCls,
+        rootPrefixCls: rootPrefixCls
+    }, innerConfig, {
+        close: close,
+        open: open,
+        afterClose: afterClose,
+        okText: innerConfig.okText || (mergedOkCancel ? contextLocale === null || contextLocale === void 0 ? void 0 : contextLocale.okText : contextLocale === null || contextLocale === void 0 ? void 0 : contextLocale.justOkText),
+        direction: innerConfig.direction || direction,
+        cancelText: innerConfig.cancelText || (contextLocale === null || contextLocale === void 0 ? void 0 : contextLocale.cancelText)
+    }, restProps));
+};
+exports.default = /*#__PURE__*/ _react.forwardRef(HookModal);
+
+},{"@babel/runtime/helpers/esm/toConsumableArray":"bCmCj","react":"21dqq","../../config-provider":"iMraF","../../locale/en_US":"3cTtE","../../locale/useLocale":"4Rsra","../ConfirmDialog":"aLjRz","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX"}],"ilHrj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$07ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -48020,8 +56603,14 @@ parcelHelpers.export(exports, "FoodView", ()=>FoodView);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _antd = require("antd");
 const FoodView = ({ food, onBackClick })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _antd.Modal), {
+        title: food.chinese,
+        open: true,
+        footer: null,
+        onCancel: onBackClick,
+        maskClosable: true,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: food.image,
@@ -48031,7 +56620,7 @@ const FoodView = ({ food, onBackClick })=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 7,
+                lineNumber: 14,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -48040,42 +56629,20 @@ const FoodView = ({ food, onBackClick })=>{
                         children: "English: "
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 9,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.english
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 10,
+                        lineNumber: 17,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: "Chinese: "
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 13,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: food.chinese
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 14,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 12,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -48084,20 +56651,20 @@ const FoodView = ({ food, onBackClick })=>{
                         children: "Zhuyin: "
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 17,
+                        lineNumber: 20,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.zhuyin
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 18,
+                        lineNumber: 21,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 16,
+                lineNumber: 19,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -48106,20 +56673,20 @@ const FoodView = ({ food, onBackClick })=>{
                         children: "Pinyin: "
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 21,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.pinyin
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 22,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 20,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -48128,34 +56695,26 @@ const FoodView = ({ food, onBackClick })=>{
                         children: "Details: "
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 25,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.details
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 26,
+                        lineNumber: 29,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 24,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: onBackClick,
-                children: "Back"
-            }, void 0, false, {
-                fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 28,
+                lineNumber: 27,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/food-view/food-view.jsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 9
     }, undefined);
 };
@@ -48168,7 +56727,7 @@ $RefreshReg$(_c, "FoodView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN"}],"fCgem":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","antd":"6C7kW"}],"fCgem":[function(require,module,exports) {
 /*!
  * The buffer module from node.js, for the browser.
  *

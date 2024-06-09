@@ -36,15 +36,7 @@ const MainView = () => {
             });
     }, []);
 
-    console.log("API response:", foodlist);
-
-    // Function to show food on click
-    if (selectedFood) {
-        return (
-            <FoodView food={selectedFood} onBackClick={() => setSelectedFood(null)}/>
-        );
-    }
-
+    // Conditional rendering for empty food list
     if (foodlist.length === 0) {
         return <div>The list is empty!</div>;
     }
@@ -56,12 +48,16 @@ const MainView = () => {
                 <FoodCard
                     key={food.id}
                     food={food}
-                    onFoodClick={(newSelectedFood) => {
-                        setSelectedFood(newSelectedFood);
-                    }}
+                    onFoodClick={() => setSelectedFood(food)}
                 />
             ))}
             </div>
+            {selectedFood ? (
+                <FoodView 
+                    food={selectedFood} 
+                    onBackClick={() => setSelectedFood(null)} 
+                />
+            ) : null}
         </div>
     );
 };

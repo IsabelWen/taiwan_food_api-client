@@ -1,17 +1,20 @@
 import React from "react";
+import { Button, Modal } from 'antd';
 
 export const FoodView = ({ food, onBackClick }) => {
 
     return (
-        <div>
+        <Modal 
+        title={food.chinese} 
+        open={true} 
+        footer={null}
+        onCancel={onBackClick}
+        maskClosable={true}
+        >
             <img src={food.image} alt={food.english} style={{maxHeight: '500px'}}/>
             <div>
                 <span>English: </span>
                 <span>{food.english}</span>
-            </div>
-            <div>
-                <span>Chinese: </span>
-                <span>{food.chinese}</span>
             </div>
             <div>
                 <span>Zhuyin: </span>
@@ -25,7 +28,6 @@ export const FoodView = ({ food, onBackClick }) => {
                 <span>Details: </span>
                 <span>{food.details}</span>
             </div>
-            <button onClick={onBackClick}>Back</button>
-        </div>
+        </Modal>
     );
 };
