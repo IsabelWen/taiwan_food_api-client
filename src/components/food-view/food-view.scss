@@ -4,6 +4,7 @@
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10.8px);
     -webkit-backdrop-filter: blur(10.8px);
+    padding: 40px;
 
         .ant-modal-body {
             display: flex;
@@ -23,7 +24,7 @@
                 }
 
                 h1 {
-                    font-size: 45px;
+                    font-size: 90px;
                     letter-spacing: 10px;
                 }
             }

@@ -56620,19 +56620,19 @@ const FoodView = ({ food, onBackClick })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "left",
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: food.chinese
+                    }, void 0, false, {
+                        fileName: "src/components/food-view/food-view.jsx",
+                        lineNumber: 18,
+                        columnNumber: 13
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: food.image,
                         alt: food.english,
                         style: {
                             maxHeight: "500px"
                         }
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 18,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: food.chinese
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
                         lineNumber: 19,

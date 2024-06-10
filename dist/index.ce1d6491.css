@@ -28,6 +28,7 @@ body {
 .food-modal .ant-modal-content {
   -webkit-backdrop-filter: blur(10.8px);
   background: #fffffff2;
+  padding: 40px;
 }
 
 .food-modal .ant-modal-content .ant-modal-body {
@@ -51,7 +52,7 @@ body {
 
 .food-modal .ant-modal-content .ant-modal-body .left h1 {
   letter-spacing: 10px;
-  font-size: 45px;
+  font-size: 90px;
 }
 
 .main-container {

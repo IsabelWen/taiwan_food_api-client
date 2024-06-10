@@ -15,8 +15,8 @@ export const FoodView = ({ food, onBackClick }) => {
         width={800}
         >
             <div className="left">
+            <h1>{food.chinese}</h1>
                 <img src={food.image} alt={food.english} style={{maxHeight: '500px'}}/>
-                <h1>{food.chinese}</h1>
             </div>
             <div className="right">
                 <div>
