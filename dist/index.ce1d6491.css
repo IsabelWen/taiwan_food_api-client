@@ -25,12 +25,33 @@ body {
   font-size: 25px;
 }
 
-.food-modal .ant-modal-title {
-  font-size: 20px;
+.food-modal .ant-modal-content {
+  -webkit-backdrop-filter: blur(10.8px);
+  background: #fffffff2;
 }
 
-.food-modal .ant-modal-body {
+.food-modal .ant-modal-content .ant-modal-body {
+  align-items: center;
   font-size: 18px;
+  display: flex;
+}
+
+.food-modal .ant-modal-content .ant-modal-body .left {
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.food-modal .ant-modal-content .ant-modal-body .left img {
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 0 6px 12px -2px #32325d40, 0 3px 7px -3px #0000004d;
+}
+
+.food-modal .ant-modal-content .ant-modal-body .left h1 {
+  letter-spacing: 10px;
+  font-size: 45px;
 }
 
 .main-container {

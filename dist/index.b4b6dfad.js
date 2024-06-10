@@ -27513,14 +27513,14 @@ const FoodCard = ({ food, onFoodClick })=>{
         onClick: ()=>onFoodClick(food),
         title: food.chinese,
         style: {
-            width: 400
+            width: 300
         },
         className: "food-card",
         cover: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
             src: food.image,
             alt: food.english,
             style: {
-                maxHeight: "300px",
+                maxHeight: "200px",
                 objectFit: "cover"
             }
         }, void 0, false, void 0, void 0)
@@ -56610,134 +56610,159 @@ var _foodViewScss = require("./food-view.scss");
 var _antd = require("antd");
 const FoodView = ({ food, onBackClick })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _antd.Modal), {
-        title: food.chinese,
         open: true,
         footer: null,
         onCancel: onBackClick,
         maskClosable: true,
         className: "food-modal",
+        width: 800,
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: food.image,
-                alt: food.english,
-                style: {
-                    maxHeight: "500px"
-                }
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "left",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: food.image,
+                        alt: food.english,
+                        style: {
+                            maxHeight: "500px"
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/food-view/food-view.jsx",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: food.chinese
+                    }, void 0, false, {
+                        fileName: "src/components/food-view/food-view.jsx",
+                        lineNumber: 19,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
                 lineNumber: 17,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "right",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                            children: "English: "
-                        }, void 0, false, {
-                            fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 19,
-                            columnNumber: 23
-                        }, undefined)
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                    children: "English: "
+                                }, void 0, false, {
+                                    fileName: "src/components/food-view/food-view.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 27
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 23,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: food.english
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 24,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 19,
+                        lineNumber: 22,
                         columnNumber: 17
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: food.english
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                    children: "Zhuyin: "
+                                }, void 0, false, {
+                                    fileName: "src/components/food-view/food-view.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 27
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 27,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: food.zhuyin
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 28,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 20,
+                        lineNumber: 26,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                    children: "Pinyin: "
+                                }, void 0, false, {
+                                    fileName: "src/components/food-view/food-view.jsx",
+                                    lineNumber: 31,
+                                    columnNumber: 27
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 31,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: food.pinyin
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 32,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/food-view/food-view.jsx",
+                        lineNumber: 30,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                    children: "Details: "
+                                }, void 0, false, {
+                                    fileName: "src/components/food-view/food-view.jsx",
+                                    lineNumber: 35,
+                                    columnNumber: 27
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 35,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: food.details
+                            }, void 0, false, {
+                                fileName: "src/components/food-view/food-view.jsx",
+                                lineNumber: 36,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/food-view/food-view.jsx",
+                        lineNumber: 34,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 18,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                            children: "Zhuyin: "
-                        }, void 0, false, {
-                            fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 23,
-                            columnNumber: 23
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: food.zhuyin
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 24,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 22,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                            children: "Pinyin: "
-                        }, void 0, false, {
-                            fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 27,
-                            columnNumber: 23
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 27,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: food.pinyin
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 28,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 26,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                            children: "Details: "
-                        }, void 0, false, {
-                            fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 31,
-                            columnNumber: 23
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 31,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: food.details
-                    }, void 0, false, {
-                        fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 32,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 30,
+                lineNumber: 21,
                 columnNumber: 13
             }, undefined)
         ]
