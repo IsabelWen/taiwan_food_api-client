@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./food-view.scss";
-import { Button, Modal } from 'antd';
+import { Descriptions, Modal } from 'antd';
 
 export const FoodView = ({ food, onBackClick }) => {
 
@@ -32,4 +33,16 @@ export const FoodView = ({ food, onBackClick }) => {
             </div>
         </Modal>
     );
+};
+
+// Prop type validation
+FoodView.propTypes = {
+    food: PropTypes.shape({
+        chinese: PropTypes.string.isRequired,
+        english: PropTypes.string.isRequired,
+        zhuyin: PropTypes.string.isRequired,
+        pinyin: PropTypes.string.isRequired,
+        details: PropTypes.string.isRequired,
+    }).isRequired,
+    onFoodClick: PropTypes.func.isRequired
 };

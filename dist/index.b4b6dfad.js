@@ -27531,11 +27531,10 @@ const FoodCard = ({ food, onFoodClick })=>{
     }, undefined);
 };
 _c = FoodCard;
+// Prop type validation
 FoodCard.propTypes = {
     food: (0, _propTypesDefault.default).shape({
-        english: (0, _propTypesDefault.default).string.isRequired,
-        chinese: (0, _propTypesDefault.default).string.isRequired,
-        zhuyin: (0, _propTypesDefault.default).string
+        chinese: (0, _propTypesDefault.default).string.isRequired
     }).isRequired,
     onFoodClick: (0, _propTypesDefault.default).func.isRequired
 };
@@ -56605,6 +56604,8 @@ parcelHelpers.export(exports, "FoodView", ()=>FoodView);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _foodViewScss = require("./food-view.scss");
 var _antd = require("antd");
 const FoodView = ({ food, onBackClick })=>{
@@ -56624,7 +56625,7 @@ const FoodView = ({ food, onBackClick })=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56634,25 +56635,25 @@ const FoodView = ({ food, onBackClick })=>{
                             children: "English: "
                         }, void 0, false, {
                             fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 18,
+                            lineNumber: 19,
                             columnNumber: 23
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 18,
+                        lineNumber: 19,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.english
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56662,25 +56663,25 @@ const FoodView = ({ food, onBackClick })=>{
                             children: "Zhuyin: "
                         }, void 0, false, {
                             fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 22,
+                            lineNumber: 23,
                             columnNumber: 23
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.zhuyin
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56690,25 +56691,25 @@ const FoodView = ({ food, onBackClick })=>{
                             children: "Pinyin: "
                         }, void 0, false, {
                             fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 26,
+                            lineNumber: 27,
                             columnNumber: 23
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.pinyin
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56718,35 +56719,46 @@ const FoodView = ({ food, onBackClick })=>{
                             children: "Details: "
                         }, void 0, false, {
                             fileName: "src/components/food-view/food-view.jsx",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 23
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: food.details
                     }, void 0, false, {
                         fileName: "src/components/food-view/food-view.jsx",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/food-view/food-view.jsx",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/food-view/food-view.jsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
 _c = FoodView;
+// Prop type validation
+FoodView.propTypes = {
+    food: (0, _propTypesDefault.default).shape({
+        chinese: (0, _propTypesDefault.default).string.isRequired,
+        english: (0, _propTypesDefault.default).string.isRequired,
+        zhuyin: (0, _propTypesDefault.default).string.isRequired,
+        pinyin: (0, _propTypesDefault.default).string.isRequired,
+        details: (0, _propTypesDefault.default).string.isRequired
+    }).isRequired,
+    onFoodClick: (0, _propTypesDefault.default).func.isRequired
+};
 var _c;
 $RefreshReg$(_c, "FoodView");
 
@@ -56755,7 +56767,7 @@ $RefreshReg$(_c, "FoodView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","antd":"6C7kW","./food-view.scss":"9TBxH"}],"9TBxH":[function() {},{}],"fCgem":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","antd":"6C7kW","./food-view.scss":"9TBxH","prop-types":"7wKI2"}],"9TBxH":[function() {},{}],"fCgem":[function(require,module,exports) {
 /*!
  * The buffer module from node.js, for the browser.
  *

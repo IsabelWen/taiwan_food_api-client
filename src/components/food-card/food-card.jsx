@@ -13,11 +13,10 @@ export const FoodCard = ({ food, onFoodClick }) => {
     );
 };
 
+// Prop type validation
 FoodCard.propTypes = {
     food: PropTypes.shape({
-        english: PropTypes.string.isRequired,
         chinese: PropTypes.string.isRequired,
-        zhuyin: PropTypes.string
     }).isRequired,
     onFoodClick: PropTypes.func.isRequired
 };
