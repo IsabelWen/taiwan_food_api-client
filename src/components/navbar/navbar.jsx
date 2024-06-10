@@ -5,7 +5,7 @@ export const Navbar = () => {
 
     return (
         <div className="navbar">
-            <span style={{marginLeft: '20px'}}>Navbar</span>
+            <span style={{marginLeft: '20px'}}>Taiwan Taste Tiles</span>
         </div>
     );
 };

@@ -58409,7 +58409,7 @@ const Navbar = ()=>{
             style: {
                 marginLeft: "20px"
             },
-            children: "Navbar"
+            children: "Taiwan Taste Tiles"
         }, void 0, false, {
             fileName: "src/components/navbar/navbar.jsx",
             lineNumber: 8,

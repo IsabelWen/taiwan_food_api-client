@@ -1,9 +1,9 @@
 .food-card {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(211, 211, 211, 0.32);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(211, 211, 211, 0.42);
     transition: 0.8s;
 
     &:hover {
@@ -11,6 +11,8 @@
     }
 
     .ant-card-head {
-        font-size: 25px;
+        font-size: 35px;
+        letter-spacing: 6px;
+        text-align: center;
     }
 }

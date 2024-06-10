@@ -5,16 +5,16 @@
 }
 
 body {
-  background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background: #fafafa;
   height: 100vh;
 }
 
 .food-card {
-  -webkit-backdrop-filter: blur(5px);
-  background: #fff3;
-  border: 1px solid #ffffff4d;
+  -webkit-backdrop-filter: blur(6.6px);
+  background: #d3d3d352;
+  border: 1px solid #d3d3d36b;
   transition: all .8s;
-  box-shadow: 0 4px 30px #0000001a;
+  box-shadow: 0 6px 12px -2px #32325d40, 0 3px 7px -3px #0000004d;
 }
 
 .food-card:hover {
@@ -22,7 +22,9 @@ body {
 }
 
 .food-card .ant-card-head {
-  font-size: 25px;
+  letter-spacing: 6px;
+  text-align: center;
+  font-size: 35px;
 }
 
 .food-modal .ant-modal-content {
@@ -52,6 +54,7 @@ body {
 
 .food-modal .ant-modal-content .ant-modal-body .left h1 {
   letter-spacing: 10px;
+  color: #13b36b;
   font-size: 90px;
 }
 
@@ -70,7 +73,7 @@ body {
 
 .navbar {
   color: #fff;
-  background-color: #699b6d;
+  background-color: #13b36b;
   align-items: center;
   width: 100%;
   height: 60px;
