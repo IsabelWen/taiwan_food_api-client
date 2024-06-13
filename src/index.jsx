@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import MainView from './components/main-view/main-view';
 import { Navbar } from "./components/navbar/navbar";
+import { Footer } from "./components/footer/footer";
 
 import "./index.scss";
 
@@ -9,6 +10,7 @@ const App = () => {
         <>
         <Navbar />
         <MainView />
+        <Footer />
         </>
     );
 };

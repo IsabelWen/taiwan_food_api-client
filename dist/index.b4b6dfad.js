@@ -2948,18 +2948,24 @@ var _client = require("react-dom/client");
 var _mainView = require("./components/main-view/main-view");
 var _mainViewDefault = parcelHelpers.interopDefault(_mainView);
 var _navbar = require("./components/navbar/navbar");
+var _footer = require("./components/footer/footer");
 var _indexScss = require("./index.scss");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbar.Navbar), {}, void 0, false, {
                 fileName: "src/index.jsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainViewDefault.default), {}, void 0, false, {
                 fileName: "src/index.jsx",
-                lineNumber: 11,
+                lineNumber: 12,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Footer), {}, void 0, false, {
+                fileName: "src/index.jsx",
+                lineNumber: 13,
                 columnNumber: 9
             }, undefined)
         ]
@@ -2972,7 +2978,7 @@ const root = (0, _client.createRoot)(container);
 // Tells React to render your app in the root DOM element
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 21,
+    lineNumber: 23,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -2983,7 +2989,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./components/main-view/main-view":"4gflv","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","./components/navbar/navbar":"bNPgg"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./components/main-view/main-view":"4gflv","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","./components/navbar/navbar":"bNPgg","./components/footer/footer":"1UV6S"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -58440,6 +58446,134 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./navbar.scss":"8wkoA"}],"8wkoA":[function() {},{}]},["k46Zn","7WTH5","d8Dch"], "d8Dch", "parcelRequireeffd")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","./navbar.scss":"8wkoA"}],"8wkoA":[function() {},{}],"1UV6S":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7f6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7f6f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Footer", ()=>Footer);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _footerScss = require("./footer.scss");
+var _githubIconSvg = require("../../img/github_icon.svg");
+var _githubIconSvgDefault = parcelHelpers.interopDefault(_githubIconSvg);
+var _isabelMatulaIconSvg = require("../../img/isabel-matula-icon.svg");
+var _isabelMatulaIconSvgDefault = parcelHelpers.interopDefault(_isabelMatulaIconSvg);
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "footer",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "icons-container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "https://github.com/IsabelWen",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _githubIconSvgDefault.default),
+                        alt: "Github",
+                        style: {
+                            width: "30px",
+                            height: "30px"
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/footer/footer.jsx",
+                        lineNumber: 12,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/footer/footer.jsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "https://isabelwen.github.io/portfolio-website/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _isabelMatulaIconSvgDefault.default),
+                        alt: "Portfolio",
+                        style: {
+                            width: "30px",
+                            height: "30px"
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/footer/footer.jsx",
+                        lineNumber: 15,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/footer/footer.jsx",
+                    lineNumber: 14,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/footer/footer.jsx",
+            lineNumber: 10,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/footer/footer.jsx",
+        lineNumber: 9,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$7f6f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./footer.scss":"4VDEW","@parcel/transformer-js/src/esmodule-helpers.js":"5PjbX","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"pBxNN","../../img/github_icon.svg":"2Bt8O","../../img/isabel-matula-icon.svg":"6AooI"}],"4VDEW":[function() {},{}],"2Bt8O":[function(require,module,exports) {
+module.exports = require("38646dfc028556cc").getBundleURL("byUka") + "github_icon.24d9e1ba.svg" + "?" + Date.now();
+
+},{"38646dfc028556cc":"eWmj4"}],"eWmj4":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"6AooI":[function(require,module,exports) {
+module.exports = require("90ec6572bcbdc71").getBundleURL("byUka") + "isabel-matula-icon.c8532dc4.svg" + "?" + Date.now();
+
+},{"90ec6572bcbdc71":"eWmj4"}]},["k46Zn","7WTH5","d8Dch"], "d8Dch", "parcelRequireeffd")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
