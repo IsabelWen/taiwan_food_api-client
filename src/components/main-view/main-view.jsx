@@ -38,7 +38,7 @@ const MainView = () => {
 
     // Conditional rendering for empty food list
     if (foodlist.length === 0) {
-        return <div>The list is empty!</div>;
+        return <div style={{padding: '20px', fontSize: '20px'}}><b>The list is empty!</b></div>;
     }
 
     return (

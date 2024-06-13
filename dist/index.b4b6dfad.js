@@ -27411,7 +27411,17 @@ const MainView = ()=>{
     }, []);
     // Conditional rendering for empty food list
     if (foodlist.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "The list is empty!"
+        style: {
+            padding: "20px",
+            fontSize: "20px"
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+            children: "The list is empty!"
+        }, void 0, false, {
+            fileName: "src/components/main-view/main-view.jsx",
+            lineNumber: 41,
+            columnNumber: 65
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
         lineNumber: 41,
@@ -27513,7 +27523,7 @@ const FoodCard = ({ food, onFoodClick })=>{
         onClick: ()=>onFoodClick(food),
         title: food.chinese,
         style: {
-            width: 300
+            width: 350
         },
         className: "food-card",
         cover: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
