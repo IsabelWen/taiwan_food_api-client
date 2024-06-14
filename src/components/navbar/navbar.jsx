@@ -1,11 +1,12 @@
 import React from "react";
 import "./navbar.scss";
+import Navbar from 'react-bootstrap/Navbar';
 
 export const Navbar = () => {
 
     return (
-        <div className="navbar">
+        <Navbar className="navbar">
             <span style={{marginLeft: '20px'}}>Taiwan Taste Tiles</span>
-        </div>
+        </Navbar>
     );
 };
